@@ -1,0 +1,6 @@
+/system/csc/BRI/system/CSCFiles.txt
+/system/csc/BRI/system/CSCVersion.txt
+/system/csc/BRI/system/csc/contents.db
+/system/csc/BRI/system/csc/others.xml
+/system/csc/BRI/system/csc/customer.xml
+/system/csc/BRI/system/csc/sales_code.dat

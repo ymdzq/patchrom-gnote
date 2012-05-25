@@ -1,0 +1,517 @@
+<?xml  version="1.0" encoding="UTF-8" ?>
+<!-- It can be added for each operators like below form
+
+<ABC> 						-> sales code
+<sapient>true</sapient>			-> feature1
+<burton>false</burton>			-> feature2
+<libtech>true</libtech>			-> feature3
+.
+.
+</ABC>
+
+each name of tags are will be environment variable with "ro.csc."
+ex) "ro.csc.sapient", "ro.csc.burton", "ro.csc.libtech" <== you could use them at any section.
+also, should be added between <feature> and </feature> .
+jhwan.kim@hdlnc.com  -->
+
+<feature>
+
+<TFG>
+		<auto_browser_set>true</auto_browser_set>
+		<exception_shortcode>true</exception_shortcode>
+		<smsc_disable_edit>true</smsc_disable_edit>
+		<sdn_display>true</sdn_display>
+	<movistar_enabled>true</movistar_enabled>
+	</TFG>
+
+<!-- Brazil : OPEN | VIVO | Claro | TIM -->
+<ZTO>
+	<connection_timeout>120</connection_timeout>
+	<imsi_refresh>true</imsi_refresh>
+	<mpdp_nok_hsupa>true</mpdp_nok_hsupa>
+	<fdn_on_mms>true</fdn_on_mms>
+	<fdn_on_mms_recipient>true</fdn_on_mms_recipient>
+	<remove_gsm_ext>true</remove_gsm_ext>
+	<auto_csp>true</auto_csp>	
+</ZTO>
+
+<ZVV>
+	<connection_timeout>120</connection_timeout>
+	<imsi_refresh>true</imsi_refresh>
+	<mpdp_nok_hsupa>true</mpdp_nok_hsupa>
+	<fdn_on_mms>true</fdn_on_mms>
+	<fdn_on_mms_recipient>true</fdn_on_mms_recipient>
+	<remove_gsm_ext>true</remove_gsm_ext>
+	<auto_csp>true</auto_csp>
+	<default_screen>3</default_screen>
+	<unknown_source>false</unknown_source>
+
+</ZVV>
+
+<ZTA>
+	<connection_timeout>240</connection_timeout>
+	<imsi_refresh>true</imsi_refresh>
+	<mpdp_nok_hsupa>true</mpdp_nok_hsupa>
+	<fdn_on_mms>true</fdn_on_mms>
+	<fdn_on_mms_recipient>true</fdn_on_mms_recipient>
+	<remove_gsm_ext>true</remove_gsm_ext>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://br.m.yahoo.com/p/search/?tsrc=amxbros&org=claro&p=</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<email_account_domain>iclaro.com.br</email_account_domain>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<auto_csp>true</auto_csp>
+	<samsung_apps_remove>true</samsung_apps_remove>
+</ZTA>
+
+<ZTM>
+	<connection_timeout>120</connection_timeout>
+	<imsi_refresh>true</imsi_refresh>
+	<mpdp_nok_hsupa>true</mpdp_nok_hsupa>
+	<fdn_on_mms>true</fdn_on_mms>
+	<fdn_on_mms_recipient>true</fdn_on_mms_recipient>
+	<remove_gsm_ext>true</remove_gsm_ext>
+	<browser_plugins>ON</browser_plugins>
+	<auto_csp>true</auto_csp>
+	<backup_enabled>true</backup_enabled>
+	<default_screen>3</default_screen>
+</ZTM>
+
+<!-- Argentina : Claro | Personal | Movistar | OPEN -->
+<CTI>
+	<cam_antibanding>50</cam_antibanding>
+	<clidigit_on_msg>8</clidigit_on_msg>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://z.claroar.mobi/claroarg-cw.qpass.com/ndmns/searchresults?q=</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<speeddial_emergency_key>9</speeddial_emergency_key>
+	<speeddial_emergency_num>911</speeddial_emergency_num>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</CTI>
+
+<PSN>
+	<cam_antibanding>50</cam_antibanding>
+	<clidigit_on_msg>8</clidigit_on_msg>
+	<speeddial_emergency_key>9</speeddial_emergency_key>
+	<speeddial_emergency_num>911</speeddial_emergency_num>	
+	<email_account_signature>Personal Samsung Galaxy N7000</email_account_signature>
+</PSN>
+
+<UFN>
+	<imsi_refresh>true</imsi_refresh>
+	<cam_antibanding>50</cam_antibanding>
+	<clidigit_on_msg>8</clidigit_on_msg>
+	<speeddial_emergency_key>9</speeddial_emergency_key>
+	<speeddial_emergency_num>911</speeddial_emergency_num>	
+</UFN>
+
+<ARO>
+	<imsi_refresh>true</imsi_refresh>
+	<cam_antibanding>50</cam_antibanding>
+	<clidigit_on_msg>8</clidigit_on_msg>
+	<speeddial_emergency_key>9</speeddial_emergency_key>
+	<speeddial_emergency_num>911</speeddial_emergency_num>	
+</ARO>
+
+<!-- Peru : Claro | Movistar -->
+<PET>
+	<show_ons>true</show_ons>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://z.claroperu.mobi/</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<email_account_domain>iclaro.com.pe</email_account_domain>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</PET>
+
+<SAM>
+	<imsi_refresh>true</imsi_refresh>
+</SAM>
+
+<!-- Mexico : TELCEL | Iusacell -->
+<TCE>
+	<show_ons>true</show_ons>
+	<smsc_disable_edit>true</smsc_disable_edit>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://z.telcel.mobi/</yahoo_search_url>
+	<contacts_save_position>SIM</contacts_save_position>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<force_network_lock>true</force_network_lock>
+	<stk_operator_name>TELCEL</stk_operator_name>
+	<amx_email_account>true</amx_email_account>
+	<unknown_source>false</unknown_source>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</TCE>
+
+<IUS>
+	<speeddial_service_key>3</speeddial_service_key>
+	<speeddial_service_num>050</speeddial_service_num>
+	<speeddial_service_name>Atención a clientes</speeddial_service_name>
+	<exception_shortcode>true</exception_shortcode>
+	<ApnisEditable>true</ApnisEditable>
+	<BrowserAPN>web.iusacellgsm.mx</BrowserAPN>
+	<MmsAPN>mms.iusacellgsm.mx</MmsAPN>
+	<smsc_disable_edit>true</smsc_disable_edit>
+	<vm_addr_disable_edit>true</vm_addr_disable_edit>
+</IUS>
+	
+<UNE>
+	<speeddial_service_key>3</speeddial_service_key>
+	<speeddial_service_num>050</speeddial_service_num>
+	<speeddial_service_name>Atención a clientes</speeddial_service_name>
+	<exception_shortcode>true</exception_shortcode>
+	<ApnisEditable>true</ApnisEditable>
+	<BrowserAPN>web.iusacellgsm.mx</BrowserAPN>
+	<MmsAPN>mms.iusacellgsm.mx</MmsAPN>
+	<smsc_disable_edit>true</smsc_disable_edit>
+</UNE>
+
+<!-- Uruguay : Claro | Ancel | Movistar -->
+<CTU>
+	<cam_antibanding>50</cam_antibanding>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://z.clarouy.mobi/claroury-cw.qpass.com/ndmns/searchresults?q=</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</CTU>
+
+<ANC>
+	<cam_antibanding>50</cam_antibanding>
+</ANC>
+
+<UFU>
+	<cam_antibanding>50</cam_antibanding>
+</UFU>
+
+<!-- Chile : Entel PCS | Movistar | Claro | OPEN -->
+<CHE>
+	<cam_antibanding>50</cam_antibanding>
+	<ApnisEditable>true</ApnisEditable>
+	<BrowserAPN>bam.entelpcs.cl</BrowserAPN>
+	<MmsAPN>mms.entelpcs.cl</MmsAPN>
+	<browser_plugins>ON</browser_plugins>	
+</CHE>
+
+<CHT>
+	<imsi_refresh>true</imsi_refresh>
+	<cam_antibanding>50</cam_antibanding>
+	<browser_plugins>ON</browser_plugins>
+</CHT>
+	
+<CHL>
+	<cam_antibanding>50</cam_antibanding>
+	<smsc_disable_edit>true</smsc_disable_edit>
+	<vm_addr_disable_edit>true</vm_addr_disable_edit>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://cl.m2.yahoo.com/w/search?.tsrc=amxuyos&.sep=andr_emb&p=</yahoo_search_url>
+	<ApnisEditable>true</ApnisEditable>
+	<BrowserAPN>bam.clarochile.cl</BrowserAPN>
+	<MmsAPN>mms.clarochile.cl</MmsAPN>
+	<browser_plugins>ON</browser_plugins>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</CHL>
+
+<CHO>
+	<imsi_refresh>true</imsi_refresh>
+	<cam_antibanding>50</cam_antibanding>
+</CHO>
+
+<CHD>
+	<cam_antibanding>50</cam_antibanding>
+</CHD>
+
+<CHV>
+	<cam_antibanding>50</cam_antibanding>
+	<unknown_source>false</unknown_source>
+</CHV>
+
+<!-- Paraguy : Claro | Tigo | Personal -->
+<CTP>
+	<cam_antibanding>50</cam_antibanding>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://z.claropy.mobi/claropry-cw.qpass.com/ndmns/searchresults?q=</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</CTP>
+
+<TGP>
+	<cam_antibanding>50</cam_antibanding>
+</TGP>
+
+<PSP>
+	<cam_antibanding>50</cam_antibanding>
+</PSP>
+
+<UPO>
+	<cam_antibanding>50</cam_antibanding>
+</UPO>
+
+<VOX>
+	<cam_antibanding>50</cam_antibanding>
+</VOX>
+
+<CWW>
+	<cam_antibanding>50</cam_antibanding>
+</CWW>
+
+<DOR>
+	<cam_antibanding>50</cam_antibanding>
+</DOR>
+	
+<TDR>
+	<cam_antibanding>50</cam_antibanding>
+</TDR>
+
+<!-- Venezuela : Movilnet | Movistar | DGT | OPEN -->
+<MVL>
+	<imsi_refresh>true</imsi_refresh>
+	<stk_operator_name>Tu Chip</stk_operator_name>
+	<exception_shortcode>true</exception_shortcode>
+</MVL>
+
+<VMT>
+    <cb_support_alert>true</cb_support_alert>
+    <exception_shortcode>true</exception_shortcode>
+</VMT>
+
+<VNO>
+  	<exception_shortcode>true</exception_shortcode>   	   
+</VNO>
+
+<DGT>
+	<smsc_disable_edit>true</smsc_disable_edit>
+	<stk_operator_name>SIM 412</stk_operator_name>
+</DGT>
+
+<!-- Colombia : Comcel | Movistar  -->
+<COM>
+	<smsc_disable_edit>true</smsc_disable_edit>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://z.comcel.mobi/</yahoo_search_url>	
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</COM>
+
+<COB>
+	<smsc_disable_edit>true</smsc_disable_edit> 
+	<cb_support_alert>true</cb_support_alert>  
+</COB>
+
+<!-- Miami (UWM/Millicom) : CGU | ETE | CTE | -->
+<CGU>
+	<smsc_disable_edit>true</smsc_disable_edit>
+	<msg_strict_comp>true</msg_strict_comp>
+	<exception_shortcode>true</exception_shortcode>
+	<disable_show_my_number>true</disable_show_my_number>
+</CGU>
+
+<ETE>
+	<smsc_disable_edit>true</smsc_disable_edit>
+	<exception_shortcode>true</exception_shortcode>
+	<disable_show_my_number>true</disable_show_my_number>
+</ETE>
+
+<CTE>
+	<smsc_disable_edit>true</smsc_disable_edit>
+	<exception_shortcode>true</exception_shortcode>
+	<disable_show_my_number>true</disable_show_my_number>
+</CTE>
+
+<!-- Miami (UWA/AMX) : CPA | PGU | PER | NEN | HME | PCT | CDR | -->
+<CPA>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://z.claropan.mobi/</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<email_account_domain>claro.net.pa</email_account_domain>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</CPA>
+
+<PGU>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://wap.wsearch.ideasclaro.com/</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<exception_shortcode>true</exception_shortcode>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</PGU>
+
+<PER>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://wap.wsearch.ideasclaro.com/</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</PER>
+
+<NEN>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://wap.wsearch.ideasclaro.com/</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</NEN>
+
+<HME>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://wap.wsearch.ideasclaro.com/</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</HME>
+
+<PCT>
+   <smsc_disable_edit>true</smsc_disable_edit>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://pr.m.yahoo.com/w/search?.tsrc=amxpros&.sep=andr_emb&p=</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<force_network_lock>true</force_network_lock>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<stk_operator_name>Claro</stk_operator_name>
+	<disable_othersearch>true</disable_othersearch>
+</PCT>
+
+
+<CDR>
+	<cam_antibanding>50</cam_antibanding>
+	<smsc_disable_edit>true</smsc_disable_edit>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://do.m2.yahoo.com/w/search?.tsrc=amxuyos&.sep=andr_emb&p=</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<force_network_lock>true</force_network_lock>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<stk_operator_name>Claro</stk_operator_name>
+	<disable_othersearch>true</disable_othersearch>
+</CDR>
+
+<TGU>
+	<exception_shortcode>true</exception_shortcode>	
+</TGU>
+
+<NBS>
+	<exception_shortcode>true</exception_shortcode>	
+</NBS>
+
+<CRM>
+</CRM>
+
+<ICE>
+</ICE>
+
+<!-- Miami (UWB) : JDI | -->
+<JDI>
+	<smsc_disable_edit>true</smsc_disable_edit>
+</JDI>
+
+<!-- Miami (UUB) : ALE | DOR | TDR | TPA | PCI | TTT | -->
+<TTT>
+    <noise_reduction>false</noise_reduction>
+</TTT>
+
+<PBS>
+	<exception_shortcode>true</exception_shortcode>	
+</PBS>
+
+<PCW>
+</PCW>
+
+<COL>
+</COL>
+
+<SAL>
+	<exception_shortcode>true</exception_shortcode>	
+</SAL>
+
+<CRC>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://wap.wsearch.ideasclaro.com/</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</CRC>
+
+<ECO>
+	<gms_exclusion>true</gms_exclusion>
+	<yahoo_search_url>http://z.claroec.mobi/</yahoo_search_url>
+	<unknown_source>false</unknown_source>
+	<stk_operator_name>Claro</stk_operator_name>
+	<amx_email_account>true</amx_email_account>
+	<default_screen>1</default_screen>
+	<default_screen_count>5</default_screen_count>
+	<contacts_save_position>SIM</contacts_save_position>
+	<samsung_apps_remove>true</samsung_apps_remove>
+	<disable_othersearch>true</disable_othersearch>
+</ECO>
+
+<TPA>
+	<exception_shortcode>true</exception_shortcode>
+</TPA>	
+	
+</feature>

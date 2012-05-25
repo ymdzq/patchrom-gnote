@@ -1,0 +1,7 @@
+/system/csc/TGY/system/CSCFiles.txt
+/system/csc/TGY/system/etc/wifi/default_ap.conf
+/system/csc/TGY/system/CSCVersion.txt
+/system/csc/TGY/system/csc/contents.db
+/system/csc/TGY/system/csc/others.xml
+/system/csc/TGY/system/csc/customer.xml
+/system/csc/TGY/system/csc/sales_code.dat
