@@ -2177,34 +2177,28 @@
 
     const/4 v7, 0x1
 
-    .line 143
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 144
     const v3, 0x7f030012
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->setContentView(I)V
 
-    .line 145
     const/4 v3, 0x6
 
     new-array v3, v3, [Z
 
     sput-object v3, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->isItemSelected:[Z
 
-    .line 146
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
-    .line 147
     .local v0, actionBar:Landroid/app/ActionBar;
     if-eqz v0, :cond_0
 
-    .line 149
     invoke-virtual {v0, v7}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
+    invoke-virtual {v0, v7}, Landroid/app/ActionBar;->setHomeButtonEnabled(Z)V
 
-    .line 152
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 

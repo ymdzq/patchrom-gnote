@@ -1669,24 +1669,44 @@
 .end method
 
 .method protected dispatchPdus([[B)V
-    .locals 3
+    .locals 4
     .parameter "pdus"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
 
     .prologue
-    .line 1560
+    iget-object v1, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+
+    invoke-static {v1, p1}, Lmiui/provider/ExtraTelephony;->checkFirewallForSms(Landroid/content/Context;[[B)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    const/4 v2, -0x1
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p0, v1, v2, v3}, Lcom/android/internal/telephony/SMSDispatcher;->acknowledgeLastIncomingSms(ZILandroid/os/Message;)V
+
+    :goto_0
+    return-void
+
+    :cond_0
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.provider.Telephony.SMS_RECEIVED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1561
     .local v0, intent:Landroid/content/Intent;
-    const-string/jumbo v1, "pdus"
+    const-string v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 1562
     const-string v1, "format"
 
     invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
@@ -1695,13 +1715,11 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1563
     const-string v1, "android.permission.RECEIVE_SMS"
 
     invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/SMSDispatcher;->dispatch(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 1564
-    return-void
+    goto :goto_0
 .end method
 
 .method protected dispatchPdusToKTAppManager([[BI)V
@@ -1710,14 +1728,12 @@
     .parameter "port"
 
     .prologue
-    .line 1328
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.kt.show.manger.action.SHOW_DATA_SMS_RECEIVED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1329
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "SMS"
 
@@ -1751,29 +1767,117 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1330
-    const-string/jumbo v1, "pdus"
+    const-string v1, "pdus"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 1331
-    const-string/jumbo v1, "port_address"
+    const-string v1, "port_address"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1332
+    .line 1563
     const-string v1, "android.permission.RECEIVE_SMS"
 
     invoke-virtual {p0, v0, v1}, Lcom/android/internal/telephony/SMSDispatcher;->dispatch(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 1333
+    .line 1564
     return-void
 .end method
 
 .method protected dispatchPortAddressedPdus([[BI)V
-    .locals 4
+    .locals 5
     .parameter "pdus"
     .parameter "port"
+    .annotation build Landroid/annotation/MiuiHook;
+        value = .enum Landroid/annotation/MiuiHook$MiuiHookType;->CHANGE_CODE:Landroid/annotation/MiuiHook$MiuiHookType;
+    .end annotation
+
+    .prologue
+    iget-object v2, p0, Lcom/android/internal/telephony/SMSDispatcher;->mContext:Landroid/content/Context;
+
+    invoke-static {v2, p1}, Lmiui/provider/ExtraTelephony;->checkFirewallForSms(Landroid/content/Context;[[B)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const/4 v2, 0x1
+
+    const/4 v3, -0x1
+
+    const/4 v4, 0x0
+
+    invoke-virtual {p0, v2, v3, v4}, Lcom/android/internal/telephony/SMSDispatcher;->acknowledgeLastIncomingSms(ZILandroid/os/Message;)V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "sms://localhost:"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    .local v1, uri:Landroid/net/Uri;
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v2, "android.intent.action.DATA_SMS_RECEIVED"
+
+    invoke-direct {v0, v2, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    .local v0, intent:Landroid/content/Intent;
+    const-string v2, "pdus"
+
+    invoke-virtual {v0, v2, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
+
+    const-string v2, "format"
+
+    invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v2, "android.permission.RECEIVE_SMS"
+
+    invoke-virtual {p0, v0, v2}, Lcom/android/internal/telephony/SMSDispatcher;->dispatch(Landroid/content/Intent;Ljava/lang/String;)V
+
+    goto :goto_0
+.end method
+
+
+.method public abstract dispose()V
+.end method
+
+.method protected disptchLGTFOTAPdus([[B)V
+    .locals 0
+    .parameter "pdus"
+
+    .prologue
+    return-void
+.end method
+
+.method protected disptchLGTMsgAppPdus([[BI)V
+    .locals 4
+    .parameter "pdus"
+    .parameter "teleService"
 
     .prologue
     .line 1573
@@ -1807,20 +1911,10 @@
 
     invoke-direct {v0, v2, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 1575
     .local v0, intent:Landroid/content/Intent;
-    const-string/jumbo v2, "pdus"
+    const-string v2, "pdus"
 
     invoke-virtual {v0, v2, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
-
-    .line 1576
-    const-string v2, "format"
-
-    invoke-virtual {p0}, Lcom/android/internal/telephony/SMSDispatcher;->getFormat()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 1577
     const-string v2, "android.permission.RECEIVE_SMS"
@@ -1828,70 +1922,6 @@
     invoke-virtual {p0, v0, v2}, Lcom/android/internal/telephony/SMSDispatcher;->dispatch(Landroid/content/Intent;Ljava/lang/String;)V
 
     .line 1578
-    return-void
-.end method
-
-.method public abstract dispose()V
-.end method
-
-.method protected disptchLGTFOTAPdus([[B)V
-    .locals 0
-    .parameter "pdus"
-
-    .prologue
-    .line 1270
-    return-void
-.end method
-
-.method protected disptchLGTMsgAppPdus([[BI)V
-    .locals 4
-    .parameter "pdus"
-    .parameter "teleService"
-
-    .prologue
-    .line 1273
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v3, "sms://localhost:"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    .line 1274
-    .local v1, uri:Landroid/net/Uri;
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v2, "android.intent.action.DATA_SMS_RECEIVED"
-
-    invoke-direct {v0, v2, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
-
-    .line 1275
-    .local v0, intent:Landroid/content/Intent;
-    const-string/jumbo v2, "pdus"
-
-    invoke-virtual {v0, v2, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
-
-    .line 1276
-    const-string v2, "android.permission.RECEIVE_SMS"
-
-    invoke-virtual {p0, v0, v2}, Lcom/android/internal/telephony/SMSDispatcher;->dispatch(Landroid/content/Intent;Ljava/lang/String;)V
-
-    .line 1277
     return-void
 .end method
 
@@ -1903,6 +1933,7 @@
     .parameter "teleService"
 
     .prologue
+    .line 1270
     .line 1323
     return-void
 .end method

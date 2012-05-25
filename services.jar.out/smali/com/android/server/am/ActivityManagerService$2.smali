@@ -172,6 +172,8 @@
     invoke-static {}, Lcom/samsung/CustomerCrashReport;->isCCRInstalled()Z
 
     move-result v4
+    
+    const/4 v4, 0x0
 
     if-eqz v4, :cond_2
 

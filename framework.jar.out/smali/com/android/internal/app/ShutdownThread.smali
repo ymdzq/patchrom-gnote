@@ -28,9 +28,9 @@
 
 .field private static mContext:Landroid/content/Context;
 
-.field private static mReboot:Z
+.field static mReboot:Z
 
-.field private static mRebootReason:Ljava/lang/String;
+.field static mRebootReason:Ljava/lang/String;
 
 .field private static mRebootResult:Z
 
@@ -46,9 +46,9 @@
 
 .field private static sIsSamsungAnimation:Z
 
-.field private static sIsStarted:Z
+.field static sIsStarted:Z
 
-.field private static sIsStartedGuard:Ljava/lang/Object;
+.field static sIsStartedGuard:Ljava/lang/Object;
 
 
 # instance fields
@@ -956,18 +956,15 @@
 
     invoke-virtual {v3, v4}, Landroid/view/Window;->setType(I)V
 
-    .line 506
-    invoke-virtual {v2}, Landroid/app/ProgressDialog;->show()V
+    invoke-static {p0}, Lcom/android/internal/app/ShutdownThread;->createShutDownDialog(Landroid/content/Context;)V
 
-    .line 509
     sget-object v3, Lcom/android/internal/app/ShutdownThread;->sInstance:Lcom/android/internal/app/ShutdownThread;
 
     sput-object p0, Lcom/android/internal/app/ShutdownThread;->mContext:Landroid/content/Context;
 
-    .line 510
     sget-object v4, Lcom/android/internal/app/ShutdownThread;->sInstance:Lcom/android/internal/app/ShutdownThread;
 
-    const-string/jumbo v3, "power"
+    const-string v3, "power"
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -1475,21 +1472,22 @@
 
     const v3, 0x1040167
 
-    .line 181
     .local v3, resourceId:I
     :goto_1
+    invoke-static {v3}, Lcom/android/internal/app/ShutdownThread;->getResourceId(I)I
+
+    move-result v3
+
     sget-object v6, Lcom/android/internal/app/ShutdownThread;->sInstance:Lcom/android/internal/app/ShutdownThread;
 
     sput-object p0, Lcom/android/internal/app/ShutdownThread;->mContext:Landroid/content/Context;
 
-    .line 183
     new-instance v1, Ljava/io/File;
 
     const-string v6, "//system/media/video/shutdown/shutdown.qmg"
 
     invoke-direct {v1, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 184
     .local v1, f:Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->isFile()Z
 

@@ -614,6 +614,8 @@
 
 .field private mFloatingTreeObserver:Landroid/view/ViewTreeObserver;
 
+.field mHapticEnabledExplicitly:Z
+
 .field private mHardwareLayer:Landroid/view/HardwareLayer;
 
 .field private mHasPerformedLongPress:Z
@@ -2740,6 +2742,20 @@
 
     .line 2990
     :pswitch_23
+    const/16 v38, 0x0
+
+    move/from16 v0, v38
+
+    invoke-virtual {v6, v7, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+
+    move-result v38
+
+    move/from16 v0, v38
+
+    move-object/from16 v1, p0
+
+    iput-boolean v0, v1, Landroid/view/View;->mHapticEnabledExplicitly:Z
+
     const/16 v38, 0x1
 
     move/from16 v0, v38
@@ -20256,50 +20272,40 @@
 
     if-nez v6, :cond_8
 
-    .line 6636
     invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
 
     move-result v0
 
-    .line 6639
     :cond_8
     if-eqz v2, :cond_9
 
-    .line 6644
     iget v6, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit16 v6, v6, 0x4000
 
     iput v6, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 6645
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
-    .line 6648
     :cond_9
     iget-boolean v6, p0, Landroid/view/View;->mHasPerformedLongPress:Z
 
-    if-nez v6, :cond_b
+    if-nez v6, :cond_12
 
-    .line 6650
     invoke-direct {p0}, Landroid/view/View;->removeLongPressCallback()V
 
-    .line 6653
-    if-nez v0, :cond_b
+    if-nez v0, :cond_12
 
-    .line 6657
     iget-object v6, p0, Landroid/view/View;->mPerformClick:Landroid/view/View$PerformClick;
 
     if-nez v6, :cond_a
 
-    .line 6658
     new-instance v6, Landroid/view/View$PerformClick;
 
     invoke-direct {v6, p0, v11}, Landroid/view/View$PerformClick;-><init>(Landroid/view/View;Landroid/view/View$1;)V
 
     iput-object v6, p0, Landroid/view/View;->mPerformClick:Landroid/view/View$PerformClick;
 
-    .line 6660
     :cond_a
     iget-object v6, p0, Landroid/view/View;->mPerformClick:Landroid/view/View$PerformClick;
 
@@ -20309,27 +20315,29 @@
 
     if-nez v6, :cond_b
 
-    .line 6661
     invoke-virtual {p0}, Landroid/view/View;->performClick()Z
 
-    .line 6666
+    :cond_12
+    const/4 v6, 0x2
+
+    const/4 v9, 0x4
+
+    invoke-virtual {p0, v6, v9}, Landroid/view/View;->performHapticFeedback(II)Z
+
     :cond_b
     iget-object v6, p0, Landroid/view/View;->mUnsetPressedState:Landroid/view/View$UnsetPressedState;
 
     if-nez v6, :cond_c
 
-    .line 6667
     new-instance v6, Landroid/view/View$UnsetPressedState;
 
     invoke-direct {v6, p0, v11}, Landroid/view/View$UnsetPressedState;-><init>(Landroid/view/View;Landroid/view/View$1;)V
 
     iput-object v6, p0, Landroid/view/View;->mUnsetPressedState:Landroid/view/View$UnsetPressedState;
 
-    .line 6670
     :cond_c
     if-eqz v2, :cond_f
 
-    .line 6671
     iget-object v6, p0, Landroid/view/View;->mUnsetPressedState:Landroid/view/View$UnsetPressedState;
 
     invoke-static {}, Landroid/view/ViewConfiguration;->getPressedStateDuration()I
@@ -20439,15 +20447,16 @@
 
     iput v8, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 6702
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
-    .line 6703
     invoke-direct {p0, v6}, Landroid/view/View;->checkForLongClick(I)V
+
+    const/4 v9, 0x4
+
+    invoke-virtual {p0, v7, v9}, Landroid/view/View;->performHapticFeedback(II)Z
 
     goto/16 :goto_1
 
-    .line 6708
     .end local v1           #isInScrollingContainer:Z
     :pswitch_2
     iget v6, p0, Landroid/view/View;->mPrivateFlags:I
@@ -21278,6 +21287,15 @@
 
     .line 13326
     :cond_1
+    and-int/lit8 v1, p2, 0x4
+
+    if-eqz v1, :cond_4
+
+    iget-boolean v1, p0, Landroid/view/View;->mHapticEnabledExplicitly:Z
+
+    if-eqz v1, :cond_0
+
+    :cond_4
     and-int/lit8 v1, p2, 0x1
 
     if-nez v1, :cond_2
@@ -24632,10 +24650,10 @@
     :goto_0
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setFlags(II)V
 
-    .line 4847
+    iput-boolean p1, p0, Landroid/view/View;->mHapticEnabledExplicitly:Z
+
     return-void
 
-    .line 4846
     :cond_0
     const/4 v0, 0x0
 
@@ -24647,20 +24665,16 @@
     .parameter "horizontalFadingEdgeEnabled"
 
     .prologue
-    .line 9099
     invoke-virtual {p0}, Landroid/view/View;->isHorizontalFadingEdgeEnabled()Z
 
     move-result v0
 
     if-eq v0, p1, :cond_1
 
-    .line 9100
     if-eqz p1, :cond_0
 
-    .line 9101
     invoke-direct {p0}, Landroid/view/View;->initScrollCache()V
 
-    .line 9104
     :cond_0
     iget v0, p0, Landroid/view/View;->mViewFlags:I
 
@@ -24668,7 +24682,6 @@
 
     iput v0, p0, Landroid/view/View;->mViewFlags:I
 
-    .line 9106
     :cond_1
     return-void
 .end method
@@ -24678,27 +24691,22 @@
     .parameter "horizontalScrollBarEnabled"
 
     .prologue
-    .line 9224
     invoke-virtual {p0}, Landroid/view/View;->isHorizontalScrollBarEnabled()Z
 
     move-result v0
 
     if-eq v0, p1, :cond_0
 
-    .line 9225
     iget v0, p0, Landroid/view/View;->mViewFlags:I
 
     xor-int/lit16 v0, v0, 0x100
 
     iput v0, p0, Landroid/view/View;->mViewFlags:I
 
-    .line 9226
     invoke-virtual {p0}, Landroid/view/View;->computeOpaqueFlags()V
 
-    .line 9227
     invoke-virtual {p0}, Landroid/view/View;->resolvePadding()V
 
-    .line 9229
     :cond_0
     return-void
 .end method
@@ -24710,37 +24718,30 @@
     .prologue
     const/high16 v1, 0x1000
 
-    .line 6570
     if-eqz p1, :cond_1
 
-    .line 6571
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
     and-int/2addr v0, v1
 
     if-nez v0, :cond_0
 
-    .line 6572
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/2addr v0, v1
 
     iput v0, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 6573
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
-    .line 6574
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Landroid/view/View;->onHoverChanged(Z)V
 
-    .line 6583
     :cond_0
     :goto_0
     return-void
 
-    .line 6577
     :cond_1
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -24748,7 +24749,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 6578
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
     const v1, -0x10000001
@@ -24757,10 +24757,8 @@
 
     iput v0, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 6579
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
-    .line 6580
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/view/View;->onHoverChanged(Z)V
@@ -24773,10 +24771,8 @@
     .parameter "id"
 
     .prologue
-    .line 12526
     iput p1, p0, Landroid/view/View;->mID:I
 
-    .line 12527
     return-void
 .end method
 
@@ -24785,21 +24781,17 @@
     .parameter "isRoot"
 
     .prologue
-    .line 12536
     if-eqz p1, :cond_0
 
-    .line 12537
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v0, v0, 0x8
 
     iput v0, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 12541
     :goto_0
     return-void
 
-    .line 12539
     :cond_0
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -24817,7 +24809,6 @@
     .prologue
     const/high16 v1, 0x400
 
-    .line 4520
     if-eqz p1, :cond_0
 
     move v0, v1
@@ -24825,10 +24816,10 @@
     :goto_0
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setFlags(II)V
 
-    .line 4521
+    .line 4847
     return-void
 
-    .line 4520
+    .line 4846
     :cond_0
     const/4 v0, 0x0
 
@@ -24845,14 +24836,12 @@
 
     const/4 v2, 0x1
 
-    .line 10227
     if-ltz p1, :cond_0
 
     const/4 v3, 0x2
 
     if-le p1, v3, :cond_1
 
-    .line 10228
     :cond_0
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -24862,20 +24851,17 @@
 
     throw v1
 
-    .line 10232
     :cond_1
     iget v3, p0, Landroid/view/View;->mLayerType:I
 
     if-ne p1, v3, :cond_4
 
-    .line 10233
     if-eqz p1, :cond_3
 
     iget-object v1, p0, Landroid/view/View;->mLayerPaint:Landroid/graphics/Paint;
 
     if-eq p2, v1, :cond_3
 
-    .line 10234
     if-nez p2, :cond_2
 
     new-instance p2, Landroid/graphics/Paint;
@@ -24886,36 +24872,29 @@
     :cond_2
     iput-object p2, p0, Landroid/view/View;->mLayerPaint:Landroid/graphics/Paint;
 
-    .line 10235
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 10236
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 10260
     :cond_3
     :goto_0
     return-void
 
-    .line 10242
     .restart local p2
     :cond_4
     iget v3, p0, Landroid/view/View;->mLayerType:I
 
     packed-switch v3, :pswitch_data_0
 
-    .line 10253
     :goto_1
     iput p1, p0, Landroid/view/View;->mLayerType:I
 
-    .line 10254
     iget v3, p0, Landroid/view/View;->mLayerType:I
 
     if-nez v3, :cond_6
 
     move v0, v2
 
-    .line 10255
     .local v0, layerDisabled:Z
     :goto_2
     if-eqz v0, :cond_7
@@ -24927,39 +24906,32 @@
     :goto_3
     iput-object p2, p0, Landroid/view/View;->mLayerPaint:Landroid/graphics/Paint;
 
-    .line 10256
     if-eqz v0, :cond_8
 
     :goto_4
     iput-object v1, p0, Landroid/view/View;->mLocalDirtyRect:Landroid/graphics/Rect;
 
-    .line 10258
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 10259
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
     goto :goto_0
 
-    .line 10244
     .end local v0           #layerDisabled:Z
     .restart local p2
     :pswitch_0
     invoke-virtual {p0}, Landroid/view/View;->destroyLayer()Z
 
-    .line 10247
     :pswitch_1
     invoke-virtual {p0}, Landroid/view/View;->destroyDrawingCache()V
 
     goto :goto_1
 
-    .line 10254
     :cond_6
     const/4 v0, 0x0
 
     goto :goto_2
 
-    .line 10255
     .restart local v0       #layerDisabled:Z
     :cond_7
     if-nez p2, :cond_5
@@ -24971,7 +24943,6 @@
 
     goto :goto_3
 
-    .line 10256
     :cond_8
     new-instance v1, Landroid/graphics/Rect;
 
@@ -24979,7 +24950,6 @@
 
     goto :goto_4
 
-    .line 10242
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -24994,22 +24964,18 @@
     .end annotation
 
     .prologue
-    .line 4898
     invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
 
     move-result v0
 
     if-eq v0, p1, :cond_0
 
-    .line 4899
     invoke-virtual {p0}, Landroid/view/View;->resetResolvedLayoutDirection()V
 
-    .line 4901
     const/high16 v0, -0x4000
 
     invoke-virtual {p0, p1, v0}, Landroid/view/View;->setFlags(II)V
 
-    .line 4903
     :cond_0
     return-void
 .end method
@@ -25019,10 +24985,8 @@
     .parameter "params"
 
     .prologue
-    .line 8383
     if-nez p1, :cond_0
 
-    .line 8384
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Layout parameters cannot be null"
@@ -25031,14 +24995,11 @@
 
     throw v0
 
-    .line 8386
     :cond_0
     iput-object p1, p0, Landroid/view/View;->mLayoutParams:Landroid/view/ViewGroup$LayoutParams;
 
-    .line 8387
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 8388
     return-void
 .end method
 
@@ -25051,15 +25012,12 @@
 
     const/4 v6, 0x1
 
-    .line 7881
     iget v7, p0, Landroid/view/View;->mLeft:I
 
     if-eq p1, v7, :cond_4
 
-    .line 7882
     invoke-direct {p0}, Landroid/view/View;->updateMatrix()V
 
-    .line 7883
     iget-object v7, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
     if-eqz v7, :cond_0
@@ -25076,31 +25034,25 @@
     :cond_0
     move v1, v6
 
-    .line 7885
     .local v1, matrixIsIdentity:Z
     :goto_0
     if-eqz v1, :cond_7
 
-    .line 7886
     iget-object v7, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     if-eqz v7, :cond_1
 
-    .line 7889
     iget v7, p0, Landroid/view/View;->mLeft:I
 
     if-ge p1, v7, :cond_6
 
-    .line 7890
     move v2, p1
 
-    .line 7891
     .local v2, minLeft:I
     iget v7, p0, Landroid/view/View;->mLeft:I
 
     sub-int v4, p1, v7
 
-    .line 7896
     .local v4, xLoc:I
     :goto_1
     iget v7, p0, Landroid/view/View;->mRight:I
@@ -25115,7 +25067,6 @@
 
     invoke-virtual {p0, v4, v5, v7, v8}, Landroid/view/View;->invalidate(IIII)V
 
-    .line 7903
     .end local v2           #minLeft:I
     .end local v4           #xLoc:I
     :cond_1
@@ -25126,7 +25077,6 @@
 
     sub-int v3, v5, v7
 
-    .line 7904
     .local v3, oldWidth:I
     iget v5, p0, Landroid/view/View;->mBottom:I
 
@@ -25134,11 +25084,9 @@
 
     sub-int v0, v5, v7
 
-    .line 7906
     .local v0, height:I
     iput p1, p0, Landroid/view/View;->mLeft:I
 
-    .line 7908
     iget v5, p0, Landroid/view/View;->mRight:I
 
     iget v7, p0, Landroid/view/View;->mLeft:I
@@ -25147,10 +25095,8 @@
 
     invoke-virtual {p0, v5, v0, v3, v0}, Landroid/view/View;->onSizeChanged(IIII)V
 
-    .line 7910
     if-nez v1, :cond_3
 
-    .line 7911
     iget v5, p0, Landroid/view/View;->mPrivateFlags:I
 
     const/high16 v7, 0x2000
@@ -25159,12 +25105,10 @@
 
     if-nez v5, :cond_2
 
-    .line 7913
     iget-object v5, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
     iput-boolean v6, v5, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7915
     :cond_2
     iget v5, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -25172,17 +25116,13 @@
 
     iput v5, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7916
     invoke-virtual {p0, v6}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7918
     :cond_3
     iput-boolean v6, p0, Landroid/view/View;->mBackgroundSizeChanged:Z
 
-    .line 7919
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentIfNeeded()V
 
-    .line 7921
     .end local v0           #height:I
     .end local v1           #matrixIsIdentity:Z
     .end local v3           #oldWidth:I
@@ -25192,22 +25132,18 @@
     :cond_5
     move v1, v5
 
-    .line 7883
     goto :goto_0
 
-    .line 7893
     .restart local v1       #matrixIsIdentity:Z
     :cond_6
     iget v2, p0, Landroid/view/View;->mLeft:I
 
-    .line 7894
     .restart local v2       #minLeft:I
     const/4 v4, 0x0
 
     .restart local v4       #xLoc:I
     goto :goto_1
 
-    .line 7900
     .end local v2           #minLeft:I
     .end local v4           #xLoc:I
     :cond_7
@@ -25223,7 +25159,6 @@
     .prologue
     const/high16 v1, 0x20
 
-    .line 5034
     if-eqz p1, :cond_0
 
     move v0, v1
@@ -25231,10 +25166,8 @@
     :goto_0
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setFlags(II)V
 
-    .line 5035
     return-void
 
-    .line 5034
     :cond_0
     const/4 v0, 0x0
 
@@ -25247,20 +25180,16 @@
     .parameter "measuredHeight"
 
     .prologue
-    .line 12973
     iput p1, p0, Landroid/view/View;->mMeasuredWidth:I
 
-    .line 12974
     iput p2, p0, Landroid/view/View;->mMeasuredHeight:I
 
-    .line 12976
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit16 v0, v0, 0x800
 
     iput v0, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 12977
     return-void
 .end method
 
@@ -25269,10 +25198,8 @@
     .parameter "minHeight"
 
     .prologue
-    .line 13116
     iput p1, p0, Landroid/view/View;->mMinHeight:I
 
-    .line 13117
     return-void
 .end method
 
@@ -25281,10 +25208,8 @@
     .parameter "minWidth"
 
     .prologue
-    .line 13127
     iput p1, p0, Landroid/view/View;->mMinWidth:I
 
-    .line 13128
     return-void
 .end method
 
@@ -25293,10 +25218,8 @@
     .parameter "nextFocusDownId"
 
     .prologue
-    .line 4604
     iput p1, p0, Landroid/view/View;->mNextFocusDownId:I
 
-    .line 4605
     return-void
 .end method
 
@@ -25305,10 +25228,8 @@
     .parameter "nextFocusForwardId"
 
     .prologue
-    .line 4625
     iput p1, p0, Landroid/view/View;->mNextFocusForwardId:I
 
-    .line 4626
     return-void
 .end method
 
@@ -25317,10 +25238,8 @@
     .parameter "nextFocusLeftId"
 
     .prologue
-    .line 4541
     iput p1, p0, Landroid/view/View;->mNextFocusLeftId:I
 
-    .line 4542
     return-void
 .end method
 
@@ -25329,10 +25248,8 @@
     .parameter "nextFocusRightId"
 
     .prologue
-    .line 4562
     iput p1, p0, Landroid/view/View;->mNextFocusRightId:I
 
-    .line 4563
     return-void
 .end method
 
@@ -25341,10 +25258,8 @@
     .parameter "nextFocusUpId"
 
     .prologue
-    .line 4583
     iput p1, p0, Landroid/view/View;->mNextFocusUpId:I
 
-    .line 4584
     return-void
 .end method
 
@@ -25353,19 +25268,16 @@
     .parameter "l"
 
     .prologue
-    .line 3525
     invoke-virtual {p0}, Landroid/view/View;->isClickable()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3526
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setClickable(Z)V
 
-    .line 3528
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
@@ -25373,7 +25285,6 @@
 
     iput-object p1, v0, Landroid/view/View$ListenerInfo;->mOnClickListener:Landroid/view/View$OnClickListener;
 
-    .line 3529
     return-void
 .end method
 
@@ -25382,19 +25293,16 @@
     .parameter "l"
 
     .prologue
-    .line 3563
     invoke-virtual {p0}, Landroid/view/View;->isLongClickable()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3564
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setLongClickable(Z)V
 
-    .line 3566
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
@@ -25402,7 +25310,6 @@
 
     iput-object p1, v0, Landroid/view/View$ListenerInfo;->mOnCreateContextMenuListener:Landroid/view/View$OnCreateContextMenuListener;
 
-    .line 3567
     return-void
 .end method
 
@@ -25411,7 +25318,6 @@
     .parameter "l"
 
     .prologue
-    .line 3759
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
     move-result-object v0
@@ -25419,7 +25325,6 @@
     #setter for: Landroid/view/View$ListenerInfo;->mOnDragListener:Landroid/view/View$OnDragListener;
     invoke-static {v0, p1}, Landroid/view/View$ListenerInfo;->access$602(Landroid/view/View$ListenerInfo;Landroid/view/View$OnDragListener;)Landroid/view/View$OnDragListener;
 
-    .line 3760
     return-void
 .end method
 
@@ -25428,14 +25333,12 @@
     .parameter "l"
 
     .prologue
-    .line 3440
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
     move-result-object v0
 
     iput-object p1, v0, Landroid/view/View$ListenerInfo;->mOnFocusChangeListener:Landroid/view/View$OnFocusChangeListener;
 
-    .line 3441
     return-void
 .end method
 
@@ -25444,7 +25347,6 @@
     .parameter "l"
 
     .prologue
-    .line 3740
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
     move-result-object v0
@@ -25452,7 +25354,6 @@
     #setter for: Landroid/view/View$ListenerInfo;->mOnGenericMotionListener:Landroid/view/View$OnGenericMotionListener;
     invoke-static {v0, p1}, Landroid/view/View$ListenerInfo;->access$402(Landroid/view/View$ListenerInfo;Landroid/view/View$OnGenericMotionListener;)Landroid/view/View$OnGenericMotionListener;
 
-    .line 3741
     return-void
 .end method
 
@@ -25461,7 +25362,6 @@
     .parameter "l"
 
     .prologue
-    .line 3748
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
     move-result-object v0
@@ -25469,7 +25369,6 @@
     #setter for: Landroid/view/View$ListenerInfo;->mOnHoverListener:Landroid/view/View$OnHoverListener;
     invoke-static {v0, p1}, Landroid/view/View$ListenerInfo;->access$502(Landroid/view/View$ListenerInfo;Landroid/view/View$OnHoverListener;)Landroid/view/View$OnHoverListener;
 
-    .line 3749
     return-void
 .end method
 
@@ -25478,7 +25377,6 @@
     .parameter "l"
 
     .prologue
-    .line 3724
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
     move-result-object v0
@@ -25486,7 +25384,6 @@
     #setter for: Landroid/view/View$ListenerInfo;->mOnKeyListener:Landroid/view/View$OnKeyListener;
     invoke-static {v0, p1}, Landroid/view/View$ListenerInfo;->access$202(Landroid/view/View$ListenerInfo;Landroid/view/View$OnKeyListener;)Landroid/view/View$OnKeyListener;
 
-    .line 3725
     return-void
 .end method
 
@@ -25495,19 +25392,16 @@
     .parameter "l"
 
     .prologue
-    .line 3549
     invoke-virtual {p0}, Landroid/view/View;->isLongClickable()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3550
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setLongClickable(Z)V
 
-    .line 3552
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
@@ -25515,7 +25409,6 @@
 
     iput-object p1, v0, Landroid/view/View$ListenerInfo;->mOnLongClickListener:Landroid/view/View$OnLongClickListener;
 
-    .line 3553
     return-void
 .end method
 
@@ -25524,7 +25417,6 @@
     .parameter "l"
 
     .prologue
-    .line 13362
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
     move-result-object v0
@@ -25532,7 +25424,6 @@
     #setter for: Landroid/view/View$ListenerInfo;->mOnSystemUiVisibilityChangeListener:Landroid/view/View$OnSystemUiVisibilityChangeListener;
     invoke-static {v0, p1}, Landroid/view/View$ListenerInfo;->access$702(Landroid/view/View$ListenerInfo;Landroid/view/View$OnSystemUiVisibilityChangeListener;)Landroid/view/View$OnSystemUiVisibilityChangeListener;
 
-    .line 13363
     iget-object v0, p0, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
     if-eqz v0, :cond_0
@@ -25547,12 +25438,10 @@
 
     if-nez v0, :cond_0
 
-    .line 13364
     iget-object v0, p0, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
     invoke-interface {v0, p0}, Landroid/view/ViewParent;->recomputeViewAttributes(Landroid/view/View;)V
 
-    .line 13366
     :cond_0
     return-void
 .end method
@@ -25562,7 +25451,6 @@
     .parameter "l"
 
     .prologue
-    .line 3732
     invoke-virtual {p0}, Landroid/view/View;->getListenerInfo()Landroid/view/View$ListenerInfo;
 
     move-result-object v0
@@ -25570,7 +25458,6 @@
     #setter for: Landroid/view/View$ListenerInfo;->mOnTouchListener:Landroid/view/View$OnTouchListener;
     invoke-static {v0, p1}, Landroid/view/View$ListenerInfo;->access$302(Landroid/view/View$ListenerInfo;Landroid/view/View$OnTouchListener;)Landroid/view/View$OnTouchListener;
 
-    .line 3733
     return-void
 .end method
 
@@ -25579,7 +25466,6 @@
     .parameter "overScrollMode"
 
     .prologue
-    .line 13860
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -25590,7 +25476,6 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 13863
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -25615,11 +25500,9 @@
 
     throw v0
 
-    .line 13865
     :cond_0
     iput p1, p0, Landroid/view/View;->mOverScrollMode:I
 
-    .line 13866
     return-void
 .end method
 
@@ -25635,51 +25518,40 @@
 
     const/4 v3, 0x0
 
-    .line 11997
     const/4 v0, 0x0
 
-    .line 11999
     .local v0, changed:Z
     iput-boolean v3, p0, Landroid/view/View;->mUserPaddingRelative:Z
 
-    .line 12001
     iput p1, p0, Landroid/view/View;->mUserPaddingLeft:I
 
-    .line 12002
     iput p3, p0, Landroid/view/View;->mUserPaddingRight:I
 
-    .line 12003
     iput p4, p0, Landroid/view/View;->mUserPaddingBottom:I
 
-    .line 12005
     iget v2, p0, Landroid/view/View;->mViewFlags:I
 
-    .line 12008
     .local v2, viewFlags:I
     and-int/lit16 v4, v2, 0x300
 
     if-eqz v4, :cond_1
 
-    .line 12009
     and-int/lit16 v4, v2, 0x200
 
     if-eqz v4, :cond_0
 
-    .line 12010
     and-int v4, v2, v6
 
     if-nez v4, :cond_7
 
     move v1, v3
 
-    .line 12012
     .local v1, offset:I
     :goto_0
     iget v4, p0, Landroid/view/View;->mVerticalScrollbarPosition:I
 
     packed-switch v4, :pswitch_data_0
 
-    .line 12028
     .end local v1           #offset:I
     :cond_0
     :goto_1
@@ -25687,7 +25559,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 12029
     and-int v4, v2, v6
 
     if-nez v4, :cond_9
@@ -25695,66 +25566,50 @@
     :goto_2
     add-int/2addr p4, v3
 
-    .line 12034
     :cond_1
     iget v3, p0, Landroid/view/View;->mPaddingLeft:I
 
     if-eq v3, p1, :cond_2
 
-    .line 12035
     const/4 v0, 0x1
 
-    .line 12036
     iput p1, p0, Landroid/view/View;->mPaddingLeft:I
 
-    .line 12038
     :cond_2
     iget v3, p0, Landroid/view/View;->mPaddingTop:I
 
     if-eq v3, p2, :cond_3
 
-    .line 12039
     const/4 v0, 0x1
 
-    .line 12040
     iput p2, p0, Landroid/view/View;->mPaddingTop:I
 
-    .line 12042
     :cond_3
     iget v3, p0, Landroid/view/View;->mPaddingRight:I
 
     if-eq v3, p3, :cond_4
 
-    .line 12043
     const/4 v0, 0x1
 
-    .line 12044
     iput p3, p0, Landroid/view/View;->mPaddingRight:I
 
-    .line 12046
     :cond_4
     iget v3, p0, Landroid/view/View;->mPaddingBottom:I
 
     if-eq v3, p4, :cond_5
 
-    .line 12047
     const/4 v0, 0x1
 
-    .line 12048
     iput p4, p0, Landroid/view/View;->mPaddingBottom:I
 
-    .line 12051
     :cond_5
     if-eqz v0, :cond_6
 
-    .line 12052
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 12054
     :cond_6
     return-void
 
-    .line 12010
     :cond_7
     invoke-virtual {p0}, Landroid/view/View;->getVerticalScrollbarWidth()I
 
@@ -25762,7 +25617,6 @@
 
     goto :goto_0
 
-    .line 12014
     .restart local v1       #offset:I
     :pswitch_0
     invoke-virtual {p0}, Landroid/view/View;->getResolvedLayoutDirection()I
@@ -25773,32 +25627,25 @@
 
     if-ne v4, v5, :cond_8
 
-    .line 12015
     add-int/2addr p1, v1
 
     goto :goto_1
 
-    .line 12017
     :cond_8
     add-int/2addr p3, v1
 
-    .line 12019
     goto :goto_1
 
-    .line 12021
     :pswitch_1
     add-int/2addr p3, v1
 
-    .line 12022
     goto :goto_1
 
-    .line 12024
     :pswitch_2
     add-int/2addr p1, v1
 
     goto :goto_1
 
-    .line 12029
     .end local v1           #offset:I
     :cond_9
     invoke-virtual {p0}, Landroid/view/View;->getHorizontalScrollbarHeight()I
@@ -25807,7 +25654,6 @@
 
     goto :goto_2
 
-    .line 12012
     nop
 
     :pswitch_data_0
@@ -25826,38 +25672,30 @@
     .parameter "bottom"
 
     .prologue
-    .line 12076
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/view/View;->mUserPaddingRelative:Z
 
-    .line 12078
     iput p1, p0, Landroid/view/View;->mUserPaddingStart:I
 
-    .line 12079
     iput p3, p0, Landroid/view/View;->mUserPaddingEnd:I
 
-    .line 12081
     invoke-virtual {p0}, Landroid/view/View;->getResolvedLayoutDirection()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
-    .line 12087
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/view/View;->setPadding(IIII)V
 
-    .line 12089
     :goto_0
     return-void
 
-    .line 12083
     :pswitch_0
     invoke-virtual {p0, p3, p2, p1, p4}, Landroid/view/View;->setPadding(IIII)V
 
     goto :goto_0
 
-    .line 12081
     :pswitch_data_0
     .packed-switch 0x40000000
         :pswitch_0
@@ -25871,10 +25709,8 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 7619
     invoke-virtual {p0}, Landroid/view/View;->ensureTransformationInfo()V
 
-    .line 7620
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     const/high16 v2, 0x2000
@@ -25883,10 +25719,8 @@
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7621
     iget-object v0, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
-    .line 7622
     .local v0, info:Landroid/view/View$TransformationInfo;
     iget v1, v0, Landroid/view/View$TransformationInfo;->mPivotX:F
 
@@ -25894,31 +25728,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 7623
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 7625
     invoke-virtual {p0, v3}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7626
     iput p1, v0, Landroid/view/View$TransformationInfo;->mPivotX:F
 
-    .line 7627
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7628
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v1, v1, 0x20
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7629
     invoke-virtual {p0, v3}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7631
     :cond_0
     return-void
 .end method
@@ -25930,10 +25757,8 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 7662
     invoke-virtual {p0}, Landroid/view/View;->ensureTransformationInfo()V
 
-    .line 7663
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     const/high16 v2, 0x2000
@@ -25942,10 +25767,8 @@
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7664
     iget-object v0, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
-    .line 7665
     .local v0, info:Landroid/view/View$TransformationInfo;
     iget v1, v0, Landroid/view/View$TransformationInfo;->mPivotY:F
 
@@ -25953,31 +25776,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 7666
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 7668
     invoke-virtual {p0, v3}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7669
     iput p1, v0, Landroid/view/View$TransformationInfo;->mPivotY:F
 
-    .line 7670
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7671
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v1, v1, 0x20
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7672
     invoke-virtual {p0, v3}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7674
     :cond_0
     return-void
 .end method
@@ -25987,27 +25803,21 @@
     .parameter "pressed"
 
     .prologue
-    .line 5047
     if-eqz p1, :cond_0
 
-    .line 5048
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit16 v0, v0, 0x4000
 
     iput v0, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 5052
     :goto_0
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
-    .line 5053
     invoke-virtual {p0, p1}, Landroid/view/View;->dispatchSetPressed(Z)V
 
-    .line 5054
     return-void
 
-    .line 5050
     :cond_0
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -26027,15 +25837,12 @@
 
     const/4 v5, 0x1
 
-    .line 7941
     iget v6, p0, Landroid/view/View;->mRight:I
 
     if-eq p1, v6, :cond_4
 
-    .line 7942
     invoke-direct {p0}, Landroid/view/View;->updateMatrix()V
 
-    .line 7943
     iget-object v6, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
     if-eqz v6, :cond_0
@@ -26052,25 +25859,20 @@
     :cond_0
     move v1, v5
 
-    .line 7945
     .local v1, matrixIsIdentity:Z
     :goto_0
     if-eqz v1, :cond_7
 
-    .line 7946
     iget-object v6, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     if-eqz v6, :cond_1
 
-    .line 7948
     iget v6, p0, Landroid/view/View;->mRight:I
 
     if-ge p1, v6, :cond_6
 
-    .line 7949
     iget v2, p0, Landroid/view/View;->mRight:I
 
-    .line 7953
     .local v2, maxRight:I
     :goto_1
     iget v6, p0, Landroid/view/View;->mLeft:I
@@ -26085,7 +25887,6 @@
 
     invoke-virtual {p0, v4, v4, v6, v7}, Landroid/view/View;->invalidate(IIII)V
 
-    .line 7960
     .end local v2           #maxRight:I
     :cond_1
     :goto_2
@@ -26095,7 +25896,6 @@
 
     sub-int v3, v4, v6
 
-    .line 7961
     .local v3, oldWidth:I
     iget v4, p0, Landroid/view/View;->mBottom:I
 
@@ -26103,11 +25903,9 @@
 
     sub-int v0, v4, v6
 
-    .line 7963
     .local v0, height:I
     iput p1, p0, Landroid/view/View;->mRight:I
 
-    .line 7965
     iget v4, p0, Landroid/view/View;->mRight:I
 
     iget v6, p0, Landroid/view/View;->mLeft:I
@@ -26116,10 +25914,8 @@
 
     invoke-virtual {p0, v4, v0, v3, v0}, Landroid/view/View;->onSizeChanged(IIII)V
 
-    .line 7967
     if-nez v1, :cond_3
 
-    .line 7968
     iget v4, p0, Landroid/view/View;->mPrivateFlags:I
 
     const/high16 v6, 0x2000
@@ -26128,12 +25924,10 @@
 
     if-nez v4, :cond_2
 
-    .line 7970
     iget-object v4, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
     iput-boolean v5, v4, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7972
     :cond_2
     iget v4, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -26141,17 +25935,13 @@
 
     iput v4, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7973
     invoke-virtual {p0, v5}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7975
     :cond_3
     iput-boolean v5, p0, Landroid/view/View;->mBackgroundSizeChanged:Z
 
-    .line 7976
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentIfNeeded()V
 
-    .line 7978
     .end local v0           #height:I
     .end local v1           #matrixIsIdentity:Z
     .end local v3           #oldWidth:I
@@ -26161,10 +25951,8 @@
     :cond_5
     move v1, v4
 
-    .line 7943
     goto :goto_0
 
-    .line 7951
     .restart local v1       #matrixIsIdentity:Z
     :cond_6
     move v2, p1
@@ -26172,7 +25960,6 @@
     .restart local v2       #maxRight:I
     goto :goto_1
 
-    .line 7957
     .end local v2           #maxRight:I
     :cond_7
     invoke-virtual {p0, v5}, Landroid/view/View;->invalidate(Z)V
@@ -26187,13 +25974,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 7408
     invoke-virtual {p0}, Landroid/view/View;->ensureTransformationInfo()V
 
-    .line 7409
     iget-object v0, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
-    .line 7410
     .local v0, info:Landroid/view/View$TransformationInfo;
     iget v1, v0, Landroid/view/View$TransformationInfo;->mRotation:F
 
@@ -26201,31 +25985,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 7411
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 7413
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7414
     iput p1, v0, Landroid/view/View$TransformationInfo;->mRotation:F
 
-    .line 7415
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7416
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v1, v1, 0x20
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7417
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7419
     :cond_0
     return-void
 .end method
@@ -26237,13 +26014,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 7500
     invoke-virtual {p0}, Landroid/view/View;->ensureTransformationInfo()V
 
-    .line 7501
     iget-object v0, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
-    .line 7502
     .local v0, info:Landroid/view/View$TransformationInfo;
     iget v1, v0, Landroid/view/View$TransformationInfo;->mRotationX:F
 
@@ -26251,31 +26025,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 7503
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 7505
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7506
     iput p1, v0, Landroid/view/View$TransformationInfo;->mRotationX:F
 
-    .line 7507
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7508
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v1, v1, 0x20
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7509
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7511
     :cond_0
     return-void
 .end method
@@ -26287,13 +26054,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 7454
     invoke-virtual {p0}, Landroid/view/View;->ensureTransformationInfo()V
 
-    .line 7455
     iget-object v0, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
-    .line 7456
     .local v0, info:Landroid/view/View$TransformationInfo;
     iget v1, v0, Landroid/view/View$TransformationInfo;->mRotationY:F
 
@@ -26301,31 +26065,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 7457
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 7459
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7460
     iput p1, v0, Landroid/view/View$TransformationInfo;->mRotationY:F
 
-    .line 7461
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7462
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v1, v1, 0x20
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7463
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7465
     :cond_0
     return-void
 .end method
@@ -26337,7 +26094,6 @@
     .prologue
     const/high16 v1, 0x1
 
-    .line 5111
     if-eqz p1, :cond_0
 
     const/4 v0, 0x0
@@ -26345,13 +26101,11 @@
     :goto_0
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setFlags(II)V
 
-    .line 5112
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 5111
     goto :goto_0
 .end method
 
@@ -26362,7 +26116,6 @@
     .prologue
     const/high16 v1, 0x2000
 
-    .line 5172
     if-eqz p1, :cond_0
 
     const/4 v0, 0x0
@@ -26370,13 +26123,11 @@
     :goto_0
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setFlags(II)V
 
-    .line 5173
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 5172
     goto :goto_0
 .end method
 
@@ -26387,13 +26138,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 7538
     invoke-virtual {p0}, Landroid/view/View;->ensureTransformationInfo()V
 
-    .line 7539
     iget-object v0, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
-    .line 7540
     .local v0, info:Landroid/view/View$TransformationInfo;
     iget v1, v0, Landroid/view/View$TransformationInfo;->mScaleX:F
 
@@ -26401,31 +26149,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 7541
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 7543
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7544
     iput p1, v0, Landroid/view/View$TransformationInfo;->mScaleX:F
 
-    .line 7545
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7546
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v1, v1, 0x20
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7547
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7549
     :cond_0
     return-void
 .end method
@@ -26437,13 +26178,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 7576
     invoke-virtual {p0}, Landroid/view/View;->ensureTransformationInfo()V
 
-    .line 7577
     iget-object v0, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
-    .line 7578
     .local v0, info:Landroid/view/View$TransformationInfo;
     iget v1, v0, Landroid/view/View$TransformationInfo;->mScaleY:F
 
@@ -26451,31 +26189,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 7579
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 7581
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7582
     iput p1, v0, Landroid/view/View$TransformationInfo;->mScaleY:F
 
-    .line 7583
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7584
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v1, v1, 0x20
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7585
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7587
     :cond_0
     return-void
 .end method
@@ -26487,14 +26218,12 @@
     .prologue
     const/high16 v2, 0x300
 
-    .line 9313
     iget v0, p0, Landroid/view/View;->mViewFlags:I
 
     and-int/2addr v0, v2
 
     if-eq p1, v0, :cond_0
 
-    .line 9314
     iget v0, p0, Landroid/view/View;->mViewFlags:I
 
     const v1, -0x3000001
@@ -26507,13 +26236,10 @@
 
     iput v0, p0, Landroid/view/View;->mViewFlags:I
 
-    .line 9315
     invoke-virtual {p0}, Landroid/view/View;->computeOpaqueFlags()V
 
-    .line 9316
     invoke-virtual {p0}, Landroid/view/View;->resolvePadding()V
 
-    .line 9318
     :cond_0
     return-void
 .end method
@@ -26525,10 +26251,8 @@
     .prologue
     const/high16 v1, 0x10
 
-    .line 4448
     if-eqz p1, :cond_1
 
-    .line 4449
     iget-object v0, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     if-eqz v0, :cond_0
@@ -26539,21 +26263,18 @@
 
     if-nez v0, :cond_0
 
-    .line 4450
     iget-object v0, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     iget-object v0, v0, Landroid/view/View$AttachInfo;->mScrollContainers:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 4451
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/2addr v0, v1
 
     iput v0, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 4453
     :cond_0
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -26563,11 +26284,9 @@
 
     iput v0, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 4460
     :goto_0
     return-void
 
-    .line 4455
     :cond_1
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -26575,14 +26294,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 4456
     iget-object v0, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     iget-object v0, v0, Landroid/view/View$AttachInfo;->mScrollContainers:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 4458
     :cond_2
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -26600,12 +26317,10 @@
     .parameter "value"
 
     .prologue
-    .line 7073
     iget v0, p0, Landroid/view/View;->mScrollY:I
 
     invoke-virtual {p0, p1, v0}, Landroid/view/View;->scrollTo(II)V
 
-    .line 7074
     return-void
 .end method
 
@@ -26614,12 +26329,10 @@
     .parameter "value"
 
     .prologue
-    .line 7083
     iget v0, p0, Landroid/view/View;->mScrollX:I
 
     invoke-virtual {p0, v0, p1}, Landroid/view/View;->scrollTo(II)V
 
-    .line 7084
     return-void
 .end method
 
@@ -26628,29 +26341,22 @@
     .parameter "fadeScrollbars"
 
     .prologue
-    .line 9275
     invoke-direct {p0}, Landroid/view/View;->initScrollCache()V
 
-    .line 9276
     iget-object v0, p0, Landroid/view/View;->mScrollCache:Landroid/view/View$ScrollabilityCache;
 
-    .line 9277
     .local v0, scrollabilityCache:Landroid/view/View$ScrollabilityCache;
     iput-boolean p1, v0, Landroid/view/View$ScrollabilityCache;->fadeScrollBars:Z
 
-    .line 9278
     if-eqz p1, :cond_0
 
-    .line 9279
     const/4 v1, 0x0
 
     iput v1, v0, Landroid/view/View$ScrollabilityCache;->state:I
 
-    .line 9283
     :goto_0
     return-void
 
-    .line 9281
     :cond_0
     const/4 v1, 0x1
 
@@ -26668,7 +26374,6 @@
 
     const/4 v0, 0x0
 
-    .line 12184
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     and-int/lit8 v1, v1, 0x4
@@ -26680,7 +26385,6 @@
     :goto_0
     if-eq v1, p1, :cond_2
 
-    .line 12185
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     and-int/lit8 v1, v1, -0x5
@@ -26694,29 +26398,23 @@
 
     iput v0, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 12186
     if-nez p1, :cond_1
 
     invoke-direct {p0}, Landroid/view/View;->resetPressedState()V
 
-    .line 12187
     :cond_1
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 12188
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
-    .line 12189
     invoke-virtual {p0, p1}, Landroid/view/View;->dispatchSetSelected(Z)V
 
-    .line 12191
     :cond_2
     return-void
 
     :cond_3
     move v1, v0
 
-    .line 12184
     goto :goto_0
 .end method
 
@@ -26725,10 +26423,8 @@
     .parameter "soundEffect"
 
     .prologue
-    .line 3588
     iput p1, p0, Landroid/view/View;->mSoundEffect:I
 
-    .line 3589
     return-void
 .end method
 
@@ -26739,7 +26435,6 @@
     .prologue
     const/high16 v1, 0x800
 
-    .line 4817
     if-eqz p1, :cond_0
 
     move v0, v1
@@ -26747,10 +26442,8 @@
     :goto_0
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setFlags(II)V
 
-    .line 4818
     return-void
 
-    .line 4817
     :cond_0
     const/4 v0, 0x0
 
@@ -26762,15 +26455,12 @@
     .parameter "visibility"
 
     .prologue
-    .line 13340
     iget v0, p0, Landroid/view/View;->mSystemUiVisibility:I
 
     if-eq p1, v0, :cond_0
 
-    .line 13341
     iput p1, p0, Landroid/view/View;->mSystemUiVisibility:I
 
-    .line 13342
     iget-object v0, p0, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
     if-eqz v0, :cond_0
@@ -26785,12 +26475,10 @@
 
     if-nez v0, :cond_0
 
-    .line 13343
     iget-object v0, p0, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
     invoke-interface {v0, p0}, Landroid/view/ViewParent;->recomputeViewAttributes(Landroid/view/View;)V
 
-    .line 13346
     :cond_0
     return-void
 .end method
@@ -26801,14 +26489,12 @@
     .parameter "tag"
 
     .prologue
-    .line 12634
     ushr-int/lit8 v0, p1, 0x18
 
     const/4 v1, 0x2
 
     if-ge v0, v1, :cond_0
 
-    .line 12635
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "The key must be an application-specific resource id."
@@ -26817,11 +26503,9 @@
 
     throw v0
 
-    .line 12639
     :cond_0
     invoke-direct {p0, p1, p2}, Landroid/view/View;->setKeyedTag(ILjava/lang/Object;)V
 
-    .line 12640
     return-void
 .end method
 
@@ -26830,10 +26514,8 @@
     .parameter "tag"
 
     .prologue
-    .line 12592
     iput-object p1, p0, Landroid/view/View;->mTag:Ljava/lang/Object;
 
-    .line 12593
     return-void
 .end method
 
@@ -26843,14 +26525,12 @@
     .parameter "tag"
 
     .prologue
-    .line 12649
     ushr-int/lit8 v0, p1, 0x18
 
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 12650
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "The key must be a framework-specific resource id."
@@ -26859,11 +26539,9 @@
 
     throw v0
 
-    .line 12654
     :cond_0
     invoke-direct {p0, p1, p2}, Landroid/view/View;->setKeyedTag(ILjava/lang/Object;)V
 
-    .line 12655
     return-void
 .end method
 
@@ -26872,21 +26550,16 @@
     .parameter "textDirection"
 
     .prologue
-    .line 13931
     iget v0, p0, Landroid/view/View;->mTextDirection:I
 
     if-eq p1, v0, :cond_0
 
-    .line 13932
     iput p1, p0, Landroid/view/View;->mTextDirection:I
 
-    .line 13933
     invoke-virtual {p0}, Landroid/view/View;->resetResolvedTextDirection()V
 
-    .line 13934
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 13936
     :cond_0
     return-void
 .end method
@@ -26900,15 +26573,12 @@
 
     const/4 v6, 0x1
 
-    .line 7755
     iget v7, p0, Landroid/view/View;->mTop:I
 
     if-eq p1, v7, :cond_4
 
-    .line 7756
     invoke-direct {p0}, Landroid/view/View;->updateMatrix()V
 
-    .line 7757
     iget-object v7, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
     if-eqz v7, :cond_0
@@ -26925,31 +26595,25 @@
     :cond_0
     move v0, v6
 
-    .line 7759
     .local v0, matrixIsIdentity:Z
     :goto_0
     if-eqz v0, :cond_7
 
-    .line 7760
     iget-object v7, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     if-eqz v7, :cond_1
 
-    .line 7763
     iget v7, p0, Landroid/view/View;->mTop:I
 
     if-ge p1, v7, :cond_6
 
-    .line 7764
     move v1, p1
 
-    .line 7765
     .local v1, minTop:I
     iget v7, p0, Landroid/view/View;->mTop:I
 
     sub-int v4, p1, v7
 
-    .line 7770
     .local v4, yLoc:I
     :goto_1
     iget v7, p0, Landroid/view/View;->mRight:I
@@ -26964,7 +26628,6 @@
 
     invoke-virtual {p0, v5, v4, v7, v8}, Landroid/view/View;->invalidate(IIII)V
 
-    .line 7777
     .end local v1           #minTop:I
     .end local v4           #yLoc:I
     :cond_1
@@ -26975,7 +26638,6 @@
 
     sub-int v3, v5, v7
 
-    .line 7778
     .local v3, width:I
     iget v5, p0, Landroid/view/View;->mBottom:I
 
@@ -26983,11 +26645,9 @@
 
     sub-int v2, v5, v7
 
-    .line 7780
     .local v2, oldHeight:I
     iput p1, p0, Landroid/view/View;->mTop:I
 
-    .line 7782
     iget v5, p0, Landroid/view/View;->mBottom:I
 
     iget v7, p0, Landroid/view/View;->mTop:I
@@ -26996,10 +26656,8 @@
 
     invoke-virtual {p0, v3, v5, v3, v2}, Landroid/view/View;->onSizeChanged(IIII)V
 
-    .line 7784
     if-nez v0, :cond_3
 
-    .line 7785
     iget v5, p0, Landroid/view/View;->mPrivateFlags:I
 
     const/high16 v7, 0x2000
@@ -27008,12 +26666,10 @@
 
     if-nez v5, :cond_2
 
-    .line 7787
     iget-object v5, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
     iput-boolean v6, v5, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 7789
     :cond_2
     iget v5, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -27021,17 +26677,13 @@
 
     iput v5, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 7790
     invoke-virtual {p0, v6}, Landroid/view/View;->invalidate(Z)V
 
-    .line 7792
     :cond_3
     iput-boolean v6, p0, Landroid/view/View;->mBackgroundSizeChanged:Z
 
-    .line 7793
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentIfNeeded()V
 
-    .line 7795
     .end local v0           #matrixIsIdentity:Z
     .end local v2           #oldHeight:I
     .end local v3           #width:I
@@ -27041,22 +26693,18 @@
     :cond_5
     move v0, v5
 
-    .line 7757
     goto :goto_0
 
-    .line 7767
     .restart local v0       #matrixIsIdentity:Z
     :cond_6
     iget v1, p0, Landroid/view/View;->mTop:I
 
-    .line 7768
     .restart local v1       #minTop:I
     const/4 v4, 0x0
 
     .restart local v4       #yLoc:I
     goto :goto_1
 
-    .line 7774
     .end local v1           #minTop:I
     .end local v4           #yLoc:I
     :cond_7
@@ -27070,10 +26718,8 @@
     .parameter "delegate"
 
     .prologue
-    .line 6821
     iput-object p1, p0, Landroid/view/View;->mTouchDelegate:Landroid/view/TouchDelegate;
 
-    .line 6822
     return-void
 .end method
 
@@ -27084,13 +26730,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 8047
     invoke-virtual {p0}, Landroid/view/View;->ensureTransformationInfo()V
 
-    .line 8048
     iget-object v0, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
-    .line 8049
     .local v0, info:Landroid/view/View$TransformationInfo;
     iget v1, v0, Landroid/view/View$TransformationInfo;->mTranslationX:F
 
@@ -27098,31 +26741,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 8050
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 8052
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 8053
     iput p1, v0, Landroid/view/View$TransformationInfo;->mTranslationX:F
 
-    .line 8054
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 8055
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v1, v1, 0x20
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 8056
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 8058
     :cond_0
     return-void
 .end method
@@ -27134,13 +26770,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 8083
     invoke-virtual {p0}, Landroid/view/View;->ensureTransformationInfo()V
 
-    .line 8084
     iget-object v0, p0, Landroid/view/View;->mTransformationInfo:Landroid/view/View$TransformationInfo;
 
-    .line 8085
     .local v0, info:Landroid/view/View$TransformationInfo;
     iget v1, v0, Landroid/view/View$TransformationInfo;->mTranslationY:F
 
@@ -27148,31 +26781,24 @@
 
     if-eqz v1, :cond_0
 
-    .line 8086
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 8088
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 8089
     iput p1, v0, Landroid/view/View$TransformationInfo;->mTranslationY:F
 
-    .line 8090
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Landroid/view/View$TransformationInfo;->mMatrixDirty:Z
 
-    .line 8091
     iget v1, p0, Landroid/view/View;->mPrivateFlags:I
 
     or-int/lit8 v1, v1, 0x20
 
     iput v1, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 8092
     invoke-virtual {p0, v2}, Landroid/view/View;->invalidate(Z)V
 
-    .line 8094
     :cond_0
     return-void
 .end method
@@ -27182,19 +26808,15 @@
     .parameter "type"
 
     .prologue
-    .line 15229
     invoke-virtual {p0}, Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl;
 
     move-result-object v0
 
-    .line 15231
     .local v0, viewroot:Landroid/view/ViewRootImpl;
     if-eqz v0, :cond_0
 
-    .line 15233
     invoke-virtual {v0, p1}, Landroid/view/ViewRootImpl;->setVelocityPolynomialType(I)V
 
-    .line 15236
     :cond_0
     return-void
 .end method
@@ -27204,20 +26826,16 @@
     .parameter "verticalFadingEdgeEnabled"
 
     .prologue
-    .line 9134
     invoke-virtual {p0}, Landroid/view/View;->isVerticalFadingEdgeEnabled()Z
 
     move-result v0
 
     if-eq v0, p1, :cond_1
 
-    .line 9135
     if-eqz p1, :cond_0
 
-    .line 9136
     invoke-direct {p0}, Landroid/view/View;->initScrollCache()V
 
-    .line 9139
     :cond_0
     iget v0, p0, Landroid/view/View;->mViewFlags:I
 
@@ -27225,7 +26843,7 @@
 
     iput v0, p0, Landroid/view/View;->mViewFlags:I
 
-    .line 9141
+    .line 9106
     :cond_1
     return-void
 .end method
@@ -27235,27 +26853,22 @@
     .parameter "verticalScrollBarEnabled"
 
     .prologue
-    .line 9254
     invoke-virtual {p0}, Landroid/view/View;->isVerticalScrollBarEnabled()Z
 
     move-result v0
 
     if-eq v0, p1, :cond_0
 
-    .line 9255
     iget v0, p0, Landroid/view/View;->mViewFlags:I
 
     xor-int/lit16 v0, v0, 0x200
 
     iput v0, p0, Landroid/view/View;->mViewFlags:I
 
-    .line 9256
     invoke-virtual {p0}, Landroid/view/View;->computeOpaqueFlags()V
 
-    .line 9257
     invoke-virtual {p0}, Landroid/view/View;->resolvePadding()V
 
-    .line 9259
     :cond_0
     return-void
 .end method
@@ -27265,21 +26878,16 @@
     .parameter "position"
 
     .prologue
-    .line 3411
     iget v0, p0, Landroid/view/View;->mVerticalScrollbarPosition:I
 
     if-eq v0, p1, :cond_0
 
-    .line 3412
     iput p1, p0, Landroid/view/View;->mVerticalScrollbarPosition:I
 
-    .line 3413
     invoke-virtual {p0}, Landroid/view/View;->computeOpaqueFlags()V
 
-    .line 3414
     invoke-virtual {p0}, Landroid/view/View;->resolvePadding()V
 
-    .line 3416
     :cond_0
     return-void
 .end method
@@ -27293,12 +26901,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 4726
     const/16 v0, 0xc
 
     invoke-virtual {p0, p1, v0}, Landroid/view/View;->setFlags(II)V
 
-    .line 4727
     iget-object v0, p0, Landroid/view/View;->mBGDrawable:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
@@ -27312,14 +26918,12 @@
     :goto_0
     invoke-virtual {v2, v0, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
-    .line 4728
     :cond_0
     return-void
 
     :cond_1
     move v0, v1
 
-    .line 4727
     goto :goto_0
 .end method
 
@@ -27330,7 +26934,6 @@
     .prologue
     const/high16 v1, 0x2
 
-    .line 4970
     if-eqz p1, :cond_0
 
     move v0, v1
@@ -27338,10 +26941,8 @@
     :goto_0
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setFlags(II)V
 
-    .line 4971
     return-void
 
-    .line 4970
     :cond_0
     const/4 v0, 0x0
 
@@ -27355,7 +26956,6 @@
     .prologue
     const/16 v1, 0x80
 
-    .line 4947
     if-eqz p1, :cond_0
 
     move v0, v1
@@ -27363,10 +26963,8 @@
     :goto_0
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setFlags(II)V
 
-    .line 4948
     return-void
 
-    .line 4947
     :cond_0
     const/4 v0, 0x0
 
@@ -27378,7 +26976,6 @@
     .parameter "x"
 
     .prologue
-    .line 7999
     iget v0, p0, Landroid/view/View;->mLeft:I
 
     int-to-float v0, v0
@@ -27387,7 +26984,6 @@
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 8000
     return-void
 .end method
 
@@ -27396,7 +26992,6 @@
     .parameter "y"
 
     .prologue
-    .line 8021
     iget v0, p0, Landroid/view/View;->mTop:I
 
     int-to-float v0, v0
@@ -27405,7 +27000,6 @@
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 8022
     return-void
 .end method
 
@@ -27413,7 +27007,6 @@
     .locals 1
 
     .prologue
-    .line 3690
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
@@ -27432,7 +27025,6 @@
     .parameter "metaState"
 
     .prologue
-    .line 3704
     invoke-virtual {p0}, Landroid/view/View;->showContextMenu()Z
 
     move-result v0
@@ -27445,7 +27037,6 @@
     .parameter "callback"
 
     .prologue
-    .line 3716
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
@@ -27462,23 +27053,18 @@
     .parameter "animation"
 
     .prologue
-    .line 13146
     const-wide/16 v0, -0x1
 
     invoke-virtual {p1, v0, v1}, Landroid/view/animation/Animation;->setStartTime(J)V
 
-    .line 13147
     invoke-virtual {p0, p1}, Landroid/view/View;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 13148
     invoke-virtual {p0}, Landroid/view/View;->invalidateParentCaches()V
 
-    .line 13149
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Landroid/view/View;->invalidate(Z)V
 
-    .line 13150
     return-void
 .end method
 
@@ -27490,22 +27076,18 @@
     .parameter "flags"
 
     .prologue
-    .line 13546
     const/16 v19, 0x0
 
-    .line 13548
     .local v19, okay:Z
     new-instance v21, Landroid/graphics/Point;
 
     invoke-direct/range {v21 .. v21}, Landroid/graphics/Point;-><init>()V
 
-    .line 13549
     .local v21, shadowSize:Landroid/graphics/Point;
     new-instance v22, Landroid/graphics/Point;
 
     invoke-direct/range {v22 .. v22}, Landroid/graphics/Point;-><init>()V
 
-    .line 13550
     .local v22, shadowTouchPoint:Landroid/graphics/Point;
     move-object/from16 v0, p2
 
@@ -27515,7 +27097,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/View$DragShadowBuilder;->onProvideShadowMetrics(Landroid/graphics/Point;Landroid/graphics/Point;)V
 
-    .line 13552
     move-object/from16 v0, v21
 
     iget v3, v0, Landroid/graphics/Point;->x:I
@@ -27540,7 +27121,6 @@
 
     if-gez v3, :cond_1
 
-    .line 13554
     :cond_0
     new-instance v3, Ljava/lang/IllegalStateException;
 
@@ -27550,13 +27130,11 @@
 
     throw v3
 
-    .line 13561
     :cond_1
     new-instance v8, Landroid/view/Surface;
 
     invoke-direct {v8}, Landroid/view/Surface;-><init>()V
 
-    .line 13563
     .local v8, surface:Landroid/view/Surface;
     :try_start_0
     move-object/from16 v0, p0
@@ -27585,11 +27163,9 @@
 
     move-result-object v11
 
-    .line 13567
     .local v11, token:Landroid/os/IBinder;
     if-eqz v11, :cond_2
 
-    .line 13568
     const/4 v3, 0x0
 
     invoke-virtual {v8, v3}, Landroid/view/Surface;->lockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
@@ -27598,7 +27174,6 @@
 
     move-result-object v17
 
-    .line 13570
     .local v17, canvas:Landroid/graphics/Canvas;
     const/4 v3, 0x0
 
@@ -27609,7 +27184,6 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/graphics/Canvas;->drawColor(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 13571
     move-object/from16 v0, p2
 
     move-object/from16 v1, v17
@@ -27618,18 +27192,15 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 13573
     :try_start_2
     move-object/from16 v0, v17
 
     invoke-virtual {v8, v0}, Landroid/view/Surface;->unlockCanvasAndPost(Landroid/graphics/Canvas;)V
 
-    .line 13576
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl;
 
     move-result-object v20
 
-    .line 13579
     .local v20, root:Landroid/view/ViewRootImpl;
     move-object/from16 v0, v20
 
@@ -27637,10 +27208,8 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewRootImpl;->setLocalDragState(Ljava/lang/Object;)V
 
-    .line 13582
     invoke-virtual/range {v20 .. v21}, Landroid/view/ViewRootImpl;->getLastTouchPoint(Landroid/graphics/Point;)V
 
-    .line 13584
     move-object/from16 v0, p0
 
     iget-object v3, v0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
@@ -27683,10 +27252,8 @@
 
     move-result v19
 
-    .line 13591
     invoke-virtual {v8}, Landroid/view/Surface;->release()V
 
-    .line 13598
     .end local v11           #token:Landroid/os/IBinder;
     .end local v17           #canvas:Landroid/graphics/Canvas;
     .end local v20           #root:Landroid/view/ViewRootImpl;
@@ -27694,7 +27261,6 @@
     :goto_0
     return v19
 
-    .line 13573
     .restart local v11       #token:Landroid/os/IBinder;
     .restart local v17       #canvas:Landroid/graphics/Canvas;
     :catchall_0
@@ -27708,13 +27274,11 @@
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 13593
     .end local v11           #token:Landroid/os/IBinder;
     .end local v17           #canvas:Landroid/graphics/Canvas;
     :catch_0
     move-exception v18
 
-    .line 13594
     .local v18, e:Ljava/lang/Exception;
     const-string v3, "View"
 
@@ -27724,7 +27288,6 @@
 
     invoke-static {v3, v4, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 13595
     invoke-virtual {v8}, Landroid/view/Surface;->destroy()V
 
     goto :goto_0
@@ -27736,29 +27299,25 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3891
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
     and-int/lit8 v0, v0, 0x2
 
     if-eqz v0, :cond_0
 
-    .line 3892
+    .line 6578
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
     and-int/lit8 v0, v0, -0x3
 
     iput v0, p0, Landroid/view/View;->mPrivateFlags:I
 
-    .line 3894
     const/4 v0, 0x0
 
     invoke-virtual {p0, v1, v1, v0}, Landroid/view/View;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
-    .line 3895
     invoke-virtual {p0}, Landroid/view/View;->refreshDrawableState()V
 
-    .line 3897
     :cond_0
     return-void
 .end method
@@ -27768,19 +27327,16 @@
     .parameter "who"
 
     .prologue
-    .line 11633
     iget-object v0, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     if-eqz v0, :cond_0
 
-    .line 11634
     iget-object v0, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     iget-object v0, v0, Landroid/view/View$AttachInfo;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 11636
     :cond_0
     return-void
 .end method
@@ -27791,7 +27347,6 @@
     .parameter "what"
 
     .prologue
-    .line 11614
     invoke-virtual {p0, p1}, Landroid/view/View;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
 
     move-result v0
@@ -27800,24 +27355,21 @@
 
     if-eqz p2, :cond_0
 
-    .line 11615
     iget-object v0, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     if-eqz v0, :cond_1
 
-    .line 11616
     iget-object v0, p0, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
     iget-object v0, v0, Landroid/view/View$AttachInfo;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, p2, p1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;Ljava/lang/Object;)V
 
-    .line 11621
     :cond_0
     :goto_0
     return-void
 
-    .line 11618
+    .line 9141
     :cond_1
     invoke-static {}, Landroid/view/ViewRootImpl;->getRunQueue()Landroid/view/ViewRootImpl$RunQueue;
 
@@ -27834,7 +27386,6 @@
     .parameter "localChanges"
 
     .prologue
-    .line 13381
     iget v1, p0, Landroid/view/View;->mSystemUiVisibility:I
 
     xor-int/lit8 v2, p2, -0x1
@@ -27845,16 +27396,13 @@
 
     or-int v0, v1, v2
 
-    .line 13382
     .local v0, val:I
     iget v1, p0, Landroid/view/View;->mSystemUiVisibility:I
 
     if-eq v0, v1, :cond_0
 
-    .line 13383
     invoke-virtual {p0, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
 
-    .line 13385
     :cond_0
     return-void
 .end method
@@ -27864,7 +27412,6 @@
     .parameter "who"
 
     .prologue
-    .line 11669
     iget-object v0, p0, Landroid/view/View;->mBGDrawable:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v0, :cond_0
@@ -27889,7 +27436,6 @@
     .prologue
     const/high16 v1, 0x2
 
-    .line 4980
     iget v0, p0, Landroid/view/View;->mViewFlags:I
 
     and-int/2addr v0, v1
@@ -27914,7 +27460,6 @@
     .end annotation
 
     .prologue
-    .line 4957
     iget v0, p0, Landroid/view/View;->mViewFlags:I
 
     and-int/lit16 v0, v0, 0x80
@@ -27928,6 +27473,7 @@
     :goto_0
     return v0
 
+    .line 13554
     :cond_0
     const/4 v0, 0x0
 
