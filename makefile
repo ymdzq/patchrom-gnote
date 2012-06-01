@@ -6,12 +6,12 @@
 local-zip-file     := stockrom.zip
 
 # The output zip file of MIUI rom, the default is porting_miui.zip if not specified
-local-out-zip-file := MIUI_i9100.zip
+local-out-zip-file := MIUI_gnote.zip
 
 # All apps from original ZIP, but has smali files chanded
 local-modified-apps := CallSetting SamsungSettings
 
-local-modified-jars := framework2
+#local-modified-jars := framework2
 
 # All apks from MIUI
 local-miui-removed-apps := MediaProvider Gallery Stk Bluetooth
@@ -24,7 +24,7 @@ include phoneapps.mk
 # and the local-targets should:
 # (1) be defined after including porting.mk if using any global variable(see porting.mk)
 # (2) the name should be leaded with local- to prevent any conflict with global targets
-local-pre-zip := local-pre-zip-misc local-update-theme-icon
+# local-pre-zip := local-pre-zip-misc local-update-theme-icon
 local-after-zip:= local-put-to-phone
 
 # The local targets after the zip file is generated, could include 'zip2sd' to 
@@ -46,13 +46,8 @@ local-update-theme-icon:
 	$(ZIP) -j $(ZIP_DIR)/system/media/theme/default/icons.zip $(TMP_DIR)/default_theme_icons/*
 	mv $(ZIP_DIR)/system/media/theme/default/icons.zip $(ZIP_DIR)/system/media/theme/default/icons
 
-local-rom-zip := MIUI_i9100.zip
+local-rom-zip := MIUI_gnote.zip
 local-put-to-phone:
 	adb shell rm /sdcard/$(local-rom-zip)
 	adb push out/$(local-rom-zip) /sdcard/
 	adb reboot recovery
-
-local-ota-update:
-	rm $(ZIP_DIR)/system/app/SuperMarket.apk
-	rm $(ZIP_DIR)/system/app/Gallery2.apk
-	

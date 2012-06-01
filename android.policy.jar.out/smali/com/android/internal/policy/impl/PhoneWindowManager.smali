@@ -9769,7 +9769,7 @@
 
     .prologue
     .line 3577
-    invoke-virtual/range {v1 .. p1}, Landroid/view/KeyEvent;->getAction()I
+    invoke-virtual/range {p1 .. p1}, Landroid/view/KeyEvent;->getAction()I
 
     move-result v17
 
@@ -9780,13 +9780,13 @@
     .line 3578
     .local v5, down:Z
     :goto_0
-    invoke-virtual/range {v1 .. p1}, Landroid/view/KeyEvent;->isCanceled()Z
+    invoke-virtual/range {p1 .. p1}, Landroid/view/KeyEvent;->isCanceled()Z
 
     move-result v4
 
     .line 3579
     .local v4, canceled:Z
-    invoke-virtual/range {v1 .. p1}, Landroid/view/KeyEvent;->getKeyCode()I
+    invoke-virtual/range {p1 .. p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v12
 
@@ -9927,7 +9927,7 @@
 
     if-eqz v17, :cond_7
 
-    invoke-virtual/range {v1 .. p1}, Landroid/view/KeyEvent;->getRepeatCount()I
+    invoke-virtual/range {p1 .. p1}, Landroid/view/KeyEvent;->getRepeatCount()I
 
     move-result v17
 
@@ -10300,19 +10300,20 @@
     .line 3714
     and-int/lit8 v14, v14, -0x2
 
-    iget-object v15, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
+    move-object/from16 v0, p0
+    iget-object v15, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
 
-    if-eqz v15, :cond_0
+    if-eqz v15, :cond_1
 
-    iget-object v15, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
+    iget-object v15, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
 
     new-instance v16, Landroid/content/Intent;
 
     const-string v17, "android.intent.action.KEYCODE_POWER_UP"
 
-    invoke-direct {v16, v17}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct/range {v16 .. v17}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v15, v16}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual/range {v15 .. v16}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_4
 
@@ -10583,7 +10584,7 @@
     :cond_19
     move-object/from16 v0, p0
 
-    invoke-virtual {p0, v4}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
+    invoke-virtual {v0, v4}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
 
     move-result v17
 
@@ -10926,7 +10927,7 @@
 
     move/from16 v1, v17
 
-    invoke-virtual {p0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/internal/policy/impl/PhoneWindowManager;->interceptPowerKeyUp(Z)Z
 
     move-result v17
 
