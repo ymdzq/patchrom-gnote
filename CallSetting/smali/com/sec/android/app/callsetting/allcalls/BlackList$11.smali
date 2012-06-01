@@ -145,10 +145,5 @@
     invoke-static {v1}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->access$1900(Lcom/sec/android/app/callsetting/allcalls/BlackList;)V
 
     .line 540
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList$11;->this$0:Lcom/sec/android/app/callsetting/allcalls/BlackList;
-
-    invoke-virtual {v1}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->invalidateOptionsMenu()V
-
-    .line 542
     return-void
 .end method

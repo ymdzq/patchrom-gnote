@@ -164,7 +164,7 @@
     .line 69
     new-instance v4, Landroid/app/Notification;
 
-    const v9, 0x7f020028
+    const v9, 0x7f020021
 
     const-wide/16 v10, 0x0
 

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 163
+    .line 161
     iput-object p1, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$1;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,10 +42,10 @@
     .parameter "v"
 
     .prologue
-    .line 165
+    .line 163
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$1;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
-    .line 166
+    .line 164
     .local v0, context:Landroid/content/Context;
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$1;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
@@ -55,7 +55,7 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 167
+    .line 165
     new-instance v2, Landroid/content/Intent;
 
     const-string v3, "android.intent.action.VIEW"
@@ -72,25 +72,25 @@
 
     invoke-direct {v2, v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 170
+    .line 168
     .local v2, intent:Landroid/content/Intent;
     :try_start_0
     invoke-virtual {v0, v2}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 178
+    .line 176
     .end local v2           #intent:Landroid/content/Intent;
     :cond_0
     :goto_0
     return-void
 
-    .line 172
+    .line 170
     .restart local v2       #intent:Landroid/content/Intent;
     :catch_0
     move-exception v1
 
-    .line 174
+    .line 172
     .local v1, ex:Landroid/content/ActivityNotFoundException;
     const-string v3, "PresetImage"
 
@@ -116,7 +116,7 @@
 
     invoke-static {v3, v4, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 175
+    .line 173
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$1;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     iget-object v4, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$1;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;

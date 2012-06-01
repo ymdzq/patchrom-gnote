@@ -48,7 +48,7 @@
 
     const/4 v2, 0x0
 
-    .line 153
+    .line 154
     new-instance v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     const-string v1, "INPUT_READY"
@@ -57,7 +57,7 @@
 
     sput-object v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
-    .line 154
+    .line 155
     new-instance v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     const-string v1, "BUSY_NETWORK_CONNECT"
@@ -66,7 +66,7 @@
 
     sput-object v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->BUSY_NETWORK_CONNECT:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
-    .line 155
+    .line 156
     new-instance v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     const-string v1, "NETWORK_ERROR"
@@ -75,7 +75,7 @@
 
     sput-object v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
-    .line 156
+    .line 157
     new-instance v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     const-string v1, "INITIAL_QUERY"
@@ -84,7 +84,7 @@
 
     sput-object v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->INITIAL_QUERY:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
-    .line 152
+    .line 153
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
@@ -121,7 +121,7 @@
     .end annotation
 
     .prologue
-    .line 152
+    .line 153
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -132,7 +132,7 @@
     .parameter
 
     .prologue
-    .line 152
+    .line 153
     const-class v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -148,7 +148,7 @@
     .locals 1
 
     .prologue
-    .line 152
+    .line 153
     sget-object v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->$VALUES:[Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     invoke-virtual {v0}, [Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->clone()Ljava/lang/Object;

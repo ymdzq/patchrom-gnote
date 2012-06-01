@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 394
+    .line 395
     iput-object p1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$5;->this$0:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 396
+    .line 397
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$5;->this$0:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;
 
     #getter for: Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->imm:Landroid/view/inputmethod/InputMethodManager;
@@ -57,6 +57,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
 
-    .line 397
+    .line 398
     return-void
 .end method

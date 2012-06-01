@@ -9,7 +9,9 @@
 # static fields
 .field private static FROM:[Ljava/lang/String;
 
-.field private static isItemSelected:[Z
+.field static mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
+
+.field static mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
 
 
 # instance fields
@@ -37,8 +39,6 @@
 
 .field private mEdited:I
 
-.field mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
-
 .field private mListAdapter:Landroid/widget/ArrayAdapter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -64,8 +64,6 @@
 .field private mSelectedItem:I
 
 .field private mSelectedItemForEdit:I
-
-.field mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
 
 .field private mState:I
 
@@ -154,20 +152,20 @@
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
 
-    .line 119
+    .line 118
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mUpdated:Z
 
-    .line 134
+    .line 133
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->istoastshowing:Z
 
-    .line 548
-    new-instance v0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$10;
+    .line 434
+    new-instance v0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$9;
 
-    invoke-direct {v0, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$10;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
+    invoke-direct {v0, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$9;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->handler:Landroid/os/Handler;
 
@@ -301,18 +299,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
-    .locals 0
-    .parameter "x0"
-
-    .prologue
-    .line 79
-    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->updateDeleteItems()V
-
-    return-void
-.end method
-
-.method static synthetic access$700(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)Ljava/util/ArrayList;
+.method static synthetic access$600(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)Ljava/util/ArrayList;
     .locals 1
     .parameter "x0"
 
@@ -321,6 +308,17 @@
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
 
     return-object v0
+.end method
+
+.method static synthetic access$700(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
+    .locals 0
+    .parameter "x0"
+
+    .prologue
+    .line 79
+    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->updateDeleteItems()V
+
+    return-void
 .end method
 
 .method static synthetic access$800(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;I)V
@@ -353,21 +351,21 @@
     .prologue
     const/4 v6, 0x1
 
-    .line 893
+    .line 775
     iput v6, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
 
-    .line 894
+    .line 776
     new-instance v3, Landroid/content/ContentValues;
 
     invoke-direct {v3}, Landroid/content/ContentValues;-><init>()V
 
-    .line 895
+    .line 777
     .local v3, values:Landroid/content/ContentValues;
     const-string v4, "reject_message"
 
     invoke-virtual {v3, v4, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 896
+    .line 778
     const-string v4, "edit_checked"
 
     iget v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
@@ -378,7 +376,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 897
+    .line 779
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -389,7 +387,7 @@
 
     move-result-object v2
 
-    .line 898
+    .line 780
     .local v2, new_uri:Landroid/net/Uri;
     invoke-virtual {v2}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -405,7 +403,7 @@
 
     move-result-wide v0
 
-    .line 899
+    .line 781
     .local v0, id:J
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -417,7 +415,7 @@
 
     invoke-static {v4, v5, v6}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 900
+    .line 782
     return-wide v0
 .end method
 
@@ -430,12 +428,12 @@
 
     const/4 v2, 0x0
 
-    .line 866
+    .line 748
     iget-boolean v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mUpdated:Z
 
     if-eqz v1, :cond_2
 
-    .line 868
+    .line 750
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -448,7 +446,7 @@
 
     if-ge v0, v1, :cond_4
 
-    .line 872
+    .line 754
     iget v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSelectedItemForEdit:I
 
     add-int/lit8 v1, v1, -0x1
@@ -465,11 +463,11 @@
 
     move v1, v2
 
-    .line 886
+    .line 768
     :goto_1
     return v1
 
-    .line 874
+    .line 756
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
@@ -487,16 +485,16 @@
 
     move v1, v3
 
-    .line 875
+    .line 757
     goto :goto_1
 
-    .line 868
+    .line 750
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 880
+    .line 762
     .end local v0           #i:I
     :cond_2
     const/4 v0, 0x0
@@ -511,7 +509,7 @@
 
     if-ge v0, v1, :cond_4
 
-    .line 882
+    .line 764
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -528,10 +526,10 @@
 
     move v1, v3
 
-    .line 883
+    .line 765
     goto :goto_1
 
-    .line 880
+    .line 762
     :cond_3
     add-int/lit8 v0, v0, 0x1
 
@@ -540,7 +538,7 @@
     :cond_4
     move v1, v2
 
-    .line 886
+    .line 768
     goto :goto_1
 .end method
 
@@ -550,7 +548,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 908
+    .line 790
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -559,7 +557,7 @@
 
     invoke-virtual {v0, v1, v2, v2}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 909
+    .line 791
     return-void
 .end method
 
@@ -570,7 +568,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 915
+    .line 797
     sget-object v1, Lcom/sec/android/app/callsetting/allcalls/ProviderConstants;->REJECTMSG_CONTENT_URI:Landroid/net/Uri;
 
     int-to-long v2, p1
@@ -579,7 +577,7 @@
 
     move-result-object v0
 
-    .line 916
+    .line 798
     .local v0, rejectmsgUri:Landroid/net/Uri;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -587,7 +585,7 @@
 
     invoke-virtual {v1, v0, v4, v4}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 917
+    .line 799
     return-void
 .end method
 
@@ -596,7 +594,7 @@
     .parameter "msg"
 
     .prologue
-    .line 1046
+    .line 882
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
@@ -607,11 +605,11 @@
 
     move-result-object v0
 
-    .line 1047
+    .line 883
     .local v0, toast:Landroid/widget/Toast;
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1048
+    .line 884
     return-void
 .end method
 
@@ -621,10 +619,10 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 932
+    .line 814
     const-string v5, "_id desc"
 
-    .line 933
+    .line 815
     .local v5, sortOrder:Ljava/lang/String;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -648,356 +646,13 @@
     .parameter "message"
 
     .prologue
-    .line 1175
+    .line 1011
     const-string v0, "RejectCallWithMsg"
 
     invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1176
+    .line 1012
     return-void
-.end method
-
-.method private persistSelectedListItems()V
-    .locals 4
-
-    .prologue
-    .line 442
-    const/4 v0, 0x1
-
-    .local v0, index:I
-    :goto_0
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
-
-    move-result v1
-
-    if-ge v0, v1, :cond_0
-
-    .line 443
-    sget-object v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->isItemSelected:[Z
-
-    add-int/lit8 v2, v0, -0x1
-
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    invoke-virtual {v3, v0}, Landroid/widget/ListView;->isItemChecked(I)Z
-
-    move-result v3
-
-    aput-boolean v3, v1, v2
-
-    .line 442
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    .line 445
-    :cond_0
-    return-void
-.end method
-
-.method private refreshDeleteScreenWithPersistedState()V
-    .locals 4
-
-    .prologue
-    .line 425
-    const/4 v0, 0x1
-
-    .local v0, index:I
-    :goto_0
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
-
-    move-result v1
-
-    if-ge v0, v1, :cond_0
-
-    .line 427
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    sget-object v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->isItemSelected:[Z
-
-    add-int/lit8 v3, v0, -0x1
-
-    aget-boolean v2, v2, v3
-
-    invoke-virtual {v1, v0, v2}, Landroid/widget/ListView;->setItemChecked(IZ)V
-
-    .line 425
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    .line 430
-    :cond_0
-    return-void
-.end method
-
-.method private refreshRejectMessage(Landroid/database/Cursor;)V
-    .locals 13
-    .parameter "cursor"
-
-    .prologue
-    const/4 v12, 0x0
-
-    const/4 v11, 0x2
-
-    const/4 v10, 0x1
-
-    .line 983
-    invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v8
-
-    const-string v9, "edit_mode"
-
-    invoke-static {v8, v9, v10}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v8
-
-    iput v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
-
-    .line 984
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
-
-    if-eqz v8, :cond_0
-
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
-
-    invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
-
-    move-result v8
-
-    if-lez v8, :cond_0
-
-    .line 985
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
-
-    invoke-virtual {v8}, Ljava/util/ArrayList;->clear()V
-
-    .line 986
-    :cond_0
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
-
-    if-eqz v8, :cond_1
-
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
-
-    invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
-
-    move-result v8
-
-    if-lez v8, :cond_1
-
-    .line 987
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
-
-    invoke-virtual {v8}, Ljava/util/ArrayList;->clear()V
-
-    .line 988
-    :cond_1
-    const/4 v2, 0x0
-
-    .line 989
-    .local v2, idx:I
-    iput v10, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
-
-    .line 990
-    if-eqz p1, :cond_2
-
-    invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v8
-
-    if-eqz v8, :cond_2
-
-    .line 993
-    :goto_0
-    const/4 v8, 0x0
-
-    invoke-interface {p1, v8}, Landroid/database/Cursor;->getLong(I)J
-
-    move-result-wide v0
-
-    .line 994
-    .local v0, id:J
-    invoke-interface {p1, v11}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v8
-
-    iput v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
-
-    .line 996
-    iget v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
-
-    if-ne v8, v10, :cond_4
-
-    .line 998
-    invoke-interface {p1, v10}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 999
-    .local v4, message:Ljava/lang/String;
-    const-string v8, "Edited"
-
-    invoke-direct {p0, v8}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
-
-    .line 1013
-    :goto_1
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v9, "RejectMsg idx"
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    const-string v9, " Reject Message "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    const-string v9, "ID = "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-direct {p0, v8}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
-
-    .line 1016
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
-
-    invoke-virtual {v8, v2, v4}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
-
-    .line 1017
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
-
-    add-int/lit8 v3, v2, 0x1
-
-    .end local v2           #idx:I
-    .local v3, idx:I
-    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-virtual {v8, v2, v9}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
-
-    .line 1018
-    invoke-interface {p1}, Landroid/database/Cursor;->moveToNext()Z
-
-    move-result v8
-
-    if-nez v8, :cond_5
-
-    move v2, v3
-
-    .line 1021
-    .end local v0           #id:J
-    .end local v3           #idx:I
-    .end local v4           #message:Ljava/lang/String;
-    .restart local v2       #idx:I
-    :cond_2
-    const/4 v8, 0x6
-
-    if-le v2, v8, :cond_3
-
-    .line 1023
-    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->deleteRejectMessage()V
-
-    .line 1025
-    :cond_3
-    return-void
-
-    .line 1002
-    .restart local v0       #id:J
-    :cond_4
-    invoke-interface {p1, v11}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v6
-
-    .line 1003
-    .local v6, resource:I
-    invoke-virtual {p0, v6}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getString(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 1004
-    .restart local v4       #message:Ljava/lang/String;
-    new-instance v7, Landroid/content/ContentValues;
-
-    invoke-direct {v7}, Landroid/content/ContentValues;-><init>()V
-
-    .line 1005
-    .local v7, values:Landroid/content/ContentValues;
-    const-string v8, "reject_message"
-
-    invoke-virtual {v7, v8, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 1006
-    const-string v8, "edit_checked"
-
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v9
-
-    invoke-virtual {v7, v8, v9}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    .line 1007
-    sget-object v8, Lcom/sec/android/app/callsetting/allcalls/ProviderConstants;->REJECTMSG_CONTENT_URI:Landroid/net/Uri;
-
-    invoke-static {v8, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
-
-    move-result-object v5
-
-    .line 1008
-    .local v5, rejectmsgUri:Landroid/net/Uri;
-    invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v5, v7, v12, v12}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-
-    .line 1009
-    const-string v8, "default"
-
-    invoke-direct {p0, v8}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    .end local v2           #idx:I
-    .end local v5           #rejectmsgUri:Landroid/net/Uri;
-    .end local v6           #resource:I
-    .end local v7           #values:Landroid/content/ContentValues;
-    .restart local v3       #idx:I
-    :cond_5
-    move v2, v3
-
-    .end local v3           #idx:I
-    .restart local v2       #idx:I
-    goto/16 :goto_0
 .end method
 
 .method private saveRejectMessage(Ljava/lang/String;)V
@@ -1015,14 +670,14 @@
 
     const/4 v9, 0x0
 
-    .line 792
+    .line 674
     move-object v3, p1
 
-    .line 793
+    .line 675
     .local v3, tempString:Ljava/lang/String;
     const-wide/16 v1, 0x0
 
-    .line 795
+    .line 677
     .local v1, id:J
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
@@ -1037,14 +692,14 @@
     :goto_0
     iput v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
 
-    .line 799
+    .line 681
     invoke-direct {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->checkAlreadyInUse(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    .line 801
+    .line 683
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -1087,7 +742,7 @@
 
     invoke-direct {p0, v5}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->displayToast(Ljava/lang/String;)V
 
-    .line 802
+    .line 684
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->imm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v6, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->editText:Landroid/widget/EditText;
@@ -1098,17 +753,17 @@
 
     invoke-virtual {v5, v6, v9}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    .line 862
+    .line 744
     :goto_1
     return-void
 
     :cond_0
     move v5, v6
 
-    .line 795
+    .line 677
     goto :goto_0
 
-    .line 806
+    .line 688
     :cond_1
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
@@ -1116,14 +771,14 @@
 
     if-nez v5, :cond_2
 
-    .line 808
+    .line 690
     invoke-virtual {p0, v12}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
     invoke-direct {p0, v5}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->displayToast(Ljava/lang/String;)V
 
-    .line 809
+    .line 691
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->imm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v6, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->editText:Landroid/widget/EditText;
@@ -1136,7 +791,7 @@
 
     goto :goto_1
 
-    .line 815
+    .line 697
     :cond_2
     const-string v5, " "
 
@@ -1162,14 +817,14 @@
 
     if-eqz v5, :cond_3
 
-    .line 817
+    .line 699
     invoke-virtual {p0, v12}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
     invoke-direct {p0, v5}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->displayToast(Ljava/lang/String;)V
 
-    .line 818
+    .line 700
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->imm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v6, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->editText:Landroid/widget/EditText;
@@ -1182,13 +837,13 @@
 
     goto :goto_1
 
-    .line 822
+    .line 704
     :cond_3
     iget v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSelectedItem:I
 
     if-lez v5, :cond_6
 
-    .line 824
+    .line 706
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     iget v7, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSelectedItem:I
@@ -1197,7 +852,7 @@
 
     invoke-virtual {v5, v7}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 825
+    .line 707
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     iget v7, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSelectedItem:I
@@ -1206,7 +861,7 @@
 
     invoke-virtual {v5, v7, v3}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 827
+    .line 709
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
 
     iget v7, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSelectedItem:I
@@ -1223,14 +878,14 @@
 
     move-result v4
 
-    .line 828
+    .line 710
     .local v4, update_id:I
     invoke-direct {p0, v3, v4}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->updateRejectMessage(Ljava/lang/String;I)V
 
-    .line 829
+    .line 711
     iput v9, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSelectedItem:I
 
-    .line 855
+    .line 737
     .end local v4           #update_id:I
     :cond_4
     :goto_2
@@ -1238,14 +893,14 @@
 
     invoke-virtual {v5}, Landroid/widget/ArrayAdapter;->notifyDataSetInvalidated()V
 
-    .line 856
+    .line 738
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->editText:Landroid/widget/EditText;
 
     const-string v7, ""
 
     invoke-virtual {v5, v7}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 858
+    .line 740
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
@@ -1262,12 +917,12 @@
 
     if-eq v5, v10, :cond_5
 
-    .line 859
+    .line 741
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
     invoke-virtual {v5, v10}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 860
+    .line 742
     :cond_5
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -1279,39 +934,39 @@
 
     invoke-virtual {v5, v7, v9}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    .line 861
+    .line 743
     iput v6, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
 
     goto/16 :goto_1
 
-    .line 834
+    .line 716
     :cond_6
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getRejectMessage()Landroid/database/Cursor;
 
     move-result-object v0
 
-    .line 835
+    .line 717
     .local v0, cursor:Landroid/database/Cursor;
     if-eqz v0, :cond_7
 
-    .line 836
+    .line 718
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
 
     move-result v5
 
     if-le v11, v5, :cond_8
 
-    .line 837
+    .line 719
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v9, v3}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 838
+    .line 720
     invoke-direct {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->addRejectMessage(Ljava/lang/String;)J
 
     move-result-wide v1
 
-    .line 839
+    .line 721
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
 
     invoke-static {v1, v2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
@@ -1320,7 +975,7 @@
 
     invoke-virtual {v5, v9, v7}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 840
+    .line 722
     const-string v5, "RejectCallWithMsg"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1357,11 +1012,11 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 845
+    .line 727
     :goto_3
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 848
+    .line 730
     :cond_7
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
@@ -1371,14 +1026,14 @@
 
     if-lt v5, v11, :cond_4
 
-    .line 850
+    .line 732
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v10}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     goto/16 :goto_2
 
-    .line 843
+    .line 725
     :cond_8
     const-string v5, "RejectCallWithMsg"
 
@@ -1400,7 +1055,7 @@
 
     const/4 v10, 0x1
 
-    .line 940
+    .line 822
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v8
@@ -1413,14 +1068,14 @@
 
     iput v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
 
-    .line 942
+    .line 824
     const/4 v2, 0x0
 
-    .line 943
+    .line 825
     .local v2, idx:I
     iput v10, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
 
-    .line 944
+    .line 826
     if-eqz p1, :cond_0
 
     invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
@@ -1429,7 +1084,7 @@
 
     if-eqz v8, :cond_0
 
-    .line 947
+    .line 829
     :goto_0
     const/4 v8, 0x0
 
@@ -1437,7 +1092,7 @@
 
     move-result-wide v0
 
-    .line 948
+    .line 830
     .local v0, id:J
     invoke-interface {p1, v11}, Landroid/database/Cursor;->getInt(I)I
 
@@ -1445,23 +1100,23 @@
 
     iput v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
 
-    .line 950
+    .line 832
     iget v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
 
     if-ne v8, v10, :cond_2
 
-    .line 952
+    .line 834
     invoke-interface {p1, v10}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 953
+    .line 835
     .local v4, message:Ljava/lang/String;
     const-string v8, "Edited"
 
     invoke-direct {p0, v8}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
 
-    .line 967
+    .line 849
     :goto_1
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -1503,12 +1158,12 @@
 
     invoke-direct {p0, v8}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
 
-    .line 970
+    .line 852
     iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v2, v4}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 971
+    .line 853
     iget-object v8, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgListID:Ljava/util/ArrayList;
 
     add-int/lit8 v3, v2, 0x1
@@ -1521,7 +1176,7 @@
 
     invoke-virtual {v8, v2, v9}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 972
+    .line 854
     invoke-interface {p1}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v8
@@ -1530,7 +1185,7 @@
 
     move v2, v3
 
-    .line 975
+    .line 857
     .end local v0           #id:J
     .end local v3           #idx:I
     .end local v4           #message:Ljava/lang/String;
@@ -1540,39 +1195,39 @@
 
     if-le v2, v8, :cond_1
 
-    .line 977
+    .line 859
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->deleteRejectMessage()V
 
-    .line 979
+    .line 861
     :cond_1
     return-void
 
-    .line 956
+    .line 838
     .restart local v0       #id:J
     :cond_2
     invoke-interface {p1, v11}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v6
 
-    .line 957
+    .line 839
     .local v6, resource:I
     invoke-virtual {p0, v6}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 958
+    .line 840
     .restart local v4       #message:Ljava/lang/String;
     new-instance v7, Landroid/content/ContentValues;
 
     invoke-direct {v7}, Landroid/content/ContentValues;-><init>()V
 
-    .line 959
+    .line 841
     .local v7, values:Landroid/content/ContentValues;
     const-string v8, "reject_message"
 
     invoke-virtual {v7, v8, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 960
+    .line 842
     const-string v8, "edit_checked"
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1581,14 +1236,14 @@
 
     invoke-virtual {v7, v8, v9}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 961
+    .line 843
     sget-object v8, Lcom/sec/android/app/callsetting/allcalls/ProviderConstants;->REJECTMSG_CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v8, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v5
 
-    .line 962
+    .line 844
     .local v5, rejectmsgUri:Landroid/net/Uri;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1596,7 +1251,7 @@
 
     invoke-virtual {v8, v5, v7, v12, v12}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 963
+    .line 845
     const-string v8, "default"
 
     invoke-direct {p0, v8}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
@@ -1624,10 +1279,10 @@
 
     const/4 v4, 0x0
 
-    .line 1179
+    .line 1015
     const/4 v0, 0x0
 
-    .line 1180
+    .line 1016
     .local v0, checked_cnt:I
     const/4 v1, 0x0
 
@@ -1641,7 +1296,7 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 1182
+    .line 1018
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
     invoke-virtual {v2, v1}, Landroid/widget/ListView;->isItemChecked(I)Z
@@ -1650,18 +1305,18 @@
 
     if-eqz v2, :cond_0
 
-    .line 1183
+    .line 1019
     add-int/lit8 v0, v0, 0x1
 
-    .line 1180
+    .line 1016
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1186
+    .line 1022
     :cond_1
-    iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
+    sget-object v5, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
 
     if-lez v0, :cond_2
 
@@ -1670,7 +1325,7 @@
     :goto_1
     invoke-virtual {v5, v2}, Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;->setEnabled(Z)V
 
-    .line 1187
+    .line 1023
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAllCheck:Landroid/widget/CheckBox;
 
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
@@ -1686,19 +1341,19 @@
     :goto_2
     invoke-virtual {v2, v4}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 1188
+    .line 1024
     return-void
 
     :cond_2
     move v2, v4
 
-    .line 1186
+    .line 1022
     goto :goto_1
 
     :cond_3
     move v4, v3
 
-    .line 1187
+    .line 1023
     goto :goto_2
 .end method
 
@@ -1708,7 +1363,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1160
+    .line 996
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
@@ -1722,7 +1377,7 @@
     :cond_0
     iput v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
 
-    .line 1161
+    .line 997
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1745,7 +1400,7 @@
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
 
-    .line 1163
+    .line 999
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -1756,14 +1411,14 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 1164
+    .line 1000
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 1168
+    .line 1004
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
@@ -1771,7 +1426,7 @@
 
     move-result v0
 
-    .line 1169
+    .line 1005
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1816,13 +1471,13 @@
 
     move-result-object v0
 
-    .line 1171
+    .line 1007
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 1172
+    .line 1008
     return-void
 
-    .line 1166
+    .line 1002
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
 
@@ -1841,23 +1496,23 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 920
+    .line 802
     const/4 v2, 0x1
 
     iput v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
 
-    .line 921
+    .line 803
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    .line 922
+    .line 804
     .local v1, values:Landroid/content/ContentValues;
     const-string v2, "reject_message"
 
     invoke-virtual {v1, v2, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 923
+    .line 805
     const-string v2, "edit_checked"
 
     iget v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
@@ -1868,7 +1523,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 924
+    .line 806
     sget-object v2, Lcom/sec/android/app/callsetting/allcalls/ProviderConstants;->REJECTMSG_CONTENT_URI:Landroid/net/Uri;
 
     int-to-long v3, p2
@@ -1877,7 +1532,7 @@
 
     move-result-object v0
 
-    .line 925
+    .line 807
     .local v0, rejectmsgUri:Landroid/net/Uri;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1885,7 +1540,7 @@
 
     invoke-virtual {v2, v0, v1, v5, v5}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 926
+    .line 808
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1896,7 +1551,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 927
+    .line 809
     return-void
 .end method
 
@@ -1904,14 +1559,14 @@
     .locals 3
 
     .prologue
-    .line 1191
+    .line 1027
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    .line 1192
+    .line 1028
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1956,10 +1611,10 @@
 
     move-result-object v0
 
-    .line 1194
+    .line 1030
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 1195
+    .line 1031
     return-void
 .end method
 
@@ -1970,7 +1625,7 @@
     .parameter "arg0"
 
     .prologue
-    .line 711
+    .line 593
     return-void
 .end method
 
@@ -1982,7 +1637,7 @@
     .parameter "after"
 
     .prologue
-    .line 675
+    .line 557
     return-void
 .end method
 
@@ -1990,12 +1645,12 @@
     .locals 3
 
     .prologue
-    .line 1125
+    .line 961
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 1127
+    .line 963
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -2018,9 +1673,9 @@
 
     const v1, 0x7f0700ad
 
-    new-instance v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$21;
+    new-instance v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$20;
 
-    invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$21;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
+    invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$20;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2028,9 +1683,9 @@
 
     const v1, 0x7f0700ae
 
-    new-instance v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$20;
+    new-instance v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$19;
 
-    invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$20;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
+    invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$19;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2040,72 +1695,74 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$19;
+    new-instance v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$18;
 
-    invoke-direct {v1, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$19;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
+    invoke-direct {v1, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$18;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 1156
+    .line 992
     return-void
 .end method
 
 .method public onActivityResult(IILandroid/content/Intent;)V
-    .locals 3
-    .parameter
-    .parameter
-    .parameter
+    .locals 4
+    .parameter "reqCode"
+    .parameter "resCode"
+    .parameter "data"
 
     .prologue
-    .line 1052
+    .line 888
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 1053
+    .line 889
     const-string v0, ""
 
-    .line 1054
+    .line 890
+    .local v0, output:Ljava/lang/String;
     packed-switch p1, :pswitch_data_0
 
-    .line 1065
+    .line 901
     :cond_0
     :goto_0
     return-void
 
-    .line 1056
+    .line 892
     :pswitch_0
-    const/4 v0, -0x1
+    const/4 v2, -0x1
 
-    if-ne p2, v0, :cond_0
+    if-ne p2, v2, :cond_0
 
-    .line 1057
-    const-string v0, "REJECT_MESSAGE_RESULT_Intent"
+    .line 893
+    const-string v2, "REJECT_MESSAGE_RESULT_Intent"
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v2}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
 
-    .line 1058
-    const-string v0, "EDITED_MESSAGE"
+    .line 894
+    const-string v2, "EDITED_MESSAGE"
 
-    invoke-virtual {p3, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p3, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    .line 1059
-    const-string v1, "UPDATED"
+    .line 895
+    .local v1, resultString:Ljava/lang/String;
+    const-string v2, "UPDATED"
 
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
-    invoke-virtual {p3, v1, v2}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+    invoke-virtual {p3, v2, v3}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
-    move-result v1
+    move-result v2
 
-    iput-boolean v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mUpdated:Z
+    iput-boolean v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mUpdated:Z
 
-    .line 1060
-    invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->saveRejectMessage(Ljava/lang/String;)V
+    .line 896
+    invoke-direct {p0, v1}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->saveRejectMessage(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 1054
+    .line 890
     :pswitch_data_0
     .packed-switch 0x3
         :pswitch_0
@@ -2116,12 +1773,12 @@
     .locals 3
 
     .prologue
-    .line 559
+    .line 445
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 560
+    .line 446
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "com.android.phone"
 
@@ -2129,23 +1786,23 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 561
+    .line 447
     const/high16 v1, 0x400
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 562
+    .line 448
     const-string v1, "com.android.phone.MAIN"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 563
+    .line 449
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->startActivity(Landroid/content/Intent;)V
 
-    .line 564
+    .line 450
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->finish()V
 
-    .line 565
+    .line 451
     return-void
 .end method
 
@@ -2154,15 +1811,15 @@
     .parameter "newConfig"
 
     .prologue
-    .line 497
+    .line 383
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 498
+    .line 384
     const-string v0, "onConfigurationChanged"
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
 
-    .line 511
+    .line 397
     return-void
 .end method
 
@@ -2182,12 +1839,6 @@
     const v3, 0x7f030012
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->setContentView(I)V
-
-    const/4 v3, 0x6
-
-    new-array v3, v3, [Z
-
-    sput-object v3, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->isItemSelected:[Z
 
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getActionBar()Landroid/app/ActionBar;
 
@@ -2212,7 +1863,7 @@
 
     iput v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
 
-    .line 153
+    .line 152
     const v3, 0x7f080036
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->findViewById(I)Landroid/view/View;
@@ -2223,7 +1874,7 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
-    .line 156
+    .line 155
     const v3, 0x7f080035
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->findViewById(I)Landroid/view/View;
@@ -2234,7 +1885,7 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
-    .line 157
+    .line 156
     invoke-virtual {p0, v8}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
@@ -2243,7 +1894,7 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->empty_create:Landroid/widget/LinearLayout;
 
-    .line 162
+    .line 161
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v3
@@ -2260,7 +1911,7 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->header:Landroid/view/View;
 
-    .line 163
+    .line 162
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->header:Landroid/view/View;
 
     const v4, 0x7f080027
@@ -2273,7 +1924,7 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
 
-    .line 164
+    .line 163
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->header:Landroid/view/View;
 
     const v4, 0x7f080029
@@ -2286,7 +1937,7 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAllCheck:Landroid/widget/CheckBox;
 
-    .line 165
+    .line 164
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->header:Landroid/view/View;
 
     invoke-virtual {v3, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2297,19 +1948,14 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
 
-    .line 166
+    .line 165
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
     iget-object v4, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->header:Landroid/view/View;
 
     invoke-virtual {v3, v4, v9, v7}, Landroid/widget/ListView;->addHeaderView(Landroid/view/View;Ljava/lang/Object;Z)V
 
-    .line 167
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    invoke-virtual {v3, v7}, Landroid/widget/ListView;->setItemsCanFocus(Z)V
-
-    .line 170
+    .line 168
     const v3, 0x7f08000a
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->findViewById(I)Landroid/view/View;
@@ -2318,9 +1964,9 @@
 
     check-cast v3, Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
 
-    iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
+    sput-object v3, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
 
-    .line 171
+    .line 169
     const v3, 0x7f08000b
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->findViewById(I)Landroid/view/View;
@@ -2329,16 +1975,16 @@
 
     check-cast v3, Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
 
-    iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
+    sput-object v3, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
 
-    .line 173
+    .line 171
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v3
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->factory:Landroid/view/LayoutInflater;
 
-    .line 174
+    .line 172
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->factory:Landroid/view/LayoutInflater;
 
     const v4, 0x7f030009
@@ -2347,7 +1993,7 @@
 
     move-result-object v2
 
-    .line 175
+    .line 173
     .local v2, textEntryView:Landroid/view/View;
     const/high16 v3, 0x7f08
 
@@ -2359,7 +2005,7 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->editText:Landroid/widget/EditText;
 
-    .line 176
+    .line 174
     const v3, 0x7f080025
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2370,7 +2016,7 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->bytesText:Landroid/widget/TextView;
 
-    .line 182
+    .line 180
     const-string v3, "input_method"
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -2381,26 +2027,26 @@
 
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->imm:Landroid/view/inputmethod/InputMethodManager;
 
-    .line 191
+    .line 189
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getRejectMessage()Landroid/database/Cursor;
 
     move-result-object v1
 
-    .line 192
+    .line 190
     .local v1, cursor:Landroid/database/Cursor;
     invoke-direct {p0, v1}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->showRejectMessage(Landroid/database/Cursor;)V
 
-    .line 193
+    .line 191
     if-eqz v1, :cond_1
 
-    .line 194
+    .line 192
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 196
+    .line 194
     :cond_1
     iput v7, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
 
-    .line 198
+    .line 196
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
@@ -2409,20 +2055,31 @@
 
     if-lez v3, :cond_2
 
-    .line 200
+    .line 198
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
     const/16 v4, 0x8
 
     invoke-virtual {v3, v4}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 201
+    .line 199
     const/4 v3, 0x2
 
     iput v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
 
-    .line 204
+    .line 202
     :cond_2
+    new-instance v3, Landroid/widget/ArrayAdapter;
+
+    const v4, 0x7f030013
+
+    iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
+
+    invoke-direct {v3, p0, v4, v5}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
+
+    iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mListAdapter:Landroid/widget/ArrayAdapter;
+
+    .line 203
     new-instance v3, Landroid/widget/ArrayAdapter;
 
     const v4, 0x7f030014
@@ -2431,27 +2088,16 @@
 
     invoke-direct {v3, p0, v4, v5}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
-    iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mListAdapter:Landroid/widget/ArrayAdapter;
-
-    .line 205
-    new-instance v3, Landroid/widget/ArrayAdapter;
-
-    const v4, 0x7f030015
-
-    iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
-
-    invoke-direct {v3, p0, v4, v5}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
-
     iput-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mMultiChoiceAdapter:Landroid/widget/ArrayAdapter;
 
-    .line 208
+    .line 206
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
     iget-object v4, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mListAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v3, v4}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 211
+    .line 209
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->empty_create:Landroid/widget/LinearLayout;
 
     new-instance v4, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$1;
@@ -2460,7 +2106,7 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 226
+    .line 224
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
 
     new-instance v4, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$2;
@@ -2469,43 +2115,34 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 240
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAllCheck:Landroid/widget/CheckBox;
+    .line 239
+    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
 
     new-instance v4, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$3;
 
     invoke-direct {v4, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$3;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
 
-    invoke-virtual {v3, v4}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 254
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
+    .line 252
+    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
     new-instance v4, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$4;
 
     invoke-direct {v4, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$4;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
 
-    invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v3, v4}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 267
+    .line 281
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
     new-instance v4, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$5;
 
     invoke-direct {v4, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$5;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
 
-    invoke-virtual {v3, v4}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
-
-    .line 328
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    new-instance v4, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$6;
-
-    invoke-direct {v4, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$6;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
-
     invoke-virtual {v3, v4}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
-    .line 343
+    .line 296
     return-void
 .end method
 
@@ -2516,22 +2153,22 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1069
+    .line 905
     packed-switch p1, :pswitch_data_0
 
     move-object v0, v1
 
-    .line 1120
+    .line 956
     :goto_0
     return-object v0
 
-    .line 1071
+    .line 907
     :pswitch_0
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 1072
+    .line 908
     const/4 v0, 0x2
 
     new-array v3, v0, [Ljava/lang/CharSequence;
@@ -2556,7 +2193,7 @@
 
     aput-object v4, v3, v0
 
-    .line 1075
+    .line 911
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
@@ -2574,32 +2211,32 @@
     :try_end_0
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1082
-    new-instance v0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$17;
+    .line 918
+    new-instance v0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$16;
 
-    invoke-direct {v0, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$17;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
+    invoke-direct {v0, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$16;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
 
     invoke-virtual {v2, v3, v0}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 1111
+    .line 947
     invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
 
-    .line 1112
-    new-instance v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$18;
+    .line 948
+    new-instance v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$17;
 
-    invoke-direct {v1, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$18;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
+    invoke-direct {v1, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$17;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     goto :goto_0
 
-    .line 1076
+    .line 912
     :catch_0
     move-exception v0
 
-    .line 1078
+    .line 914
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2624,10 +2261,10 @@
 
     move-object v0, v1
 
-    .line 1079
+    .line 915
     goto :goto_0
 
-    .line 1069
+    .line 905
     nop
 
     :pswitch_data_0
@@ -2644,10 +2281,10 @@
     .prologue
     const/16 v7, 0x8
 
-    .line 606
+    .line 490
     sparse-switch p1, :sswitch_data_0
 
-    .line 669
+    .line 551
     :cond_0
     :goto_0
     :sswitch_0
@@ -2658,7 +2295,7 @@
     :goto_1
     return v5
 
-    .line 608
+    .line 492
     :sswitch_1
     iget v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
 
@@ -2666,53 +2303,44 @@
 
     if-ne v5, v6, :cond_0
 
-    .line 610
+    .line 494
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
     iget-object v6, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mListAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v5, v6}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 611
+    .line 495
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->updateRejectMessage()V
 
-    .line 612
+    .line 496
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v7}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 614
-    iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
+    .line 498
+    sget-object v5, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
 
     invoke-virtual {v5, v7}, Lcom/sec/android/touchwiz/widget/TwSoftkeyView;->setVisibility(I)V
 
-    .line 615
+    .line 499
     const/4 v5, 0x1
 
     goto :goto_1
 
-    .line 621
+    .line 505
     :sswitch_2
-    invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getCurrentFocus()Landroid/view/View;
-
-    move-result-object v5
-
-    instance-of v5, v5, Landroid/widget/ListView;
-
-    if-eqz v5, :cond_0
-
-    .line 622
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getCurrentFocus()Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/ListView;
 
-    .line 623
+    .line 506
     .local v2, currentView:Landroid/widget/ListView;
     if-eqz v2, :cond_0
 
-    .line 624
+    .line 507
     invoke-virtual {v2}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v5
@@ -2721,20 +2349,20 @@
 
     if-eqz v5, :cond_0
 
-    .line 625
+    .line 508
     invoke-virtual {v2}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/LinearLayout;
 
-    .line 627
+    .line 510
     .local v1, childView:Landroid/widget/LinearLayout;
     invoke-virtual {v1}, Landroid/widget/LinearLayout;->getChildCount()I
 
     move-result v0
 
-    .line 628
+    .line 511
     .local v0, childCount:I
     const/4 v3, 0x0
 
@@ -2742,12 +2370,12 @@
     :goto_2
     if-ge v3, v0, :cond_0
 
-    .line 629
+    .line 512
     invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
-    .line 630
+    .line 513
     .local v4, view:Landroid/view/View;
     if-eqz v4, :cond_1
 
@@ -2763,7 +2391,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 632
+    .line 515
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -2784,18 +2412,18 @@
 
     invoke-direct {p0, v5}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
 
-    .line 633
+    .line 516
     invoke-virtual {v4}, Landroid/view/View;->performClick()Z
 
     goto :goto_0
 
-    .line 628
+    .line 511
     :cond_1
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_2
 
-    .line 606
+    .line 490
     nop
 
     :sswitch_data_0
@@ -2817,10 +2445,10 @@
 
     const/4 v1, 0x0
 
-    .line 570
+    .line 456
     invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
-    .line 572
+    .line 458
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v2
@@ -2829,89 +2457,75 @@
 
     move v0, v1
 
-    .line 597
+    .line 483
     :cond_0
     :goto_0
     return v0
 
-    .line 575
+    .line 461
     :sswitch_0
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->onClickActionBar()V
 
     goto :goto_0
 
-    .line 578
+    .line 464
     :sswitch_1
     iget v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
 
     if-ne v2, v4, :cond_0
 
-    .line 580
+    .line 466
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 581
+    .line 467
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
 
     const/16 v3, 0x8
 
     invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 584
+    .line 470
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAllCheck:Landroid/widget/CheckBox;
 
     invoke-virtual {v2, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 585
+    .line 471
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
     invoke-virtual {v2, v4}, Landroid/widget/ListView;->setChoiceMode(I)V
 
-    .line 586
+    .line 472
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mMultiChoiceAdapter:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v2, v3}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 589
-    iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
+    .line 475
+    sget-object v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
 
     invoke-virtual {v2, v1}, Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;->setEnabled(Z)V
 
-    .line 590
-    iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
+    .line 476
+    sget-object v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
 
     invoke-virtual {v2, v1}, Lcom/sec/android/touchwiz/widget/TwSoftkeyView;->setVisibility(I)V
 
-    .line 593
+    .line 479
     const/4 v1, 0x3
 
     iput v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
 
     goto :goto_0
 
-    .line 572
+    .line 458
     :sswitch_data_0
     .sparse-switch
         0x2 -> :sswitch_1
         0x102002c -> :sswitch_0
     .end sparse-switch
-.end method
-
-.method protected onPause()V
-    .locals 0
-
-    .prologue
-    .line 436
-    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->persistSelectedListItems()V
-
-    .line 437
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
-
-    .line 438
-    return-void
 .end method
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
@@ -2921,31 +2535,31 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 517
+    .line 403
     invoke-super {p0, p1}, Landroid/app/Activity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
-    .line 518
+    .line 404
     iget v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 545
+    .line 431
     :goto_0
     const/4 v0, 0x1
 
     return v0
 
-    .line 521
+    .line 407
     :pswitch_0
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
     goto :goto_0
 
-    .line 527
+    .line 413
     :pswitch_1
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
-    .line 528
+    .line 414
     const/4 v0, 0x2
 
     const v1, 0x7f0700b2
@@ -2958,25 +2572,25 @@
 
     move-result-object v0
 
-    const v1, 0x7f02001d
+    const v1, 0x7f020016
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
     goto :goto_0
 
-    .line 533
+    .line 419
     :pswitch_2
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
     goto :goto_0
 
-    .line 540
+    .line 426
     :pswitch_3
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
     goto :goto_0
 
-    .line 518
+    .line 404
     nop
 
     :pswitch_data_0
@@ -2989,259 +2603,24 @@
 .end method
 
 .method protected onResume()V
-    .locals 7
+    .locals 5
 
     .prologue
-    const/4 v4, 0x3
+    const/4 v4, 0x0
 
-    const/4 v1, 0x2
+    const/16 v3, 0x8
 
-    const/4 v2, 0x1
+    const/4 v0, 0x1
 
-    const/4 v6, 0x0
-
-    const/16 v5, 0x8
-
-    .line 358
+    .line 301
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 360
-    const-string v3, "OnResume"
+    .line 303
+    const-string v1, "OnResume"
 
-    invoke-direct {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
 
-    .line 361
-    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getRejectMessage()Landroid/database/Cursor;
-
-    move-result-object v0
-
-    .line 362
-    .local v0, cursor:Landroid/database/Cursor;
-    invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->refreshRejectMessage(Landroid/database/Cursor;)V
-
-    .line 363
-    if-eqz v0, :cond_0
-
-    .line 364
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    .line 366
-    :cond_0
-    iget v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
-
-    if-ne v3, v4, :cond_1
-
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
-
-    move-result v3
-
-    if-lez v3, :cond_1
-
-    .line 367
-    iput v4, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
-
-    .line 375
-    :goto_0
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mListAdapter:Landroid/widget/ArrayAdapter;
-
-    invoke-virtual {v3}, Landroid/widget/ArrayAdapter;->notifyDataSetInvalidated()V
-
-    .line 376
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    iget-object v4, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mListAdapter:Landroid/widget/ArrayAdapter;
-
-    invoke-virtual {v3, v4}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
-
-    .line 379
-    invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    const-string v4, "edit_mode"
-
-    invoke-static {v3, v4, v6}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v3
-
-    iput v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
-
-    .line 380
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "current mState in onResume = :"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    iget v4, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-direct {p0, v3}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
-
-    .line 382
-    iget v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
-
-    packed-switch v3, :pswitch_data_0
-
-    .line 416
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
-
-    move-result v3
-
-    if-lt v3, v2, :cond_6
-
-    :goto_1
-    iput v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
-
-    .line 420
-    :goto_2
-    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->updateTitleBar()V
-
-    .line 421
-    return-void
-
-    .line 368
-    :cond_1
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
-
-    move-result v3
-
-    if-lez v3, :cond_2
-
-    .line 370
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v3, v5}, Landroid/widget/FrameLayout;->setVisibility(I)V
-
-    .line 371
-    iput v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
-
-    goto :goto_0
-
-    .line 374
-    :cond_2
-    iput v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
-
-    goto :goto_0
-
-    .line 385
-    :pswitch_0
-    iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
-
-    move-result v3
-
-    if-nez v3, :cond_3
-
-    .line 386
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    .line 387
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
-
-    invoke-virtual {v1, v5}, Lcom/sec/android/touchwiz/widget/TwSoftkeyView;->setVisibility(I)V
-
-    .line 388
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v6}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    .line 389
-    iput v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
-
-    goto :goto_2
-
-    .line 391
-    :cond_3
-    iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    invoke-virtual {v2, v1}, Landroid/widget/ListView;->setChoiceMode(I)V
-
-    .line 392
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mMultiChoiceAdapter:Landroid/widget/ArrayAdapter;
-
-    invoke-virtual {v1, v2}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
-
-    .line 393
-    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->refreshDeleteScreenWithPersistedState()V
-
-    .line 394
-    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->updateDeleteItems()V
-
-    .line 395
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    .line 396
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
-
-    invoke-virtual {v1, v6}, Lcom/sec/android/touchwiz/widget/TwSoftkeyView;->setVisibility(I)V
-
-    .line 397
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v6}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    goto :goto_2
-
-    .line 401
-    :pswitch_1
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v1, v6}, Landroid/widget/FrameLayout;->setVisibility(I)V
-
-    .line 402
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    .line 403
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v6}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    .line 404
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
-
-    invoke-virtual {v1, v5}, Lcom/sec/android/touchwiz/widget/TwSoftkeyView;->setVisibility(I)V
-
-    goto :goto_2
-
-    .line 407
-    :pswitch_2
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
-
-    .line 408
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v1, v5}, Landroid/widget/FrameLayout;->setVisibility(I)V
-
-    .line 409
+    .line 306
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
@@ -3250,7 +2629,7 @@
 
     const/4 v2, 0x6
 
-    if-ge v1, v2, :cond_4
+    if-ge v1, v2, :cond_0
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
 
@@ -3258,43 +2637,121 @@
 
     move-result v1
 
-    if-nez v1, :cond_5
+    if-nez v1, :cond_2
 
-    .line 410
-    :cond_4
+    .line 307
+    :cond_0
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 413
-    :goto_3
-    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
+    .line 310
+    :goto_0
+    invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
-    invoke-virtual {v1, v5}, Lcom/sec/android/touchwiz/widget/TwSoftkeyView;->setVisibility(I)V
+    move-result-object v1
 
-    goto/16 :goto_2
+    const-string v2, "edit_mode"
 
-    .line 412
-    :cond_5
+    invoke-static {v1, v2, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mEdited:I
+
+    .line 311
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "current mState in onResume = :"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {p0, v1}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->log(Ljava/lang/String;)V
+
+    .line 313
+    iget v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
+
+    packed-switch v1, :pswitch_data_0
+
+    .line 325
+    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    if-lt v1, v0, :cond_1
+
+    const/4 v0, 0x2
+
+    :cond_1
+    iput v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
+
+    .line 329
+    :goto_1
+    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->updateTitleBar()V
+
+    .line 330
+    return-void
+
+    .line 309
+    :cond_2
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->createItem:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v6}, Landroid/widget/LinearLayout;->setVisibility(I)V
+    invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    goto :goto_3
+    goto :goto_0
 
-    :cond_6
-    move v1, v2
+    .line 316
+    :pswitch_0
+    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
-    .line 416
-    goto/16 :goto_1
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
-    .line 382
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    .line 317
+    iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAll:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
+
+    .line 318
+    sget-object v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mSoftkeyView:Lcom/sec/android/touchwiz/widget/TwSoftkeyView;
+
+    invoke-virtual {v1, v3}, Lcom/sec/android/touchwiz/widget/TwSoftkeyView;->setVisibility(I)V
+
+    .line 319
+    iput v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mState:I
+
+    goto :goto_1
+
+    .line 321
+    :cond_3
+    invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->updateDeleteItems()V
+
+    goto :goto_1
+
+    .line 313
     nop
 
     :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_1
-        :pswitch_2
+    .packed-switch 0x3
         :pswitch_0
     .end packed-switch
 .end method
@@ -3307,47 +2764,7 @@
     .parameter "changeCount"
 
     .prologue
-    .line 680
-    return-void
-.end method
-
-.method public setAllItemChecked(Z)V
-    .locals 3
-    .parameter "bCheckStatus"
-
-    .prologue
-    .line 347
-    iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    invoke-virtual {v2}, Landroid/widget/ListView;->getCount()I
-
-    move-result v0
-
-    .line 349
-    .local v0, dataCount:I
-    const/4 v1, 0x0
-
-    .local v1, i:I
-    :goto_0
-    if-ge v1, v0, :cond_0
-
-    .line 350
-    iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
-
-    invoke-virtual {v2, v1, p1}, Landroid/widget/ListView;->setItemChecked(IZ)V
-
-    .line 349
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 352
-    :cond_0
-    iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
-
-    invoke-virtual {v2, p1}, Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;->setEnabled(Z)V
-
-    .line 353
+    .line 562
     return-void
 .end method
 
@@ -3356,7 +2773,27 @@
     .parameter "target"
 
     .prologue
-    .line 448
+    .line 334
+    iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->handler:Landroid/os/Handler;
+
+    new-instance v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$6;
+
+    invoke-direct {v1, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$6;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
+
+    const-wide/16 v2, 0xc8
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 367
+    return-void
+.end method
+
+.method public softkeyRightRun(Landroid/view/View;)V
+    .locals 4
+    .parameter "target"
+
+    .prologue
+    .line 371
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->handler:Landroid/os/Handler;
 
     new-instance v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$7;
@@ -3367,26 +2804,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 481
-    return-void
-.end method
-
-.method public softkeyRightRun(Landroid/view/View;)V
-    .locals 4
-    .parameter "target"
-
-    .prologue
-    .line 485
-    iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->handler:Landroid/os/Handler;
-
-    new-instance v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$8;
-
-    invoke-direct {v1, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$8;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;)V
-
-    const-wide/16 v2, 0xc8
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 493
+    .line 379
     return-void
 .end method

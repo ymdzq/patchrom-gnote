@@ -1,51 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <public type="drawable" name="btn_circle" id="0x7f020000" />
-    <public type="drawable" name="btn_create_ss" id="0x7f020006" />
-    <public type="drawable" name="btn_more_list_img" id="0x7f020007" />
-    <public type="drawable" name="btn_more_list_ss" id="0x7f020008" />
-    <public type="drawable" name="btn_more_list_ss_disable" id="0x7f020009" />
-    <public type="drawable" name="btn_more_list_ss_focused" id="0x7f02000a" />
-    <public type="drawable" name="btn_more_list_ss_pressd" id="0x7f02000b" />
-    <public type="drawable" name="btn_more_list_ss_selected" id="0x7f02000c" />
-    <public type="drawable" name="divider_horizontal_dark" id="0x7f020011" />
-    <public type="drawable" name="divider_vertical_2line" id="0x7f020012" />
-    <public type="drawable" name="ic_btn_round_more" id="0x7f020014" />
-    <public type="drawable" name="ic_btn_search" id="0x7f020017" />
-    <public type="drawable" name="ic_button_contacts" id="0x7f020018" />
-    <public type="drawable" name="ic_menu_create" id="0x7f02001c" />
-    <public type="drawable" name="linearlayout_list_item_bg" id="0x7f020021" />
-    <public type="drawable" name="linearlayout_select_all_item_bg" id="0x7f020022" />
-    <public type="drawable" name="linearlayout_selection_item_bg" id="0x7f020023" />
-    <public type="drawable" name="list_selector_background_focus" id="0x7f020024" />
-    <public type="drawable" name="list_selector_background_pressed" id="0x7f020025" />
-    <public type="drawable" name="mainmenu_icon_dial" id="0x7f020026" />
-    <public type="drawable" name="noitems_text_based" id="0x7f020027" />
-    <public type="drawable" name="winset_detailview_bg" id="0x7f02002a" />
-    <public type="drawable" name="winset_list_focus_bg" id="0x7f02002b" />
-    <public type="drawable" name="winset_list_press_bg" id="0x7f02002c" />
-    <public type="drawable" name="btn_circle_normal" id="0x7f020003" />
-    <public type="drawable" name="call_reject_btn_f" id="0x7f02000d" />
-    <public type="drawable" name="call_reject_btn_n" id="0x7f02000e" />
-    <public type="drawable" name="call_reject_btn_p" id="0x7f02000f" />
-    <public type="drawable" name="call_settings_default_image" id="0x7f020010" />
-    <public type="drawable" name="divider_vertical_bg" id="0x7f020013" />
-    <public type="drawable" name="ic_btn_round_more_normal" id="0x7f020016" />
-    <public type="drawable" name="ic_menu_change" id="0x7f020019" />
-    <public type="drawable" name="ic_menu_change_password" id="0x7f02001a" />
-    <public type="drawable" name="ic_menu_check_status" id="0x7f02001b" />
-    <public type="drawable" name="ic_menu_delete" id="0x7f02001d" />
-    <public type="drawable" name="ic_menu_hide" id="0x7f02001e" />
-    <public type="drawable" name="ic_menu_search" id="0x7f02001f" />
-    <public type="drawable" name="icon" id="0x7f020020" />
-    <public type="drawable" name="stat_notify_auto_rejected_call" id="0x7f020028" />
-    <public type="drawable" name="videooverlay" id="0x7f020029" />
-    <public type="drawable" name="winset_selectall_bg" id="0x7f02002d" />
-    <public type="drawable" name="btn_circle_disable" id="0x7f020001" />
-    <public type="drawable" name="btn_circle_disable_focused" id="0x7f020002" />
-    <public type="drawable" name="btn_circle_pressed" id="0x7f020004" />
-    <public type="drawable" name="btn_circle_selected" id="0x7f020005" />
-    <public type="drawable" name="ic_btn_round_more_disabled" id="0x7f020015" />
+    <public type="drawable" name="btn_create_ss" id="0x7f020001" />
+    <public type="drawable" name="btn_more_list_img" id="0x7f020002" />
+    <public type="drawable" name="btn_more_list_ss" id="0x7f020003" />
+    <public type="drawable" name="btn_more_list_ss_disable" id="0x7f020004" />
+    <public type="drawable" name="btn_more_list_ss_focused" id="0x7f020005" />
+    <public type="drawable" name="btn_more_list_ss_pressd" id="0x7f020006" />
+    <public type="drawable" name="btn_more_list_ss_selected" id="0x7f020007" />
+    <public type="drawable" name="divider_horizontal_dark" id="0x7f02000c" />
+    <public type="drawable" name="divider_vertical_2line" id="0x7f02000d" />
+    <public type="drawable" name="ic_btn_search" id="0x7f020010" />
+    <public type="drawable" name="ic_button_contacts" id="0x7f020011" />
+    <public type="drawable" name="ic_menu_create" id="0x7f020015" />
+    <public type="drawable" name="linearlayout_list_item_bg" id="0x7f02001a" />
+    <public type="drawable" name="linearlayout_select_all_item_bg" id="0x7f02001b" />
+    <public type="drawable" name="linearlayout_selection_item_bg" id="0x7f02001c" />
+    <public type="drawable" name="list_selector_background_focus" id="0x7f02001d" />
+    <public type="drawable" name="list_selector_background_pressed" id="0x7f02001e" />
+    <public type="drawable" name="mainmenu_icon_dial" id="0x7f02001f" />
+    <public type="drawable" name="noitems_text_based" id="0x7f020020" />
+    <public type="drawable" name="winset_detailview_bg" id="0x7f020023" />
+    <public type="drawable" name="winset_list_focus_bg" id="0x7f020024" />
+    <public type="drawable" name="winset_list_press_bg" id="0x7f020025" />
+    <public type="drawable" name="btn_circle_normal" id="0x7f020000" />
+    <public type="drawable" name="call_reject_btn_f" id="0x7f020008" />
+    <public type="drawable" name="call_reject_btn_n" id="0x7f020009" />
+    <public type="drawable" name="call_reject_btn_p" id="0x7f02000a" />
+    <public type="drawable" name="call_settings_default_image" id="0x7f02000b" />
+    <public type="drawable" name="divider_vertical_bg" id="0x7f02000e" />
+    <public type="drawable" name="ic_btn_round_more_normal" id="0x7f02000f" />
+    <public type="drawable" name="ic_menu_change" id="0x7f020012" />
+    <public type="drawable" name="ic_menu_change_password" id="0x7f020013" />
+    <public type="drawable" name="ic_menu_check_status" id="0x7f020014" />
+    <public type="drawable" name="ic_menu_delete" id="0x7f020016" />
+    <public type="drawable" name="ic_menu_hide" id="0x7f020017" />
+    <public type="drawable" name="ic_menu_search" id="0x7f020018" />
+    <public type="drawable" name="icon" id="0x7f020019" />
+    <public type="drawable" name="stat_notify_auto_rejected_call" id="0x7f020021" />
+    <public type="drawable" name="videooverlay" id="0x7f020022" />
+    <public type="drawable" name="winset_selectall_bg" id="0x7f020026" />
     <public type="layout" name="alertdialog_num" id="0x7f030000" />
     <public type="layout" name="autoreject" id="0x7f030001" />
     <public type="layout" name="autoreject_delete_item" id="0x7f030002" />
@@ -65,16 +58,15 @@
     <public type="layout" name="rejectcall_blacklist" id="0x7f030010" />
     <public type="layout" name="rejectcall_whitelist" id="0x7f030011" />
     <public type="layout" name="rejectcallwithmsg" id="0x7f030012" />
-    <public type="layout" name="round_more_icon" id="0x7f030013" />
-    <public type="layout" name="simple_list_item" id="0x7f030014" />
-    <public type="layout" name="simple_list_item_multiple_choice" id="0x7f030015" />
-    <public type="layout" name="videocall_item" id="0x7f030016" />
-    <public type="layout" name="videocall_itme_check" id="0x7f030017" />
-    <public type="layout" name="videocall_main" id="0x7f030018" />
-    <public type="layout" name="videocall_presetimage_item" id="0x7f030019" />
-    <public type="layout" name="videocall_presetimage_main" id="0x7f03001a" />
-    <public type="layout" name="whitelist_delete_item" id="0x7f03001b" />
-    <public type="layout" name="whitelist_item" id="0x7f03001c" />
+    <public type="layout" name="simple_list_item" id="0x7f030013" />
+    <public type="layout" name="simple_list_item_multiple_choice" id="0x7f030014" />
+    <public type="layout" name="videocall_item" id="0x7f030015" />
+    <public type="layout" name="videocall_itme_check" id="0x7f030016" />
+    <public type="layout" name="videocall_main" id="0x7f030017" />
+    <public type="layout" name="videocall_presetimage_item" id="0x7f030018" />
+    <public type="layout" name="videocall_presetimage_main" id="0x7f030019" />
+    <public type="layout" name="whitelist_delete_item" id="0x7f03001a" />
+    <public type="layout" name="whitelist_item" id="0x7f03001b" />
     <public type="xml" name="allcalls" id="0x7f040000" />
     <public type="xml" name="answeringcall_list" id="0x7f040001" />
     <public type="xml" name="autoreject" id="0x7f040002" />
@@ -330,9 +322,6 @@
     <public type="string" name="callsettings_autoreject_noti_blacklist" id="0x7f0700dd" />
     <public type="string" name="callsettings_autoreject_noti_ticker_all" id="0x7f0700de" />
     <public type="string" name="callsettings_autoreject_noti_ticker_rejectlist" id="0x7f0700df" />
-    <public type="string" name="information" id="0x7f0700e0" />
-    <public type="string" name="APKTOOL_DUMMY_00e1" id="0x7f0700e1" />
-    <public type="string" name="APKTOOL_DUMMY_00e2" id="0x7f0700e2" />
     <public type="string" name="APKTOOL_DUMMY_00e3" id="0x7f0700e3" />
     <public type="string" name="APKTOOL_DUMMY_00e4" id="0x7f0700e4" />
     <public type="string" name="APKTOOL_DUMMY_00e5" id="0x7f0700e5" />
@@ -358,7 +347,9 @@
     <public type="string" name="APKTOOL_DUMMY_00f9" id="0x7f0700f9" />
     <public type="string" name="APKTOOL_DUMMY_00fa" id="0x7f0700fa" />
     <public type="string" name="APKTOOL_DUMMY_00fb" id="0x7f0700fb" />
-    <public type="string" name="APKTOOL_DUMMY_00fc" id="0x7f0700fc" />
+    <public type="string" name="Dialog_AllNumbers" id="0x7f0700e0" />
+    <public type="string" name="Dialog_ExceptWhiteList" id="0x7f0700e1" />
+    <public type="string" name="callsettings_autoreject_dialog_title" id="0x7f0700e2" />
     <public type="id" name="DialogText" id="0x7f080000" />
     <public type="id" name="autoreject_create_layout" id="0x7f080001" />
     <public type="id" name="autoreject_create" id="0x7f080002" />

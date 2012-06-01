@@ -36,23 +36,23 @@
     .parameter "match"
 
     .prologue
-    .line 310
+    .line 309
     iput-object p1, p0, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectItem;->this$0:Lcom/sec/android/app/callsetting/allcalls/BlackListNumber;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 311
+    .line 310
     iput-object p2, p0, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectItem;->reject_num:Ljava/lang/String;
 
-    .line 312
+    .line 311
     iput-object p3, p0, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectItem;->id:Ljava/lang/String;
 
-    .line 313
+    .line 312
     iput p4, p0, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectItem;->checked:I
 
-    .line 314
+    .line 313
     iput p5, p0, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectItem;->matched:I
 
-    .line 316
+    .line 315
     return-void
 .end method

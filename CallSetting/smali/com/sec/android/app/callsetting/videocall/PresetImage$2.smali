@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 183
+    .line 181
     iput-object p1, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$2;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 186
+    .line 184
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$2;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     iget-object v3, v3, Lcom/sec/android/app/callsetting/videocall/PresetImage;->changeDialog:Landroid/app/AlertDialog;
@@ -61,34 +61,34 @@
 
     if-eqz v3, :cond_0
 
-    .line 188
+    .line 186
     const-string v3, "PresetImage"
 
     const-string v4, " Change Preset Dialog is Showing."
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 222
+    .line 220
     :goto_0
     return-void
 
-    .line 192
+    .line 190
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$2;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
-    .line 194
+    .line 192
     .local v1, context:Landroid/content/Context;
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 195
+    .line 193
     .local v0, ad:Landroid/app/AlertDialog$Builder;
     const v3, 0x7f070038
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 196
+    .line 194
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$2;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     invoke-virtual {v3}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
@@ -101,25 +101,25 @@
 
     move-result-object v2
 
-    .line 200
+    .line 198
     .local v2, preset_Name:Ljava/lang/String;
     const-string v3, "photo"
 
-    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v2}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
 
     move-result v3
 
-    if-nez v3, :cond_1
+    if-eqz v3, :cond_1
 
     const-string v3, "video"
 
-    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v2}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
 
     move-result v3
 
-    if-eqz v3, :cond_2
+    if-nez v3, :cond_2
 
-    .line 202
+    .line 200
     :cond_1
     const-string v3, "PresetImage"
 
@@ -127,7 +127,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 203
+    .line 201
     const v3, 0x7f050009
 
     new-instance v4, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;
@@ -138,18 +138,18 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/app/AlertDialog$Builder;->setItems(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 211
+    .line 209
     :goto_1
     const/4 v3, 0x1
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 220
+    .line 218
     const v3, 0x7f0700ae
 
     invoke-virtual {v0, v3, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 221
+    .line 219
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$2;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
@@ -160,7 +160,7 @@
 
     goto :goto_0
 
-    .line 207
+    .line 205
     :cond_2
     const-string v3, "PresetImage"
 
@@ -168,7 +168,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 208
+    .line 206
     const v3, 0x7f050008
 
     new-instance v4, Lcom/sec/android/app/callsetting/videocall/PresetImage$DefaultClickListener;

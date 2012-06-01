@@ -48,7 +48,7 @@
 
     const/4 v2, 0x0
 
-    .line 156
+    .line 157
     new-instance v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const-string v1, "INPUT_READY"
@@ -57,7 +57,7 @@
 
     sput-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
-    .line 157
+    .line 158
     new-instance v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const-string v1, "BUSY_NETWORK_CONNECT"
@@ -66,7 +66,7 @@
 
     sput-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->BUSY_NETWORK_CONNECT:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
-    .line 158
+    .line 159
     new-instance v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const-string v1, "NETWORK_ERROR"
@@ -75,7 +75,7 @@
 
     sput-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
-    .line 159
+    .line 160
     new-instance v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const-string v1, "INITIAL_QUERY"
@@ -84,7 +84,7 @@
 
     sput-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INITIAL_QUERY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
-    .line 155
+    .line 156
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
@@ -121,7 +121,7 @@
     .end annotation
 
     .prologue
-    .line 155
+    .line 156
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -132,7 +132,7 @@
     .parameter
 
     .prologue
-    .line 155
+    .line 156
     const-class v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -148,7 +148,7 @@
     .locals 1
 
     .prologue
-    .line 155
+    .line 156
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->$VALUES:[Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     invoke-virtual {v0}, [Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->clone()Ljava/lang/Object;

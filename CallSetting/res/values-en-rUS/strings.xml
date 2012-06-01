@@ -220,5 +220,4 @@
     <string name="callsettings_autoreject_noti_blacklist">Black list numbers will be rejected</string>
     <string name="callsettings_autoreject_noti_ticker_all">All calls will be rejected</string>
     <string name="callsettings_autoreject_noti_ticker_rejectlist">All calls from auto reject numbers will be rejected</string>
-    <string name="information">Information</string>
 </resources>

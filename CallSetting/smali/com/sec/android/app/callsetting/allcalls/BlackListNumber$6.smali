@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 501
+    .line 498
     iput-object p1, p0, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$6;->this$0:Lcom/sec/android/app/callsetting/allcalls/BlackListNumber;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,6 +42,6 @@
     .parameter "dialog"
 
     .prologue
-    .line 504
+    .line 501
     return-void
 .end method

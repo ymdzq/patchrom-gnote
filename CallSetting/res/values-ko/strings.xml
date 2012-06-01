@@ -23,6 +23,8 @@
     <string name="summary_callserID">전화를 걸 때 네트워크 사업자의 설정에 따라 내 전화번호를 표시하거나 숨깁니다</string>
     <string name="summary_FDN">FDN 연락처 관리</string>
     <string name="menu_AutoRejectNumbers">자동 수신 거부 번호</string>
+    <string name="menu_AutoRejectMessage">Auto reject message</string>
+    <string name="list_DontSendaMessage">"Don't send a message"</string>
     <string name="menu_WhiteList">수신 허용 목록</string>
     <string name="menu_BlackList">수신 거부 목록</string>
     <string name="summary_WhiteList">자동 거절 모드가 켜져 있을 때 수신을 허용할 번호를 설정하세요</string>
@@ -51,6 +53,10 @@
     <string name="callsettings_title_fdn">FDN 연락처</string>
     <string name="callsettings_title_voicemail">음성 메시지</string>
     <string name="callsettings_title_fakecall">셀프통화</string>
+    <string name="rejectmsg_over">"수신 거절 메시지는
+80byte를 초과할 수 없습니다"</string>
+    <string name="rejectmsg_line_over">"수신 거절 메시지는
+ 3 줄을 초과할 수 없습니다"</string>
     <string name="auto_reject_calls">자동 수신 거부</string>
     <string name="callsettings_preset_title">선택</string>
     <string name="callsettings_change_preset">변경</string>
@@ -220,5 +226,7 @@
     <string name="callsettings_autoreject_noti_blacklist">수신 거부 번호만 수신이 거부됩니다</string>
     <string name="callsettings_autoreject_noti_ticker_all">모든 전화가 수신 거부됩니다</string>
     <string name="callsettings_autoreject_noti_ticker_rejectlist">수신 거부 번호로부터 걸려오는 모든 전화가 수신 거부됩니다</string>
-    <string name="information">정보</string>
+    <string name="Dialog_AllNumbers">모든 번호</string>
+    <string name="Dialog_ExceptWhiteList">허용 목록 제외</string>
+    <string name="callsettings_autoreject_dialog_title">자동 수신 거부 번호</string>
 </resources>

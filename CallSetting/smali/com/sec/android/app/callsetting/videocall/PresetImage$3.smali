@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 414
+    .line 411
     iput-object p1, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$3;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,39 +41,39 @@
     .locals 3
 
     .prologue
-    .line 416
+    .line 413
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$3;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$3;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
-    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
-    invoke-static {v1}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageView;
+    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
+    invoke-static {v1}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageButton;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/ImageView;->getWidth()I
+    invoke-virtual {v1}, Landroid/widget/ImageButton;->getWidth()I
 
     move-result v1
 
     iput v1, v0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputX:I
 
-    .line 417
+    .line 414
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$3;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$3;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
-    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
-    invoke-static {v1}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageView;
+    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
+    invoke-static {v1}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageButton;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/ImageView;->getHeight()I
+    invoke-virtual {v1}, Landroid/widget/ImageButton;->getHeight()I
 
     move-result v1
 
     iput v1, v0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputY:I
 
-    .line 418
+    .line 415
     const-string v0, "PresetImage"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -100,7 +100,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 419
+    .line 416
     const-string v0, "PresetImage"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -127,6 +127,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 427
+    .line 417
     return-void
 .end method

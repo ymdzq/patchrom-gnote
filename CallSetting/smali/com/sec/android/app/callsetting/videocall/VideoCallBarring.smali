@@ -103,63 +103,63 @@
 
     const/4 v1, 0x0
 
-    .line 62
+    .line 63
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
-    .line 89
+    .line 90
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
-    .line 166
+    .line 167
     iput v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
-    .line 167
+    .line 168
     iput-boolean v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCB_Checked:Z
 
-    .line 180
+    .line 181
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mInputPassword:Landroid/widget/EditText;
 
-    .line 181
+    .line 182
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mOldPassword:Landroid/widget/EditText;
 
-    .line 182
+    .line 183
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNewPassword:Landroid/widget/EditText;
 
-    .line 183
+    .line 184
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mConfirmPassword:Landroid/widget/EditText;
 
-    .line 184
+    .line 185
     iput-boolean v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPwdChangeSubmit:Z
 
-    .line 192
+    .line 193
     iput-boolean v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSkipCallBarringReq:Z
 
-    .line 193
+    .line 194
     iput-boolean v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCheckAllCB:Z
 
-    .line 195
+    .line 196
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCBVisible:Z
 
-    .line 708
+    .line 709
     new-instance v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$10;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$10;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->responseCBHandler:Landroid/os/Handler;
 
-    .line 1073
+    .line 1074
     new-instance v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$11;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$11;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
 
-    .line 1218
+    .line 1219
     new-instance v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$12;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$12;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
@@ -174,7 +174,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->callbarring_password:Ljava/lang/String;
 
     return-object v0
@@ -186,7 +186,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     iput-object p1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->callbarring_password:Ljava/lang/String;
 
     return-object p1
@@ -198,7 +198,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->displayToast(Ljava/lang/String;)V
 
     return-void
@@ -213,7 +213,7 @@
     .parameter "x4"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->changePasswordCallBarring(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -224,7 +224,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->imm:Landroid/view/inputmethod/InputMethodManager;
 
     return-object v0
@@ -235,7 +235,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCB_Checked:Z
 
     return v0
@@ -246,7 +246,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->handler:Landroid/os/Handler;
 
     return-object v0
@@ -259,7 +259,7 @@
     .parameter "x2"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->handleSetCBMessage(Landroid/os/AsyncResult;I)I
 
     move-result v0
@@ -278,7 +278,7 @@
     .end annotation
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->setAppState(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;)V
 
     return-void
@@ -296,7 +296,7 @@
     .end annotation
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->setAppState(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;I)V
 
     return-void
@@ -308,7 +308,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->handleQueryCBMessage(Landroid/os/AsyncResult;)I
 
     move-result v0
@@ -321,7 +321,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCheckAllCB:Z
 
     return v0
@@ -333,7 +333,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     iput-boolean p1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCheckAllCB:Z
 
     return p1
@@ -344,7 +344,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     invoke-static {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
     return-void
@@ -355,7 +355,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
 
     return-object v0
@@ -367,7 +367,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     iput-boolean p1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSkipCallBarringReq:Z
 
     return p1
@@ -378,7 +378,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     return-object v0
@@ -389,7 +389,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->dismissCallWaiting()V
 
     return-void
@@ -400,7 +400,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
     return v0
@@ -412,7 +412,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     iput p1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
     return p1
@@ -423,7 +423,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
     add-int/lit8 v1, v0, 0x1
@@ -438,7 +438,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     return-object v0
@@ -450,7 +450,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->setCallBarring(I)V
 
     return-void
@@ -461,7 +461,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getCallBarring()V
 
     return-void
@@ -472,7 +472,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mOldPassword:Landroid/widget/EditText;
 
     return-object v0
@@ -483,7 +483,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNewPassword:Landroid/widget/EditText;
 
     return-object v0
@@ -494,7 +494,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mConfirmPassword:Landroid/widget/EditText;
 
     return-object v0
@@ -508,7 +508,7 @@
     .parameter
 
     .prologue
-    .line 1237
+    .line 1238
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -523,12 +523,12 @@
 
     if-gtz v0, :cond_2
 
-    .line 1243
+    .line 1244
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->BUSY_NETWORK_CONNECT:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->setAppState(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;)V
 
-    .line 1245
+    .line 1246
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getServiceState()Landroid/telephony/ServiceState;
@@ -539,7 +539,7 @@
 
     move-result v0
 
-    .line 1247
+    .line 1248
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -584,7 +584,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1248
+    .line 1249
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -631,10 +631,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1250
+    .line 1251
     if-nez v0, :cond_0
 
-    .line 1251
+    .line 1252
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -663,20 +663,20 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1253
+    .line 1254
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->requestCBChangePassword(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1267
+    .line 1268
     :goto_0
     return-void
 
-    .line 1254
+    .line 1255
     :cond_0
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_1
 
-    .line 1255
+    .line 1256
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -705,12 +705,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1256
+    .line 1257
     const-string v0, "onCreate: radio not ready, waiting for signal."
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 1257
+    .line 1258
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
@@ -723,7 +723,7 @@
 
     goto :goto_0
 
-    .line 1260
+    .line 1261
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -753,7 +753,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1261
+    .line 1262
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const/16 v1, 0xc8
@@ -762,13 +762,13 @@
 
     goto :goto_0
 
-    .line 1264
+    .line 1265
     :cond_2
     const-string v0, "setDisplayMode: radio is off!"
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 1265
+    .line 1266
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const/16 v1, 0x320
@@ -785,7 +785,7 @@
     .prologue
     const/4 v6, 0x4
 
-    .line 1278
+    .line 1279
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mOldPassword:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -796,7 +796,7 @@
 
     move-result-object v0
 
-    .line 1279
+    .line 1280
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNewPassword:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -807,7 +807,7 @@
 
     move-result-object v1
 
-    .line 1280
+    .line 1281
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mConfirmPassword:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -818,7 +818,7 @@
 
     move-result-object v2
 
-    .line 1282
+    .line 1283
     const-class v3, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -845,7 +845,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1283
+    .line 1284
     const-class v3, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -872,7 +872,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1284
+    .line 1285
     const-class v3, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -899,7 +899,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1288
+    .line 1289
     if-eqz v0, :cond_0
 
     if-eqz v0, :cond_1
@@ -910,7 +910,7 @@
 
     if-ge v0, v6, :cond_1
 
-    .line 1290
+    .line 1291
     :cond_0
     const v0, 0x7f0700a6
 
@@ -918,17 +918,17 @@
 
     move-result-object v0
 
-    .line 1310
+    .line 1311
     :goto_0
     invoke-direct {p0, p1, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showError(Landroid/app/Dialog;Ljava/lang/String;)V
 
-    .line 1311
+    .line 1312
     const/4 v0, 0x0
 
     :goto_1
     return v0
 
-    .line 1291
+    .line 1292
     :cond_1
     if-eqz v1, :cond_2
 
@@ -940,7 +940,7 @@
 
     if-ge v0, v6, :cond_3
 
-    .line 1293
+    .line 1294
     :cond_2
     const v0, 0x7f0700a7
 
@@ -950,7 +950,7 @@
 
     goto :goto_0
 
-    .line 1294
+    .line 1295
     :cond_3
     if-eqz v2, :cond_4
 
@@ -962,7 +962,7 @@
 
     if-ge v0, v6, :cond_5
 
-    .line 1296
+    .line 1297
     :cond_4
     const v0, 0x7f0700a8
 
@@ -972,7 +972,7 @@
 
     goto :goto_0
 
-    .line 1298
+    .line 1299
     :cond_5
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -980,7 +980,7 @@
 
     if-nez v0, :cond_6
 
-    .line 1300
+    .line 1301
     const v0, 0x7f0700aa
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getString(I)Ljava/lang/String;
@@ -989,20 +989,20 @@
 
     goto :goto_0
 
-    .line 1303
+    .line 1304
     :cond_6
     const v0, 0x7f0700ad
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getString(I)Ljava/lang/String;
 
-    .line 1304
+    .line 1305
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->handler:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->doConfirm:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 1305
+    .line 1306
     const/4 v0, 0x1
 
     goto :goto_1
@@ -1012,7 +1012,7 @@
     .locals 3
 
     .prologue
-    .line 1210
+    .line 1211
     const-string v0, "CallBarring"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1061,7 +1061,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1213
+    .line 1214
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCheckAllCB:Z
 
     if-eqz v0, :cond_0
@@ -1072,11 +1072,11 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 1216
+    .line 1217
     :goto_0
     return-void
 
-    .line 1215
+    .line 1216
     :cond_0
     iget v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPrevBusyDialog:I
 
@@ -1089,15 +1089,15 @@
     .locals 1
 
     .prologue
-    .line 1204
+    .line 1205
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->setAppState(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;)V
 
-    .line 1206
+    .line 1207
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->finish()V
 
-    .line 1207
+    .line 1208
     return-void
 .end method
 
@@ -1106,7 +1106,7 @@
     .parameter "msg"
 
     .prologue
-    .line 1406
+    .line 1407
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1117,11 +1117,11 @@
 
     move-result-object v0
 
-    .line 1407
+    .line 1408
     .local v0, toast:Landroid/widget/Toast;
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1408
+    .line 1409
     return-void
 .end method
 
@@ -1129,7 +1129,7 @@
     .locals 4
 
     .prologue
-    .line 553
+    .line 554
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -1144,12 +1144,12 @@
 
     if-gtz v0, :cond_2
 
-    .line 559
+    .line 560
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INITIAL_QUERY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->setAppState(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;)V
 
-    .line 561
+    .line 562
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getServiceState()Landroid/telephony/ServiceState;
@@ -1160,7 +1160,7 @@
 
     move-result v0
 
-    .line 562
+    .line 563
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1205,7 +1205,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 563
+    .line 564
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1252,10 +1252,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 565
+    .line 566
     if-nez v0, :cond_0
 
-    .line 566
+    .line 567
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1284,20 +1284,20 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 568
+    .line 569
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->requestCBQueryCommand()V
 
-    .line 582
+    .line 583
     :goto_0
     return-void
 
-    .line 569
+    .line 570
     :cond_0
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_1
 
-    .line 570
+    .line 571
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1326,12 +1326,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 571
+    .line 572
     const-string v0, "onCreate: radio not ready, waiting for signal."
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 572
+    .line 573
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
@@ -1344,7 +1344,7 @@
 
     goto :goto_0
 
-    .line 575
+    .line 576
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1374,7 +1374,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 576
+    .line 577
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const/16 v1, 0xc8
@@ -1383,13 +1383,13 @@
 
     goto :goto_0
 
-    .line 579
+    .line 580
     :cond_2
     const-string v0, "setDisplayMode: radio is off!"
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 580
+    .line 581
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const/16 v1, 0x320
@@ -1414,12 +1414,12 @@
 
     const/4 v6, 0x1
 
-    .line 784
+    .line 785
     iget-object v3, p1, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     if-eqz v3, :cond_1
 
-    .line 785
+    .line 786
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1442,14 +1442,14 @@
 
     invoke-static {v3}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 786
+    .line 787
     iget-object v3, p1, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     instance-of v3, v3, Lcom/android/internal/telephony/CommandException;
 
     if-eqz v3, :cond_0
 
-    .line 787
+    .line 788
     iget-object v3, p1, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     check-cast v3, Lcom/android/internal/telephony/CommandException;
@@ -1460,16 +1460,16 @@
 
     move-result-object v0
 
-    .line 788
+    .line 789
     .local v0, err:Lcom/android/internal/telephony/CommandException$Error;
     sget-object v3, Lcom/android/internal/telephony/CommandException$Error;->FDN_CHECK_FAILURE:Lcom/android/internal/telephony/CommandException$Error;
 
     if-ne v0, v3, :cond_0
 
-    .line 790
+    .line 791
     const/16 v3, 0x384
 
-    .line 860
+    .line 861
     .end local v0           #err:Lcom/android/internal/telephony/CommandException$Error;
     :goto_0
     return v3
@@ -1477,10 +1477,10 @@
     :cond_0
     move v3, v4
 
-    .line 794
+    .line 795
     goto :goto_0
 
-    .line 796
+    .line 797
     :cond_1
     iget-object v3, p1, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
@@ -1490,7 +1490,7 @@
 
     check-cast v2, [I
 
-    .line 798
+    .line 799
     .local v2, ints:[I
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1514,7 +1514,7 @@
 
     invoke-static {v3}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 802
+    .line 803
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1537,7 +1537,7 @@
 
     invoke-static {v3}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 804
+    .line 805
     const/4 v1, 0x0
 
     .local v1, i:I
@@ -1546,7 +1546,7 @@
 
     if-ge v1, v3, :cond_2
 
-    .line 805
+    .line 806
     const-string v3, "ints["
 
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -1575,18 +1575,18 @@
 
     invoke-static {v3}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 804
+    .line 805
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 809
+    .line 810
     :cond_2
     array-length v3, v2
 
     if-eqz v3, :cond_c
 
-    .line 810
+    .line 811
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1609,14 +1609,14 @@
 
     invoke-static {v3}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 811
+    .line 812
     aget v3, v2, v7
 
     and-int/lit8 v3, v3, 0x10
 
     if-nez v3, :cond_7
 
-    .line 813
+    .line 814
     iget-boolean v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCheckAllCB:Z
 
     if-nez v3, :cond_3
@@ -1629,13 +1629,13 @@
 
     invoke-direct {p0, v3}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->displayToast(Ljava/lang/String;)V
 
-    .line 815
+    .line 816
     :cond_3
     iget v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
     if-nez v3, :cond_4
 
-    .line 816
+    .line 817
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1646,7 +1646,7 @@
 
     invoke-virtual {v3, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 817
+    .line 818
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1657,13 +1657,13 @@
 
     invoke-virtual {v3, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 820
+    .line 821
     :cond_4
     iget v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
     if-ne v3, v9, :cond_5
 
-    .line 821
+    .line 822
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     const/4 v4, 0x4
@@ -1676,7 +1676,7 @@
 
     invoke-virtual {v3, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 824
+    .line 825
     :cond_5
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
@@ -1694,10 +1694,10 @@
 
     if-eqz v3, :cond_6
 
-    .line 826
+    .line 827
     iput-boolean v6, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSkipCallBarringReq:Z
 
-    .line 827
+    .line 828
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget v4, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
@@ -1710,14 +1710,14 @@
 
     invoke-virtual {v3, v7}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 860
+    .line 861
     :cond_6
     :goto_2
     const/16 v3, 0x64
 
     goto/16 :goto_0
 
-    .line 831
+    .line 832
     :cond_7
     aget v3, v2, v7
 
@@ -1725,7 +1725,7 @@
 
     if-eqz v3, :cond_b
 
-    .line 834
+    .line 835
     iget-boolean v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCheckAllCB:Z
 
     if-nez v3, :cond_8
@@ -1738,13 +1738,13 @@
 
     invoke-direct {p0, v3}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->displayToast(Ljava/lang/String;)V
 
-    .line 836
+    .line 837
     :cond_8
     iget v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
     if-nez v3, :cond_9
 
-    .line 837
+    .line 838
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1755,7 +1755,7 @@
 
     invoke-virtual {v3, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 838
+    .line 839
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1766,13 +1766,13 @@
 
     invoke-virtual {v3, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 841
+    .line 842
     :cond_9
     iget v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
     if-ne v3, v9, :cond_a
 
-    .line 842
+    .line 843
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     const/4 v4, 0x4
@@ -1785,7 +1785,7 @@
 
     invoke-virtual {v3, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 845
+    .line 846
     :cond_a
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
@@ -1803,10 +1803,10 @@
 
     if-nez v3, :cond_6
 
-    .line 847
+    .line 848
     iput-boolean v6, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSkipCallBarringReq:Z
 
-    .line 848
+    .line 849
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget v4, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
@@ -1824,13 +1824,13 @@
     :cond_b
     move v3, v4
 
-    .line 853
+    .line 854
     goto/16 :goto_0
 
     :cond_c
     move v3, v4
 
-    .line 856
+    .line 857
     goto/16 :goto_0
 .end method
 
@@ -1844,12 +1844,12 @@
 
     const/16 v1, 0x64
 
-    .line 864
+    .line 865
     iget-object v3, p1, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     if-eqz v3, :cond_3
 
-    .line 865
+    .line 866
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1872,14 +1872,14 @@
 
     invoke-static {v1}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 867
+    .line 868
     iget-object v1, p1, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     instance-of v1, v1, Lcom/android/internal/telephony/CommandException;
 
     if-eqz v1, :cond_2
 
-    .line 868
+    .line 869
     iget-object v1, p1, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
     check-cast v1, Lcom/android/internal/telephony/CommandException;
@@ -1890,38 +1890,38 @@
 
     move-result-object v0
 
-    .line 869
+    .line 870
     .local v0, err:Lcom/android/internal/telephony/CommandException$Error;
     sget-object v1, Lcom/android/internal/telephony/CommandException$Error;->PASSWORD_INCORRECT:Lcom/android/internal/telephony/CommandException$Error;
 
     if-ne v0, v1, :cond_0
 
-    .line 871
+    .line 872
     const/16 v1, 0x190
 
-    .line 913
+    .line 914
     .end local v0           #err:Lcom/android/internal/telephony/CommandException$Error;
     :goto_0
     return v1
 
-    .line 872
+    .line 873
     .restart local v0       #err:Lcom/android/internal/telephony/CommandException$Error;
     :cond_0
     sget-object v1, Lcom/android/internal/telephony/CommandException$Error;->SIM_PUK2:Lcom/android/internal/telephony/CommandException$Error;
 
     if-ne v0, v1, :cond_1
 
-    .line 873
+    .line 874
     const-string v1, "SIM_PUK2"
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->displayToast(Ljava/lang/String;)V
 
     move v1, v2
 
-    .line 874
+    .line 875
     goto :goto_0
 
-    .line 876
+    .line 877
     :cond_1
     iget v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
@@ -1929,16 +1929,16 @@
 
     move v1, v2
 
-    .line 889
+    .line 890
     goto :goto_0
 
-    .line 883
+    .line 884
     :pswitch_0
     const/16 v1, 0x258
 
     goto :goto_0
 
-    .line 886
+    .line 887
     :pswitch_1
     const/16 v1, 0x1f4
 
@@ -1948,63 +1948,63 @@
     :cond_2
     move v1, v2
 
-    .line 894
+    .line 895
     goto :goto_0
 
-    .line 896
+    .line 897
     :cond_3
     if-nez p2, :cond_5
 
-    .line 898
+    .line 899
     const-string v2, "handleSetCBMessage() has been processed ACTIVATE"
 
     invoke-static {v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 910
+    .line 911
     :cond_4
     :goto_1
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->requestCBQueryCommand()V
 
     goto :goto_0
 
-    .line 899
+    .line 900
     :cond_5
     const/4 v2, 0x1
 
     if-ne p2, v2, :cond_6
 
-    .line 900
+    .line 901
     const-string v2, "handleSetCBMessage() has been processed DEACTIVATE"
 
     invoke-static {v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 901
+    .line 902
     :cond_6
     const/4 v2, 0x2
 
     if-ne p2, v2, :cond_7
 
-    .line 902
+    .line 903
     const-string v2, "handleSetCBMessage() has been processed CANCELALL"
 
     invoke-static {v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 904
+    .line 905
     :cond_7
     const/4 v2, 0x3
 
     if-ne p2, v2, :cond_4
 
-    .line 905
+    .line 906
     const-string v2, "handleSetCBMessage() has been processed CONFIRM"
 
     invoke-static {v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 906
+    .line 907
     const v2, 0x7f0700a9
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getString(I)Ljava/lang/String;
@@ -2015,7 +2015,7 @@
 
     goto :goto_0
 
-    .line 876
+    .line 877
     nop
 
     :pswitch_data_0
@@ -2035,12 +2035,12 @@
     .parameter
 
     .prologue
-    .line 1403
+    .line 1404
     const-string v0, "## VideoCallBarring ##"
 
     invoke-static {v0, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1404
+    .line 1405
     return-void
 .end method
 
@@ -2052,10 +2052,10 @@
     .parameter "confirmPassword"
 
     .prologue
-    .line 1232
+    .line 1233
     const-string v1, "AB"
 
-    .line 1233
+    .line 1234
     .local v1, facility:Ljava/lang/String;
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -2079,7 +2079,7 @@
 
     invoke-interface/range {v0 .. v5}, Lcom/android/internal/telephony/Phone;->changeBarringPassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Message;)Z
 
-    .line 1234
+    .line 1235
     return-void
 .end method
 
@@ -2087,16 +2087,16 @@
     .locals 5
 
     .prologue
-    .line 676
+    .line 677
     const-string v0, "AO"
 
-    .line 678
+    .line 679
     .local v0, facility:Ljava/lang/String;
     iget v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 704
+    .line 705
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -2112,51 +2112,51 @@
 
     invoke-interface {v1, v0, v2}, Lcom/android/internal/telephony/Phone;->getCallBarringOption(Ljava/lang/String;Landroid/os/Message;)V
 
-    .line 705
+    .line 706
     return-void
 
-    .line 680
+    .line 681
     :pswitch_0
     const-string v0, "AO"
 
-    .line 681
+    .line 682
     goto :goto_0
 
-    .line 684
+    .line 685
     :pswitch_1
     const-string v0, "OI"
 
-    .line 685
+    .line 686
     goto :goto_0
 
-    .line 688
+    .line 689
     :pswitch_2
     const-string v0, "OX"
 
-    .line 689
+    .line 690
     goto :goto_0
 
-    .line 692
+    .line 693
     :pswitch_3
     const-string v0, "AI"
 
-    .line 693
+    .line 694
     goto :goto_0
 
-    .line 696
+    .line 697
     :pswitch_4
     const-string v0, "IR"
 
-    .line 697
+    .line 698
     goto :goto_0
 
-    .line 700
+    .line 701
     :pswitch_5
     const-string v0, "AB"
 
     goto :goto_0
 
-    .line 678
+    .line 679
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -2173,48 +2173,48 @@
     .parameter "process"
 
     .prologue
-    .line 620
+    .line 621
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->callbarring_password:Ljava/lang/String;
 
-    .line 621
+    .line 622
     .local v3, password:Ljava/lang/String;
     if-nez v3, :cond_0
 
-    .line 623
+    .line 624
     const-string v3, ""
 
-    .line 626
+    .line 627
     :cond_0
     const-string v2, "AO"
 
-    .line 627
+    .line 628
     .local v2, facility:Ljava/lang/String;
     const/4 v1, 0x0
 
-    .line 628
+    .line 629
     .local v1, bActivate:Z
     const/4 v4, 0x0
 
-    .line 630
+    .line 631
     .local v4, serviceClass:I
     packed-switch p1, :pswitch_data_0
 
-    .line 642
+    .line 643
     const-string v0, "requestCBSetCommand (process) Exception!"
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 645
+    .line 646
     :goto_0
     iget v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
     packed-switch v0, :pswitch_data_1
 
-    .line 670
+    .line 671
     :goto_1
     const/16 v4, 0x10
 
-    .line 671
+    .line 672
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     iget-object v5, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->responseCBHandler:Landroid/os/Handler;
@@ -2231,72 +2231,72 @@
 
     invoke-interface/range {v0 .. v5}, Lcom/android/internal/telephony/Phone;->setCallBarringOption(ZLjava/lang/String;Ljava/lang/String;ILandroid/os/Message;)Z
 
-    .line 673
+    .line 674
     return-void
 
-    .line 632
+    .line 633
     :pswitch_0
     const/4 v1, 0x1
 
-    .line 633
+    .line 634
     goto :goto_0
 
-    .line 635
+    .line 636
     :pswitch_1
     const/4 v1, 0x0
 
-    .line 636
+    .line 637
     goto :goto_0
 
-    .line 638
+    .line 639
     :pswitch_2
     const/4 v1, 0x0
 
-    .line 639
+    .line 640
     goto :goto_0
 
-    .line 647
+    .line 648
     :pswitch_3
     const-string v2, "AO"
 
-    .line 648
+    .line 649
     goto :goto_1
 
-    .line 651
+    .line 652
     :pswitch_4
     const-string v2, "OI"
 
-    .line 652
+    .line 653
     goto :goto_1
 
-    .line 655
+    .line 656
     :pswitch_5
     const-string v2, "OX"
 
-    .line 656
+    .line 657
     goto :goto_1
 
-    .line 659
+    .line 660
     :pswitch_6
     const-string v2, "AI"
 
-    .line 660
+    .line 661
     goto :goto_1
 
-    .line 663
+    .line 664
     :pswitch_7
     const-string v2, "IR"
 
-    .line 664
+    .line 665
     goto :goto_1
 
-    .line 666
+    .line 667
     :pswitch_8
     const-string v2, "AB"
 
     goto :goto_1
 
-    .line 630
+    .line 631
     nop
 
     :pswitch_data_0
@@ -2306,7 +2306,7 @@
         :pswitch_2
     .end packed-switch
 
-    .line 645
+    .line 646
     :pswitch_data_1
     .packed-switch 0x0
         :pswitch_3
@@ -2328,17 +2328,17 @@
     .end annotation
 
     .prologue
-    .line 918
+    .line 919
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     if-ne p1, v0, :cond_0
 
-    .line 919
+    .line 920
     const-string v0, "setAppState: illegal error state without reason."
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 920
+    .line 921
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "illegal error state without reason."
@@ -2347,13 +2347,13 @@
 
     throw v0
 
-    .line 922
+    .line 923
     :cond_0
     const/16 v0, 0x64
 
     invoke-direct {p0, p1, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->setAppState(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;I)V
 
-    .line 923
+    .line 924
     return-void
 .end method
 
@@ -2378,7 +2378,7 @@
 
     const/4 v3, 0x0
 
-    .line 930
+    .line 931
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2445,27 +2445,27 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 933
+    .line 934
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mAppState:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     if-ne p1, v0, :cond_0
 
-    .line 934
+    .line 935
     const-string v0, "setAppState: requestedState same as current state. ignoring."
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 1060
+    .line 1061
     :goto_0
     return-void
 
-    .line 940
+    .line 941
     :cond_0
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     if-ne p1, v0, :cond_6
 
-    .line 941
+    .line 942
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2496,15 +2496,15 @@
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 945
+    .line 946
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCBVisible:Z
 
     if-eqz v0, :cond_4
 
-    .line 947
+    .line 948
     sparse-switch p2, :sswitch_data_0
 
-    .line 996
+    .line 997
     :goto_1
     iget v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
@@ -2518,15 +2518,15 @@
 
     if-eq v0, v1, :cond_3
 
-    .line 997
+    .line 998
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCheckAllCB:Z
 
     if-nez v0, :cond_1
 
-    .line 998
+    .line 999
     iput-boolean v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSkipCallBarringReq:Z
 
-    .line 999
+    .line 1000
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
@@ -2558,7 +2558,7 @@
     :goto_2
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    .line 1002
+    .line 1003
     :cond_1
     if-eq p2, v5, :cond_2
 
@@ -2578,7 +2578,7 @@
 
     if-ne p2, v0, :cond_3
 
-    .line 1006
+    .line 1007
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
@@ -2592,22 +2592,22 @@
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 1010
+    .line 1011
     :cond_3
     iput-object p1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mAppState:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     goto :goto_0
 
-    .line 949
+    .line 950
     :sswitch_0
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->deleteBusyDialog()V
 
-    .line 951
+    .line 952
     invoke-virtual {p0, v5}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
     goto :goto_1
 
-    .line 955
+    .line 956
     :sswitch_1
     const/16 v0, 0x320
 
@@ -2615,58 +2615,58 @@
 
     goto :goto_1
 
-    .line 959
+    .line 960
     :sswitch_2
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->deleteBusyDialog()V
 
-    .line 961
+    .line 962
     invoke-virtual {p0, v6}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
     goto :goto_1
 
-    .line 965
+    .line 966
     :sswitch_3
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->deleteBusyDialog()V
 
-    .line 967
+    .line 968
     const/16 v0, 0x190
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
     goto :goto_1
 
-    .line 971
+    .line 972
     :sswitch_4
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->deleteBusyDialog()V
 
-    .line 973
+    .line 974
     invoke-virtual {p0, v7}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
     goto :goto_1
 
-    .line 977
+    .line 978
     :sswitch_5
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->deleteBusyDialog()V
 
-    .line 979
+    .line 980
     const/16 v0, 0x258
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
     goto :goto_1
 
-    .line 982
+    .line 983
     :sswitch_6
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->deleteBusyDialog()V
 
-    .line 984
+    .line 985
     const/16 v0, 0x2bc
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
     goto/16 :goto_1
 
-    .line 992
+    .line 993
     :cond_4
     const-string v0, "VideoCallBarring"
 
@@ -2698,7 +2698,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 993
+    .line 994
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->deleteBusyDialog()V
 
     goto/16 :goto_1
@@ -2706,10 +2706,10 @@
     :cond_5
     move v1, v3
 
-    .line 999
+    .line 1000
     goto/16 :goto_2
 
-    .line 1014
+    .line 1015
     :cond_6
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2733,7 +2733,7 @@
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 1016
+    .line 1017
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$13;->$SwitchMap$com$sec$android$app$callsetting$videocall$VideoCallBarring$AppState:[I
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mAppState:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
@@ -2746,25 +2746,25 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1059
+    .line 1060
     :cond_7
     :goto_3
     iput-object p1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mAppState:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     goto/16 :goto_0
 
-    .line 1020
+    .line 1021
     :pswitch_0
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     if-eq p1, v0, :cond_7
 
-    .line 1021
+    .line 1022
     const-string v0, "setAppState: illegal transition from NETWORK_ERROR"
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 1022
+    .line 1023
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "illegal transition from NETWORK_ERROR"
@@ -2773,7 +2773,7 @@
 
     throw v0
 
-    .line 1027
+    .line 1028
     :pswitch_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2795,37 +2795,37 @@
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 1028
+    .line 1029
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCBVisible:Z
 
     if-eqz v0, :cond_9
 
-    .line 1029
+    .line 1030
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INITIAL_QUERY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     if-ne p1, v0, :cond_8
 
-    .line 1030
+    .line 1031
     const/16 v0, 0x384
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
     goto :goto_3
 
-    .line 1031
+    .line 1032
     :cond_8
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->BUSY_NETWORK_CONNECT:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     if-ne p1, v0, :cond_7
 
-    .line 1032
+    .line 1033
     const/16 v0, 0x64
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
     goto :goto_3
 
-    .line 1036
+    .line 1037
     :cond_9
     const-string v0, "CallBarring"
 
@@ -2859,18 +2859,18 @@
 
     goto :goto_3
 
-    .line 1041
+    .line 1042
     :pswitch_2
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     if-eq p1, v0, :cond_a
 
-    .line 1042
+    .line 1043
     const-string v0, "setAppState: illegal transition from INITIAL_QUERY"
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 1043
+    .line 1044
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "illegal transition from INITIAL_QUERY"
@@ -2879,24 +2879,24 @@
 
     throw v0
 
-    .line 1047
+    .line 1048
     :cond_a
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->deleteBusyDialog()V
 
     goto :goto_3
 
-    .line 1050
+    .line 1051
     :pswitch_3
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     if-eq p1, v0, :cond_b
 
-    .line 1051
+    .line 1052
     const-string v0, "setAppState: illegal transition from BUSY_NETWORK_CONNECT"
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 1052
+    .line 1053
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "illegal transition from BUSY_NETWORK_CONNECT"
@@ -2905,13 +2905,13 @@
 
     throw v0
 
-    .line 1056
+    .line 1057
     :cond_b
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->deleteBusyDialog()V
 
     goto/16 :goto_3
 
-    .line 947
+    .line 948
     nop
 
     :sswitch_data_0
@@ -2925,7 +2925,7 @@
         0x384 -> :sswitch_6
     .end sparse-switch
 
-    .line 1016
+    .line 1017
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -2940,7 +2940,7 @@
     .parameter
 
     .prologue
-    .line 586
+    .line 587
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -2955,12 +2955,12 @@
 
     if-gtz v0, :cond_2
 
-    .line 592
+    .line 593
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->BUSY_NETWORK_CONNECT:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->setAppState(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;)V
 
-    .line 594
+    .line 595
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getServiceState()Landroid/telephony/ServiceState;
@@ -2971,7 +2971,7 @@
 
     move-result v0
 
-    .line 595
+    .line 596
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3016,7 +3016,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 596
+    .line 597
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3063,10 +3063,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 598
+    .line 599
     if-nez v0, :cond_0
 
-    .line 599
+    .line 600
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3095,20 +3095,20 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 601
+    .line 602
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->requestCBSetCommand(I)V
 
-    .line 615
+    .line 616
     :goto_0
     return-void
 
-    .line 602
+    .line 603
     :cond_0
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_1
 
-    .line 603
+    .line 604
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3137,12 +3137,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 604
+    .line 605
     const-string v0, "onCreate: radio not ready, waiting for signal."
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 605
+    .line 606
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
@@ -3155,7 +3155,7 @@
 
     goto :goto_0
 
-    .line 608
+    .line 609
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3185,7 +3185,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 609
+    .line 610
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const/16 v1, 0xc8
@@ -3194,13 +3194,13 @@
 
     goto :goto_0
 
-    .line 612
+    .line 613
     :cond_2
     const-string v0, "setDisplayMode: radio is off!"
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->log(Ljava/lang/String;)V
 
-    .line 613
+    .line 614
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     const/16 v1, 0x320
@@ -3216,7 +3216,7 @@
     .parameter
 
     .prologue
-    .line 1270
+    .line 1271
     const v0, 0x7f080020
 
     invoke-virtual {p1, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
@@ -3225,18 +3225,18 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 1271
+    .line 1272
     if-eqz v0, :cond_0
 
-    .line 1272
+    .line 1273
     invoke-virtual {v0, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1273
+    .line 1274
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1275
+    .line 1276
     :cond_0
     return-void
 .end method
@@ -3245,7 +3245,7 @@
     .locals 3
 
     .prologue
-    .line 1329
+    .line 1330
     const v0, 0x7f030008
 
     const/4 v1, 0x0
@@ -3254,7 +3254,7 @@
 
     move-result-object v1
 
-    .line 1339
+    .line 1340
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -3285,10 +3285,10 @@
 
     move-result-object v2
 
-    .line 1346
+    .line 1347
     invoke-virtual {v2, p0}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 1360
+    .line 1361
     const v0, 0x7f080022
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -3299,7 +3299,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mOldPassword:Landroid/widget/EditText;
 
-    .line 1361
+    .line 1362
     const v0, 0x7f080023
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -3310,7 +3310,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNewPassword:Landroid/widget/EditText;
 
-    .line 1362
+    .line 1363
     const v0, 0x7f080024
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -3321,20 +3321,20 @@
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mConfirmPassword:Landroid/widget/EditText;
 
-    .line 1364
+    .line 1365
     const/4 v0, 0x6
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
-    .line 1365
+    .line 1366
     sget-object v0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->setAppState(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;)V
 
-    .line 1367
+    .line 1368
     invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
-    .line 1368
+    .line 1369
     return-void
 .end method
 
@@ -3346,7 +3346,7 @@
     .parameter "button"
 
     .prologue
-    .line 1315
+    .line 1316
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
@@ -3356,10 +3356,10 @@
     :goto_0
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPwdChangeSubmit:Z
 
-    .line 1316
+    .line 1317
     return-void
 
-    .line 1315
+    .line 1316
     :cond_0
     const/4 v0, 0x0
 
@@ -3400,7 +3400,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSharedPreferences:Landroid/content/SharedPreferences;
 
-    .line 214
+    .line 215
     const-string v2, "vcallbarring_baoc_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3411,7 +3411,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList1Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 215
+    .line 216
     const-string v2, "vcallbarring_baoic_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3422,7 +3422,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList2Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 216
+    .line 217
     const-string v2, "vcallbarring_baoicxh_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3433,7 +3433,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList3Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 217
+    .line 218
     const-string v2, "vcallbarring_baic_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3444,7 +3444,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList4Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 218
+    .line 219
     const-string v2, "vcallbarring_baicr_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3455,49 +3455,49 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList5Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 220
+    .line 221
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList1Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 221
+    .line 222
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList2Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 222
+    .line 223
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList3Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 223
+    .line 224
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList4Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 224
+    .line 225
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCallBarringList5Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 226
+    .line 227
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->factory:Landroid/view/LayoutInflater;
 
-    .line 227
+    .line 228
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->factory:Landroid/view/LayoutInflater;
 
     const/high16 v3, 0x7f03
@@ -3510,7 +3510,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->textEntryView:Landroid/view/View;
 
-    .line 228
+    .line 229
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->textEntryView:Landroid/view/View;
 
     const/high16 v3, 0x7f08
@@ -3523,7 +3523,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->editText:Landroid/widget/EditText;
 
-    .line 230
+    .line 231
     const-string v2, "input_method"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -3534,54 +3534,54 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->imm:Landroid/view/inputmethod/InputMethodManager;
 
-    .line 233
+    .line 234
     new-instance v2, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$1;
 
     invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$1;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->doActivate:Ljava/lang/Runnable;
 
-    .line 251
+    .line 252
     new-instance v2, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$2;
 
     invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$2;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->doDeactivate:Ljava/lang/Runnable;
 
-    .line 268
+    .line 269
     new-instance v2, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$3;
 
     invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$3;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->doCheckStatus:Ljava/lang/Runnable;
 
-    .line 274
+    .line 275
     new-instance v2, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$4;
 
     invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$4;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->doConfirm:Ljava/lang/Runnable;
 
-    .line 285
+    .line 286
     sget-object v2, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mAppState:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
-    .line 286
+    .line 287
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getDefaultPhone()Lcom/android/internal/telephony/Phone;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    .line 288
+    .line 289
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mTelMan:Landroid/telephony/TelephonyManager;
 
-    .line 290
+    .line 291
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mTelMan:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v2}, Landroid/telephony/TelephonyManager;->getSimState()I
@@ -3598,20 +3598,20 @@
 
     if-ne v2, v5, :cond_2
 
-    .line 293
+    .line 294
     :cond_1
     const/16 v2, 0xc8
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
-    .line 294
+    .line 295
     const-string v2, "VideoCallBarring"
 
     const-string v3, "skip set or get CallBarring"
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 296
+    .line 297
     const/4 v1, 0x0
 
     .local v1, i:I
@@ -3624,7 +3624,7 @@
 
     if-ge v1, v2, :cond_3
 
-    .line 297
+    .line 298
     iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPreference:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -3637,275 +3637,287 @@
 
     invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 296
+    .line 297
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 301
+    .line 302
     .end local v1           #i:I
     :cond_2
     iput-boolean v5, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mCheckAllCB:Z
 
-    .line 302
+    .line 303
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getCallBarring()V
 
-    .line 303
+    .line 304
     :cond_3
     return-void
 .end method
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
-    .locals 9
+    .locals 11
     .parameter "id"
 
     .prologue
-    const v7, 0x7f0700ad
+    const v8, 0x7f0700ad
 
-    const/4 v6, 0x0
+    const/4 v10, 0x0
 
-    const/4 v8, 0x1
+    const/4 v9, 0x1
 
-    .line 407
+    .line 408
     sparse-switch p1, :sswitch_data_0
 
-    .line 538
+    .line 539
     const v4, 0x7f0700a3
 
-    .line 539
-    .local v4, msgId:I
-    const v5, 0x7f070087
-
     .line 540
-    .local v5, titleId:I
+    .local v4, msgId:I
+    const v6, 0x7f070087
+
+    .line 541
+    .local v6, titleId:I
     packed-switch p1, :pswitch_data_0
 
-    .line 545
+    .line 546
     :goto_0
     invoke-virtual {p0, v4}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getString(I)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-direct {p0, v6}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->displayToast(Ljava/lang/String;)V
+    invoke-direct {p0, v7}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->displayToast(Ljava/lang/String;)V
 
-    .line 548
+    .line 549
     .end local v4           #msgId:I
-    .end local v5           #titleId:I
+    .end local v6           #titleId:I
     :goto_1
     const/4 v1, 0x0
 
     :goto_2
     return-object v1
 
-    .line 411
+    .line 412
     :sswitch_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 412
-    .local v0, BADialog:Landroid/app/AlertDialog$Builder;
-    const v6, 0x7f0700c6
-
-    invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
-
     .line 413
-    iget-object v6, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->textEntryView:Landroid/view/View;
+    .local v0, BADialog:Landroid/app/AlertDialog$Builder;
+    const v7, 0x7f0700c6
 
-    invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v7}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 415
-    new-instance v6, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$6;
+    .line 414
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->textEntryView:Landroid/view/View;
 
-    invoke-direct {v6, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$6;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
+    invoke-virtual {v0, v7}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {v0, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    .line 416
+    new-instance v7, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$6;
 
-    .line 428
-    const v6, 0x7f0700ae
+    invoke-direct {v7, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$6;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
 
-    new-instance v7, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$7;
+    invoke-virtual {v0, v8, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    invoke-direct {v7, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$7;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
+    .line 429
+    const v7, 0x7f0700ae
 
-    invoke-virtual {v0, v6, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    new-instance v8, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$7;
 
-    .line 437
-    iget-object v6, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->editText:Landroid/widget/EditText;
+    invoke-direct {v8, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$7;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
 
-    invoke-virtual {v6}, Landroid/widget/EditText;->requestFocus()Z
+    invoke-virtual {v0, v7, v8}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 438
-    invoke-virtual {v0, v8}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v9}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     .line 439
-    new-instance v6, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$8;
+    new-instance v7, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$8;
 
-    invoke-direct {v6, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$8;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
+    invoke-direct {v7, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$8;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
 
-    invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v7}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
     .line 447
+    new-instance v5, Landroid/text/method/PasswordTransformationMethod;
+
+    invoke-direct {v5}, Landroid/text/method/PasswordTransformationMethod;-><init>()V
+
+    .line 448
+    .local v5, ptm:Landroid/text/method/PasswordTransformationMethod;
+    new-array v3, v9, [Landroid/text/InputFilter;
+
+    .line 449
+    .local v3, filterArray:[Landroid/text/InputFilter;
+    new-instance v7, Landroid/text/InputFilter$LengthFilter;
+
+    const/4 v8, 0x4
+
+    invoke-direct {v7, v8}, Landroid/text/InputFilter$LengthFilter;-><init>(I)V
+
+    aput-object v7, v3, v10
+
+    .line 451
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->editText:Landroid/widget/EditText;
+
+    const/16 v8, 0x83
+
+    invoke-virtual {v7, v8}, Landroid/widget/EditText;->setInputType(I)V
+
+    .line 452
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->editText:Landroid/widget/EditText;
+
+    invoke-virtual {v7, v5}, Landroid/widget/EditText;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
+
+    .line 453
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->editText:Landroid/widget/EditText;
+
+    invoke-virtual {v7, v3}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
+
+    .line 454
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->editText:Landroid/widget/EditText;
+
+    invoke-virtual {v7}, Landroid/widget/EditText;->requestFocus()Z
+
+    .line 456
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v1
 
     goto :goto_2
 
-    .line 452
+    .line 461
     .end local v0           #BADialog:Landroid/app/AlertDialog$Builder;
+    .end local v3           #filterArray:[Landroid/text/InputFilter;
+    .end local v5           #ptm:Landroid/text/method/PasswordTransformationMethod;
     :sswitch_1
     new-instance v1, Landroid/app/ProgressDialog;
 
     invoke-direct {v1, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    .line 453
+    .line 462
     .local v1, dialog:Landroid/app/ProgressDialog;
-    invoke-virtual {v1, v8}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
+    invoke-virtual {v1, v9}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
-    .line 455
+    .line 464
     iput p1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPrevBusyDialog:I
 
-    .line 457
+    .line 466
     sparse-switch p1, :sswitch_data_1
 
     goto :goto_1
 
-    .line 459
+    .line 468
     :sswitch_2
-    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setCancelable(Z)V
+    invoke-virtual {v1, v10}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    .line 460
-    const v6, 0x7f0700bb
+    .line 469
+    const v7, 0x7f0700bb
 
-    invoke-virtual {p0, v6}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v7}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v7}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
     goto :goto_2
 
-    .line 464
+    .line 473
     :sswitch_3
-    invoke-virtual {v1, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
+    invoke-virtual {v1, v9}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    .line 465
-    const v6, 0x7f0700ba
+    .line 474
+    const v7, 0x7f0700ba
 
-    invoke-virtual {p0, v6}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v7}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v7}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 466
-    iget-object v6, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
+    .line 475
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
 
-    const/16 v7, 0x258
+    const/16 v8, 0x258
 
-    invoke-virtual {v6, v7}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v7, v8}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
+    invoke-virtual {v1, v7}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
 
-    goto :goto_2
+    goto/16 :goto_2
 
-    .line 481
+    .line 490
     .end local v1           #dialog:Landroid/app/ProgressDialog;
     :sswitch_4
-    const v5, 0x7f0700b9
+    const v6, 0x7f0700b9
 
-    .line 482
-    .restart local v5       #titleId:I
-    const/4 v3, 0x0
-
-    .line 483
-    .local v3, isFDN:Z
+    .line 491
+    .restart local v6       #titleId:I
     sparse-switch p1, :sswitch_data_2
 
-    .line 510
+    .line 516
     const v4, 0x7f0700bd
 
-    .line 514
+    .line 520
     .restart local v4       #msgId:I
     :goto_3
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 515
+    .line 521
     .local v2, err_builder:Landroid/app/AlertDialog$Builder;
-    invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v2, v10}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 516
-    invoke-virtual {p0, v5}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
+    .line 522
+    invoke-virtual {p0, v6}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
-
-    .line 518
-    if-eqz v3, :cond_0
-
-    .line 519
-    const v6, 0x108009b
-
-    invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v2, v7}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 523
-    :goto_4
-    invoke-virtual {p0, v4}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
+    const v7, 0x1080027
 
-    move-result-object v6
-
-    invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v2, v7}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
 
     .line 524
-    invoke-virtual {p0, v7}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v7
 
-    new-instance v7, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$9;
+    invoke-virtual {v2, v7}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-direct {v7, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$9;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
+    .line 525
+    invoke-virtual {p0, v8}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    invoke-virtual {v2, v6, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    move-result-object v7
 
-    .line 532
+    new-instance v8, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$9;
+
+    invoke-direct {v8, p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$9;-><init>(Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;)V
+
+    invoke-virtual {v2, v7, v8}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    .line 533
     invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v1
 
-    .line 533
+    .line 534
     .local v1, dialog:Landroid/app/AlertDialog;
     goto/16 :goto_2
 
-    .line 485
+    .line 493
     .end local v1           #dialog:Landroid/app/AlertDialog;
     .end local v2           #err_builder:Landroid/app/AlertDialog$Builder;
     .end local v4           #msgId:I
     :sswitch_5
     const v4, 0x7f0700bc
-
-    .line 486
-    .restart local v4       #msgId:I
-    goto :goto_3
-
-    .line 489
-    .end local v4           #msgId:I
-    :sswitch_6
-    const v4, 0x7f0700be
-
-    .line 490
-    .restart local v4       #msgId:I
-    goto :goto_3
-
-    .line 493
-    .end local v4           #msgId:I
-    :sswitch_7
-    const v4, 0x7f0700a3
 
     .line 494
     .restart local v4       #msgId:I
@@ -3913,8 +3925,8 @@
 
     .line 497
     .end local v4           #msgId:I
-    :sswitch_8
-    const v4, 0x7f0700a4
+    :sswitch_6
+    const v4, 0x7f0700be
 
     .line 498
     .restart local v4       #msgId:I
@@ -3922,48 +3934,47 @@
 
     .line 501
     .end local v4           #msgId:I
-    :sswitch_9
-    const v4, 0x7f0700a5
+    :sswitch_7
+    const v4, 0x7f0700a3
 
     .line 502
     .restart local v4       #msgId:I
     goto :goto_3
 
-    .line 504
-    .end local v4           #msgId:I
-    :sswitch_a
-    const/4 v3, 0x1
-
     .line 505
-    const v5, 0x7f0700e0
+    .end local v4           #msgId:I
+    :sswitch_8
+    const v4, 0x7f0700a4
 
     .line 506
-    const v4, 0x7f070096
-
-    .line 507
     .restart local v4       #msgId:I
     goto :goto_3
 
-    .line 521
-    .restart local v2       #err_builder:Landroid/app/AlertDialog$Builder;
-    :cond_0
-    const v6, 0x1080027
+    .line 509
+    .end local v4           #msgId:I
+    :sswitch_9
+    const v4, 0x7f0700a5
 
-    invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
+    .line 510
+    .restart local v4       #msgId:I
+    goto :goto_3
 
-    goto :goto_4
+    .line 512
+    .end local v4           #msgId:I
+    :sswitch_a
+    const v4, 0x7f070096
 
-    .line 542
-    .end local v2           #err_builder:Landroid/app/AlertDialog$Builder;
-    .end local v3           #isFDN:Z
+    .line 513
+    .restart local v4       #msgId:I
+    goto :goto_3
+
+    .line 543
     :pswitch_0
     const v4, 0x7f0700a3
 
     goto/16 :goto_0
 
-    .line 407
-    nop
-
+    .line 408
     :sswitch_data_0
     .sparse-switch
         0x64 -> :sswitch_1
@@ -3978,20 +3989,20 @@
         0x3e8 -> :sswitch_0
     .end sparse-switch
 
-    .line 540
+    .line 541
     :pswitch_data_0
     .packed-switch 0x190
         :pswitch_0
     .end packed-switch
 
-    .line 457
+    .line 466
     :sswitch_data_1
     .sparse-switch
         0x64 -> :sswitch_2
         0x384 -> :sswitch_3
     .end sparse-switch
 
-    .line 483
+    .line 491
     :sswitch_data_2
     .sparse-switch
         0x12c -> :sswitch_5
@@ -4012,21 +4023,21 @@
 
     const/4 v1, 0x0
 
-    .line 1224
+    .line 1225
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
-    .line 1225
+    .line 1226
     const v0, 0x7f0700c8
 
     invoke-interface {p1, v1, v2, v1, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f02001a
+    const v1, 0x7f020013
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
-    .line 1227
+    .line 1228
     return v2
 .end method
 
@@ -4035,7 +4046,7 @@
     .parameter "dialog"
 
     .prologue
-    .line 1319
+    .line 1320
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPwdChangeSubmit:Z
 
     if-eqz v0, :cond_0
@@ -4046,14 +4057,14 @@
 
     if-nez v0, :cond_0
 
-    .line 1320
+    .line 1321
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mPwdChangeSubmit:Z
 
     move-object v0, p1
 
-    .line 1321
+    .line 1322
     check-cast v0, Landroid/app/Dialog;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->checkPassword(Landroid/app/Dialog;)Z
@@ -4062,13 +4073,13 @@
 
     if-nez v0, :cond_0
 
-    .line 1322
+    .line 1323
     check-cast p1, Landroid/app/Dialog;
 
     .end local p1
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
-    .line 1326
+    .line 1327
     :cond_0
     return-void
 .end method
@@ -4080,67 +4091,67 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1372
+    .line 1373
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
-    .line 1374
+    .line 1375
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v1
 
     sparse-switch v1, :sswitch_data_0
 
-    .line 1399
+    .line 1400
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 1377
+    .line 1378
     :sswitch_0
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 1378
+    .line 1379
     const-string v2, "com.android.phone"
 
     const-string v3, "com.android.phone.CallTypeSelect"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1379
+    .line 1380
     const/high16 v2, 0x400
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 1380
+    .line 1381
     const-string v2, "com.android.phone.MAIN"
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1381
+    .line 1382
     const-string v2, "SS_Type"
 
     const-string v3, "barring"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1382
+    .line 1383
     invoke-virtual {p0, v1}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->startActivity(Landroid/content/Intent;)V
 
-    .line 1383
+    .line 1384
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->finish()V
 
     goto :goto_0
 
-    .line 1396
+    .line 1397
     :sswitch_1
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showPasswordDialog()V
 
     goto :goto_0
 
-    .line 1374
+    .line 1375
     nop
 
     :sswitch_data_0
@@ -4154,15 +4165,15 @@
     .locals 1
 
     .prologue
-    .line 325
+    .line 326
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
-    .line 327
+    .line 328
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSharedPreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v0, p0}, Landroid/content/SharedPreferences;->unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
-    .line 329
+    .line 330
     return-void
 .end method
 
@@ -4170,20 +4181,20 @@
     .locals 1
 
     .prologue
-    .line 311
+    .line 312
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    .line 313
+    .line 314
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSharedPreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v0, p0}, Landroid/content/SharedPreferences;->registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
-    .line 315
+    .line 316
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCBVisible:Z
 
-    .line 317
+    .line 318
     return-void
 .end method
 
@@ -4195,7 +4206,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 345
+    .line 346
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -4218,7 +4229,7 @@
 
     invoke-virtual {v1, v2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 347
+    .line 348
     const-string v1, "vcallbarring_baoc_pref"
 
     invoke-virtual {p2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -4227,19 +4238,19 @@
 
     if-eqz v1, :cond_0
 
-    .line 349
+    .line 350
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 350
+    .line 351
     .local v0, isChecked:Z
     iput v4, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
-    .line 351
+    .line 352
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCB_Checked:Z
 
-    .line 354
+    .line 355
     .end local v0           #isChecked:Z
     :cond_0
     const-string v1, "vcallbarring_baoic_pref"
@@ -4250,21 +4261,21 @@
 
     if-eqz v1, :cond_1
 
-    .line 356
+    .line 357
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 357
+    .line 358
     .restart local v0       #isChecked:Z
     const/4 v1, 0x1
 
     iput v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
-    .line 358
+    .line 359
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCB_Checked:Z
 
-    .line 361
+    .line 362
     .end local v0           #isChecked:Z
     :cond_1
     const-string v1, "vcallbarring_baoicxh_pref"
@@ -4275,21 +4286,21 @@
 
     if-eqz v1, :cond_2
 
-    .line 363
+    .line 364
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 364
+    .line 365
     .restart local v0       #isChecked:Z
     const/4 v1, 0x2
 
     iput v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
-    .line 365
+    .line 366
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCB_Checked:Z
 
-    .line 368
+    .line 369
     .end local v0           #isChecked:Z
     :cond_2
     const-string v1, "vcallbarring_baic_pref"
@@ -4300,21 +4311,21 @@
 
     if-eqz v1, :cond_3
 
-    .line 370
+    .line 371
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 371
+    .line 372
     .restart local v0       #isChecked:Z
     const/4 v1, 0x3
 
     iput v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
-    .line 372
+    .line 373
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCB_Checked:Z
 
-    .line 375
+    .line 376
     .end local v0           #isChecked:Z
     :cond_3
     const-string v1, "vcallbarring_baicr_pref"
@@ -4325,35 +4336,35 @@
 
     if-eqz v1, :cond_4
 
-    .line 377
+    .line 378
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 378
+    .line 379
     .restart local v0       #isChecked:Z
     const/4 v1, 0x4
 
     iput v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSelectedIndex:I
 
-    .line 379
+    .line 380
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCB_Checked:Z
 
-    .line 382
+    .line 383
     .end local v0           #isChecked:Z
     :cond_4
     iget-boolean v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSkipCallBarringReq:Z
 
     if-eqz v1, :cond_5
 
-    .line 384
+    .line 385
     iput-boolean v4, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mSkipCallBarringReq:Z
 
-    .line 401
+    .line 402
     :goto_0
     return-void
 
-    .line 388
+    .line 389
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->editText:Landroid/widget/EditText;
 
@@ -4361,24 +4372,24 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 389
+    .line 390
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->editText:Landroid/widget/EditText;
 
     const v2, 0x7f0700c7
 
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setHint(I)V
 
-    .line 391
+    .line 392
     sget-object v1, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
     iput-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mAppState:Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$AppState;
 
-    .line 392
+    .line 393
     const/16 v1, 0x3e8
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->showDialog(I)V
 
-    .line 394
+    .line 395
     iget-object v1, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->handler:Landroid/os/Handler;
 
     new-instance v2, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring$5;
@@ -4396,14 +4407,14 @@
     .locals 1
 
     .prologue
-    .line 332
+    .line 333
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onStop()V
 
-    .line 334
+    .line 335
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/VideoCallBarring;->mVCBVisible:Z
 
-    .line 335
+    .line 336
     return-void
 .end method

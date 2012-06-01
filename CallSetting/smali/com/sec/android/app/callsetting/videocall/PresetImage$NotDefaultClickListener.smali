@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 228
+    .line 226
     iput-object p1, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .parameter "x1"
 
     .prologue
-    .line 228
+    .line 226
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;-><init>(Lcom/sec/android/app/callsetting/videocall/PresetImage;)V
 
     return-void
@@ -55,21 +55,21 @@
     .parameter "whichButton"
 
     .prologue
-    .line 234
+    .line 232
     if-nez p2, :cond_0
 
-    .line 236
+    .line 234
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     const/4 v4, 0x0
 
     iput-boolean v4, v3, Lcom/sec/android/app/callsetting/videocall/PresetImage;->isVideoContents:Z
 
-    .line 237
+    .line 235
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
-    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
-    invoke-static {v3}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageView;
+    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
+    invoke-static {v3}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageButton;
 
     move-result-object v3
 
@@ -77,9 +77,9 @@
 
     iget-boolean v4, v4, Lcom/sec/android/app/callsetting/videocall/PresetImage;->isVideoContents:Z
 
-    invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setClickable(Z)V
+    invoke-virtual {v3, v4}, Landroid/widget/ImageButton;->setClickable(Z)V
 
-    .line 238
+    .line 236
     const-string v3, "PresetImage"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -94,12 +94,12 @@
 
     iget-object v5, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
-    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
-    invoke-static {v5}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageView;
+    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
+    invoke-static {v5}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageButton;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/widget/ImageView;->isClickable()Z
+    invoke-virtual {v5}, Landroid/widget/ImageButton;->isClickable()Z
 
     move-result v5
 
@@ -113,7 +113,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 239
+    .line 237
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     invoke-virtual {v3}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
@@ -126,7 +126,7 @@
 
     invoke-static {v3, v4, v5}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 241
+    .line 239
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     invoke-virtual {v3}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
@@ -145,29 +145,29 @@
 
     invoke-static {v3, v4, v5}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 243
+    .line 241
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
-    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
-    invoke-static {v3}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageView;
+    #getter for: Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
+    invoke-static {v3}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageButton;
 
     move-result-object v3
 
-    const v4, 0x7f020010
+    const v4, 0x7f02000b
 
-    invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v3, v4}, Landroid/widget/ImageButton;->setImageResource(I)V
 
-    .line 273
+    .line 271
     :goto_0
     return-void
 
-    .line 245
+    .line 243
     :cond_0
     const/4 v3, 0x1
 
     if-ne p2, v3, :cond_1
 
-    .line 247
+    .line 245
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     #calls: Lcom/sec/android/app/callsetting/videocall/PresetImage;->pickImageFromGallery()Landroid/content/Intent;
@@ -175,7 +175,7 @@
 
     move-result-object v0
 
-    .line 248
+    .line 246
     .local v0, intent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
@@ -185,14 +185,14 @@
 
     goto :goto_0
 
-    .line 250
+    .line 248
     .end local v0           #intent:Landroid/content/Intent;
     :cond_1
     const/4 v3, 0x2
 
     if-ne p2, v3, :cond_2
 
-    .line 252
+    .line 250
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     #calls: Lcom/sec/android/app/callsetting/videocall/PresetImage;->pickVideoFromGallery()Landroid/content/Intent;
@@ -200,7 +200,7 @@
 
     move-result-object v0
 
-    .line 253
+    .line 251
     .restart local v0       #intent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
@@ -210,14 +210,14 @@
 
     goto :goto_0
 
-    .line 256
+    .line 254
     .end local v0           #intent:Landroid/content/Intent;
     :cond_2
     const/4 v3, 0x3
 
     if-ne p2, v3, :cond_3
 
-    .line 258
+    .line 256
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     #calls: Lcom/sec/android/app/callsetting/videocall/PresetImage;->capturePicture()Landroid/content/Intent;
@@ -225,7 +225,7 @@
 
     move-result-object v0
 
-    .line 259
+    .line 257
     .restart local v0       #intent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
@@ -235,7 +235,7 @@
 
     goto :goto_0
 
-    .line 263
+    .line 261
     .end local v0           #intent:Landroid/content/Intent;
     :cond_3
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
@@ -245,7 +245,7 @@
 
     move-result-wide v1
 
-    .line 265
+    .line 263
     .local v1, sizeLimit:J
     const-wide/16 v3, 0x0
 
@@ -253,7 +253,7 @@
 
     if-lez v3, :cond_4
 
-    .line 266
+    .line 264
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
     #calls: Lcom/sec/android/app/callsetting/videocall/PresetImage;->recordVideo(J)Landroid/content/Intent;
@@ -261,7 +261,7 @@
 
     move-result-object v0
 
-    .line 267
+    .line 265
     .restart local v0       #intent:Landroid/content/Intent;
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;
 
@@ -271,7 +271,7 @@
 
     goto :goto_0
 
-    .line 270
+    .line 268
     .end local v0           #intent:Landroid/content/Intent;
     :cond_4
     iget-object v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage$NotDefaultClickListener;->this$0:Lcom/sec/android/app/callsetting/videocall/PresetImage;

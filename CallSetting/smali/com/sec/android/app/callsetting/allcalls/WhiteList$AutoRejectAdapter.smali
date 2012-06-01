@@ -115,7 +115,7 @@
     .line 863
     iget-object v3, p0, Lcom/sec/android/app/callsetting/allcalls/WhiteList$AutoRejectAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v4, 0x7f03001b
+    const v4, 0x7f03001a
 
     const/4 v5, 0x0
 
@@ -267,7 +267,7 @@
     .line 893
     iget-object v4, p0, Lcom/sec/android/app/callsetting/allcalls/WhiteList$AutoRejectAdapter;->mInflater:Landroid/view/LayoutInflater;
 
-    const v5, 0x7f03001c
+    const v5, 0x7f03001b
 
     const/4 v6, 0x0
 

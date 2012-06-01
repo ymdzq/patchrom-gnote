@@ -147,7 +147,7 @@
 
     .line 80
     .local v5, myResources:Landroid/content/res/Resources;
-    const v7, 0x7f020010
+    const v7, 0x7f02000b
 
     invoke-virtual {v5, v7}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
     :try_end_0

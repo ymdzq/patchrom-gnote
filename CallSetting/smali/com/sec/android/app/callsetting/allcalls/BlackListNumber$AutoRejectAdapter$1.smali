@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 915
+    .line 912
     iput-object p1, p0, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectAdapter$1;->this$1:Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectAdapter;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .parameter "v"
 
     .prologue
-    .line 920
+    .line 917
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectAdapter$1;->this$1:Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectAdapter;
 
     iget-object v0, v0, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber$AutoRejectAdapter;->this$0:Lcom/sec/android/app/callsetting/allcalls/BlackListNumber;
@@ -50,6 +50,6 @@
     #calls: Lcom/sec/android/app/callsetting/allcalls/BlackListNumber;->alertdialogAutoRejectNumber()V
     invoke-static {v0}, Lcom/sec/android/app/callsetting/allcalls/BlackListNumber;->access$600(Lcom/sec/android/app/callsetting/allcalls/BlackListNumber;)V
 
-    .line 921
+    .line 918
     return-void
 .end method

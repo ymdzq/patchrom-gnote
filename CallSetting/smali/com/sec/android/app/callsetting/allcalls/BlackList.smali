@@ -191,7 +191,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mContentObserver:Landroid/database/ContentObserver;
 
-    .line 653
+    .line 657
     return-void
 .end method
 
@@ -450,7 +450,7 @@
     .locals 7
 
     .prologue
-    .line 997
+    .line 1001
     iget-object v4, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mAutoRejectItemList:Ljava/util/ArrayList;
 
     iget v5, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mSelectedItem:I
@@ -467,13 +467,13 @@
 
     move-result v3
 
-    .line 999
+    .line 1003
     .local v3, update_id:I
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 1000
+    .line 1004
     .local v1, intent:Landroid/content/Intent;
     new-instance v2, Ljava/lang/String;
 
@@ -481,7 +481,7 @@
 
     invoke-direct {v2, v4}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
-    .line 1001
+    .line 1005
     .local v2, pkg_name:Ljava/lang/String;
     const-string v4, ".allcalls.BlackListNumber"
 
@@ -489,16 +489,16 @@
 
     move-result-object v0
 
-    .line 1002
+    .line 1006
     .local v0, className:Ljava/lang/String;
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1003
+    .line 1007
     const-string v4, "UPDATE_ID"
 
     invoke-virtual {v1, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1004
+    .line 1008
     const-string v5, "SELECT_NUMBER"
 
     iget-object v4, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mAutoRejectItemList:Ljava/util/ArrayList;
@@ -515,7 +515,7 @@
 
     invoke-virtual {v1, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1006
+    .line 1010
     const-string v5, "MATCH_MODE"
 
     iget-object v4, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mAutoRejectItemList:Ljava/util/ArrayList;
@@ -532,19 +532,19 @@
 
     invoke-virtual {v1, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1008
+    .line 1012
     const-string v4, "UPDATE_MODE"
 
     const/4 v5, 0x1
 
     invoke-virtual {v1, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 1009
+    .line 1013
     const/4 v4, 0x3
 
     invoke-virtual {p0, v1, v4}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->startActivityForResult(Landroid/content/Intent;I)V
 
-    .line 1010
+    .line 1014
     return-void
 .end method
 
@@ -555,7 +555,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 972
+    .line 976
     sget-object v1, Lcom/sec/android/app/callsetting/allcalls/ProviderConstants;->AUTOREJECT_CONTENT_URI:Landroid/net/Uri;
 
     int-to-long v2, p1
@@ -564,7 +564,7 @@
 
     move-result-object v0
 
-    .line 974
+    .line 978
     .local v0, autorejectnumUri:Landroid/net/Uri;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -572,7 +572,7 @@
 
     invoke-virtual {v1, v0, v4, v4}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 975
+    .line 979
     return-void
 .end method
 
@@ -581,7 +581,7 @@
     .parameter "msg"
 
     .prologue
-    .line 1021
+    .line 1025
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
@@ -592,11 +592,11 @@
 
     move-result-object v0
 
-    .line 1023
+    .line 1027
     .local v0, toast:Landroid/widget/Toast;
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1024
+    .line 1028
     return-void
 .end method
 
@@ -606,7 +606,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 991
+    .line 995
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -790,12 +790,12 @@
     .parameter "string"
 
     .prologue
-    .line 1039
+    .line 1043
     const-string v0, "BlackList"
 
     invoke-static {v0, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1040
+    .line 1044
     return-void
 .end method
 
@@ -1209,23 +1209,23 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 980
+    .line 984
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    .line 981
+    .line 985
     .local v1, values:Landroid/content/ContentValues;
     const-string v2, "reject_number"
 
     invoke-virtual {v1, v2, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 982
+    .line 986
     const-string v2, "reject_checked"
 
     invoke-virtual {v1, v2, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 983
+    .line 987
     sget-object v2, Lcom/sec/android/app/callsetting/allcalls/ProviderConstants;->AUTOREJECT_CONTENT_URI:Landroid/net/Uri;
 
     int-to-long v3, p3
@@ -1234,7 +1234,7 @@
 
     move-result-object v0
 
-    .line 985
+    .line 989
     .local v0, autorejectnumUri:Landroid/net/Uri;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1242,7 +1242,7 @@
 
     invoke-virtual {v2, v0, v1, v5, v5}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 986
+    .line 990
     return-void
 .end method
 
@@ -1300,10 +1300,10 @@
 
     const/4 v4, 0x0
 
-    .line 1027
+    .line 1031
     const/4 v0, 0x0
 
-    .line 1029
+    .line 1033
     .local v0, checked_cnt:I
     const/4 v1, 0x0
 
@@ -1321,7 +1321,7 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 1030
+    .line 1034
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mListView:Landroid/widget/ListView;
 
     iget v5, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mHeaderViewCount:I
@@ -1334,16 +1334,16 @@
 
     if-eqz v2, :cond_0
 
-    .line 1031
+    .line 1035
     add-int/lit8 v0, v0, 0x1
 
-    .line 1029
+    .line 1033
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1033
+    .line 1037
     :cond_1
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
 
@@ -1354,7 +1354,7 @@
     :goto_1
     invoke-virtual {v5, v2}, Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;->setEnabled(Z)V
 
-    .line 1034
+    .line 1038
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->selectAllCheck:Landroid/widget/CheckBox;
 
     iget-object v5, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mAutoRejectItemList:Ljava/util/ArrayList;
@@ -1368,19 +1368,19 @@
     :goto_2
     invoke-virtual {v2, v3}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 1036
+    .line 1040
     return-void
 
     :cond_2
     move v2, v4
 
-    .line 1033
+    .line 1037
     goto :goto_1
 
     :cond_3
     move v3, v4
 
-    .line 1034
+    .line 1038
     goto :goto_2
 .end method
 
@@ -1390,25 +1390,25 @@
     .prologue
     const v2, 0x7f07004f
 
-    .line 1043
+    .line 1047
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->getString(I)Ljava/lang/String;
 
-    .line 1045
+    .line 1049
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mAutoRejectItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    .line 1046
+    .line 1050
     iget v1, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mScreenType:I
 
     if-nez v1, :cond_0
 
-    .line 1048
+    .line 1052
     add-int/lit8 v0, v0, -0x1
 
-    .line 1050
+    .line 1054
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1460,10 +1460,10 @@
 
     move-result-object v0
 
-    .line 1052
+    .line 1056
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 1053
+    .line 1057
     return-void
 .end method
 
@@ -1518,14 +1518,14 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 550
+    .line 548
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mDeleteDialog:Landroid/app/AlertDialog;
 
-    .line 551
+    .line 549
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mDeleteDialog:Landroid/app/AlertDialog;
 
     new-instance v2, Lcom/sec/android/app/callsetting/allcalls/BlackList$12;
@@ -1534,12 +1534,12 @@
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 557
+    .line 555
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mDeleteDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
-    .line 558
+    .line 556
     return-void
 .end method
 
@@ -1550,18 +1550,18 @@
     .parameter "data"
 
     .prologue
-    .line 953
+    .line 957
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 955
+    .line 959
     packed-switch p1, :pswitch_data_0
 
-    .line 966
+    .line 970
     :cond_0
     :goto_0
     return-void
 
-    .line 957
+    .line 961
     :pswitch_0
     const/4 v0, -0x1
 
@@ -1569,7 +1569,7 @@
 
     goto :goto_0
 
-    .line 955
+    .line 959
     nop
 
     :pswitch_data_0
@@ -1582,30 +1582,30 @@
     .locals 2
 
     .prologue
-    .line 585
+    .line 583
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/sec/android/app/callsetting/allcalls/AutoReject;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 586
+    .line 584
     const-string v1, "android.intent.action.MAIN"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 587
+    .line 585
     const/high16 v1, 0x400
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 588
+    .line 586
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->startActivity(Landroid/content/Intent;)V
 
-    .line 589
+    .line 587
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->finish()V
 
-    .line 590
+    .line 588
     return-void
 .end method
 
@@ -1614,15 +1614,15 @@
     .parameter "newConfig"
 
     .prologue
-    .line 562
+    .line 560
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 563
+    .line 561
     const-string v0, "changed "
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->log(Ljava/lang/String;)V
 
-    .line 564
+    .line 562
     return-void
 .end method
 
@@ -1861,162 +1861,152 @@
 .end method
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
-    .locals 7
+    .locals 6
     .parameter "keyCode"
     .parameter "event"
 
     .prologue
-    const/4 v5, 0x1
+    const/4 v4, 0x1
 
-    .line 605
+    .line 603
     sparse-switch p1, :sswitch_data_0
 
-    .line 650
+    .line 654
     :cond_0
     :goto_0
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
-    move-result v5
+    move-result v4
 
     :goto_1
-    return v5
+    return v4
+
+    .line 605
+    :sswitch_0
+    iget v5, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mScreenType:I
+
+    if-ne v5, v4, :cond_0
+
+    .line 606
+    const/4 v5, 0x0
+
+    iput v5, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mScreenType:I
 
     .line 607
-    :sswitch_0
-    iget v6, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mScreenType:I
-
-    if-ne v6, v5, :cond_0
-
-    .line 608
-    const/4 v6, 0x0
-
-    iput v6, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mScreenType:I
-
-    .line 609
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->makeScreen()V
 
     goto :goto_1
 
-    .line 616
+    .line 614
     :sswitch_1
     const/4 v2, 0x0
 
-    .line 617
+    .line 622
     .local v2, currentView:Landroid/widget/ListView;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->getCurrentFocus()Landroid/view/View;
 
-    move-result-object v4
+    move-result-object v2
 
-    .line 618
-    .local v4, obj:Landroid/view/View;
-    instance-of v5, v4, Landroid/widget/ListView;
-
-    if-eqz v5, :cond_1
-
-    move-object v2, v4
-
-    .line 619
+    .end local v2           #currentView:Landroid/widget/ListView;
     check-cast v2, Landroid/widget/ListView;
 
-    .line 621
-    :cond_1
+    .line 625
+    .restart local v2       #currentView:Landroid/widget/ListView;
     if-eqz v2, :cond_0
 
-    .line 622
+    .line 626
     invoke-virtual {v2}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/LinearLayout;
 
-    .line 624
+    .line 628
     .local v1, childView:Landroid/widget/LinearLayout;
     if-eqz v1, :cond_0
 
-    .line 625
-    const v5, 0x7f080017
+    .line 629
+    const v4, 0x7f080017
 
-    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    .line 627
+    .line 631
     .local v0, checkBox:Landroid/widget/CheckBox;
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
-    .line 628
+    .line 632
     invoke-virtual {v0}, Landroid/widget/CheckBox;->performClick()Z
 
     goto :goto_0
 
-    .line 630
-    :cond_2
-    const v5, 0x7f08001a
+    .line 634
+    :cond_1
+    const v4, 0x7f08001a
 
-    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/LinearLayout;
 
-    .line 632
+    .line 636
     .local v3, linearLayout:Landroid/widget/LinearLayout;
-    if-eqz v3, :cond_3
+    if-eqz v3, :cond_2
 
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->isShown()Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_3
+    if-eqz v4, :cond_2
 
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->isClickable()Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_3
+    if-eqz v4, :cond_2
 
-    .line 634
+    .line 638
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->performClick()Z
 
     goto :goto_0
 
-    .line 636
-    :cond_3
-    const v5, 0x7f080027
+    .line 640
+    :cond_2
+    const v4, 0x7f080027
 
-    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     .end local v3           #linearLayout:Landroid/widget/LinearLayout;
     check-cast v3, Landroid/widget/LinearLayout;
 
-    .line 638
+    .line 642
     .restart local v3       #linearLayout:Landroid/widget/LinearLayout;
     if-eqz v3, :cond_0
 
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->isShown()Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_0
+    if-eqz v4, :cond_0
 
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->isClickable()Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_0
+    if-eqz v4, :cond_0
 
-    .line 640
+    .line 644
     invoke-virtual {v3}, Landroid/widget/LinearLayout;->performClick()Z
 
     goto :goto_0
 
-    .line 605
-    nop
-
+    .line 603
     :sswitch_data_0
     .sparse-switch
         0x4 -> :sswitch_0
@@ -2032,14 +2022,14 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 593
+    .line 591
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v1
 
     sparse-switch v1, :sswitch_data_0
 
-    .line 602
+    .line 600
     invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
@@ -2047,22 +2037,22 @@
     :goto_0
     return v0
 
-    .line 595
+    .line 593
     :sswitch_0
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->onClickActionBar()V
 
     goto :goto_0
 
-    .line 598
+    .line 596
     :sswitch_1
     iput v0, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mScreenType:I
 
-    .line 599
+    .line 597
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/allcalls/BlackList;->makeScreen()V
 
     goto :goto_0
 
-    .line 593
+    .line 591
     nop
 
     :sswitch_data_0
@@ -2107,24 +2097,24 @@
 
     const/4 v2, 0x1
 
-    .line 568
+    .line 566
     invoke-super {p0, p1}, Landroid/app/Activity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
-    .line 569
+    .line 567
     iget v0, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mScreenType:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 581
+    .line 579
     :cond_0
     :goto_0
     return v2
 
-    .line 571
+    .line 569
     :pswitch_0
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
-    .line 572
+    .line 570
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/BlackList;->mAutoRejectItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -2133,26 +2123,26 @@
 
     if-le v0, v2, :cond_0
 
-    .line 573
+    .line 571
     const v0, 0x7f0700b2
 
     invoke-interface {p1, v1, v2, v1, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    const v1, 0x7f02001d
+    const v1, 0x7f020016
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
     goto :goto_0
 
-    .line 578
+    .line 576
     :pswitch_1
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
     goto :goto_0
 
-    .line 569
+    .line 567
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

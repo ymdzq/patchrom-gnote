@@ -423,7 +423,7 @@
     .line 241
     new-instance v2, Landroid/widget/ArrayAdapter;
 
-    const v3, 0x7f030015
+    const v3, 0x7f030014
 
     iget-object v4, p0, Lcom/sec/android/app/callsetting/allcalls/AutoRejectList;->autoRejectNumList:Ljava/util/ArrayList;
 
@@ -990,7 +990,7 @@
 
     .line 650
     .local v0, ad:Landroid/app/AlertDialog$Builder;
-    const v4, 0x7f0700e3
+    const v4, 0x7f0700e2
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -2744,7 +2744,7 @@
     .prologue
     const v5, 0x7f0700b0
 
-    const v4, 0x7f02001c
+    const v4, 0x7f020015
 
     const/4 v3, 0x1
 
@@ -2807,7 +2807,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f02001d
+    const v1, 0x7f020016
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 

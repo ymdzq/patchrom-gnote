@@ -220,5 +220,4 @@
     <string name="callsettings_autoreject_noti_blacklist">黑名單號碼將被拒絕</string>
     <string name="callsettings_autoreject_noti_ticker_all">所有來電將被拒絕</string>
     <string name="callsettings_autoreject_noti_ticker_rejectlist">自動拒絕號碼的所有來電將被拒絕</string>
-    <string name="information">資訊</string>
 </resources>

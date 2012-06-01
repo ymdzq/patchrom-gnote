@@ -41,14 +41,14 @@
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->istoastshowing:Z
 
-    .line 288
+    .line 283
     new-instance v0, Lcom/sec/android/app/callsetting/allcalls/RejectMessages$3;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectMessages$3;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectMessages;)V
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->handler:Landroid/os/Handler;
 
-    .line 348
+    .line 343
     new-instance v0, Lcom/sec/android/app/callsetting/allcalls/RejectMessages$5;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/callsetting/allcalls/RejectMessages$5;-><init>(Lcom/sec/android/app/callsetting/allcalls/RejectMessages;)V
@@ -76,7 +76,7 @@
     .parameter "arg0"
 
     .prologue
-    .line 344
+    .line 339
     return-void
 .end method
 
@@ -88,7 +88,7 @@
     .parameter "after"
 
     .prologue
-    .line 300
+    .line 295
     return-void
 .end method
 
@@ -97,17 +97,17 @@
     .parameter "newConfig"
 
     .prologue
-    .line 284
+    .line 279
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 285
+    .line 280
     const-string v0, "Configuration"
 
     const-string v1, "changed "
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 286
+    .line 281
     return-void
 .end method
 
@@ -304,10 +304,10 @@
     .locals 0
 
     .prologue
-    .line 253
+    .line 252
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
-    .line 254
+    .line 253
     return-void
 .end method
 
@@ -316,43 +316,43 @@
     .parameter
 
     .prologue
-    .line 378
+    .line 373
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v0
 
-    .line 379
+    .line 374
     const v1, 0x102002c
 
     if-ne v0, v1, :cond_0
 
-    .line 380
+    .line 375
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 381
+    .line 376
     const-string v1, "android.intent.action.MAIN"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 382
+    .line 377
     const/high16 v1, 0x400
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 383
+    .line 378
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->startActivity(Landroid/content/Intent;)V
 
-    .line 384
+    .line 379
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->finish()V
 
-    .line 385
+    .line 380
     const/4 v0, 0x1
 
-    .line 387
+    .line 382
     :goto_0
     return v0
 
@@ -368,10 +368,10 @@
     .locals 3
 
     .prologue
-    .line 257
+    .line 256
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    .line 258
+    .line 257
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->imm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->mCreateEdit:Landroid/widget/EditText;
@@ -384,7 +384,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    .line 259
+    .line 258
     return-void
 .end method
 
@@ -411,7 +411,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 250
+    .line 249
     return-void
 .end method
 
@@ -419,10 +419,10 @@
     .locals 0
 
     .prologue
-    .line 262
+    .line 261
     invoke-super {p0}, Landroid/app/Activity;->onStop()V
 
-    .line 267
+    .line 262
     return-void
 .end method
 
@@ -434,7 +434,7 @@
     .parameter "changeCount"
 
     .prologue
-    .line 305
+    .line 300
     return-void
 .end method
 
@@ -443,12 +443,12 @@
     .parameter "target"
 
     .prologue
-    .line 271
+    .line 266
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 272
+    .line 267
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "EDITED_MESSAGE"
 
@@ -464,22 +464,22 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 273
+    .line 268
     const-string v1, "UPDATED"
 
     iget-boolean v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->updateMODE:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 274
+    .line 269
     const/4 v1, -0x1
 
     invoke-virtual {p0, v1, v0}, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->setResult(ILandroid/content/Intent;)V
 
-    .line 275
+    .line 270
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->finish()V
 
-    .line 276
+    .line 271
     return-void
 .end method
 
@@ -488,16 +488,16 @@
     .parameter "target"
 
     .prologue
-    .line 279
+    .line 274
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->setResult(ILandroid/content/Intent;)V
 
-    .line 280
+    .line 275
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->finish()V
 
-    .line 281
+    .line 276
     return-void
 .end method

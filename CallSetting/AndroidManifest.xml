@@ -20,7 +20,7 @@
                 <category android:name="allcalls" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/menu_setRejectCall" android:name=".allcalls.AutoReject" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
+        <activity android:label="@string/menu_setRejectCall" android:name=".allcalls.AutoReject" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -56,7 +56,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/callsettings_allcalls_autorejectnumber" android:name=".allcalls.BlackListNumber" android:configChanges="keyboardHidden|orientation|screenSize">
+        <activity android:label="@string/callsettings_allcalls_autorejectnumber" android:name=".allcalls.BlackListNumber">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />

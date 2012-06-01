@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 247
+    .line 246
     iget-object v0, p0, Lcom/sec/android/app/callsetting/allcalls/RejectMessages$2;->this$0:Lcom/sec/android/app/callsetting/allcalls/RejectMessages;
 
     #getter for: Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->imm:Landroid/view/inputmethod/InputMethodManager;
@@ -53,10 +53,10 @@
 
     iget-object v1, v1, Lcom/sec/android/app/callsetting/allcalls/RejectMessages;->mCreateEdit:Landroid/widget/EditText;
 
-    const/4 v2, 0x1
+    const/4 v2, 0x2
 
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
 
-    .line 248
+    .line 247
     return-void
 .end method

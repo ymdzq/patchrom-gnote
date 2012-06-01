@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 240
+    .line 239
     iput-object p1, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$3;->this$0:Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,11 +38,15 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 3
+    .locals 6
     .parameter "arg0"
 
     .prologue
-    .line 242
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    .line 241
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$3;->this$0:Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;
 
     iget-object v2, v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAllCheck:Landroid/widget/CheckBox;
@@ -51,7 +55,7 @@
 
     move-result v0
 
-    .line 243
+    .line 242
     .local v0, checked:Z
     const/4 v1, 0x1
 
@@ -65,35 +69,64 @@
 
     move-result v2
 
-    if-ge v1, v2, :cond_0
+    if-ge v1, v2, :cond_1
 
-    .line 245
+    .line 244
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$3;->this$0:Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;
 
-    iget-object v2, v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
+    iget-object v5, v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v1, v0}, Landroid/widget/ListView;->setItemChecked(IZ)V
+    if-nez v0, :cond_0
 
-    .line 243
+    move v2, v3
+
+    :goto_1
+    invoke-virtual {v5, v1, v2}, Landroid/widget/ListView;->setItemChecked(IZ)V
+
+    .line 242
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 247
     :cond_0
+    move v2, v4
+
+    .line 244
+    goto :goto_1
+
+    .line 246
+    :cond_1
     iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$3;->this$0:Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;
 
-    iget-object v2, v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAllCheck:Landroid/widget/CheckBox;
+    iget-object v5, v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->selectAllCheck:Landroid/widget/CheckBox;
 
-    invoke-virtual {v2, v0}, Landroid/widget/CheckBox;->setChecked(Z)V
+    if-nez v0, :cond_2
+
+    move v2, v3
+
+    :goto_2
+    invoke-virtual {v5, v2}, Landroid/widget/CheckBox;->setChecked(Z)V
+
+    .line 248
+    sget-object v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
+
+    if-nez v0, :cond_3
+
+    :goto_3
+    invoke-virtual {v2, v3}, Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;->setEnabled(Z)V
 
     .line 249
-    iget-object v2, p0, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg$3;->this$0:Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;
-
-    iget-object v2, v2, Lcom/sec/android/app/callsetting/allcalls/RejectCallWithMsg;->mLeftSoftkey:Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;
-
-    invoke-virtual {v2, v0}, Lcom/sec/android/touchwiz/widget/TwSoftkeyItem;->setEnabled(Z)V
-
-    .line 250
     return-void
+
+    :cond_2
+    move v2, v4
+
+    .line 246
+    goto :goto_2
+
+    :cond_3
+    move v3, v4
+
+    .line 248
+    goto :goto_3
 .end method

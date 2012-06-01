@@ -45,7 +45,7 @@
 
 .field isVideoContents:Z
 
-.field private mImageButton:Landroid/widget/ImageView;
+.field private mImageButton:Landroid/widget/ImageButton;
 
 .field outputX:I
 
@@ -57,12 +57,12 @@
     .locals 3
 
     .prologue
-    .line 67
+    .line 66
     const/4 v0, 0x0
 
     sput-object v0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mContext:Landroid/content/Context;
 
-    .line 83
+    .line 82
     const/4 v0, 0x3
 
     new-array v0, v0, [Ljava/lang/String;
@@ -94,70 +94,70 @@
     .locals 1
 
     .prologue
-    .line 65
+    .line 64
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 88
+    .line 87
     const/16 v0, 0x32
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->REQUEST_PICK_PHOTO_FROM_GALLERY:I
 
-    .line 89
+    .line 88
     const/16 v0, 0x33
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->REQUEST_PICK_VIDEO_FROM_GALLERY:I
 
-    .line 90
+    .line 89
     const/16 v0, 0x34
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->REQUEST_ATTACH_PHOTO_FROM_CAMERA:I
 
-    .line 91
+    .line 90
     const/16 v0, 0x35
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->REQUEST_ATTACH_VIDEO_FROM_CAMERA:I
 
-    .line 94
+    .line 93
     const/16 v0, 0x36
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->UNABLE_TO_PLAY_VIDEO:I
 
-    .line 95
+    .line 94
     const/16 v0, 0x37
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->NOT_ENOUGH_SPACE:I
 
-    .line 96
+    .line 95
     const/16 v0, 0x38
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->INVALID_VIDEO_FILE:I
 
-    .line 104
+    .line 102
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->isVideoContents:Z
 
-    .line 110
+    .line 108
     const/16 v0, 0x16e
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->MAX_OUTPUT_X:I
 
-    .line 111
+    .line 109
     const/16 v0, 0x12c
 
     iput v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->MAX_OUTPUT_Y:I
 
-    .line 277
+    .line 275
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageView;
+.method static synthetic access$200(Lcom/sec/android/app/callsetting/videocall/PresetImage;)Landroid/widget/ImageButton;
     .locals 1
     .parameter "x0"
 
     .prologue
-    .line 65
-    iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
+    .line 64
+    iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
     return-object v0
 .end method
@@ -167,7 +167,7 @@
     .parameter "x0"
 
     .prologue
-    .line 65
+    .line 64
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->pickImageFromGallery()Landroid/content/Intent;
 
     move-result-object v0
@@ -180,7 +180,7 @@
     .parameter "x0"
 
     .prologue
-    .line 65
+    .line 64
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->pickVideoFromGallery()Landroid/content/Intent;
 
     move-result-object v0
@@ -193,7 +193,7 @@
     .parameter "x0"
 
     .prologue
-    .line 65
+    .line 64
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->capturePicture()Landroid/content/Intent;
 
     move-result-object v0
@@ -206,7 +206,7 @@
     .parameter "x0"
 
     .prologue
-    .line 65
+    .line 64
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->checkRemainingSize()J
 
     move-result-wide v0
@@ -220,7 +220,7 @@
     .parameter "x1"
 
     .prologue
-    .line 65
+    .line 64
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->recordVideo(J)Landroid/content/Intent;
 
     move-result-object v0
@@ -232,14 +232,14 @@
     .locals 3
 
     .prologue
-    .line 353
+    .line 351
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.media.action.IMAGE_CAPTURE"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 354
+    .line 352
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "com.sec.android.app.camera"
 
@@ -247,42 +247,42 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 355
+    .line 353
     const-string v1, "crop"
 
     const-string v2, "true"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 356
+    .line 354
     const-string v1, "aspectX"
 
     iget v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputX:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 357
+    .line 355
     const-string v1, "aspectY"
 
     iget v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputY:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 358
+    .line 356
     const-string v1, "outputX"
 
     iget v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputX:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 359
+    .line 357
     const-string v1, "outputY"
 
     iget v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputY:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 360
+    .line 358
     return-object v0
 .end method
 
@@ -290,7 +290,7 @@
     .locals 12
 
     .prologue
-    .line 319
+    .line 317
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v8
@@ -299,13 +299,13 @@
 
     move-result-object v7
 
-    .line 320
+    .line 318
     .local v7, storageDirectory:Ljava/lang/String;
     new-instance v6, Landroid/os/StatFs;
 
     invoke-direct {v6, v7}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
 
-    .line 321
+    .line 319
     .local v6, stat:Landroid/os/StatFs;
     invoke-virtual {v6}, Landroid/os/StatFs;->getAvailableBlocks()I
 
@@ -321,17 +321,17 @@
 
     mul-long v2, v8, v10
 
-    .line 322
+    .line 320
     .local v2, remainSize:J
     const-wide/16 v0, 0x0
 
-    .line 323
+    .line 321
     .local v0, margin:J
     mul-long v8, v2, v0
 
     sub-long v4, v2, v8
 
-    .line 324
+    .line 322
     .local v4, sizeLimit:J
     const-string v8, "PresetImage"
 
@@ -355,7 +355,7 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 325
+    .line 323
     return-wide v4
 .end method
 
@@ -364,20 +364,20 @@
     .parameter "UriVideos"
 
     .prologue
-    .line 373
+    .line 371
     const/4 v8, 0x0
 
-    .line 374
+    .line 372
     .local v8, isVideoOk:Z
     move-object v1, p1
 
-    .line 375
+    .line 373
     .local v1, tempUriVideos:Landroid/net/Uri;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 377
+    .line 375
     .local v0, cr:Landroid/content/ContentResolver;
     :try_start_0
     sget-object v2, Lcom/sec/android/app/callsetting/videocall/PresetImage;->THUMBNAIL_PROJECTION_VIDEOS:[Ljava/lang/String;
@@ -392,31 +392,31 @@
 
     move-result-object v6
 
-    .line 381
+    .line 379
     .local v6, cursorVideos:Landroid/database/Cursor;
     if-eqz v6, :cond_0
 
-    .line 382
+    .line 380
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 383
+    .line 381
     const/4 v8, 0x1
 
-    .line 389
+    .line 387
     :cond_0
     :goto_0
     if-eqz v6, :cond_1
 
-    .line 390
+    .line 388
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 395
+    .line 393
     .end local v6           #cursorVideos:Landroid/database/Cursor;
     :cond_1
     :goto_1
@@ -442,22 +442,22 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 396
+    .line 394
     return v8
 
-    .line 385
+    .line 383
     .restart local v6       #cursorVideos:Landroid/database/Cursor;
     :cond_2
     const/4 v8, 0x0
 
     goto :goto_0
 
-    .line 392
+    .line 390
     .end local v6           #cursorVideos:Landroid/database/Cursor;
     :catch_0
     move-exception v7
 
-    .line 393
+    .line 391
     .local v7, e:Ljava/lang/Exception;
     const-string v2, "PresetImage"
 
@@ -492,7 +492,7 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 687
+    .line 677
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v2
@@ -509,13 +509,13 @@
 
     move-result-object v0
 
-    .line 688
+    .line 678
     .local v0, bmOverlay:Landroid/graphics/Bitmap;
     new-instance v1, Landroid/graphics/Canvas;
 
     invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 689
+    .line 679
     .local v1, canvas:Landroid/graphics/Canvas;
     new-instance v2, Landroid/graphics/Matrix;
 
@@ -523,7 +523,7 @@
 
     invoke-virtual {v1, p1, v2, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V
 
-    .line 690
+    .line 680
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v2
@@ -558,7 +558,7 @@
 
     invoke-virtual {v1, p2, v2, v3, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 691
+    .line 681
     return-object v0
 .end method
 
@@ -572,7 +572,7 @@
 
     const/4 v3, 0x1
 
-    .line 330
+    .line 328
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.GET_CONTENT"
@@ -581,25 +581,25 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 331
+    .line 329
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "image/jpeg"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 332
+    .line 330
     const-string v1, "onlyJpg"
 
     invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 333
+    .line 331
     const-string v1, "crop"
 
     const-string v2, "true"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 334
+    .line 332
     const-string v1, "aspectX"
 
     iget v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputX:I
@@ -610,7 +610,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 335
+    .line 333
     const-string v1, "aspectY"
 
     iget v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputY:I
@@ -621,7 +621,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 336
+    .line 334
     const-string v1, "outputX"
 
     iget v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputX:I
@@ -632,7 +632,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 337
+    .line 335
     const-string v1, "outputY"
 
     iget v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputY:I
@@ -643,12 +643,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 338
+    .line 336
     const-string v1, "return-data"
 
     invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 339
+    .line 337
     return-object v0
 .end method
 
@@ -658,40 +658,40 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 343
+    .line 341
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 344
+    .line 342
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "android.intent.action.GET_CONTENT"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 345
+    .line 343
     const-string v1, "com.cooliris.media"
 
     const-string v2, "com.cooliris.media.Gallery"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 346
+    .line 344
     const-string v1, "video/*"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 347
+    .line 345
     const-string v1, "only3gp"
 
     invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 348
+    .line 346
     const-string v1, "senderIsVideoCall"
 
     invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 349
+    .line 347
     return-object v0
 .end method
 
@@ -700,27 +700,27 @@
     .parameter "sizeLimit"
 
     .prologue
-    .line 364
+    .line 362
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.media.action.VIDEO_CAPTURE"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 366
+    .line 364
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "android.intent.extra.sizeLimit"
 
     invoke-virtual {v0, v1, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;J)Landroid/content/Intent;
 
-    .line 367
+    .line 365
     const-string v1, "videocall_preset"
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 368
+    .line 366
     return-object v0
 .end method
 
@@ -729,10 +729,10 @@
     .parameter "photo"
 
     .prologue
-    .line 532
+    .line 522
     move-object v4, p1
 
-    .line 533
+    .line 523
     .local v4, selectedPhoto:Landroid/graphics/Bitmap;
     const-string v5, "PresetImage"
 
@@ -756,7 +756,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 535
+    .line 525
     :try_start_0
     const-string v5, "preset_photo.jpg"
 
@@ -766,7 +766,7 @@
 
     move-result-object v1
 
-    .line 536
+    .line 526
     .local v1, fos:Ljava/io/FileOutputStream;
     sget-object v5, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -774,14 +774,14 @@
 
     invoke-virtual {p1, v5, v6, v1}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 537
+    .line 527
     const-string v3, "data/data/com.sec.android.app.callsetting/files/preset_photo.jpg"
 
-    .line 538
+    .line 528
     .local v3, preset_Path:Ljava/lang/String;
     const-string v2, "photo"
 
-    .line 539
+    .line 529
     .local v2, preset_Name:Ljava/lang/String;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -791,7 +791,7 @@
 
     invoke-static {v5, v6, v3}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 541
+    .line 531
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
@@ -800,27 +800,27 @@
 
     invoke-static {v5, v6, v2}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 543
+    .line 533
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 548
+    .line 538
     .end local v1           #fos:Ljava/io/FileOutputStream;
     .end local v2           #preset_Name:Ljava/lang/String;
     .end local v3           #preset_Path:Ljava/lang/String;
     :goto_0
     return-void
 
-    .line 544
+    .line 534
     :catch_0
     move-exception v0
 
-    .line 545
+    .line 535
     .local v0, e:Ljava/io/IOException;
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 546
+    .line 536
     const-string v5, "IOException"
 
     const-string v6, "e"
@@ -835,7 +835,7 @@
     .parameter "selectedVideoPath"
 
     .prologue
-    .line 551
+    .line 541
     const-string v2, "PresetImage"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -860,16 +860,16 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 552
+    .line 542
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    .line 553
+    .line 543
     .local v1, cr:Landroid/content/ContentResolver;
     const-wide/16 v14, -0x1
 
-    .line 555
+    .line 545
     .local v14, videoId:J
     :try_start_0
     sget-object v2, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mUriVideos:Landroid/net/Uri;
@@ -886,34 +886,34 @@
 
     move-result-object v7
 
-    .line 557
+    .line 547
     .local v7, cursorVideos:Landroid/database/Cursor;
     if-eqz v7, :cond_0
 
-    .line 558
+    .line 548
     invoke-interface {v7}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 559
+    .line 549
     const/4 v2, 0x0
 
     invoke-interface {v7, v2}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v14
 
-    .line 563
+    .line 553
     :cond_0
     if-eqz v7, :cond_1
 
-    .line 564
+    .line 554
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 574
+    .line 564
     .end local v7           #cursorVideos:Landroid/database/Cursor;
     :cond_1
     :goto_0
@@ -921,13 +921,13 @@
 
     invoke-direct {v10}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 575
+    .line 565
     .local v10, options:Landroid/graphics/BitmapFactory$Options;
     const/4 v2, 0x1
 
     iput v2, v10, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
-    .line 577
+    .line 567
     :try_start_1
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -939,7 +939,7 @@
 
     move-result-object v13
 
-    .line 580
+    .line 570
     .local v13, video:Landroid/graphics/Bitmap;
     move-object/from16 v0, p0
 
@@ -957,7 +957,7 @@
 
     move-result-object v13
 
-    .line 582
+    .line 572
     :try_start_2
     const-string v2, "preset_video.jpg"
 
@@ -969,7 +969,7 @@
 
     move-result-object v9
 
-    .line 583
+    .line 573
     .local v9, fos:Ljava/io/FileOutputStream;
     sget-object v2, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -977,14 +977,14 @@
 
     invoke-virtual {v13, v2, v3, v9}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 584
+    .line 574
     const-string v12, "data/data/com.sec.android.app.callsetting/files/preset_video.jpg"
 
-    .line 585
+    .line 575
     .local v12, preset_Path:Ljava/lang/String;
     const-string v11, "video"
 
-    .line 586
+    .line 576
     .local v11, preset_Name:Ljava/lang/String;
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -994,7 +994,7 @@
 
     invoke-static {v2, v3, v12}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 588
+    .line 578
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1003,7 +1003,7 @@
 
     invoke-static {v2, v3, v11}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 590
+    .line 580
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1014,13 +1014,13 @@
 
     invoke-static {v2, v3, v0}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 592
+    .line 582
     invoke-virtual {v9}, Ljava/io/FileOutputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 602
+    .line 592
     .end local v9           #fos:Ljava/io/FileOutputStream;
     .end local v11           #preset_Name:Ljava/lang/String;
     .end local v12           #preset_Path:Ljava/lang/String;
@@ -1028,12 +1028,12 @@
     :goto_1
     return-void
 
-    .line 566
+    .line 556
     .end local v10           #options:Landroid/graphics/BitmapFactory$Options;
     :catch_0
     move-exception v8
 
-    .line 567
+    .line 557
     .local v8, e:Ljava/lang/Exception;
     const-string v2, "PresetImage"
 
@@ -1059,19 +1059,19 @@
 
     goto :goto_0
 
-    .line 593
+    .line 583
     .end local v8           #e:Ljava/lang/Exception;
     .restart local v10       #options:Landroid/graphics/BitmapFactory$Options;
     .restart local v13       #video:Landroid/graphics/Bitmap;
     :catch_1
     move-exception v8
 
-    .line 594
+    .line 584
     .local v8, e:Ljava/io/IOException;
     :try_start_3
     invoke-virtual {v8}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 595
+    .line 585
     const-string v2, "IOException"
 
     const-string v3, "e"
@@ -1082,13 +1082,13 @@
 
     goto :goto_1
 
-    .line 598
+    .line 588
     .end local v8           #e:Ljava/io/IOException;
     .end local v13           #video:Landroid/graphics/Bitmap;
     :catch_2
     move-exception v8
 
-    .line 599
+    .line 589
     .local v8, e:Ljava/lang/Exception;
     const-string v2, "Exception casued by thumnail operation"
 
@@ -1096,7 +1096,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 600
+    .line 590
     const v2, 0x7f07003d
 
     move-object/from16 v0, p0
@@ -1116,16 +1116,16 @@
     .locals 15
 
     .prologue
-    const v14, 0x7f020010
+    const v14, 0x7f02000b
 
-    .line 607
+    .line 597
     const-string v12, "PresetImage"
 
     const-string v13, "updatePresetImage()"
 
     invoke-static {v12, v13}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 611
+    .line 601
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v12
@@ -1136,7 +1136,7 @@
 
     move-result-object v10
 
-    .line 613
+    .line 603
     .local v10, preset_Path:Ljava/lang/String;
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1148,20 +1148,20 @@
 
     move-result-object v9
 
-    .line 615
+    .line 605
     .local v9, preset_Name:Ljava/lang/String;
     const-string v3, "data/data/com.sec.android.app.callsetting/files/preset_defaultimage.png"
 
-    .line 619
+    .line 609
     .local v3, mDefaultPath:Ljava/lang/String;
     :try_start_0
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    .line 620
+    .line 610
     .local v5, myResources:Landroid/content/res/Resources;
-    const v12, 0x7f020010
+    const v12, 0x7f02000b
 
     invoke-virtual {v5, v12}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
     :try_end_0
@@ -1169,7 +1169,7 @@
 
     move-result-object v2
 
-    .line 622
+    .line 612
     .local v2, is:Ljava/io/InputStream;
     :try_start_1
     new-instance v4, Ljava/io/File;
@@ -1178,7 +1178,7 @@
 
     invoke-direct {v4, v12}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 623
+    .line 613
     .local v4, mdefaultFile:Ljava/io/File;
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
@@ -1186,7 +1186,7 @@
 
     if-nez v12, :cond_1
 
-    .line 624
+    .line 614
     const-string v12, "preset_defaultimage.png"
 
     const/4 v13, 0x1
@@ -1197,7 +1197,7 @@
 
     move-result-object v7
 
-    .line 627
+    .line 617
     .local v7, os:Ljava/io/OutputStream;
     :try_start_2
     invoke-virtual {v2}, Ljava/io/InputStream;->available()I
@@ -1206,7 +1206,7 @@
 
     new-array v0, v12, [B
 
-    .line 630
+    .line 620
     .local v0, data:[B
     :goto_0
     invoke-virtual {v2, v0}, Ljava/io/InputStream;->read([B)I
@@ -1218,7 +1218,7 @@
 
     if-eq v11, v12, :cond_0
 
-    .line 631
+    .line 621
     const/4 v12, 0x0
 
     invoke-virtual {v7, v0, v12, v11}, Ljava/io/OutputStream;->write([BII)V
@@ -1228,18 +1228,18 @@
 
     goto :goto_0
 
-    .line 634
+    .line 624
     .end local v0           #data:[B
     .end local v11           #result:I
     :catch_0
     move-exception v1
 
-    .line 636
+    .line 626
     .local v1, e:Ljava/io/IOException;
     :try_start_3
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 640
+    .line 630
     .end local v1           #e:Ljava/io/IOException;
     :cond_0
     :goto_1
@@ -1247,7 +1247,7 @@
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 646
+    .line 636
     .end local v4           #mdefaultFile:Ljava/io/File;
     .end local v7           #os:Ljava/io/OutputStream;
     :cond_1
@@ -1257,7 +1257,7 @@
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 652
+    .line 642
     .end local v2           #is:Ljava/io/InputStream;
     .end local v5           #myResources:Landroid/content/res/Resources;
     :goto_3
@@ -1265,17 +1265,94 @@
 
     move-result-object v6
 
-    .line 654
+    .line 644
     .local v6, originalImage:Landroid/graphics/Bitmap;
     if-nez v6, :cond_2
 
-    .line 656
+    .line 646
     move-object v10, v3
 
-    .line 657
+    .line 647
     const-string v9, "preset_default"
 
+    .line 648
+    invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v12
+
+    const-string v13, "preset_name"
+
+    invoke-static {v12, v13, v9}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    .line 651
+    invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v12
+
+    const-string v13, "preset_path"
+
+    invoke-static {v12, v13, v10}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    .line 654
+    iget-object v12, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
+
+    invoke-virtual {v12, v14}, Landroid/widget/ImageButton;->setImageResource(I)V
+
+    .line 674
+    :goto_4
+    return-void
+
+    .line 627
+    .end local v6           #originalImage:Landroid/graphics/Bitmap;
+    .restart local v2       #is:Ljava/io/InputStream;
+    .restart local v4       #mdefaultFile:Ljava/io/File;
+    .restart local v5       #myResources:Landroid/content/res/Resources;
+    .restart local v7       #os:Ljava/io/OutputStream;
+    :catch_1
+    move-exception v1
+
+    .line 628
+    .local v1, e:Landroid/content/res/Resources$NotFoundException;
+    :try_start_5
+    invoke-virtual {v1}, Landroid/content/res/Resources$NotFoundException;->printStackTrace()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
+
+    goto :goto_1
+
+    .line 633
+    .end local v1           #e:Landroid/content/res/Resources$NotFoundException;
+    .end local v4           #mdefaultFile:Ljava/io/File;
+    .end local v7           #os:Ljava/io/OutputStream;
+    :catch_2
+    move-exception v1
+
+    .line 634
+    .local v1, e:Ljava/io/IOException;
+    :try_start_6
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_3
+
+    goto :goto_2
+
+    .line 638
+    .end local v1           #e:Ljava/io/IOException;
+    .end local v2           #is:Ljava/io/InputStream;
+    .end local v5           #myResources:Landroid/content/res/Resources;
+    :catch_3
+    move-exception v1
+
+    .line 639
+    .restart local v1       #e:Ljava/io/IOException;
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
+
+    goto :goto_3
+
     .line 658
+    .end local v1           #e:Ljava/io/IOException;
+    .restart local v6       #originalImage:Landroid/graphics/Bitmap;
+    :cond_2
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v12
@@ -1293,121 +1370,44 @@
 
     invoke-static {v12, v13, v10}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 664
-    iget-object v12, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
-
-    invoke-virtual {v12, v14}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    .line 684
-    :goto_4
-    return-void
-
-    .line 637
-    .end local v6           #originalImage:Landroid/graphics/Bitmap;
-    .restart local v2       #is:Ljava/io/InputStream;
-    .restart local v4       #mdefaultFile:Ljava/io/File;
-    .restart local v5       #myResources:Landroid/content/res/Resources;
-    .restart local v7       #os:Ljava/io/OutputStream;
-    :catch_1
-    move-exception v1
-
-    .line 638
-    .local v1, e:Landroid/content/res/Resources$NotFoundException;
-    :try_start_5
-    invoke-virtual {v1}, Landroid/content/res/Resources$NotFoundException;->printStackTrace()V
-    :try_end_5
-    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
-
-    goto :goto_1
-
-    .line 643
-    .end local v1           #e:Landroid/content/res/Resources$NotFoundException;
-    .end local v4           #mdefaultFile:Ljava/io/File;
-    .end local v7           #os:Ljava/io/OutputStream;
-    :catch_2
-    move-exception v1
-
-    .line 644
-    .local v1, e:Ljava/io/IOException;
-    :try_start_6
-    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
-    :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_3
-
-    goto :goto_2
-
-    .line 648
-    .end local v1           #e:Ljava/io/IOException;
-    .end local v2           #is:Ljava/io/InputStream;
-    .end local v5           #myResources:Landroid/content/res/Resources;
-    :catch_3
-    move-exception v1
-
-    .line 649
-    .restart local v1       #e:Ljava/io/IOException;
-    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
-
-    goto :goto_3
-
-    .line 668
-    .end local v1           #e:Ljava/io/IOException;
-    .restart local v6       #originalImage:Landroid/graphics/Bitmap;
-    :cond_2
-    invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v12
-
-    const-string v13, "preset_name"
-
-    invoke-static {v12, v13, v9}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
-
-    .line 671
-    invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v12
-
-    const-string v13, "preset_path"
-
-    invoke-static {v12, v13, v10}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
-
-    .line 675
+    .line 665
     invoke-static {v10}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v6
 
-    .line 676
+    .line 666
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
 
-    const v13, 0x7f020029
+    const v13, 0x7f020022
 
     invoke-static {v12, v13}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
     move-result-object v8
 
-    .line 677
+    .line 667
     .local v8, playImg:Landroid/graphics/Bitmap;
     iget-boolean v12, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->isVideoContents:Z
 
     if-eqz v12, :cond_3
 
-    .line 678
-    iget-object v12, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
+    .line 668
+    iget-object v12, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
     invoke-direct {p0, v6, v8}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->overlay(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     move-result-object v13
 
-    invoke-virtual {v12, v13}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v12, v13}, Landroid/widget/ImageButton;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     goto :goto_4
 
-    .line 681
+    .line 671
     :cond_3
-    iget-object v12, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
+    iget-object v12, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v12, v6}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v12, v6}, Landroid/widget/ImageButton;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     goto :goto_4
 .end method
@@ -1419,18 +1419,18 @@
     .parameter "msg"
 
     .prologue
-    .line 465
+    .line 455
     const/4 v1, 0x0
 
     invoke-static {p0, p1, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v0
 
-    .line 466
+    .line 456
     .local v0, toast:Landroid/widget/Toast;
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 467
+    .line 457
     return-void
 .end method
 
@@ -1441,42 +1441,42 @@
     .parameter "intent"
 
     .prologue
-    .line 470
+    .line 460
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 471
+    .line 461
     const-string v3, "PresetImage"
 
     const-string v4, "onActivityResult"
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 474
+    .line 464
     const/4 v3, -0x1
 
     if-eq p2, v3, :cond_0
 
-    .line 529
+    .line 519
     :goto_0
     return-void
 
-    .line 478
+    .line 468
     :cond_0
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
-    .line 482
+    .line 472
     :pswitch_0
     invoke-virtual {p3}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 483
+    .line 473
     .local v0, extras:Landroid/os/Bundle;
     if-nez v0, :cond_1
 
-    .line 484
+    .line 474
     const-string v3, "PresetImage"
 
     const-string v4, "Return value from GALLERY (extras) is null"
@@ -1485,7 +1485,7 @@
 
     goto :goto_0
 
-    .line 487
+    .line 477
     :cond_1
     const-string v3, "data"
 
@@ -1495,7 +1495,7 @@
 
     check-cast v1, Landroid/graphics/Bitmap;
 
-    .line 488
+    .line 478
     .local v1, photo:Landroid/graphics/Bitmap;
     iget v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->outputX:I
 
@@ -1507,12 +1507,12 @@
 
     move-result-object v1
 
-    .line 489
+    .line 479
     invoke-direct {p0, v1}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->setImage(Landroid/graphics/Bitmap;)V
 
     goto :goto_0
 
-    .line 497
+    .line 487
     .end local v0           #extras:Landroid/os/Bundle;
     .end local v1           #photo:Landroid/graphics/Bitmap;
     :pswitch_1
@@ -1520,11 +1520,11 @@
 
     move-result-object v0
 
-    .line 498
+    .line 488
     .restart local v0       #extras:Landroid/os/Bundle;
     if-nez v0, :cond_2
 
-    .line 499
+    .line 489
     const-string v3, "PresetImage"
 
     const-string v4, "Return value from GALLERY (extras) is null"
@@ -1533,7 +1533,7 @@
 
     goto :goto_0
 
-    .line 502
+    .line 492
     :cond_2
     const-string v3, "data"
 
@@ -1543,13 +1543,13 @@
 
     check-cast v1, Landroid/graphics/Bitmap;
 
-    .line 503
+    .line 493
     .restart local v1       #photo:Landroid/graphics/Bitmap;
     invoke-direct {p0, v1}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->setImage(Landroid/graphics/Bitmap;)V
 
     goto :goto_0
 
-    .line 509
+    .line 499
     .end local v0           #extras:Landroid/os/Bundle;
     .end local v1           #photo:Landroid/graphics/Bitmap;
     :pswitch_2
@@ -1559,7 +1559,7 @@
 
     sput-object v3, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mUriVideos:Landroid/net/Uri;
 
-    .line 510
+    .line 500
     const-string v3, "PresetImage"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1584,18 +1584,18 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 511
+    .line 501
     invoke-virtual {p3}, Landroid/content/Intent;->getDataString()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 512
+    .line 502
     .local v2, preset_video_path:Ljava/lang/String;
     invoke-direct {p0, v2}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->setVideo(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 518
+    .line 508
     .end local v2           #preset_video_path:Ljava/lang/String;
     :pswitch_3
     invoke-virtual {p3}, Landroid/content/Intent;->getData()Landroid/net/Uri;
@@ -1604,7 +1604,7 @@
 
     sput-object v3, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mUriVideos:Landroid/net/Uri;
 
-    .line 519
+    .line 509
     const-string v3, "PresetImage"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1629,18 +1629,18 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 520
+    .line 510
     invoke-virtual {p3}, Landroid/content/Intent;->getDataString()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 521
+    .line 511
     .restart local v2       #preset_video_path:Ljava/lang/String;
     invoke-direct {p0, v2}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->setVideo(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 478
+    .line 468
     :pswitch_data_0
     .packed-switch 0x32
         :pswitch_0
@@ -1655,17 +1655,17 @@
     .parameter "newConfig"
 
     .prologue
-    .line 119
+    .line 117
     const-string v0, "Configuration"
 
     const-string v1, "changed"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 120
+    .line 118
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 121
+    .line 119
     return-void
 .end method
 
@@ -1684,7 +1684,7 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    const v8, 0x7f03001a
+    const v8, 0x7f030019
 
     invoke-virtual {p0, v8}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->setContentView(I)V
 
@@ -1705,35 +1705,28 @@
 
     move-result-object v8
 
-    check-cast v8, Landroid/widget/ImageView;
+    check-cast v8, Landroid/widget/ImageButton;
 
-    iput-object v8, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
+    iput-object v8, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
-    .line 413
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
-
-    sget-object v9, Landroid/widget/ImageView$ScaleType;->FIT_XY:Landroid/widget/ImageView$ScaleType;
-
-    invoke-virtual {v8, v9}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
-
-    .line 414
-    iget-object v8, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
+    .line 411
+    iget-object v8, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
     new-instance v9, Lcom/sec/android/app/callsetting/videocall/PresetImage$3;
 
     invoke-direct {v9, p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage$3;-><init>(Lcom/sec/android/app/callsetting/videocall/PresetImage;)V
 
-    invoke-virtual {v8, v9}, Landroid/widget/ImageView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v8, v9}, Landroid/widget/ImageButton;->post(Ljava/lang/Runnable;)Z
 
-    .line 432
+    .line 422
     :try_start_0
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
-    .line 433
+    .line 423
     .local v6, myResources:Landroid/content/res/Resources;
-    const v8, 0x7f020010
+    const v8, 0x7f02000b
 
     invoke-virtual {v6, v8}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
     :try_end_0
@@ -1741,7 +1734,7 @@
 
     move-result-object v4
 
-    .line 435
+    .line 425
     .local v4, is:Ljava/io/InputStream;
     :try_start_1
     new-instance v5, Ljava/io/File;
@@ -1750,7 +1743,7 @@
 
     invoke-direct {v5, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 436
+    .line 426
     .local v5, mdefaultFile:Ljava/io/File;
     invoke-virtual {v5}, Ljava/io/File;->exists()Z
 
@@ -1758,7 +1751,7 @@
 
     if-nez v8, :cond_2
 
-    .line 437
+    .line 427
     const-string v8, "preset_defaultimage.png"
 
     const/4 v9, 0x1
@@ -1769,7 +1762,7 @@
 
     move-result-object v7
 
-    .line 440
+    .line 430
     .local v7, os:Ljava/io/OutputStream;
     :try_start_2
     invoke-virtual {v4}, Ljava/io/InputStream;->available()I
@@ -1778,25 +1771,25 @@
 
     new-array v2, v8, [B
 
-    .line 441
+    .line 431
     .local v2, data:[B
     invoke-virtual {v4, v2}, Ljava/io/InputStream;->read([B)I
 
     move-result v1
 
-    .line 442
+    .line 432
     .local v1, count:I
     const/4 v8, -0x1
 
     if-eq v1, v8, :cond_1
 
-    .line 443
+    .line 433
     invoke-virtual {v7, v2}, Ljava/io/OutputStream;->write([B)V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_2 .. :try_end_2} :catch_3
 
-    .line 450
+    .line 440
     .end local v1           #count:I
     .end local v2           #data:[B
     :cond_1
@@ -1806,7 +1799,7 @@
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
 
-    .line 456
+    .line 446
     .end local v5           #mdefaultFile:Ljava/io/File;
     .end local v7           #os:Ljava/io/OutputStream;
     :cond_2
@@ -1816,13 +1809,13 @@
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
 
-    .line 461
+    .line 451
     .end local v4           #is:Ljava/io/InputStream;
     .end local v6           #myResources:Landroid/content/res/Resources;
     :goto_2
     return-void
 
-    .line 444
+    .line 434
     .restart local v4       #is:Ljava/io/InputStream;
     .restart local v5       #mdefaultFile:Ljava/io/File;
     .restart local v6       #myResources:Landroid/content/res/Resources;
@@ -1830,7 +1823,7 @@
     :catch_0
     move-exception v3
 
-    .line 446
+    .line 436
     .local v3, e:Ljava/io/IOException;
     :try_start_5
     invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
@@ -1839,14 +1832,14 @@
 
     goto :goto_0
 
-    .line 453
+    .line 443
     .end local v3           #e:Ljava/io/IOException;
     .end local v5           #mdefaultFile:Ljava/io/File;
     .end local v7           #os:Ljava/io/OutputStream;
     :catch_1
     move-exception v3
 
-    .line 454
+    .line 444
     .restart local v3       #e:Ljava/io/IOException;
     :try_start_6
     invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
@@ -1855,20 +1848,20 @@
 
     goto :goto_1
 
-    .line 458
+    .line 448
     .end local v3           #e:Ljava/io/IOException;
     .end local v4           #is:Ljava/io/InputStream;
     .end local v6           #myResources:Landroid/content/res/Resources;
     :catch_2
     move-exception v3
 
-    .line 459
+    .line 449
     .restart local v3       #e:Ljava/io/IOException;
     invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_2
 
-    .line 447
+    .line 437
     .end local v3           #e:Ljava/io/IOException;
     .restart local v4       #is:Ljava/io/InputStream;
     .restart local v5       #mdefaultFile:Ljava/io/File;
@@ -1877,7 +1870,7 @@
     :catch_3
     move-exception v3
 
-    .line 448
+    .line 438
     .local v3, e:Landroid/content/res/Resources$NotFoundException;
     :try_start_7
     invoke-virtual {v3}, Landroid/content/res/Resources$NotFoundException;->printStackTrace()V
@@ -1892,23 +1885,23 @@
     .parameter "item"
 
     .prologue
-    .line 695
+    .line 685
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v1
 
-    .line 696
+    .line 686
     .local v1, itemId:I
     const v2, 0x102002c
 
     if-ne v1, v2, :cond_0
 
-    .line 697
+    .line 687
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 698
+    .line 688
     .local v0, intent:Landroid/content/Intent;
     const-string v2, "com.android.phone"
 
@@ -1916,26 +1909,26 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 699
+    .line 689
     const-string v2, "com.android.phone.MAIN"
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 700
+    .line 690
     const/high16 v2, 0x400
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 701
+    .line 691
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->startActivity(Landroid/content/Intent;)V
 
-    .line 702
+    .line 692
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->finish()V
 
-    .line 703
+    .line 693
     const/4 v2, 0x1
 
-    .line 705
+    .line 695
     .end local v0           #intent:Landroid/content/Intent;
     :goto_0
     return v2
@@ -1952,22 +1945,22 @@
     .locals 5
 
     .prologue
-    .line 124
+    .line 122
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 125
+    .line 123
     const-string v2, "PresetImage"
 
     const-string v3, "onResume()"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 128
+    .line 126
     const/4 v2, 0x0
 
     iput-boolean v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->isVideoContents:Z
 
-    .line 130
+    .line 128
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -1978,11 +1971,11 @@
 
     move-result-object v0
 
-    .line 131
+    .line 129
     .local v0, preset_Name:Ljava/lang/String;
     if-eqz v0, :cond_1
 
-    .line 132
+    .line 130
     const-string v2, "video"
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
@@ -1991,7 +1984,7 @@
 
     if-nez v2, :cond_1
 
-    .line 133
+    .line 131
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2002,18 +1995,18 @@
 
     move-result-object v1
 
-    .line 135
+    .line 133
     .local v1, videoUri:Ljava/lang/String;
     if-eqz v1, :cond_0
 
-    .line 136
+    .line 134
     invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v2
 
     sput-object v2, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mUriVideos:Landroid/net/Uri;
 
-    .line 138
+    .line 136
     :cond_0
     sget-object v2, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mUriVideos:Landroid/net/Uri;
 
@@ -2027,7 +2020,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 139
+    .line 137
     const-string v2, "PresetImage"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -2052,28 +2045,28 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 140
+    .line 138
     const/4 v2, 0x1
 
     iput-boolean v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->isVideoContents:Z
 
-    .line 152
+    .line 150
     .end local v1           #videoUri:Ljava/lang/String;
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->setListener()V
 
-    .line 153
+    .line 151
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->updatePresetImage()V
 
-    .line 156
-    iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
+    .line 154
+    iget-object v2, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
     iget-boolean v3, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->isVideoContents:Z
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setClickable(Z)V
+    invoke-virtual {v2, v3}, Landroid/widget/ImageButton;->setClickable(Z)V
 
-    .line 157
+    .line 155
     const-string v2, "PresetImage"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -2086,9 +2079,9 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v4}, Landroid/widget/ImageView;->isClickable()Z
+    invoke-virtual {v4}, Landroid/widget/ImageButton;->isClickable()Z
 
     move-result v4
 
@@ -2102,10 +2095,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 158
+    .line 156
     return-void
 
-    .line 142
+    .line 140
     .restart local v1       #videoUri:Ljava/lang/String;
     :cond_2
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
@@ -2118,7 +2111,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 145
+    .line 143
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2141,10 +2134,10 @@
     .parameter "outState"
 
     .prologue
-    .line 116
+    .line 114
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 117
+    .line 115
     return-void
 .end method
 
@@ -2152,16 +2145,16 @@
     .locals 2
 
     .prologue
-    .line 163
-    iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageView;
+    .line 161
+    iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
     new-instance v1, Lcom/sec/android/app/callsetting/videocall/PresetImage$1;
 
     invoke-direct {v1, p0}, Lcom/sec/android/app/callsetting/videocall/PresetImage$1;-><init>(Lcom/sec/android/app/callsetting/videocall/PresetImage;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 182
+    .line 180
     const v0, 0x7f08003d
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/videocall/PresetImage;->findViewById(I)Landroid/view/View;
@@ -2172,7 +2165,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->btnChangePreset:Landroid/widget/Button;
 
-    .line 183
+    .line 181
     iget-object v0, p0, Lcom/sec/android/app/callsetting/videocall/PresetImage;->btnChangePreset:Landroid/widget/Button;
 
     new-instance v1, Lcom/sec/android/app/callsetting/videocall/PresetImage$2;
@@ -2181,6 +2174,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 224
+    .line 222
     return-void
 .end method

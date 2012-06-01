@@ -78,8 +78,8 @@
     </string-array>
     <string-array name="match_criteria_entries">
         <item>完全一樣</item>
-        <item>開始</item>
-        <item>結束</item>
+        <item>開始以</item>
+        <item>結束以</item>
         <item>包括</item>
     </string-array>
     <string-array name="match_criteria_values">

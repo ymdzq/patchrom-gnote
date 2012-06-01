@@ -14,7 +14,7 @@
     <string name="summary_setRejectCall">管理自動拒接/接聽模式</string>
     <string name="summary_editRejectMessages">編輯拒接訊息</string>
     <string name="summary_callAlert">設定來電提醒</string>
-    <string name="menu_videocallImage">視訊來電圖像</string>
+    <string name="menu_videocallImage">視訊通話圖像</string>
     <string name="menu_useCallFailOption">使用通話失敗選項</string>
     <string name="summary_manageAccounts">管理SIP帳號及狀態</string>
     <string name="summary_receiveIncomingCalls">消耗更多電池電量</string>
@@ -148,9 +148,9 @@
     <string name="callsettings_text_off">關</string>
     <string name="fdn_mode_activated">已啟動 FDN 模式</string>
     <string name="callsettings_body_enabled">已啟用</string>
-    <string name="callsettings_body_disabled">停用</string>
+    <string name="callsettings_body_disabled">已停用</string>
     <string name="callsettings_body_activate">已啟動</string>
-    <string name="callsettings_body_deactivate">停用</string>
+    <string name="callsettings_body_deactivate">已停用</string>
     <string name="callsettings_body_delete">已刪除</string>
     <string name="callsettings_body_already_in_use">已被使用</string>
     <string name="callsettings_body_autoreject_empty">自動拒絕號碼空</string>
@@ -199,7 +199,7 @@
     <string name="callbarring_change_password">更改密碼</string>
     <string name="videocall_title_videocall">視訊通話</string>
     <string name="videocall_list_1">預設影像</string>
-    <string name="videocall_list_2">接收來電時自己的影像</string>
+    <string name="videocall_list_2">接通時顯示自己的影像</string>
     <string name="videocall_list_3">使用通話失敗選項</string>
     <string name="videocall_list_4">視訊通話轉移</string>
     <string name="videocall_list_5">視訊通話限制</string>
@@ -220,5 +220,4 @@
     <string name="callsettings_autoreject_noti_blacklist">將拒接黑名單號碼</string>
     <string name="callsettings_autoreject_noti_ticker_all">將拒接所有來電</string>
     <string name="callsettings_autoreject_noti_ticker_rejectlist">所有來自自動拒接的號碼將被拒接</string>
-    <string name="information">資訊</string>
 </resources>

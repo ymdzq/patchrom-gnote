@@ -103,44 +103,44 @@
 
     const/4 v1, 0x0
 
-    .line 62
+    .line 63
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
-    .line 86
+    .line 87
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPreference:Ljava/util/ArrayList;
 
-    .line 163
+    .line 164
     iput v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
-    .line 164
+    .line 165
     iput-boolean v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCB_Checked:Z
 
-    .line 177
+    .line 178
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mInputPassword:Landroid/widget/EditText;
 
-    .line 178
+    .line 179
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mOldPassword:Landroid/widget/EditText;
 
-    .line 179
+    .line 180
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mNewPassword:Landroid/widget/EditText;
 
-    .line 180
+    .line 181
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mConfirmPassword:Landroid/widget/EditText;
 
-    .line 181
+    .line 182
     iput-boolean v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPwdChangeSubmit:Z
 
-    .line 189
+    .line 190
     iput-boolean v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSkipCallBarringReq:Z
 
-    .line 190
+    .line 191
     iput-boolean v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCheckAllCB:Z
 
-    .line 192
+    .line 193
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCBVisible:Z
@@ -174,7 +174,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->callbarring_password:Ljava/lang/String;
 
     return-object v0
@@ -186,7 +186,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     iput-object p1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->callbarring_password:Ljava/lang/String;
 
     return-object p1
@@ -198,7 +198,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->displayToast(Ljava/lang/String;)V
 
     return-void
@@ -213,7 +213,7 @@
     .parameter "x4"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->changePasswordCallBarring(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -224,7 +224,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->imm:Landroid/view/inputmethod/InputMethodManager;
 
     return-object v0
@@ -235,7 +235,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCB_Checked:Z
 
     return v0
@@ -246,7 +246,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->handler:Landroid/os/Handler;
 
     return-object v0
@@ -259,7 +259,7 @@
     .parameter "x2"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->handleSetCBMessage(Landroid/os/AsyncResult;I)I
 
     move-result v0
@@ -278,7 +278,7 @@
     .end annotation
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->setAppState(Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;)V
 
     return-void
@@ -296,7 +296,7 @@
     .end annotation
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->setAppState(Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;I)V
 
     return-void
@@ -308,7 +308,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->handleQueryCBMessage(Landroid/os/AsyncResult;)I
 
     move-result v0
@@ -321,7 +321,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCheckAllCB:Z
 
     return v0
@@ -333,7 +333,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     iput-boolean p1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCheckAllCB:Z
 
     return p1
@@ -344,7 +344,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     invoke-static {p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->log(Ljava/lang/String;)V
 
     return-void
@@ -355,7 +355,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
 
     return-object v0
@@ -367,7 +367,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     iput-boolean p1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSkipCallBarringReq:Z
 
     return p1
@@ -378,7 +378,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     return-object v0
@@ -389,7 +389,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->dismissCallWaiting()V
 
     return-void
@@ -400,7 +400,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
     return v0
@@ -412,7 +412,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     iput p1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
     return p1
@@ -423,7 +423,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
     add-int/lit8 v1, v0, 0x1
@@ -438,7 +438,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPreference:Ljava/util/ArrayList;
 
     return-object v0
@@ -450,7 +450,7 @@
     .parameter "x1"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0, p1}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->setCallBarring(I)V
 
     return-void
@@ -461,7 +461,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getCallBarring()V
 
     return-void
@@ -472,7 +472,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mOldPassword:Landroid/widget/EditText;
 
     return-object v0
@@ -483,7 +483,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mNewPassword:Landroid/widget/EditText;
 
     return-object v0
@@ -494,7 +494,7 @@
     .parameter "x0"
 
     .prologue
-    .line 62
+    .line 63
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mConfirmPassword:Landroid/widget/EditText;
 
     return-object v0
@@ -508,7 +508,7 @@
     .parameter
 
     .prologue
-    .line 1309
+    .line 1300
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -523,12 +523,12 @@
 
     if-gtz v0, :cond_2
 
-    .line 1315
+    .line 1306
     sget-object v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->BUSY_NETWORK_CONNECT:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->setAppState(Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;)V
 
-    .line 1317
+    .line 1308
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getServiceState()Landroid/telephony/ServiceState;
@@ -539,7 +539,7 @@
 
     move-result v0
 
-    .line 1319
+    .line 1310
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -584,7 +584,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1320
+    .line 1311
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -631,10 +631,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1322
+    .line 1313
     if-nez v0, :cond_0
 
-    .line 1323
+    .line 1314
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -663,20 +663,20 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1325
+    .line 1316
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->requestCBChangePassword(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1339
+    .line 1330
     :goto_0
     return-void
 
-    .line 1326
+    .line 1317
     :cond_0
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_1
 
-    .line 1327
+    .line 1318
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -705,12 +705,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1328
+    .line 1319
     const-string v0, "onCreate: radio not ready, waiting for signal."
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->log(Ljava/lang/String;)V
 
-    .line 1329
+    .line 1320
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
@@ -723,7 +723,7 @@
 
     goto :goto_0
 
-    .line 1332
+    .line 1323
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -753,7 +753,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1333
+    .line 1324
     sget-object v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     const/16 v1, 0xc8
@@ -762,13 +762,13 @@
 
     goto :goto_0
 
-    .line 1336
+    .line 1327
     :cond_2
     const-string v0, "setDisplayMode: radio is off!"
 
     invoke-static {v0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->log(Ljava/lang/String;)V
 
-    .line 1337
+    .line 1328
     sget-object v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->NETWORK_ERROR:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     const/16 v1, 0x320
@@ -785,7 +785,7 @@
     .prologue
     const/4 v6, 0x4
 
-    .line 1350
+    .line 1341
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mOldPassword:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -796,7 +796,7 @@
 
     move-result-object v0
 
-    .line 1351
+    .line 1342
     iget-object v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mNewPassword:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -807,7 +807,7 @@
 
     move-result-object v1
 
-    .line 1352
+    .line 1343
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mConfirmPassword:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -818,7 +818,7 @@
 
     move-result-object v2
 
-    .line 1354
+    .line 1345
     const-class v3, Lcom/sec/android/app/callsetting/voicecall/CallBarring;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -845,7 +845,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1355
+    .line 1346
     const-class v3, Lcom/sec/android/app/callsetting/voicecall/CallBarring;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -872,7 +872,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1356
+    .line 1347
     const-class v3, Lcom/sec/android/app/callsetting/voicecall/CallBarring;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -899,7 +899,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1360
+    .line 1351
     if-eqz v0, :cond_0
 
     if-eqz v0, :cond_1
@@ -910,7 +910,7 @@
 
     if-ge v0, v6, :cond_1
 
-    .line 1362
+    .line 1353
     :cond_0
     const v0, 0x7f0700a6
 
@@ -918,17 +918,17 @@
 
     move-result-object v0
 
-    .line 1382
+    .line 1373
     :goto_0
     invoke-direct {p0, p1, v0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->showError(Landroid/app/Dialog;Ljava/lang/String;)V
 
-    .line 1383
+    .line 1374
     const/4 v0, 0x0
 
     :goto_1
     return v0
 
-    .line 1363
+    .line 1354
     :cond_1
     if-eqz v1, :cond_2
 
@@ -940,7 +940,7 @@
 
     if-ge v0, v6, :cond_3
 
-    .line 1365
+    .line 1356
     :cond_2
     const v0, 0x7f0700a7
 
@@ -950,7 +950,7 @@
 
     goto :goto_0
 
-    .line 1366
+    .line 1357
     :cond_3
     if-eqz v2, :cond_4
 
@@ -962,7 +962,7 @@
 
     if-ge v0, v6, :cond_5
 
-    .line 1368
+    .line 1359
     :cond_4
     const v0, 0x7f0700a8
 
@@ -972,7 +972,7 @@
 
     goto :goto_0
 
-    .line 1370
+    .line 1361
     :cond_5
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -980,7 +980,7 @@
 
     if-nez v0, :cond_6
 
-    .line 1372
+    .line 1363
     const v0, 0x7f0700aa
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getString(I)Ljava/lang/String;
@@ -989,20 +989,20 @@
 
     goto :goto_0
 
-    .line 1375
+    .line 1366
     :cond_6
     const v0, 0x7f0700ad
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getString(I)Ljava/lang/String;
 
-    .line 1376
+    .line 1367
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->handler:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->doConfirm:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 1377
+    .line 1368
     const/4 v0, 0x1
 
     goto :goto_1
@@ -1106,7 +1106,7 @@
     .parameter "msg"
 
     .prologue
-    .line 1478
+    .line 1469
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1117,11 +1117,11 @@
 
     move-result-object v0
 
-    .line 1479
+    .line 1470
     .local v0, toast:Landroid/widget/Toast;
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1480
+    .line 1471
     return-void
 .end method
 
@@ -2052,12 +2052,12 @@
     .parameter "msg"
 
     .prologue
-    .line 1475
+    .line 1466
     const-string v0, "## CallBarring ##"
 
     invoke-static {v0, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1476
+    .line 1467
     return-void
 .end method
 
@@ -2069,10 +2069,10 @@
     .parameter "confirmPassword"
 
     .prologue
-    .line 1304
+    .line 1295
     const-string v1, "AB"
 
-    .line 1305
+    .line 1296
     .local v1, facility:Ljava/lang/String;
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -2096,7 +2096,7 @@
 
     invoke-interface/range {v0 .. v5}, Lcom/android/internal/telephony/Phone;->changeBarringPassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Message;)Z
 
-    .line 1306
+    .line 1297
     return-void
 .end method
 
@@ -2592,6 +2592,10 @@
 
     const/16 v0, 0x384
 
+    if-eq p2, v0, :cond_2
+
+    const/16 v0, 0x258
+
     if-ne p2, v0, :cond_3
 
     .line 1068
@@ -2723,7 +2727,7 @@
     move v1, v3
 
     .line 1061
-    goto :goto_2
+    goto/16 :goto_2
 
     .line 1076
     :cond_6
@@ -2928,8 +2932,6 @@
     goto/16 :goto_3
 
     .line 1008
-    nop
-
     :sswitch_data_0
     .sparse-switch
         0xc8 -> :sswitch_0
@@ -3232,7 +3234,7 @@
     .parameter
 
     .prologue
-    .line 1342
+    .line 1333
     const v0, 0x7f080020
 
     invoke-virtual {p1, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
@@ -3241,18 +3243,18 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 1343
+    .line 1334
     if-eqz v0, :cond_0
 
-    .line 1344
+    .line 1335
     invoke-virtual {v0, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1345
+    .line 1336
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 1347
+    .line 1338
     :cond_0
     return-void
 .end method
@@ -3261,7 +3263,7 @@
     .locals 3
 
     .prologue
-    .line 1401
+    .line 1392
     const v0, 0x7f030008
 
     const/4 v1, 0x0
@@ -3270,7 +3272,7 @@
 
     move-result-object v1
 
-    .line 1411
+    .line 1402
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
@@ -3301,10 +3303,10 @@
 
     move-result-object v2
 
-    .line 1418
+    .line 1409
     invoke-virtual {v2, p0}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 1432
+    .line 1423
     const v0, 0x7f080022
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -3315,7 +3317,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mOldPassword:Landroid/widget/EditText;
 
-    .line 1433
+    .line 1424
     const v0, 0x7f080023
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -3326,7 +3328,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mNewPassword:Landroid/widget/EditText;
 
-    .line 1434
+    .line 1425
     const v0, 0x7f080024
 
     invoke-virtual {v1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -3337,20 +3339,20 @@
 
     iput-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mConfirmPassword:Landroid/widget/EditText;
 
-    .line 1436
+    .line 1427
     const/4 v0, 0x6
 
     iput v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
-    .line 1437
+    .line 1428
     sget-object v0, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->setAppState(Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;)V
 
-    .line 1439
+    .line 1430
     invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
-    .line 1440
+    .line 1431
     return-void
 .end method
 
@@ -3362,7 +3364,7 @@
     .parameter "button"
 
     .prologue
-    .line 1387
+    .line 1378
     const/4 v0, -0x1
 
     if-ne p2, v0, :cond_0
@@ -3372,10 +3374,10 @@
     :goto_0
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPwdChangeSubmit:Z
 
-    .line 1388
+    .line 1379
     return-void
 
-    .line 1387
+    .line 1378
     :cond_0
     const/4 v0, 0x0
 
@@ -3416,7 +3418,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSharedPreferences:Landroid/content/SharedPreferences;
 
-    .line 214
+    .line 215
     const-string v2, "callbarring_baoc_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3427,7 +3429,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList1Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 215
+    .line 216
     const-string v2, "callbarring_baoic_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3438,7 +3440,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList2Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 216
+    .line 217
     const-string v2, "callbarring_baoicxh_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3449,7 +3451,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList3Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 217
+    .line 218
     const-string v2, "callbarring_baic_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3460,7 +3462,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList4Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 218
+    .line 219
     const-string v2, "callbarring_baicr_pref"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -3471,49 +3473,49 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList5Pref:Landroid/preference/CheckBoxPreference;
 
-    .line 220
+    .line 221
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList1Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 221
+    .line 222
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList2Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 222
+    .line 223
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList3Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 223
+    .line 224
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList4Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 224
+    .line 225
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPreference:Ljava/util/ArrayList;
 
     iget-object v3, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCallBarringList5Pref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 226
+    .line 227
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->factory:Landroid/view/LayoutInflater;
 
-    .line 227
+    .line 228
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->factory:Landroid/view/LayoutInflater;
 
     const/high16 v3, 0x7f03
@@ -3526,7 +3528,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->textEntryView:Landroid/view/View;
 
-    .line 228
+    .line 229
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->textEntryView:Landroid/view/View;
 
     const/high16 v3, 0x7f08
@@ -3539,7 +3541,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->editText:Landroid/widget/EditText;
 
-    .line 230
+    .line 231
     const-string v2, "input_method"
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -3550,54 +3552,54 @@
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->imm:Landroid/view/inputmethod/InputMethodManager;
 
-    .line 233
+    .line 234
     new-instance v2, Lcom/sec/android/app/callsetting/voicecall/CallBarring$1;
 
     invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$1;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->doActivate:Ljava/lang/Runnable;
 
-    .line 251
+    .line 252
     new-instance v2, Lcom/sec/android/app/callsetting/voicecall/CallBarring$2;
 
     invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$2;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->doDeactivate:Ljava/lang/Runnable;
 
-    .line 268
+    .line 269
     new-instance v2, Lcom/sec/android/app/callsetting/voicecall/CallBarring$3;
 
     invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$3;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->doCheckStatus:Ljava/lang/Runnable;
 
-    .line 274
+    .line 275
     new-instance v2, Lcom/sec/android/app/callsetting/voicecall/CallBarring$4;
 
     invoke-direct {v2, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$4;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->doConfirm:Ljava/lang/Runnable;
 
-    .line 285
+    .line 286
     sget-object v2, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mAppState:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
-    .line 286
+    .line 287
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getDefaultPhone()Lcom/android/internal/telephony/Phone;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    .line 288
+    .line 289
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mTelMan:Landroid/telephony/TelephonyManager;
 
-    .line 290
+    .line 291
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mTelMan:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v2}, Landroid/telephony/TelephonyManager;->getSimState()I
@@ -3614,20 +3616,20 @@
 
     if-ne v2, v5, :cond_2
 
-    .line 293
+    .line 294
     :cond_1
     const/16 v2, 0xc8
 
     invoke-virtual {p0, v2}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->showDialog(I)V
 
-    .line 294
+    .line 295
     const-string v2, "CallBarring"
 
     const-string v3, "skip set or get CallBarring"
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 296
+    .line 297
     const/4 v1, 0x0
 
     .local v1, i:I
@@ -3640,7 +3642,7 @@
 
     if-ge v1, v2, :cond_3
 
-    .line 297
+    .line 298
     iget-object v2, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPreference:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -3653,34 +3655,36 @@
 
     invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
-    .line 296
+    .line 297
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 301
+    .line 302
     .end local v1           #i:I
     :cond_2
     iput-boolean v5, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCheckAllCB:Z
 
-    .line 302
+    .line 303
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getCallBarring()V
 
-    .line 304
+    .line 305
     :cond_3
     return-void
 .end method
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
-    .locals 9
+    .locals 11
     .parameter "id"
 
     .prologue
-    const v7, 0x7f0700ad
+    const v8, 0x7f0700ad
 
-    const/4 v8, 0x1
+    const/4 v10, 0x0
 
-    .line 409
+    const/4 v9, 0x1
+
+    .line 410
     sparse-switch p1, :sswitch_data_0
 
     .line 544
@@ -3688,206 +3692,234 @@
 
     .line 545
     .local v4, msgId:I
-    const v5, 0x7f070087
+    const v6, 0x7f070087
 
     .line 546
-    .local v5, titleId:I
+    .local v6, titleId:I
     packed-switch p1, :pswitch_data_0
 
     .line 551
     :goto_0
     invoke-virtual {p0, v4}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getString(I)Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-direct {p0, v6}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->displayToast(Ljava/lang/String;)V
+    invoke-direct {p0, v7}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->displayToast(Ljava/lang/String;)V
 
     .line 555
     .end local v4           #msgId:I
-    .end local v5           #titleId:I
+    .end local v6           #titleId:I
     :goto_1
     const/4 v1, 0x0
 
     :goto_2
     return-object v1
 
-    .line 413
+    .line 414
     :sswitch_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 414
-    .local v0, BADialog:Landroid/app/AlertDialog$Builder;
-    const v6, 0x7f0700c6
-
-    invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
-
     .line 415
-    iget-object v6, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->textEntryView:Landroid/view/View;
+    .local v0, BADialog:Landroid/app/AlertDialog$Builder;
+    const v7, 0x7f0700c6
 
-    invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v7}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
-    .line 417
-    new-instance v6, Lcom/sec/android/app/callsetting/voicecall/CallBarring$6;
+    .line 416
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->textEntryView:Landroid/view/View;
 
-    invoke-direct {v6, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$6;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
+    invoke-virtual {v0, v7}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {v0, v7, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    .line 418
+    new-instance v7, Lcom/sec/android/app/callsetting/voicecall/CallBarring$6;
 
-    .line 430
-    const v6, 0x7f0700ae
+    invoke-direct {v7, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$6;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
 
-    new-instance v7, Lcom/sec/android/app/callsetting/voicecall/CallBarring$7;
+    invoke-virtual {v0, v8, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    invoke-direct {v7, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$7;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
+    .line 431
+    const v7, 0x7f0700ae
 
-    invoke-virtual {v0, v6, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    new-instance v8, Lcom/sec/android/app/callsetting/voicecall/CallBarring$7;
 
-    .line 438
-    invoke-virtual {v0, v8}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    invoke-direct {v8, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$7;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
+
+    invoke-virtual {v0, v7, v8}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 439
-    new-instance v6, Lcom/sec/android/app/callsetting/voicecall/CallBarring$8;
+    invoke-virtual {v0, v9}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    invoke-direct {v6, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$8;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
+    .line 440
+    new-instance v7, Lcom/sec/android/app/callsetting/voicecall/CallBarring$8;
 
-    invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
+    invoke-direct {v7, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$8;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
 
-    .line 447
-    iget-object v6, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->editText:Landroid/widget/EditText;
+    invoke-virtual {v0, v7}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {v6}, Landroid/widget/EditText;->requestFocus()Z
+    .line 448
+    new-instance v5, Landroid/text/method/PasswordTransformationMethod;
+
+    invoke-direct {v5}, Landroid/text/method/PasswordTransformationMethod;-><init>()V
 
     .line 449
+    .local v5, ptm:Landroid/text/method/PasswordTransformationMethod;
+    new-array v3, v9, [Landroid/text/InputFilter;
+
+    .line 450
+    .local v3, filterArray:[Landroid/text/InputFilter;
+    new-instance v7, Landroid/text/InputFilter$LengthFilter;
+
+    const/4 v8, 0x4
+
+    invoke-direct {v7, v8}, Landroid/text/InputFilter$LengthFilter;-><init>(I)V
+
+    aput-object v7, v3, v10
+
+    .line 452
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->editText:Landroid/widget/EditText;
+
+    const/16 v8, 0x83
+
+    invoke-virtual {v7, v8}, Landroid/widget/EditText;->setInputType(I)V
+
+    .line 453
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->editText:Landroid/widget/EditText;
+
+    invoke-virtual {v7, v5}, Landroid/widget/EditText;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
+
+    .line 454
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->editText:Landroid/widget/EditText;
+
+    invoke-virtual {v7, v3}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
+
+    .line 455
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->editText:Landroid/widget/EditText;
+
+    invoke-virtual {v7}, Landroid/widget/EditText;->requestFocus()Z
+
+    .line 457
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v1
 
     goto :goto_2
 
-    .line 454
+    .line 462
     .end local v0           #BADialog:Landroid/app/AlertDialog$Builder;
+    .end local v3           #filterArray:[Landroid/text/InputFilter;
+    .end local v5           #ptm:Landroid/text/method/PasswordTransformationMethod;
     :sswitch_1
     new-instance v1, Landroid/app/ProgressDialog;
 
     invoke-direct {v1, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    .line 455
+    .line 463
     .local v1, dialog:Landroid/app/ProgressDialog;
-    invoke-virtual {v1, v8}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
+    invoke-virtual {v1, v9}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
-    .line 457
+    .line 465
     iput p1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPrevBusyDialog:I
 
-    .line 459
+    .line 467
     sparse-switch p1, :sswitch_data_1
 
     goto :goto_1
 
-    .line 461
+    .line 469
     :sswitch_2
-    const/4 v6, 0x0
+    invoke-virtual {v1, v10}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setCancelable(Z)V
+    .line 470
+    const v7, 0x7f0700bb
 
-    .line 462
-    const v6, 0x7f0700bb
+    invoke-virtual {p0, v7}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v6}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getText(I)Ljava/lang/CharSequence;
+    move-result-object v7
 
-    move-result-object v6
-
-    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v7}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
     goto :goto_2
 
-    .line 466
+    .line 474
     :sswitch_3
-    invoke-virtual {v1, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
+    invoke-virtual {v1, v9}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    .line 467
-    const v6, 0x7f0700ba
+    .line 475
+    const v7, 0x7f0700ba
 
-    invoke-virtual {p0, v6}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v7}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v7}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 468
-    iget-object v6, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
+    .line 476
+    iget-object v7, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mNetworkServiceHandler:Landroid/os/Handler;
 
-    const/16 v7, 0x258
+    const/16 v8, 0x258
 
-    invoke-virtual {v6, v7}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v7, v8}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
+    invoke-virtual {v1, v7}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
 
-    goto :goto_2
+    goto/16 :goto_2
 
-    .line 484
+    .line 492
     .end local v1           #dialog:Landroid/app/ProgressDialog;
     :sswitch_4
-    const v5, 0x7f0700b9
+    const v6, 0x7f0700b9
 
-    .line 485
-    .restart local v5       #titleId:I
-    const/4 v3, 0x0
-
-    .line 486
-    .local v3, isFDN:Z
+    .line 493
+    .restart local v6       #titleId:I
     sparse-switch p1, :sswitch_data_2
 
-    .line 514
+    .line 519
     const v4, 0x7f0700bd
 
-    .line 518
+    .line 523
     .restart local v4       #msgId:I
     :goto_3
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 519
+    .line 524
     .local v2, err_builder:Landroid/app/AlertDialog$Builder;
-    invoke-virtual {v2, v8}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v2, v10}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 520
-    invoke-virtual {p0, v5}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getText(I)Ljava/lang/CharSequence;
+    .line 525
+    invoke-virtual {p0, v6}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v2, v7}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 522
-    if-eqz v3, :cond_0
+    .line 527
+    const v7, 0x1080027
 
-    .line 523
-    const v6, 0x108009b
-
-    invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v2, v7}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
 
     .line 528
-    :goto_4
     invoke-virtual {p0, v4}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v7
 
-    invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v2, v7}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 529
-    invoke-virtual {p0, v7}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v8}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
-    move-result-object v6
+    move-result-object v7
 
-    new-instance v7, Lcom/sec/android/app/callsetting/voicecall/CallBarring$9;
+    new-instance v8, Lcom/sec/android/app/callsetting/voicecall/CallBarring$9;
 
-    invoke-direct {v7, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$9;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
+    invoke-direct {v8, p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring$9;-><init>(Lcom/sec/android/app/callsetting/voicecall/CallBarring;)V
 
-    invoke-virtual {v2, v6, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v2, v7, v8}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 537
     invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
@@ -3898,88 +3930,69 @@
     .local v1, dialog:Landroid/app/AlertDialog;
     goto/16 :goto_2
 
-    .line 488
+    .line 495
     .end local v1           #dialog:Landroid/app/AlertDialog;
     .end local v2           #err_builder:Landroid/app/AlertDialog$Builder;
     .end local v4           #msgId:I
     :sswitch_5
     const v4, 0x7f0700bc
 
-    .line 489
+    .line 496
     .restart local v4       #msgId:I
     goto :goto_3
 
-    .line 492
+    .line 499
     .end local v4           #msgId:I
     :sswitch_6
     const v4, 0x7f0700be
 
-    .line 493
+    .line 500
     .restart local v4       #msgId:I
     goto :goto_3
 
-    .line 496
+    .line 503
     .end local v4           #msgId:I
     :sswitch_7
     const v4, 0x7f0700a3
 
-    .line 497
+    .line 504
     .restart local v4       #msgId:I
     goto :goto_3
 
-    .line 500
+    .line 507
     .end local v4           #msgId:I
     :sswitch_8
     const v4, 0x7f0700a4
 
-    .line 501
+    .line 508
     .restart local v4       #msgId:I
     goto :goto_3
 
-    .line 504
+    .line 511
     .end local v4           #msgId:I
     :sswitch_9
     const v4, 0x7f0700a5
 
-    .line 505
+    .line 512
     .restart local v4       #msgId:I
     goto :goto_3
 
-    .line 508
+    .line 515
     .end local v4           #msgId:I
     :sswitch_a
-    const/4 v3, 0x1
-
-    .line 509
-    const v5, 0x7f0700e0
-
-    .line 510
     const v4, 0x7f070096
 
-    .line 511
+    .line 516
     .restart local v4       #msgId:I
     goto :goto_3
 
-    .line 525
-    .restart local v2       #err_builder:Landroid/app/AlertDialog$Builder;
-    :cond_0
-    const v6, 0x1080027
-
-    invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
-
-    goto :goto_4
-
     .line 548
-    .end local v2           #err_builder:Landroid/app/AlertDialog$Builder;
-    .end local v3           #isFDN:Z
     :pswitch_0
     const v4, 0x7f0700a3
 
     goto/16 :goto_0
 
-    .line 409
-    nop
-
+    .line 410
     :sswitch_data_0
     .sparse-switch
         0x64 -> :sswitch_1
@@ -4000,14 +4013,14 @@
         :pswitch_0
     .end packed-switch
 
-    .line 459
+    .line 467
     :sswitch_data_1
     .sparse-switch
         0x64 -> :sswitch_2
         0x384 -> :sswitch_3
     .end sparse-switch
 
-    .line 486
+    .line 493
     :sswitch_data_2
     .sparse-switch
         0x12c -> :sswitch_5
@@ -4038,11 +4051,11 @@
 
     move-result-object v0
 
-    const v1, 0x7f02001a
+    const v1, 0x7f020013
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
-    .line 1299
+    .line 1290
     return v2
 .end method
 
@@ -4051,7 +4064,7 @@
     .parameter "dialog"
 
     .prologue
-    .line 1391
+    .line 1382
     iget-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPwdChangeSubmit:Z
 
     if-eqz v0, :cond_0
@@ -4062,14 +4075,14 @@
 
     if-nez v0, :cond_0
 
-    .line 1392
+    .line 1383
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mPwdChangeSubmit:Z
 
     move-object v0, p1
 
-    .line 1393
+    .line 1384
     check-cast v0, Landroid/app/Dialog;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->checkPassword(Landroid/app/Dialog;)Z
@@ -4078,13 +4091,13 @@
 
     if-nez v0, :cond_0
 
-    .line 1394
+    .line 1385
     check-cast p1, Landroid/app/Dialog;
 
     .end local p1
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
-    .line 1398
+    .line 1389
     :cond_0
     return-void
 .end method
@@ -4096,67 +4109,67 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1444
+    .line 1435
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
-    .line 1446
+    .line 1437
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v1
 
     sparse-switch v1, :sswitch_data_0
 
-    .line 1471
+    .line 1462
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 1449
+    .line 1440
     :sswitch_0
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 1450
+    .line 1441
     const-string v2, "com.android.phone"
 
     const-string v3, "com.android.phone.CallTypeSelect"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1451
+    .line 1442
     const/high16 v2, 0x400
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 1452
+    .line 1443
     const-string v2, "com.android.phone.MAIN"
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1453
+    .line 1444
     const-string v2, "SS_Type"
 
     const-string v3, "barring"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1454
+    .line 1445
     invoke-virtual {p0, v1}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->startActivity(Landroid/content/Intent;)V
 
-    .line 1455
+    .line 1446
     invoke-virtual {p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->finish()V
 
     goto :goto_0
 
-    .line 1468
+    .line 1459
     :sswitch_1
     invoke-direct {p0}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->showPasswordDialog()V
 
     goto :goto_0
 
-    .line 1446
+    .line 1437
     nop
 
     :sswitch_data_0
@@ -4170,15 +4183,15 @@
     .locals 1
 
     .prologue
-    .line 326
+    .line 327
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
-    .line 328
+    .line 329
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSharedPreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v0, p0}, Landroid/content/SharedPreferences;->unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
-    .line 330
+    .line 331
     return-void
 .end method
 
@@ -4186,20 +4199,20 @@
     .locals 1
 
     .prologue
-    .line 312
+    .line 313
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    .line 314
+    .line 315
     iget-object v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSharedPreferences:Landroid/content/SharedPreferences;
 
     invoke-interface {v0, p0}, Landroid/content/SharedPreferences;->registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
-    .line 316
+    .line 317
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCBVisible:Z
 
-    .line 318
+    .line 319
     return-void
 .end method
 
@@ -4211,7 +4224,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 347
+    .line 348
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -4234,7 +4247,7 @@
 
     invoke-virtual {v1, v2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 349
+    .line 350
     const-string v1, "callbarring_baoc_pref"
 
     invoke-virtual {p2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -4243,19 +4256,19 @@
 
     if-eqz v1, :cond_0
 
-    .line 351
+    .line 352
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 352
+    .line 353
     .local v0, isChecked:Z
     iput v4, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
-    .line 353
+    .line 354
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCB_Checked:Z
 
-    .line 356
+    .line 357
     .end local v0           #isChecked:Z
     :cond_0
     const-string v1, "callbarring_baoic_pref"
@@ -4266,21 +4279,21 @@
 
     if-eqz v1, :cond_1
 
-    .line 358
+    .line 359
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 359
+    .line 360
     .restart local v0       #isChecked:Z
     const/4 v1, 0x1
 
     iput v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
-    .line 360
+    .line 361
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCB_Checked:Z
 
-    .line 363
+    .line 364
     .end local v0           #isChecked:Z
     :cond_1
     const-string v1, "callbarring_baoicxh_pref"
@@ -4291,21 +4304,21 @@
 
     if-eqz v1, :cond_2
 
-    .line 365
+    .line 366
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 366
+    .line 367
     .restart local v0       #isChecked:Z
     const/4 v1, 0x2
 
     iput v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
-    .line 367
+    .line 368
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCB_Checked:Z
 
-    .line 370
+    .line 371
     .end local v0           #isChecked:Z
     :cond_2
     const-string v1, "callbarring_baic_pref"
@@ -4316,21 +4329,21 @@
 
     if-eqz v1, :cond_3
 
-    .line 372
+    .line 373
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 373
+    .line 374
     .restart local v0       #isChecked:Z
     const/4 v1, 0x3
 
     iput v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
-    .line 374
+    .line 375
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCB_Checked:Z
 
-    .line 377
+    .line 378
     .end local v0           #isChecked:Z
     :cond_3
     const-string v1, "callbarring_baicr_pref"
@@ -4341,35 +4354,35 @@
 
     if-eqz v1, :cond_4
 
-    .line 379
+    .line 380
     invoke-interface {p1, p2, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    .line 380
+    .line 381
     .restart local v0       #isChecked:Z
     const/4 v1, 0x4
 
     iput v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSelectedIndex:I
 
-    .line 381
+    .line 382
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCB_Checked:Z
 
-    .line 384
+    .line 385
     .end local v0           #isChecked:Z
     :cond_4
     iget-boolean v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSkipCallBarringReq:Z
 
     if-eqz v1, :cond_5
 
-    .line 386
+    .line 387
     iput-boolean v4, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mSkipCallBarringReq:Z
 
-    .line 403
+    .line 404
     :goto_0
     return-void
 
-    .line 390
+    .line 391
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->editText:Landroid/widget/EditText;
 
@@ -4377,24 +4390,24 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 391
+    .line 392
     iget-object v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->editText:Landroid/widget/EditText;
 
     const v2, 0x7f0700c7
 
     invoke-virtual {v1, v2}, Landroid/widget/EditText;->setHint(I)V
 
-    .line 393
+    .line 394
     sget-object v1, Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;->INPUT_READY:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
     iput-object v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mAppState:Lcom/sec/android/app/callsetting/voicecall/CallBarring$AppState;
 
-    .line 394
+    .line 395
     const/16 v1, 0x3e8
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->showDialog(I)V
 
-    .line 396
+    .line 397
     iget-object v1, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->handler:Landroid/os/Handler;
 
     new-instance v2, Lcom/sec/android/app/callsetting/voicecall/CallBarring$5;
@@ -4412,14 +4425,14 @@
     .locals 1
 
     .prologue
-    .line 333
+    .line 334
     invoke-super {p0}, Landroid/preference/PreferenceActivity;->onStop()V
 
-    .line 335
+    .line 336
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/callsetting/voicecall/CallBarring;->mCBVisible:Z
 
-    .line 336
+    .line 337
     return-void
 .end method
