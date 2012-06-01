@@ -14299,6 +14299,23 @@
     .local v13, localCerts:[Ljava/security/cert/Certificate;
     if-nez v13, :cond_7
 
+    # merged and changed cond_3 to cond_4
+    move-object/from16 v0, p1
+
+    iget-object v0, v0, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
+
+    move-object/from16 v18, v0
+
+    move-object/from16 v0, v18
+
+    invoke-static {v12, v0}, Lmiui/content/pm/ExtraPackageManager;->isTrustedAppEntry(Ljava/util/jar/JarEntry;Ljava/lang/String;)Z
+
+    move-result v18
+
+    if-nez v18, :cond_4
+
+    # no following two statements in original
+
     .line 584
     sget-boolean v18, Landroid/content/pm/PackageParser;->mIsEngBuild:Z
 
@@ -15108,15 +15125,15 @@
     if-eqz v25, :cond_6
 
     .line 432
-    new-instance v32, Landroid/content/res/Resources;
 
     const/4 v6, 0x0
 
-    move-object/from16 v0, v32
 
     move-object/from16 v1, p3
 
-    invoke-direct {v0, v5, v1, v6}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
+    invoke-static {v5, v1, v6}, Landroid/content/res/MiuiClassFactory;->newResources(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)Landroid/content/res/Resources;
+
+    move-result-object v32
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
