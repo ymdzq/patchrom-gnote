@@ -7072,7 +7072,8 @@
     .line 4573
     iget-object v0, p0, Landroid/media/AudioService;->mVolumePanel:Lmiui/view/VolumePanel;
 
-    invoke-virtual {v0}, Landroid/view/VolumePanel;->forceDismiss()V
+    # no forceDismiss method , skip it
+    #invoke-virtual {v0}, Lmiui/view/VolumePanel;->forceDismiss()V
 
     .line 4574
     return-void
