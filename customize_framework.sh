@@ -7,12 +7,15 @@ BUILD_OUT=out
 
 if [ $2 = "$BUILD_OUT/framework" ]
 then
-        for file2 in `find framework2.jar.out -name *.smali`; do
-                file=${file2/framework2.jar.out/$BUILD_OUT\/framework}
-                echo "rm file: $file"
-                rm -rf "$file"
-        done
+    # move all files from framework.jar.out those exist in framework2.jar
+    for file2 in `find framework2.jar.out -name *.smali`; do
+            file=${file2/framework2.jar.out/$BUILD_OUT\/framework}
+            echo "rm file: $file"
+            rm -rf "$file"
+    done
 
+    # move some smali to create a separate framework-miui.jar
+    # including: smali/miui smali/com/samsung smali/android/widget
 	mkdir -p "$BUILD_OUT/framework-miui/smali"
 	touch "$BUILD_OUT/framework-miui/apktool.yml"
 	echo "version: 1.4.3" >> "$BUILD_OUT/framework-miui/apktool.yml"
@@ -23,12 +26,12 @@ then
 	mkdir -p "$BUILD_OUT/framework-miui/smali/android"
     mv "$BUILD_OUT/framework/smali/android/widget" "$BUILD_OUT/framework-miui/smali/android/widget"
 
-        cd $BUILD_OUT/framework/smali && cat ../../../other/framework.jar_file_not_exist | cpio -o > ../../cpio.nofile
-        cd ../../framework-miui/smali && cpio -id < ../../cpio.nofile
-        cd ../../../
-        for file in `more other/framework.jar_file_not_exist`; do
-                rm -rf $BUILD_OUT/framework/smali/$file
-        done
+    #    cd $BUILD_OUT/framework/smali && cat ../../../other/framework.jar_file_not_exist | cpio -o > ../../cpio.nofile
+    #    cd ../../framework-miui/smali && cpio -id < ../../cpio.nofile
+    #    cd ../../../
+    #    for file in `more other/framework.jar_file_not_exist`; do
+    #            rm -rf $BUILD_OUT/framework/smali/$file
+    #    done
 
 	$APKTOOL b "$BUILD_OUT/framework-miui" "$BUILD_OUT/framework-miui.jar"
 	mkdir -p "$BUILD_OUT/ZIP/system/framework"
