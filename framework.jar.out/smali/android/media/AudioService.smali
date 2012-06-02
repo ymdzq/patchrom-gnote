@@ -7070,7 +7070,7 @@
 
     .prologue
     .line 4573
-    iget-object v0, p0, Landroid/media/AudioService;->mVolumePanel:Landroid/view/VolumePanel;
+    iget-object v0, p0, Landroid/media/AudioService;->mVolumePanel:Lmiui/view/VolumePanel;
 
     invoke-virtual {v0}, Landroid/view/VolumePanel;->forceDismiss()V
 
