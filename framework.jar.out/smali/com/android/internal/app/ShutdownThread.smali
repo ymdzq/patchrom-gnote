@@ -3036,7 +3036,7 @@
 
     if-eqz v0, :cond_0
 
-    const/high16 p0, 0x30c
+    const/high16 p0, 0x60c
 
     .end local p0
     :cond_0
@@ -3089,7 +3089,7 @@
     move-result-object v3
 
     .local v3, layoutInflater:Landroid/view/LayoutInflater;
-    const v6, 0x303002e
+    const v6, 0x603002e
 
     const/4 v7, 0x0
 
@@ -3098,7 +3098,7 @@
     move-result-object v5
 
     .local v5, view:Landroid/view/View;
-    const v6, 0x30b0021
+    const v6, 0x60b0021
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3107,7 +3107,7 @@
     check-cast v4, Landroid/widget/TextView;
 
     .local v4, msgText:Landroid/widget/TextView;
-    const v6, 0x30b0022
+    const v6, 0x60b0022
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -3120,7 +3120,7 @@
 
     if-eqz v6, :cond_0
 
-    const v6, 0x30c0001
+    const v6, 0x60c0001
 
     invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(I)V
 
