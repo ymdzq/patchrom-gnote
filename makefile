@@ -11,7 +11,7 @@ local-out-zip-file := MIUI_gnote.zip
 # All apps from original ZIP, but has smali files chanded
 local-modified-apps := CallSetting SamsungSettings
 
-#local-modified-jars := framework2
+local-modified-jars := framework2
 
 # All apks from MIUI
 local-miui-removed-apps := MediaProvider Gallery Stk Bluetooth
