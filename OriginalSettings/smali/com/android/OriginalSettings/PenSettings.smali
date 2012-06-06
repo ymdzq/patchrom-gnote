@@ -261,9 +261,9 @@
 
     .line 76
     .local v0, mIntent:Landroid/content/Intent;
-    const-string v3, "com.android.settings"
+    const-string v3, "com.android.OriginalSettings"
 
-    const-string v4, "com.android.settings.PenHelpActivity"
+    const-string v4, "com.android.OriginalSettings.PenHelpActivity"
 
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest android:sharedUserId="android.uid.system" android:versionCode="15" android:versionName="4.0.3-ZSLPF" package="com.android.settings" coreApp="true"
+<manifest android:sharedUserId="android.uid.system" android:versionCode="15" android:versionName="4.0.3-ZSLPF" package="com.android.OriginalSettings" coreApp="true"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15" />
-    <original-package android:name="com.android.settings" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
@@ -52,15 +51,15 @@
     <uses-permission android:name="android.permission.STATUS_BAR" />
     <uses-permission android:name="android.permission.MANAGE_USB" />
     <uses-permission android:name="android.permission.SET_POINTER_SPEED" />
-    <application android:theme="@android:style/Theme.DeviceDefault" android:label="@string/settings_label" android:icon="@mipmap/ic_launcher_settings" android:taskAffinity="" android:hardwareAccelerated="false" android:uiOptions="splitActionBarWhenNarrow">
+    <application android:theme="@miui:style/Theme.Light" android:label="@string/settings_label" android:icon="@mipmap/ic_launcher_settings" android:taskAffinity="" android:hardwareAccelerated="false" android:uiOptions="splitActionBarWhenNarrow">
         <uses-library android:name="sechardware" />
         <activity android:label="@string/settings_label_launcher" android:name="Settings" android:taskAffinity="com.android.settings" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.settings.SETTINGS" />
+                <action android:name="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!--meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.DeviceSpecial" /-->
         </activity>
         <activity android:name=".SubSettings" android:taskAffinity="com.android.settings" android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity android:theme="@style/Theme.CreateShortCut" android:label="@string/settings_shortcut" android:name="CreateShortcut">
