@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/ChooseLockAdditionalPin;
-.super Landroid/preference/PreferenceActivity;
+.class public Lcom/android/OriginalSettings/ChooseLockAdditionalPin;
+.super Lmiui/preference/BasePreferenceActivity;
 .source "ChooseLockAdditionalPin.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ChooseLockAdditionalPin$ChooseLockAdditionalPinFragment;
+        Lcom/android/OriginalSettings/ChooseLockAdditionalPin$ChooseLockAdditionalPinFragment;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
 
     .prologue
     .line 51
-    invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
+    invoke-direct {p0}, Lmiui/preference/BasePreferenceActivity;-><init>()V
 
     .line 78
     return-void
@@ -32,7 +32,7 @@
     .line 58
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -41,7 +41,7 @@
     .line 59
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/ChooseLockAdditionalPin$ChooseLockAdditionalPinFragment;
+    const-class v2, Lcom/android/OriginalSettings/ChooseLockAdditionalPin$ChooseLockAdditionalPinFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -66,18 +66,18 @@
 
     .prologue
     .line 71
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 72
     const v1, 0x7f0b0406
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ChooseLockAdditionalPin;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/ChooseLockAdditionalPin;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 73
     .local v0, msg:Ljava/lang/CharSequence;
-    invoke-virtual {p0, v0, v0}, Lcom/android/settings/ChooseLockAdditionalPin;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0, v0}, Lcom/android/OriginalSettings/ChooseLockAdditionalPin;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     .line 74
     return-void

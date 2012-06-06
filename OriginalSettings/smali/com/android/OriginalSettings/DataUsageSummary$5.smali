@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DataUsageSummary$5;
+.class Lcom/android/OriginalSettings/DataUsageSummary$5;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/OriginalSettings/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DataUsageSummary;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DataUsageSummary;)V
     .locals 0
     .parameter
 
     .prologue
     .line 1038
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DataUsageSummary$5;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
 
     .prologue
     .line 1041
-    iget-object v2, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DataUsageSummary$5;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    #getter for: Lcom/android/settings/DataUsageSummary;->mBinding:Z
-    invoke-static {v2}, Lcom/android/settings/DataUsageSummary;->access$1000(Lcom/android/settings/DataUsageSummary;)Z
+    #getter for: Lcom/android/OriginalSettings/DataUsageSummary;->mBinding:Z
+    invoke-static {v2}, Lcom/android/OriginalSettings/DataUsageSummary;->access$1000(Lcom/android/OriginalSettings/DataUsageSummary;)Z
 
     move-result v2
 
@@ -63,10 +63,10 @@
 
     .line 1044
     .local v1, dataEnabled:Z
-    iget-object v2, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DataUsageSummary$5;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    #getter for: Lcom/android/settings/DataUsageSummary;->mCurrentTab:Ljava/lang/String;
-    invoke-static {v2}, Lcom/android/settings/DataUsageSummary;->access$1100(Lcom/android/settings/DataUsageSummary;)Ljava/lang/String;
+    #getter for: Lcom/android/OriginalSettings/DataUsageSummary;->mCurrentTab:Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/OriginalSettings/DataUsageSummary;->access$1100(Lcom/android/OriginalSettings/DataUsageSummary;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -84,30 +84,30 @@
     if-eqz v1, :cond_2
 
     .line 1047
-    iget-object v2, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DataUsageSummary$5;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
     const/4 v3, 0x1
 
-    #calls: Lcom/android/settings/DataUsageSummary;->setMobileDataEnabled(Z)V
-    invoke-static {v2, v3}, Lcom/android/settings/DataUsageSummary;->access$1200(Lcom/android/settings/DataUsageSummary;Z)V
+    #calls: Lcom/android/OriginalSettings/DataUsageSummary;->setMobileDataEnabled(Z)V
+    invoke-static {v2, v3}, Lcom/android/OriginalSettings/DataUsageSummary;->access$1200(Lcom/android/OriginalSettings/DataUsageSummary;Z)V
 
     .line 1055
     :cond_1
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DataUsageSummary$5;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
     const/4 v3, 0x0
 
-    #calls: Lcom/android/settings/DataUsageSummary;->updatePolicy(Z)V
-    invoke-static {v2, v3}, Lcom/android/settings/DataUsageSummary;->access$1300(Lcom/android/settings/DataUsageSummary;Z)V
+    #calls: Lcom/android/OriginalSettings/DataUsageSummary;->updatePolicy(Z)V
+    invoke-static {v2, v3}, Lcom/android/OriginalSettings/DataUsageSummary;->access$1300(Lcom/android/OriginalSettings/DataUsageSummary;Z)V
 
     goto :goto_0
 
     .line 1051
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/DataUsageSummary$5;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DataUsageSummary$5;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    invoke-static {v2}, Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;->show(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v2}, Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataDisableFragment;->show(Lcom/android/OriginalSettings/DataUsageSummary;)V
 
     goto :goto_1
 .end method

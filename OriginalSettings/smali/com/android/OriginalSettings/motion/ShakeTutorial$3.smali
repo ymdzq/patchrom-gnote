@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/ShakeTutorial$3;
+.class Lcom/android/OriginalSettings/motion/ShakeTutorial$3;
 .super Ljava/lang/Object;
 .source "ShakeTutorial.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/motion/ShakeTutorial;
+    value = Lcom/android/OriginalSettings/motion/ShakeTutorial;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/ShakeTutorial;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/ShakeTutorial;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/ShakeTutorial;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/ShakeTutorial;)V
     .locals 0
     .parameter
 
     .prologue
     .line 92
-    iput-object p1, p0, Lcom/android/settings/motion/ShakeTutorial$3;->this$0:Lcom/android/settings/motion/ShakeTutorial;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/ShakeTutorial$3;->this$0:Lcom/android/OriginalSettings/motion/ShakeTutorial;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -114,20 +114,20 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeTutorial$3;->this$0:Lcom/android/settings/motion/ShakeTutorial;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeTutorial$3;->this$0:Lcom/android/OriginalSettings/motion/ShakeTutorial;
 
-    #getter for: Lcom/android/settings/motion/ShakeTutorial;->mHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/settings/motion/ShakeTutorial;->access$700(Lcom/android/settings/motion/ShakeTutorial;)Landroid/os/Handler;
+    #getter for: Lcom/android/OriginalSettings/motion/ShakeTutorial;->mHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/ShakeTutorial;->access$700(Lcom/android/OriginalSettings/motion/ShakeTutorial;)Landroid/os/Handler;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeTutorial$3;->this$0:Lcom/android/settings/motion/ShakeTutorial;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeTutorial$3;->this$0:Lcom/android/OriginalSettings/motion/ShakeTutorial;
 
-    #getter for: Lcom/android/settings/motion/ShakeTutorial;->mHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/settings/motion/ShakeTutorial;->access$700(Lcom/android/settings/motion/ShakeTutorial;)Landroid/os/Handler;
+    #getter for: Lcom/android/OriginalSettings/motion/ShakeTutorial;->mHandler:Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/ShakeTutorial;->access$700(Lcom/android/OriginalSettings/motion/ShakeTutorial;)Landroid/os/Handler;
 
     move-result-object v0
 

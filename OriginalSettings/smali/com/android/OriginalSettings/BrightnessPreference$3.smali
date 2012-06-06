@@ -1,11 +1,11 @@
-.class Lcom/android/settings/BrightnessPreference$3;
+.class Lcom/android/OriginalSettings/BrightnessPreference$3;
 .super Landroid/content/BroadcastReceiver;
 .source "BrightnessPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/BrightnessPreference;
+    value = Lcom/android/OriginalSettings/BrightnessPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/BrightnessPreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/BrightnessPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/BrightnessPreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/BrightnessPreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 110
-    iput-object p1, p0, Lcom/android/settings/BrightnessPreference$3;->this$0:Lcom/android/settings/BrightnessPreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/BrightnessPreference$3;->this$0:Lcom/android/OriginalSettings/BrightnessPreference;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -83,9 +83,9 @@
     if-eq v1, v3, :cond_0
 
     .line 118
-    iget-object v3, p0, Lcom/android/settings/BrightnessPreference$3;->this$0:Lcom/android/settings/BrightnessPreference;
+    iget-object v3, p0, Lcom/android/OriginalSettings/BrightnessPreference$3;->this$0:Lcom/android/OriginalSettings/BrightnessPreference;
 
-    invoke-virtual {v3}, Lcom/android/settings/BrightnessPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/BrightnessPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v2
 
@@ -101,10 +101,10 @@
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 121
-    iget-object v3, p0, Lcom/android/settings/BrightnessPreference$3;->this$0:Lcom/android/settings/BrightnessPreference;
+    iget-object v3, p0, Lcom/android/OriginalSettings/BrightnessPreference$3;->this$0:Lcom/android/OriginalSettings/BrightnessPreference;
 
-    #setter for: Lcom/android/settings/BrightnessPreference;->mForceClosed:Z
-    invoke-static {v3, v5}, Lcom/android/settings/BrightnessPreference;->access$202(Lcom/android/settings/BrightnessPreference;Z)Z
+    #setter for: Lcom/android/OriginalSettings/BrightnessPreference;->mForceClosed:Z
+    invoke-static {v3, v5}, Lcom/android/OriginalSettings/BrightnessPreference;->access$202(Lcom/android/OriginalSettings/BrightnessPreference;Z)Z
 
     .line 122
     invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/PanSettings$3;
+.class Lcom/android/OriginalSettings/motion/PanSettings$3;
 .super Ljava/lang/Object;
 .source "PanSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/PanSettings;->showMotionDialog()V
+    value = Lcom/android/OriginalSettings/motion/PanSettings;->showMotionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/PanSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/PanSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/PanSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/PanSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 185
-    iput-object p1, p0, Lcom/android/settings/motion/PanSettings$3;->this$0:Lcom/android/settings/motion/PanSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/PanSettings$3;->this$0:Lcom/android/OriginalSettings/motion/PanSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,10 +50,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 188
-    iget-object v0, p0, Lcom/android/settings/motion/PanSettings$3;->this$0:Lcom/android/settings/motion/PanSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PanSettings$3;->this$0:Lcom/android/OriginalSettings/motion/PanSettings;
 
-    #calls: Lcom/android/settings/motion/PanSettings;->updateCheckedUI()V
-    invoke-static {v0}, Lcom/android/settings/motion/PanSettings;->access$300(Lcom/android/settings/motion/PanSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/PanSettings;->updateCheckedUI()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/PanSettings;->access$300(Lcom/android/OriginalSettings/motion/PanSettings;)V
 
     .line 189
     return-void

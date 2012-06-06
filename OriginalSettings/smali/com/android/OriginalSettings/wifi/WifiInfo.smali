@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/WifiInfo;
-.super Landroid/preference/PreferenceActivity;
+.class public Lcom/android/OriginalSettings/wifi/WifiInfo;
+.super Lmiui/preference/BasePreferenceActivity;
 .source "WifiInfo.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 28
-    invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
+    invoke-direct {p0}, Lmiui/preference/BasePreferenceActivity;-><init>()V
 
     return-void
 .end method
@@ -22,12 +22,12 @@
 
     .prologue
     .line 32
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 33
     const v0, 0x7f050043
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiInfo;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/WifiInfo;->addPreferencesFromResource(I)V
 
     .line 34
     return-void

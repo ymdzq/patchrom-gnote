@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/SecuritySettings$7;
+.class synthetic Lcom/android/OriginalSettings/SecuritySettings$7;
 .super Ljava/lang/Object;
 .source "SecuritySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/SecuritySettings;
+    value = Lcom/android/OriginalSettings/SecuritySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,7 +24,7 @@
 
     .prologue
     .line 722
-    invoke-static {}, Lcom/android/settings/SecuritySettings$PWState;->values()[Lcom/android/settings/SecuritySettings$PWState;
+    invoke-static {}, Lcom/android/OriginalSettings/SecuritySettings$PWState;->values()[Lcom/android/OriginalSettings/SecuritySettings$PWState;
 
     move-result-object v0
 
@@ -32,14 +32,14 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/SecuritySettings$7;->$SwitchMap$com$android$settings$SecuritySettings$PWState:[I
+    sput-object v0, Lcom/android/OriginalSettings/SecuritySettings$7;->$SwitchMap$com$android$settings$SecuritySettings$PWState:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/SecuritySettings$7;->$SwitchMap$com$android$settings$SecuritySettings$PWState:[I
+    sget-object v0, Lcom/android/OriginalSettings/SecuritySettings$7;->$SwitchMap$com$android$settings$SecuritySettings$PWState:[I
 
-    sget-object v1, Lcom/android/settings/SecuritySettings$PWState;->NEW:Lcom/android/settings/SecuritySettings$PWState;
+    sget-object v1, Lcom/android/OriginalSettings/SecuritySettings$PWState;->NEW:Lcom/android/OriginalSettings/SecuritySettings$PWState;
 
-    invoke-virtual {v1}, Lcom/android/settings/SecuritySettings$PWState;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/SecuritySettings$PWState;->ordinal()I
 
     move-result v1
 
@@ -51,11 +51,11 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/SecuritySettings$7;->$SwitchMap$com$android$settings$SecuritySettings$PWState:[I
+    sget-object v0, Lcom/android/OriginalSettings/SecuritySettings$7;->$SwitchMap$com$android$settings$SecuritySettings$PWState:[I
 
-    sget-object v1, Lcom/android/settings/SecuritySettings$PWState;->CONFIRM:Lcom/android/settings/SecuritySettings$PWState;
+    sget-object v1, Lcom/android/OriginalSettings/SecuritySettings$PWState;->CONFIRM:Lcom/android/OriginalSettings/SecuritySettings$PWState;
 
-    invoke-virtual {v1}, Lcom/android/settings/SecuritySettings$PWState;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/SecuritySettings$PWState;->ordinal()I
 
     move-result v1
 
@@ -67,11 +67,11 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/SecuritySettings$7;->$SwitchMap$com$android$settings$SecuritySettings$PWState:[I
+    sget-object v0, Lcom/android/OriginalSettings/SecuritySettings$7;->$SwitchMap$com$android$settings$SecuritySettings$PWState:[I
 
-    sget-object v1, Lcom/android/settings/SecuritySettings$PWState;->CURRENT:Lcom/android/settings/SecuritySettings$PWState;
+    sget-object v1, Lcom/android/OriginalSettings/SecuritySettings$PWState;->CURRENT:Lcom/android/OriginalSettings/SecuritySettings$PWState;
 
-    invoke-virtual {v1}, Lcom/android/settings/SecuritySettings$PWState;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/SecuritySettings$PWState;->ordinal()I
 
     move-result v1
 

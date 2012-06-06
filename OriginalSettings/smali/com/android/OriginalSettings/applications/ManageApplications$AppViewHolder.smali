@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/ManageApplications$AppViewHolder;
+.class Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;
 .super Ljava/lang/Object;
 .source "ManageApplications.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ManageApplications;
+    value = Lcom/android/OriginalSettings/applications/ManageApplications;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,7 +25,7 @@
 
 .field disabled:Landroid/widget/TextView;
 
-.field entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+.field entry:Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;
 
 
 # direct methods
@@ -41,16 +41,16 @@
 
 
 # virtual methods
-.method updateSizeText(Lcom/android/settings/applications/ManageApplications;I)V
+.method updateSizeText(Lcom/android/OriginalSettings/applications/ManageApplications;I)V
     .locals 4
     .parameter "ma"
     .parameter "whichSize"
 
     .prologue
     .line 220
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;
 
-    iget-object v0, v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->sizeStr:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->sizeStr:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -58,11 +58,11 @@
     packed-switch p2, :pswitch_data_0
 
     .line 229
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;
 
-    iget-object v1, v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->sizeStr:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->sizeStr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -73,11 +73,11 @@
 
     .line 223
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;
 
-    iget-object v1, v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->internalSizeStr:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->internalSizeStr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -85,11 +85,11 @@
 
     .line 226
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;
 
-    iget-object v1, v1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->externalSizeStr:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->externalSizeStr:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -97,9 +97,9 @@
 
     .line 232
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;->entry:Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;
 
-    iget-wide v0, v0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->size:J
+    iget-wide v0, v0, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->size:J
 
     const-wide/16 v2, -0x2
 
@@ -108,10 +108,10 @@
     if-nez v0, :cond_0
 
     .line 233
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ManageApplications$AppViewHolder;->appSize:Landroid/widget/TextView;
 
-    #getter for: Lcom/android/settings/applications/ManageApplications;->mInvalidSizeStr:Ljava/lang/CharSequence;
-    invoke-static {p1}, Lcom/android/settings/applications/ManageApplications;->access$000(Lcom/android/settings/applications/ManageApplications;)Ljava/lang/CharSequence;
+    #getter for: Lcom/android/OriginalSettings/applications/ManageApplications;->mInvalidSizeStr:Ljava/lang/CharSequence;
+    invoke-static {p1}, Lcom/android/OriginalSettings/applications/ManageApplications;->access$000(Lcom/android/OriginalSettings/applications/ManageApplications;)Ljava/lang/CharSequence;
 
     move-result-object v1
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;
+.class Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;
 .super Landroid/os/AsyncTask;
 .source "PowerSavingModeWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;->requestStateChange(Landroid/content/Context;Z)V
+    value = Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;->requestStateChange(Landroid/content/Context;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;
+.field final synthetic this$0:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;
 
 .field final synthetic val$context:Landroid/content/Context;
 
@@ -36,7 +36,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;Landroid/content/ContentResolver;ZLandroid/content/Context;)V
+.method constructor <init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;Landroid/content/ContentResolver;ZLandroid/content/Context;)V
     .locals 0
     .parameter
     .parameter
@@ -45,13 +45,13 @@
 
     .prologue
     .line 454
-    iput-object p1, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->this$0:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;
+    iput-object p1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->this$0:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;
 
-    iput-object p2, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
+    iput-object p2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
 
-    iput-boolean p3, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$desiredState:Z
+    iput-boolean p3, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$desiredState:Z
 
-    iput-object p4, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$context:Landroid/content/Context;
+    iput-object p4, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -66,16 +66,16 @@
 
     .prologue
     .line 457
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$resolver:Landroid/content/ContentResolver;
 
     const-string v1, "gps"
 
-    iget-boolean v2, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$desiredState:Z
+    iget-boolean v2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$desiredState:Z
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->setLocationProviderEnabled(Landroid/content/ContentResolver;Ljava/lang/String;Z)V
 
     .line 459
-    iget-boolean v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$desiredState:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$desiredState:Z
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -93,7 +93,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -106,9 +106,9 @@
 
     .prologue
     .line 464
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->this$0:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->this$0:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;
 
-    iget-object v2, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$context:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$context:Landroid/content/Context;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -119,12 +119,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {v1, v2, v0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {v1, v2, v0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;->setCurrentState(Landroid/content/Context;I)V
 
     .line 465
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->val$context:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
 
     .line 466
     return-void
@@ -145,7 +145,7 @@
     check-cast p1, Ljava/lang/Boolean;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->onPostExecute(Ljava/lang/Boolean;)V
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker$1;->onPostExecute(Ljava/lang/Boolean;)V
 
     return-void
 .end method

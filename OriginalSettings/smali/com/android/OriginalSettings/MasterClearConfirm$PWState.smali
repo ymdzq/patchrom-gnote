@@ -1,11 +1,11 @@
-.class final enum Lcom/android/settings/MasterClearConfirm$PWState;
+.class final enum Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 .super Ljava/lang/Enum;
 .source "MasterClearConfirm.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/MasterClearConfirm;
+    value = Lcom/android/OriginalSettings/MasterClearConfirm;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,20 +17,20 @@
     value = {
         "Ljava/lang/Enum",
         "<",
-        "Lcom/android/settings/MasterClearConfirm$PWState;",
+        "Lcom/android/OriginalSettings/MasterClearConfirm$PWState;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lcom/android/settings/MasterClearConfirm$PWState;
+.field private static final synthetic $VALUES:[Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
-.field public static final enum CONFIRM:Lcom/android/settings/MasterClearConfirm$PWState;
+.field public static final enum CONFIRM:Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
-.field public static final enum CURRENT:Lcom/android/settings/MasterClearConfirm$PWState;
+.field public static final enum CURRENT:Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
-.field public static final enum NEW:Lcom/android/settings/MasterClearConfirm$PWState;
+.field public static final enum NEW:Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
 
 # direct methods
@@ -45,48 +45,48 @@
     const/4 v2, 0x0
 
     .line 72
-    new-instance v0, Lcom/android/settings/MasterClearConfirm$PWState;
+    new-instance v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     const-string v1, "CURRENT"
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/MasterClearConfirm$PWState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/MasterClearConfirm$PWState;->CURRENT:Lcom/android/settings/MasterClearConfirm$PWState;
+    sput-object v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;->CURRENT:Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
-    new-instance v0, Lcom/android/settings/MasterClearConfirm$PWState;
+    new-instance v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     const-string v1, "NEW"
 
-    invoke-direct {v0, v1, v3}, Lcom/android/settings/MasterClearConfirm$PWState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v3}, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/MasterClearConfirm$PWState;->NEW:Lcom/android/settings/MasterClearConfirm$PWState;
+    sput-object v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;->NEW:Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
-    new-instance v0, Lcom/android/settings/MasterClearConfirm$PWState;
+    new-instance v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     const-string v1, "CONFIRM"
 
-    invoke-direct {v0, v1, v4}, Lcom/android/settings/MasterClearConfirm$PWState;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v4}, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/MasterClearConfirm$PWState;->CONFIRM:Lcom/android/settings/MasterClearConfirm$PWState;
+    sput-object v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;->CONFIRM:Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     .line 71
     const/4 v0, 0x3
 
-    new-array v0, v0, [Lcom/android/settings/MasterClearConfirm$PWState;
+    new-array v0, v0, [Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
-    sget-object v1, Lcom/android/settings/MasterClearConfirm$PWState;->CURRENT:Lcom/android/settings/MasterClearConfirm$PWState;
+    sget-object v1, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;->CURRENT:Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/settings/MasterClearConfirm$PWState;->NEW:Lcom/android/settings/MasterClearConfirm$PWState;
+    sget-object v1, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;->NEW:Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/settings/MasterClearConfirm$PWState;->CONFIRM:Lcom/android/settings/MasterClearConfirm$PWState;
+    sget-object v1, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;->CONFIRM:Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/android/settings/MasterClearConfirm$PWState;->$VALUES:[Lcom/android/settings/MasterClearConfirm$PWState;
+    sput-object v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;->$VALUES:[Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     return-void
 .end method
@@ -108,35 +108,35 @@
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lcom/android/settings/MasterClearConfirm$PWState;
+.method public static valueOf(Ljava/lang/String;)Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
     .locals 1
     .parameter
 
     .prologue
     .line 71
-    const-class v0, Lcom/android/settings/MasterClearConfirm$PWState;
+    const-class v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/MasterClearConfirm$PWState;
+    check-cast v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     return-object v0
 .end method
 
-.method public static values()[Lcom/android/settings/MasterClearConfirm$PWState;
+.method public static values()[Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
     .locals 1
 
     .prologue
     .line 71
-    sget-object v0, Lcom/android/settings/MasterClearConfirm$PWState;->$VALUES:[Lcom/android/settings/MasterClearConfirm$PWState;
+    sget-object v0, Lcom/android/OriginalSettings/MasterClearConfirm$PWState;->$VALUES:[Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
-    invoke-virtual {v0}, [Lcom/android/settings/MasterClearConfirm$PWState;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/OriginalSettings/MasterClearConfirm$PWState;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/android/settings/MasterClearConfirm$PWState;
+    check-cast v0, [Lcom/android/OriginalSettings/MasterClearConfirm$PWState;
 
     return-object v0
 .end method

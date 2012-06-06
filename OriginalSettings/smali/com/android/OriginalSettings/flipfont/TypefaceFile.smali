@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/flipfont/TypefaceFile;
+.class public Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 .super Ljava/lang/Object;
 .source "TypefaceFile.java"
 
@@ -20,10 +20,10 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 24
-    iput-object v0, p0, Lcom/android/settings/flipfont/TypefaceFile;->fileName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->fileName:Ljava/lang/String;
 
     .line 27
-    iput-object v0, p0, Lcom/android/settings/flipfont/TypefaceFile;->droidName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->droidName:Ljava/lang/String;
 
     .line 30
     return-void
@@ -36,7 +36,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/flipfont/TypefaceFile;->droidName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->droidName:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -46,7 +46,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/flipfont/TypefaceFile;->fileName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->fileName:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -57,7 +57,7 @@
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/android/settings/flipfont/TypefaceFile;->droidName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->droidName:Ljava/lang/String;
 
     .line 51
     return-void
@@ -69,7 +69,7 @@
 
     .prologue
     .line 42
-    iput-object p1, p0, Lcom/android/settings/flipfont/TypefaceFile;->fileName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->fileName:Ljava/lang/String;
 
     .line 43
     return-void
@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/flipfont/TypefaceFile;->fileName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->fileName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -102,7 +102,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/flipfont/TypefaceFile;->droidName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->droidName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

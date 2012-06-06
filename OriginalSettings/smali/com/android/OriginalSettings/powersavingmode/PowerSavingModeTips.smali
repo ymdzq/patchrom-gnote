@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/powersavingmode/PowerSavingModeTips;
-.super Landroid/app/Activity;
+.class public Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeTips;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "PowerSavingModeTips.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 27
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     return-void
 .end method
@@ -24,17 +24,17 @@
     const/16 v8, 0x8
 
     .line 31
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 32
     const v5, 0x7f040064
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/powersavingmode/PowerSavingModeTips;->setContentView(I)V
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeTips;->setContentView(I)V
 
     .line 34
     const v5, 0x7f08012b
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/powersavingmode/PowerSavingModeTips;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeTips;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -44,7 +44,7 @@
     .local v3, systemcategorytext:Landroid/widget/TextView;
     const v5, 0x7f08012c
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/powersavingmode/PowerSavingModeTips;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeTips;->findViewById(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -54,7 +54,7 @@
     .local v4, systemsummarytext:Landroid/widget/TextView;
     const v5, 0x7f08012d
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/powersavingmode/PowerSavingModeTips;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeTips;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -64,7 +64,7 @@
     .local v0, etccategorytext:Landroid/widget/TextView;
     const v5, 0x7f08012e
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/powersavingmode/PowerSavingModeTips;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeTips;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -96,7 +96,7 @@
 
     move-result-object v5
 
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/PowerSavingModeTips;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeTips;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -116,7 +116,7 @@
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 43
-    invoke-static {p0}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v5
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/AccessibilitySettings$6;
+.class Lcom/android/OriginalSettings/AccessibilitySettings$6;
 .super Landroid/preference/Preference;
 .source "AccessibilitySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/AccessibilitySettings;->updateServicesPreferences()V
+    value = Lcom/android/OriginalSettings/AccessibilitySettings;->updateServicesPreferences()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/AccessibilitySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessibilitySettings;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/OriginalSettings/AccessibilitySettings;Landroid/content/Context;)V
     .locals 0
     .parameter
     .parameter "x0"
 
     .prologue
     .line 824
-    iput-object p1, p0, Lcom/android/settings/AccessibilitySettings$6;->this$0:Lcom/android/settings/AccessibilitySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/AccessibilitySettings$6;->this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -69,11 +69,11 @@
 
     .line 834
     .local v1, summaryView:Landroid/widget/TextView;
-    iget-object v3, p0, Lcom/android/settings/AccessibilitySettings$6;->this$0:Lcom/android/settings/AccessibilitySettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/AccessibilitySettings$6;->this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
     const v4, 0x7f0b0515
 
-    invoke-virtual {v3, v4}, Lcom/android/settings/AccessibilitySettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {v3, v4}, Lcom/android/OriginalSettings/AccessibilitySettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 

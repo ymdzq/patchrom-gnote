@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/GoogleLocationSettingHelper;
+.class public Lcom/android/OriginalSettings/GoogleLocationSettingHelper;
 .super Ljava/lang/Object;
 .source "GoogleLocationSettingHelper.java"
 
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/GoogleLocationSettingHelper;->GOOGLE_SETTINGS_CONTENT_URI:Landroid/net/Uri;
+    sput-object v0, Lcom/android/OriginalSettings/GoogleLocationSettingHelper;->GOOGLE_SETTINGS_CONTENT_URI:Landroid/net/Uri;
 
     return-void
 .end method
@@ -71,7 +71,7 @@
     .line 90
     .local v9, stringValue:Ljava/lang/String;
     :try_start_0
-    sget-object v1, Lcom/android/settings/GoogleLocationSettingHelper;->GOOGLE_SETTINGS_CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/android/OriginalSettings/GoogleLocationSettingHelper;->GOOGLE_SETTINGS_CONTENT_URI:Landroid/net/Uri;
 
     const/4 v2, 0x1
 
@@ -210,7 +210,7 @@
 
     move-result-object v1
 
-    invoke-static {}, Lcom/android/settings/GoogleLocationSettingHelper;->getSetUseLocationIntent()Landroid/content/Intent;
+    invoke-static {}, Lcom/android/OriginalSettings/GoogleLocationSettingHelper;->getSetUseLocationIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -242,7 +242,7 @@
 
     .prologue
     .line 119
-    invoke-static {}, Lcom/android/settings/GoogleLocationSettingHelper;->getSetUseLocationIntent()Landroid/content/Intent;
+    invoke-static {}, Lcom/android/OriginalSettings/GoogleLocationSettingHelper;->getSetUseLocationIntent()Landroid/content/Intent;
 
     move-result-object v1
 

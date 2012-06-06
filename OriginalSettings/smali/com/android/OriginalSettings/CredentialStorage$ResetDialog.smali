@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CredentialStorage$ResetDialog;
+.class Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;
 .super Ljava/lang/Object;
 .source "CredentialStorage.java"
 
@@ -9,7 +9,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CredentialStorage;
+    value = Lcom/android/OriginalSettings/CredentialStorage;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,17 +21,17 @@
 # instance fields
 .field private mResetConfirmed:Z
 
-.field final synthetic this$0:Lcom/android/settings/CredentialStorage;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/CredentialStorage;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/CredentialStorage;)V
     .locals 3
     .parameter
 
     .prologue
     .line 221
-    iput-object p1, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,14 +85,14 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/CredentialStorage;Lcom/android/settings/CredentialStorage$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/CredentialStorage;Lcom/android/OriginalSettings/CredentialStorage$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 216
-    invoke-direct {p0, p1}, Lcom/android/settings/CredentialStorage$ResetDialog;-><init>(Lcom/android/settings/CredentialStorage;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;-><init>(Lcom/android/OriginalSettings/CredentialStorage;)V
 
     return-void
 .end method
@@ -113,7 +113,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->mResetConfirmed:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->mResetConfirmed:Z
 
     .line 235
     return-void
@@ -133,30 +133,30 @@
     const/4 v3, 0x0
 
     .line 238
-    iget-boolean v0, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->mResetConfirmed:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->mResetConfirmed:Z
 
     if-eqz v0, :cond_0
 
     .line 239
-    iput-boolean v3, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->mResetConfirmed:Z
+    iput-boolean v3, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->mResetConfirmed:Z
 
     .line 240
-    iget-object v0, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
     new-instance v1, Landroid/app/ProgressDialog;
 
-    iget-object v2, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v2, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
     invoke-direct {v1, v2}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    #setter for: Lcom/android/settings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0, v1}, Lcom/android/settings/CredentialStorage;->access$302(Lcom/android/settings/CredentialStorage;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
+    #setter for: Lcom/android/OriginalSettings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/CredentialStorage;->access$302(Lcom/android/OriginalSettings/CredentialStorage;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
 
     .line 241
-    iget-object v0, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
-    #getter for: Lcom/android/settings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0}, Lcom/android/settings/CredentialStorage;->access$300(Lcom/android/settings/CredentialStorage;)Landroid/app/ProgressDialog;
+    #getter for: Lcom/android/OriginalSettings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/android/OriginalSettings/CredentialStorage;->access$300(Lcom/android/OriginalSettings/CredentialStorage;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
@@ -165,55 +165,55 @@
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
     .line 242
-    iget-object v0, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
-    #getter for: Lcom/android/settings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0}, Lcom/android/settings/CredentialStorage;->access$300(Lcom/android/settings/CredentialStorage;)Landroid/app/ProgressDialog;
+    #getter for: Lcom/android/OriginalSettings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/android/OriginalSettings/CredentialStorage;->access$300(Lcom/android/OriginalSettings/CredentialStorage;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
     invoke-virtual {v0, v3}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     .line 243
-    iget-object v0, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
-    #getter for: Lcom/android/settings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0}, Lcom/android/settings/CredentialStorage;->access$300(Lcom/android/settings/CredentialStorage;)Landroid/app/ProgressDialog;
+    #getter for: Lcom/android/OriginalSettings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/android/OriginalSettings/CredentialStorage;->access$300(Lcom/android/OriginalSettings/CredentialStorage;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
     const v2, 0x7f0b059a
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/CredentialStorage;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {v1, v2}, Lcom/android/OriginalSettings/CredentialStorage;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
     .line 244
-    iget-object v0, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
-    #getter for: Lcom/android/settings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0}, Lcom/android/settings/CredentialStorage;->access$300(Lcom/android/settings/CredentialStorage;)Landroid/app/ProgressDialog;
+    #getter for: Lcom/android/OriginalSettings/CredentialStorage;->mProgressDialog:Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/android/OriginalSettings/CredentialStorage;->access$300(Lcom/android/OriginalSettings/CredentialStorage;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
 
     .line 245
-    new-instance v0, Lcom/android/settings/CredentialStorage$ResetKeyStoreAndKeyChain;
+    new-instance v0, Lcom/android/OriginalSettings/CredentialStorage$ResetKeyStoreAndKeyChain;
 
-    iget-object v1, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/CredentialStorage$ResetKeyStoreAndKeyChain;-><init>(Lcom/android/settings/CredentialStorage;Lcom/android/settings/CredentialStorage$1;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/OriginalSettings/CredentialStorage$ResetKeyStoreAndKeyChain;-><init>(Lcom/android/OriginalSettings/CredentialStorage;Lcom/android/OriginalSettings/CredentialStorage$1;)V
 
     new-array v1, v3, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/CredentialStorage$ResetKeyStoreAndKeyChain;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/CredentialStorage$ResetKeyStoreAndKeyChain;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 249
     :goto_0
@@ -221,9 +221,9 @@
 
     .line 248
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/CredentialStorage$ResetDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CredentialStorage$ResetDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
-    invoke-virtual {v0}, Lcom/android/settings/CredentialStorage;->finish()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/CredentialStorage;->finish()V
 
     goto :goto_0
 .end method

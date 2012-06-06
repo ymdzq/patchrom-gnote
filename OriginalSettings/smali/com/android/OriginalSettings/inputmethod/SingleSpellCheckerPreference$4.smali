@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/SingleSpellCheckerPreference$4;
+.class Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference$4;
 .super Ljava/lang/Object;
 .source "SingleSpellCheckerPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->onSubtypeButtonClicked(Landroid/view/View;)V
+    value = Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->onSubtypeButtonClicked(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 158
-    iput-object p1, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference$4;->this$0:Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference$4;->this$0:Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,10 +47,10 @@
     if-nez p2, :cond_0
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference$4;->this$0:Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference$4;->this$0:Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;
 
-    #getter for: Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mTsm:Landroid/view/textservice/TextServicesManager;
-    invoke-static {v0}, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->access$300(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)Landroid/view/textservice/TextServicesManager;
+    #getter for: Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->mTsm:Landroid/view/textservice/TextServicesManager;
+    invoke-static {v0}, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->access$300(Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;)Landroid/view/textservice/TextServicesManager;
 
     move-result-object v0
 
@@ -67,17 +67,17 @@
 
     .line 164
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference$4;->this$0:Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference$4;->this$0:Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;
 
-    #getter for: Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mTsm:Landroid/view/textservice/TextServicesManager;
-    invoke-static {v0}, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->access$300(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)Landroid/view/textservice/TextServicesManager;
+    #getter for: Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->mTsm:Landroid/view/textservice/TextServicesManager;
+    invoke-static {v0}, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->access$300(Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;)Landroid/view/textservice/TextServicesManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference$4;->this$0:Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference$4;->this$0:Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;
 
-    #getter for: Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mSpellCheckerInfo:Landroid/view/textservice/SpellCheckerInfo;
-    invoke-static {v1}, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->access$400(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)Landroid/view/textservice/SpellCheckerInfo;
+    #getter for: Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->mSpellCheckerInfo:Landroid/view/textservice/SpellCheckerInfo;
+    invoke-static {v1}, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->access$400(Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;)Landroid/view/textservice/SpellCheckerInfo;
 
     move-result-object v1
 

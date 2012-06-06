@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ZonePicker$MyComparator;
+.class Lcom/android/OriginalSettings/ZonePicker$MyComparator;
 .super Ljava/lang/Object;
 .source "ZonePicker.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ZonePicker;
+    value = Lcom/android/OriginalSettings/ZonePicker;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -41,7 +41,7 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 323
-    iput-object p1, p0, Lcom/android/settings/ZonePicker$MyComparator;->mSortingKey:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ZonePicker$MyComparator;->mSortingKey:Ljava/lang/String;
 
     .line 324
     return-void
@@ -85,7 +85,7 @@
     check-cast p2, Ljava/util/HashMap;
 
     .end local p2
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/ZonePicker$MyComparator;->compare(Ljava/util/HashMap;Ljava/util/HashMap;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/OriginalSettings/ZonePicker$MyComparator;->compare(Ljava/util/HashMap;Ljava/util/HashMap;)I
 
     move-result v0
 
@@ -110,7 +110,7 @@
     .line 331
     .local p1, map1:Ljava/util/HashMap;,"Ljava/util/HashMap<**>;"
     .local p2, map2:Ljava/util/HashMap;,"Ljava/util/HashMap<**>;"
-    iget-object v2, p0, Lcom/android/settings/ZonePicker$MyComparator;->mSortingKey:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ZonePicker$MyComparator;->mSortingKey:Ljava/lang/String;
 
     invoke-virtual {p1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -118,7 +118,7 @@
 
     .line 332
     .local v0, value1:Ljava/lang/Object;
-    iget-object v2, p0, Lcom/android/settings/ZonePicker$MyComparator;->mSortingKey:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ZonePicker$MyComparator;->mSortingKey:Ljava/lang/String;
 
     invoke-virtual {p2, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -126,14 +126,14 @@
 
     .line 338
     .local v1, value2:Ljava/lang/Object;
-    invoke-direct {p0, v0}, Lcom/android/settings/ZonePicker$MyComparator;->isComparable(Ljava/lang/Object;)Z
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/ZonePicker$MyComparator;->isComparable(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
     .line 339
-    invoke-direct {p0, v1}, Lcom/android/settings/ZonePicker$MyComparator;->isComparable(Ljava/lang/Object;)Z
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/ZonePicker$MyComparator;->isComparable(Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -155,7 +155,7 @@
 
     .line 340
     :cond_1
-    invoke-direct {p0, v1}, Lcom/android/settings/ZonePicker$MyComparator;->isComparable(Ljava/lang/Object;)Z
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/ZonePicker$MyComparator;->isComparable(Ljava/lang/Object;)Z
 
     move-result v2
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;
+.class Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "InputMethodAndLanguageSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    value = Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;Landroid/os/Handler;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings;Landroid/os/Handler;Landroid/content/Context;)V
     .locals 3
     .parameter
     .parameter "handler"
@@ -29,7 +29,7 @@
     const/4 v2, 0x0
 
     .line 364
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings;
 
     .line 365
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -70,10 +70,10 @@
 
     .prologue
     .line 374
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings;
 
-    #calls: Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->updateCurrentImeName()V
-    invoke-static {v0}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->access$000(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;)V
+    #calls: Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings;->updateCurrentImeName()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings;->access$000(Lcom/android/OriginalSettings/inputmethod/InputMethodAndLanguageSettings;)V
 
     .line 375
     return-void

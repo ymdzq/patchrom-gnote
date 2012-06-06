@@ -1,11 +1,11 @@
-.class Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
+.class Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "PowerSavingModeWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;
+    value = Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,7 +29,7 @@
     invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     .line 1152
-    iput-object p2, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
 
     .line 1153
     return-void
@@ -43,9 +43,9 @@
 
     .prologue
     .line 1170
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
 
     .line 1171
     return-void
@@ -58,7 +58,7 @@
     const/4 v2, 0x0
 
     .line 1156
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -92,7 +92,7 @@
 
     .prologue
     .line 1165
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

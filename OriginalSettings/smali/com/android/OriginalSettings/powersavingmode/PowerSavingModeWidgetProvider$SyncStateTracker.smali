@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;
-.super Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+.class final Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;
+.super Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 .source "PowerSavingModeWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;
+    value = Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,18 +22,18 @@
     .line 474
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;-><init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;-><init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 474
-    invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;-><init>()V
 
     return-void
 .end method
@@ -72,11 +72,11 @@
 
     .prologue
     .line 496
-    invoke-virtual {p0, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;->getActualState(Landroid/content/Context;)I
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;->getActualState(Landroid/content/Context;)I
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;->setCurrentState(Landroid/content/Context;I)V
 
     .line 497
     return-void
@@ -105,15 +105,15 @@
 
     .line 505
     .local v1, sync:Z
-    new-instance v2, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker$1;
+    new-instance v2, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker$1;
 
-    invoke-direct {v2, p0, p2, v1, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker$1;-><init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;ZZLandroid/content/Context;)V
+    invoke-direct {v2, p0, p2, v1, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker$1;-><init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;ZZLandroid/content/Context;)V
 
     const/4 v3, 0x0
 
     new-array v3, v3, [Ljava/lang/Void;
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v2, v3}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 529
     return-void

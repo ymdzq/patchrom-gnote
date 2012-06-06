@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CallSettings$2;
+.class Lcom/android/OriginalSettings/CallSettings$2;
 .super Ljava/lang/Object;
 .source "CallSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/CallSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    value = Lcom/android/OriginalSettings/CallSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CallSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CallSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CallSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CallSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 343
-    iput-object p1, p0, Lcom/android/settings/CallSettings$2;->this$0:Lcom/android/settings/CallSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CallSettings$2;->this$0:Lcom/android/OriginalSettings/CallSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,17 +43,17 @@
 
     .prologue
     .line 345
-    iget-object v0, p0, Lcom/android/settings/CallSettings$2;->this$0:Lcom/android/settings/CallSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CallSettings$2;->this$0:Lcom/android/OriginalSettings/CallSettings;
 
-    #getter for: Lcom/android/settings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
-    invoke-static {v0}, Lcom/android/settings/CallSettings;->access$100(Lcom/android/settings/CallSettings;)Landroid/preference/CheckBoxPreference;
+    #getter for: Lcom/android/OriginalSettings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
+    invoke-static {v0}, Lcom/android/OriginalSettings/CallSettings;->access$100(Lcom/android/OriginalSettings/CallSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/CallSettings$2;->this$0:Lcom/android/settings/CallSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CallSettings$2;->this$0:Lcom/android/OriginalSettings/CallSettings;
 
-    #getter for: Lcom/android/settings/CallSettings;->proximityChecked:Z
-    invoke-static {v1}, Lcom/android/settings/CallSettings;->access$000(Lcom/android/settings/CallSettings;)Z
+    #getter for: Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
+    invoke-static {v1}, Lcom/android/OriginalSettings/CallSettings;->access$000(Lcom/android/OriginalSettings/CallSettings;)Z
 
     move-result v1
 

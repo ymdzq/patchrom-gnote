@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/ManageApplications$1;
+.class Lcom/android/OriginalSettings/applications/ManageApplications$1;
 .super Ljava/lang/Object;
 .source "ManageApplications.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ManageApplications;
+    value = Lcom/android/OriginalSettings/applications/ManageApplications;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/ManageApplications;
+.field final synthetic this$0:Lcom/android/OriginalSettings/applications/ManageApplications;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ManageApplications;)V
+.method constructor <init>(Lcom/android/OriginalSettings/applications/ManageApplications;)V
     .locals 0
     .parameter
 
     .prologue
     .line 202
-    iput-object p1, p0, Lcom/android/settings/applications/ManageApplications$1;->this$0:Lcom/android/settings/applications/ManageApplications;
+    iput-object p1, p0, Lcom/android/OriginalSettings/applications/ManageApplications$1;->this$0:Lcom/android/OriginalSettings/applications/ManageApplications;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 204
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$1;->this$0:Lcom/android/settings/applications/ManageApplications;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ManageApplications$1;->this$0:Lcom/android/OriginalSettings/applications/ManageApplications;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ManageApplications;->handleRunningProcessesAvail()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/applications/ManageApplications;->handleRunningProcessesAvail()V
 
     .line 205
     return-void

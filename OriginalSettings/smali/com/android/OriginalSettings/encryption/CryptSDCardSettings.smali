@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/encryption/CryptSDCardSettings;
+.class public Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;
 .super Landroid/preference/PreferenceFragment;
 .source "CryptSDCardSettings.java"
 
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/encryption/CryptSDCardSettings$DirEncryptListner;
+        Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$DirEncryptListner;
     }
 .end annotation
 
@@ -23,7 +23,7 @@
 
 .field private mDem:Landroid/dirEncryption/DirEncryptionManager;
 
-.field private mDirEncryptListner:Lcom/android/settings/encryption/CryptSDCardSettings$DirEncryptListner;
+.field private mDirEncryptListner:Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$DirEncryptListner;
 
 .field private mEncryptDefault:Z
 
@@ -69,150 +69,150 @@
     invoke-direct {p0}, Landroid/preference/PreferenceFragment;-><init>()V
 
     .line 55
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     .line 56
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     .line 57
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     .line 61
-    iput-boolean v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     .line 62
-    iput-boolean v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFull:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFull:Z
 
     .line 63
-    iput-boolean v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
 
     .line 64
-    iput-boolean v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mIsDisabledByAdmin:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mIsDisabledByAdmin:Z
 
     .line 65
-    iput-boolean v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mStartedByAdmin:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mStartedByAdmin:Z
 
     .line 66
-    iput-boolean v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mStartedByIntent:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mStartedByIntent:Z
 
     .line 67
-    iput-boolean v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mValueChanged:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mValueChanged:Z
 
     .line 69
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
     .line 71
     new-instance v0, Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     invoke-direct {v0}, Landroid/dirEncryption/SDCardEncryptionPolicies;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iput-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     .line 72
     new-instance v0, Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     invoke-direct {v0}, Landroid/dirEncryption/SDCardEncryptionPolicies;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iput-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     .line 100
-    new-instance v0, Lcom/android/settings/encryption/CryptSDCardSettings$DirEncryptListner;
+    new-instance v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$DirEncryptListner;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/encryption/CryptSDCardSettings$DirEncryptListner;-><init>(Lcom/android/settings/encryption/CryptSDCardSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$DirEncryptListner;-><init>(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDirEncryptListner:Lcom/android/settings/encryption/CryptSDCardSettings$DirEncryptListner;
+    iput-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDirEncryptListner:Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$DirEncryptListner;
 
     .line 102
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mSync:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mSync:Ljava/lang/Object;
 
     .line 103
-    new-instance v0, Lcom/android/settings/encryption/CryptSDCardSettings$1;
+    new-instance v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/encryption/CryptSDCardSettings$1;-><init>(Lcom/android/settings/encryption/CryptSDCardSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$1;-><init>(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/encryption/CryptSDCardSettings;Ljava/lang/String;)V
+.method static synthetic access$000(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;Ljava/lang/String;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 41
-    invoke-direct {p0, p1}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/encryption/CryptSDCardSettings;)Landroid/dirEncryption/DirEncryptionManager;
+.method static synthetic access$100(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)Landroid/dirEncryption/DirEncryptionManager;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/encryption/CryptSDCardSettings;)Landroid/os/Handler;
+.method static synthetic access$200(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)Landroid/os/Handler;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/encryption/CryptSDCardSettings;)Ljava/lang/Object;
+.method static synthetic access$300(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)Ljava/lang/Object;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mSync:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mSync:Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/encryption/CryptSDCardSettings;)V
+.method static synthetic access$400(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->enableAllUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->enableAllUI()V
 
     return-void
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/encryption/CryptSDCardSettings;)V
+.method static synthetic access$500(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->disableAllUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->disableAllUI()V
 
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/encryption/CryptSDCardSettings;)V
+.method static synthetic access$600(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->applyEncryptionUpdates()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->applyEncryptionUpdates()V
 
     return-void
 .end method
@@ -224,7 +224,7 @@
     .line 405
     const/16 v0, 0x64
 
-    invoke-direct {p0, v0}, Lcom/android/settings/encryption/CryptSDCardSettings;->runKeyguardConfirmation(I)Z
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->runKeyguardConfirmation(I)Z
 
     .line 406
     return-void
@@ -239,25 +239,25 @@
     .line 467
     const-string v0, "Disable All UI"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     .line 468
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 469
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 470
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 471
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -272,27 +272,27 @@
     const/4 v1, 0x1
 
     .line 459
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 460
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 461
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 462
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 463
-    invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->updatePrefUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->updatePrefUI()V
 
     .line 464
     return-void
@@ -329,10 +329,10 @@
     .line 220
     const-string v4, "restorePrefs"
 
-    invoke-direct {p0, v4}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     .line 221
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     invoke-virtual {v4}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -368,7 +368,7 @@
 
     .line 226
     .local v1, adminStart:Ljava/lang/String;
-    iput-boolean v5, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mStartedByIntent:Z
+    iput-boolean v5, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mStartedByIntent:Z
 
     .line 227
     const-string v4, "1"
@@ -380,23 +380,23 @@
     if-eqz v4, :cond_0
 
     .line 228
-    iput-boolean v5, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mStartedByAdmin:Z
+    iput-boolean v5, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mStartedByAdmin:Z
 
     .line 241
     .end local v0           #action:Ljava/lang/String;
     .end local v1           #adminStart:Ljava/lang/String;
     :cond_0
     :goto_0
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
     invoke-virtual {v4}, Landroid/dirEncryption/DirEncryptionManager;->getSDCardEncryptionPrefs()Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iput-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     .line 242
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     if-nez v4, :cond_1
 
@@ -405,11 +405,11 @@
 
     invoke-direct {v4}, Landroid/dirEncryption/SDCardEncryptionPolicies;-><init>()V
 
-    iput-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iput-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     .line 246
     :cond_1
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     const-string v7, "device_policy"
 
@@ -430,18 +430,18 @@
     if-eqz v4, :cond_2
 
     .line 248
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     iput v8, v4, Landroid/dirEncryption/SDCardEncryptionPolicies;->mEnc:I
 
     .line 249
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     iput v9, v4, Landroid/dirEncryption/SDCardEncryptionPolicies;->mFullEnc:I
 
     .line 252
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     iget v4, v4, Landroid/dirEncryption/SDCardEncryptionPolicies;->mEnc:I
 
@@ -450,10 +450,10 @@
     move v4, v5
 
     :goto_1
-    iput-boolean v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     .line 253
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     iget v4, v4, Landroid/dirEncryption/SDCardEncryptionPolicies;->mFullEnc:I
 
@@ -462,10 +462,10 @@
     move v4, v5
 
     :goto_2
-    iput-boolean v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFull:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFull:Z
 
     .line 254
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     iget v4, v4, Landroid/dirEncryption/SDCardEncryptionPolicies;->mExcludeMedia:I
 
@@ -474,12 +474,12 @@
     move v4, v5
 
     :goto_3
-    iput-boolean v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
 
     .line 256
-    iget-boolean v7, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iget-boolean v7, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     iget v4, v4, Landroid/dirEncryption/SDCardEncryptionPolicies;->mEnc:I
 
@@ -490,12 +490,12 @@
     :goto_4
     or-int/2addr v4, v7
 
-    iput-boolean v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     .line 257
-    iget-boolean v7, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFull:Z
+    iget-boolean v7, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFull:Z
 
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     iget v4, v4, Landroid/dirEncryption/SDCardEncryptionPolicies;->mFullEnc:I
 
@@ -506,12 +506,12 @@
     :goto_5
     or-int/2addr v4, v7
 
-    iput-boolean v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFull:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFull:Z
 
     .line 258
-    iget-boolean v7, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
+    iget-boolean v7, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
 
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     iget v4, v4, Landroid/dirEncryption/SDCardEncryptionPolicies;->mExcludeMedia:I
 
@@ -522,32 +522,32 @@
     :goto_6
     or-int/2addr v4, v7
 
-    iput-boolean v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
 
     .line 260
-    iget-object v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
+    iget-object v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mAdminPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     iget v4, v4, Landroid/dirEncryption/SDCardEncryptionPolicies;->mEnc:I
 
     if-ne v8, v4, :cond_3
 
     .line 261
-    iput-boolean v5, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mIsDisabledByAdmin:Z
+    iput-boolean v5, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mIsDisabledByAdmin:Z
 
     .line 262
     const-string v4, "Disabled by Admin"
 
-    invoke-direct {p0, v4}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     .line 265
     :cond_3
-    iput-boolean v6, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mValueChanged:Z
+    iput-boolean v6, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mValueChanged:Z
 
     .line 266
-    invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->enableAllUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->enableAllUI()V
 
     .line 267
-    invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->updatePrefUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->updatePrefUI()V
 
     .line 268
     return-void
@@ -558,7 +558,7 @@
     :cond_4
     const-string v4, "CryptSDCardSettings started by user"
 
-    invoke-direct {p0, v4}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -567,7 +567,7 @@
     :cond_5
     const-string v4, "CryptSDCardSettings started by user"
 
-    invoke-direct {p0, v4}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v4}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
@@ -617,7 +617,7 @@
     .line 446
     new-instance v2, Lcom/android/internal/widget/LockPatternUtils;
 
-    iget-object v3, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v3, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     invoke-direct {v2, v3}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
@@ -640,7 +640,7 @@
 
     .line 451
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -648,11 +648,11 @@
 
     .line 452
     .local v1, res:Landroid/content/res/Resources;
-    new-instance v2, Lcom/android/settings/ChooseLockSettingsHelper;
+    new-instance v2, Lcom/android/OriginalSettings/ChooseLockSettingsHelper;
 
-    iget-object v3, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v3, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
-    invoke-direct {v2, v3, p0}, Lcom/android/settings/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v2, v3, p0}, Lcom/android/OriginalSettings/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     const v3, 0x7f0b0752
 
@@ -666,7 +666,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v2, p1, v3, v4}, Lcom/android/settings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {v2, p1, v3, v4}, Lcom/android/OriginalSettings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v2
 
@@ -682,12 +682,12 @@
     .line 475
     new-instance v1, Landroid/preference/Preference;
 
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     invoke-direct {v1, v0}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 476
-    const-class v0, Lcom/android/settings/encryption/CryptSDCardConfirm;
+    const-class v0, Lcom/android/OriginalSettings/encryption/CryptSDCardConfirm;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -743,11 +743,11 @@
     invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 483
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
-    check-cast v0, Landroid/preference/PreferenceActivity;
+    check-cast v0, Lmiui/preference/BasePreferenceActivity;
 
-    invoke-virtual {v0, p0, v1}, Landroid/preference/PreferenceActivity;->onPreferenceStartFragment(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z
+    invoke-virtual {v0, p0, v1}, Lmiui/preference/BasePreferenceActivity;->onPreferenceStartFragment(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z
 
     .line 484
     return-void
@@ -762,12 +762,12 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v14}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {v0, v14}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     .line 272
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     if-nez v14, :cond_0
 
@@ -776,10 +776,10 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v14}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {v0, v14}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     .line 274
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v4
 
@@ -796,7 +796,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     invoke-virtual {v14}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -816,14 +816,14 @@
     .local v6, serviceBusy:Z
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     if-eqz v14, :cond_4
 
     .line 284
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v15, 0x1
 
@@ -832,7 +832,7 @@
     .line 285
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     const v15, 0x7f0b0745
 
@@ -842,14 +842,14 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFull:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFull:Z
 
     if-eqz v14, :cond_5
 
     .line 292
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v15, 0x1
 
@@ -858,7 +858,7 @@
     .line 293
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     const v15, 0x7f0b0748
 
@@ -868,14 +868,14 @@
     :goto_2
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
 
     if-eqz v14, :cond_6
 
     .line 300
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v15, 0x1
 
@@ -884,7 +884,7 @@
     .line 301
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     const v15, 0x7f0b074a
 
@@ -894,26 +894,26 @@
     :goto_3
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mStartedByIntent:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mStartedByIntent:Z
 
     if-nez v14, :cond_1
 
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mValueChanged:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mValueChanged:Z
 
     if-nez v14, :cond_1
 
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mIsDisabledByAdmin:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mIsDisabledByAdmin:Z
 
     if-nez v14, :cond_1
 
     .line 308
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
     const/4 v15, 0x0
 
@@ -923,14 +923,14 @@
     :cond_1
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mIsDisabledByAdmin:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mIsDisabledByAdmin:Z
 
     if-eqz v14, :cond_2
 
     .line 313
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     const v15, 0x7f0b074c
 
@@ -939,7 +939,7 @@
     .line 314
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     const v15, 0x7f0b074c
 
@@ -948,7 +948,7 @@
     .line 315
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     const v15, 0x7f0b074c
 
@@ -957,7 +957,7 @@
     .line 317
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v15, 0x0
 
@@ -966,7 +966,7 @@
     .line 318
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v15, 0x0
 
@@ -975,7 +975,7 @@
     .line 319
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v15, 0x0
 
@@ -985,7 +985,7 @@
     :cond_2
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     const-string v15, "device_policy"
 
@@ -1006,7 +1006,7 @@
     if-nez v14, :cond_7
 
     .line 325
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->disableAllUI()V
+    invoke-direct/range {p0 .. p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->disableAllUI()V
 
     .line 326
     const v14, 0x7f0b080e
@@ -1021,7 +1021,7 @@
     :goto_4
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
     invoke-virtual {v14}, Landroid/dirEncryption/DirEncryptionManager;->getLastError()I
 
@@ -1036,7 +1036,7 @@
     :pswitch_0
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     const-string v15, "storage"
 
@@ -1053,7 +1053,7 @@
     .line 391
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
     invoke-virtual {v14}, Landroid/dirEncryption/DirEncryptionManager;->getExternalSdPath()Ljava/lang/String;
 
@@ -1102,7 +1102,7 @@
     .line 396
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
     const/4 v15, 0x1
 
@@ -1113,7 +1113,7 @@
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mTextEncMessages:Landroid/widget/TextView;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mTextEncMessages:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1130,7 +1130,7 @@
     :cond_4
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v15, 0x0
 
@@ -1139,7 +1139,7 @@
     .line 288
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     const v15, 0x7f0b0744
 
@@ -1151,7 +1151,7 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v15, 0x0
 
@@ -1160,7 +1160,7 @@
     .line 296
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     const v15, 0x7f0b0747
 
@@ -1172,7 +1172,7 @@
     :cond_6
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     const v15, 0x7f0b074b
 
@@ -1181,7 +1181,7 @@
     .line 304
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v15, 0x0
 
@@ -1194,7 +1194,7 @@
     :cond_7
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
     invoke-virtual {v14}, Landroid/dirEncryption/DirEncryptionManager;->getCurrentStatus()I
 
@@ -1209,7 +1209,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v14}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {v0, v14}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     .line 332
     const/4 v6, 0x1
@@ -1217,7 +1217,7 @@
     .line 333
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     if-eqz v14, :cond_8
 
@@ -1232,7 +1232,7 @@
 
     .line 340
     :goto_6
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->disableAllUI()V
+    invoke-direct/range {p0 .. p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->disableAllUI()V
 
     .line 341
     const-string v14, "\n"
@@ -1262,7 +1262,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v14}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {v0, v14}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     goto/16 :goto_4
 
@@ -1272,7 +1272,7 @@
     :pswitch_1
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
     invoke-virtual {v14}, Landroid/dirEncryption/DirEncryptionManager;->getAdditionalSpaceRequired()I
 
@@ -1312,7 +1312,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v14}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {v0, v14}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     .line 358
     new-instance v14, Ljava/lang/StringBuilder;
@@ -1335,12 +1335,12 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v14}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {v0, v14}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     .line 360
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     if-eqz v14, :cond_b
 
@@ -1385,7 +1385,7 @@
     .line 375
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
     const/4 v15, 0x1
 
@@ -1490,7 +1490,7 @@
     :pswitch_2
     move-object/from16 v0, p0
 
-    iget-boolean v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iget-boolean v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     if-eqz v14, :cond_d
 
@@ -1507,7 +1507,7 @@
     :goto_8
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
+    iget-object v14, v0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
     const/4 v15, 0x1
 
@@ -1585,21 +1585,21 @@
     .line 429
     new-instance v1, Landroid/dirEncryption/SDCardEncryptionPolicies;
 
-    iget-boolean v2, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iget-boolean v2, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     if-eqz v2, :cond_2
 
     const/4 v2, 0x2
 
     :goto_1
-    iget-boolean v3, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFull:Z
+    iget-boolean v3, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFull:Z
 
     if-eqz v3, :cond_3
 
     const/4 v3, 0x4
 
     :goto_2
-    iget-boolean v4, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
+    iget-boolean v4, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
 
     if-eqz v4, :cond_4
 
@@ -1610,7 +1610,7 @@
 
     .line 433
     .local v1, policies:Landroid/dirEncryption/SDCardEncryptionPolicies;
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/encryption/CryptSDCardSettings;->showFinalConfirmation(Ljava/lang/String;Landroid/dirEncryption/SDCardEncryptionPolicies;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->showFinalConfirmation(Ljava/lang/String;Landroid/dirEncryption/SDCardEncryptionPolicies;)V
 
     goto :goto_0
 
@@ -1641,12 +1641,12 @@
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onAttach(Landroid/app/Activity;)V
 
     .line 122
-    iput-object p1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     .line 123
     const-string v0, "onAttach"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
     .line 124
     return-void
@@ -1668,10 +1668,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mContentView:Landroid/view/View;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mContentView:Landroid/view/View;
 
     .line 130
-    invoke-virtual {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1686,58 +1686,58 @@
     :cond_0
     const v1, 0x7f05002c
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/encryption/CryptSDCardSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->addPreferencesFromResource(I)V
 
     .line 137
     const-string v1, "external_default"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/encryption/CryptSDCardSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     .line 138
     const-string v1, "external_full"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/encryption/CryptSDCardSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     .line 139
     const-string v1, "external_file_exclude"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/encryption/CryptSDCardSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     .line 141
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 142
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 143
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 145
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mContentView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mContentView:Landroid/view/View;
 
     const v2, 0x7f08005c
 
@@ -1747,10 +1747,10 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mTextEncMessages:Landroid/widget/TextView;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mTextEncMessages:Landroid/widget/TextView;
 
     .line 147
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mContentView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mContentView:Landroid/view/View;
 
     const v2, 0x7f08005d
 
@@ -1760,28 +1760,28 @@
 
     check-cast v1, Landroid/widget/Button;
 
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
     .line 148
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
-    new-instance v2, Lcom/android/settings/encryption/CryptSDCardSettings$2;
+    new-instance v2, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$2;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/encryption/CryptSDCardSettings$2;-><init>(Lcom/android/settings/encryption/CryptSDCardSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$2;-><init>(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 156
     new-instance v1, Landroid/dirEncryption/DirEncryptionManager;
 
-    iget-object v2, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
     invoke-direct {v1, v2}, Landroid/dirEncryption/DirEncryptionManager;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iput-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
     .line 158
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mContentView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mContentView:Landroid/view/View;
 
     return-object v1
 .end method
@@ -1794,9 +1794,9 @@
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onPause()V
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDirEncryptListner:Lcom/android/settings/encryption/CryptSDCardSettings$DirEncryptListner;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDirEncryptListner:Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$DirEncryptListner;
 
     invoke-virtual {v0, v1}, Landroid/dirEncryption/DirEncryptionManager;->unregisterListener(Landroid/os/storage/IDirEncryptServiceListener;)V
 
@@ -1815,10 +1815,10 @@
     const/4 v0, 0x1
 
     .line 176
-    iput-boolean v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mValueChanged:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mValueChanged:Z
 
     .line 177
-    iget-object v2, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
     invoke-virtual {v2, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -1843,15 +1843,15 @@
 
     move-result v2
 
-    iput-boolean v2, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     .line 181
-    iget-boolean v2, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
+    iget-boolean v2, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefault:Z
 
     if-eqz v2, :cond_0
 
     .line 182
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     const v2, 0x7f0b0745
 
@@ -1863,26 +1863,26 @@
 
     .line 184
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptDefaultPref:Landroid/preference/CheckBoxPreference;
 
     const v3, 0x7f0b0744
 
     invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
     .line 185
-    iget-object v2, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 186
-    iget-object v2, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 187
-    iput-boolean v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
 
-    iput-boolean v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFull:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFull:Z
 
     goto :goto_0
 
@@ -1909,15 +1909,15 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFull:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFull:Z
 
     .line 195
-    iget-boolean v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFull:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFull:Z
 
     if-eqz v1, :cond_2
 
     .line 196
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     const v2, 0x7f0b0748
 
@@ -1927,7 +1927,7 @@
 
     .line 198
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptFullPref:Landroid/preference/CheckBoxPreference;
 
     const v2, 0x7f0b0747
 
@@ -1958,15 +1958,15 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
 
     .line 206
-    iget-boolean v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMedia:Z
 
     if-eqz v1, :cond_4
 
     .line 207
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     const v2, 0x7f0b074a
 
@@ -1976,7 +1976,7 @@
 
     .line 209
     :cond_4
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mEncryptExcludeMediaPref:Landroid/preference/CheckBoxPreference;
 
     const v2, 0x7f0b074b
 
@@ -2000,14 +2000,14 @@
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onResume()V
 
     .line 164
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
-    iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDirEncryptListner:Lcom/android/settings/encryption/CryptSDCardSettings$DirEncryptListner;
+    iget-object v1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mDirEncryptListner:Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$DirEncryptListner;
 
     invoke-virtual {v0, v1}, Landroid/dirEncryption/DirEncryptionManager;->registerListener(Landroid/os/storage/IDirEncryptServiceListener;)V
 
     .line 165
-    invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->restorePrefs()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->restorePrefs()V
 
     .line 166
     return-void

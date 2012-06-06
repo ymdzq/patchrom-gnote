@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DataUsageSummary$AppUsageItem;
+.class Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/OriginalSettings/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/lang/Comparable",
         "<",
-        "Lcom/android/settings/DataUsageSummary$AppUsageItem;",
+        "Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;",
         ">;"
     }
 .end annotation
@@ -51,7 +51,7 @@
 
     aput p1, v0, v1
 
-    iput-object v0, p0, Lcom/android/settings/DataUsageSummary$AppUsageItem;->uids:[I
+    iput-object v0, p0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->uids:[I
 
     .line 1425
     return-void
@@ -65,10 +65,10 @@
 
     .prologue
     .line 1428
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$AppUsageItem;->uids:[I
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->uids:[I
 
-    #calls: Lcom/android/settings/DataUsageSummary;->contains([II)Z
-    invoke-static {v1, p1}, Lcom/android/settings/DataUsageSummary;->access$2900([II)Z
+    #calls: Lcom/android/OriginalSettings/DataUsageSummary;->contains([II)Z
+    invoke-static {v1, p1}, Lcom/android/OriginalSettings/DataUsageSummary;->access$2900([II)Z
 
     move-result v1
 
@@ -80,13 +80,13 @@
 
     .line 1429
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$AppUsageItem;->uids:[I
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->uids:[I
 
     array-length v0, v1
 
     .line 1430
     .local v0, length:I
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$AppUsageItem;->uids:[I
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->uids:[I
 
     add-int/lit8 v2, v0, 0x1
 
@@ -94,25 +94,25 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/DataUsageSummary$AppUsageItem;->uids:[I
+    iput-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->uids:[I
 
     .line 1431
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$AppUsageItem;->uids:[I
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->uids:[I
 
     aput p1, v1, v0
 
     goto :goto_0
 .end method
 
-.method public compareTo(Lcom/android/settings/DataUsageSummary$AppUsageItem;)I
+.method public compareTo(Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;)I
     .locals 4
     .parameter "another"
 
     .prologue
     .line 1436
-    iget-wide v0, p1, Lcom/android/settings/DataUsageSummary$AppUsageItem;->total:J
+    iget-wide v0, p1, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->total:J
 
-    iget-wide v2, p0, Lcom/android/settings/DataUsageSummary$AppUsageItem;->total:J
+    iget-wide v2, p0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->total:J
 
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Long;->compare(JJ)I
 
@@ -127,10 +127,10 @@
 
     .prologue
     .line 1419
-    check-cast p1, Lcom/android/settings/DataUsageSummary$AppUsageItem;
+    check-cast p1, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/DataUsageSummary$AppUsageItem;->compareTo(Lcom/android/settings/DataUsageSummary$AppUsageItem;)I
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->compareTo(Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;)I
 
     move-result v0
 

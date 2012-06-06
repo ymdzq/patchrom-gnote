@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/motion/SensitivityPreference;
+.class public Lcom/android/OriginalSettings/motion/SensitivityPreference;
 .super Landroid/preference/SeekBarDialogPreference;
 .source "SensitivityPreference.java"
 
@@ -13,7 +13,7 @@
 
 .field private mCurrentMotion:I
 
-.field private mFragment:Lcom/android/settings/SettingsPreferenceFragment;
+.field private mFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 
 .field private mOldSensitivity:I
 
@@ -41,65 +41,65 @@
     .line 33
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mFragment:Lcom/android/settings/SettingsPreferenceFragment;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 
     .line 36
     const/4 v0, 0x5
 
-    iput v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mOldSensitivity:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mOldSensitivity:I
 
     .line 39
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mAfterTest:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mAfterTest:Z
 
     .line 42
     const/4 v0, -0x2
 
-    iput v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mWhichButtonClicked:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mWhichButtonClicked:I
 
     .line 46
-    iput-object p1, p0, Lcom/android/settings/motion/SensitivityPreference;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mContext:Landroid/content/Context;
 
     .line 47
     const v0, 0x7f040078
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/SensitivityPreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->setDialogLayoutResource(I)V
 
     .line 48
     return-void
 .end method
 
-.method static synthetic access$002(Lcom/android/settings/motion/SensitivityPreference;I)I
+.method static synthetic access$002(Lcom/android/OriginalSettings/motion/SensitivityPreference;I)I
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 26
-    iput p1, p0, Lcom/android/settings/motion/SensitivityPreference;->mWhichButtonClicked:I
+    iput p1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mWhichButtonClicked:I
 
     return p1
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/motion/SensitivityPreference;)Landroid/widget/SeekBar;
+.method static synthetic access$100(Lcom/android/OriginalSettings/motion/SensitivityPreference;)Landroid/widget/SeekBar;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 26
-    iget-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/motion/SensitivityPreference;)I
+.method static synthetic access$200(Lcom/android/OriginalSettings/motion/SensitivityPreference;)I
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 26
-    iget v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mCurrentMotion:I
 
     return v0
 .end method
@@ -115,14 +115,14 @@
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onBindDialogView(Landroid/view/View;)V
 
     .line 65
-    invoke-static {p1}, Lcom/android/settings/motion/SensitivityPreference;->getSeekBar(Landroid/view/View;)Landroid/widget/SeekBar;
+    invoke-static {p1}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->getSeekBar(Landroid/view/View;)Landroid/widget/SeekBar;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     const/16 v1, 0xa
 
@@ -137,7 +137,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityText:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityText:Landroid/widget/LinearLayout;
 
     .line 69
     return-void
@@ -176,7 +176,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 111
-    iput p2, p0, Lcom/android/settings/motion/SensitivityPreference;->mWhichButtonClicked:I
+    iput p2, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mWhichButtonClicked:I
 
     .line 112
     return-void
@@ -194,7 +194,7 @@
     if-eqz p1, :cond_1
 
     .line 97
-    invoke-virtual {p0}, Lcom/android/settings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -202,9 +202,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v2}, Landroid/widget/SeekBar;->getProgress()I
 
@@ -221,7 +221,7 @@
 
     .line 99
     :cond_1
-    iget v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mWhichButtonClicked:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mWhichButtonClicked:I
 
     const/4 v1, -0x3
 
@@ -240,7 +240,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/motion/SensitivityPreference;->mOldSensitivity:I
+    iget v2, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mOldSensitivity:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -253,7 +253,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 101
-    invoke-virtual {p0}, Lcom/android/settings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -261,9 +261,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
 
-    iget v2, p0, Lcom/android/settings/motion/SensitivityPreference;->mOldSensitivity:I
+    iget v2, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mOldSensitivity:I
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
@@ -278,9 +278,9 @@
     .line 52
     const v0, 0x7f0b07dd
 
-    new-instance v1, Lcom/android/settings/motion/SensitivityPreference$1;
+    new-instance v1, Lcom/android/OriginalSettings/motion/SensitivityPreference$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/motion/SensitivityPreference$1;-><init>(Lcom/android/settings/motion/SensitivityPreference;)V
+    invoke-direct {v1, p0}, Lcom/android/OriginalSettings/motion/SensitivityPreference$1;-><init>(Lcom/android/OriginalSettings/motion/SensitivityPreference;)V
 
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -326,7 +326,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v2}, Landroid/widget/SeekBar;->getProgress()I
 
@@ -343,7 +343,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 134
-    invoke-virtual {p0}, Lcom/android/settings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -351,9 +351,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v2}, Landroid/widget/SeekBar;->getProgress()I
 
@@ -367,13 +367,13 @@
     return-void
 .end method
 
-.method public setInformation(Lcom/android/settings/SettingsPreferenceFragment;)V
+.method public setInformation(Lcom/android/OriginalSettings/SettingsPreferenceFragment;)V
     .locals 0
     .parameter "fragment"
 
     .prologue
     .line 180
-    iput-object p1, p0, Lcom/android/settings/motion/SensitivityPreference;->mFragment:Lcom/android/settings/SettingsPreferenceFragment;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 
     .line 181
     return-void
@@ -385,10 +385,10 @@
 
     .prologue
     .line 138
-    iput p1, p0, Lcom/android/settings/motion/SensitivityPreference;->mCurrentMotion:I
+    iput p1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mCurrentMotion:I
 
     .line 140
-    iget v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mCurrentMotion:I
 
     const/16 v1, 0x44d
 
@@ -397,7 +397,7 @@
     .line 141
     const-string v0, "motion_zooming_sensitivity"
 
-    iput-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
 
     .line 149
     :cond_0
@@ -406,7 +406,7 @@
 
     .line 142
     :cond_1
-    iget v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mCurrentMotion:I
 
     const/16 v1, 0x44e
 
@@ -415,13 +415,13 @@
     .line 143
     const-string v0, "None"
 
-    iput-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
 
     goto :goto_0
 
     .line 144
     :cond_2
-    iget v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mCurrentMotion:I
 
     const/16 v1, 0x4b1
 
@@ -430,13 +430,13 @@
     .line 145
     const-string v0, "motion_panning_sensitivity"
 
-    iput-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
 
     goto :goto_0
 
     .line 146
     :cond_3
-    iget v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mCurrentMotion:I
 
     const/16 v1, 0x4b2
 
@@ -445,7 +445,7 @@
     .line 147
     const-string v0, "None"
 
-    iput-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -467,10 +467,10 @@
     .local v0, currentUseMotion:I
     const/4 v1, -0x2
 
-    iput v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mWhichButtonClicked:I
+    iput v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mWhichButtonClicked:I
 
     .line 76
-    iget-boolean v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mAfterTest:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mAfterTest:Z
 
     if-nez v1, :cond_0
 
@@ -482,7 +482,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 78
-    invoke-virtual {p0}, Lcom/android/settings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -490,18 +490,18 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
 
     invoke-static {v1, v2, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mOldSensitivity:I
+    iput v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mOldSensitivity:I
 
     .line 80
-    iget-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
-    iget v2, p0, Lcom/android/settings/motion/SensitivityPreference;->mOldSensitivity:I
+    iget v2, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mOldSensitivity:I
 
     add-int/lit8 v2, v2, 0x0
 
@@ -509,7 +509,7 @@
 
     .line 88
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/motion/SensitivityPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -521,10 +521,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mTest:Landroid/widget/Button;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mTest:Landroid/widget/Button;
 
     .line 89
-    iget-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v1, p0}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
@@ -542,12 +542,12 @@
     .line 83
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mAfterTest:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mAfterTest:Z
 
     .line 84
-    iget-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -555,7 +555,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mSensitivityDB:Ljava/lang/String;
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -575,12 +575,12 @@
     .line 115
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mAfterTest:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mAfterTest:Z
 
     .line 116
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/SensitivityPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->showDialog(Landroid/os/Bundle;)V
 
     .line 117
     return-void
@@ -632,9 +632,9 @@
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 158
-    iget-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mFragment:Lcom/android/settings/SettingsPreferenceFragment;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 
-    invoke-virtual {v1, v0, v3}, Lcom/android/settings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v1, v0, v3}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 177
     .end local v0           #intent:Landroid/content/Intent;
@@ -689,9 +689,9 @@
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 168
-    iget-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mFragment:Lcom/android/settings/SettingsPreferenceFragment;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 
-    invoke-virtual {v1, v0, v3}, Lcom/android/settings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v1, v0, v3}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
@@ -735,9 +735,9 @@
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 175
-    iget-object v1, p0, Lcom/android/settings/motion/SensitivityPreference;->mFragment:Lcom/android/settings/SettingsPreferenceFragment;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/SensitivityPreference;->mFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 
-    invoke-virtual {v1, v0, v3}, Lcom/android/settings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v1, v0, v3}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 .end method

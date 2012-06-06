@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/Status$3;
+.class Lcom/android/OriginalSettings/deviceinfo/Status$3;
 .super Landroid/content/BroadcastReceiver;
 .source "Status.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/Status;
+    value = Lcom/android/OriginalSettings/deviceinfo/Status;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/Status;
+.field final synthetic this$0:Lcom/android/OriginalSettings/deviceinfo/Status;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
+.method constructor <init>(Lcom/android/OriginalSettings/deviceinfo/Status;)V
     .locals 0
     .parameter
 
     .prologue
     .line 638
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Status$3;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iput-object p1, p0, Lcom/android/OriginalSettings/deviceinfo/Status$3;->this$0:Lcom/android/OriginalSettings/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -106,7 +106,7 @@
     if-eqz v0, :cond_0
 
     .line 652
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status$3;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iget-object v0, p0, Lcom/android/OriginalSettings/deviceinfo/Status$3;->this$0:Lcom/android/OriginalSettings/deviceinfo/Status;
 
     const/4 v2, 0x0
 
@@ -114,13 +114,13 @@
 
     move-result v1
 
-    #setter for: Lcom/android/settings/deviceinfo/Status;->mImsRegistered:Z
-    invoke-static {v0, v1}, Lcom/android/settings/deviceinfo/Status;->access$702(Lcom/android/settings/deviceinfo/Status;Z)Z
+    #setter for: Lcom/android/OriginalSettings/deviceinfo/Status;->mImsRegistered:Z
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/deviceinfo/Status;->access$702(Lcom/android/OriginalSettings/deviceinfo/Status;Z)Z
 
     .line 653
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status$3;->this$0:Lcom/android/settings/deviceinfo/Status;
+    iget-object v0, p0, Lcom/android/OriginalSettings/deviceinfo/Status$3;->this$0:Lcom/android/OriginalSettings/deviceinfo/Status;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/Status;->updateSignalStrength()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/deviceinfo/Status;->updateSignalStrength()V
 
     .line 655
     :cond_0

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DisplaySettings$2;
+.class Lcom/android/OriginalSettings/DisplaySettings$2;
 .super Landroid/database/ContentObserver;
 .source "DisplaySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DisplaySettings;
+    value = Lcom/android/OriginalSettings/DisplaySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DisplaySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DisplaySettings;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DisplaySettings;Landroid/os/Handler;)V
     .locals 0
     .parameter
     .parameter "x0"
 
     .prologue
     .line 151
-    iput-object p1, p0, Lcom/android/settings/DisplaySettings$2;->this$0:Lcom/android/settings/DisplaySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DisplaySettings$2;->this$0:Lcom/android/OriginalSettings/DisplaySettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -41,10 +41,10 @@
 
     .prologue
     .line 154
-    iget-object v0, p0, Lcom/android/settings/DisplaySettings$2;->this$0:Lcom/android/settings/DisplaySettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DisplaySettings$2;->this$0:Lcom/android/OriginalSettings/DisplaySettings;
 
-    #calls: Lcom/android/settings/DisplaySettings;->updateAccelerometerRotationCheckbox()V
-    invoke-static {v0}, Lcom/android/settings/DisplaySettings;->access$100(Lcom/android/settings/DisplaySettings;)V
+    #calls: Lcom/android/OriginalSettings/DisplaySettings;->updateAccelerometerRotationCheckbox()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/DisplaySettings;->access$100(Lcom/android/OriginalSettings/DisplaySettings;)V
 
     .line 155
     return-void

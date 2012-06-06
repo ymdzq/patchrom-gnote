@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/motion/DoubleTapTryActually;
-.super Lcom/android/settings/motion/CommonTryActuallyActivity;
+.class public Lcom/android/OriginalSettings/motion/DoubleTapTryActually;
+.super Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;
 .source "DoubleTapTryActually.java"
 
 # interfaces
@@ -30,7 +30,7 @@
     .line 35
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
+    sput-object v0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
 
     return-void
 .end method
@@ -40,45 +40,45 @@
 
     .prologue
     .line 28
-    invoke-direct {p0}, Lcom/android/settings/motion/CommonTryActuallyActivity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;-><init>()V
 
     .line 33
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/motion/DoubleTapTryActually;)V
+.method static synthetic access$000(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 28
-    invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->close_dialog()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->close_dialog()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/motion/DoubleTapTryActually;)V
+.method static synthetic access$100(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 28
-    invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->finish_tutorial()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->finish_tutorial()V
 
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/motion/DoubleTapTryActually;)V
+.method static synthetic access$200(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 28
-    invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->registerListener()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->registerListener()V
 
     return-void
 .end method
@@ -88,12 +88,12 @@
 
     .prologue
     .line 199
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 200
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
@@ -101,7 +101,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     .line 202
     return-void
@@ -112,13 +112,13 @@
 
     .prologue
     .line 205
-    invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->close_dialog()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->close_dialog()V
 
     .line 206
-    invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->unregisterListener()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->unregisterListener()V
 
     .line 208
-    invoke-virtual {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->finish()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->finish()V
 
     .line 209
     return-void
@@ -132,13 +132,13 @@
     monitor-enter p0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->isFinishing()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->isFinishing()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/android/settings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
+    sget-object v0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -154,7 +154,7 @@
     .line 111
     :cond_1
     :try_start_1
-    sget-object v0, Lcom/android/settings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
+    sget-object v0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
 
     const/4 v1, 0x3
 
@@ -163,7 +163,7 @@
     .line 113
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mIsListenerRegistered:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mIsListenerRegistered:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -186,7 +186,7 @@
     monitor-enter p0
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
+    sget-object v0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -201,14 +201,14 @@
     .line 121
     :cond_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
+    sget-object v0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
 
     invoke-virtual {v0, p0}, Landroid/hardware/motion/MotionRecognitionManager;->unregisterListener(Landroid/hardware/motion/MRListener;)V
 
     .line 122
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mIsListenerRegistered:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mIsListenerRegistered:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -233,20 +233,20 @@
     const/4 v7, 0x0
 
     .line 135
-    invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->unregisterListener()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->unregisterListener()V
 
     .line 137
-    iget-object v6, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v6, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     if-eqz v6, :cond_0
 
     .line 138
-    iget-object v6, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v6, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v6}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 139
-    iput-object v7, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iput-object v7, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     .line 143
     :cond_0
@@ -256,7 +256,7 @@
 
     .line 145
     .local v0, builder:Landroid/app/AlertDialog$Builder;
-    invoke-virtual {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -287,24 +287,24 @@
 
     move-result-object v6
 
-    iput-object v6, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iput-object v6, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     .line 184
-    iget-object v6, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v6, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
-    new-instance v7, Lcom/android/settings/motion/DoubleTapTryActually$5;
+    new-instance v7, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$5;
 
-    invoke-direct {v7, p0}, Lcom/android/settings/motion/DoubleTapTryActually$5;-><init>(Lcom/android/settings/motion/DoubleTapTryActually;)V
+    invoke-direct {v7, p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$5;-><init>(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
 
     invoke-virtual {v6, v7}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 194
-    iget-object v6, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v6, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v6, p0}, Landroid/app/AlertDialog;->setOwnerActivity(Landroid/app/Activity;)V
 
     .line 195
-    iget-object v6, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v6, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v6}, Landroid/app/AlertDialog;->show()V
 
@@ -322,18 +322,18 @@
     .line 152
     const v6, 0x7f0b07ed
 
-    new-instance v7, Lcom/android/settings/motion/DoubleTapTryActually$2;
+    new-instance v7, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$2;
 
-    invoke-direct {v7, p0}, Lcom/android/settings/motion/DoubleTapTryActually$2;-><init>(Lcom/android/settings/motion/DoubleTapTryActually;)V
+    invoke-direct {v7, p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$2;-><init>(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
 
     invoke-virtual {v0, v6, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 157
     const v6, 0x7f0b07ee
 
-    new-instance v7, Lcom/android/settings/motion/DoubleTapTryActually$3;
+    new-instance v7, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$3;
 
-    invoke-direct {v7, p0}, Lcom/android/settings/motion/DoubleTapTryActually$3;-><init>(Lcom/android/settings/motion/DoubleTapTryActually;)V
+    invoke-direct {v7, p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$3;-><init>(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
 
     invoke-virtual {v0, v6, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -383,13 +383,13 @@
 
     const v9, 0x7f0b07fe
 
-    invoke-virtual {p0, v9}, Lcom/android/settings/motion/DoubleTapTryActually;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
     aput-object v9, v7, v8
 
-    invoke-virtual {p0, v6, v7}, Lcom/android/settings/motion/DoubleTapTryActually;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v6, v7}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -403,9 +403,9 @@
     .line 170
     const v6, 0x7f0b07eb
 
-    new-instance v7, Lcom/android/settings/motion/DoubleTapTryActually$4;
+    new-instance v7, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$4;
 
-    invoke-direct {v7, p0}, Lcom/android/settings/motion/DoubleTapTryActually$4;-><init>(Lcom/android/settings/motion/DoubleTapTryActually;)V
+    invoke-direct {v7, p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$4;-><init>(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
 
     invoke-virtual {v0, v6, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -416,7 +416,7 @@
 
     check-cast v6, Landroid/graphics/drawable/AnimationDrawable;
 
-    iput-object v6, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mDoubletapAnimation:Landroid/graphics/drawable/AnimationDrawable;
+    iput-object v6, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mDoubletapAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     goto/16 :goto_0
 
@@ -438,44 +438,44 @@
     const/4 v3, -0x1
 
     .line 46
-    invoke-super {p0, p1}, Lcom/android/settings/motion/CommonTryActuallyActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 48
     const v1, 0x7f080208
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/motion/DoubleTapTryActually;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/FrameLayout;
 
-    iput-object v1, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mMainScreen:Landroid/widget/FrameLayout;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mMainScreen:Landroid/widget/FrameLayout;
 
     .line 50
     new-instance v1, Landroid/widget/RelativeLayout;
 
     invoke-direct {v1, p0}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
 
     .line 51
-    iget-object v1, p0, Lcom/android/settings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
 
     const v2, 0x7f020036
 
     invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->setBackgroundResource(I)V
 
     .line 52
-    iget-object v1, p0, Lcom/android/settings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
 
     const/4 v2, 0x5
 
     invoke-virtual {v1, v2}, Landroid/widget/RelativeLayout;->setGravity(I)V
 
     .line 53
-    iget-object v1, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mMainScreen:Landroid/widget/FrameLayout;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mMainScreen:Landroid/widget/FrameLayout;
 
-    iget-object v2, p0, Lcom/android/settings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, v2, v3, v3}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;II)V
 
@@ -496,27 +496,27 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setBackgroundColor(I)V
 
     .line 58
-    new-instance v1, Lcom/android/settings/motion/DoubleTapTryActually$1;
+    new-instance v1, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/motion/DoubleTapTryActually$1;-><init>(Lcom/android/settings/motion/DoubleTapTryActually;)V
+    invoke-direct {v1, p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$1;-><init>(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 63
-    iget-object v1, p0, Lcom/android/settings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->nonTouchLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
     .line 65
     const-string v1, "motion_recognition"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/motion/DoubleTapTryActually;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/hardware/motion/MotionRecognitionManager;
 
-    sput-object v1, Lcom/android/settings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
+    sput-object v1, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
 
     .line 66
     return-void
@@ -529,33 +529,33 @@
     const/4 v1, 0x0
 
     .line 84
-    invoke-super {p0}, Lcom/android/settings/motion/CommonTryActuallyActivity;->onDestroy()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->onDestroy()V
 
     .line 86
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 87
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 88
-    iput-object v1, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mAlertDialog:Landroid/app/AlertDialog;
 
     .line 91
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mIsListenerRegistered:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mIsListenerRegistered:Z
 
     if-eqz v0, :cond_1
 
     .line 92
-    invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->unregisterListener()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->unregisterListener()V
 
     .line 95
     :cond_1
-    sput-object v1, Lcom/android/settings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
+    sput-object v1, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
 
     .line 96
     return-void
@@ -608,7 +608,7 @@
     :pswitch_0
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/DoubleTapTryActually;->createDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->createDialog(I)V
 
     goto :goto_0
 
@@ -626,10 +626,10 @@
 
     .prologue
     .line 78
-    invoke-super {p0}, Lcom/android/settings/motion/CommonTryActuallyActivity;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->onPause()V
 
     .line 80
-    invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->unregisterListener()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->unregisterListener()V
 
     .line 81
     return-void
@@ -640,10 +640,10 @@
 
     .prologue
     .line 71
-    invoke-super {p0}, Lcom/android/settings/motion/CommonTryActuallyActivity;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->onResume()V
 
     .line 73
-    invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTryActually;->registerListener()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->registerListener()V
 
     .line 74
     return-void
@@ -655,15 +655,15 @@
 
     .prologue
     .line 99
-    invoke-super {p0, p1}, Lcom/android/settings/motion/CommonTryActuallyActivity;->onWindowFocusChanged(Z)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->onWindowFocusChanged(Z)V
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mDoubletapAnimation:Landroid/graphics/drawable/AnimationDrawable;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mDoubletapAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     if-eqz v0, :cond_0
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTryActually;->mDoubletapAnimation:Landroid/graphics/drawable/AnimationDrawable;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->mDoubletapAnimation:Landroid/graphics/drawable/AnimationDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/AnimationDrawable;->start()V
 

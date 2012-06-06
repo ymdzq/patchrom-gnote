@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiAPITest$1;
+.class Lcom/android/OriginalSettings/wifi/WifiAPITest$1;
 .super Ljava/lang/Object;
 .source "WifiAPITest.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiAPITest;->onPreferenceClick(Landroid/preference/Preference;)Z
+    value = Lcom/android/OriginalSettings/wifi/WifiAPITest;->onPreferenceClick(Landroid/preference/Preference;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiAPITest;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiAPITest;
 
 .field final synthetic val$input:Landroid/widget/EditText;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiAPITest;Landroid/widget/EditText;)V
+.method constructor <init>(Lcom/android/OriginalSettings/wifi/WifiAPITest;Landroid/widget/EditText;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 111
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiAPITest$1;->this$0:Lcom/android/settings/wifi/WifiAPITest;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiAPITest$1;->this$0:Lcom/android/OriginalSettings/wifi/WifiAPITest;
 
-    iput-object p2, p0, Lcom/android/settings/wifi/WifiAPITest$1;->val$input:Landroid/widget/EditText;
+    iput-object p2, p0, Lcom/android/OriginalSettings/wifi/WifiAPITest$1;->val$input:Landroid/widget/EditText;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
 
     .prologue
     .line 113
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiAPITest$1;->val$input:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiAPITest$1;->val$input:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -58,7 +58,7 @@
     .line 115
     .local v1, value:Landroid/text/Editable;
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiAPITest$1;->this$0:Lcom/android/settings/wifi/WifiAPITest;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiAPITest$1;->this$0:Lcom/android/OriginalSettings/wifi/WifiAPITest;
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -68,21 +68,21 @@
 
     move-result v3
 
-    #setter for: Lcom/android/settings/wifi/WifiAPITest;->netid:I
-    invoke-static {v2, v3}, Lcom/android/settings/wifi/WifiAPITest;->access$002(Lcom/android/settings/wifi/WifiAPITest;I)I
+    #setter for: Lcom/android/OriginalSettings/wifi/WifiAPITest;->netid:I
+    invoke-static {v2, v3}, Lcom/android/OriginalSettings/wifi/WifiAPITest;->access$002(Lcom/android/OriginalSettings/wifi/WifiAPITest;I)I
 
     .line 116
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiAPITest$1;->this$0:Lcom/android/settings/wifi/WifiAPITest;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiAPITest$1;->this$0:Lcom/android/OriginalSettings/wifi/WifiAPITest;
 
-    #getter for: Lcom/android/settings/wifi/WifiAPITest;->mWifiManager:Landroid/net/wifi/WifiManager;
-    invoke-static {v2}, Lcom/android/settings/wifi/WifiAPITest;->access$100(Lcom/android/settings/wifi/WifiAPITest;)Landroid/net/wifi/WifiManager;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiAPITest;->mWifiManager:Landroid/net/wifi/WifiManager;
+    invoke-static {v2}, Lcom/android/OriginalSettings/wifi/WifiAPITest;->access$100(Lcom/android/OriginalSettings/wifi/WifiAPITest;)Landroid/net/wifi/WifiManager;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiAPITest$1;->this$0:Lcom/android/settings/wifi/WifiAPITest;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiAPITest$1;->this$0:Lcom/android/OriginalSettings/wifi/WifiAPITest;
 
-    #getter for: Lcom/android/settings/wifi/WifiAPITest;->netid:I
-    invoke-static {v3}, Lcom/android/settings/wifi/WifiAPITest;->access$000(Lcom/android/settings/wifi/WifiAPITest;)I
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiAPITest;->netid:I
+    invoke-static {v3}, Lcom/android/OriginalSettings/wifi/WifiAPITest;->access$000(Lcom/android/OriginalSettings/wifi/WifiAPITest;)I
 
     move-result v3
 

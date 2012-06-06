@@ -1,4 +1,4 @@
-.class Lcom/android/settings/RadioInfo$12;
+.class Lcom/android/OriginalSettings/RadioInfo$12;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RadioInfo;
+    value = Lcom/android/OriginalSettings/RadioInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RadioInfo;
+.field final synthetic this$0:Lcom/android/OriginalSettings/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/OriginalSettings/RadioInfo;)V
     .locals 0
     .parameter
 
     .prologue
     .line 865
-    iput-object p1, p0, Lcom/android/settings/RadioInfo$12;->this$0:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/OriginalSettings/RadioInfo$12;->this$0:Lcom/android/OriginalSettings/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,11 +45,11 @@
     const/4 v4, 0x1
 
     .line 867
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$12;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/OriginalSettings/RadioInfo$12;->this$0:Lcom/android/OriginalSettings/RadioInfo;
 
     const-string v3, "connectivity"
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/RadioInfo;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Lcom/android/OriginalSettings/RadioInfo;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -57,10 +57,10 @@
 
     .line 869
     .local v0, cm:Landroid/net/ConnectivityManager;
-    iget-object v2, p0, Lcom/android/settings/RadioInfo$12;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v2, p0, Lcom/android/OriginalSettings/RadioInfo$12;->this$0:Lcom/android/OriginalSettings/RadioInfo;
 
-    #getter for: Lcom/android/settings/RadioInfo;->mTelephonyManager:Landroid/telephony/TelephonyManager;
-    invoke-static {v2}, Lcom/android/settings/RadioInfo;->access$2900(Lcom/android/settings/RadioInfo;)Landroid/telephony/TelephonyManager;
+    #getter for: Lcom/android/OriginalSettings/RadioInfo;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    invoke-static {v2}, Lcom/android/OriginalSettings/RadioInfo;->access$2900(Lcom/android/OriginalSettings/RadioInfo;)Landroid/telephony/TelephonyManager;
 
     move-result-object v2
 

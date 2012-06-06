@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/RunningState$BaseItem;
+.class Lcom/android/OriginalSettings/applications/RunningState$BaseItem;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/RunningState;
+    value = Lcom/android/OriginalSettings/applications/RunningState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -50,7 +50,7 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 232
-    iput-boolean p1, p0, Lcom/android/settings/applications/RunningState$BaseItem;->mIsProcess:Z
+    iput-boolean p1, p0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mIsProcess:Z
 
     .line 233
     return-void

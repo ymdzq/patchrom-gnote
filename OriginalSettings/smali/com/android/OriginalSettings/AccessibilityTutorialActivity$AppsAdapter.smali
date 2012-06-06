@@ -1,11 +1,11 @@
-.class Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;
+.class Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "AccessibilityTutorialActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AccessibilityTutorialActivity;
+    value = Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -55,32 +55,32 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mIconSize:I
+    iput v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mIconSize:I
 
     .line 209
-    iput p3, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mTextViewResourceId:I
+    iput p3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mTextViewResourceId:I
 
     .line 210
-    new-instance v0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter$1;
+    new-instance v0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter$1;-><init>(Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter$1;-><init>(Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;)V
 
-    iput-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mDefaultHoverListener:Landroid/view/View$OnHoverListener;
+    iput-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mDefaultHoverListener:Landroid/view/View$OnHoverListener;
 
     .line 221
-    invoke-direct {p0}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->loadAllApps()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->loadAllApps()V
 
     .line 222
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;)Landroid/view/View$OnHoverListener;
+.method static synthetic access$200(Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;)Landroid/view/View$OnHoverListener;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 197
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;
 
     return-object v0
 .end method
@@ -105,7 +105,7 @@
     invoke-virtual {v1, v3}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 253
-    invoke-virtual {p0}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -123,7 +123,7 @@
 
     .line 256
     .local v0, apps:Ljava/util/List;,"Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
-    invoke-virtual {p0, v0}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->addAll(Ljava/util/Collection;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->addAll(Ljava/util/Collection;)V
 
     .line 257
     return-void
@@ -137,7 +137,7 @@
 
     .prologue
     .line 225
-    invoke-virtual {p0}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -147,7 +147,7 @@
 
     .line 226
     .local v1, packageManager:Landroid/content/pm/PackageManager;
-    invoke-virtual {p0, p1}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -172,7 +172,7 @@
     const/4 v8, 0x0
 
     .line 232
-    invoke-virtual {p0}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -188,7 +188,7 @@
 
     .line 234
     .local v5, view:Landroid/view/View;
-    iget-object v6, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mDefaultHoverListener:Landroid/view/View$OnHoverListener;
+    iget-object v6, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mDefaultHoverListener:Landroid/view/View$OnHoverListener;
 
     invoke-virtual {v5, v6}, Landroid/view/View;->setOnHoverListener(Landroid/view/View$OnHoverListener;)V
 
@@ -200,7 +200,7 @@
     invoke-virtual {v5, v6}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 237
-    invoke-virtual {p0, p1}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -220,7 +220,7 @@
 
     .line 240
     .local v1, icon:Landroid/graphics/drawable/Drawable;
-    iget v6, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mTextViewResourceId:I
+    iget v6, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mTextViewResourceId:I
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -230,14 +230,14 @@
 
     .line 242
     .local v4, text:Landroid/widget/TextView;
-    iget v6, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mIconSize:I
+    iget v6, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mIconSize:I
 
-    iget v7, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mIconSize:I
+    iget v7, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mIconSize:I
 
     invoke-virtual {v1, v8, v8, v6, v7}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 244
-    invoke-virtual {p0, v4, v2, v1}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->populateView(Landroid/widget/TextView;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v4, v2, v1}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->populateView(Landroid/widget/TextView;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
 
     .line 246
     return-object v5
@@ -268,7 +268,7 @@
 
     .prologue
     .line 265
-    iput-object p1, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;
+    iput-object p1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;
 
     .line 266
     return-void

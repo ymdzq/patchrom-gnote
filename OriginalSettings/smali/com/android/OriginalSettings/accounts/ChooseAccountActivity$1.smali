@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/ChooseAccountActivity$1;
+.class Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;
 .super Ljava/lang/Object;
 .source "ChooseAccountActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/accounts/ChooseAccountActivity;
+    value = Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,17 +28,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/ChooseAccountActivity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;)V
     .locals 0
     .parameter
 
     .prologue
     .line 87
-    iput-object p1, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,20 +77,20 @@
     invoke-virtual {v0}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
     .line 93
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    #getter for: Lcom/android/settings/accounts/ChooseAccountActivity;->mPendingIntent:Landroid/app/PendingIntent;
-    invoke-static {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->access$000(Lcom/android/settings/accounts/ChooseAccountActivity;)Landroid/app/PendingIntent;
+    #getter for: Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->mPendingIntent:Landroid/app/PendingIntent;
+    invoke-static {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->access$000(Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;)Landroid/app/PendingIntent;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
     .line 94
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    #getter for: Lcom/android/settings/accounts/ChooseAccountActivity;->mPendingIntent:Landroid/app/PendingIntent;
-    invoke-static {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->access$000(Lcom/android/settings/accounts/ChooseAccountActivity;)Landroid/app/PendingIntent;
+    #getter for: Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->mPendingIntent:Landroid/app/PendingIntent;
+    invoke-static {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->access$000(Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -137,22 +137,22 @@
 
     .line 106
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
     .line 107
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     .line 113
     .end local v0           #bundle:Landroid/os/Bundle;
@@ -163,10 +163,10 @@
     .line 109
     .restart local v0       #bundle:Landroid/os/Bundle;
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    #getter for: Lcom/android/settings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->access$100(Lcom/android/settings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
+    #getter for: Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->access$100(Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -177,9 +177,9 @@
     if-gt v2, v5, :cond_2
 
     .line 110
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     goto :goto_0
 
@@ -211,31 +211,31 @@
 
     .line 106
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v2
 
     if-eqz v2, :cond_5
 
     .line 107
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     goto :goto_0
 
     .line 109
     :cond_5
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    #getter for: Lcom/android/settings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->access$100(Lcom/android/settings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
+    #getter for: Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->access$100(Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -246,9 +246,9 @@
     if-gt v2, v5, :cond_2
 
     .line 110
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     goto :goto_0
 
@@ -296,31 +296,31 @@
 
     .line 106
     :cond_6
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v2
 
     if-eqz v2, :cond_7
 
     .line 107
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     goto :goto_0
 
     .line 109
     :cond_7
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    #getter for: Lcom/android/settings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->access$100(Lcom/android/settings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
+    #getter for: Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->access$100(Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -331,9 +331,9 @@
     if-gt v2, v5, :cond_2
 
     .line 110
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     goto/16 :goto_0
 
@@ -381,31 +381,31 @@
 
     .line 106
     :cond_8
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v2
 
     if-eqz v2, :cond_9
 
     .line 107
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     goto/16 :goto_0
 
     .line 109
     :cond_9
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    #getter for: Lcom/android/settings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->access$100(Lcom/android/settings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
+    #getter for: Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->access$100(Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -416,9 +416,9 @@
     if-gt v2, v5, :cond_2
 
     .line 110
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v2}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     goto/16 :goto_0
 
@@ -427,22 +427,22 @@
     :catchall_0
     move-exception v2
 
-    iget-object v3, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v3}, Lcom/android/settings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v3
 
     if-eqz v3, :cond_b
 
     .line 107
-    iget-object v3, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v3}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     .line 110
     :cond_a
@@ -451,10 +451,10 @@
 
     .line 109
     :cond_b
-    iget-object v3, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    #getter for: Lcom/android/settings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
-    invoke-static {v3}, Lcom/android/settings/accounts/ChooseAccountActivity;->access$100(Lcom/android/settings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
+    #getter for: Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->mProviderList:Ljava/util/ArrayList;
+    invoke-static {v3}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->access$100(Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;)Ljava/util/ArrayList;
 
     move-result-object v3
 
@@ -465,9 +465,9 @@
     if-gt v3, v5, :cond_a
 
     .line 110
-    iget-object v3, p0, Lcom/android/settings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/settings/accounts/ChooseAccountActivity;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity$1;->this$0:Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;
 
-    invoke-virtual {v3}, Lcom/android/settings/accounts/ChooseAccountActivity;->finish()V
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/accounts/ChooseAccountActivity;->finish()V
 
     goto :goto_1
 .end method

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/WallpaperTypeSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/WallpaperTypeSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "WallpaperTypeSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 30
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .line 42
     .local v2, intent:Landroid/content/Intent;
-    invoke-virtual {p0}, Lcom/android/settings/WallpaperTypeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/WallpaperTypeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v5
 
@@ -41,7 +41,7 @@
 
     .line 46
     .local v8, rList:Ljava/util/List;,"Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
-    invoke-virtual {p0}, Lcom/android/settings/WallpaperTypeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/WallpaperTypeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
@@ -74,7 +74,7 @@
     .local v1, info:Landroid/content/pm/ResolveInfo;
     new-instance v6, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/WallpaperTypeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/WallpaperTypeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v9
 
@@ -144,15 +144,15 @@
 
     .prologue
     .line 33
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 35
     const v0, 0x7f05004b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/WallpaperTypeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/WallpaperTypeSettings;->addPreferencesFromResource(I)V
 
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/WallpaperTypeSettings;->populateWallpaperTypes()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/WallpaperTypeSettings;->populateWallpaperTypes()V
 
     .line 37
     return-void

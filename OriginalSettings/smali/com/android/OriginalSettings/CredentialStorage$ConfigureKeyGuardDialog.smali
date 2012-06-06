@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CredentialStorage$ConfigureKeyGuardDialog;
+.class Lcom/android/OriginalSettings/CredentialStorage$ConfigureKeyGuardDialog;
 .super Ljava/lang/Object;
 .source "CredentialStorage.java"
 
@@ -9,7 +9,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CredentialStorage;
+    value = Lcom/android/OriginalSettings/CredentialStorage;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,17 +21,17 @@
 # instance fields
 .field private mConfigureConfirmed:Z
 
-.field final synthetic this$0:Lcom/android/settings/CredentialStorage;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/CredentialStorage;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/CredentialStorage;)V
     .locals 3
     .parameter
 
     .prologue
     .line 296
-    iput-object p1, p0, Lcom/android/settings/CredentialStorage$ConfigureKeyGuardDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CredentialStorage$ConfigureKeyGuardDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,14 +85,14 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/CredentialStorage;Lcom/android/settings/CredentialStorage$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/CredentialStorage;Lcom/android/OriginalSettings/CredentialStorage$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 291
-    invoke-direct {p0, p1}, Lcom/android/settings/CredentialStorage$ConfigureKeyGuardDialog;-><init>(Lcom/android/settings/CredentialStorage;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/CredentialStorage$ConfigureKeyGuardDialog;-><init>(Lcom/android/OriginalSettings/CredentialStorage;)V
 
     return-void
 .end method
@@ -113,7 +113,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/CredentialStorage$ConfigureKeyGuardDialog;->mConfigureConfirmed:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/CredentialStorage$ConfigureKeyGuardDialog;->mConfigureConfirmed:Z
 
     .line 310
     return-void
@@ -131,14 +131,14 @@
 
     .prologue
     .line 313
-    iget-boolean v1, p0, Lcom/android/settings/CredentialStorage$ConfigureKeyGuardDialog;->mConfigureConfirmed:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/CredentialStorage$ConfigureKeyGuardDialog;->mConfigureConfirmed:Z
 
     if-eqz v1, :cond_0
 
     .line 314
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/android/settings/CredentialStorage$ConfigureKeyGuardDialog;->mConfigureConfirmed:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/CredentialStorage$ConfigureKeyGuardDialog;->mConfigureConfirmed:Z
 
     .line 315
     new-instance v0, Landroid/content/Intent;
@@ -156,9 +156,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 318
-    iget-object v1, p0, Lcom/android/settings/CredentialStorage$ConfigureKeyGuardDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CredentialStorage$ConfigureKeyGuardDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/CredentialStorage;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/OriginalSettings/CredentialStorage;->startActivity(Landroid/content/Intent;)V
 
     .line 322
     .end local v0           #intent:Landroid/content/Intent;
@@ -167,9 +167,9 @@
 
     .line 321
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/CredentialStorage$ConfigureKeyGuardDialog;->this$0:Lcom/android/settings/CredentialStorage;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CredentialStorage$ConfigureKeyGuardDialog;->this$0:Lcom/android/OriginalSettings/CredentialStorage;
 
-    invoke-virtual {v1}, Lcom/android/settings/CredentialStorage;->finish()V
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/CredentialStorage;->finish()V
 
     goto :goto_0
 .end method

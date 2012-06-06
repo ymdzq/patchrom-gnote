@@ -1,5 +1,5 @@
-.class Lcom/android/settings/accounts/AccountPreferenceBase;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "AccountPreferenceBase.java"
 
 # interfaces
@@ -48,44 +48,44 @@
 
     .prologue
     .line 45
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 51
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
 
     .line 54
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mHandler:Landroid/os/Handler;
 
     .line 56
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
 
     .line 97
-    new-instance v0, Lcom/android/settings/accounts/AccountPreferenceBase$1;
+    new-instance v0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/accounts/AccountPreferenceBase$1;-><init>(Lcom/android/settings/accounts/AccountPreferenceBase;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase$1;-><init>(Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;)V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mSyncStatusObserver:Landroid/content/SyncStatusObserver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mSyncStatusObserver:Landroid/content/SyncStatusObserver;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/accounts/AccountPreferenceBase;)Landroid/os/Handler;
+.method static synthetic access$000(Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;)Landroid/os/Handler;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -102,7 +102,7 @@
 
     .line 179
     .local v4, prefs:Landroid/preference/PreferenceScreen;
-    iget-object v5, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
+    iget-object v5, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
 
     invoke-interface {v5, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -116,7 +116,7 @@
     .line 182
     .local v2, desc:Landroid/accounts/AuthenticatorDescription;
     :try_start_0
-    iget-object v5, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
+    iget-object v5, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
 
     invoke-interface {v5, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -136,7 +136,7 @@
     if-eqz v5, :cond_0
 
     .line 184
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -150,13 +150,13 @@
 
     .line 185
     .local v1, authContext:Landroid/content/Context;
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v5
 
     iget v6, v2, Landroid/accounts/AuthenticatorDescription;->accountPreferencesId:I
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v7
 
@@ -258,7 +258,7 @@
 
     .prologue
     .line 108
-    iget-object v5, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
 
     if-nez v5, :cond_2
 
@@ -267,7 +267,7 @@
 
     move-result-object v5
 
-    iput-object v5, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
+    iput-object v5, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
 
     .line 110
     invoke-static {}, Landroid/content/ContentResolver;->getSyncAdapterTypes()[Landroid/content/SyncAdapterType;
@@ -290,7 +290,7 @@
 
     .line 113
     .local v3, sa:Landroid/content/SyncAdapterType;
-    iget-object v5, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
 
     iget-object v6, v3, Landroid/content/SyncAdapterType;->accountType:Ljava/lang/String;
 
@@ -312,7 +312,7 @@
 
     .line 116
     .restart local v0       #authorities:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
-    iget-object v5, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
 
     iget-object v6, v3, Landroid/content/SyncAdapterType;->accountType:Ljava/lang/String;
 
@@ -385,7 +385,7 @@
     .end local v3           #sa:Landroid/content/SyncAdapterType;
     .end local v4           #syncAdapters:[Landroid/content/SyncAdapterType;
     :cond_2
-    iget-object v5, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAccountTypeToAuthorities:Ljava/util/HashMap;
 
     invoke-virtual {v5, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -406,7 +406,7 @@
 
     .line 135
     .local v3, icon:Landroid/graphics/drawable/Drawable;
-    iget-object v4, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
 
     invoke-interface {v4, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -416,7 +416,7 @@
 
     .line 137
     :try_start_0
-    iget-object v4, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
 
     invoke-interface {v4, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -426,7 +426,7 @@
 
     .line 138
     .local v1, desc:Landroid/accounts/AuthenticatorDescription;
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -532,7 +532,7 @@
 
     .line 158
     .local v3, label:Ljava/lang/CharSequence;
-    iget-object v4, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
 
     invoke-interface {v4, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -542,7 +542,7 @@
 
     .line 160
     :try_start_0
-    iget-object v4, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
 
     invoke-interface {v4, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -552,7 +552,7 @@
 
     .line 161
     .local v1, desc:Landroid/accounts/AuthenticatorDescription;
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -656,7 +656,7 @@
     .line 217
     iget-object v3, p1, Landroid/accounts/Account;->type:Ljava/lang/String;
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/accounts/AccountPreferenceBase;->getLabelForType(Ljava/lang/String;)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->getLabelForType(Ljava/lang/String;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -683,7 +683,7 @@
 
     .local v0, i:I
     :goto_1
-    sget-object v3, Lcom/android/settings/AccountTypes;->SAMSUNG_SOCIAL_HUB_ACCOUNTS:[Ljava/lang/String;
+    sget-object v3, Lcom/android/OriginalSettings/AccountTypes;->SAMSUNG_SOCIAL_HUB_ACCOUNTS:[Ljava/lang/String;
 
     array-length v3, v3
 
@@ -692,7 +692,7 @@
     .line 223
     iget-object v3, p1, Landroid/accounts/Account;->type:Ljava/lang/String;
 
-    sget-object v4, Lcom/android/settings/AccountTypes;->SAMSUNG_SOCIAL_HUB_ACCOUNTS:[Ljava/lang/String;
+    sget-object v4, Lcom/android/OriginalSettings/AccountTypes;->SAMSUNG_SOCIAL_HUB_ACCOUNTS:[Ljava/lang/String;
 
     aget-object v4, v4, v0
 
@@ -705,7 +705,7 @@
     .line 224
     const v3, 0x7f0b07c2
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/accounts/AccountPreferenceBase;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -757,10 +757,10 @@
 
     .prologue
     .line 92
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPause()V
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mStatusChangeListenerHandle:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mStatusChangeListenerHandle:Ljava/lang/Object;
 
     invoke-static {v0}, Landroid/content/ContentResolver;->removeStatusChangeListener(Ljava/lang/Object;)V
 
@@ -773,21 +773,21 @@
 
     .prologue
     .line 81
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 82
     const/16 v0, 0xd
 
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mSyncStatusObserver:Landroid/content/SyncStatusObserver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mSyncStatusObserver:Landroid/content/SyncStatusObserver;
 
     invoke-static {v0, v1}, Landroid/content/ContentResolver;->addStatusChangeListener(ILandroid/content/SyncStatusObserver;)Ljava/lang/Object;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mStatusChangeListenerHandle:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mStatusChangeListenerHandle:Ljava/lang/Object;
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->onSyncStateUpdated()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->onSyncStateUpdated()V
 
     .line 88
     return-void
@@ -806,7 +806,7 @@
 
     .prologue
     .line 202
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -818,29 +818,29 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAuthDescs:[Landroid/accounts/AuthenticatorDescription;
+    iput-object v1, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAuthDescs:[Landroid/accounts/AuthenticatorDescription;
 
     .line 203
     const/4 v0, 0x0
 
     .local v0, i:I
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAuthDescs:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v1, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAuthDescs:[Landroid/accounts/AuthenticatorDescription;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 204
-    iget-object v1, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
+    iget-object v1, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mTypeToAuthDescription:Ljava/util/Map;
 
-    iget-object v2, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAuthDescs:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v2, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAuthDescs:[Landroid/accounts/AuthenticatorDescription;
 
     aget-object v2, v2, v0
 
     iget-object v2, v2, Landroid/accounts/AuthenticatorDescription;->type:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAuthDescs:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->mAuthDescs:[Landroid/accounts/AuthenticatorDescription;
 
     aget-object v3, v3, v0
 
@@ -853,7 +853,7 @@
 
     .line 206
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->onAuthDescriptionsUpdated()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/accounts/AccountPreferenceBase;->onAuthDescriptionsUpdated()V
 
     .line 207
     return-void

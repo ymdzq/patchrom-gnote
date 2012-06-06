@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/bluetooth/DockEventReceiver;
+.class public final Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "DockEventReceiver.java"
 
@@ -19,7 +19,7 @@
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingServiceSync:Ljava/lang/Object;
+    sput-object v0, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->sStartingServiceSync:Ljava/lang/Object;
 
     return-void
 .end method
@@ -41,13 +41,13 @@
 
     .prologue
     .line 122
-    sget-object v2, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingServiceSync:Ljava/lang/Object;
+    sget-object v2, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->sStartingServiceSync:Ljava/lang/Object;
 
     monitor-enter v2
 
     .line 123
     :try_start_0
-    sget-object v1, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
+    sget-object v1, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
 
     if-nez v1, :cond_0
 
@@ -70,12 +70,12 @@
 
     move-result-object v1
 
-    sput-object v1, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
+    sput-object v1, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
 
     .line 129
     .end local v0           #pm:Landroid/os/PowerManager;
     :cond_0
-    sget-object v1, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
+    sget-object v1, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v1}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
@@ -118,13 +118,13 @@
 
     .prologue
     .line 142
-    sget-object v1, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingServiceSync:Ljava/lang/Object;
+    sget-object v1, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->sStartingServiceSync:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 143
     :try_start_0
-    sget-object v0, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
+    sget-object v0, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
 
     if-eqz v0, :cond_0
 
@@ -143,7 +143,7 @@
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 147
-    sget-object v0, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
+    sget-object v0, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->sStartingService:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
 
@@ -270,12 +270,12 @@
     invoke-direct {v0, p2}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
     .line 74
-    const-class v1, Lcom/android/settings/bluetooth/DockService;
+    const-class v1, Lcom/android/OriginalSettings/bluetooth/DockService;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 75
-    invoke-static {p1, v0}, Lcom/android/settings/bluetooth/DockEventReceiver;->beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {p1, v0}, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -340,12 +340,12 @@
     invoke-direct {v0, p2}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
     .line 103
-    const-class v1, Lcom/android/settings/bluetooth/DockService;
+    const-class v1, Lcom/android/OriginalSettings/bluetooth/DockService;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 104
-    invoke-static {p1, v0}, Lcom/android/settings/bluetooth/DockEventReceiver;->beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {p1, v0}, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -383,12 +383,12 @@
     invoke-direct {v0, p2}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
     .line 111
-    const-class v1, Lcom/android/settings/bluetooth/DockService;
+    const-class v1, Lcom/android/OriginalSettings/bluetooth/DockService;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 112
-    invoke-static {p1, v0}, Lcom/android/settings/bluetooth/DockEventReceiver;->beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {p1, v0}, Lcom/android/OriginalSettings/bluetooth/DockEventReceiver;->beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto/16 :goto_0
 

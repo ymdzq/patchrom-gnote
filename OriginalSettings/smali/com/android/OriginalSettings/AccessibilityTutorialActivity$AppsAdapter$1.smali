@@ -1,4 +1,4 @@
-.class Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter$1;
+.class Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter$1;
 .super Ljava/lang/Object;
 .source "AccessibilityTutorialActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;-><init>(Landroid/content/Context;II)V
+    value = Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;-><init>(Landroid/content/Context;II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;
+.field final synthetic this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;)V
+.method constructor <init>(Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;)V
     .locals 0
     .parameter
 
     .prologue
     .line 210
-    iput-object p1, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter$1;->this$0:Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;
+    iput-object p1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter$1;->this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,20 +44,20 @@
 
     .prologue
     .line 213
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter$1;->this$0:Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter$1;->this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;
 
-    #getter for: Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;
-    invoke-static {v0}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->access$200(Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;)Landroid/view/View$OnHoverListener;
+    #getter for: Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;
+    invoke-static {v0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->access$200(Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;)Landroid/view/View$OnHoverListener;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 214
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter$1;->this$0:Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter$1;->this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;
 
-    #getter for: Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;
-    invoke-static {v0}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;->access$200(Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;)Landroid/view/View$OnHoverListener;
+    #getter for: Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->mHoverListener:Landroid/view/View$OnHoverListener;
+    invoke-static {v0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;->access$200(Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;)Landroid/view/View$OnHoverListener;
 
     move-result-object v0
 

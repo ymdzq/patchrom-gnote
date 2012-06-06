@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/DoubleTapTryActually$3;
+.class Lcom/android/OriginalSettings/motion/DoubleTapTryActually$3;
 .super Ljava/lang/Object;
 .source "DoubleTapTryActually.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/DoubleTapTryActually;->createDialog(I)V
+    value = Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->createDialog(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/DoubleTapTryActually;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/DoubleTapTryActually;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/DoubleTapTryActually;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
     .locals 0
     .parameter
 
     .prologue
     .line 157
-    iput-object p1, p0, Lcom/android/settings/motion/DoubleTapTryActually$3;->this$0:Lcom/android/settings/motion/DoubleTapTryActually;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$3;->this$0:Lcom/android/OriginalSettings/motion/DoubleTapTryActually;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
 
     .prologue
     .line 159
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTryActually$3;->this$0:Lcom/android/settings/motion/DoubleTapTryActually;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapTryActually$3;->this$0:Lcom/android/OriginalSettings/motion/DoubleTapTryActually;
 
-    #calls: Lcom/android/settings/motion/DoubleTapTryActually;->finish_tutorial()V
-    invoke-static {v0}, Lcom/android/settings/motion/DoubleTapTryActually;->access$100(Lcom/android/settings/motion/DoubleTapTryActually;)V
+    #calls: Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->finish_tutorial()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/DoubleTapTryActually;->access$100(Lcom/android/OriginalSettings/motion/DoubleTapTryActually;)V
 
     .line 160
     return-void

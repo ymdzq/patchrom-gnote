@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/motion/TiltSensitivityPreference;
+.class public Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;
 .super Landroid/preference/SeekBarDialogPreference;
 .source "TiltSensitivityPreference.java"
 
@@ -32,7 +32,7 @@
     .line 31
     const/4 v0, 0x5
 
-    sput v0, Lcom/android/settings/motion/TiltSensitivityPreference;->mOldSensitivity:I
+    sput v0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mOldSensitivity:I
 
     return-void
 .end method
@@ -49,44 +49,44 @@
     .line 34
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mAfterTest:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mAfterTest:Z
 
     .line 35
     const/4 v0, -0x2
 
-    iput v0, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
 
     .line 39
-    iput-object p1, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mContext:Landroid/content/Context;
 
     .line 40
     const v0, 0x7f040078
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/TiltSensitivityPreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->setDialogLayoutResource(I)V
 
     .line 41
     return-void
 .end method
 
-.method static synthetic access$002(Lcom/android/settings/motion/TiltSensitivityPreference;I)I
+.method static synthetic access$002(Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;I)I
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 24
-    iput p1, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
+    iput p1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
 
     return p1
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/motion/TiltSensitivityPreference;)Landroid/widget/SeekBar;
+.method static synthetic access$100(Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;)Landroid/widget/SeekBar;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     return-object v0
 .end method
@@ -102,14 +102,14 @@
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onBindDialogView(Landroid/view/View;)V
 
     .line 60
-    invoke-static {p1}, Lcom/android/settings/motion/TiltSensitivityPreference;->getSeekBar(Landroid/view/View;)Landroid/widget/SeekBar;
+    invoke-static {p1}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->getSeekBar(Landroid/view/View;)Landroid/widget/SeekBar;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     const/16 v1, 0xa
 
@@ -124,7 +124,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSensitivityText:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSensitivityText:Landroid/widget/LinearLayout;
 
     .line 64
     return-void
@@ -163,7 +163,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 106
-    iput p2, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
+    iput p2, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
 
     .line 107
     return-void
@@ -181,7 +181,7 @@
     if-eqz p1, :cond_1
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -191,7 +191,7 @@
 
     const-string v1, "motion_zooming_sensitivity"
 
-    iget-object v2, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v2}, Landroid/widget/SeekBar;->getProgress()I
 
@@ -208,7 +208,7 @@
 
     .line 94
     :cond_1
-    iget v0, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
 
     const/4 v1, -0x3
 
@@ -227,7 +227,7 @@
 
     move-result-object v1
 
-    sget v2, Lcom/android/settings/motion/TiltSensitivityPreference;->mOldSensitivity:I
+    sget v2, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mOldSensitivity:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -240,7 +240,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 96
-    invoke-virtual {p0}, Lcom/android/settings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -250,7 +250,7 @@
 
     const-string v1, "motion_zooming_sensitivity"
 
-    sget v2, Lcom/android/settings/motion/TiltSensitivityPreference;->mOldSensitivity:I
+    sget v2, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mOldSensitivity:I
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
@@ -265,9 +265,9 @@
     .line 45
     const v0, 0x7f0b07dd
 
-    new-instance v1, Lcom/android/settings/motion/TiltSensitivityPreference$1;
+    new-instance v1, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/motion/TiltSensitivityPreference$1;-><init>(Lcom/android/settings/motion/TiltSensitivityPreference;)V
+    invoke-direct {v1, p0}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference$1;-><init>(Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;)V
 
     invoke-virtual {p1, v0, v1}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -313,7 +313,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v2}, Landroid/widget/SeekBar;->getProgress()I
 
@@ -330,7 +330,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 129
-    invoke-virtual {p0}, Lcom/android/settings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -340,7 +340,7 @@
 
     const-string v1, "motion_zooming_sensitivity"
 
-    iget-object v2, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v2}, Landroid/widget/SeekBar;->getProgress()I
 
@@ -371,10 +371,10 @@
     .local v0, currentUseMotion:I
     const/4 v1, -0x2
 
-    iput v1, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
+    iput v1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
 
     .line 71
-    iget-boolean v1, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mAfterTest:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mAfterTest:Z
 
     if-nez v1, :cond_0
 
@@ -386,7 +386,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 73
-    invoke-virtual {p0}, Lcom/android/settings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -400,12 +400,12 @@
 
     move-result v1
 
-    sput v1, Lcom/android/settings/motion/TiltSensitivityPreference;->mOldSensitivity:I
+    sput v1, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mOldSensitivity:I
 
     .line 75
-    iget-object v1, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
-    sget v2, Lcom/android/settings/motion/TiltSensitivityPreference;->mOldSensitivity:I
+    sget v2, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mOldSensitivity:I
 
     add-int/lit8 v2, v2, 0x0
 
@@ -413,7 +413,7 @@
 
     .line 83
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/motion/TiltSensitivityPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -425,10 +425,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mTest:Landroid/widget/Button;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mTest:Landroid/widget/Button;
 
     .line 84
-    iget-object v1, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
     invoke-virtual {v1, p0}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
@@ -446,12 +446,12 @@
     .line 78
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mAfterTest:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mAfterTest:Z
 
     .line 79
-    iget-object v1, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -479,12 +479,12 @@
     .line 110
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/motion/TiltSensitivityPreference;->mAfterTest:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mAfterTest:Z
 
     .line 111
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/TiltSensitivityPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->showDialog(Landroid/os/Bundle;)V
 
     .line 112
     return-void

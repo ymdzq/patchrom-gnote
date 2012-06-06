@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CryptKeeperConfirm$Blank$1;
+.class Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank$1;
 .super Ljava/lang/Object;
 .source "CryptKeeperConfirm.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/CryptKeeperConfirm$Blank;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeperConfirm$Blank;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeperConfirm$Blank;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank;)V
     .locals 0
     .parameter
 
     .prologue
     .line 67
-    iput-object p1, p0, Lcom/android/settings/CryptKeeperConfirm$Blank$1;->this$0:Lcom/android/settings/CryptKeeperConfirm$Blank;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank$1;->this$0:Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,9 +60,9 @@
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 72
-    iget-object v4, p0, Lcom/android/settings/CryptKeeperConfirm$Blank$1;->this$0:Lcom/android/settings/CryptKeeperConfirm$Blank;
+    iget-object v4, p0, Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank$1;->this$0:Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank;
 
-    invoke-virtual {v4}, Lcom/android/settings/CryptKeeperConfirm$Blank;->finish()V
+    invoke-virtual {v4}, Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank;->finish()V
 
     .line 87
     :goto_0
@@ -77,9 +77,9 @@
     .line 78
     .local v2, mountService:Landroid/os/storage/IMountService;
     :try_start_0
-    iget-object v4, p0, Lcom/android/settings/CryptKeeperConfirm$Blank$1;->this$0:Lcom/android/settings/CryptKeeperConfirm$Blank;
+    iget-object v4, p0, Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank$1;->this$0:Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank;
 
-    invoke-virtual {v4}, Lcom/android/settings/CryptKeeperConfirm$Blank;->getIntent()Landroid/content/Intent;
+    invoke-virtual {v4}, Lcom/android/OriginalSettings/CryptKeeperConfirm$Blank;->getIntent()Landroid/content/Intent;
 
     move-result-object v4
 

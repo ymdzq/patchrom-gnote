@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/AccountTypes;
+.class public final Lcom/android/OriginalSettings/AccountTypes;
 .super Ljava/lang/Object;
 .source "AccountTypes.java"
 
@@ -149,7 +149,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/AccountTypes;->SAMSUNG_SOCIAL_HUB_ACCOUNTS:[Ljava/lang/String;
+    sput-object v0, Lcom/android/OriginalSettings/AccountTypes;->SAMSUNG_SOCIAL_HUB_ACCOUNTS:[Ljava/lang/String;
 
     return-void
 .end method

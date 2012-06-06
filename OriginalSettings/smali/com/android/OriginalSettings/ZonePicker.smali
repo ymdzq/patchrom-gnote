@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ZonePicker;
+.class public Lcom/android/OriginalSettings/ZonePicker;
 .super Landroid/app/ListFragment;
 .source "ZonePicker.java"
 
@@ -6,8 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ZonePicker$MyComparator;,
-        Lcom/android/settings/ZonePicker$ZoneSelectionListener;
+        Lcom/android/OriginalSettings/ZonePicker$MyComparator;,
+        Lcom/android/OriginalSettings/ZonePicker$ZoneSelectionListener;
     }
 .end annotation
 
@@ -15,7 +15,7 @@
 # instance fields
 .field private mAlphabeticalAdapter:Landroid/widget/SimpleAdapter;
 
-.field private mListener:Lcom/android/settings/ZonePicker$ZoneSelectionListener;
+.field private mListener:Lcom/android/OriginalSettings/ZonePicker$ZoneSelectionListener;
 
 .field private mSortedByTimezone:Z
 
@@ -190,7 +190,7 @@
     .line 88
     const v0, 0x1090004
 
-    invoke-static {p0, p1, v0}, Lcom/android/settings/ZonePicker;->constructTimezoneAdapter(Landroid/content/Context;ZI)Landroid/widget/SimpleAdapter;
+    invoke-static {p0, p1, v0}, Lcom/android/OriginalSettings/ZonePicker;->constructTimezoneAdapter(Landroid/content/Context;ZI)Landroid/widget/SimpleAdapter;
 
     move-result-object v0
 
@@ -236,13 +236,13 @@
     .line 103
     .local v7, sortKey:Ljava/lang/String;
     :goto_0
-    new-instance v6, Lcom/android/settings/ZonePicker$MyComparator;
+    new-instance v6, Lcom/android/OriginalSettings/ZonePicker$MyComparator;
 
-    invoke-direct {v6, v7}, Lcom/android/settings/ZonePicker$MyComparator;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v7}, Lcom/android/OriginalSettings/ZonePicker$MyComparator;-><init>(Ljava/lang/String;)V
 
     .line 104
-    .local v6, comparator:Lcom/android/settings/ZonePicker$MyComparator;
-    invoke-static {p0}, Lcom/android/settings/ZonePicker;->getZones(Landroid/content/Context;)Ljava/util/List;
+    .local v6, comparator:Lcom/android/OriginalSettings/ZonePicker$MyComparator;
+    invoke-static {p0}, Lcom/android/OriginalSettings/ZonePicker;->getZones(Landroid/content/Context;)Ljava/util/List;
 
     move-result-object v2
 
@@ -266,7 +266,7 @@
     .line 102
     .end local v0           #adapter:Landroid/widget/SimpleAdapter;
     .end local v2           #sortedList:Ljava/util/List;,"Ljava/util/List<Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/Object;>;>;"
-    .end local v6           #comparator:Lcom/android/settings/ZonePicker$MyComparator;
+    .end local v6           #comparator:Lcom/android/OriginalSettings/ZonePicker$MyComparator;
     .end local v7           #sortKey:Ljava/lang/String;
     :cond_0
     const-string v7, "offset"
@@ -291,7 +291,7 @@
 
     .line 286
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/ZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -553,7 +553,7 @@
 
     .line 232
     .local v2, displayName:Ljava/lang/String;
-    invoke-static {v5, v3, v2, v0, v1}, Lcom/android/settings/ZonePicker;->addItem(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;J)V
+    invoke-static {v5, v3, v2, v0, v1}, Lcom/android/OriginalSettings/ZonePicker;->addItem(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;J)V
 
     .line 234
     .end local v2           #displayName:Ljava/lang/String;
@@ -640,22 +640,22 @@
     .line 204
     if-eqz p1, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/ZonePicker;->mTimezoneSortedAdapter:Landroid/widget/SimpleAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ZonePicker;->mTimezoneSortedAdapter:Landroid/widget/SimpleAdapter;
 
     .line 206
     .local v0, adapter:Landroid/widget/SimpleAdapter;
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/ZonePicker;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/ZonePicker;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 207
-    iput-boolean p1, p0, Lcom/android/settings/ZonePicker;->mSortedByTimezone:Z
+    iput-boolean p1, p0, Lcom/android/OriginalSettings/ZonePicker;->mSortedByTimezone:Z
 
     .line 208
     invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/android/settings/ZonePicker;->getTimeZoneIndex(Landroid/widget/SimpleAdapter;Ljava/util/TimeZone;)I
+    invoke-static {v0, v2}, Lcom/android/OriginalSettings/ZonePicker;->getTimeZoneIndex(Landroid/widget/SimpleAdapter;Ljava/util/TimeZone;)I
 
     move-result v1
 
@@ -664,7 +664,7 @@
     if-ltz v1, :cond_0
 
     .line 210
-    invoke-virtual {p0, v1}, Lcom/android/settings/ZonePicker;->setSelection(I)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/ZonePicker;->setSelection(I)V
 
     .line 212
     :cond_0
@@ -674,7 +674,7 @@
     .end local v0           #adapter:Landroid/widget/SimpleAdapter;
     .end local v1           #defaultIndex:I
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ZonePicker;->mAlphabeticalAdapter:Landroid/widget/SimpleAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ZonePicker;->mAlphabeticalAdapter:Landroid/widget/SimpleAdapter;
 
     goto :goto_0
 .end method
@@ -692,7 +692,7 @@
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/ZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -700,24 +700,24 @@
     .local v0, activity:Landroid/app/Activity;
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/ZonePicker;->constructTimezoneAdapter(Landroid/content/Context;Z)Landroid/widget/SimpleAdapter;
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/ZonePicker;->constructTimezoneAdapter(Landroid/content/Context;Z)Landroid/widget/SimpleAdapter;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/ZonePicker;->mTimezoneSortedAdapter:Landroid/widget/SimpleAdapter;
+    iput-object v1, p0, Lcom/android/OriginalSettings/ZonePicker;->mTimezoneSortedAdapter:Landroid/widget/SimpleAdapter;
 
     .line 155
-    invoke-static {v0, v2}, Lcom/android/settings/ZonePicker;->constructTimezoneAdapter(Landroid/content/Context;Z)Landroid/widget/SimpleAdapter;
+    invoke-static {v0, v2}, Lcom/android/OriginalSettings/ZonePicker;->constructTimezoneAdapter(Landroid/content/Context;Z)Landroid/widget/SimpleAdapter;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/ZonePicker;->mAlphabeticalAdapter:Landroid/widget/SimpleAdapter;
+    iput-object v1, p0, Lcom/android/OriginalSettings/ZonePicker;->mAlphabeticalAdapter:Landroid/widget/SimpleAdapter;
 
     .line 158
-    invoke-direct {p0, v2}, Lcom/android/settings/ZonePicker;->setSorting(Z)V
+    invoke-direct {p0, v2}, Lcom/android/OriginalSettings/ZonePicker;->setSorting(Z)V
 
     .line 159
-    invoke-virtual {p0, v2}, Lcom/android/settings/ZonePicker;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/ZonePicker;->setHasOptionsMenu(Z)V
 
     .line 160
     return-void
@@ -791,7 +791,7 @@
 
     .line 300
     .local v4, tzId:Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/ZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -807,14 +807,14 @@
 
     .line 304
     .local v1, alarm:Landroid/app/AlarmManager;
-    invoke-direct {p0}, Lcom/android/settings/ZonePicker;->getAutoState()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/ZonePicker;->getAutoState()Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
     .line 305
-    invoke-virtual {p0}, Lcom/android/settings/ZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -835,20 +835,20 @@
 
     .line 312
     .local v3, tz:Ljava/util/TimeZone;
-    iget-object v5, p0, Lcom/android/settings/ZonePicker;->mListener:Lcom/android/settings/ZonePicker$ZoneSelectionListener;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ZonePicker;->mListener:Lcom/android/OriginalSettings/ZonePicker$ZoneSelectionListener;
 
     if-eqz v5, :cond_1
 
     .line 313
-    iget-object v5, p0, Lcom/android/settings/ZonePicker;->mListener:Lcom/android/settings/ZonePicker$ZoneSelectionListener;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ZonePicker;->mListener:Lcom/android/OriginalSettings/ZonePicker$ZoneSelectionListener;
 
-    invoke-interface {v5, v3}, Lcom/android/settings/ZonePicker$ZoneSelectionListener;->onZoneSelected(Ljava/util/TimeZone;)V
+    invoke-interface {v5, v3}, Lcom/android/OriginalSettings/ZonePicker$ZoneSelectionListener;->onZoneSelected(Ljava/util/TimeZone;)V
 
     goto :goto_0
 
     .line 315
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/ZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -881,13 +881,13 @@
 
     .line 187
     :pswitch_0
-    invoke-direct {p0, v0}, Lcom/android/settings/ZonePicker;->setSorting(Z)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/ZonePicker;->setSorting(Z)V
 
     goto :goto_0
 
     .line 191
     :pswitch_1
-    invoke-direct {p0, v1}, Lcom/android/settings/ZonePicker;->setSorting(Z)V
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/ZonePicker;->setSorting(Z)V
 
     goto :goto_0
 
@@ -913,7 +913,7 @@
     const/4 v1, 0x1
 
     .line 173
-    iget-boolean v0, p0, Lcom/android/settings/ZonePicker;->mSortedByTimezone:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/ZonePicker;->mSortedByTimezone:Z
 
     if-eqz v0, :cond_0
 

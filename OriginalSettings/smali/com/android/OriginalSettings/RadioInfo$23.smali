@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/RadioInfo$23;
+.class synthetic Lcom/android/OriginalSettings/RadioInfo$23;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RadioInfo;
+    value = Lcom/android/OriginalSettings/RadioInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,10 +32,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/RadioInfo$23;->$SwitchMap$com$android$internal$telephony$Phone$State:[I
+    sput-object v0, Lcom/android/OriginalSettings/RadioInfo$23;->$SwitchMap$com$android$internal$telephony$Phone$State:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/RadioInfo$23;->$SwitchMap$com$android$internal$telephony$Phone$State:[I
+    sget-object v0, Lcom/android/OriginalSettings/RadioInfo$23;->$SwitchMap$com$android$internal$telephony$Phone$State:[I
 
     sget-object v1, Lcom/android/internal/telephony/Phone$State;->IDLE:Lcom/android/internal/telephony/Phone$State;
 
@@ -51,7 +51,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/RadioInfo$23;->$SwitchMap$com$android$internal$telephony$Phone$State:[I
+    sget-object v0, Lcom/android/OriginalSettings/RadioInfo$23;->$SwitchMap$com$android$internal$telephony$Phone$State:[I
 
     sget-object v1, Lcom/android/internal/telephony/Phone$State;->RINGING:Lcom/android/internal/telephony/Phone$State;
 
@@ -67,7 +67,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/RadioInfo$23;->$SwitchMap$com$android$internal$telephony$Phone$State:[I
+    sget-object v0, Lcom/android/OriginalSettings/RadioInfo$23;->$SwitchMap$com$android$internal$telephony$Phone$State:[I
 
     sget-object v1, Lcom/android/internal/telephony/Phone$State;->OFFHOOK:Lcom/android/internal/telephony/Phone$State;
 

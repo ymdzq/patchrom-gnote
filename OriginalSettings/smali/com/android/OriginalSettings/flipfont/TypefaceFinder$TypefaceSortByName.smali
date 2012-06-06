@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/flipfont/TypefaceFinder$TypefaceSortByName;
+.class public Lcom/android/OriginalSettings/flipfont/TypefaceFinder$TypefaceSortByName;
 .super Ljava/lang/Object;
 .source "TypefaceFinder.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/flipfont/TypefaceFinder;
+    value = Lcom/android/OriginalSettings/flipfont/TypefaceFinder;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,24 +21,24 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/flipfont/Typeface;",
+        "Lcom/android/OriginalSettings/flipfont/Typeface;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/flipfont/TypefaceFinder;
+.field final synthetic this$0:Lcom/android/OriginalSettings/flipfont/TypefaceFinder;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/flipfont/TypefaceFinder;)V
+.method public constructor <init>(Lcom/android/OriginalSettings/flipfont/TypefaceFinder;)V
     .locals 0
     .parameter
 
     .prologue
     .line 110
-    iput-object p1, p0, Lcom/android/settings/flipfont/TypefaceFinder$TypefaceSortByName;->this$0:Lcom/android/settings/flipfont/TypefaceFinder;
+    iput-object p1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceFinder$TypefaceSortByName;->this$0:Lcom/android/OriginalSettings/flipfont/TypefaceFinder;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,18 +47,18 @@
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/flipfont/Typeface;Lcom/android/settings/flipfont/Typeface;)I
+.method public compare(Lcom/android/OriginalSettings/flipfont/Typeface;Lcom/android/OriginalSettings/flipfont/Typeface;)I
     .locals 2
     .parameter "o1"
     .parameter "o2"
 
     .prologue
     .line 112
-    invoke-virtual {p1}, Lcom/android/settings/flipfont/Typeface;->getName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/OriginalSettings/flipfont/Typeface;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p2}, Lcom/android/settings/flipfont/Typeface;->getName()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/OriginalSettings/flipfont/Typeface;->getName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -76,13 +76,13 @@
 
     .prologue
     .line 110
-    check-cast p1, Lcom/android/settings/flipfont/Typeface;
+    check-cast p1, Lcom/android/OriginalSettings/flipfont/Typeface;
 
     .end local p1
-    check-cast p2, Lcom/android/settings/flipfont/Typeface;
+    check-cast p2, Lcom/android/OriginalSettings/flipfont/Typeface;
 
     .end local p2
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/flipfont/TypefaceFinder$TypefaceSortByName;->compare(Lcom/android/settings/flipfont/Typeface;Lcom/android/settings/flipfont/Typeface;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/OriginalSettings/flipfont/TypefaceFinder$TypefaceSortByName;->compare(Lcom/android/OriginalSettings/flipfont/Typeface;Lcom/android/OriginalSettings/flipfont/Typeface;)I
 
     move-result v0
 

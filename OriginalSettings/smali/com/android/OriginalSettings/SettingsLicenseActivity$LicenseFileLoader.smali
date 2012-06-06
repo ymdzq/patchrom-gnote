@@ -1,4 +1,4 @@
-.class Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;
+.class Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;
 .super Ljava/lang/Object;
 .source "SettingsLicenseActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/SettingsLicenseActivity;
+    value = Lcom/android/OriginalSettings/SettingsLicenseActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,11 +22,11 @@
 
 .field private mHandler:Landroid/os/Handler;
 
-.field final synthetic this$0:Lcom/android/settings/SettingsLicenseActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/SettingsLicenseActivity;Ljava/lang/String;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/android/OriginalSettings/SettingsLicenseActivity;Ljava/lang/String;Landroid/os/Handler;)V
     .locals 0
     .parameter
     .parameter "fileName"
@@ -34,15 +34,15 @@
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->this$0:Lcom/android/settings/SettingsLicenseActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 72
-    iput-object p2, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
 
     .line 73
-    iput-object p3, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mHandler:Landroid/os/Handler;
+    iput-object p3, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mHandler:Landroid/os/Handler;
 
     .line 74
     return-void
@@ -78,7 +78,7 @@
 
     .line 85
     .local v7, tmp:[C
-    iget-object v8, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
 
     const-string v9, ".gz"
 
@@ -95,7 +95,7 @@
 
     new-instance v9, Ljava/io/FileInputStream;
 
-    iget-object v10, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
+    iget-object v10, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
 
     invoke-direct {v9, v10}, Ljava/io/FileInputStream;-><init>(Ljava/lang/String;)V
 
@@ -150,7 +150,7 @@
 
     move-result-object v9
 
-    iget-object v10, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
+    iget-object v10, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -201,7 +201,7 @@
 
     move-result-object v9
 
-    iget-object v10, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
+    iget-object v10, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -224,7 +224,7 @@
 
     .line 116
     :cond_1
-    iget-object v8, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mHandler:Landroid/os/Handler;
+    iget-object v8, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mHandler:Landroid/os/Handler;
 
     const/4 v9, 0x0
 
@@ -245,7 +245,7 @@
 
     .line 120
     :cond_2
-    iget-object v8, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mHandler:Landroid/os/Handler;
+    iget-object v8, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v8, v4}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -259,7 +259,7 @@
     :try_start_3
     new-instance v3, Ljava/io/FileReader;
 
-    iget-object v8, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
 
     invoke-direct {v3, v8}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
     :try_end_3
@@ -315,7 +315,7 @@
 
     move-result-object v9
 
-    iget-object v10, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
+    iget-object v10, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$LicenseFileLoader;->mFileName:Ljava/lang/String;
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

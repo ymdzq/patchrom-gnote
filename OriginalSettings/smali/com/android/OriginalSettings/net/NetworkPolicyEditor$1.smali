@@ -1,11 +1,11 @@
-.class Lcom/android/settings/net/NetworkPolicyEditor$1;
+.class Lcom/android/OriginalSettings/net/NetworkPolicyEditor$1;
 .super Landroid/os/AsyncTask;
 .source "NetworkPolicyEditor.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/net/NetworkPolicyEditor;->writeAsync()V
+    value = Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->writeAsync()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,22 +26,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/net/NetworkPolicyEditor;
+.field final synthetic this$0:Lcom/android/OriginalSettings/net/NetworkPolicyEditor;
 
 .field final synthetic val$policies:[Landroid/net/NetworkPolicy;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/net/NetworkPolicyEditor;[Landroid/net/NetworkPolicy;)V
+.method constructor <init>(Lcom/android/OriginalSettings/net/NetworkPolicyEditor;[Landroid/net/NetworkPolicy;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 102
-    iput-object p1, p0, Lcom/android/settings/net/NetworkPolicyEditor$1;->this$0:Lcom/android/settings/net/NetworkPolicyEditor;
+    iput-object p1, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor$1;->this$0:Lcom/android/OriginalSettings/net/NetworkPolicyEditor;
 
-    iput-object p2, p0, Lcom/android/settings/net/NetworkPolicyEditor$1;->val$policies:[Landroid/net/NetworkPolicy;
+    iput-object p2, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor$1;->val$policies:[Landroid/net/NetworkPolicy;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -59,7 +59,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -72,11 +72,11 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/android/settings/net/NetworkPolicyEditor$1;->this$0:Lcom/android/settings/net/NetworkPolicyEditor;
+    iget-object v0, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor$1;->this$0:Lcom/android/OriginalSettings/net/NetworkPolicyEditor;
 
-    iget-object v1, p0, Lcom/android/settings/net/NetworkPolicyEditor$1;->val$policies:[Landroid/net/NetworkPolicy;
+    iget-object v1, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor$1;->val$policies:[Landroid/net/NetworkPolicy;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/net/NetworkPolicyEditor;->write([Landroid/net/NetworkPolicy;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->write([Landroid/net/NetworkPolicy;)V
 
     .line 106
     const/4 v0, 0x0

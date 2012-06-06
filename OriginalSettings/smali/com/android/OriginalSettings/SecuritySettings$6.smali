@@ -1,11 +1,11 @@
-.class Lcom/android/settings/SecuritySettings$6;
+.class Lcom/android/OriginalSettings/SecuritySettings$6;
 .super Landroid/content/BroadcastReceiver;
 .source "SecuritySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/SecuritySettings;
+    value = Lcom/android/OriginalSettings/SecuritySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SecuritySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SecuritySettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/SecuritySettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 854
-    iput-object p1, p0, Lcom/android/settings/SecuritySettings$6;->this$0:Lcom/android/settings/SecuritySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SecuritySettings$6;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,7 +41,7 @@
 
     .prologue
     .line 857
-    iget-object v0, p0, Lcom/android/settings/SecuritySettings$6;->this$0:Lcom/android/settings/SecuritySettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SecuritySettings$6;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
     const-string v1, "state"
 
@@ -51,8 +51,8 @@
 
     move-result v1
 
-    #calls: Lcom/android/settings/SecuritySettings;->updateSIMLockEnable(Z)V
-    invoke-static {v0, v1}, Lcom/android/settings/SecuritySettings;->access$300(Lcom/android/settings/SecuritySettings;Z)V
+    #calls: Lcom/android/OriginalSettings/SecuritySettings;->updateSIMLockEnable(Z)V
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/SecuritySettings;->access$300(Lcom/android/OriginalSettings/SecuritySettings;Z)V
 
     .line 858
     return-void

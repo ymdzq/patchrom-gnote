@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/customer_power_saving_title" android:key="battery_saving_mode"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:OriginalSettings="http://schemas.android.com/apk/res/com.android.OriginalSettings">
     <ListPreference android:entries="@array/psm_entries_new" android:title="@string/power_saving_mode_on_title" android:key="on_battery_level" android:defaultValue="30" android:entryValues="@array/psm_values_new" />
     <PreferenceCategory android:title="@string/power_saving_mode_setting" />
     <CheckBoxPreference android:title="@string/nonuse_wifi_title" android:key="disable_wifi" android:summary="@string/nonuse_wifi_summary" />

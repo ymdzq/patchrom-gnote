@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/CommonTryActuallyActivity$1;
+.class Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity$1;
 .super Ljava/lang/Object;
 .source "CommonTryActuallyActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/CommonTryActuallyActivity;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/CommonTryActuallyActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/CommonTryActuallyActivity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;)V
     .locals 0
     .parameter
 
     .prologue
     .line 19
-    iput-object p1, p0, Lcom/android/settings/motion/CommonTryActuallyActivity$1;->this$0:Lcom/android/settings/motion/CommonTryActuallyActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity$1;->this$0:Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,16 +43,16 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/android/settings/motion/CommonTryActuallyActivity$1;->this$0:Lcom/android/settings/motion/CommonTryActuallyActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity$1;->this$0:Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;
 
     const/16 v1, 0x64
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/motion/CommonTryActuallyActivity;->setResult(I)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->setResult(I)V
 
     .line 22
-    iget-object v0, p0, Lcom/android/settings/motion/CommonTryActuallyActivity$1;->this$0:Lcom/android/settings/motion/CommonTryActuallyActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity$1;->this$0:Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/motion/CommonTryActuallyActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->finish()V
 
     .line 23
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DataUsageSummary$ConfirmDataRoamingFragment$1;
+.class Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataRoamingFragment$1;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DataUsageSummary$ConfirmDataRoamingFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    value = Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataRoamingFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DataUsageSummary$ConfirmDataRoamingFragment;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataRoamingFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary$ConfirmDataRoamingFragment;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataRoamingFragment;)V
     .locals 0
     .parameter
 
     .prologue
     .line 1926
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$ConfirmDataRoamingFragment$1;->this$0:Lcom/android/settings/DataUsageSummary$ConfirmDataRoamingFragment;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataRoamingFragment$1;->this$0:Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataRoamingFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,23 +44,23 @@
 
     .prologue
     .line 1928
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$ConfirmDataRoamingFragment$1;->this$0:Lcom/android/settings/DataUsageSummary$ConfirmDataRoamingFragment;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataRoamingFragment$1;->this$0:Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataRoamingFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/DataUsageSummary$ConfirmDataRoamingFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/DataUsageSummary$ConfirmDataRoamingFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary;
+    check-cast v0, Lcom/android/OriginalSettings/DataUsageSummary;
 
     .line 1929
-    .local v0, target:Lcom/android/settings/DataUsageSummary;
+    .local v0, target:Lcom/android/OriginalSettings/DataUsageSummary;
     if-eqz v0, :cond_0
 
     .line 1930
     const/4 v1, 0x1
 
-    #calls: Lcom/android/settings/DataUsageSummary;->setDataRoaming(Z)V
-    invoke-static {v0, v1}, Lcom/android/settings/DataUsageSummary;->access$3300(Lcom/android/settings/DataUsageSummary;Z)V
+    #calls: Lcom/android/OriginalSettings/DataUsageSummary;->setDataRoaming(Z)V
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/DataUsageSummary;->access$3300(Lcom/android/OriginalSettings/DataUsageSummary;Z)V
 
     .line 1932
     :cond_0

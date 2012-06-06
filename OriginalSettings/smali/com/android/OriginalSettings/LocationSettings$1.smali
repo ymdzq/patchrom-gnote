@@ -1,4 +1,4 @@
-.class Lcom/android/settings/LocationSettings$1;
+.class Lcom/android/OriginalSettings/LocationSettings$1;
 .super Ljava/lang/Object;
 .source "LocationSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/LocationSettings;->onResume()V
+    value = Lcom/android/OriginalSettings/LocationSettings;->onResume()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/LocationSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/LocationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/LocationSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/LocationSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 187
-    iput-object p1, p0, Lcom/android/settings/LocationSettings$1;->this$0:Lcom/android/settings/LocationSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/LocationSettings$1;->this$0:Lcom/android/OriginalSettings/LocationSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Lcom/android/settings/LocationSettings$1;->this$0:Lcom/android/settings/LocationSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LocationSettings$1;->this$0:Lcom/android/OriginalSettings/LocationSettings;
 
-    #calls: Lcom/android/settings/LocationSettings;->updateLocationToggles()V
-    invoke-static {v0}, Lcom/android/settings/LocationSettings;->access$000(Lcom/android/settings/LocationSettings;)V
+    #calls: Lcom/android/OriginalSettings/LocationSettings;->updateLocationToggles()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/LocationSettings;->access$000(Lcom/android/OriginalSettings/LocationSettings;)V
 
     .line 190
     return-void

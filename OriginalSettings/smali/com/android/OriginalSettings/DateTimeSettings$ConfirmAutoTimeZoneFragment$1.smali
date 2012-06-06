@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;
+.class Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;
 .super Ljava/lang/Object;
 .source "DateTimeSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
+    value = Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment;->onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment;
 
 .field final synthetic val$context:Landroid/content/Context;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment;Landroid/content/Context;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 687
-    iput-object p1, p0, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->this$0:Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->this$0:Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment;
 
-    iput-object p2, p0, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->val$context:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->val$context:Landroid/content/Context;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,17 +51,17 @@
     .line 693
     new-instance v0, Landroid/app/ProgressDialog;
 
-    iget-object v4, p0, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->val$context:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->val$context:Landroid/content/Context;
 
     invoke-direct {v0, v4}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
     .line 694
     .local v0, progressDialog:Landroid/app/ProgressDialog;
-    iget-object v4, p0, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->this$0:Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment;
+    iget-object v4, p0, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->this$0:Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment;
 
     const v5, 0x7f0b0887
 
-    invoke-virtual {v4, v5}, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {v4, v5}, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -119,9 +119,9 @@
 
     .line 707
     .local v1, rebootHandler:Landroid/os/Handler;
-    new-instance v4, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;
+    new-instance v4, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;-><init>(Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;)V
+    invoke-direct {v4, p0}, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;-><init>(Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;)V
 
     const-wide/16 v5, 0x5dc
 

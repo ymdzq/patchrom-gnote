@@ -1,11 +1,11 @@
-.class Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;
+.class Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;
 .super Landroid/widget/BaseAdapter;
 .source "TrustedCredentialsSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/TrustedCredentialsSettings;
+    value = Lcom/android/OriginalSettings/TrustedCredentialsSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;
+        Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;
     }
 .end annotation
 
@@ -26,26 +26,26 @@
         value = {
             "Ljava/util/List",
             "<",
-            "Lcom/android/settings/TrustedCredentialsSettings$CertHolder;",
+            "Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final mTab:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.field private final mTab:Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;
 
-.field final synthetic this$0:Lcom/android/settings/TrustedCredentialsSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/TrustedCredentialsSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$Tab;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/TrustedCredentialsSettings;Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;)V
     .locals 1
     .parameter
     .parameter "tab"
 
     .prologue
     .line 178
-    iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->this$0:Lcom/android/OriginalSettings/TrustedCredentialsSettings;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -54,19 +54,19 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
 
     .line 179
-    iput-object p2, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mTab:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    iput-object p2, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mTab:Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;
 
     .line 180
-    invoke-direct {p0}, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->load()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->load()V
 
     .line 181
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/TrustedCredentialsSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/TrustedCredentialsSettings;Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;Lcom/android/OriginalSettings/TrustedCredentialsSettings$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -74,40 +74,40 @@
 
     .prologue
     .line 175
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;-><init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$Tab;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;-><init>(Lcom/android/OriginalSettings/TrustedCredentialsSettings;Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;)V
 
     return-void
 .end method
 
-.method static synthetic access$2100(Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.method static synthetic access$2100(Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;)Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mTab:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mTab:Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;)Ljava/util/List;
+.method static synthetic access$300(Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;)Ljava/util/List;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;)V
+.method static synthetic access$400(Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 175
-    invoke-direct {p0}, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->load()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->load()V
 
     return-void
 .end method
@@ -117,17 +117,17 @@
 
     .prologue
     .line 183
-    new-instance v0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;
+    new-instance v0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;-><init>(Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;Lcom/android/settings/TrustedCredentialsSettings$1;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;-><init>(Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;Lcom/android/OriginalSettings/TrustedCredentialsSettings$1;)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 184
     return-void
@@ -140,7 +140,7 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -149,19 +149,19 @@
     return v0
 .end method
 
-.method public getItem(I)Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+.method public getItem(I)Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;
     .locals 1
     .parameter "position"
 
     .prologue
     .line 189
-    iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    check-cast v0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;
 
     return-object v0
 .end method
@@ -172,7 +172,7 @@
 
     .prologue
     .line 175
-    invoke-virtual {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->getItem(I)Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->getItem(I)Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;
 
     move-result-object v0
 
@@ -203,9 +203,9 @@
     if-nez p2, :cond_1
 
     .line 197
-    iget-object v3, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->this$0:Lcom/android/OriginalSettings/TrustedCredentialsSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -222,14 +222,14 @@
     move-result-object p2
 
     .line 199
-    new-instance v1, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
+    new-instance v1, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;
 
     const/4 v3, 0x0
 
-    invoke-direct {v1, v3}, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;-><init>(Lcom/android/settings/TrustedCredentialsSettings$1;)V
+    invoke-direct {v1, v3}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;-><init>(Lcom/android/OriginalSettings/TrustedCredentialsSettings$1;)V
 
     .line 200
-    .local v1, holder:Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
+    .local v1, holder:Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;
     const v3, 0x7f0801fe
 
     invoke-virtual {p2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -238,8 +238,8 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    #setter for: Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mSubjectPrimaryView:Landroid/widget/TextView;
-    invoke-static {v1, v3}, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->access$1402(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
+    #setter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->mSubjectPrimaryView:Landroid/widget/TextView;
+    invoke-static {v1, v3}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->access$1402(Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     .line 202
     const v3, 0x7f0801ff
@@ -250,8 +250,8 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    #setter for: Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mSubjectSecondaryView:Landroid/widget/TextView;
-    invoke-static {v1, v3}, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->access$1502(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
+    #setter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->mSubjectSecondaryView:Landroid/widget/TextView;
+    invoke-static {v1, v3}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->access$1502(Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
 
     .line 204
     const v3, 0x7f080200
@@ -262,8 +262,8 @@
 
     check-cast v3, Landroid/widget/CheckBox;
 
-    #setter for: Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Landroid/widget/CheckBox;
-    invoke-static {v1, v3}, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->access$1602(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;Landroid/widget/CheckBox;)Landroid/widget/CheckBox;
+    #setter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Landroid/widget/CheckBox;
+    invoke-static {v1, v3}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->access$1602(Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;Landroid/widget/CheckBox;)Landroid/widget/CheckBox;
 
     .line 205
     invoke-virtual {p2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -271,59 +271,59 @@
     .line 209
     .end local v2           #inflater:Landroid/view/LayoutInflater;
     :goto_0
-    iget-object v3, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mCertHolders:Ljava/util/List;
 
     invoke-interface {v3, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    check-cast v0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;
 
     .line 210
-    .local v0, certHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
-    #getter for: Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mSubjectPrimaryView:Landroid/widget/TextView;
-    invoke-static {v1}, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->access$1400(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/TextView;
+    .local v0, certHolder:Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;
+    #getter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->mSubjectPrimaryView:Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->access$1400(Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
 
-    #getter for: Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mSubjectPrimary:Ljava/lang/String;
-    invoke-static {v0}, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->access$1700(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)Ljava/lang/String;
+    #getter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;->mSubjectPrimary:Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;->access$1700(Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;)Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 211
-    #getter for: Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mSubjectSecondaryView:Landroid/widget/TextView;
-    invoke-static {v1}, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->access$1500(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/TextView;
+    #getter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->mSubjectSecondaryView:Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->access$1500(Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/TextView;
 
     move-result-object v3
 
-    #getter for: Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mSubjectSecondary:Ljava/lang/String;
-    invoke-static {v0}, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->access$1800(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)Ljava/lang/String;
+    #getter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;->mSubjectSecondary:Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;->access$1800(Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;)Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 212
-    iget-object v3, p0, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mTab:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    iget-object v3, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->mTab:Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;
 
-    #getter for: Lcom/android/settings/TrustedCredentialsSettings$Tab;->mCheckbox:Z
-    invoke-static {v3}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->access$1900(Lcom/android/settings/TrustedCredentialsSettings$Tab;)Z
+    #getter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;->mCheckbox:Z
+    invoke-static {v3}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;->access$1900(Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
     .line 213
-    #getter for: Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Landroid/widget/CheckBox;
-    invoke-static {v1}, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->access$1600(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/CheckBox;
+    #getter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Landroid/widget/CheckBox;
+    invoke-static {v1}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->access$1600(Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v5
 
-    #getter for: Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->mDeleted:Z
-    invoke-static {v0}, Lcom/android/settings/TrustedCredentialsSettings$CertHolder;->access$000(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)Z
+    #getter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;->mDeleted:Z
+    invoke-static {v0}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;->access$000(Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;)Z
 
     move-result v3
 
@@ -335,8 +335,8 @@
     invoke-virtual {v5, v3}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 214
-    #getter for: Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Landroid/widget/CheckBox;
-    invoke-static {v1}, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->access$1600(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/CheckBox;
+    #getter for: Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Landroid/widget/CheckBox;
+    invoke-static {v1}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;->access$1600(Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/CheckBox;
 
     move-result-object v3
 
@@ -347,19 +347,19 @@
     return-object p2
 
     .line 207
-    .end local v0           #certHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
-    .end local v1           #holder:Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
+    .end local v0           #certHolder:Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;
+    .end local v1           #holder:Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;
     :cond_1
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
+    check-cast v1, Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;
 
-    .restart local v1       #holder:Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
+    .restart local v1       #holder:Lcom/android/OriginalSettings/TrustedCredentialsSettings$ViewHolder;
     goto :goto_0
 
-    .restart local v0       #certHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    .restart local v0       #certHolder:Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;
     :cond_2
     move v3, v4
 

@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;
+.class public final Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothNotiBroadcastReceiver.java"
 
@@ -17,12 +17,12 @@
     .line 38
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->quickPanelOn:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->quickPanelOn:Z
 
     .line 42
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
+    sput-object v0, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
 
     return-void
 .end method
@@ -42,12 +42,12 @@
 
     .prologue
     .line 96
-    sget-object v0, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
+    sget-object v0, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
 
     if-eqz v0, :cond_0
 
     .line 98
-    sget-object v0, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
+    sget-object v0, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
 
     const v1, 0x1080080
 
@@ -56,7 +56,7 @@
     .line 99
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
+    sput-object v0, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
 
     .line 101
     :cond_0
@@ -148,10 +148,10 @@
 
     check-cast v3, Landroid/app/NotificationManager;
 
-    sput-object v3, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
+    sput-object v3, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
 
     .line 91
-    sget-object v3, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
+    sget-object v3, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->mNotiManager:Landroid/app/NotificationManager;
 
     const v4, 0x1080080
 
@@ -198,7 +198,7 @@
     .line 52
     const/4 v2, 0x1
 
-    sput-boolean v2, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->quickPanelOn:Z
+    sput-boolean v2, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->quickPanelOn:Z
 
     .line 74
     :cond_0
@@ -227,7 +227,7 @@
     if-ne v5, v1, :cond_0
 
     .line 57
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->destroyNotification()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->destroyNotification()V
 
     goto :goto_0
 
@@ -243,7 +243,7 @@
     if-eqz v2, :cond_3
 
     .line 60
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->destroyNotification()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->destroyNotification()V
 
     goto :goto_0
 
@@ -271,7 +271,7 @@
     if-ne v2, v1, :cond_4
 
     .line 65
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->destroyNotification()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->destroyNotification()V
 
     goto :goto_0
 
@@ -280,17 +280,17 @@
     if-ne v5, v1, :cond_0
 
     .line 67
-    sget-boolean v2, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->quickPanelOn:Z
+    sget-boolean v2, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->quickPanelOn:Z
 
     if-eqz v2, :cond_0
 
     .line 68
     const/4 v2, 0x0
 
-    sput-boolean v2, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->quickPanelOn:Z
+    sput-boolean v2, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->quickPanelOn:Z
 
     .line 69
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/BluetoothNotiBroadcastReceiver;->displayNotification(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/bluetooth/BluetoothNotiBroadcastReceiver;->displayNotification(Landroid/content/Context;)V
 
     goto :goto_0
 .end method

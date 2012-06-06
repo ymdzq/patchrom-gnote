@@ -1,11 +1,11 @@
-.class Lcom/android/settings/CryptKeeper$2;
+.class Lcom/android/OriginalSettings/CryptKeeper$2;
 .super Landroid/telephony/PhoneStateListener;
 .source "CryptKeeper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/CryptKeeper;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/CryptKeeper;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CryptKeeper;)V
     .locals 0
     .parameter
 
     .prologue
     .line 285
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$2;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CryptKeeper$2;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
@@ -64,10 +64,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 288
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$2;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptKeeper$2;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
-    #calls: Lcom/android/settings/CryptKeeper;->updateEmergencyCallButtonState()V
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->access$900(Lcom/android/settings/CryptKeeper;)V
+    #calls: Lcom/android/OriginalSettings/CryptKeeper;->updateEmergencyCallButtonState()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/CryptKeeper;->access$900(Lcom/android/OriginalSettings/CryptKeeper;)V
 
     .line 289
     return-void

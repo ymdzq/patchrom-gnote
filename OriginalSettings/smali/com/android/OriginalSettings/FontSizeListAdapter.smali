@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/FontSizeListAdapter;
+.class public Lcom/android/OriginalSettings/FontSizeListAdapter;
 .super Landroid/widget/BaseAdapter;
 .source "FontSizeListAdapter.java"
 
@@ -25,27 +25,27 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 40
-    iput-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->context:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->context:Landroid/content/Context;
 
     .line 43
-    iput-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 45
     new-instance v0, Ljava/util/Vector;
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
 
     .line 46
     new-instance v0, Ljava/util/Vector;
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
+    iput-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
 
     .line 59
-    iput-object p1, p0, Lcom/android/settings/FontSizeListAdapter;->context:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->context:Landroid/content/Context;
 
     .line 60
     const-string v0, "layout_inflater"
@@ -56,10 +56,10 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -74,14 +74,14 @@
     invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
 
     const-string v1, "4"
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -96,14 +96,14 @@
     invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
 
     const-string v1, "3"
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -118,14 +118,14 @@
     invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
 
     const-string v1, "2"
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -140,14 +140,14 @@
     invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
 
     const-string v1, "1"
 
     invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -162,7 +162,7 @@
     invoke-virtual {v0, v1}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeIndexes:Ljava/util/Vector;
 
     const-string v1, "0"
 
@@ -179,7 +179,7 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
 
     invoke-virtual {v0}, Ljava/util/Vector;->size()I
 
@@ -194,7 +194,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/android/settings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mFontSizeNames:Ljava/util/Vector;
 
     invoke-virtual {v0, p1}, Ljava/util/Vector;->elementAt(I)Ljava/lang/Object;
 
@@ -225,7 +225,7 @@
     if-nez p2, :cond_0
 
     .line 105
-    iget-object v6, p0, Lcom/android/settings/FontSizeListAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v6, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v7, 0x109000f
 
@@ -245,7 +245,7 @@
     invoke-virtual {v4, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 112
-    iget-object v6, p0, Lcom/android/settings/FontSizeListAdapter;->context:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->context:Landroid/content/Context;
 
     const-string v7, "window"
 
@@ -278,7 +278,7 @@
 
     .line 138
     :pswitch_0
-    iget-object v6, p0, Lcom/android/settings/FontSizeListAdapter;->context:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -340,7 +340,7 @@
     .restart local v2       #metrics:Landroid/util/DisplayMetrics;
     .restart local v5       #wm:Landroid/view/WindowManager;
     :pswitch_1
-    iget-object v6, p0, Lcom/android/settings/FontSizeListAdapter;->context:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -364,7 +364,7 @@
     .line 125
     .end local v1           #mFontsize:F
     :pswitch_2
-    iget-object v6, p0, Lcom/android/settings/FontSizeListAdapter;->context:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -388,7 +388,7 @@
     .line 129
     .end local v1           #mFontsize:F
     :pswitch_3
-    iget-object v6, p0, Lcom/android/settings/FontSizeListAdapter;->context:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -412,7 +412,7 @@
     .line 133
     .end local v1           #mFontsize:F
     :pswitch_4
-    iget-object v6, p0, Lcom/android/settings/FontSizeListAdapter;->context:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/FontSizeListAdapter;->context:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

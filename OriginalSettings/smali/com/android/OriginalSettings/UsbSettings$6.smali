@@ -1,4 +1,4 @@
-.class Lcom/android/settings/UsbSettings$6;
+.class Lcom/android/OriginalSettings/UsbSettings$6;
 .super Ljava/lang/Object;
 .source "UsbSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/UsbSettings;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/android/OriginalSettings/UsbSettings;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/UsbSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/UsbSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UsbSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/UsbSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 275
-    iput-object p1, p0, Lcom/android/settings/UsbSettings$6;->this$0:Lcom/android/settings/UsbSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/UsbSettings$6;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,15 +44,15 @@
 
     .prologue
     .line 277
-    iget-object v0, p0, Lcom/android/settings/UsbSettings$6;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings$6;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    #calls: Lcom/android/settings/UsbSettings;->setDefaultMode()V
-    invoke-static {v0}, Lcom/android/settings/UsbSettings;->access$500(Lcom/android/settings/UsbSettings;)V
+    #calls: Lcom/android/OriginalSettings/UsbSettings;->setDefaultMode()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/UsbSettings;->access$500(Lcom/android/OriginalSettings/UsbSettings;)V
 
     .line 279
-    iget-object v0, p0, Lcom/android/settings/UsbSettings$6;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings$6;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

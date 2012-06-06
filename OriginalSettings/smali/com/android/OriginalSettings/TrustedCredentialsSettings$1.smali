@@ -1,4 +1,4 @@
-.class Lcom/android/settings/TrustedCredentialsSettings$1;
+.class Lcom/android/OriginalSettings/TrustedCredentialsSettings$1;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/TrustedCredentialsSettings;->addTab(Lcom/android/settings/TrustedCredentialsSettings$Tab;)V
+    value = Lcom/android/OriginalSettings/TrustedCredentialsSettings;->addTab(Lcom/android/OriginalSettings/TrustedCredentialsSettings$Tab;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/TrustedCredentialsSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/TrustedCredentialsSettings;
 
-.field final synthetic val$adapter:Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;
+.field final synthetic val$adapter:Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;)V
+.method constructor <init>(Lcom/android/OriginalSettings/TrustedCredentialsSettings;Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 168
-    iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$1;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$1;->this$0:Lcom/android/OriginalSettings/TrustedCredentialsSettings;
 
-    iput-object p2, p0, Lcom/android/settings/TrustedCredentialsSettings$1;->val$adapter:Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;
+    iput-object p2, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$1;->val$adapter:Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,16 +61,16 @@
     .prologue
     .line 170
     .local p1, parent:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
-    iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$1;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$1;->this$0:Lcom/android/OriginalSettings/TrustedCredentialsSettings;
 
-    iget-object v1, p0, Lcom/android/settings/TrustedCredentialsSettings$1;->val$adapter:Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$1;->val$adapter:Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;
 
-    invoke-virtual {v1, p3}, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;->getItem(I)Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    invoke-virtual {v1, p3}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$TrustedCertificateAdapter;->getItem(I)Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;
 
     move-result-object v1
 
-    #calls: Lcom/android/settings/TrustedCredentialsSettings;->showCertDialog(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
-    invoke-static {v0, v1}, Lcom/android/settings/TrustedCredentialsSettings;->access$1100(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
+    #calls: Lcom/android/OriginalSettings/TrustedCredentialsSettings;->showCertDialog(Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;)V
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/TrustedCredentialsSettings;->access$1100(Lcom/android/OriginalSettings/TrustedCredentialsSettings;Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;)V
 
     .line 171
     return-void

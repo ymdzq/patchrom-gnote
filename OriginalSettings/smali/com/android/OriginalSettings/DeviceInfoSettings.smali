@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/DeviceInfoSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/DeviceInfoSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "DeviceInfoSettings.java"
 
 
@@ -13,14 +13,14 @@
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 80
     const/4 v0, 0x3
 
     new-array v0, v0, [J
 
-    iput-object v0, p0, Lcom/android/settings/DeviceInfoSettings;->mHits:[J
+    iput-object v0, p0, Lcom/android/OriginalSettings/DeviceInfoSettings;->mHits:[J
 
     return-void
 .end method
@@ -35,7 +35,7 @@
     :try_start_0
     const-string v5, "/proc/version"
 
-    invoke-direct {p0, v5}, Lcom/android/settings/DeviceInfoSettings;->readLine(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v5}, Lcom/android/OriginalSettings/DeviceInfoSettings;->readLine(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -247,7 +247,7 @@
     :try_start_0
     const-string v1, "/sys/board_properties/soc/msv"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/DeviceInfoSettings;->readLine(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/DeviceInfoSettings;->readLine(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -302,7 +302,7 @@
     const/4 v2, 0x0
 
     .line 376
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -434,7 +434,7 @@
     .local v0, updateType:I
     const-string v1, "com.sec.android.fotaclient"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/DeviceInfoSettings;->isPackageLoaded(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/DeviceInfoSettings;->isPackageLoaded(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -477,7 +477,7 @@
 
     .line 214
     :try_start_0
-    invoke-virtual {p0, p2}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p2}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -548,13 +548,13 @@
     if-eq p1, v3, :cond_0
 
     .line 358
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v1, "software_update_settings"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -567,13 +567,13 @@
     if-eq p1, v0, :cond_1
 
     .line 361
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v1, "system_update_settings_na_gsm"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -584,13 +584,13 @@
     if-eqz p1, :cond_2
 
     .line 364
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v1, "system_update_settings"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -602,17 +602,17 @@
 
     .line 366
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     const-string v2, "system_update_settings"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, v3}, Lcom/android/OriginalSettings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     goto :goto_0
 .end method
@@ -625,7 +625,7 @@
     .prologue
     .line 224
     :try_start_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -643,11 +643,11 @@
 
     .line 226
     .local v0, e:Ljava/lang/RuntimeException;
-    invoke-virtual {p0, p1}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -670,11 +670,11 @@
     .prologue
     .line 233
     :try_start_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -713,15 +713,15 @@
     const/4 v8, 0x1
 
     .line 84
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 86
     const v5, 0x7f05000e
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/DeviceInfoSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/DeviceInfoSettings;->addPreferencesFromResource(I)V
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v4
 
@@ -731,12 +731,12 @@
 
     sget-object v6, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
-    invoke-direct {p0, v5, v6}, Lcom/android/settings/DeviceInfoSettings;->setStringSummary(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v5, v6}, Lcom/android/OriginalSettings/DeviceInfoSettings;->setStringSummary(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 90
     const-string v5, "firmware_version"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -747,7 +747,7 @@
 
     const-string v6, "gsm.version.baseband"
 
-    invoke-direct {p0, v5, v6}, Lcom/android/settings/DeviceInfoSettings;->setValueSummary(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v5, v6}, Lcom/android/OriginalSettings/DeviceInfoSettings;->setValueSummary(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 97
     const-string v5, "none"
@@ -771,7 +771,7 @@
 
     const-string v6, "ril.approved_modemver"
 
-    invoke-direct {p0, v5, v6}, Lcom/android/settings/DeviceInfoSettings;->setValueSummary(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v5, v6}, Lcom/android/OriginalSettings/DeviceInfoSettings;->setValueSummary(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 100
     :cond_0
@@ -787,7 +787,7 @@
 
     move-result-object v6
 
-    invoke-direct {p0}, Lcom/android/settings/DeviceInfoSettings;->getMsvSuffix()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getMsvSuffix()Ljava/lang/String;
 
     move-result-object v7
 
@@ -799,43 +799,43 @@
 
     move-result-object v6
 
-    invoke-direct {p0, v5, v6}, Lcom/android/settings/DeviceInfoSettings;->setStringSummary(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v5, v6}, Lcom/android/OriginalSettings/DeviceInfoSettings;->setStringSummary(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 104
     const-string v5, "build_number"
 
     sget-object v6, Landroid/os/Build;->DISPLAY:Ljava/lang/String;
 
-    invoke-direct {p0, v5, v6}, Lcom/android/settings/DeviceInfoSettings;->setStringSummary(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v5, v6}, Lcom/android/OriginalSettings/DeviceInfoSettings;->setStringSummary(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 106
     const-string v5, "kernel_version"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
-    invoke-direct {p0}, Lcom/android/settings/DeviceInfoSettings;->getFormattedKernelVersion()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getFormattedKernelVersion()Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {v5, v6}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
     const-string v6, "hardware_version"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
     invoke-virtual {v5, v6}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
@@ -843,27 +843,27 @@
 
     const-string v7, "ro.url.safetylegal"
 
-    invoke-direct {p0, v5, v6, v7}, Lcom/android/settings/DeviceInfoSettings;->removePreferenceIfPropertyMissing(Landroid/preference/PreferenceGroup;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v5, v6, v7}, Lcom/android/OriginalSettings/DeviceInfoSettings;->removePreferenceIfPropertyMissing(Landroid/preference/PreferenceGroup;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 126
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
-    invoke-static {v5}, Lcom/android/settings/Utils;->isWifiOnly(Landroid/content/Context;)Z
+    invoke-static {v5}, Lcom/android/OriginalSettings/Utils;->isWifiOnly(Landroid/content/Context;)Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
     .line 127
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
     const-string v6, "baseband_version"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
@@ -871,7 +871,7 @@
 
     .line 134
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -879,7 +879,7 @@
     .local v0, act:Landroid/app/Activity;
     const-string v5, "container"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -889,42 +889,42 @@
     .local v3, parentPreference:Landroid/preference/PreferenceGroup;
     const-string v5, "terms"
 
-    invoke-static {v0, v3, v5, v8}, Lcom/android/settings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v3, v5, v8}, Lcom/android/OriginalSettings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 139
     const-string v5, "license"
 
-    invoke-static {v0, v3, v5, v8}, Lcom/android/settings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v3, v5, v8}, Lcom/android/OriginalSettings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 141
     const-string v5, "copyright"
 
-    invoke-static {v0, v3, v5, v8}, Lcom/android/settings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v3, v5, v8}, Lcom/android/OriginalSettings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 143
     const-string v5, "team"
 
-    invoke-static {v0, v3, v5, v8}, Lcom/android/settings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v3, v5, v8}, Lcom/android/OriginalSettings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 147
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
     .line 149
-    invoke-direct {p0}, Lcom/android/settings/DeviceInfoSettings;->readSoftwareUpdateType()I
+    invoke-direct {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->readSoftwareUpdateType()I
 
     move-result v5
 
-    invoke-direct {p0, v5}, Lcom/android/settings/DeviceInfoSettings;->removeSoftwareUpdatePreference(I)V
+    invoke-direct {p0, v5}, Lcom/android/OriginalSettings/DeviceInfoSettings;->removeSoftwareUpdatePreference(I)V
 
     .line 151
     const-string v5, "contributors"
 
-    invoke-static {v0, v3, v5, v8}, Lcom/android/settings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v3, v5, v8}, Lcom/android/OriginalSettings/Utils;->updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 155
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -941,7 +941,7 @@
     .line 159
     const-string v5, "additional_system_update_settings"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -970,7 +970,7 @@
     .local v2, nnfe:Landroid/content/pm/PackageManager$NameNotFoundException;
     const-string v5, "diagnostics_and_usage"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/DeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -1004,11 +1004,11 @@
     if-eqz v2, :cond_1
 
     .line 175
-    iget-object v1, p0, Lcom/android/settings/DeviceInfoSettings;->mHits:[J
+    iget-object v1, p0, Lcom/android/OriginalSettings/DeviceInfoSettings;->mHits:[J
 
-    iget-object v2, p0, Lcom/android/settings/DeviceInfoSettings;->mHits:[J
+    iget-object v2, p0, Lcom/android/OriginalSettings/DeviceInfoSettings;->mHits:[J
 
-    iget-object v3, p0, Lcom/android/settings/DeviceInfoSettings;->mHits:[J
+    iget-object v3, p0, Lcom/android/OriginalSettings/DeviceInfoSettings;->mHits:[J
 
     array-length v3, v3
 
@@ -1017,9 +1017,9 @@
     invoke-static {v1, v0, v2, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/DeviceInfoSettings;->mHits:[J
+    iget-object v0, p0, Lcom/android/OriginalSettings/DeviceInfoSettings;->mHits:[J
 
-    iget-object v1, p0, Lcom/android/settings/DeviceInfoSettings;->mHits:[J
+    iget-object v1, p0, Lcom/android/OriginalSettings/DeviceInfoSettings;->mHits:[J
 
     array-length v1, v1
 
@@ -1032,7 +1032,7 @@
     aput-wide v2, v0, v1
 
     .line 177
-    iget-object v0, p0, Lcom/android/settings/DeviceInfoSettings;->mHits:[J
+    iget-object v0, p0, Lcom/android/OriginalSettings/DeviceInfoSettings;->mHits:[J
 
     aget-wide v0, v0, v4
 
@@ -1068,14 +1068,14 @@
 
     .line 182
     :try_start_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/DeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 205
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -1138,7 +1138,7 @@
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 201
-    invoke-virtual {p0}, Lcom/android/settings/DeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 

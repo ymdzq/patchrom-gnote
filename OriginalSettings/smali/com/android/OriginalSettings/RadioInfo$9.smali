@@ -1,4 +1,4 @@
-.class Lcom/android/settings/RadioInfo$9;
+.class Lcom/android/OriginalSettings/RadioInfo$9;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RadioInfo;
+    value = Lcom/android/OriginalSettings/RadioInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RadioInfo;
+.field final synthetic this$0:Lcom/android/OriginalSettings/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/OriginalSettings/RadioInfo;)V
     .locals 0
     .parameter
 
     .prologue
     .line 833
-    iput-object p1, p0, Lcom/android/settings/RadioInfo$9;->this$0:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/OriginalSettings/RadioInfo$9;->this$0:Lcom/android/OriginalSettings/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,9 +64,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 844
-    iget-object v1, p0, Lcom/android/settings/RadioInfo$9;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v1, p0, Lcom/android/OriginalSettings/RadioInfo$9;->this$0:Lcom/android/OriginalSettings/RadioInfo;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/RadioInfo;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/OriginalSettings/RadioInfo;->startActivity(Landroid/content/Intent;)V
 
     .line 845
     const/4 v1, 0x1

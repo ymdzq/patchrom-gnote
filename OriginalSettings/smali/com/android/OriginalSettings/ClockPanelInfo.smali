@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ClockPanelInfo;
+.class public Lcom/android/OriginalSettings/ClockPanelInfo;
 .super Landroid/widget/LinearLayout;
 .source "ClockPanelInfo.java"
 
@@ -71,85 +71,85 @@
     .line 18
     const-string v2, "aw_daemon_service_key_app_service_status"
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->KEY_APP_SERVICE_STATUS:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->KEY_APP_SERVICE_STATUS:Ljava/lang/String;
 
     .line 19
     const-string v2, "aw_daemon_service_key_loc_code"
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->KEY_CITY_ID:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->KEY_CITY_ID:Ljava/lang/String;
 
     .line 20
     const-string v2, "aw_daemon_service_key_current_temp"
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->KEY_CURRENT_TEMP:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->KEY_CURRENT_TEMP:Ljava/lang/String;
 
     .line 21
     const-string v2, "aw_daemon_service_key_temp_scale"
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->KEY_TEMP_SCALE:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->KEY_TEMP_SCALE:Ljava/lang/String;
 
     .line 22
     const-string v2, "aw_daemon_service_key_icon_num"
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->KEY_ICON_NUM:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->KEY_ICON_NUM:Ljava/lang/String;
 
     .line 23
     const-string v2, "aw_daemon_service_key_city_name"
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->KEY_CITY_NAME:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->KEY_CITY_NAME:Ljava/lang/String;
 
     .line 26
-    iput v3, p0, Lcom/android/settings/ClockPanelInfo;->LOCK_SCREEN_SERVICE_CODE:I
+    iput v3, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->LOCK_SCREEN_SERVICE_CODE:I
 
     .line 34
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
 
     .line 35
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mChargingLayout:Landroid/widget/RelativeLayout;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mChargingLayout:Landroid/widget/RelativeLayout;
 
     .line 37
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mSpace_01:Landroid/widget/LinearLayout;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mSpace_01:Landroid/widget/LinearLayout;
 
     .line 38
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mSpace_02:Landroid/widget/LinearLayout;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mSpace_02:Landroid/widget/LinearLayout;
 
     .line 40
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherCity:Landroid/widget/TextView;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherCity:Landroid/widget/TextView;
 
     .line 41
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherTemperature:Landroid/widget/TextView;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherTemperature:Landroid/widget/TextView;
 
     .line 42
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherIcon:Landroid/widget/ImageView;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherIcon:Landroid/widget/ImageView;
 
     .line 43
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mTemperatureUnit:Landroid/graphics/drawable/Drawable;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mTemperatureUnit:Landroid/graphics/drawable/Drawable;
 
     .line 44
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
 
     .line 46
-    iput v4, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherDaemonState:I
+    iput v4, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherDaemonState:I
 
     .line 49
-    iput-boolean v4, p0, Lcom/android/settings/ClockPanelInfo;->mShowingBatteryInfo:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mShowingBatteryInfo:Z
 
     .line 50
-    iput-boolean v4, p0, Lcom/android/settings/ClockPanelInfo;->mPluggedIn:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mPluggedIn:Z
 
     .line 51
     const/16 v2, 0x64
 
-    iput v2, p0, Lcom/android/settings/ClockPanelInfo;->mBatteryLevel:I
+    iput v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mBatteryLevel:I
 
     .line 52
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mCharging:Ljava/lang/String;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharging:Ljava/lang/String;
 
     .line 53
-    iput-object v5, p0, Lcom/android/settings/ClockPanelInfo;->mChargingIcon:Landroid/graphics/drawable/Drawable;
+    iput-object v5, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mChargingIcon:Landroid/graphics/drawable/Drawable;
 
     .line 55
-    iput v6, p0, Lcom/android/settings/ClockPanelInfo;->mLayoutPosition:I
+    iput v6, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mLayoutPosition:I
 
     .line 59
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -173,107 +173,107 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/ClockPanelInfo;->mLayoutPosition:I
+    iput v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mLayoutPosition:I
 
     .line 66
     const v2, 0x7f0800ee
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/RelativeLayout;
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
 
     .line 67
     const v2, 0x7f0800f3
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/RelativeLayout;
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mChargingLayout:Landroid/widget/RelativeLayout;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mChargingLayout:Landroid/widget/RelativeLayout;
 
     .line 68
-    iget-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
 
     const/16 v5, 0x8
 
     invoke-virtual {v2, v5}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 69
-    iget-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mChargingLayout:Landroid/widget/RelativeLayout;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mChargingLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     .line 71
     const v2, 0x7f0800f5
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/LinearLayout;
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mSpace_01:Landroid/widget/LinearLayout;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mSpace_01:Landroid/widget/LinearLayout;
 
     .line 72
     const v2, 0x7f0800f6
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/LinearLayout;
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mSpace_02:Landroid/widget/LinearLayout;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mSpace_02:Landroid/widget/LinearLayout;
 
     .line 76
     const v2, 0x7f0800ef
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/TextView;
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherCity:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherCity:Landroid/widget/TextView;
 
     .line 77
     const v2, 0x7f0800f0
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/TextView;
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherTemperature:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherTemperature:Landroid/widget/TextView;
 
     .line 78
     const v2, 0x7f0800f1
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/ImageView;
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherIcon:Landroid/widget/ImageView;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherIcon:Landroid/widget/ImageView;
 
     .line 79
     const v2, 0x7f0800f4
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/ClockPanelInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/TextView;
 
-    iput-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
+    iput-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
 
     .line 83
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -295,15 +295,15 @@
     move v2, v3
 
     :goto_0
-    iput v2, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherDaemonState:I
+    iput v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherDaemonState:I
 
     .line 86
-    invoke-virtual {p0}, Lcom/android/settings/ClockPanelInfo;->updateChargingInfo()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->updateChargingInfo()V
 
     .line 87
-    iget v2, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherDaemonState:I
+    iget v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherDaemonState:I
 
-    invoke-direct {p0, v2}, Lcom/android/settings/ClockPanelInfo;->setWeatherInfoVisivility(I)V
+    invoke-direct {p0, v2}, Lcom/android/OriginalSettings/ClockPanelInfo;->setWeatherInfoVisivility(I)V
 
     .line 89
     return-void
@@ -501,14 +501,14 @@
 
     .prologue
     .line 108
-    iget-boolean v0, p0, Lcom/android/settings/ClockPanelInfo;->mShowingBatteryInfo:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mShowingBatteryInfo:Z
 
     if-nez v0, :cond_0
 
     .line 109
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/ClockPanelInfo;->mCharging:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharging:Ljava/lang/String;
 
     .line 112
     :cond_0
@@ -529,13 +529,13 @@
 
     .line 206
     .local v1, unlock_weather_drawables:[I
-    invoke-direct {p0, p1}, Lcom/android/settings/ClockPanelInfo;->findDrawableId(I)I
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/ClockPanelInfo;->findDrawableId(I)I
 
     move-result v0
 
     .line 208
     .local v0, i:I
-    iget-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherIcon:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherIcon:Landroid/widget/ImageView;
 
     aget v3, v1, v0
 
@@ -584,7 +584,7 @@
     packed-switch p1, :pswitch_data_0
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
@@ -594,7 +594,7 @@
 
     .line 153
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
@@ -602,10 +602,10 @@
 
     .line 156
     :pswitch_1
-    invoke-virtual {p0}, Lcom/android/settings/ClockPanelInfo;->updateWeatherInfo()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->updateWeatherInfo()V
 
     .line 157
-    iget-object v0, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherLayout:Landroid/widget/RelativeLayout;
 
     const/4 v1, 0x0
 
@@ -630,7 +630,7 @@
     const/4 v2, 0x0
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/ClockPanelInfo;->mCharging:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharging:Ljava/lang/String;
 
     if-nez v0, :cond_1
 
@@ -641,28 +641,28 @@
 
     .line 100
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ClockPanelInfo;->mCharging:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharging:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/ClockPanelInfo;->mCharging:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharging:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mCharingText:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/ClockPanelInfo;->mChargingIcon:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mChargingIcon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v1, v2, v2, v2}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
@@ -682,12 +682,12 @@
     const/4 v3, 0x0
 
     .line 177
-    iget-object v1, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherCity:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherCity:Landroid/widget/TextView;
 
     invoke-virtual {v1, p4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 178
-    iget-object v1, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherCity:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherCity:Landroid/widget/TextView;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setSelected(Z)V
 
@@ -695,7 +695,7 @@
     if-ne p2, v2, :cond_1
 
     .line 181
-    invoke-virtual {p0}, Lcom/android/settings/ClockPanelInfo;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -709,7 +709,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/ClockPanelInfo;->mTemperatureUnit:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mTemperatureUnit:Landroid/graphics/drawable/Drawable;
 
     .line 186
     :cond_0
@@ -720,19 +720,19 @@
 
     .line 187
     .local v0, text_currentTemp:Ljava/lang/String;
-    iget-object v1, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherTemperature:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherTemperature:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 188
-    iget-object v1, p0, Lcom/android/settings/ClockPanelInfo;->mWeatherTemperature:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mWeatherTemperature:Landroid/widget/TextView;
 
-    iget-object v2, p0, Lcom/android/settings/ClockPanelInfo;->mTemperatureUnit:Landroid/graphics/drawable/Drawable;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mTemperatureUnit:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v3, v3, v2, v3}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     .line 189
-    invoke-direct {p0, p3}, Lcom/android/settings/ClockPanelInfo;->setWeatherIcon(I)V
+    invoke-direct {p0, p3}, Lcom/android/OriginalSettings/ClockPanelInfo;->setWeatherIcon(I)V
 
     .line 191
     return-void
@@ -743,7 +743,7 @@
     if-nez p2, :cond_0
 
     .line 183
-    invoke-virtual {p0}, Lcom/android/settings/ClockPanelInfo;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -757,7 +757,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/ClockPanelInfo;->mTemperatureUnit:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Lcom/android/OriginalSettings/ClockPanelInfo;->mTemperatureUnit:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 .end method
@@ -769,10 +769,10 @@
 
     .prologue
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/ClockPanelInfo;->refreshBatteryStringAndIcon()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->refreshBatteryStringAndIcon()V
 
     .line 94
-    invoke-direct {p0}, Lcom/android/settings/ClockPanelInfo;->updateCharingStatus()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->updateCharingStatus()V
 
     .line 95
     return-void
@@ -783,7 +783,7 @@
 
     .prologue
     .line 166
-    invoke-virtual {p0}, Lcom/android/settings/ClockPanelInfo;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -799,7 +799,7 @@
 
     .line 167
     .local v0, cityName:Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/ClockPanelInfo;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -817,7 +817,7 @@
 
     .line 168
     .local v1, currentTemp:F
-    invoke-virtual {p0}, Lcom/android/settings/ClockPanelInfo;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -835,7 +835,7 @@
 
     .line 169
     .local v3, tempScale:I
-    invoke-virtual {p0}, Lcom/android/settings/ClockPanelInfo;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ClockPanelInfo;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -853,7 +853,7 @@
 
     .line 171
     .local v2, iconNum:I
-    invoke-direct {p0, v1, v3, v2, v0}, Lcom/android/settings/ClockPanelInfo;->updateWeatherView(FIILjava/lang/String;)V
+    invoke-direct {p0, v1, v3, v2, v0}, Lcom/android/OriginalSettings/ClockPanelInfo;->updateWeatherView(FIILjava/lang/String;)V
 
     .line 173
     return-void

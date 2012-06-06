@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/MotionView$5;
+.class Lcom/android/OriginalSettings/motion/MotionView$5;
 .super Ljava/lang/Object;
 .source "MotionView.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/MotionView;->showGuideDialog()V
+    value = Lcom/android/OriginalSettings/motion/MotionView;->showGuideDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/MotionView;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/MotionView;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter
 
     .prologue
     .line 252
-    iput-object p1, p0, Lcom/android/settings/motion/MotionView$5;->this$0:Lcom/android/settings/motion/MotionView;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/MotionView$5;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 254
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView$5;->this$0:Lcom/android/settings/motion/MotionView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView$5;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
-    #calls: Lcom/android/settings/motion/MotionView;->stopAnimation()V
-    invoke-static {v0}, Lcom/android/settings/motion/MotionView;->access$1400(Lcom/android/settings/motion/MotionView;)V
+    #calls: Lcom/android/OriginalSettings/motion/MotionView;->stopAnimation()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/MotionView;->access$1400(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     .line 255
     return-void

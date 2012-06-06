@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/fmm/AlertRecipients;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/fmm/AlertRecipients;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "AlertRecipients.java"
 
 # interfaces
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private PlusLayout:Lcom/android/settings/fmm/RecipientsPlusView;
+.field private PlusLayout:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
 .field private mContent:Landroid/widget/LinearLayout;
 
@@ -20,18 +20,18 @@
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/fmm/AlertRecipients;)Lcom/android/settings/fmm/RecipientsPlusView;
+.method static synthetic access$000(Lcom/android/OriginalSettings/fmm/AlertRecipients;)Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/fmm/AlertRecipients;->PlusLayout:Lcom/android/settings/fmm/RecipientsPlusView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->PlusLayout:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/android/settings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -59,7 +59,7 @@
     if-ne v0, v1, :cond_0
 
     .line 114
-    invoke-virtual {p0}, Lcom/android/settings/fmm/AlertRecipients;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/AlertRecipients;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -98,7 +98,7 @@
 
     .prologue
     .line 101
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 103
     const/4 v0, -0x1
@@ -117,7 +117,7 @@
     if-ne p1, v0, :cond_0
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/fmm/AlertRecipients;->PlusLayout:Lcom/android/settings/fmm/RecipientsPlusView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->PlusLayout:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
     invoke-virtual {p3}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -129,7 +129,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fmm/RecipientsPlusView;->SetContactNumber(Ljava/util/ArrayList;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->SetContactNumber(Ljava/util/ArrayList;)V
 
     goto :goto_0
 .end method
@@ -160,7 +160,7 @@
 
     check-cast v3, Landroid/widget/LinearLayout;
 
-    iput-object v3, p0, Lcom/android/settings/fmm/AlertRecipients;->mContent:Landroid/widget/LinearLayout;
+    iput-object v3, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->mContent:Landroid/widget/LinearLayout;
 
     .line 56
     const v3, 0x7f0801d0
@@ -173,29 +173,29 @@
 
     .line 57
     .local v1, buttonOk:Landroid/widget/Button;
-    new-instance v3, Lcom/android/settings/fmm/AlertRecipients$1;
+    new-instance v3, Lcom/android/OriginalSettings/fmm/AlertRecipients$1;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/fmm/AlertRecipients$1;-><init>(Lcom/android/settings/fmm/AlertRecipients;)V
+    invoke-direct {v3, p0}, Lcom/android/OriginalSettings/fmm/AlertRecipients$1;-><init>(Lcom/android/OriginalSettings/fmm/AlertRecipients;)V
 
     invoke-virtual {v1, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 66
     const v3, 0x7f040047
 
-    iget-object v4, p0, Lcom/android/settings/fmm/AlertRecipients;->mContent:Landroid/widget/LinearLayout;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->mContent:Landroid/widget/LinearLayout;
 
     invoke-virtual {p1, v3, v4, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v3
 
-    check-cast v3, Lcom/android/settings/fmm/RecipientsPlusView;
+    check-cast v3, Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
-    iput-object v3, p0, Lcom/android/settings/fmm/AlertRecipients;->PlusLayout:Lcom/android/settings/fmm/RecipientsPlusView;
+    iput-object v3, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->PlusLayout:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
     .line 67
-    iget-object v3, p0, Lcom/android/settings/fmm/AlertRecipients;->mContent:Landroid/widget/LinearLayout;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->mContent:Landroid/widget/LinearLayout;
 
-    iget-object v4, p0, Lcom/android/settings/fmm/AlertRecipients;->PlusLayout:Lcom/android/settings/fmm/RecipientsPlusView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->PlusLayout:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
     invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -210,9 +210,9 @@
 
     .line 70
     .local v0, ContactButton:Landroid/widget/ImageButton;
-    new-instance v3, Lcom/android/settings/fmm/AlertRecipients$2;
+    new-instance v3, Lcom/android/OriginalSettings/fmm/AlertRecipients$2;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/fmm/AlertRecipients$2;-><init>(Lcom/android/settings/fmm/AlertRecipients;)V
+    invoke-direct {v3, p0}, Lcom/android/OriginalSettings/fmm/AlertRecipients$2;-><init>(Lcom/android/OriginalSettings/fmm/AlertRecipients;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -225,10 +225,10 @@
 
     check-cast v3, Landroid/widget/EditText;
 
-    iput-object v3, p0, Lcom/android/settings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
+    iput-object v3, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
 
     .line 86
-    iget-object v3, p0, Lcom/android/settings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
 
     invoke-virtual {v3, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -241,12 +241,12 @@
 
     .prologue
     .line 93
-    iget-object v1, p0, Lcom/android/settings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->clearFocus()V
 
     .line 94
-    invoke-virtual {p0}, Lcom/android/settings/fmm/AlertRecipients;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/AlertRecipients;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -260,7 +260,7 @@
 
     .line 95
     .local v0, imm:Landroid/view/inputmethod/InputMethodManager;
-    iget-object v1, p0, Lcom/android/settings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/AlertRecipients;->mMessage:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
@@ -271,7 +271,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
     .line 96
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onDestroyView()V
 
     .line 97
     return-void

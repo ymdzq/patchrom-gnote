@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fmm/SimChangeAlert$PreferenceArea;
+.class public Lcom/android/OriginalSettings/fmm/SimChangeAlert$PreferenceArea;
 .super Landroid/preference/PreferenceFragment;
 .source "SimChangeAlert.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fmm/SimChangeAlert;
+    value = Lcom/android/OriginalSettings/fmm/SimChangeAlert;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -41,21 +41,21 @@
     .line 196
     const v0, 0x7f050003
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fmm/SimChangeAlert$PreferenceArea;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/fmm/SimChangeAlert$PreferenceArea;->addPreferencesFromResource(I)V
 
     .line 198
     const-string v0, "message_preference"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fmm/SimChangeAlert$PreferenceArea;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/fmm/SimChangeAlert$PreferenceArea;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    invoke-static {v0}, Lcom/android/settings/fmm/SimChangeAlert;->access$402(Landroid/preference/EditTextPreference;)Landroid/preference/EditTextPreference;
+    invoke-static {v0}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->access$402(Landroid/preference/EditTextPreference;)Landroid/preference/EditTextPreference;
 
     .line 199
-    invoke-static {}, Lcom/android/settings/fmm/SimChangeAlert;->access$400()Landroid/preference/EditTextPreference;
+    invoke-static {}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->access$400()Landroid/preference/EditTextPreference;
 
     move-result-object v0
 
@@ -102,7 +102,7 @@
     if-lt v1, v2, :cond_1
 
     .line 208
-    invoke-virtual {p0}, Lcom/android/settings/fmm/SimChangeAlert$PreferenceArea;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/SimChangeAlert$PreferenceArea;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -121,7 +121,7 @@
 
     .line 212
     :cond_1
-    invoke-static {}, Lcom/android/settings/fmm/SimChangeAlert;->access$400()Landroid/preference/EditTextPreference;
+    invoke-static {}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->access$400()Landroid/preference/EditTextPreference;
 
     move-result-object v1
 
@@ -132,7 +132,7 @@
     invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 213
-    invoke-static {}, Lcom/android/settings/fmm/SimChangeAlert;->access$400()Landroid/preference/EditTextPreference;
+    invoke-static {}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->access$400()Landroid/preference/EditTextPreference;
 
     move-result-object v1
 

@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/CryptKeeper$Blank;
-.super Landroid/app/Activity;
+.class public Lcom/android/OriginalSettings/CryptKeeper$Blank;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "CryptKeeper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CryptKeeper;
+    value = Lcom/android/OriginalSettings/CryptKeeper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 126
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     return-void
 .end method
@@ -33,12 +33,12 @@
 
     .prologue
     .line 129
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 130
     const v0, 0x7f040027
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeper$Blank;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/CryptKeeper$Blank;->setContentView(I)V
 
     .line 131
     return-void

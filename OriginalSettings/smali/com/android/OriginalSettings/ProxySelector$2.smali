@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ProxySelector$2;
+.class Lcom/android/OriginalSettings/ProxySelector$2;
 .super Ljava/lang/Object;
 .source "ProxySelector.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ProxySelector;
+    value = Lcom/android/OriginalSettings/ProxySelector;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ProxySelector;
+.field final synthetic this$0:Lcom/android/OriginalSettings/ProxySelector;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ProxySelector;)V
+.method constructor <init>(Lcom/android/OriginalSettings/ProxySelector;)V
     .locals 0
     .parameter
 
     .prologue
     .line 279
-    iput-object p1, p0, Lcom/android/settings/ProxySelector$2;->this$0:Lcom/android/settings/ProxySelector;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ProxySelector$2;->this$0:Lcom/android/OriginalSettings/ProxySelector;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,27 +43,27 @@
 
     .prologue
     .line 281
-    iget-object v0, p0, Lcom/android/settings/ProxySelector$2;->this$0:Lcom/android/settings/ProxySelector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ProxySelector$2;->this$0:Lcom/android/OriginalSettings/ProxySelector;
 
-    iget-object v0, v0, Lcom/android/settings/ProxySelector;->mHostnameField:Landroid/widget/EditText;
+    iget-object v0, v0, Lcom/android/OriginalSettings/ProxySelector;->mHostnameField:Landroid/widget/EditText;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 282
-    iget-object v0, p0, Lcom/android/settings/ProxySelector$2;->this$0:Lcom/android/settings/ProxySelector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ProxySelector$2;->this$0:Lcom/android/OriginalSettings/ProxySelector;
 
-    iget-object v0, v0, Lcom/android/settings/ProxySelector;->mPortField:Landroid/widget/EditText;
+    iget-object v0, v0, Lcom/android/OriginalSettings/ProxySelector;->mPortField:Landroid/widget/EditText;
 
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 283
-    iget-object v0, p0, Lcom/android/settings/ProxySelector$2;->this$0:Lcom/android/settings/ProxySelector;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ProxySelector$2;->this$0:Lcom/android/OriginalSettings/ProxySelector;
 
-    iget-object v0, v0, Lcom/android/settings/ProxySelector;->mExclusionListField:Landroid/widget/EditText;
+    iget-object v0, v0, Lcom/android/OriginalSettings/ProxySelector;->mExclusionListField:Landroid/widget/EditText;
 
     const-string v1, ""
 

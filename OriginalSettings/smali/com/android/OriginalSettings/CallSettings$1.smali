@@ -1,11 +1,11 @@
-.class Lcom/android/settings/CallSettings$1;
+.class Lcom/android/OriginalSettings/CallSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "CallSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CallSettings;
+    value = Lcom/android/OriginalSettings/CallSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CallSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CallSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CallSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CallSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 92
-    iput-object p1, p0, Lcom/android/settings/CallSettings$1;->this$0:Lcom/android/settings/CallSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CallSettings$1;->this$0:Lcom/android/OriginalSettings/CallSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -94,19 +94,19 @@
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 99
-    iget-object v7, p0, Lcom/android/settings/CallSettings$1;->this$0:Lcom/android/settings/CallSettings;
+    iget-object v7, p0, Lcom/android/OriginalSettings/CallSettings$1;->this$0:Lcom/android/OriginalSettings/CallSettings;
 
     const-string v8, "sip_settings_category_key"
 
-    invoke-virtual {v7, v8}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v7, v8}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
     .line 100
     .local v6, sipSettings:Landroid/preference/Preference;
-    iget-object v7, p0, Lcom/android/settings/CallSettings$1;->this$0:Lcom/android/settings/CallSettings;
+    iget-object v7, p0, Lcom/android/OriginalSettings/CallSettings$1;->this$0:Lcom/android/OriginalSettings/CallSettings;
 
-    invoke-virtual {v7}, Lcom/android/settings/CallSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v7}, Lcom/android/OriginalSettings/CallSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 

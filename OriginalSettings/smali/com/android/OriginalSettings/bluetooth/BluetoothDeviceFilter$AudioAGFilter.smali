@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/bluetooth/BluetoothDeviceFilter$AudioAGFilter;
-.super Lcom/android/settings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;
+.class final Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$AudioAGFilter;
+.super Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;
 .source "BluetoothDeviceFilter.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothDeviceFilter;
+    value = Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,18 +22,18 @@
     .line 175
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;-><init>(Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;-><init>(Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$1;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$1;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 175
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$AudioAGFilter;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$AudioAGFilter;-><init>()V
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     if-eqz p1, :cond_1
 
     .line 179
-    sget-object v2, Lcom/android/settings/bluetooth/HeadsetProfile;->UUIDS:[Landroid/os/ParcelUuid;
+    sget-object v2, Lcom/android/OriginalSettings/bluetooth/HeadsetProfile;->UUIDS:[Landroid/os/ParcelUuid;
 
     invoke-static {p1, v2}, Landroid/bluetooth/BluetoothUuid;->containsAnyUuid([Landroid/os/ParcelUuid;[Landroid/os/ParcelUuid;)Z
 

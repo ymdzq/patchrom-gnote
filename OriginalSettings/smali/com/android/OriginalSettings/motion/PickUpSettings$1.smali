@@ -1,11 +1,11 @@
-.class Lcom/android/settings/motion/PickUpSettings$1;
+.class Lcom/android/OriginalSettings/motion/PickUpSettings$1;
 .super Landroid/os/Handler;
 .source "PickUpSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/motion/PickUpSettings;
+    value = Lcom/android/OriginalSettings/motion/PickUpSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/PickUpSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/PickUpSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 54
-    iput-object p1, p0, Lcom/android/settings/motion/PickUpSettings$1;->this$0:Lcom/android/settings/motion/PickUpSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings$1;->this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -50,10 +50,10 @@
 
     .line 58
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings$1;->this$0:Lcom/android/settings/motion/PickUpSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings$1;->this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
-    #calls: Lcom/android/settings/motion/PickUpSettings;->updateAnimation()V
-    invoke-static {v0}, Lcom/android/settings/motion/PickUpSettings;->access$000(Lcom/android/settings/motion/PickUpSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/PickUpSettings;->updateAnimation()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->access$000(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
 
     goto :goto_0
 

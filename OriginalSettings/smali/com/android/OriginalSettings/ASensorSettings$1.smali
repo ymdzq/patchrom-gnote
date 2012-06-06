@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/ASensorSettings$1;
+.class synthetic Lcom/android/OriginalSettings/ASensorSettings$1;
 .super Ljava/lang/Object;
 .source "ASensorSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ASensorSettings;
+    value = Lcom/android/OriginalSettings/ASensorSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

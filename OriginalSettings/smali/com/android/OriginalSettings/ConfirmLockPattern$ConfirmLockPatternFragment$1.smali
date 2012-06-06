@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment$1;
+.class Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment$1;
 .super Ljava/lang/Object;
 .source "ConfirmLockPattern.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    value = Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+.field final synthetic this$0:Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)V
+.method constructor <init>(Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment;)V
     .locals 0
     .parameter
 
     .prologue
     .line 231
-    iput-object p1, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment$1;->this$0:Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment$1;->this$0:Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,10 +42,10 @@
 
     .prologue
     .line 233
-    iget-object v0, p0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment$1;->this$0:Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment$1;->this$0:Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 
-    #getter for: Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->mLockPatternView:Lcom/android/internal/widget/LockPatternView;
-    invoke-static {v0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->access$000(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)Lcom/android/internal/widget/LockPatternView;
+    #getter for: Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment;->mLockPatternView:Lcom/android/internal/widget/LockPatternView;
+    invoke-static {v0}, Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment;->access$000(Lcom/android/OriginalSettings/ConfirmLockPattern$ConfirmLockPatternFragment;)Lcom/android/internal/widget/LockPatternView;
 
     move-result-object v0
 

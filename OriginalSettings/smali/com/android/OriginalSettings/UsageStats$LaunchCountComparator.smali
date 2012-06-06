@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/UsageStats$LaunchCountComparator;
+.class public Lcom/android/OriginalSettings/UsageStats$LaunchCountComparator;
 .super Ljava/lang/Object;
 .source "UsageStats.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UsageStats;
+    value = Lcom/android/OriginalSettings/UsageStats;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -69,7 +69,7 @@
     check-cast p2, Lcom/android/internal/os/PkgUsageStats;
 
     .end local p2
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/UsageStats$LaunchCountComparator;->compare(Lcom/android/internal/os/PkgUsageStats;Lcom/android/internal/os/PkgUsageStats;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/OriginalSettings/UsageStats$LaunchCountComparator;->compare(Lcom/android/internal/os/PkgUsageStats;Lcom/android/internal/os/PkgUsageStats;)I
 
     move-result v0
 

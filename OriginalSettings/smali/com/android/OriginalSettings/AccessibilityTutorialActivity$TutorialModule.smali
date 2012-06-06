@@ -1,4 +1,4 @@
-.class abstract Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;
+.class abstract Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;
 .super Landroid/widget/FrameLayout;
 .source "AccessibilityTutorialActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AccessibilityTutorialActivity;
+    value = Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
+        Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
     }
 .end annotation
 
@@ -26,13 +26,13 @@
 # instance fields
 .field private final mBack:Landroid/widget/Button;
 
-.field private final mController:Lcom/android/settings/AccessibilityTutorialActivity;
+.field private final mController:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
 .field private final mFinish:Landroid/widget/Button;
 
 .field private mFlags:J
 
-.field private mHandler:Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
+.field private mHandler:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
 
 .field private final mInstructions:Landroid/widget/TextView;
 
@@ -46,7 +46,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/settings/AccessibilityTutorialActivity;II)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/OriginalSettings/AccessibilityTutorialActivity;II)V
     .locals 6
     .parameter "context"
     .parameter "controller"
@@ -60,19 +60,19 @@
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     .line 526
-    new-instance v3, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
+    new-instance v3, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
 
     const/4 v4, 0x0
 
-    invoke-direct {v3, p0, v4}, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;-><init>(Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;Lcom/android/settings/AccessibilityTutorialActivity$1;)V
+    invoke-direct {v3, p0, v4}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;-><init>(Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;Lcom/android/OriginalSettings/AccessibilityTutorialActivity$1;)V
 
-    iput-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mHandler:Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
+    iput-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mHandler:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
 
     .line 540
-    iput-object p2, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/settings/AccessibilityTutorialActivity;
+    iput-object p2, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
     .line 541
-    iput p4, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mTitleResId:I
+    iput p4, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mTitleResId:I
 
     .line 543
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -95,7 +95,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    iput-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
+    iput-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
 
     .line 547
     const v3, 0x7f080007
@@ -106,10 +106,10 @@
 
     check-cast v3, Landroid/widget/Button;
 
-    iput-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mSkip:Landroid/widget/Button;
+    iput-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mSkip:Landroid/widget/Button;
 
     .line 548
-    iget-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mSkip:Landroid/widget/Button;
+    iget-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mSkip:Landroid/widget/Button;
 
     invoke-virtual {v3, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -122,10 +122,10 @@
 
     check-cast v3, Landroid/widget/Button;
 
-    iput-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mBack:Landroid/widget/Button;
+    iput-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mBack:Landroid/widget/Button;
 
     .line 550
-    iget-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mBack:Landroid/widget/Button;
+    iget-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mBack:Landroid/widget/Button;
 
     invoke-virtual {v3, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -138,10 +138,10 @@
 
     check-cast v3, Landroid/widget/Button;
 
-    iput-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mNext:Landroid/widget/Button;
+    iput-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mNext:Landroid/widget/Button;
 
     .line 552
-    iget-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mNext:Landroid/widget/Button;
+    iget-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mNext:Landroid/widget/Button;
 
     invoke-virtual {v3, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -154,10 +154,10 @@
 
     check-cast v3, Landroid/widget/Button;
 
-    iput-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mFinish:Landroid/widget/Button;
+    iput-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mFinish:Landroid/widget/Button;
 
     .line 554
-    iget-object v3, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mFinish:Landroid/widget/Button;
+    iget-object v3, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mFinish:Landroid/widget/Button;
 
     invoke-virtual {v3, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -199,14 +199,14 @@
     return-void
 .end method
 
-.method static synthetic access$1000(Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;Ljava/lang/CharSequence;)V
+.method static synthetic access$1000(Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;Ljava/lang/CharSequence;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 510
-    invoke-direct {p0, p1}, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->addInstructionSync(Ljava/lang/CharSequence;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->addInstructionSync(Ljava/lang/CharSequence;)V
 
     return-void
 .end method
@@ -217,19 +217,19 @@
 
     .prologue
     .line 596
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 597
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 598
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
@@ -248,29 +248,29 @@
     .line 570
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mIsVisible:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mIsVisible:Z
 
     .line 572
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
+    iput-wide v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
 
     .line 573
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mInstructions:Landroid/widget/TextView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 574
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/settings/AccessibilityTutorialActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
-    iget v1, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mTitleResId:I
+    iget v1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mTitleResId:I
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/AccessibilityTutorialActivity;->setTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->setTitle(I)V
 
     .line 576
-    invoke-virtual {p0}, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->onShown()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->onShown()V
 
     .line 577
     return-void
@@ -283,7 +283,7 @@
 
     .prologue
     .line 587
-    iget-boolean v1, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mIsVisible:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mIsVisible:Z
 
     if-nez v1, :cond_0
 
@@ -293,7 +293,7 @@
 
     .line 591
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, p1, p2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -301,9 +301,9 @@
 
     .line 592
     .local v0, text:Ljava/lang/String;
-    iget-object v1, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mHandler:Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
+    iget-object v1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mHandler:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;->addInstruction(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule$InstructionHandler;->addInstruction(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -315,13 +315,13 @@
     .line 605
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mIsVisible:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mIsVisible:Z
 
     .line 607
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/settings/AccessibilityTutorialActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
-    #calls: Lcom/android/settings/AccessibilityTutorialActivity;->interrupt()V
-    invoke-static {v0}, Lcom/android/settings/AccessibilityTutorialActivity;->access$700(Lcom/android/settings/AccessibilityTutorialActivity;)V
+    #calls: Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->interrupt()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->access$700(Lcom/android/OriginalSettings/AccessibilityTutorialActivity;)V
 
     .line 608
     return-void
@@ -333,7 +333,7 @@
 
     .prologue
     .line 617
-    iget-wide v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
+    iget-wide v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
 
     int-to-long v2, p1
 
@@ -374,35 +374,35 @@
 
     .line 624
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/settings/AccessibilityTutorialActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/AccessibilityTutorialActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->finish()V
 
     goto :goto_0
 
     .line 627
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/settings/AccessibilityTutorialActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
-    #calls: Lcom/android/settings/AccessibilityTutorialActivity;->previous()V
-    invoke-static {v0}, Lcom/android/settings/AccessibilityTutorialActivity;->access$800(Lcom/android/settings/AccessibilityTutorialActivity;)V
+    #calls: Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->previous()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->access$800(Lcom/android/OriginalSettings/AccessibilityTutorialActivity;)V
 
     goto :goto_0
 
     .line 630
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/settings/AccessibilityTutorialActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
-    #calls: Lcom/android/settings/AccessibilityTutorialActivity;->next()V
-    invoke-static {v0}, Lcom/android/settings/AccessibilityTutorialActivity;->access$900(Lcom/android/settings/AccessibilityTutorialActivity;)V
+    #calls: Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->next()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->access$900(Lcom/android/OriginalSettings/AccessibilityTutorialActivity;)V
 
     goto :goto_0
 
     .line 633
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/settings/AccessibilityTutorialActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mController:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/AccessibilityTutorialActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->finish()V
 
     goto :goto_0
 
@@ -425,7 +425,7 @@
 
     .prologue
     .line 660
-    iget-object v1, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mBack:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mBack:Landroid/widget/Button;
 
     if-eqz p1, :cond_0
 
@@ -450,7 +450,7 @@
 
     .prologue
     .line 668
-    iget-object v1, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mFinish:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mFinish:Landroid/widget/Button;
 
     if-eqz p1, :cond_0
 
@@ -481,13 +481,13 @@
     if-eqz p2, :cond_0
 
     .line 649
-    iget-wide v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
+    iget-wide v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
 
     int-to-long v2, p1
 
     or-long/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
+    iput-wide v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
 
     .line 653
     :goto_0
@@ -495,7 +495,7 @@
 
     .line 651
     :cond_0
-    iget-wide v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
+    iget-wide v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
 
     xor-long/2addr v0, v4
 
@@ -505,7 +505,7 @@
 
     xor-long/2addr v0, v4
 
-    iput-wide v0, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
+    iput-wide v0, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mFlags:J
 
     goto :goto_0
 .end method
@@ -516,7 +516,7 @@
 
     .prologue
     .line 664
-    iget-object v1, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mNext:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mNext:Landroid/widget/Button;
 
     if-eqz p1, :cond_0
 
@@ -541,7 +541,7 @@
 
     .prologue
     .line 656
-    iget-object v1, p0, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;->mSkip:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;->mSkip:Landroid/widget/Button;
 
     if-eqz p1, :cond_0
 

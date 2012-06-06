@@ -1,11 +1,11 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
+.class Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
 .super Landroid/preference/CheckBoxPreference;
 .source "InputMethodAndSubtypeEnabler.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;
+    value = Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -41,10 +41,10 @@
     if-eqz v1, :cond_0
 
     .line 383
-    iput-boolean v0, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
 
     .line 384
-    iput-boolean v0, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLanguage:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLanguage:Z
 
     .line 390
     :goto_0
@@ -56,10 +56,10 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
 
     .line 387
-    iget-boolean v1, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
 
     if-nez v1, :cond_1
 
@@ -79,7 +79,7 @@
     const/4 v0, 0x1
 
     :cond_2
-    iput-boolean v0, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLanguage:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLanguage:Z
 
     goto :goto_0
 .end method
@@ -96,24 +96,24 @@
     const/4 v3, -0x1
 
     .line 394
-    instance-of v5, p1, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
+    instance-of v5, p1, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
 
     if-eqz v5, :cond_5
 
     move-object v0, p1
 
     .line 395
-    check-cast v0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
+    check-cast v0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
 
     .line 396
-    .local v0, pref:Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->getTitle()Ljava/lang/CharSequence;
+    .local v0, pref:Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v1
 
     .line 397
     .local v1, t0:Ljava/lang/CharSequence;
-    invoke-virtual {v0}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -129,7 +129,7 @@
     const/4 v3, 0x0
 
     .line 422
-    .end local v0           #pref:Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
+    .end local v0           #pref:Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
     .end local v1           #t0:Ljava/lang/CharSequence;
     .end local v2           #t1:Ljava/lang/CharSequence;
     :cond_0
@@ -137,16 +137,16 @@
     return v3
 
     .line 401
-    .restart local v0       #pref:Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
+    .restart local v0       #pref:Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
     .restart local v1       #t0:Ljava/lang/CharSequence;
     .restart local v2       #t1:Ljava/lang/CharSequence;
     :cond_1
-    iget-boolean v5, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
+    iget-boolean v5, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
 
     if-nez v5, :cond_0
 
     .line 404
-    iget-boolean v5, v0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
+    iget-boolean v5, v0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLocale:Z
 
     if-eqz v5, :cond_2
 
@@ -157,12 +157,12 @@
 
     .line 407
     :cond_2
-    iget-boolean v5, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLanguage:Z
+    iget-boolean v5, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLanguage:Z
 
     if-nez v5, :cond_0
 
     .line 410
-    iget-boolean v5, v0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLanguage:Z
+    iget-boolean v5, v0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->mIsSystemLanguage:Z
 
     if-eqz v5, :cond_3
 
@@ -208,11 +208,11 @@
     goto :goto_0
 
     .line 421
-    .end local v0           #pref:Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
+    .end local v0           #pref:Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;
     .end local v1           #t0:Ljava/lang/CharSequence;
     .end local v2           #t1:Ljava/lang/CharSequence;
     :cond_5
-    invoke-static {}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;->access$100()Ljava/lang/String;
+    invoke-static {}, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler;->access$100()Ljava/lang/String;
 
     move-result-object v4
 
@@ -232,7 +232,7 @@
     check-cast p1, Landroid/preference/Preference;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->compareTo(Landroid/preference/Preference;)I
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$SubtypeCheckBoxPreference;->compareTo(Landroid/preference/Preference;)I
 
     move-result v0
 

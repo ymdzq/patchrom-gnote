@@ -3,6 +3,8 @@
 #  DESCRIPTION: to change the package for a smali project
 #        USAGE: ./chgpkg.pl  
 #       AUTHOR: Ge Xudong (gexudong@xiaomi.com)
+#      CREATED: 2012年06月05日
+#      VERSION: 1.0
 #===============================================================================
 
 use strict;
@@ -36,7 +38,7 @@ sub get_defined_class {
         #print "$smali\n";
         open(SMALI, "<$smali");
         my $first_line = <SMALI>;
-        if ($first_line =~ /\.class.*Lcom\/android\/$oldpkg\/(.*);$/){
+        if ($first_line =~ /\.class.*Lcom\/android\/settings\/(.*);$/){
             $defined_class{$1} = 1;
             #print "class: $1\n";
         }

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/BandMode$2;
+.class Lcom/android/OriginalSettings/BandMode$2;
 .super Landroid/os/Handler;
 .source "BandMode.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/BandMode;
+    value = Lcom/android/OriginalSettings/BandMode;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/BandMode;
+.field final synthetic this$0:Lcom/android/OriginalSettings/BandMode;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/BandMode;)V
+.method constructor <init>(Lcom/android/OriginalSettings/BandMode;)V
     .locals 0
     .parameter
 
     .prologue
     .line 193
-    iput-object p1, p0, Lcom/android/settings/BandMode$2;->this$0:Lcom/android/settings/BandMode;
+    iput-object p1, p0, Lcom/android/OriginalSettings/BandMode$2;->this$0:Lcom/android/OriginalSettings/BandMode;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -56,10 +56,10 @@
 
     .line 200
     .local v0, ar:Landroid/os/AsyncResult;
-    iget-object v1, p0, Lcom/android/settings/BandMode$2;->this$0:Lcom/android/settings/BandMode;
+    iget-object v1, p0, Lcom/android/OriginalSettings/BandMode$2;->this$0:Lcom/android/OriginalSettings/BandMode;
 
-    #calls: Lcom/android/settings/BandMode;->bandListLoaded(Landroid/os/AsyncResult;)V
-    invoke-static {v1, v0}, Lcom/android/settings/BandMode;->access$400(Lcom/android/settings/BandMode;Landroid/os/AsyncResult;)V
+    #calls: Lcom/android/OriginalSettings/BandMode;->bandListLoaded(Landroid/os/AsyncResult;)V
+    invoke-static {v1, v0}, Lcom/android/OriginalSettings/BandMode;->access$400(Lcom/android/OriginalSettings/BandMode;Landroid/os/AsyncResult;)V
 
     goto :goto_0
 
@@ -72,9 +72,9 @@
 
     .line 206
     .restart local v0       #ar:Landroid/os/AsyncResult;
-    iget-object v1, p0, Lcom/android/settings/BandMode$2;->this$0:Lcom/android/settings/BandMode;
+    iget-object v1, p0, Lcom/android/OriginalSettings/BandMode$2;->this$0:Lcom/android/OriginalSettings/BandMode;
 
-    invoke-virtual {v1}, Lcom/android/settings/BandMode;->getWindow()Landroid/view/Window;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/BandMode;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -85,12 +85,12 @@
     invoke-virtual {v1, v2, v3}, Landroid/view/Window;->setFeatureInt(II)V
 
     .line 210
-    iget-object v1, p0, Lcom/android/settings/BandMode$2;->this$0:Lcom/android/settings/BandMode;
+    iget-object v1, p0, Lcom/android/OriginalSettings/BandMode$2;->this$0:Lcom/android/OriginalSettings/BandMode;
 
     iget-object v2, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
-    #calls: Lcom/android/settings/BandMode;->displayBandSelectionResult(Ljava/lang/Throwable;)V
-    invoke-static {v1, v2}, Lcom/android/settings/BandMode;->access$500(Lcom/android/settings/BandMode;Ljava/lang/Throwable;)V
+    #calls: Lcom/android/OriginalSettings/BandMode;->displayBandSelectionResult(Ljava/lang/Throwable;)V
+    invoke-static {v1, v2}, Lcom/android/OriginalSettings/BandMode;->access$500(Lcom/android/OriginalSettings/BandMode;Ljava/lang/Throwable;)V
 
     goto :goto_0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ModePreview$2;
+.class Lcom/android/OriginalSettings/ModePreview$2;
 .super Ljava/lang/Object;
 .source "ModePreview.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/ModePreview;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/ModePreview;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ModePreview;
+.field final synthetic this$0:Lcom/android/OriginalSettings/ModePreview;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ModePreview;)V
+.method constructor <init>(Lcom/android/OriginalSettings/ModePreview;)V
     .locals 0
     .parameter
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/android/settings/ModePreview$2;->this$0:Lcom/android/settings/ModePreview;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ModePreview$2;->this$0:Lcom/android/OriginalSettings/ModePreview;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,9 +44,9 @@
     .prologue
     .line 72
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/ModePreview$2;->this$0:Lcom/android/settings/ModePreview;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ModePreview$2;->this$0:Lcom/android/OriginalSettings/ModePreview;
 
-    invoke-virtual {v1}, Lcom/android/settings/ModePreview;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/ModePreview;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -64,9 +64,9 @@
 
     .line 76
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/ModePreview$2;->this$0:Lcom/android/settings/ModePreview;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ModePreview$2;->this$0:Lcom/android/OriginalSettings/ModePreview;
 
-    invoke-virtual {v1}, Lcom/android/settings/ModePreview;->finish()V
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/ModePreview;->finish()V
 
     .line 77
     return-void

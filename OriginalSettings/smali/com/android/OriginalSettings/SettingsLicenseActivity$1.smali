@@ -1,11 +1,11 @@
-.class Lcom/android/settings/SettingsLicenseActivity$1;
+.class Lcom/android/OriginalSettings/SettingsLicenseActivity$1;
 .super Landroid/os/Handler;
 .source "SettingsLicenseActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/SettingsLicenseActivity;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/SettingsLicenseActivity;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SettingsLicenseActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsLicenseActivity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/SettingsLicenseActivity;)V
     .locals 0
     .parameter
 
     .prologue
     .line 153
-    iput-object p1, p0, Lcom/android/settings/SettingsLicenseActivity$1;->this$0:Lcom/android/settings/SettingsLicenseActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$1;->this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -54,10 +54,10 @@
 
     .line 161
     .local v0, text:Ljava/lang/String;
-    iget-object v1, p0, Lcom/android/settings/SettingsLicenseActivity$1;->this$0:Lcom/android/settings/SettingsLicenseActivity;
+    iget-object v1, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$1;->this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
-    #calls: Lcom/android/settings/SettingsLicenseActivity;->showPageOfText(Ljava/lang/String;)V
-    invoke-static {v1, v0}, Lcom/android/settings/SettingsLicenseActivity;->access$000(Lcom/android/settings/SettingsLicenseActivity;Ljava/lang/String;)V
+    #calls: Lcom/android/OriginalSettings/SettingsLicenseActivity;->showPageOfText(Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/OriginalSettings/SettingsLicenseActivity;->access$000(Lcom/android/OriginalSettings/SettingsLicenseActivity;Ljava/lang/String;)V
 
     .line 165
     .end local v0           #text:Ljava/lang/String;
@@ -66,10 +66,10 @@
 
     .line 163
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/SettingsLicenseActivity$1;->this$0:Lcom/android/settings/SettingsLicenseActivity;
+    iget-object v1, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$1;->this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
-    #calls: Lcom/android/settings/SettingsLicenseActivity;->showErrorAndFinish()V
-    invoke-static {v1}, Lcom/android/settings/SettingsLicenseActivity;->access$100(Lcom/android/settings/SettingsLicenseActivity;)V
+    #calls: Lcom/android/OriginalSettings/SettingsLicenseActivity;->showErrorAndFinish()V
+    invoke-static {v1}, Lcom/android/OriginalSettings/SettingsLicenseActivity;->access$100(Lcom/android/OriginalSettings/SettingsLicenseActivity;)V
 
     goto :goto_0
 .end method

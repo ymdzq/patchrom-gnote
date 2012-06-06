@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/CreateShortcut;
+.class public Lcom/android/OriginalSettings/CreateShortcut;
 .super Landroid/app/LauncherActivity;
 .source "CreateShortcut.java"
 
@@ -63,7 +63,7 @@
 
     .prologue
     .line 37
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->intentForPosition(I)Landroid/content/Intent;
+    invoke-virtual {p0, p3}, Lcom/android/OriginalSettings/CreateShortcut;->intentForPosition(I)Landroid/content/Intent;
 
     move-result-object v1
 
@@ -82,7 +82,7 @@
     .local v0, intent:Landroid/content/Intent;
     const-string v2, "android.intent.extra.shortcut.ICON_RESOURCE"
 
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
+    invoke-virtual {p0, p3}, Lcom/android/OriginalSettings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
 
     move-result-object v3
 
@@ -106,7 +106,7 @@
     .line 43
     const-string v2, "android.intent.extra.shortcut.NAME"
 
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
+    invoke-virtual {p0, p3}, Lcom/android/OriginalSettings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
 
     move-result-object v3
 
@@ -117,10 +117,10 @@
     .line 44
     const/4 v2, -0x1
 
-    invoke-virtual {p0, v2, v0}, Lcom/android/settings/CreateShortcut;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v2, v0}, Lcom/android/OriginalSettings/CreateShortcut;->setResult(ILandroid/content/Intent;)V
 
     .line 45
-    invoke-virtual {p0}, Lcom/android/settings/CreateShortcut;->finish()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CreateShortcut;->finish()V
 
     .line 46
     return-void

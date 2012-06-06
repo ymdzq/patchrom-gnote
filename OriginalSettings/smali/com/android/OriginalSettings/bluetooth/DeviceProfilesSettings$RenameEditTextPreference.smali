@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;
+.class Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;
 .super Ljava/lang/Object;
 .source "DeviceProfilesSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    value = Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,31 +18,31 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->this$0:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->this$0:Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;Lcom/android/settings/bluetooth/DeviceProfilesSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 99
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;-><init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;-><init>(Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;)V
 
     return-void
 .end method
@@ -61,10 +61,10 @@
     const/4 v7, 0x0
 
     .line 101
-    iget-object v5, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->this$0:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    iget-object v5, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->this$0:Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 
-    #getter for: Lcom/android/settings/bluetooth/DeviceProfilesSettings;->mDeviceNamePref:Landroid/preference/EditTextPreference;
-    invoke-static {v5}, Lcom/android/settings/bluetooth/DeviceProfilesSettings;->access$000(Lcom/android/settings/bluetooth/DeviceProfilesSettings;)Landroid/preference/EditTextPreference;
+    #getter for: Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;->mDeviceNamePref:Landroid/preference/EditTextPreference;
+    invoke-static {v5}, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;->access$000(Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;)Landroid/preference/EditTextPreference;
 
     move-result-object v5
 
@@ -149,9 +149,9 @@
     :cond_2
     new-array v5, v6, [Landroid/text/InputFilter;
 
-    new-instance v6, Lcom/android/settings/bluetooth/Utf8ByteLengthFilter;
+    new-instance v6, Lcom/android/OriginalSettings/bluetooth/Utf8ByteLengthFilter;
 
-    invoke-direct {v6, v9}, Lcom/android/settings/bluetooth/Utf8ByteLengthFilter;-><init>(I)V
+    invoke-direct {v6, v9}, Lcom/android/OriginalSettings/bluetooth/Utf8ByteLengthFilter;-><init>(I)V
 
     aput-object v6, v5, v7
 

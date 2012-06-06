@@ -1,4 +1,4 @@
-.class Lcom/android/settings/GSensorSettings$SensorHandler;
+.class Lcom/android/OriginalSettings/GSensorSettings$SensorHandler;
 .super Ljava/lang/Object;
 .source "GSensorSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/GSensorSettings;
+    value = Lcom/android/OriginalSettings/GSensorSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,31 +18,31 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/GSensorSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/GSensorSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/GSensorSettings;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/GSensorSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 168
-    iput-object p1, p0, Lcom/android/settings/GSensorSettings$SensorHandler;->this$0:Lcom/android/settings/GSensorSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/GSensorSettings$SensorHandler;->this$0:Lcom/android/OriginalSettings/GSensorSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/GSensorSettings;Lcom/android/settings/GSensorSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/GSensorSettings;Lcom/android/OriginalSettings/GSensorSettings$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 168
-    invoke-direct {p0, p1}, Lcom/android/settings/GSensorSettings$SensorHandler;-><init>(Lcom/android/settings/GSensorSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/GSensorSettings$SensorHandler;-><init>(Lcom/android/OriginalSettings/GSensorSettings;)V
 
     return-void
 .end method

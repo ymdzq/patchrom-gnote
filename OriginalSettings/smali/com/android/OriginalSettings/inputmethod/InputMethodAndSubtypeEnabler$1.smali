@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$1;
+.class Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$1;
 .super Ljava/lang/Object;
 .source "InputMethodAndSubtypeEnabler.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    value = Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;
+.field final synthetic this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;)V
+.method constructor <init>(Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler;)V
     .locals 0
     .parameter
 
     .prologue
     .line 177
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler$1;->this$0:Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;
+    iput-object p1, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler$1;->this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodAndSubtypeEnabler;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 

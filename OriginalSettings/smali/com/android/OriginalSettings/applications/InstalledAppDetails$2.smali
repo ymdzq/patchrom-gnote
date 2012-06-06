@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/InstalledAppDetails$2;
+.class Lcom/android/OriginalSettings/applications/InstalledAppDetails$2;
 .super Landroid/content/BroadcastReceiver;
 .source "InstalledAppDetails.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/InstalledAppDetails;
+    value = Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/InstalledAppDetails;
+.field final synthetic this$0:Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+.method constructor <init>(Lcom/android/OriginalSettings/applications/InstalledAppDetails;)V
     .locals 0
     .parameter
 
     .prologue
     .line 874
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetails$2;->this$0:Lcom/android/settings/applications/InstalledAppDetails;
+    iput-object p1, p0, Lcom/android/OriginalSettings/applications/InstalledAppDetails$2;->this$0:Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -43,9 +43,9 @@
     const/4 v1, 0x0
 
     .line 877
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails$2;->this$0:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v2, p0, Lcom/android/OriginalSettings/applications/InstalledAppDetails$2;->this$0:Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$2;->getResultCode()I
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$2;->getResultCode()I
 
     move-result v0
 
@@ -54,8 +54,8 @@
     const/4 v0, 0x1
 
     :goto_0
-    #calls: Lcom/android/settings/applications/InstalledAppDetails;->updateForceStopButton(Z)V
-    invoke-static {v2, v0}, Lcom/android/settings/applications/InstalledAppDetails;->access$1100(Lcom/android/settings/applications/InstalledAppDetails;Z)V
+    #calls: Lcom/android/OriginalSettings/applications/InstalledAppDetails;->updateForceStopButton(Z)V
+    invoke-static {v2, v0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails;->access$1100(Lcom/android/OriginalSettings/applications/InstalledAppDetails;Z)V
 
     .line 879
     invoke-virtual {p2}, Landroid/content/Intent;->getDataString()Ljava/lang/String;
@@ -71,20 +71,20 @@
     if-eqz v0, :cond_0
 
     .line 880
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$2;->this$0:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/InstalledAppDetails$2;->this$0:Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
-    #getter for: Lcom/android/settings/applications/InstalledAppDetails;->mForceStopButton:Landroid/widget/Button;
-    invoke-static {v0}, Lcom/android/settings/applications/InstalledAppDetails;->access$1200(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/widget/Button;
+    #getter for: Lcom/android/OriginalSettings/applications/InstalledAppDetails;->mForceStopButton:Landroid/widget/Button;
+    invoke-static {v0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails;->access$1200(Lcom/android/OriginalSettings/applications/InstalledAppDetails;)Landroid/widget/Button;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 881
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$2;->this$0:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/InstalledAppDetails$2;->this$0:Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
-    #getter for: Lcom/android/settings/applications/InstalledAppDetails;->mClearDataButton:Landroid/widget/Button;
-    invoke-static {v0}, Lcom/android/settings/applications/InstalledAppDetails;->access$800(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/widget/Button;
+    #getter for: Lcom/android/OriginalSettings/applications/InstalledAppDetails;->mClearDataButton:Landroid/widget/Button;
+    invoke-static {v0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails;->access$800(Lcom/android/OriginalSettings/applications/InstalledAppDetails;)Landroid/widget/Button;
 
     move-result-object v0
 

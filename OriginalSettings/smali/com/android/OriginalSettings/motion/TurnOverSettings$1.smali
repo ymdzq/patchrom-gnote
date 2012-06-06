@@ -1,11 +1,11 @@
-.class Lcom/android/settings/motion/TurnOverSettings$1;
+.class Lcom/android/OriginalSettings/motion/TurnOverSettings$1;
 .super Landroid/os/Handler;
 .source "TurnOverSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/motion/TurnOverSettings;
+    value = Lcom/android/OriginalSettings/motion/TurnOverSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/TurnOverSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/TurnOverSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/TurnOverSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/android/settings/motion/TurnOverSettings$1;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$1;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -50,10 +50,10 @@
 
     .line 61
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/motion/TurnOverSettings$1;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$1;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
-    #calls: Lcom/android/settings/motion/TurnOverSettings;->updateAnimation()V
-    invoke-static {v0}, Lcom/android/settings/motion/TurnOverSettings;->access$000(Lcom/android/settings/motion/TurnOverSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/TurnOverSettings;->updateAnimation()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/TurnOverSettings;->access$000(Lcom/android/OriginalSettings/motion/TurnOverSettings;)V
 
     goto :goto_0
 

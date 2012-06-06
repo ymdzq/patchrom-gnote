@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothSettings$2;
+.class Lcom/android/OriginalSettings/bluetooth/BluetoothSettings$2;
 .super Ljava/lang/Object;
 .source "BluetoothSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothSettings;
+    value = Lcom/android/OriginalSettings/bluetooth/BluetoothSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/bluetooth/BluetoothSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 457
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    instance-of v0, v0, Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;
 
     if-eqz v0, :cond_0
 
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    check-cast v0, Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;
 
     .line 463
     new-instance v2, Landroid/os/Bundle;
@@ -70,22 +70,22 @@
     .line 464
     const-string v1, "device"
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v0
 
     invoke-virtual {v2, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 466
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/bluetooth/BluetoothSettings$2;->this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Landroid/preference/PreferenceActivity;
+    check-cast v0, Lmiui/preference/BasePreferenceActivity;
 
-    const-class v1, Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    const-class v1, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -97,7 +97,7 @@
 
     move-object v5, v4
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 472
     :goto_0

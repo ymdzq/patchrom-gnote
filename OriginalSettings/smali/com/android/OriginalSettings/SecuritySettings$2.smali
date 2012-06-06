@@ -1,4 +1,4 @@
-.class Lcom/android/settings/SecuritySettings$2;
+.class Lcom/android/OriginalSettings/SecuritySettings$2;
 .super Ljava/lang/Object;
 .source "SecuritySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/SecuritySettings;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
+    value = Lcom/android/OriginalSettings/SecuritySettings;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SecuritySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SecuritySettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/SecuritySettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 336
-    iput-object p1, p0, Lcom/android/settings/SecuritySettings$2;->this$0:Lcom/android/settings/SecuritySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SecuritySettings$2;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,11 +63,11 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 341
-    iget-object v1, p0, Lcom/android/settings/SecuritySettings$2;->this$0:Lcom/android/settings/SecuritySettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/SecuritySettings$2;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
     const/16 v2, 0x3eb
 
-    invoke-virtual {v1, v0, v2}, Lcom/android/settings/SecuritySettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/OriginalSettings/SecuritySettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 343
     const/4 v1, 0x0

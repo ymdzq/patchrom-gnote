@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/motion/CommonTryActuallyActivity;
-.super Landroid/app/Activity;
+.class public Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "CommonTryActuallyActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 11
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     return-void
 .end method
@@ -22,17 +22,17 @@
 
     .prologue
     .line 15
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 16
     const v2, 0x7f04009f
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/motion/CommonTryActuallyActivity;->setContentView(I)V
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->setContentView(I)V
 
     .line 18
     const v2, 0x7f080209
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/motion/CommonTryActuallyActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -40,9 +40,9 @@
 
     .line 19
     .local v1, information:Landroid/widget/Button;
-    new-instance v2, Lcom/android/settings/motion/CommonTryActuallyActivity$1;
+    new-instance v2, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/motion/CommonTryActuallyActivity$1;-><init>(Lcom/android/settings/motion/CommonTryActuallyActivity;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity$1;-><init>(Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -54,7 +54,7 @@
     .line 28
     const v2, 0x7f08020a
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/motion/CommonTryActuallyActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -62,9 +62,9 @@
 
     .line 29
     .local v0, done:Landroid/widget/Button;
-    new-instance v2, Lcom/android/settings/motion/CommonTryActuallyActivity$2;
+    new-instance v2, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity$2;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/motion/CommonTryActuallyActivity$2;-><init>(Lcom/android/settings/motion/CommonTryActuallyActivity;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity$2;-><init>(Lcom/android/OriginalSettings/motion/CommonTryActuallyActivity;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

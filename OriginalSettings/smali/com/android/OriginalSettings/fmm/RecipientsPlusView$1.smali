@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fmm/RecipientsPlusView$1;
+.class Lcom/android/OriginalSettings/fmm/RecipientsPlusView$1;
 .super Ljava/lang/Object;
 .source "RecipientsPlusView.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/fmm/RecipientsPlusView;->onFinishInflate()V
+    value = Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->onFinishInflate()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/fmm/RecipientsPlusView;
+.field final synthetic this$0:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fmm/RecipientsPlusView;)V
+.method constructor <init>(Lcom/android/OriginalSettings/fmm/RecipientsPlusView;)V
     .locals 0
     .parameter
 
     .prologue
     .line 72
-    iput-object p1, p0, Lcom/android/settings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/settings/fmm/RecipientsPlusView;
+    iput-object p1, p0, Lcom/android/OriginalSettings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,10 +53,10 @@
 
     .local v3, i:I
     :goto_0
-    iget-object v4, p0, Lcom/android/settings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/settings/fmm/RecipientsPlusView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
-    #getter for: Lcom/android/settings/fmm/RecipientsPlusView;->mContent:Landroid/widget/LinearLayout;
-    invoke-static {v4}, Lcom/android/settings/fmm/RecipientsPlusView;->access$000(Lcom/android/settings/fmm/RecipientsPlusView;)Landroid/widget/LinearLayout;
+    #getter for: Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->mContent:Landroid/widget/LinearLayout;
+    invoke-static {v4}, Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->access$000(Lcom/android/OriginalSettings/fmm/RecipientsPlusView;)Landroid/widget/LinearLayout;
 
     move-result-object v4
 
@@ -67,10 +67,10 @@
     if-ge v3, v4, :cond_1
 
     .line 77
-    iget-object v4, p0, Lcom/android/settings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/settings/fmm/RecipientsPlusView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
-    #getter for: Lcom/android/settings/fmm/RecipientsPlusView;->mContent:Landroid/widget/LinearLayout;
-    invoke-static {v4}, Lcom/android/settings/fmm/RecipientsPlusView;->access$000(Lcom/android/settings/fmm/RecipientsPlusView;)Landroid/widget/LinearLayout;
+    #getter for: Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->mContent:Landroid/widget/LinearLayout;
+    invoke-static {v4}, Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->access$000(Lcom/android/OriginalSettings/fmm/RecipientsPlusView;)Landroid/widget/LinearLayout;
 
     move-result-object v4
 
@@ -78,11 +78,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/fmm/RecipientsMinusView;
+    check-cast v0, Lcom/android/OriginalSettings/fmm/RecipientsMinusView;
 
     .line 78
-    .local v0, ChildView:Lcom/android/settings/fmm/RecipientsMinusView;
-    invoke-virtual {v0}, Lcom/android/settings/fmm/RecipientsMinusView;->isExist()Z
+    .local v0, ChildView:Lcom/android/OriginalSettings/fmm/RecipientsMinusView;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/fmm/RecipientsMinusView;->isExist()Z
 
     move-result v4
 
@@ -98,26 +98,26 @@
     goto :goto_0
 
     .line 84
-    .end local v0           #ChildView:Lcom/android/settings/fmm/RecipientsMinusView;
+    .end local v0           #ChildView:Lcom/android/OriginalSettings/fmm/RecipientsMinusView;
     :cond_1
     const/4 v4, 0x4
 
     if-gt v2, v4, :cond_2
 
     .line 85
-    iget-object v4, p0, Lcom/android/settings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/settings/fmm/RecipientsPlusView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
-    #getter for: Lcom/android/settings/fmm/RecipientsPlusView;->mInflater:Landroid/view/LayoutInflater;
-    invoke-static {v4}, Lcom/android/settings/fmm/RecipientsPlusView;->access$100(Lcom/android/settings/fmm/RecipientsPlusView;)Landroid/view/LayoutInflater;
+    #getter for: Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->mInflater:Landroid/view/LayoutInflater;
+    invoke-static {v4}, Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->access$100(Lcom/android/OriginalSettings/fmm/RecipientsPlusView;)Landroid/view/LayoutInflater;
 
     move-result-object v4
 
     const v5, 0x7f040050
 
-    iget-object v6, p0, Lcom/android/settings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/settings/fmm/RecipientsPlusView;
+    iget-object v6, p0, Lcom/android/OriginalSettings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
-    #getter for: Lcom/android/settings/fmm/RecipientsPlusView;->mContent:Landroid/widget/LinearLayout;
-    invoke-static {v6}, Lcom/android/settings/fmm/RecipientsPlusView;->access$000(Lcom/android/settings/fmm/RecipientsPlusView;)Landroid/widget/LinearLayout;
+    #getter for: Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->mContent:Landroid/widget/LinearLayout;
+    invoke-static {v6}, Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->access$000(Lcom/android/OriginalSettings/fmm/RecipientsPlusView;)Landroid/widget/LinearLayout;
 
     move-result-object v6
 
@@ -129,10 +129,10 @@
 
     .line 86
     .local v1, MinusLayout:Landroid/widget/LinearLayout;
-    iget-object v4, p0, Lcom/android/settings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/settings/fmm/RecipientsPlusView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
-    #getter for: Lcom/android/settings/fmm/RecipientsPlusView;->mContent:Landroid/widget/LinearLayout;
-    invoke-static {v4}, Lcom/android/settings/fmm/RecipientsPlusView;->access$000(Lcom/android/settings/fmm/RecipientsPlusView;)Landroid/widget/LinearLayout;
+    #getter for: Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->mContent:Landroid/widget/LinearLayout;
+    invoke-static {v4}, Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->access$000(Lcom/android/OriginalSettings/fmm/RecipientsPlusView;)Landroid/widget/LinearLayout;
 
     move-result-object v4
 
@@ -145,10 +145,10 @@
 
     .line 88
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/settings/fmm/RecipientsPlusView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fmm/RecipientsPlusView$1;->this$0:Lcom/android/OriginalSettings/fmm/RecipientsPlusView;
 
-    #getter for: Lcom/android/settings/fmm/RecipientsPlusView;->mContext:Landroid/content/Context;
-    invoke-static {v4}, Lcom/android/settings/fmm/RecipientsPlusView;->access$200(Lcom/android/settings/fmm/RecipientsPlusView;)Landroid/content/Context;
+    #getter for: Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->mContext:Landroid/content/Context;
+    invoke-static {v4}, Lcom/android/OriginalSettings/fmm/RecipientsPlusView;->access$200(Lcom/android/OriginalSettings/fmm/RecipientsPlusView;)Landroid/content/Context;
 
     move-result-object v4
 

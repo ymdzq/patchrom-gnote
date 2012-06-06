@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/TiltSettings$4;
+.class Lcom/android/OriginalSettings/motion/TiltSettings$4;
 .super Ljava/lang/Object;
 .source "TiltSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/TiltSettings;->showGuideDialog()V
+    value = Lcom/android/OriginalSettings/motion/TiltSettings;->showGuideDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/TiltSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/TiltSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/TiltSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/TiltSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 213
-    iput-object p1, p0, Lcom/android/settings/motion/TiltSettings$4;->this$0:Lcom/android/settings/motion/TiltSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/TiltSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TiltSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/android/settings/motion/TiltSettings$4;->this$0:Lcom/android/settings/motion/TiltSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TiltSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TiltSettings;
 
-    #calls: Lcom/android/settings/motion/TiltSettings;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v0}, Lcom/android/settings/motion/TiltSettings;->access$400(Lcom/android/settings/motion/TiltSettings;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/motion/TiltSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/TiltSettings;->access$400(Lcom/android/OriginalSettings/motion/TiltSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -62,10 +62,10 @@
     if-eqz v0, :cond_0
 
     .line 216
-    iget-object v0, p0, Lcom/android/settings/motion/TiltSettings$4;->this$0:Lcom/android/settings/motion/TiltSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TiltSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TiltSettings;
 
-    #calls: Lcom/android/settings/motion/TiltSettings;->startTryActually()V
-    invoke-static {v0}, Lcom/android/settings/motion/TiltSettings;->access$200(Lcom/android/settings/motion/TiltSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/TiltSettings;->startTryActually()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/TiltSettings;->access$200(Lcom/android/OriginalSettings/motion/TiltSettings;)V
 
     .line 220
     :goto_0
@@ -73,10 +73,10 @@
 
     .line 218
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/motion/TiltSettings$4;->this$0:Lcom/android/settings/motion/TiltSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TiltSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TiltSettings;
 
-    #calls: Lcom/android/settings/motion/TiltSettings;->showMotionDialog()V
-    invoke-static {v0}, Lcom/android/settings/motion/TiltSettings;->access$500(Lcom/android/settings/motion/TiltSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/TiltSettings;->showMotionDialog()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/TiltSettings;->access$500(Lcom/android/OriginalSettings/motion/TiltSettings;)V
 
     goto :goto_0
 .end method

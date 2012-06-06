@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/p2p/WifiP2pSettings$11;
+.class Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$11;
 .super Ljava/lang/Object;
 .source "WifiP2pSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/p2p/WifiP2pSettings;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
 .field final synthetic val$imm:Landroid/view/inputmethod/InputMethodManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;Landroid/view/inputmethod/InputMethodManager;)V
+.method constructor <init>(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;Landroid/view/inputmethod/InputMethodManager;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 761
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$11;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$11;->this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
-    iput-object p2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$11;->val$imm:Landroid/view/inputmethod/InputMethodManager;
+    iput-object p2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$11;->val$imm:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,21 +49,21 @@
 
     .prologue
     .line 763
-    invoke-static {}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->access$1800()Landroid/net/wifi/p2p/WifiP2pDevice;
+    invoke-static {}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->access$1800()Landroid/net/wifi/p2p/WifiP2pDevice;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 764
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$11;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$11;->this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
-    #getter for: Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mEditDeviceName:Landroid/widget/EditText;
-    invoke-static {v0}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->access$2500(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)Landroid/widget/EditText;
+    #getter for: Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->mEditDeviceName:Landroid/widget/EditText;
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->access$2500(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;)Landroid/widget/EditText;
 
     move-result-object v0
 
-    invoke-static {}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->access$1800()Landroid/net/wifi/p2p/WifiP2pDevice;
+    invoke-static {}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->access$1800()Landroid/net/wifi/p2p/WifiP2pDevice;
 
     move-result-object v1
 
@@ -73,12 +73,12 @@
 
     .line 766
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$11;->val$imm:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$11;->val$imm:Landroid/view/inputmethod/InputMethodManager;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$11;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$11;->this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
-    #getter for: Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mEditDeviceName:Landroid/widget/EditText;
-    invoke-static {v1}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->access$2500(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)Landroid/widget/EditText;
+    #getter for: Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->mEditDeviceName:Landroid/widget/EditText;
+    invoke-static {v1}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->access$2500(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;)Landroid/widget/EditText;
 
     move-result-object v1
 

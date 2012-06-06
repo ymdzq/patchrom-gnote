@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/R;
+.class public final Lcom/android/OriginalSettings/R;
 .super Ljava/lang/Object;
 .source "R.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/R$styleable;
+        Lcom/android/OriginalSettings/R$styleable;
     }
 .end annotation
 

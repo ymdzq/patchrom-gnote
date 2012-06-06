@@ -1,4 +1,4 @@
-.class Lcom/android/settings/UserDictionarySettings$MyAdapter$1;
+.class Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter$1;
 .super Ljava/lang/Object;
 .source "UserDictionarySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UserDictionarySettings$MyAdapter;
+    value = Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/UserDictionarySettings$MyAdapter;
+.field final synthetic this$0:Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UserDictionarySettings$MyAdapter;)V
+.method constructor <init>(Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter;)V
     .locals 0
     .parameter
 
     .prologue
     .line 318
-    iput-object p1, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter$1;->this$0:Lcom/android/settings/UserDictionarySettings$MyAdapter;
+    iput-object p1, p0, Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter$1;->this$0:Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +54,7 @@
     if-nez p3, :cond_0
 
     .line 322
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter$1;->this$0:Lcom/android/settings/UserDictionarySettings$MyAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter$1;->this$0:Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/UsageStats$AppNameComparator;
+.class public Lcom/android/OriginalSettings/UsageStats$AppNameComparator;
 .super Ljava/lang/Object;
 .source "UsageStats.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UsageStats;
+    value = Lcom/android/OriginalSettings/UsageStats;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -62,7 +62,7 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 66
-    iput-object p1, p0, Lcom/android/settings/UsageStats$AppNameComparator;->mAppLabelList:Ljava/util/Map;
+    iput-object p1, p0, Lcom/android/OriginalSettings/UsageStats$AppNameComparator;->mAppLabelList:Ljava/util/Map;
 
     .line 67
     return-void
@@ -77,7 +77,7 @@
 
     .prologue
     .line 69
-    iget-object v2, p0, Lcom/android/settings/UsageStats$AppNameComparator;->mAppLabelList:Ljava/util/Map;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsageStats$AppNameComparator;->mAppLabelList:Ljava/util/Map;
 
     iget-object v3, p1, Lcom/android/internal/os/PkgUsageStats;->packageName:Ljava/lang/String;
 
@@ -93,7 +93,7 @@
 
     .line 70
     .local v0, alabel:Ljava/lang/String;
-    iget-object v2, p0, Lcom/android/settings/UsageStats$AppNameComparator;->mAppLabelList:Ljava/util/Map;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsageStats$AppNameComparator;->mAppLabelList:Ljava/util/Map;
 
     iget-object v3, p2, Lcom/android/internal/os/PkgUsageStats;->packageName:Ljava/lang/String;
 
@@ -129,7 +129,7 @@
     check-cast p2, Lcom/android/internal/os/PkgUsageStats;
 
     .end local p2
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/UsageStats$AppNameComparator;->compare(Lcom/android/internal/os/PkgUsageStats;Lcom/android/internal/os/PkgUsageStats;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/OriginalSettings/UsageStats$AppNameComparator;->compare(Lcom/android/internal/os/PkgUsageStats;Lcom/android/internal/os/PkgUsageStats;)I
 
     move-result v0
 

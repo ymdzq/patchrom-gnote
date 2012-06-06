@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/DefaultRingtonePreference;
+.class public Lcom/android/OriginalSettings/DefaultRingtonePreference;
 .super Landroid/preference/RingtonePreference;
 .source "DefaultRingtonePreference.java"
 
@@ -43,11 +43,11 @@
 
     .prologue
     .line 58
-    invoke-virtual {p0}, Lcom/android/settings/DefaultRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/DefaultRingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DefaultRingtonePreference;->getRingtoneType()I
 
     move-result v1
 
@@ -64,11 +64,11 @@
 
     .prologue
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/DefaultRingtonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/DefaultRingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DefaultRingtonePreference;->getRingtoneType()I
 
     move-result v1
 

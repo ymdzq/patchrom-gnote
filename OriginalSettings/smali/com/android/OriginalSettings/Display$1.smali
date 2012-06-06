@@ -1,4 +1,4 @@
-.class Lcom/android/settings/Display$1;
+.class Lcom/android/OriginalSettings/Display$1;
 .super Ljava/lang/Object;
 .source "Display.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/Display;
+    value = Lcom/android/OriginalSettings/Display;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/Display;
+.field final synthetic this$0:Lcom/android/OriginalSettings/Display;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/Display;)V
+.method constructor <init>(Lcom/android/OriginalSettings/Display;)V
     .locals 0
     .parameter
 
     .prologue
     .line 115
-    iput-object p1, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iput-object p1, p0, Lcom/android/OriginalSettings/Display$1;->this$0:Lcom/android/OriginalSettings/Display;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,10 +49,10 @@
     if-nez p3, :cond_0
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Display$1;->this$0:Lcom/android/OriginalSettings/Display;
 
-    #getter for: Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
-    invoke-static {v0}, Lcom/android/settings/Display;->access$000(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+    #getter for: Lcom/android/OriginalSettings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    invoke-static {v0}, Lcom/android/OriginalSettings/Display;->access$000(Lcom/android/OriginalSettings/Display;)Landroid/content/res/Configuration;
 
     move-result-object v0
 
@@ -62,10 +62,10 @@
 
     .line 126
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Display$1;->this$0:Lcom/android/OriginalSettings/Display;
 
-    #calls: Lcom/android/settings/Display;->updateFontScale()V
-    invoke-static {v0}, Lcom/android/settings/Display;->access$100(Lcom/android/settings/Display;)V
+    #calls: Lcom/android/OriginalSettings/Display;->updateFontScale()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/Display;->access$100(Lcom/android/OriginalSettings/Display;)V
 
     .line 127
     return-void
@@ -77,10 +77,10 @@
     if-ne p3, v0, :cond_1
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Display$1;->this$0:Lcom/android/OriginalSettings/Display;
 
-    #getter for: Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
-    invoke-static {v0}, Lcom/android/settings/Display;->access$000(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+    #getter for: Lcom/android/OriginalSettings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    invoke-static {v0}, Lcom/android/OriginalSettings/Display;->access$000(Lcom/android/OriginalSettings/Display;)Landroid/content/res/Configuration;
 
     move-result-object v0
 
@@ -92,10 +92,10 @@
 
     .line 123
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/Display$1;->this$0:Lcom/android/settings/Display;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Display$1;->this$0:Lcom/android/OriginalSettings/Display;
 
-    #getter for: Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
-    invoke-static {v0}, Lcom/android/settings/Display;->access$000(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
+    #getter for: Lcom/android/OriginalSettings/Display;->mCurConfig:Landroid/content/res/Configuration;
+    invoke-static {v0}, Lcom/android/OriginalSettings/Display;->access$000(Lcom/android/OriginalSettings/Display;)Landroid/content/res/Configuration;
 
     move-result-object v0
 

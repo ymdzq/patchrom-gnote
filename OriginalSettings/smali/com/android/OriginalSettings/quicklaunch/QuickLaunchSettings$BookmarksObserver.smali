@@ -1,11 +1,11 @@
-.class Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
+.class Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
 .super Landroid/database/ContentObserver;
 .source "QuickLaunchSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/quicklaunch/QuickLaunchSettings;
+    value = Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/quicklaunch/QuickLaunchSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/quicklaunch/QuickLaunchSettings;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;Landroid/os/Handler;)V
     .locals 0
     .parameter
     .parameter "handler"
 
     .prologue
     .line 359
-    iput-object p1, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;->this$0:Lcom/android/settings/quicklaunch/QuickLaunchSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;->this$0:Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;
 
     .line 360
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -46,10 +46,10 @@
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
     .line 367
-    iget-object v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;->this$0:Lcom/android/settings/quicklaunch/QuickLaunchSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;->this$0:Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;
 
-    #calls: Lcom/android/settings/quicklaunch/QuickLaunchSettings;->refreshShortcuts()V
-    invoke-static {v0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->access$000(Lcom/android/settings/quicklaunch/QuickLaunchSettings;)V
+    #calls: Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->refreshShortcuts()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->access$000(Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;)V
 
     .line 368
     return-void

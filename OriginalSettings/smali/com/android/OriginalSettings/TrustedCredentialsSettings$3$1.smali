@@ -1,4 +1,4 @@
-.class Lcom/android/settings/TrustedCredentialsSettings$3$1;
+.class Lcom/android/OriginalSettings/TrustedCredentialsSettings$3$1;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/TrustedCredentialsSettings$3;->onClick(Landroid/view/View;)V
+    value = Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;->onClick(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/TrustedCredentialsSettings$3;
+.field final synthetic this$1:Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TrustedCredentialsSettings$3;)V
+.method constructor <init>(Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;)V
     .locals 0
     .parameter
 
     .prologue
     .line 365
-    iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/settings/TrustedCredentialsSettings$3;
+    iput-object p1, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,33 +44,33 @@
 
     .prologue
     .line 367
-    new-instance v0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;
+    new-instance v0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$AliasOperation;
 
-    iget-object v1, p0, Lcom/android/settings/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/settings/TrustedCredentialsSettings$3;
+    iget-object v1, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;
 
-    iget-object v1, v1, Lcom/android/settings/TrustedCredentialsSettings$3;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v1, v1, Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;->this$0:Lcom/android/OriginalSettings/TrustedCredentialsSettings;
 
-    iget-object v2, p0, Lcom/android/settings/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/settings/TrustedCredentialsSettings$3;
+    iget-object v2, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;
 
-    iget-object v2, v2, Lcom/android/settings/TrustedCredentialsSettings$3;->val$certHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
+    iget-object v2, v2, Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;->val$certHolder:Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;-><init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;Lcom/android/settings/TrustedCredentialsSettings$1;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$AliasOperation;-><init>(Lcom/android/OriginalSettings/TrustedCredentialsSettings;Lcom/android/OriginalSettings/TrustedCredentialsSettings$CertHolder;Lcom/android/OriginalSettings/TrustedCredentialsSettings$1;)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/TrustedCredentialsSettings$AliasOperation;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 368
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 369
-    iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/settings/TrustedCredentialsSettings$3;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$3$1;->this$1:Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;
 
-    iget-object v0, v0, Lcom/android/settings/TrustedCredentialsSettings$3;->val$certDialog:Landroid/app/Dialog;
+    iget-object v0, v0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;->val$certDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 

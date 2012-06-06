@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/DateTimeSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/DateTimeSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "DateTimeSettings.java"
 
 # interfaces
@@ -11,9 +11,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment;,
-        Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeFragment;,
-        Lcom/android/settings/DateTimeSettings$SettingsObserver;
+        Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment;,
+        Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeFragment;,
+        Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;
     }
 .end annotation
 
@@ -33,7 +33,7 @@
 
 .field private mIntentReceiver:Landroid/content/BroadcastReceiver;
 
-.field private mSettingsObserver:Lcom/android/settings/DateTimeSettings$SettingsObserver;
+.field private mSettingsObserver:Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;
 
 .field private mTime24Pref:Landroid/preference/Preference;
 
@@ -48,73 +48,73 @@
 
     .prologue
     .line 74
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 576
-    new-instance v0, Lcom/android/settings/DateTimeSettings$1;
+    new-instance v0, Lcom/android/OriginalSettings/DateTimeSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/DateTimeSettings$1;-><init>(Lcom/android/settings/DateTimeSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/DateTimeSettings$1;-><init>(Lcom/android/OriginalSettings/DateTimeSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/DateTimeSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     .line 669
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/DateTimeSettings;)Z
+.method static synthetic access$000(Lcom/android/OriginalSettings/DateTimeSettings;)Z
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 74
-    iget-boolean v0, p0, Lcom/android/settings/DateTimeSettings;->isFirstRun:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->isFirstRun:Z
 
     return v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/DateTimeSettings;Ljava/lang/String;)Z
+.method static synthetic access$100(Lcom/android/OriginalSettings/DateTimeSettings;Ljava/lang/String;)Z
     .locals 1
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 74
-    invoke-direct {p0, p1}, Lcom/android/settings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/DateTimeSettings;)Landroid/preference/CheckBoxPreference;
+.method static synthetic access$200(Lcom/android/OriginalSettings/DateTimeSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/DateTimeSettings;)Landroid/preference/Preference;
+.method static synthetic access$300(Lcom/android/OriginalSettings/DateTimeSettings;)Landroid/preference/Preference;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/DateTimeSettings;)Landroid/preference/Preference;
+.method static synthetic access$400(Lcom/android/OriginalSettings/DateTimeSettings;)Landroid/preference/Preference;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
 
     return-object v0
 .end method
@@ -252,7 +252,7 @@
 
     .line 456
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -285,7 +285,7 @@
 
     .prologue
     .line 450
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -333,7 +333,7 @@
     :goto_0
     add-int/2addr v2, v3
 
-    invoke-static {v2}, Lcom/android/settings/DateTimeSettings;->formatOffset(I)[C
+    invoke-static {v2}, Lcom/android/OriginalSettings/DateTimeSettings;->formatOffset(I)[C
 
     move-result-object v2
 
@@ -382,7 +382,7 @@
     .line 158
     const-string v6, "auto_time"
 
-    invoke-direct {p0, v6}, Lcom/android/settings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
+    invoke-direct {p0, v6}, Lcom/android/OriginalSettings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -390,13 +390,13 @@
     .local v0, autoTimeEnabled:Z
     const-string v6, "auto_time_zone"
 
-    invoke-direct {p0, v6}, Lcom/android/settings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
+    invoke-direct {p0, v6}, Lcom/android/OriginalSettings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
 
     move-result v1
 
     .line 161
     .local v1, autoTimeZoneEnabled:Z
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -412,89 +412,89 @@
 
     move-result v6
 
-    iput-boolean v6, p0, Lcom/android/settings/DateTimeSettings;->isFirstRun:Z
+    iput-boolean v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->isFirstRun:Z
 
     .line 164
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v6
 
-    iput-object v6, p0, Lcom/android/settings/DateTimeSettings;->mDummyDate:Ljava/util/Calendar;
+    iput-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDummyDate:Ljava/util/Calendar;
 
     .line 166
     const-string v6, "auto_time"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
     check-cast v6, Landroid/preference/CheckBoxPreference;
 
-    iput-object v6, p0, Lcom/android/settings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
+    iput-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
 
     .line 167
-    iget-object v6, p0, Lcom/android/settings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
+    iget-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v6, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 168
     const-string v6, "auto_zone"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
     check-cast v6, Landroid/preference/CheckBoxPreference;
 
-    iput-object v6, p0, Lcom/android/settings/DateTimeSettings;->mAutoTimeZonePref:Landroid/preference/CheckBoxPreference;
+    iput-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mAutoTimeZonePref:Landroid/preference/CheckBoxPreference;
 
     .line 171
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    invoke-static {v6}, Lcom/android/settings/Utils;->isWifiOnly(Landroid/content/Context;)Z
+    invoke-static {v6}, Lcom/android/OriginalSettings/Utils;->isWifiOnly(Landroid/content/Context;)Z
 
     move-result v6
 
     if-nez v6, :cond_0
 
-    iget-boolean v6, p0, Lcom/android/settings/DateTimeSettings;->isFirstRun:Z
+    iget-boolean v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->isFirstRun:Z
 
     if-eqz v6, :cond_2
 
     .line 172
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v6
 
-    iget-object v9, p0, Lcom/android/settings/DateTimeSettings;->mAutoTimeZonePref:Landroid/preference/CheckBoxPreference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mAutoTimeZonePref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v6, v9}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 173
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    invoke-static {v6}, Lcom/android/settings/Utils;->isWifiOnly(Landroid/content/Context;)Z
+    invoke-static {v6}, Lcom/android/OriginalSettings/Utils;->isWifiOnly(Landroid/content/Context;)Z
 
     move-result v6
 
     if-eqz v6, :cond_1
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v6
 
-    iget-object v9, p0, Lcom/android/settings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v6, v9}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 175
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -503,7 +503,7 @@
     invoke-static {v6, v9, v8}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 177
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -520,83 +520,83 @@
 
     .line 183
     :cond_2
-    iget-object v6, p0, Lcom/android/settings/DateTimeSettings;->mAutoTimeZonePref:Landroid/preference/CheckBoxPreference;
+    iget-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mAutoTimeZonePref:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v6, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 185
     const-string v6, "time"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
-    iput-object v6, p0, Lcom/android/settings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
+    iput-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
 
     .line 186
     const-string v6, "24 hour"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
-    iput-object v6, p0, Lcom/android/settings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
+    iput-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
 
     .line 187
     const-string v6, "timezone"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
-    iput-object v6, p0, Lcom/android/settings/DateTimeSettings;->mTimeZone:Landroid/preference/Preference;
+    iput-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimeZone:Landroid/preference/Preference;
 
     .line 188
     const-string v6, "date"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
-    iput-object v6, p0, Lcom/android/settings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
+    iput-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
 
     .line 189
     const-string v6, "date_format"
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/DateTimeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
     check-cast v6, Landroid/preference/ListPreference;
 
-    iput-object v6, p0, Lcom/android/settings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
+    iput-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
 
     .line 190
-    iget-boolean v6, p0, Lcom/android/settings/DateTimeSettings;->isFirstRun:Z
+    iget-boolean v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->isFirstRun:Z
 
     if-eqz v6, :cond_3
 
     .line 191
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v6
 
-    iget-object v9, p0, Lcom/android/settings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
 
     invoke-virtual {v6, v9}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 192
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v6
 
-    iget-object v9, p0, Lcom/android/settings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, v9}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 195
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -612,7 +612,7 @@
 
     .line 197
     .local v4, formattedDates:[Ljava/lang/String;
-    invoke-direct {p0}, Lcom/android/settings/DateTimeSettings;->getDateFormat()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getDateFormat()Ljava/lang/String;
 
     move-result-object v2
 
@@ -625,24 +625,24 @@
 
     .line 217
     :cond_4
-    iget-object v6, p0, Lcom/android/settings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
 
     const/high16 v9, 0x7f07
 
     invoke-virtual {v6, v9}, Landroid/preference/ListPreference;->setEntries(I)V
 
     .line 218
-    iget-object v6, p0, Lcom/android/settings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, v10}, Landroid/preference/ListPreference;->setEntryValues(I)V
 
     .line 219
-    iget-object v6, p0, Lcom/android/settings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
+    iget-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
 
     invoke-virtual {v6, v2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 221
-    iget-object v9, p0, Lcom/android/settings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
 
     if-nez v0, :cond_5
 
@@ -652,7 +652,7 @@
     invoke-virtual {v9, v6}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 222
-    iget-object v9, p0, Lcom/android/settings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
 
     if-nez v0, :cond_6
 
@@ -662,7 +662,7 @@
     invoke-virtual {v9, v6}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 223
-    iget-object v6, p0, Lcom/android/settings/DateTimeSettings;->mTimeZone:Landroid/preference/Preference;
+    iget-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimeZone:Landroid/preference/Preference;
 
     if-nez v1, :cond_7
 
@@ -696,7 +696,7 @@
 
     .prologue
     .line 440
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -713,7 +713,7 @@
 
     .prologue
     .line 444
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -861,7 +861,7 @@
 
     .line 434
     .local v0, timeChanged:Landroid/content/Intent;
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -881,11 +881,11 @@
 
     .prologue
     .line 429
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
 
     .line 430
     return-void
@@ -897,26 +897,26 @@
 
     .prologue
     .line 135
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 137
     const v0, 0x7f05000b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DateTimeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/DateTimeSettings;->addPreferencesFromResource(I)V
 
     .line 142
-    invoke-direct {p0}, Lcom/android/settings/DateTimeSettings;->initUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->initUI()V
 
     .line 145
-    new-instance v0, Lcom/android/settings/DateTimeSettings$SettingsObserver;
+    new-instance v0, Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/DateTimeSettings$SettingsObserver;-><init>(Lcom/android/settings/DateTimeSettings;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;-><init>(Lcom/android/OriginalSettings/DateTimeSettings;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/DateTimeSettings;->mSettingsObserver:Lcom/android/settings/DateTimeSettings$SettingsObserver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mSettingsObserver:Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;
 
     .line 147
     return-void
@@ -953,7 +953,7 @@
     .local v6, calendar:Ljava/util/Calendar;
     new-instance v0, Landroid/app/DatePickerDialog;
 
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1042,7 +1042,7 @@
     .restart local v6       #calendar:Ljava/util/Calendar;
     new-instance v0, Landroid/app/TimePickerDialog;
 
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1056,7 +1056,7 @@
 
     move-result v4
 
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1093,7 +1093,7 @@
     .line 276
     const-string v1, "auto_time"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1106,10 +1106,10 @@
 
     .line 281
     :cond_1
-    invoke-static {p2, p3, p4}, Lcom/android/settings/DateTimeSettings;->setDate(III)V
+    invoke-static {p2, p3, p4}, Lcom/android/OriginalSettings/DateTimeSettings;->setDate(III)V
 
     .line 282
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1118,7 +1118,7 @@
     if-eqz v0, :cond_0
 
     .line 284
-    invoke-virtual {p0, v0}, Lcom/android/settings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
 
     goto :goto_0
 .end method
@@ -1128,14 +1128,14 @@
 
     .prologue
     .line 152
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings;->mSettingsObserver:Lcom/android/settings/DateTimeSettings$SettingsObserver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mSettingsObserver:Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
@@ -1148,19 +1148,19 @@
 
     .prologue
     .line 247
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPause()V
 
     .line 248
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 249
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1183,19 +1183,19 @@
     const/4 v1, 0x1
 
     .line 412
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
 
     if-ne p2, v0, :cond_1
 
     .line 413
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DateTimeSettings;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/DateTimeSettings;->showDialog(I)V
 
     .line 423
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -1203,26 +1203,26 @@
 
     .line 414
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
 
     if-ne p2, v0, :cond_2
 
     .line 416
-    invoke-virtual {p0, v1}, Lcom/android/settings/DateTimeSettings;->removeDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/DateTimeSettings;->removeDialog(I)V
 
     .line 417
-    invoke-virtual {p0, v1}, Lcom/android/settings/DateTimeSettings;->showDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/DateTimeSettings;->showDialog(I)V
 
     goto :goto_0
 
     .line 418
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
 
     if-ne p2, v0, :cond_0
 
     .line 419
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
@@ -1230,17 +1230,17 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/DateTimeSettings;->set24Hour(Z)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/DateTimeSettings;->set24Hour(Z)V
 
     .line 420
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
 
     .line 421
-    invoke-direct {p0}, Lcom/android/settings/DateTimeSettings;->timeUpdated()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->timeUpdated()V
 
     goto :goto_0
 .end method
@@ -1252,10 +1252,10 @@
     const/4 v3, 0x0
 
     .line 228
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 230
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -1266,11 +1266,11 @@
     invoke-interface {v1, p0}, Landroid/content/SharedPreferences;->registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 233
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTime24Pref:Landroid/preference/Preference;
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/DateTimeSettings;->is24Hour()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->is24Hour()Z
 
     move-result v2
 
@@ -1298,20 +1298,20 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 240
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/DateTimeSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0, v3, v3}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
     .line 242
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
 
     .line 243
     return-void
@@ -1337,7 +1337,7 @@
     if-eqz v3, :cond_1
 
     .line 310
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1353,7 +1353,7 @@
 
     .line 312
     .local v2, format:Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1362,11 +1362,11 @@
     invoke-static {v3, v4, v2}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 314
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
 
     .line 340
     .end local v2           #format:Ljava/lang/String;
@@ -1418,7 +1418,7 @@
 
     .line 325
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1432,7 +1432,7 @@
     invoke-static {v6, v7, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 327
-    iget-object v6, p0, Lcom/android/settings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
+    iget-object v6, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
 
     if-nez v0, :cond_4
 
@@ -1442,7 +1442,7 @@
     invoke-virtual {v6, v3}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 328
-    iget-object v3, p0, Lcom/android/settings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
 
     if-nez v0, :cond_5
 
@@ -1491,7 +1491,7 @@
 
     .line 336
     :cond_7
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1505,7 +1505,7 @@
     invoke-static {v6, v7, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 338
-    iget-object v3, p0, Lcom/android/settings/DateTimeSettings;->mTimeZone:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimeZone:Landroid/preference/Preference;
 
     if-nez v1, :cond_9
 
@@ -1537,7 +1537,7 @@
     .line 291
     const-string v1, "auto_time"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1550,10 +1550,10 @@
 
     .line 296
     :cond_1
-    invoke-static {p2, p3}, Lcom/android/settings/DateTimeSettings;->setTime(II)V
+    invoke-static {p2, p3}, Lcom/android/OriginalSettings/DateTimeSettings;->setTime(II)V
 
     .line 297
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1562,7 +1562,7 @@
     if-eqz v0, :cond_0
 
     .line 299
-    invoke-virtual {p0, v0}, Lcom/android/settings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/DateTimeSettings;->updateTimeAndDateDisplay(Landroid/content/Context;)V
 
     goto :goto_0
 .end method
@@ -1587,7 +1587,7 @@
 
     .line 256
     .local v11, now:Ljava/util/Calendar;
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mDummyDate:Ljava/util/Calendar;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDummyDate:Ljava/util/Calendar;
 
     invoke-virtual {v11}, Ljava/util/Calendar;->getTimeZone()Ljava/util/TimeZone;
 
@@ -1596,7 +1596,7 @@
     invoke-virtual {v0, v1}, Ljava/util/Calendar;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 257
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mDummyDate:Ljava/util/Calendar;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDummyDate:Ljava/util/Calendar;
 
     const/4 v1, 0x1
 
@@ -1615,7 +1615,7 @@
     invoke-virtual/range {v0 .. v6}, Ljava/util/Calendar;->set(IIIIII)V
 
     .line 258
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mDummyDate:Ljava/util/Calendar;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDummyDate:Ljava/util/Calendar;
 
     invoke-virtual {v0}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
@@ -1623,9 +1623,9 @@
 
     .line 259
     .local v9, dummyDate:Ljava/util/Date;
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1644,20 +1644,20 @@
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 260
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mTimeZone:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mTimeZone:Landroid/preference/Preference;
 
     invoke-virtual {v11}, Ljava/util/Calendar;->getTimeZone()Ljava/util/TimeZone;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/DateTimeSettings;->getTimeZoneText(Ljava/util/TimeZone;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/OriginalSettings/DateTimeSettings;->getTimeZoneText(Ljava/util/TimeZone;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 261
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
 
     invoke-virtual {v11}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
@@ -1670,7 +1670,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 263
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1682,7 +1682,7 @@
 
     .line 264
     .local v8, dateFormats:[Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1703,7 +1703,7 @@
     if-ge v10, v0, :cond_0
 
     .line 266
-    invoke-direct {p0}, Lcom/android/settings/DateTimeSettings;->getDateFormat()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/OriginalSettings/DateTimeSettings;->getDateFormat()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1716,7 +1716,7 @@
     if-eqz v0, :cond_1
 
     .line 267
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettings;->mDateFormat:Landroid/preference/ListPreference;
 
     aget-object v1, v7, v10
 

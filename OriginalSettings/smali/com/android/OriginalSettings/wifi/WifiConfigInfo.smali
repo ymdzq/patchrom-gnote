@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/WifiConfigInfo;
-.super Landroid/app/Activity;
+.class public Lcom/android/OriginalSettings/wifi/WifiConfigInfo;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "WifiConfigInfo.java"
 
 
@@ -15,7 +15,7 @@
 
     .prologue
     .line 32
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     return-void
 .end method
@@ -28,34 +28,34 @@
 
     .prologue
     .line 45
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 47
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiConfigInfo;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/WifiConfigInfo;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiConfigInfo;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiConfigInfo;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     .line 48
     const v0, 0x7f0400ad
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiConfigInfo;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/WifiConfigInfo;->setContentView(I)V
 
     .line 49
     const v0, 0x7f080236
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiConfigInfo;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/WifiConfigInfo;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiConfigInfo;->mConfigList:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiConfigInfo;->mConfigList:Landroid/widget/TextView;
 
     .line 50
     return-void
@@ -66,10 +66,10 @@
 
     .prologue
     .line 54
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/BaseActivity;->onResume()V
 
     .line 55
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiConfigInfo;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiConfigInfo;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v3}, Landroid/net/wifi/WifiManager;->getConfiguredNetworks()Ljava/util/List;
 
@@ -107,7 +107,7 @@
 
     .line 60
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiConfigInfo;->mConfigList:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiConfigInfo;->mConfigList:Landroid/widget/TextView;
 
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

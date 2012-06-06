@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/TurnOverSettings$4;
+.class Lcom/android/OriginalSettings/motion/TurnOverSettings$4;
 .super Ljava/lang/Object;
 .source "TurnOverSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/TurnOverSettings;->showGuideDialog()V
+    value = Lcom/android/OriginalSettings/motion/TurnOverSettings;->showGuideDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/TurnOverSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/TurnOverSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/TurnOverSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 206
-    iput-object p1, p0, Lcom/android/settings/motion/TurnOverSettings$4;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,10 +48,10 @@
     const/4 v3, 0x0
 
     .line 208
-    iget-object v1, p0, Lcom/android/settings/motion/TurnOverSettings$4;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
-    #calls: Lcom/android/settings/motion/TurnOverSettings;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v1}, Lcom/android/settings/motion/TurnOverSettings;->access$400(Lcom/android/settings/motion/TurnOverSettings;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/motion/TurnOverSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v1}, Lcom/android/OriginalSettings/motion/TurnOverSettings;->access$400(Lcom/android/OriginalSettings/motion/TurnOverSettings;)Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -64,12 +64,12 @@
     if-eqz v1, :cond_1
 
     .line 209
-    iget-object v1, p0, Lcom/android/settings/motion/TurnOverSettings$4;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
     const-string v2, "audio"
 
-    #calls: Lcom/android/settings/motion/TurnOverSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-    invoke-static {v1, v2}, Lcom/android/settings/motion/TurnOverSettings;->access$500(Lcom/android/settings/motion/TurnOverSettings;Ljava/lang/String;)Ljava/lang/Object;
+    #calls: Lcom/android/OriginalSettings/motion/TurnOverSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v1, v2}, Lcom/android/OriginalSettings/motion/TurnOverSettings;->access$500(Lcom/android/OriginalSettings/motion/TurnOverSettings;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -90,10 +90,10 @@
     if-eqz v1, :cond_0
 
     .line 211
-    iget-object v1, p0, Lcom/android/settings/motion/TurnOverSettings$4;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
-    #calls: Lcom/android/settings/motion/TurnOverSettings;->showUseRingDialog()V
-    invoke-static {v1}, Lcom/android/settings/motion/TurnOverSettings;->access$200(Lcom/android/settings/motion/TurnOverSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/TurnOverSettings;->showUseRingDialog()V
+    invoke-static {v1}, Lcom/android/OriginalSettings/motion/TurnOverSettings;->access$200(Lcom/android/OriginalSettings/motion/TurnOverSettings;)V
 
     .line 218
     .end local v0           #audioManager:Landroid/media/AudioManager;
@@ -103,20 +103,20 @@
     .line 213
     .restart local v0       #audioManager:Landroid/media/AudioManager;
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/motion/TurnOverSettings$4;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
-    #calls: Lcom/android/settings/motion/TurnOverSettings;->startTryActually(Z)V
-    invoke-static {v1, v3}, Lcom/android/settings/motion/TurnOverSettings;->access$600(Lcom/android/settings/motion/TurnOverSettings;Z)V
+    #calls: Lcom/android/OriginalSettings/motion/TurnOverSettings;->startTryActually(Z)V
+    invoke-static {v1, v3}, Lcom/android/OriginalSettings/motion/TurnOverSettings;->access$600(Lcom/android/OriginalSettings/motion/TurnOverSettings;Z)V
 
     goto :goto_0
 
     .line 216
     .end local v0           #audioManager:Landroid/media/AudioManager;
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/motion/TurnOverSettings$4;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$4;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
-    #calls: Lcom/android/settings/motion/TurnOverSettings;->showMotionDialog()V
-    invoke-static {v1}, Lcom/android/settings/motion/TurnOverSettings;->access$700(Lcom/android/settings/motion/TurnOverSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/TurnOverSettings;->showMotionDialog()V
+    invoke-static {v1}, Lcom/android/OriginalSettings/motion/TurnOverSettings;->access$700(Lcom/android/OriginalSettings/motion/TurnOverSettings;)V
 
     goto :goto_0
 .end method

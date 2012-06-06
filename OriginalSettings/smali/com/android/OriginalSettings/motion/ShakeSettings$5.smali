@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/ShakeSettings$5;
+.class Lcom/android/OriginalSettings/motion/ShakeSettings$5;
 .super Ljava/lang/Object;
 .source "ShakeSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/ShakeSettings;->showGuideDialog()V
+    value = Lcom/android/OriginalSettings/motion/ShakeSettings;->showGuideDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/ShakeSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/ShakeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/ShakeSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 208
-    iput-object p1, p0, Lcom/android/settings/motion/ShakeSettings$5;->this$0:Lcom/android/settings/motion/ShakeSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings$5;->this$0:Lcom/android/OriginalSettings/motion/ShakeSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 210
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings$5;->this$0:Lcom/android/settings/motion/ShakeSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings$5;->this$0:Lcom/android/OriginalSettings/motion/ShakeSettings;
 
-    #calls: Lcom/android/settings/motion/ShakeSettings;->stopAnimation()V
-    invoke-static {v0}, Lcom/android/settings/motion/ShakeSettings;->access$600(Lcom/android/settings/motion/ShakeSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/ShakeSettings;->stopAnimation()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->access$600(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
 
     .line 211
     return-void

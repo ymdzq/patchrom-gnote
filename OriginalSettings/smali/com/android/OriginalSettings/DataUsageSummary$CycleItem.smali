@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/DataUsageSummary$CycleItem;
+.class public Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/OriginalSettings/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/lang/Comparable",
         "<",
-        "Lcom/android/settings/DataUsageSummary$CycleItem;",
+        "Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;",
         ">;"
     }
 .end annotation
@@ -55,17 +55,17 @@
 
     move-wide v3, p4
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/DataUsageSummary;->formatDateRange(Landroid/content/Context;JJZ)Ljava/lang/String;
+    invoke-static/range {v0 .. v5}, Lcom/android/OriginalSettings/DataUsageSummary;->formatDateRange(Landroid/content/Context;JJZ)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/DataUsageSummary$CycleItem;->label:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->label:Ljava/lang/CharSequence;
 
     .line 1321
-    iput-wide p2, p0, Lcom/android/settings/DataUsageSummary$CycleItem;->start:J
+    iput-wide p2, p0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->start:J
 
     .line 1322
-    iput-wide p4, p0, Lcom/android/settings/DataUsageSummary$CycleItem;->end:J
+    iput-wide p4, p0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->end:J
 
     .line 1323
     return-void
@@ -80,7 +80,7 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 1316
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$CycleItem;->label:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->label:Ljava/lang/CharSequence;
 
     .line 1317
     return-void
@@ -88,15 +88,15 @@
 
 
 # virtual methods
-.method public compareTo(Lcom/android/settings/DataUsageSummary$CycleItem;)I
+.method public compareTo(Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;)I
     .locals 4
     .parameter "another"
 
     .prologue
     .line 1341
-    iget-wide v0, p0, Lcom/android/settings/DataUsageSummary$CycleItem;->start:J
+    iget-wide v0, p0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->start:J
 
-    iget-wide v2, p1, Lcom/android/settings/DataUsageSummary$CycleItem;->start:J
+    iget-wide v2, p1, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->start:J
 
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Long;->compare(JJ)I
 
@@ -111,10 +111,10 @@
 
     .prologue
     .line 1310
-    check-cast p1, Lcom/android/settings/DataUsageSummary$CycleItem;
+    check-cast p1, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/DataUsageSummary$CycleItem;->compareTo(Lcom/android/settings/DataUsageSummary$CycleItem;)I
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->compareTo(Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;)I
 
     move-result v0
 
@@ -129,28 +129,28 @@
     const/4 v1, 0x0
 
     .line 1332
-    instance-of v2, p1, Lcom/android/settings/DataUsageSummary$CycleItem;
+    instance-of v2, p1, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;
 
     if-eqz v2, :cond_0
 
     move-object v0, p1
 
     .line 1333
-    check-cast v0, Lcom/android/settings/DataUsageSummary$CycleItem;
+    check-cast v0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;
 
     .line 1334
-    .local v0, another:Lcom/android/settings/DataUsageSummary$CycleItem;
-    iget-wide v2, p0, Lcom/android/settings/DataUsageSummary$CycleItem;->start:J
+    .local v0, another:Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;
+    iget-wide v2, p0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->start:J
 
-    iget-wide v4, v0, Lcom/android/settings/DataUsageSummary$CycleItem;->start:J
+    iget-wide v4, v0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->start:J
 
     cmp-long v2, v2, v4
 
     if-nez v2, :cond_0
 
-    iget-wide v2, p0, Lcom/android/settings/DataUsageSummary$CycleItem;->end:J
+    iget-wide v2, p0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->end:J
 
-    iget-wide v4, v0, Lcom/android/settings/DataUsageSummary$CycleItem;->end:J
+    iget-wide v4, v0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->end:J
 
     cmp-long v2, v2, v4
 
@@ -159,7 +159,7 @@
     const/4 v1, 0x1
 
     .line 1336
-    .end local v0           #another:Lcom/android/settings/DataUsageSummary$CycleItem;
+    .end local v0           #another:Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;
     :cond_0
     return v1
 .end method
@@ -169,7 +169,7 @@
 
     .prologue
     .line 1327
-    iget-object v0, p0, Lcom/android/settings/DataUsageSummary$CycleItem;->label:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

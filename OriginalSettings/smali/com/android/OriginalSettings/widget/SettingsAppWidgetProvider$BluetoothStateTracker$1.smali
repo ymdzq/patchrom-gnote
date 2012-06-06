@@ -1,11 +1,11 @@
-.class Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;
+.class Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;
 .super Landroid/os/AsyncTask;
 .source "SettingsAppWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;->requestStateChange(Landroid/content/Context;Z)V
+    value = Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;->requestStateChange(Landroid/content/Context;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,22 +26,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;
+.field final synthetic this$0:Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;
 
 .field final synthetic val$desiredState:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;Z)V
+.method constructor <init>(Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;Z)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 466
-    iput-object p1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->this$0:Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;
+    iput-object p1, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->this$0:Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;
 
-    iput-boolean p2, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->val$desiredState:Z
+    iput-boolean p2, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->val$desiredState:Z
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -59,7 +59,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -72,13 +72,13 @@
 
     .prologue
     .line 469
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->access$900()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-static {}, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider;->access$900()Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->val$desiredState:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$BluetoothStateTracker$1;->val$desiredState:Z
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->setBluetoothEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;->setBluetoothEnabled(Z)V
 
     .line 470
     const/4 v0, 0x0

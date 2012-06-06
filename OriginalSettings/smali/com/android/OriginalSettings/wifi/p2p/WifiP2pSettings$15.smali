@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/p2p/WifiP2pSettings$15;
+.class Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$15;
 .super Ljava/lang/Object;
 .source "WifiP2pSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/p2p/WifiP2pSettings;->setScanTimer(ZZ)V
+    value = Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->setScanTimer(ZZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 1073
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$15;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$15;->this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -81,12 +81,12 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 1076
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$15;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$15;->this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
     const/4 v1, 0x3
 
-    #calls: Lcom/android/settings/wifi/p2p/WifiP2pSettings;->setP2pMenu(I)V
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->access$1000(Lcom/android/settings/wifi/p2p/WifiP2pSettings;I)V
+    #calls: Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->setP2pMenu(I)V
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->access$1000(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;I)V
 
     .line 1077
     return-void

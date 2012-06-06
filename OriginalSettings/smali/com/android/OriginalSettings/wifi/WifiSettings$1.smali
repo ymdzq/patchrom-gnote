@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/WifiSettings$1;
+.class Lcom/android/OriginalSettings/wifi/WifiSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "WifiSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiSettings;-><init>()V
+    value = Lcom/android/OriginalSettings/wifi/WifiSettings;-><init>()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 209
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSettings$1;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$1;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,10 +41,10 @@
 
     .prologue
     .line 212
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$1;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$1;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    #calls: Lcom/android/settings/wifi/WifiSettings;->handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
-    invoke-static {v0, p1, p2}, Lcom/android/settings/wifi/WifiSettings;->access$000(Lcom/android/settings/wifi/WifiSettings;Landroid/content/Context;Landroid/content/Intent;)V
+    #calls: Lcom/android/OriginalSettings/wifi/WifiSettings;->handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {v0, p1, p2}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$000(Lcom/android/OriginalSettings/wifi/WifiSettings;Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 213
     return-void

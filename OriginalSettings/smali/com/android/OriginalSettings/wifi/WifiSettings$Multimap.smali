@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/WifiSettings$Multimap;
+.class Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;
 .super Ljava/lang/Object;
 .source "WifiSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WifiSettings;
+    value = Lcom/android/OriginalSettings/wifi/WifiSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -37,18 +37,18 @@
     .end annotation
 .end field
 
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/wifi/WifiSettings;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
     .locals 1
     .parameter
 
     .prologue
     .line 927
-    .local p0, this:Lcom/android/settings/wifi/WifiSettings$Multimap;,"Lcom/android/settings/wifi/WifiSettings$Multimap<TK;TV;>;"
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSettings$Multimap;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    .local p0, this:Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;,"Lcom/android/settings/wifi/WifiSettings$Multimap<TK;TV;>;"
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,20 +57,20 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiSettings$Multimap;->store:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;->store:Ljava/util/HashMap;
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/wifi/WifiSettings;Lcom/android/settings/wifi/WifiSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/wifi/WifiSettings;Lcom/android/OriginalSettings/wifi/WifiSettings$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 927
-    .local p0, this:Lcom/android/settings/wifi/WifiSettings$Multimap;,"Lcom/android/settings/wifi/WifiSettings$Multimap<TK;TV;>;"
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiSettings$Multimap;-><init>(Lcom/android/settings/wifi/WifiSettings;)V
+    .local p0, this:Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;,"Lcom/android/settings/wifi/WifiSettings$Multimap<TK;TV;>;"
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;-><init>(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
 
     return-void
 .end method
@@ -90,9 +90,9 @@
 
     .prologue
     .line 931
-    .local p0, this:Lcom/android/settings/wifi/WifiSettings$Multimap;,"Lcom/android/settings/wifi/WifiSettings$Multimap<TK;TV;>;"
+    .local p0, this:Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;,"Lcom/android/settings/wifi/WifiSettings$Multimap<TK;TV;>;"
     .local p1, key:Ljava/lang/Object;,"TK;"
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettings$Multimap;->store:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;->store:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -129,10 +129,10 @@
 
     .prologue
     .line 936
-    .local p0, this:Lcom/android/settings/wifi/WifiSettings$Multimap;,"Lcom/android/settings/wifi/WifiSettings$Multimap<TK;TV;>;"
+    .local p0, this:Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;,"Lcom/android/settings/wifi/WifiSettings$Multimap<TK;TV;>;"
     .local p1, key:Ljava/lang/Object;,"TK;"
     .local p2, val:Ljava/lang/Object;,"TV;"
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettings$Multimap;->store:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;->store:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -154,7 +154,7 @@
 
     .line 939
     .restart local v0       #curVals:Ljava/util/List;,"Ljava/util/List<TV;>;"
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiSettings$Multimap;->store:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$Multimap;->store:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

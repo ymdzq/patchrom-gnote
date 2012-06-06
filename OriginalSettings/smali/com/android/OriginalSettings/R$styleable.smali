@@ -1,11 +1,11 @@
-.class public final Lcom/android/settings/R$styleable;
+.class public final Lcom/android/OriginalSettings/R$styleable;
 .super Ljava/lang/Object;
 .source "R.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/R;
+    value = Lcom/android/OriginalSettings/R;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -48,7 +48,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/R$styleable;->BatteryHistoryChart:[I
+    sput-object v0, Lcom/android/OriginalSettings/R$styleable;->BatteryHistoryChart:[I
 
     const/4 v0, 0x4
 
@@ -56,7 +56,7 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/R$styleable;->ChartGridView:[I
+    sput-object v0, Lcom/android/OriginalSettings/R$styleable;->ChartGridView:[I
 
     const/4 v0, 0x3
 
@@ -64,7 +64,7 @@
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/R$styleable;->ChartNetworkSeriesView:[I
+    sput-object v0, Lcom/android/OriginalSettings/R$styleable;->ChartNetworkSeriesView:[I
 
     const/4 v0, 0x6
 
@@ -72,13 +72,13 @@
 
     fill-array-data v0, :array_3
 
-    sput-object v0, Lcom/android/settings/R$styleable;->ChartSweepView:[I
+    sput-object v0, Lcom/android/OriginalSettings/R$styleable;->ChartSweepView:[I
 
     new-array v0, v4, [I
 
     fill-array-data v0, :array_4
 
-    sput-object v0, Lcom/android/settings/R$styleable;->ChartView:[I
+    sput-object v0, Lcom/android/OriginalSettings/R$styleable;->ChartView:[I
 
     new-array v0, v3, [I
 
@@ -86,13 +86,13 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/R$styleable;->IconPreferenceScreen:[I
+    sput-object v0, Lcom/android/OriginalSettings/R$styleable;->IconPreferenceScreen:[I
 
     new-array v0, v4, [I
 
     fill-array-data v0, :array_5
 
-    sput-object v0, Lcom/android/settings/R$styleable;->PercentageBarChart:[I
+    sput-object v0, Lcom/android/OriginalSettings/R$styleable;->PercentageBarChart:[I
 
     new-array v0, v3, [I
 
@@ -100,7 +100,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/R$styleable;->WifiEncryptionState:[I
+    sput-object v0, Lcom/android/OriginalSettings/R$styleable;->WifiEncryptionState:[I
 
     return-void
 

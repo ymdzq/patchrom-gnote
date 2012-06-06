@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/Memory$1;
+.class Lcom/android/OriginalSettings/deviceinfo/Memory$1;
 .super Landroid/os/storage/StorageEventListener;
 .source "Memory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/Memory;
+    value = Lcom/android/OriginalSettings/deviceinfo/Memory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/Memory;
+.field final synthetic this$0:Lcom/android/OriginalSettings/deviceinfo/Memory;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Memory;)V
+.method constructor <init>(Lcom/android/OriginalSettings/deviceinfo/Memory;)V
     .locals 0
     .parameter
 
     .prologue
     .line 151
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$1;->this$0:Lcom/android/settings/deviceinfo/Memory;
+    iput-object p1, p0, Lcom/android/OriginalSettings/deviceinfo/Memory$1;->this$0:Lcom/android/OriginalSettings/deviceinfo/Memory;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
 
@@ -102,12 +102,12 @@
     if-eqz v2, :cond_0
 
     .line 158
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/Memory$1;->this$0:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v2, p0, Lcom/android/OriginalSettings/deviceinfo/Memory$1;->this$0:Lcom/android/OriginalSettings/deviceinfo/Memory;
 
     const/4 v3, 0x1
 
-    #calls: Lcom/android/settings/deviceinfo/Memory;->removeDialog(I)V
-    invoke-static {v2, v3}, Lcom/android/settings/deviceinfo/Memory;->access$000(Lcom/android/settings/deviceinfo/Memory;I)V
+    #calls: Lcom/android/OriginalSettings/deviceinfo/Memory;->removeDialog(I)V
+    invoke-static {v2, v3}, Lcom/android/OriginalSettings/deviceinfo/Memory;->access$000(Lcom/android/OriginalSettings/deviceinfo/Memory;I)V
 
     .line 161
     :cond_0
@@ -115,10 +115,10 @@
 
     .local v0, i:I
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/Memory$1;->this$0:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v2, p0, Lcom/android/OriginalSettings/deviceinfo/Memory$1;->this$0:Lcom/android/OriginalSettings/deviceinfo/Memory;
 
-    #getter for: Lcom/android/settings/deviceinfo/Memory;->mStorageVolumePreferenceCategories:[Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
-    invoke-static {v2}, Lcom/android/settings/deviceinfo/Memory;->access$100(Lcom/android/settings/deviceinfo/Memory;)[Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    #getter for: Lcom/android/OriginalSettings/deviceinfo/Memory;->mStorageVolumePreferenceCategories:[Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;
+    invoke-static {v2}, Lcom/android/OriginalSettings/deviceinfo/Memory;->access$100(Lcom/android/OriginalSettings/deviceinfo/Memory;)[Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;
 
     move-result-object v2
 
@@ -127,18 +127,18 @@
     if-ge v0, v2, :cond_1
 
     .line 162
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/Memory$1;->this$0:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v2, p0, Lcom/android/OriginalSettings/deviceinfo/Memory$1;->this$0:Lcom/android/OriginalSettings/deviceinfo/Memory;
 
-    #getter for: Lcom/android/settings/deviceinfo/Memory;->mStorageVolumePreferenceCategories:[Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
-    invoke-static {v2}, Lcom/android/settings/deviceinfo/Memory;->access$100(Lcom/android/settings/deviceinfo/Memory;)[Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    #getter for: Lcom/android/OriginalSettings/deviceinfo/Memory;->mStorageVolumePreferenceCategories:[Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;
+    invoke-static {v2}, Lcom/android/OriginalSettings/deviceinfo/Memory;->access$100(Lcom/android/OriginalSettings/deviceinfo/Memory;)[Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;
 
     move-result-object v2
 
     aget-object v1, v2, v0
 
     .line 163
-    .local v1, svpc:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
-    invoke-virtual {v1}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->getStorageVolume()Landroid/os/storage/StorageVolume;
+    .local v1, svpc:Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;->getStorageVolume()Landroid/os/storage/StorageVolume;
 
     move-result-object v2
 
@@ -153,15 +153,15 @@
     if-eqz v2, :cond_2
 
     .line 164
-    invoke-virtual {v1}, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->onStorageStateChanged()V
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;->onStorageStateChanged()V
 
     .line 168
-    .end local v1           #svpc:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    .end local v1           #svpc:Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;
     :cond_1
     return-void
 
     .line 161
-    .restart local v1       #svpc:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    .restart local v1       #svpc:Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;
     :cond_2
     add-int/lit8 v0, v0, 0x1
 

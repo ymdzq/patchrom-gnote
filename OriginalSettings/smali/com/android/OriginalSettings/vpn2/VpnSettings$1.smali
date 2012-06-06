@@ -1,11 +1,11 @@
-.class Lcom/android/settings/vpn2/VpnSettings$1;
+.class Lcom/android/OriginalSettings/vpn2/VpnSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "VpnSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/vpn2/VpnSettings;
+    value = Lcom/android/OriginalSettings/vpn2/VpnSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/vpn2/VpnSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/vpn2/VpnSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/vpn2/VpnSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/vpn2/VpnSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 562
-    iput-object p1, p0, Lcom/android/settings/vpn2/VpnSettings$1;->this$0:Lcom/android/settings/vpn2/VpnSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/vpn2/VpnSettings$1;->this$0:Lcom/android/OriginalSettings/vpn2/VpnSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -55,19 +55,19 @@
 
     if-eqz v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$1;->this$0:Lcom/android/settings/vpn2/VpnSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/vpn2/VpnSettings$1;->this$0:Lcom/android/OriginalSettings/vpn2/VpnSettings;
 
-    #getter for: Lcom/android/settings/vpn2/VpnSettings;->mPreferences:Ljava/util/HashMap;
-    invoke-static {v3}, Lcom/android/settings/vpn2/VpnSettings;->access$000(Lcom/android/settings/vpn2/VpnSettings;)Ljava/util/HashMap;
+    #getter for: Lcom/android/OriginalSettings/vpn2/VpnSettings;->mPreferences:Ljava/util/HashMap;
+    invoke-static {v3}, Lcom/android/OriginalSettings/vpn2/VpnSettings;->access$000(Lcom/android/OriginalSettings/vpn2/VpnSettings;)Ljava/util/HashMap;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
     .line 568
-    iget-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$1;->this$0:Lcom/android/settings/vpn2/VpnSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/vpn2/VpnSettings$1;->this$0:Lcom/android/OriginalSettings/vpn2/VpnSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/vpn2/VpnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/vpn2/VpnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -87,17 +87,17 @@
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 572
-    iget-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$1;->this$0:Lcom/android/settings/vpn2/VpnSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/vpn2/VpnSettings$1;->this$0:Lcom/android/OriginalSettings/vpn2/VpnSettings;
 
     const/4 v4, 0x0
 
-    #setter for: Lcom/android/settings/vpn2/VpnSettings;->mPreferences:Ljava/util/HashMap;
-    invoke-static {v3, v4}, Lcom/android/settings/vpn2/VpnSettings;->access$002(Lcom/android/settings/vpn2/VpnSettings;Ljava/util/HashMap;)Ljava/util/HashMap;
+    #setter for: Lcom/android/OriginalSettings/vpn2/VpnSettings;->mPreferences:Ljava/util/HashMap;
+    invoke-static {v3, v4}, Lcom/android/OriginalSettings/vpn2/VpnSettings;->access$002(Lcom/android/OriginalSettings/vpn2/VpnSettings;Ljava/util/HashMap;)Ljava/util/HashMap;
 
     .line 573
-    iget-object v3, p0, Lcom/android/settings/vpn2/VpnSettings$1;->this$0:Lcom/android/settings/vpn2/VpnSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/vpn2/VpnSettings$1;->this$0:Lcom/android/OriginalSettings/vpn2/VpnSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/vpn2/VpnSettings;->onResume()V
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/vpn2/VpnSettings;->onResume()V
 
     .line 575
     .end local v1           #addNetworkPreference:Landroid/preference/Preference;

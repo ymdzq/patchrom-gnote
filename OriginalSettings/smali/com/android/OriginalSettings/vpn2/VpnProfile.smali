@@ -1,4 +1,4 @@
-.class Lcom/android/settings/vpn2/VpnProfile;
+.class Lcom/android/OriginalSettings/vpn2/VpnProfile;
 .super Ljava/lang/Object;
 .source "VpnProfile.java"
 
@@ -56,87 +56,87 @@
     .line 40
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->name:Ljava/lang/String;
 
     .line 41
-    iput v1, p0, Lcom/android/settings/vpn2/VpnProfile;->type:I
+    iput v1, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->type:I
 
     .line 42
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->server:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->server:Ljava/lang/String;
 
     .line 43
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->username:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->username:Ljava/lang/String;
 
     .line 44
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->password:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->password:Ljava/lang/String;
 
     .line 45
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->dnsServers:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->dnsServers:Ljava/lang/String;
 
     .line 46
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->searchDomains:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->searchDomains:Ljava/lang/String;
 
     .line 47
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->routes:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->routes:Ljava/lang/String;
 
     .line 48
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/vpn2/VpnProfile;->mppe:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->mppe:Z
 
     .line 49
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->l2tpSecret:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->l2tpSecret:Ljava/lang/String;
 
     .line 50
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecIdentifier:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecIdentifier:Ljava/lang/String;
 
     .line 51
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecSecret:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecSecret:Ljava/lang/String;
 
     .line 52
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecUserCert:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecUserCert:Ljava/lang/String;
 
     .line 53
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecCaCert:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecCaCert:Ljava/lang/String;
 
     .line 54
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecServerCert:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecServerCert:Ljava/lang/String;
 
     .line 57
-    iput-boolean v1, p0, Lcom/android/settings/vpn2/VpnProfile;->saveLogin:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->saveLogin:Z
 
     .line 60
-    iput-object p1, p0, Lcom/android/settings/vpn2/VpnProfile;->key:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->key:Ljava/lang/String;
 
     .line 61
     return-void
 .end method
 
-.method static decode(Ljava/lang/String;[B)Lcom/android/settings/vpn2/VpnProfile;
+.method static decode(Ljava/lang/String;[B)Lcom/android/OriginalSettings/vpn2/VpnProfile;
     .locals 10
     .parameter "key"
     .parameter "value"
@@ -198,17 +198,17 @@
 
     .line 75
     :cond_2
-    new-instance v0, Lcom/android/settings/vpn2/VpnProfile;
+    new-instance v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/vpn2/VpnProfile;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/vpn2/VpnProfile;-><init>(Ljava/lang/String;)V
 
     .line 76
-    .local v0, profile:Lcom/android/settings/vpn2/VpnProfile;
+    .local v0, profile:Lcom/android/OriginalSettings/vpn2/VpnProfile;
     const/4 v5, 0x0
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->name:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->name:Ljava/lang/String;
 
     .line 77
     const/4 v5, 0x1
@@ -223,14 +223,14 @@
 
     move-result v5
 
-    iput v5, v0, Lcom/android/settings/vpn2/VpnProfile;->type:I
+    iput v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->type:I
 
     .line 78
-    iget v5, v0, Lcom/android/settings/vpn2/VpnProfile;->type:I
+    iget v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->type:I
 
     if-ltz v5, :cond_3
 
-    iget v5, v0, Lcom/android/settings/vpn2/VpnProfile;->type:I
+    iget v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->type:I
 
     if-le v5, v9, :cond_4
 
@@ -246,42 +246,42 @@
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->server:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->server:Ljava/lang/String;
 
     .line 82
     const/4 v5, 0x3
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->username:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->username:Ljava/lang/String;
 
     .line 83
     const/4 v5, 0x4
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->password:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->password:Ljava/lang/String;
 
     .line 84
     const/4 v5, 0x5
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->dnsServers:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->dnsServers:Ljava/lang/String;
 
     .line 85
     const/4 v5, 0x6
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->searchDomains:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->searchDomains:Ljava/lang/String;
 
     .line 86
     const/4 v5, 0x7
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->routes:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->routes:Ljava/lang/String;
 
     .line 87
     const/16 v5, 0x8
@@ -296,42 +296,42 @@
 
     move-result v5
 
-    iput-boolean v5, v0, Lcom/android/settings/vpn2/VpnProfile;->mppe:Z
+    iput-boolean v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->mppe:Z
 
     .line 88
     const/16 v5, 0x9
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->l2tpSecret:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->l2tpSecret:Ljava/lang/String;
 
     .line 89
     const/16 v5, 0xa
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->ipsecIdentifier:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecIdentifier:Ljava/lang/String;
 
     .line 90
     const/16 v5, 0xb
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->ipsecSecret:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecSecret:Ljava/lang/String;
 
     .line 91
     const/16 v5, 0xc
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->ipsecUserCert:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecUserCert:Ljava/lang/String;
 
     .line 92
     const/16 v5, 0xd
 
     aget-object v5, v1, v5
 
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->ipsecCaCert:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecCaCert:Ljava/lang/String;
 
     .line 93
     array-length v5, v1
@@ -343,10 +343,10 @@
     aget-object v5, v1, v5
 
     :goto_1
-    iput-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->ipsecServerCert:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecServerCert:Ljava/lang/String;
 
     .line 95
-    iget-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->username:Ljava/lang/String;
+    iget-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->username:Ljava/lang/String;
 
     invoke-virtual {v5}, Ljava/lang/String;->isEmpty()Z
 
@@ -354,7 +354,7 @@
 
     if-eqz v5, :cond_5
 
-    iget-object v5, v0, Lcom/android/settings/vpn2/VpnProfile;->password:Ljava/lang/String;
+    iget-object v5, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->password:Ljava/lang/String;
 
     invoke-virtual {v5}, Ljava/lang/String;->isEmpty()Z
 
@@ -366,12 +366,12 @@
     move v3, v4
 
     :cond_6
-    iput-boolean v3, v0, Lcom/android/settings/vpn2/VpnProfile;->saveLogin:Z
+    iput-boolean v3, v0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->saveLogin:Z
 
     goto/16 :goto_0
 
     .line 97
-    .end local v0           #profile:Lcom/android/settings/vpn2/VpnProfile;
+    .end local v0           #profile:Lcom/android/OriginalSettings/vpn2/VpnProfile;
     .end local v1           #values:[Ljava/lang/String;
     :catch_0
     move-exception v3
@@ -382,7 +382,7 @@
     goto/16 :goto_0
 
     .line 93
-    .restart local v0       #profile:Lcom/android/settings/vpn2/VpnProfile;
+    .restart local v0       #profile:Lcom/android/OriginalSettings/vpn2/VpnProfile;
     .restart local v1       #values:[Ljava/lang/String;
     :cond_7
     const-string v5, ""
@@ -403,7 +403,7 @@
     .line 104
     new-instance v0, Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/android/settings/vpn2/VpnProfile;->name:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->name:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -413,7 +413,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/vpn2/VpnProfile;->type:I
+    iget v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->type:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -422,7 +422,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->server:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->server:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -431,11 +431,11 @@
 
     move-result-object v2
 
-    iget-boolean v1, p0, Lcom/android/settings/vpn2/VpnProfile;->saveLogin:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->saveLogin:Z
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/vpn2/VpnProfile;->username:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->username:Ljava/lang/String;
 
     :goto_0
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -445,11 +445,11 @@
 
     move-result-object v2
 
-    iget-boolean v1, p0, Lcom/android/settings/vpn2/VpnProfile;->saveLogin:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->saveLogin:Z
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/settings/vpn2/VpnProfile;->password:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->password:Ljava/lang/String;
 
     :goto_1
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -459,7 +459,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->dnsServers:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->dnsServers:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -468,7 +468,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->searchDomains:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->searchDomains:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -477,7 +477,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->routes:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->routes:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -486,7 +486,7 @@
 
     move-result-object v1
 
-    iget-boolean v2, p0, Lcom/android/settings/vpn2/VpnProfile;->mppe:Z
+    iget-boolean v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->mppe:Z
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -495,7 +495,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->l2tpSecret:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->l2tpSecret:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -504,7 +504,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecIdentifier:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecIdentifier:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -513,7 +513,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecSecret:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecSecret:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -522,7 +522,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecUserCert:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecUserCert:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -531,7 +531,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecCaCert:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecCaCert:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -540,7 +540,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/VpnProfile;->ipsecServerCert:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/vpn2/VpnProfile;->ipsecServerCert:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

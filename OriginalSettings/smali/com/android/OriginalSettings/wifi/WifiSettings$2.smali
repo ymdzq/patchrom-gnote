@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiSettings$2;
+.class Lcom/android/OriginalSettings/wifi/WifiSettings$2;
 .super Ljava/lang/Object;
 .source "WifiSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiSettings;->showProgressDialog(Ljava/lang/String;)V
+    value = Lcom/android/OriginalSettings/wifi/WifiSettings;->showProgressDialog(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 729
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSettings$2;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$2;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,9 +44,9 @@
 
     .prologue
     .line 731
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$2;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$2;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/WifiSettings;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, v0, Lcom/android/OriginalSettings/wifi/WifiSettings;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
@@ -55,30 +55,30 @@
     if-eqz v0, :cond_0
 
     .line 732
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$2;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$2;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/WifiSettings;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, v0, Lcom/android/OriginalSettings/wifi/WifiSettings;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
 
     .line 734
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$2;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$2;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    #calls: Lcom/android/settings/wifi/WifiSettings;->wpsCommandCancel()V
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiSettings;->access$300(Lcom/android/settings/wifi/WifiSettings;)V
+    #calls: Lcom/android/OriginalSettings/wifi/WifiSettings;->wpsCommandCancel()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$300(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
 
     .line 735
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$2;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$2;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    #calls: Lcom/android/settings/wifi/WifiSettings;->dismissProgressDialog()V
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiSettings;->access$400(Lcom/android/settings/wifi/WifiSettings;)V
+    #calls: Lcom/android/OriginalSettings/wifi/WifiSettings;->dismissProgressDialog()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$400(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
 
     .line 737
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$2;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$2;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    #getter for: Lcom/android/settings/wifi/WifiSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiSettings;->access$500(Lcom/android/settings/wifi/WifiSettings;)Landroid/net/wifi/WifiManager;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$500(Lcom/android/OriginalSettings/wifi/WifiSettings;)Landroid/net/wifi/WifiManager;
 
     move-result-object v0
 
@@ -89,14 +89,14 @@
     if-nez v0, :cond_1
 
     .line 738
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$2;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$2;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    #getter for: Lcom/android/settings/wifi/WifiSettings;->mScanner:Lcom/android/settings/wifi/WifiSettings$Scanner;
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiSettings;->access$600(Lcom/android/settings/wifi/WifiSettings;)Lcom/android/settings/wifi/WifiSettings$Scanner;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiSettings;->mScanner:Lcom/android/OriginalSettings/wifi/WifiSettings$Scanner;
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$600(Lcom/android/OriginalSettings/wifi/WifiSettings;)Lcom/android/OriginalSettings/wifi/WifiSettings$Scanner;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSettings$Scanner;->pause()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/wifi/WifiSettings$Scanner;->pause()V
 
     .line 741
     :cond_1

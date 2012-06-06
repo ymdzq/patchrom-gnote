@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/DoubleTapSettings$3;
+.class Lcom/android/OriginalSettings/motion/DoubleTapSettings$3;
 .super Ljava/lang/Object;
 .source "DoubleTapSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/DoubleTapSettings;->showMotionDialog()V
+    value = Lcom/android/OriginalSettings/motion/DoubleTapSettings;->showMotionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/DoubleTapSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/DoubleTapSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/DoubleTapSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 168
-    iput-object p1, p0, Lcom/android/settings/motion/DoubleTapSettings$3;->this$0:Lcom/android/settings/motion/DoubleTapSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/DoubleTapSettings$3;->this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,10 +50,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapSettings$3;->this$0:Lcom/android/settings/motion/DoubleTapSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapSettings$3;->this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
-    #calls: Lcom/android/settings/motion/DoubleTapSettings;->updateCheckedUI()V
-    invoke-static {v0}, Lcom/android/settings/motion/DoubleTapSettings;->access$300(Lcom/android/settings/motion/DoubleTapSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/DoubleTapSettings;->updateCheckedUI()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/DoubleTapSettings;->access$300(Lcom/android/OriginalSettings/motion/DoubleTapSettings;)V
 
     .line 172
     return-void

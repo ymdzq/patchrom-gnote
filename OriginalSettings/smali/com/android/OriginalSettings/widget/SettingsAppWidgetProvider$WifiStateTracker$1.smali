@@ -1,11 +1,11 @@
-.class Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;
+.class Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;
 .super Landroid/os/AsyncTask;
 .source "SettingsAppWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker;->requestStateChange(Landroid/content/Context;Z)V
+    value = Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker;->requestStateChange(Landroid/content/Context;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker;
+.field final synthetic this$0:Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker;
 
 .field final synthetic val$desiredState:Z
 
@@ -34,7 +34,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker;Landroid/net/wifi/WifiManager;Z)V
+.method constructor <init>(Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker;Landroid/net/wifi/WifiManager;Z)V
     .locals 0
     .parameter
     .parameter
@@ -42,11 +42,11 @@
 
     .prologue
     .line 386
-    iput-object p1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->this$0:Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker;
+    iput-object p1, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->this$0:Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker;
 
-    iput-object p2, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$wifiManager:Landroid/net/wifi/WifiManager;
+    iput-object p2, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$wifiManager:Landroid/net/wifi/WifiManager;
 
-    iput-boolean p3, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$desiredState:Z
+    iput-boolean p3, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$desiredState:Z
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -64,7 +64,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -79,7 +79,7 @@
     const/4 v3, 0x0
 
     .line 392
-    iget-object v1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$wifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$wifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getWifiApState()I
 
@@ -87,7 +87,7 @@
 
     .line 393
     .local v0, wifiApState:I
-    iget-boolean v1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$desiredState:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$desiredState:Z
 
     if-eqz v1, :cond_1
 
@@ -101,7 +101,7 @@
 
     .line 395
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$wifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$wifiManager:Landroid/net/wifi/WifiManager;
 
     const/4 v2, 0x0
 
@@ -109,9 +109,9 @@
 
     .line 398
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$wifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$wifiManager:Landroid/net/wifi/WifiManager;
 
-    iget-boolean v2, p0, Lcom/android/settings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$desiredState:Z
+    iget-boolean v2, p0, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$WifiStateTracker$1;->val$desiredState:Z
 
     invoke-virtual {v1, v2}, Landroid/net/wifi/WifiManager;->setWifiEnabled(Z)Z
 

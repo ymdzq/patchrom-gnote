@@ -1,11 +1,11 @@
-.class Lcom/android/settings/UsbSettings$2;
+.class Lcom/android/OriginalSettings/UsbSettings$2;
 .super Landroid/os/storage/StorageEventListener;
 .source "UsbSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UsbSettings;
+    value = Lcom/android/OriginalSettings/UsbSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/UsbSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/UsbSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UsbSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/UsbSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 98
-    iput-object p1, p0, Lcom/android/settings/UsbSettings$2;->this$0:Lcom/android/settings/UsbSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/UsbSettings$2;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
 
@@ -68,12 +68,12 @@
     if-eqz v1, :cond_0
 
     .line 105
-    iget-object v1, p0, Lcom/android/settings/UsbSettings$2;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings$2;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
     const/4 v2, 0x1
 
-    #calls: Lcom/android/settings/UsbSettings;->switchDisplay(Z)V
-    invoke-static {v1, v2}, Lcom/android/settings/UsbSettings;->access$200(Lcom/android/settings/UsbSettings;Z)V
+    #calls: Lcom/android/OriginalSettings/UsbSettings;->switchDisplay(Z)V
+    invoke-static {v1, v2}, Lcom/android/OriginalSettings/UsbSettings;->access$200(Lcom/android/OriginalSettings/UsbSettings;Z)V
 
     .line 129
     :cond_0

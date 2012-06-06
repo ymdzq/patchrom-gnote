@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/LockPreview;
-.super Landroid/app/Activity;
+.class public Lcom/android/OriginalSettings/LockPreview;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "LockPreview.java"
 
 
@@ -12,7 +12,7 @@
 
 .field private mClockLayout:Landroid/widget/RelativeLayout;
 
-.field private mClockPanel:Lcom/android/settings/ClockPanel;
+.field private mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
 .field private mHandler:Landroid/os/Handler;
 
@@ -43,69 +43,69 @@
     const/4 v1, 0x0
 
     .line 41
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     .line 45
     const-string v0, "/data/data/com.cooliris.media/files/zzzzzz_lockscreen_wallpaper.jpg"
 
-    iput-object v0, p0, Lcom/android/settings/LockPreview;->WALLPAPER_IMAGE_PATH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/LockPreview;->WALLPAPER_IMAGE_PATH:Ljava/lang/String;
 
     .line 53
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iput-object v0, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     .line 54
-    iput-boolean v2, p0, Lcom/android/settings/LockPreview;->mAnimate:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/LockPreview;->mAnimate:Z
 
     .line 55
-    iput-boolean v2, p0, Lcom/android/settings/LockPreview;->mTimeTick_Layout_Refresh:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/LockPreview;->mTimeTick_Layout_Refresh:Z
 
     .line 58
-    iput v1, p0, Lcom/android/settings/LockPreview;->mX:F
+    iput v1, p0, Lcom/android/OriginalSettings/LockPreview;->mX:F
 
     .line 59
-    iput v1, p0, Lcom/android/settings/LockPreview;->mY:F
+    iput v1, p0, Lcom/android/OriginalSettings/LockPreview;->mY:F
 
     .line 65
-    new-instance v0, Lcom/android/settings/LockPreview$1;
+    new-instance v0, Lcom/android/OriginalSettings/LockPreview$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/LockPreview$1;-><init>(Lcom/android/settings/LockPreview;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/LockPreview$1;-><init>(Lcom/android/OriginalSettings/LockPreview;)V
 
-    iput-object v0, p0, Lcom/android/settings/LockPreview;->mStartLockAnimation:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/OriginalSettings/LockPreview;->mStartLockAnimation:Ljava/lang/Runnable;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/LockPreview;)Landroid/widget/RelativeLayout;
+.method static synthetic access$000(Lcom/android/OriginalSettings/LockPreview;)Landroid/widget/RelativeLayout;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/LockPreview;)Landroid/view/animation/TranslateAnimation;
+.method static synthetic access$100(Lcom/android/OriginalSettings/LockPreview;)Landroid/view/animation/TranslateAnimation;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/LockPreview;)I
+.method static synthetic access$200(Lcom/android/OriginalSettings/LockPreview;)I
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 41
-    iget v0, p0, Lcom/android/settings/LockPreview;->position:I
+    iget v0, p0, Lcom/android/OriginalSettings/LockPreview;->position:I
 
     return v0
 .end method
@@ -128,60 +128,60 @@
     const/4 v8, 0x1
 
     .line 76
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 78
     const v5, 0x7f040052
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/LockPreview;->setContentView(I)V
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/LockPreview;->setContentView(I)V
 
     .line 80
     const v5, 0x7f0800fc
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/LockPreview;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/LockPreview;->findViewById(I)Landroid/view/View;
 
     move-result-object v5
 
     check-cast v5, Landroid/widget/FrameLayout;
 
-    iput-object v5, p0, Lcom/android/settings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
+    iput-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
 
     .line 81
-    invoke-virtual {p0}, Lcom/android/settings/LockPreview;->setLockScreenWallpaper()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockPreview;->setLockScreenWallpaper()V
 
     .line 83
     const v5, 0x7f0800fd
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/LockPreview;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/LockPreview;->findViewById(I)Landroid/view/View;
 
     move-result-object v5
 
     check-cast v5, Landroid/widget/RelativeLayout;
 
-    iput-object v5, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iput-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     .line 84
     const v5, 0x7f0800fe
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/LockPreview;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/LockPreview;->findViewById(I)Landroid/view/View;
 
     move-result-object v5
 
     check-cast v5, Landroid/widget/LinearLayout;
 
-    iput-object v5, p0, Lcom/android/settings/LockPreview;->mBoxLayout:Landroid/widget/LinearLayout;
+    iput-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mBoxLayout:Landroid/widget/LinearLayout;
 
     .line 86
-    new-instance v5, Lcom/android/settings/ClockPanel;
+    new-instance v5, Lcom/android/OriginalSettings/ClockPanel;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/ClockPanel;-><init>(Landroid/content/Context;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/ClockPanel;-><init>(Landroid/content/Context;)V
 
-    iput-object v5, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iput-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
     .line 87
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
-    invoke-virtual {v5, v9}, Lcom/android/settings/ClockPanel;->setVisibility(I)V
+    invoke-virtual {v5, v9}, Lcom/android/OriginalSettings/ClockPanel;->setVisibility(I)V
 
     .line 89
     new-instance v3, Landroid/widget/LinearLayout;
@@ -219,12 +219,12 @@
     iput v11, v4, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
     .line 96
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
-    invoke-virtual {v5, v4}, Lcom/android/settings/ClockPanel;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v4}, Lcom/android/OriginalSettings/ClockPanel;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/LockPreview;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockPreview;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -237,20 +237,20 @@
     if-nez v5, :cond_0
 
     .line 99
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
     const/16 v6, 0x30
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/ClockPanel;->setGravity(I)V
+    invoke-virtual {v5, v6}, Lcom/android/OriginalSettings/ClockPanel;->setGravity(I)V
 
     .line 100
-    iput v9, p0, Lcom/android/settings/LockPreview;->position:I
+    iput v9, p0, Lcom/android/OriginalSettings/LockPreview;->position:I
 
     .line 113
     :goto_0
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mBoxLayout:Landroid/widget/LinearLayout;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mBoxLayout:Landroid/widget/LinearLayout;
 
-    iget-object v6, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iget-object v6, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
     invoke-virtual {v5, v6}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -259,7 +259,7 @@
 
     invoke-direct {v5}, Landroid/os/Handler;-><init>()V
 
-    iput-object v5, p0, Lcom/android/settings/LockPreview;->mHandler:Landroid/os/Handler;
+    iput-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mHandler:Landroid/os/Handler;
 
     .line 118
     new-instance v5, Landroid/view/animation/TranslateAnimation;
@@ -270,32 +270,32 @@
 
     invoke-direct {v5, v10, v6, v10, v7}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    iput-object v5, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iput-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     .line 119
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     const-wide/16 v6, 0x12c
 
     invoke-virtual {v5, v6, v7}, Landroid/view/animation/TranslateAnimation;->setDuration(J)V
 
     .line 120
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     invoke-virtual {v5, v8}, Landroid/view/animation/TranslateAnimation;->setFillEnabled(Z)V
 
     .line 121
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     invoke-virtual {v5, v8}, Landroid/view/animation/TranslateAnimation;->setFillAfter(Z)V
 
     .line 122
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     invoke-virtual {v5, v9}, Landroid/view/animation/TranslateAnimation;->setFillBefore(Z)V
 
     .line 123
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     new-instance v6, Landroid/view/animation/AccelerateDecelerateInterpolator;
 
@@ -306,7 +306,7 @@
     .line 125
     const v5, 0x7f0800ff
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/LockPreview;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/LockPreview;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -314,16 +314,16 @@
 
     .line 126
     .local v1, ButtonOk:Landroid/widget/Button;
-    new-instance v5, Lcom/android/settings/LockPreview$2;
+    new-instance v5, Lcom/android/OriginalSettings/LockPreview$2;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/LockPreview$2;-><init>(Lcom/android/settings/LockPreview;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/LockPreview$2;-><init>(Lcom/android/OriginalSettings/LockPreview;)V
 
     invoke-virtual {v1, v5}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 132
     const v5, 0x7f080100
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/LockPreview;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/LockPreview;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -331,9 +331,9 @@
 
     .line 133
     .local v0, ButtonCancel:Landroid/widget/Button;
-    new-instance v5, Lcom/android/settings/LockPreview$3;
+    new-instance v5, Lcom/android/OriginalSettings/LockPreview$3;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/LockPreview$3;-><init>(Lcom/android/settings/LockPreview;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/LockPreview$3;-><init>(Lcom/android/OriginalSettings/LockPreview;)V
 
     invoke-virtual {v0, v5}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -344,7 +344,7 @@
     .end local v0           #ButtonCancel:Landroid/widget/Button;
     .end local v1           #ButtonOk:Landroid/widget/Button;
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/LockPreview;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockPreview;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -357,27 +357,27 @@
     if-ne v5, v8, :cond_1
 
     .line 103
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
     const/16 v6, 0x10
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/ClockPanel;->setGravity(I)V
+    invoke-virtual {v5, v6}, Lcom/android/OriginalSettings/ClockPanel;->setGravity(I)V
 
     .line 104
-    iput v8, p0, Lcom/android/settings/LockPreview;->position:I
+    iput v8, p0, Lcom/android/OriginalSettings/LockPreview;->position:I
 
     goto :goto_0
 
     .line 107
     :cond_1
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
     const/16 v6, 0x50
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/ClockPanel;->setGravity(I)V
+    invoke-virtual {v5, v6}, Lcom/android/OriginalSettings/ClockPanel;->setGravity(I)V
 
     .line 108
-    iput v7, p0, Lcom/android/settings/LockPreview;->position:I
+    iput v7, p0, Lcom/android/OriginalSettings/LockPreview;->position:I
 
     goto :goto_0
 .end method
@@ -424,7 +424,7 @@
 
     .line 148
     .local v2, diffY_ori:I
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
 
     invoke-virtual {v5}, Landroid/widget/FrameLayout;->getHeight()I
 
@@ -432,7 +432,7 @@
 
     int-to-float v5, v5
 
-    iput v5, p0, Lcom/android/settings/LockPreview;->mMaxHeight:F
+    iput v5, p0, Lcom/android/OriginalSettings/LockPreview;->mMaxHeight:F
 
     .line 150
     const-string v5, "LockPreview"
@@ -467,7 +467,7 @@
 
     move-result-object v6
 
-    iget v7, p0, Lcom/android/settings/LockPreview;->mMaxHeight:F
+    iget v7, p0, Lcom/android/OriginalSettings/LockPreview;->mMaxHeight:F
 
     div-float/2addr v7, v10
 
@@ -487,7 +487,7 @@
     .line 214
     :cond_0
     :goto_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->onTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v5
 
@@ -495,71 +495,71 @@
 
     .line 154
     :pswitch_0
-    iput-boolean v9, p0, Lcom/android/settings/LockPreview;->mTimeTick_Layout_Refresh:Z
+    iput-boolean v9, p0, Lcom/android/OriginalSettings/LockPreview;->mTimeTick_Layout_Refresh:Z
 
     .line 155
-    iget-boolean v5, p0, Lcom/android/settings/LockPreview;->mAnimate:Z
+    iget-boolean v5, p0, Lcom/android/OriginalSettings/LockPreview;->mAnimate:Z
 
     if-nez v5, :cond_1
 
     .line 156
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mHandler:Landroid/os/Handler;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mHandler:Landroid/os/Handler;
 
-    iget-object v6, p0, Lcom/android/settings/LockPreview;->mStartLockAnimation:Ljava/lang/Runnable;
+    iget-object v6, p0, Lcom/android/OriginalSettings/LockPreview;->mStartLockAnimation:Ljava/lang/Runnable;
 
     const-wide/16 v7, 0x64
 
     invoke-virtual {v5, v6, v7, v8}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 157
-    iput-boolean v9, p0, Lcom/android/settings/LockPreview;->mAnimate:Z
+    iput-boolean v9, p0, Lcom/android/OriginalSettings/LockPreview;->mAnimate:Z
 
     .line 159
     :cond_1
-    iput v3, p0, Lcom/android/settings/LockPreview;->mX:F
+    iput v3, p0, Lcom/android/OriginalSettings/LockPreview;->mX:F
 
     .line 160
-    iput v4, p0, Lcom/android/settings/LockPreview;->mY:F
+    iput v4, p0, Lcom/android/OriginalSettings/LockPreview;->mY:F
 
     goto :goto_0
 
     .line 163
     :pswitch_1
-    iput-boolean v8, p0, Lcom/android/settings/LockPreview;->mTimeTick_Layout_Refresh:Z
+    iput-boolean v8, p0, Lcom/android/OriginalSettings/LockPreview;->mTimeTick_Layout_Refresh:Z
 
     .line 164
-    iget-boolean v5, p0, Lcom/android/settings/LockPreview;->mAnimate:Z
+    iget-boolean v5, p0, Lcom/android/OriginalSettings/LockPreview;->mAnimate:Z
 
     if-eqz v5, :cond_2
 
     .line 165
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mHandler:Landroid/os/Handler;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mHandler:Landroid/os/Handler;
 
-    iget-object v6, p0, Lcom/android/settings/LockPreview;->mStartLockAnimation:Ljava/lang/Runnable;
+    iget-object v6, p0, Lcom/android/OriginalSettings/LockPreview;->mStartLockAnimation:Ljava/lang/Runnable;
 
     invoke-virtual {v5, v6}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 166
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     invoke-virtual {v5, v8}, Landroid/view/animation/TranslateAnimation;->setFillEnabled(Z)V
 
     .line 167
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v5}, Landroid/widget/RelativeLayout;->clearAnimation()V
 
     .line 168
-    iput-boolean v8, p0, Lcom/android/settings/LockPreview;->mAnimate:Z
+    iput-boolean v8, p0, Lcom/android/OriginalSettings/LockPreview;->mAnimate:Z
 
     .line 170
     :cond_2
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     if-eqz v5, :cond_0
 
     .line 172
-    iget v5, p0, Lcom/android/settings/LockPreview;->mX:F
+    iget v5, p0, Lcom/android/OriginalSettings/LockPreview;->mX:F
 
     sub-float v5, v3, v5
 
@@ -568,7 +568,7 @@
     float-to-int v1, v5
 
     .line 173
-    iget v5, p0, Lcom/android/settings/LockPreview;->mY:F
+    iget v5, p0, Lcom/android/OriginalSettings/LockPreview;->mY:F
 
     sub-float v5, v4, v5
 
@@ -577,9 +577,9 @@
     float-to-int v2, v5
 
     .line 174
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
-    iget-object v6, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v6, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v6}, Landroid/widget/RelativeLayout;->getWidth()I
 
@@ -587,7 +587,7 @@
 
     add-int/2addr v6, v1
 
-    iget-object v7, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v7, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v7}, Landroid/widget/RelativeLayout;->getHeight()I
 
@@ -609,55 +609,55 @@
 
     .line 183
     :pswitch_3
-    iput v11, p0, Lcom/android/settings/LockPreview;->mX:F
+    iput v11, p0, Lcom/android/OriginalSettings/LockPreview;->mX:F
 
     .line 184
-    iput v11, p0, Lcom/android/settings/LockPreview;->mY:F
+    iput v11, p0, Lcom/android/OriginalSettings/LockPreview;->mY:F
 
     .line 185
-    iput-boolean v8, p0, Lcom/android/settings/LockPreview;->mTimeTick_Layout_Refresh:Z
+    iput-boolean v8, p0, Lcom/android/OriginalSettings/LockPreview;->mTimeTick_Layout_Refresh:Z
 
     .line 187
-    iget-boolean v5, p0, Lcom/android/settings/LockPreview;->mAnimate:Z
+    iget-boolean v5, p0, Lcom/android/OriginalSettings/LockPreview;->mAnimate:Z
 
     if-eqz v5, :cond_3
 
     .line 188
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mHandler:Landroid/os/Handler;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mHandler:Landroid/os/Handler;
 
-    iget-object v6, p0, Lcom/android/settings/LockPreview;->mStartLockAnimation:Ljava/lang/Runnable;
+    iget-object v6, p0, Lcom/android/OriginalSettings/LockPreview;->mStartLockAnimation:Ljava/lang/Runnable;
 
     invoke-virtual {v5, v6}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 189
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mTransAnimation:Landroid/view/animation/TranslateAnimation;
 
     invoke-virtual {v5, v9}, Landroid/view/animation/TranslateAnimation;->setFillEnabled(Z)V
 
     .line 190
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v5}, Landroid/widget/RelativeLayout;->clearAnimation()V
 
     .line 191
-    iput-boolean v8, p0, Lcom/android/settings/LockPreview;->mAnimate:Z
+    iput-boolean v8, p0, Lcom/android/OriginalSettings/LockPreview;->mAnimate:Z
 
     .line 194
     :cond_3
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     if-eqz v5, :cond_4
 
     .line 195
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
-    iget-object v6, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v6, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v6}, Landroid/widget/RelativeLayout;->getWidth()I
 
     move-result v6
 
-    iget-object v7, p0, Lcom/android/settings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
+    iget-object v7, p0, Lcom/android/OriginalSettings/LockPreview;->mClockLayout:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v7}, Landroid/widget/RelativeLayout;->getHeight()I
 
@@ -667,7 +667,7 @@
 
     .line 198
     :cond_4
-    iget v5, p0, Lcom/android/settings/LockPreview;->mMaxHeight:F
+    iget v5, p0, Lcom/android/OriginalSettings/LockPreview;->mMaxHeight:F
 
     div-float/2addr v5, v10
 
@@ -676,20 +676,20 @@
     if-lez v5, :cond_5
 
     .line 199
-    iput v8, p0, Lcom/android/settings/LockPreview;->position:I
+    iput v8, p0, Lcom/android/OriginalSettings/LockPreview;->position:I
 
     .line 200
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
     const/16 v6, 0x30
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/ClockPanel;->setGravity(I)V
+    invoke-virtual {v5, v6}, Lcom/android/OriginalSettings/ClockPanel;->setGravity(I)V
 
     goto/16 :goto_0
 
     .line 202
     :cond_5
-    iget v5, p0, Lcom/android/settings/LockPreview;->mMaxHeight:F
+    iget v5, p0, Lcom/android/OriginalSettings/LockPreview;->mMaxHeight:F
 
     div-float/2addr v5, v10
 
@@ -702,14 +702,14 @@
     if-lez v5, :cond_6
 
     .line 203
-    iput v9, p0, Lcom/android/settings/LockPreview;->position:I
+    iput v9, p0, Lcom/android/OriginalSettings/LockPreview;->position:I
 
     .line 204
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
     const/16 v6, 0x10
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/ClockPanel;->setGravity(I)V
+    invoke-virtual {v5, v6}, Lcom/android/OriginalSettings/ClockPanel;->setGravity(I)V
 
     goto/16 :goto_0
 
@@ -717,14 +717,14 @@
     :cond_6
     const/4 v5, 0x2
 
-    iput v5, p0, Lcom/android/settings/LockPreview;->position:I
+    iput v5, p0, Lcom/android/OriginalSettings/LockPreview;->position:I
 
     .line 208
-    iget-object v5, p0, Lcom/android/settings/LockPreview;->mClockPanel:Lcom/android/settings/ClockPanel;
+    iget-object v5, p0, Lcom/android/OriginalSettings/LockPreview;->mClockPanel:Lcom/android/OriginalSettings/ClockPanel;
 
     const/16 v6, 0x50
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/ClockPanel;->setGravity(I)V
+    invoke-virtual {v5, v6}, Lcom/android/OriginalSettings/ClockPanel;->setGravity(I)V
 
     goto/16 :goto_0
 
@@ -761,11 +761,11 @@
 
     .line 223
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
+    iget-object v2, p0, Lcom/android/OriginalSettings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
 
     new-instance v3, Landroid/graphics/drawable/BitmapDrawable;
 
-    invoke-virtual {p0}, Lcom/android/settings/LockPreview;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockPreview;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -787,9 +787,9 @@
 
     .line 225
     .local v0, ex:Ljava/lang/Exception;
-    iget-object v2, p0, Lcom/android/settings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
+    iget-object v2, p0, Lcom/android/OriginalSettings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
 
-    invoke-virtual {p0}, Lcom/android/settings/LockPreview;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockPreview;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -804,9 +804,9 @@
     .line 229
     .end local v0           #ex:Ljava/lang/Exception;
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
+    iget-object v2, p0, Lcom/android/OriginalSettings/LockPreview;->mMainLayout:Landroid/widget/FrameLayout;
 
-    invoke-virtual {p0}, Lcom/android/settings/LockPreview;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockPreview;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 

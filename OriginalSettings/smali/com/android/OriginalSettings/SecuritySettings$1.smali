@@ -1,4 +1,4 @@
-.class Lcom/android/settings/SecuritySettings$1;
+.class Lcom/android/OriginalSettings/SecuritySettings$1;
 .super Ljava/lang/Object;
 .source "SecuritySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/SecuritySettings;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
+    value = Lcom/android/OriginalSettings/SecuritySettings;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SecuritySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SecuritySettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/SecuritySettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 309
-    iput-object p1, p0, Lcom/android/settings/SecuritySettings$1;->this$0:Lcom/android/settings/SecuritySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SecuritySettings$1;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,9 +53,9 @@
 
     .line 312
     .local v0, mIntent:Landroid/content/Intent;
-    iget-object v2, p0, Lcom/android/settings/SecuritySettings$1;->this$0:Lcom/android/settings/SecuritySettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/SecuritySettings$1;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/SecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/SecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -83,20 +83,20 @@
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 322
-    iget-object v2, p0, Lcom/android/settings/SecuritySettings$1;->this$0:Lcom/android/settings/SecuritySettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/SecuritySettings$1;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
     const/16 v3, 0x3e9
 
-    invoke-virtual {v2, v0, v3}, Lcom/android/settings/SecuritySettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v2, v0, v3}, Lcom/android/OriginalSettings/SecuritySettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 323
     return v4
 
     .line 316
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/SecuritySettings$1;->this$0:Lcom/android/settings/SecuritySettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/SecuritySettings$1;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/SecuritySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/SecuritySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -117,10 +117,10 @@
     if-eqz v2, :cond_1
 
     .line 318
-    iget-object v2, p0, Lcom/android/settings/SecuritySettings$1;->this$0:Lcom/android/settings/SecuritySettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/SecuritySettings$1;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
-    #setter for: Lcom/android/settings/SecuritySettings;->mFirstSignin:Z
-    invoke-static {v2, v5}, Lcom/android/settings/SecuritySettings;->access$002(Lcom/android/settings/SecuritySettings;Z)Z
+    #setter for: Lcom/android/OriginalSettings/SecuritySettings;->mFirstSignin:Z
+    invoke-static {v2, v5}, Lcom/android/OriginalSettings/SecuritySettings;->access$002(Lcom/android/OriginalSettings/SecuritySettings;Z)Z
 
     .line 319
     :cond_1

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$MediaCategory;
+.class Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory$MediaCategory;
 .super Ljava/lang/Object;
 .source "StorageVolumePreferenceCategory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    value = Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -31,7 +31,7 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 114
-    iput p1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$MediaCategory;->mCategory:I
+    iput p1, p0, Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory$MediaCategory;->mCategory:I
 
     .line 115
     array-length v1, p2
@@ -40,7 +40,7 @@
     .local v1, length:I
     new-array v4, v1, [Ljava/lang/String;
 
-    iput-object v4, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$MediaCategory;->mDirPaths:[Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory$MediaCategory;->mDirPaths:[Ljava/lang/String;
 
     .line 117
     const/4 v0, 0x0
@@ -64,12 +64,12 @@
 
     .line 121
     .local v3, path:Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$MediaCategory;->mDirPaths:[Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory$MediaCategory;->mDirPaths:[Ljava/lang/String;
 
     aput-object v3, v4, v0
 
     .line 122
-    sget-object v4, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->sPathsExcludedForMisc:Ljava/util/Set;
+    sget-object v4, Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;->sPathsExcludedForMisc:Ljava/util/Set;
 
     invoke-interface {v4, v3}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 

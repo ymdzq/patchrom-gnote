@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningProcessesView$1;
+.class Lcom/android/OriginalSettings/applications/RunningProcessesView$1;
 .super Ljava/lang/Object;
 .source "RunningProcessesView.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/applications/RunningProcessesView;->doCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/applications/RunningProcessesView;->doCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/RunningProcessesView;
+.field final synthetic this$0:Lcom/android/OriginalSettings/applications/RunningProcessesView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/RunningProcessesView;)V
+.method constructor <init>(Lcom/android/OriginalSettings/applications/RunningProcessesView;)V
     .locals 0
     .parameter
 
     .prologue
     .line 412
-    iput-object p1, p0, Lcom/android/settings/applications/RunningProcessesView$1;->this$0:Lcom/android/settings/applications/RunningProcessesView;
+    iput-object p1, p0, Lcom/android/OriginalSettings/applications/RunningProcessesView$1;->this$0:Lcom/android/OriginalSettings/applications/RunningProcessesView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,13 +43,13 @@
 
     .prologue
     .line 415
-    iget-object v0, p0, Lcom/android/settings/applications/RunningProcessesView$1;->this$0:Lcom/android/settings/applications/RunningProcessesView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningProcessesView$1;->this$0:Lcom/android/OriginalSettings/applications/RunningProcessesView;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningProcessesView;->mAdapter:Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningProcessesView;->mAdapter:Lcom/android/OriginalSettings/applications/RunningProcessesView$ServiceListAdapter;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->setShowBackground(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/applications/RunningProcessesView$ServiceListAdapter;->setShowBackground(Z)V
 
     .line 416
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/ManageAccountsSettings$2;
+.class Lcom/android/OriginalSettings/accounts/ManageAccountsSettings$2;
 .super Ljava/lang/Object;
 .source "ManageAccountsSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/accounts/ManageAccountsSettings;->onActivityCreated(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;->onActivityCreated(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/ManageAccountsSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 200
-    iput-object p1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,10 +53,10 @@
 
     .line 206
     .local v0, enable:Z
-    iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;
 
-    #getter for: Lcom/android/settings/accounts/ManageAccountsSettings;->mSwitchPreference:Landroid/preference/SwitchPreference;
-    invoke-static {v1}, Lcom/android/settings/accounts/ManageAccountsSettings;->access$000(Lcom/android/settings/accounts/ManageAccountsSettings;)Landroid/preference/SwitchPreference;
+    #getter for: Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    invoke-static {v1}, Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;->access$000(Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;)Landroid/preference/SwitchPreference;
 
     move-result-object v1
 
@@ -75,10 +75,10 @@
 
     .line 210
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;
 
-    #getter for: Lcom/android/settings/accounts/ManageAccountsSettings;->mSwitchPreference:Landroid/preference/SwitchPreference;
-    invoke-static {v1}, Lcom/android/settings/accounts/ManageAccountsSettings;->access$000(Lcom/android/settings/accounts/ManageAccountsSettings;)Landroid/preference/SwitchPreference;
+    #getter for: Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    invoke-static {v1}, Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;->access$000(Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;)Landroid/preference/SwitchPreference;
 
     move-result-object v1
 
@@ -88,9 +88,9 @@
     invoke-static {v0}, Landroid/content/ContentResolver;->setMasterSyncAutomatically(Z)V
 
     .line 212
-    iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/accounts/ManageAccountsSettings;->onSyncStateUpdated()V
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/accounts/ManageAccountsSettings;->onSyncStateUpdated()V
 
     .line 214
     const/4 v1, 0x0

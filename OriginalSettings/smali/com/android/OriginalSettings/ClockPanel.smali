@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ClockPanel;
+.class public Lcom/android/OriginalSettings/ClockPanel;
 .super Landroid/widget/LinearLayout;
 .source "ClockPanel.java"
 
@@ -31,10 +31,10 @@
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     .line 34
-    iput-object p1, p0, Lcom/android/settings/ClockPanel;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ClockPanel;->mContext:Landroid/content/Context;
 
     .line 36
-    iget-object v3, p0, Lcom/android/settings/ClockPanel;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ClockPanel;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -53,78 +53,78 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/ClockPanel;->mCalendar:Ljava/util/Calendar;
+    iput-object v3, p0, Lcom/android/OriginalSettings/ClockPanel;->mCalendar:Ljava/util/Calendar;
 
     .line 41
     const v3, 0x7f0800e5
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/ClockPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/ClockPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/ImageView;
 
-    iput-object v3, p0, Lcom/android/settings/ClockPanel;->mHour01:Landroid/widget/ImageView;
+    iput-object v3, p0, Lcom/android/OriginalSettings/ClockPanel;->mHour01:Landroid/widget/ImageView;
 
     .line 42
     const v3, 0x7f0800e6
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/ClockPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/ClockPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/ImageView;
 
-    iput-object v3, p0, Lcom/android/settings/ClockPanel;->mHour02:Landroid/widget/ImageView;
+    iput-object v3, p0, Lcom/android/OriginalSettings/ClockPanel;->mHour02:Landroid/widget/ImageView;
 
     .line 43
     const v3, 0x7f0800e8
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/ClockPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/ClockPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/ImageView;
 
-    iput-object v3, p0, Lcom/android/settings/ClockPanel;->mMin01:Landroid/widget/ImageView;
+    iput-object v3, p0, Lcom/android/OriginalSettings/ClockPanel;->mMin01:Landroid/widget/ImageView;
 
     .line 44
     const v3, 0x7f0800e9
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/ClockPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/ClockPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/ImageView;
 
-    iput-object v3, p0, Lcom/android/settings/ClockPanel;->mMin02:Landroid/widget/ImageView;
+    iput-object v3, p0, Lcom/android/OriginalSettings/ClockPanel;->mMin02:Landroid/widget/ImageView;
 
     .line 45
     const v3, 0x7f0800ea
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/ClockPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/ClockPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/TextView;
 
-    iput-object v3, p0, Lcom/android/settings/ClockPanel;->mAM:Landroid/widget/TextView;
+    iput-object v3, p0, Lcom/android/OriginalSettings/ClockPanel;->mAM:Landroid/widget/TextView;
 
     .line 46
     const v3, 0x7f0800eb
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/ClockPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/ClockPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/TextView;
 
-    iput-object v3, p0, Lcom/android/settings/ClockPanel;->mDate_Month:Landroid/widget/TextView;
+    iput-object v3, p0, Lcom/android/OriginalSettings/ClockPanel;->mDate_Month:Landroid/widget/TextView;
 
     .line 48
     const v3, 0x7f0800ec
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/ClockPanel;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/ClockPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -132,18 +132,18 @@
 
     .line 49
     .local v2, mWeatherPanel:Landroid/widget/LinearLayout;
-    new-instance v1, Lcom/android/settings/ClockPanelInfo;
+    new-instance v1, Lcom/android/OriginalSettings/ClockPanelInfo;
 
-    iget-object v3, p0, Lcom/android/settings/ClockPanel;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ClockPanel;->mContext:Landroid/content/Context;
 
-    invoke-direct {v1, v3}, Lcom/android/settings/ClockPanelInfo;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v3}, Lcom/android/OriginalSettings/ClockPanelInfo;-><init>(Landroid/content/Context;)V
 
     .line 50
-    .local v1, mClockPanelInfo:Lcom/android/settings/ClockPanelInfo;
+    .local v1, mClockPanelInfo:Lcom/android/OriginalSettings/ClockPanelInfo;
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/ClockPanel;->refreshTimeAndDate()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/ClockPanel;->refreshTimeAndDate()V
 
     .line 54
     return-void
@@ -252,7 +252,7 @@
     if-ne v4, v6, :cond_2
 
     .line 104
-    iget-object v4, p0, Lcom/android/settings/ClockPanel;->mHour01:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ClockPanel;->mHour01:Landroid/widget/ImageView;
 
     aget v5, v3, v6
 
@@ -260,7 +260,7 @@
 
     .line 108
     :goto_2
-    iget-object v4, p0, Lcom/android/settings/ClockPanel;->mHour02:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ClockPanel;->mHour02:Landroid/widget/ImageView;
 
     aget v5, v0, v6
 
@@ -269,7 +269,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 109
-    iget-object v4, p0, Lcom/android/settings/ClockPanel;->mMin01:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ClockPanel;->mMin01:Landroid/widget/ImageView;
 
     aget v5, v1, v7
 
@@ -278,7 +278,7 @@
     invoke-virtual {v4, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 110
-    iget-object v4, p0, Lcom/android/settings/ClockPanel;->mMin02:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ClockPanel;->mMin02:Landroid/widget/ImageView;
 
     aget v5, v1, v6
 
@@ -291,7 +291,7 @@
 
     .line 106
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/ClockPanel;->mHour01:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ClockPanel;->mHour01:Landroid/widget/ImageView;
 
     aget v5, v0, v7
 
@@ -324,7 +324,7 @@
     const/4 v8, 0x1
 
     .line 59
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mCalendar:Ljava/util/Calendar;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mCalendar:Ljava/util/Calendar;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -333,7 +333,7 @@
     invoke-virtual {v5, v6, v7}, Ljava/util/Calendar;->setTimeInMillis(J)V
 
     .line 62
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mContext:Landroid/content/Context;
 
     invoke-static {v5}, Landroid/text/format/DateFormat;->is24HourFormat(Landroid/content/Context;)Z
 
@@ -350,7 +350,7 @@
     .line 64
     .local v1, hourFormat:Ljava/text/SimpleDateFormat;
     :goto_0
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mCalendar:Ljava/util/Calendar;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mCalendar:Ljava/util/Calendar;
 
     invoke-virtual {v5}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
@@ -370,7 +370,7 @@
 
     .line 67
     .local v4, minuteFormat:Ljava/text/SimpleDateFormat;
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mCalendar:Ljava/util/Calendar;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mCalendar:Ljava/util/Calendar;
 
     invoke-virtual {v5}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
@@ -382,12 +382,12 @@
 
     .line 69
     .local v3, minString:Ljava/lang/String;
-    invoke-direct {p0, v2, v3}, Lcom/android/settings/ClockPanel;->convertTimeToImage(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v3}, Lcom/android/OriginalSettings/ClockPanel;->convertTimeToImage(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 72
-    iget-object v6, p0, Lcom/android/settings/ClockPanel;->mAM:Landroid/widget/TextView;
+    iget-object v6, p0, Lcom/android/OriginalSettings/ClockPanel;->mAM:Landroid/widget/TextView;
 
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mContext:Landroid/content/Context;
 
     invoke-static {v5}, Landroid/text/format/DateFormat;->is24HourFormat(Landroid/content/Context;)Z
 
@@ -401,7 +401,7 @@
     invoke-virtual {v6, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 73
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mCalendar:Ljava/util/Calendar;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mCalendar:Ljava/util/Calendar;
 
     const/16 v6, 0x9
 
@@ -412,9 +412,9 @@
     if-nez v5, :cond_2
 
     .line 74
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mAM:Landroid/widget/TextView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mAM:Landroid/widget/TextView;
 
-    iget-object v6, p0, Lcom/android/settings/ClockPanel;->mContext:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/ClockPanel;->mContext:Landroid/content/Context;
 
     const v7, 0x1040075
 
@@ -430,7 +430,7 @@
 
     .line 80
     :goto_2
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mContext:Landroid/content/Context;
 
     const v6, 0x10400af
 
@@ -440,9 +440,9 @@
 
     .line 81
     .local v0, dateFormat:Ljava/lang/String;
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mDate_Month:Landroid/widget/TextView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mDate_Month:Landroid/widget/TextView;
 
-    iget-object v6, p0, Lcom/android/settings/ClockPanel;->mCalendar:Ljava/util/Calendar;
+    iget-object v6, p0, Lcom/android/OriginalSettings/ClockPanel;->mCalendar:Ljava/util/Calendar;
 
     invoke-static {v0, v6}, Landroid/text/format/DateFormat;->format(Ljava/lang/CharSequence;Ljava/util/Calendar;)Ljava/lang/CharSequence;
 
@@ -480,9 +480,9 @@
 
     .line 76
     :cond_2
-    iget-object v5, p0, Lcom/android/settings/ClockPanel;->mAM:Landroid/widget/TextView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ClockPanel;->mAM:Landroid/widget/TextView;
 
-    iget-object v6, p0, Lcom/android/settings/ClockPanel;->mContext:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/ClockPanel;->mContext:Landroid/content/Context;
 
     const v7, 0x1040076
 

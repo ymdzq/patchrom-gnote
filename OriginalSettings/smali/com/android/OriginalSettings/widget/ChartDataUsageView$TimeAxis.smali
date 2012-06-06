@@ -1,14 +1,14 @@
-.class public Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;
+.class public Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;
 .super Ljava/lang/Object;
 .source "ChartDataUsageView.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/ChartAxis;
+.implements Lcom/android/OriginalSettings/widget/ChartAxis;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/ChartDataUsageView;
+    value = Lcom/android/OriginalSettings/widget/ChartDataUsageView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,7 +44,7 @@
 
     sub-long v2, v0, v2
 
-    invoke-virtual {p0, v2, v3, v0, v1}, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->setBounds(JJ)Z
+    invoke-virtual {p0, v2, v3, v0, v1}, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->setBounds(JJ)Z
 
     .line 463
     return-void
@@ -82,9 +82,9 @@
 
     .prologue
     .line 493
-    iget v0, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mSize:F
+    iget v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
-    iget-wide v1, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
+    iget-wide v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     sub-long v1, p1, v1
 
@@ -92,9 +92,9 @@
 
     mul-float/2addr v0, v1
 
-    iget-wide v1, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMax:J
+    iget-wide v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
-    iget-wide v3, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
+    iget-wide v3, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     sub-long/2addr v1, v3
 
@@ -111,13 +111,13 @@
 
     .prologue
     .line 498
-    iget-wide v0, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
+    iget-wide v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     long-to-float v0, v0
 
-    iget-wide v1, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMax:J
+    iget-wide v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
-    iget-wide v3, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
+    iget-wide v3, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     sub-long/2addr v1, v3
 
@@ -125,7 +125,7 @@
 
     mul-float/2addr v1, p1
 
-    iget v2, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mSize:F
+    iget v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
     div-float/2addr v1, v2
 
@@ -143,9 +143,9 @@
     const-wide/32 v7, 0x240c8400
 
     .line 511
-    iget-wide v3, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMax:J
+    iget-wide v3, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
-    iget-wide v5, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
+    iget-wide v5, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     sub-long/2addr v3, v5
 
@@ -166,7 +166,7 @@
     if-ge v0, v1, :cond_0
 
     .line 514
-    iget-wide v3, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMax:J
+    iget-wide v3, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
     add-int/lit8 v5, v0, 0x1
 
@@ -176,7 +176,7 @@
 
     sub-long/2addr v3, v5
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->convertToPoint(J)F
+    invoke-virtual {p0, v3, v4}, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->convertToPoint(J)F
 
     move-result v3
 
@@ -203,7 +203,7 @@
 
     const/4 v1, 0x0
 
-    iget-wide v2, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
+    iget-wide v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -213,7 +213,7 @@
 
     const/4 v1, 0x1
 
-    iget-wide v2, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMax:J
+    iget-wide v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -223,7 +223,7 @@
 
     const/4 v1, 0x2
 
-    iget v2, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mSize:F
+    iget v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -245,13 +245,13 @@
 
     .prologue
     .line 472
-    iget-wide v0, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
+    iget-wide v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     cmp-long v0, v0, p1
 
     if-nez v0, :cond_0
 
-    iget-wide v0, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMax:J
+    iget-wide v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
     cmp-long v0, v0, p3
 
@@ -259,10 +259,10 @@
 
     .line 473
     :cond_0
-    iput-wide p1, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
+    iput-wide p1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
     .line 474
-    iput-wide p3, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMax:J
+    iput-wide p3, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mMax:J
 
     .line 475
     const/4 v0, 0x1
@@ -283,14 +283,14 @@
 
     .prologue
     .line 483
-    iget v0, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mSize:F
+    iget v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
     .line 484
-    iput p1, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mSize:F
+    iput p1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
     .line 485
     const/4 v0, 0x1

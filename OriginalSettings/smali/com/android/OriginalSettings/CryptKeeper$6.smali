@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CryptKeeper$6;
+.class Lcom/android/OriginalSettings/CryptKeeper$6;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/CryptKeeper;->passwordEntryInit()V
+    value = Lcom/android/OriginalSettings/CryptKeeper;->passwordEntryInit()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
 .field final synthetic val$imm:Landroid/view/inputmethod/InputMethodManager;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;Landroid/view/inputmethod/InputMethodManager;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CryptKeeper;Landroid/view/inputmethod/InputMethodManager;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 496
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$6;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CryptKeeper$6;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
-    iput-object p2, p0, Lcom/android/settings/CryptKeeper$6;->val$imm:Landroid/view/inputmethod/InputMethodManager;
+    iput-object p2, p0, Lcom/android/OriginalSettings/CryptKeeper$6;->val$imm:Landroid/view/inputmethod/InputMethodManager;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,14 +49,14 @@
     const/4 v2, 0x0
 
     .line 498
-    invoke-static {}, Lcom/android/settings/CryptKeeper;->access$200()I
+    invoke-static {}, Lcom/android/OriginalSettings/CryptKeeper;->access$200()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 499
-    invoke-static {}, Lcom/android/settings/CryptKeeper;->access$1200()Z
+    invoke-static {}, Lcom/android/OriginalSettings/CryptKeeper;->access$1200()Z
 
     move-result v0
 
@@ -65,7 +65,7 @@
     if-ne v0, v1, :cond_1
 
     .line 500
-    invoke-static {v2}, Lcom/android/settings/CryptKeeper;->access$1202(Z)Z
+    invoke-static {v2}, Lcom/android/OriginalSettings/CryptKeeper;->access$1202(Z)Z
 
     .line 505
     :cond_0
@@ -74,7 +74,7 @@
 
     .line 502
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$6;->val$imm:Landroid/view/inputmethod/InputMethodManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptKeeper$6;->val$imm:Landroid/view/inputmethod/InputMethodManager;
 
     const/4 v1, 0x0
 

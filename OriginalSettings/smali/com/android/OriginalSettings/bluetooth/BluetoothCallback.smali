@@ -1,4 +1,4 @@
-.class interface abstract Lcom/android/settings/bluetooth/BluetoothCallback;
+.class interface abstract Lcom/android/OriginalSettings/bluetooth/BluetoothCallback;
 .super Ljava/lang/Object;
 .source "BluetoothCallback.java"
 
@@ -7,16 +7,16 @@
 .method public abstract onBluetoothStateChanged(I)V
 .end method
 
-.method public abstract onDeviceAdded(Lcom/android/settings/bluetooth/CachedBluetoothDevice;)V
+.method public abstract onDeviceAdded(Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;)V
 .end method
 
-.method public abstract onDeviceBondStateChanged(Lcom/android/settings/bluetooth/CachedBluetoothDevice;I)V
+.method public abstract onDeviceBondStateChanged(Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;I)V
 .end method
 
-.method public abstract onDeviceDeleted(Lcom/android/settings/bluetooth/CachedBluetoothDevice;)V
+.method public abstract onDeviceDeleted(Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;)V
 .end method
 
-.method public abstract onProfileStateChanged(Lcom/android/settings/bluetooth/LocalBluetoothProfile;II)V
+.method public abstract onProfileStateChanged(Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfile;II)V
 .end method
 
 .method public abstract onScanningStateChanged(Z)V

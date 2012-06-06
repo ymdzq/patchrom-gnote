@@ -1,11 +1,11 @@
-.class Lcom/android/settings/motion/MotionView$1;
+.class Lcom/android/OriginalSettings/motion/MotionView$1;
 .super Landroid/os/Handler;
 .source "MotionView.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/motion/MotionView;
+    value = Lcom/android/OriginalSettings/motion/MotionView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/MotionView;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/MotionView;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/android/settings/motion/MotionView$1;->this$0:Lcom/android/settings/motion/MotionView;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/MotionView$1;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -50,10 +50,10 @@
 
     .line 103
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView$1;->this$0:Lcom/android/settings/motion/MotionView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView$1;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
-    #calls: Lcom/android/settings/motion/MotionView;->updateAnimation()V
-    invoke-static {v0}, Lcom/android/settings/motion/MotionView;->access$000(Lcom/android/settings/motion/MotionView;)V
+    #calls: Lcom/android/OriginalSettings/motion/MotionView;->updateAnimation()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/MotionView;->access$000(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     goto :goto_0
 

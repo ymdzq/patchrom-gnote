@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;
+.class public Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;
 .super Landroid/appwidget/AppWidgetProvider;
 .source "PowerSavingModeWidgetProvider.java"
 
@@ -6,13 +6,13 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$1;,
-        Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;,
-        Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;,
-        Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;,
-        Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$BluetoothStateTracker;,
-        Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;,
-        Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+        Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$1;,
+        Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;,
+        Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;,
+        Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;,
+        Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$BluetoothStateTracker;,
+        Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;,
+        Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
     }
 .end annotation
 
@@ -28,17 +28,17 @@
 
 .field private static mRP:Landroid/app/enterprise/IRestrictionPolicy;
 
-.field private static final sBluetoothState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+.field private static final sBluetoothState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-.field private static final sGpsState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+.field private static final sGpsState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-.field private static sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+.field private static sLocalBluetoothAdapter:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
-.field private static sSettingsObserver:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
+.field private static sSettingsObserver:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
 
-.field private static final sSyncState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+.field private static final sSyncState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-.field private static final sWifiState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+.field private static final sWifiState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
 
 # direct methods
@@ -57,48 +57,48 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->THIS_APPWIDGET:Landroid/content/ComponentName;
+    sput-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->THIS_APPWIDGET:Landroid/content/ComponentName;
 
     .line 59
-    sput-object v3, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    sput-object v3, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
     .line 103
-    new-instance v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;
+    new-instance v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;-><init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
+    invoke-direct {v0, v3}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;-><init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
 
-    sput-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sput-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
     .line 105
-    new-instance v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$BluetoothStateTracker;
+    new-instance v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$BluetoothStateTracker;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$BluetoothStateTracker;-><init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
+    invoke-direct {v0, v3}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$BluetoothStateTracker;-><init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
 
-    sput-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sput-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
     .line 107
-    new-instance v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;
+    new-instance v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;-><init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
+    invoke-direct {v0, v3}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$GpsStateTracker;-><init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
 
-    sput-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sGpsState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sput-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sGpsState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
     .line 109
-    new-instance v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;
+    new-instance v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;-><init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
+    invoke-direct {v0, v3}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SyncStateTracker;-><init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
 
-    sput-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSyncState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sput-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSyncState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
     .line 114
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mIsfirstPanel:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mIsfirstPanel:Z
 
     .line 124
     const/4 v0, 0x0
 
-    sput v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mIsBatteryStateLow:I
+    sput v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mIsBatteryStateLow:I
 
     return-void
 .end method
@@ -114,23 +114,23 @@
     return-void
 .end method
 
-.method static synthetic access$500()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+.method static synthetic access$500()Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
     .locals 1
 
     .prologue
     .line 53
-    sget-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    sget-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
     return-object v0
 .end method
 
-.method static synthetic access$502(Lcom/android/settings/bluetooth/LocalBluetoothAdapter;)Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+.method static synthetic access$502(Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;)Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 53
-    sput-object p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    sput-object p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
     return-object p0
 .end method
@@ -158,7 +158,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {p0, v2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -169,7 +169,7 @@
 
     const/4 v2, 0x2
 
-    invoke-static {p0, v2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -180,7 +180,7 @@
 
     const/4 v2, 0x3
 
-    invoke-static {p0, v2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -191,7 +191,7 @@
 
     const/4 v2, 0x4
 
-    invoke-static {p0, v2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -200,7 +200,7 @@
     .line 592
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
+    const-class v2, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
 
     invoke-direct {v1, p0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -224,7 +224,7 @@
 
     const/4 v2, 0x5
 
-    invoke-static {p0, v2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -235,7 +235,7 @@
 
     const/4 v2, 0x6
 
-    invoke-static {p0, v2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getLaunchPendingIntent(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -275,7 +275,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     .line 609
-    invoke-static {v0, p0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->updateButtons(Landroid/widget/RemoteViews;Landroid/content/Context;)V
+    invoke-static {v0, p0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->updateButtons(Landroid/widget/RemoteViews;Landroid/content/Context;)V
 
     .line 610
     return-object v0
@@ -287,12 +287,12 @@
 
     .prologue
     .line 533
-    sget-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
+    sget-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
 
     if-nez v0, :cond_0
 
     .line 534
-    new-instance v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
+    new-instance v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
 
     new-instance v1, Landroid/os/Handler;
 
@@ -302,14 +302,14 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;-><init>(Landroid/os/Handler;Landroid/content/Context;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;-><init>(Landroid/os/Handler;Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
+    sput-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
 
     .line 536
-    sget-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
+    sget-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
 
-    invoke-virtual {v0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->startObserving()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->startObserving()V
 
     .line 538
     :cond_0
@@ -555,7 +555,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 818
-    const-class v1, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;
+    const-class v1, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -677,7 +677,7 @@
 
     .prologue
     .line 1142
-    sput p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mIsBatteryStateLow:I
+    sput p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mIsBatteryStateLow:I
 
     .line 1143
     return-void
@@ -692,7 +692,7 @@
 
     .line 1037
     :try_start_0
-    sget-object v5, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
+    sget-object v5, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
 
     if-nez v5, :cond_0
 
@@ -707,11 +707,11 @@
 
     move-result-object v5
 
-    sput-object v5, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
+    sput-object v5, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
 
     .line 1040
     :cond_0
-    sget-object v5, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
+    sget-object v5, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
 
     const/4 v6, 0x1
 
@@ -741,7 +741,7 @@
     .line 1047
     .end local v3           #e:Landroid/os/RemoteException;
     :cond_2
-    sget v5, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mIsBatteryStateLow:I
+    sget v5, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mIsBatteryStateLow:I
 
     if-ne v5, v7, :cond_3
 
@@ -977,7 +977,7 @@
     .prologue
     .line 1115
     :try_start_0
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
 
     if-nez v4, :cond_0
 
@@ -992,11 +992,11 @@
 
     move-result-object v4
 
-    sput-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
+    sput-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
 
     .line 1118
     :cond_0
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mRP:Landroid/app/enterprise/IRestrictionPolicy;
 
     const/4 v5, 0x1
 
@@ -1024,7 +1024,7 @@
     .line 1125
     .end local v0           #e:Landroid/os/RemoteException;
     :cond_2
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getScreentimeout(Landroid/content/Context;)I
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getScreentimeout(Landroid/content/Context;)I
 
     move-result v2
 
@@ -1155,9 +1155,9 @@
     invoke-virtual {p0, v1, v2}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
     .line 642
-    sget-object v1, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v1, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v1, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->getTriState(Landroid/content/Context;)I
+    invoke-virtual {v1, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->getTriState(Landroid/content/Context;)I
 
     move-result v1
 
@@ -1177,9 +1177,9 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->getTriState(Landroid/content/Context;)I
+    invoke-virtual {v3, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->getTriState(Landroid/content/Context;)I
 
     move-result v3
 
@@ -1195,7 +1195,7 @@
 
     .line 677
     :goto_0
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getBrightnessMode(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getBrightnessMode(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -1223,7 +1223,7 @@
 
     .line 694
     :goto_1
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getSync(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getSync(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -1256,7 +1256,7 @@
 
     .line 703
     :goto_2
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getGpsState(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getGpsState(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -1289,9 +1289,9 @@
 
     .line 720
     :goto_3
-    sget-object v1, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v1, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v1, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->getTriState(Landroid/content/Context;)I
+    invoke-virtual {v1, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->getTriState(Landroid/content/Context;)I
 
     move-result v1
 
@@ -1311,9 +1311,9 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v3, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v3, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->getTriState(Landroid/content/Context;)I
+    invoke-virtual {v3, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->getTriState(Landroid/content/Context;)I
 
     move-result v3
 
@@ -1329,7 +1329,7 @@
 
     .line 766
     :goto_4
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getScreentimeout(Landroid/content/Context;)I
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getScreentimeout(Landroid/content/Context;)I
 
     move-result v0
 
@@ -1436,9 +1436,9 @@
 
     .line 661
     :pswitch_4
-    sget-object v1, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v1, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->isTurningOn()Z
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->isTurningOn()Z
 
     move-result v1
 
@@ -1501,7 +1501,7 @@
 
     .line 681
     :cond_1
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getBrightness(Landroid/content/Context;)I
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getBrightness(Landroid/content/Context;)I
 
     move-result v1
 
@@ -1533,7 +1533,7 @@
 
     .line 685
     :cond_2
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->getBrightness(Landroid/content/Context;)I
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->getBrightness(Landroid/content/Context;)I
 
     move-result v1
 
@@ -1700,9 +1700,9 @@
 
     .line 739
     :pswitch_7
-    sget-object v1, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v1, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->isTurningOn()Z
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->isTurningOn()Z
 
     move-result v1
 
@@ -1866,7 +1866,7 @@
 
     .prologue
     .line 619
-    invoke-static {p0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
+    invoke-static {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
     move-result-object v1
 
@@ -1878,12 +1878,12 @@
 
     .line 623
     .local v0, gm:Landroid/appwidget/AppWidgetManager;
-    sget-object v2, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->THIS_APPWIDGET:Landroid/content/ComponentName;
+    sget-object v2, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->THIS_APPWIDGET:Landroid/content/ComponentName;
 
     invoke-virtual {v0, v2, v1}, Landroid/appwidget/AppWidgetManager;->updateAppWidget(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V
 
     .line 624
-    invoke-static {p0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->checkObserver(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->checkObserver(Landroid/content/Context;)V
 
     .line 625
     return-void
@@ -1917,25 +1917,25 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
 
     .line 569
-    sget-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
+    sget-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
 
     if-eqz v0, :cond_0
 
     .line 570
-    sget-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
+    sget-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
 
-    invoke-virtual {v0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->stopObserving()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;->stopObserving()V
 
     .line 571
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
+    sput-object v0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSettingsObserver:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$SettingsObserver;
 
     .line 574
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetBatteryService;
+    const-class v1, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetBatteryService;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1970,12 +1970,12 @@
     invoke-virtual {v0, v1, v4, v4}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
 
     .line 557
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->checkObserver(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->checkObserver(Landroid/content/Context;)V
 
     .line 559
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetBatteryService;
+    const-class v1, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetBatteryService;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -2011,14 +2011,14 @@
     if-eqz v4, :cond_2
 
     .line 842
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1, p2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v4, p1, p2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 911
     :cond_0
     :goto_0
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
 
     .line 912
     :cond_1
@@ -2035,9 +2035,9 @@
     if-eqz v4, :cond_3
 
     .line 844
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1, p2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v4, p1, p2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -2052,9 +2052,9 @@
     if-eqz v4, :cond_4
 
     .line 846
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sGpsState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sGpsState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1, p2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v4, p1, p2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -2082,9 +2082,9 @@
 
     .line 860
     :cond_5
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSyncState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSyncState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1, p2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v4, p1, p2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 862
     new-instance v3, Landroid/content/Intent;
@@ -2111,7 +2111,7 @@
     if-eqz v4, :cond_7
 
     .line 866
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -2126,7 +2126,7 @@
     if-eqz v4, :cond_8
 
     .line 868
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -2141,7 +2141,7 @@
     if-eqz v4, :cond_9
 
     .line 870
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->updateWidget(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -2177,9 +2177,9 @@
     if-ne v1, v4, :cond_a
 
     .line 875
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sWifiState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v4, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -2190,9 +2190,9 @@
     if-ne v1, v4, :cond_b
 
     .line 883
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sBluetoothState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v4, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -2203,9 +2203,9 @@
     if-ne v1, v4, :cond_c
 
     .line 886
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sGpsState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sGpsState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v4, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -2216,7 +2216,7 @@
     if-ne v1, v4, :cond_d
 
     .line 889
-    invoke-direct {p0, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->toggleBrightness(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->toggleBrightness(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -2227,9 +2227,9 @@
     if-ne v1, v4, :cond_e
 
     .line 891
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSyncState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSyncState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v4, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
 
     .line 893
     new-instance v3, Landroid/content/Intent;
@@ -2252,7 +2252,7 @@
     if-ne v1, v4, :cond_0
 
     .line 897
-    invoke-direct {p0, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->toogleScreentimeout(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->toogleScreentimeout(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -2279,9 +2279,9 @@
     if-eqz v4, :cond_1
 
     .line 902
-    sget-object v4, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->sSyncState:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+    sget-object v4, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->sSyncState:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 
-    invoke-virtual {v4, p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v4, p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;->toggleState(Landroid/content/Context;)V
 
     goto/16 :goto_0
 .end method
@@ -2298,10 +2298,10 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->mContext:Landroid/content/Context;
+    sput-object v2, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->mContext:Landroid/content/Context;
 
     .line 544
-    invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
+    invoke-static {p1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
     move-result-object v1
 

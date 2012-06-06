@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/Utils;
+.class public Lcom/android/OriginalSettings/Utils;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -577,7 +577,7 @@
 
     .line 328
     .local v1, prop:Landroid/net/LinkProperties;
-    invoke-static {v1}, Lcom/android/settings/Utils;->formatIpAddresses(Landroid/net/LinkProperties;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/OriginalSettings/Utils;->formatIpAddresses(Landroid/net/LinkProperties;)Ljava/lang/String;
 
     move-result-object v2
 

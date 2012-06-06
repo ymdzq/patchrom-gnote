@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CryptKeeper$7;
+.class Lcom/android/OriginalSettings/CryptKeeper$7;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/CryptKeeper;->updateEmergencyCallButtonState()V
+    value = Lcom/android/OriginalSettings/CryptKeeper;->updateEmergencyCallButtonState()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CryptKeeper;)V
     .locals 0
     .parameter
 
     .prologue
     .line 654
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$7;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CryptKeeper$7;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 656
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$7;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptKeeper$7;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
-    #calls: Lcom/android/settings/CryptKeeper;->takeEmergencyCallAction()V
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->access$1400(Lcom/android/settings/CryptKeeper;)V
+    #calls: Lcom/android/OriginalSettings/CryptKeeper;->takeEmergencyCallAction()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/CryptKeeper;->access$1400(Lcom/android/OriginalSettings/CryptKeeper;)V
 
     .line 657
     return-void

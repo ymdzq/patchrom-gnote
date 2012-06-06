@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiApDialog;
+.class public Lcom/android/OriginalSettings/wifi/WifiApDialog;
 .super Landroid/app/AlertDialog;
 .source "WifiApDialog.java"
 
@@ -58,175 +58,175 @@
     invoke-direct {p0, p1, v0}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
     .line 64
-    iput-boolean v2, p0, Lcom/android/settings/wifi/WifiApDialog;->isShowPassword:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->isShowPassword:Z
 
     .line 69
-    iput v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iput v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     .line 80
-    iput-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempSsid:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mTempSsid:Ljava/lang/String;
 
     .line 81
-    iput-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempPassworld:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mTempPassworld:Ljava/lang/String;
 
     .line 82
-    iput-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mAlertDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mAlertDialog:Landroid/app/AlertDialog;
 
     .line 263
-    new-instance v0, Lcom/android/settings/wifi/WifiApDialog$3;
+    new-instance v0, Lcom/android/OriginalSettings/wifi/WifiApDialog$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/WifiApDialog$3;-><init>(Lcom/android/settings/wifi/WifiApDialog;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog$3;-><init>(Lcom/android/OriginalSettings/wifi/WifiApDialog;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->ssidWatcher:Landroid/text/TextWatcher;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->ssidWatcher:Landroid/text/TextWatcher;
 
     .line 298
-    new-instance v0, Lcom/android/settings/wifi/WifiApDialog$4;
+    new-instance v0, Lcom/android/OriginalSettings/wifi/WifiApDialog$4;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/WifiApDialog$4;-><init>(Lcom/android/settings/wifi/WifiApDialog;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog$4;-><init>(Lcom/android/OriginalSettings/wifi/WifiApDialog;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->passwordWatcher:Landroid/text/TextWatcher;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->passwordWatcher:Landroid/text/TextWatcher;
 
     .line 90
-    iput-object p2, p0, Lcom/android/settings/wifi/WifiApDialog;->mListener:Landroid/content/DialogInterface$OnClickListener;
+    iput-object p2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 91
-    iput-object p3, p0, Lcom/android/settings/wifi/WifiApDialog;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
+    iput-object p3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     .line 92
     if-eqz p3, :cond_0
 
     .line 93
-    invoke-static {p3}, Lcom/android/settings/wifi/WifiApDialog;->getSecurityTypeIndex(Landroid/net/wifi/WifiConfiguration;)I
+    invoke-static {p3}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->getSecurityTypeIndex(Landroid/net/wifi/WifiConfiguration;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     .line 95
     :cond_0
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/wifi/WifiApDialog;)Landroid/app/AlertDialog;
+.method static synthetic access$000(Lcom/android/OriginalSettings/wifi/WifiApDialog;)Landroid/app/AlertDialog;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mAlertDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mAlertDialog:Landroid/app/AlertDialog;
 
     return-object v0
 .end method
 
-.method static synthetic access$002(Lcom/android/settings/wifi/WifiApDialog;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
+.method static synthetic access$002(Lcom/android/OriginalSettings/wifi/WifiApDialog;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 53
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiApDialog;->mAlertDialog:Landroid/app/AlertDialog;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mAlertDialog:Landroid/app/AlertDialog;
 
     return-object p1
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/wifi/WifiApDialog;)Landroid/widget/EditText;
+.method static synthetic access$100(Lcom/android/OriginalSettings/wifi/WifiApDialog;)Landroid/widget/EditText;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/wifi/WifiApDialog;)Landroid/widget/EditText;
+.method static synthetic access$200(Lcom/android/OriginalSettings/wifi/WifiApDialog;)Landroid/widget/EditText;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/wifi/WifiApDialog;)Landroid/content/Context;
+.method static synthetic access$300(Lcom/android/OriginalSettings/wifi/WifiApDialog;)Landroid/content/Context;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/wifi/WifiApDialog;)Ljava/lang/String;
+.method static synthetic access$400(Lcom/android/OriginalSettings/wifi/WifiApDialog;)Ljava/lang/String;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempSsid:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mTempSsid:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic access$402(Lcom/android/settings/wifi/WifiApDialog;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$402(Lcom/android/OriginalSettings/wifi/WifiApDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 53
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempSsid:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mTempSsid:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/wifi/WifiApDialog;)Landroid/content/DialogInterface$OnDismissListener;
+.method static synthetic access$500(Lcom/android/OriginalSettings/wifi/WifiApDialog;)Landroid/content/DialogInterface$OnDismissListener;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mDismissListener:Landroid/content/DialogInterface$OnDismissListener;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 
     return-object v0
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/wifi/WifiApDialog;)V
+.method static synthetic access$600(Lcom/android/OriginalSettings/wifi/WifiApDialog;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 53
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->validate()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->validate()V
 
     return-void
 .end method
 
-.method static synthetic access$700(Lcom/android/settings/wifi/WifiApDialog;)Ljava/lang/String;
+.method static synthetic access$700(Lcom/android/OriginalSettings/wifi/WifiApDialog;)Ljava/lang/String;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempPassworld:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mTempPassworld:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic access$702(Lcom/android/settings/wifi/WifiApDialog;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$702(Lcom/android/OriginalSettings/wifi/WifiApDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 53
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiApDialog;->mTempPassworld:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mTempPassworld:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -288,12 +288,12 @@
     const/16 v2, 0x80
 
     .line 400
-    iget v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     if-nez v0, :cond_1
 
     .line 401
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -310,7 +310,7 @@
 
     .line 404
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -321,9 +321,9 @@
     invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 406
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -459,9 +459,9 @@
 
     .line 420
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -516,7 +516,7 @@
 
     .line 338
     .local v3, passwordSpaceCharCount:I
-    iget-object v7, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v7, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
     invoke-virtual {v7}, Landroid/widget/EditText;->length()I
 
@@ -524,7 +524,7 @@
 
     .line 339
     .local v5, ssidLength:I
-    iget-object v7, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v7, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v7}, Landroid/widget/EditText;->length()I
 
@@ -532,7 +532,7 @@
 
     .line 340
     .local v2, passwordLength:I
-    iget-object v7, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v7, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
     invoke-virtual {v7}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -544,7 +544,7 @@
 
     .line 341
     .local v4, ssid:Ljava/lang/String;
-    iget-object v7, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v7, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v7}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -607,11 +607,11 @@
 
     if-eq v5, v6, :cond_7
 
-    iget v7, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v7, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     if-eq v7, v8, :cond_4
 
-    iget v7, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v7, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     if-ne v7, v10, :cond_5
 
@@ -619,11 +619,11 @@
     if-eq v2, v3, :cond_7
 
     :cond_5
-    iget v7, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v7, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     if-eq v7, v8, :cond_6
 
-    iget v7, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v7, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     if-ne v7, v10, :cond_8
 
@@ -634,7 +634,7 @@
 
     .line 358
     :cond_7
-    invoke-virtual {p0, v9}, Lcom/android/settings/wifi/WifiApDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v9}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v7
 
@@ -648,7 +648,7 @@
 
     .line 360
     :cond_8
-    invoke-virtual {p0, v9}, Lcom/android/settings/wifi/WifiApDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v9}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v7
 
@@ -665,7 +665,7 @@
 
     .prologue
     .line 382
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->validate()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->validate()V
 
     .line 383
     return-void
@@ -688,7 +688,7 @@
 
     .prologue
     .line 437
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     const v1, 0x7f080235
 
@@ -718,7 +718,7 @@
 
     .line 116
     .local v0, config:Landroid/net/wifi/WifiConfiguration;
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -731,7 +731,7 @@
     iput-object v2, v0, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
     .line 118
-    iget v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     packed-switch v2, :pswitch_data_0
 
@@ -766,7 +766,7 @@
     invoke-virtual {v2, v4}, Ljava/util/BitSet;->set(I)V
 
     .line 126
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->length()I
 
@@ -775,7 +775,7 @@
     if-eqz v2, :cond_0
 
     .line 127
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -806,7 +806,7 @@
     invoke-virtual {v2, v4}, Ljava/util/BitSet;->set(I)V
 
     .line 135
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->length()I
 
@@ -815,7 +815,7 @@
     if-eqz v2, :cond_0
 
     .line 136
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -847,7 +847,7 @@
 
     .prologue
     .line 429
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
 
     return-object v0
 .end method
@@ -857,14 +857,14 @@
 
     .prologue
     .line 235
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
     if-eqz v0, :cond_0
 
     .line 236
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -878,12 +878,12 @@
 
     .line 239
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
 
     if-nez v0, :cond_1
 
     .line 240
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     const v1, 0x7f080233
 
@@ -895,12 +895,12 @@
 
     .line 243
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
 
     if-eqz v0, :cond_2
 
     .line 244
-    iget v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -911,7 +911,7 @@
 
     .line 246
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
 
     const/4 v1, 0x0
 
@@ -921,16 +921,16 @@
 
     .line 249
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 250
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -946,16 +946,16 @@
 
     .line 253
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 254
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -986,7 +986,7 @@
 
     .prologue
     .line 366
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     check-cast p1, Landroid/widget/CheckBox;
 
@@ -1005,9 +1005,9 @@
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setInputType(I)V
 
     .line 372
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -1039,7 +1039,7 @@
     const/4 v5, 0x1
 
     .line 147
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiApDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v2
 
@@ -1051,10 +1051,10 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iput-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     .line 148
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     const v3, 0x7f080233
 
@@ -1064,32 +1064,32 @@
 
     check-cast v2, Landroid/widget/Spinner;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
+    iput-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
 
     .line 150
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiApDialog;->setView(Landroid/view/View;)V
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->setView(Landroid/view/View;)V
 
     .line 151
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/WifiApDialog;->setInverseBackgroundForced(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->setInverseBackgroundForced(Z)V
 
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiApDialog;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     .line 154
     .local v1, context:Landroid/content/Context;
-    iput-object v1, p0, Lcom/android/settings/wifi/WifiApDialog;->mContext:Landroid/content/Context;
+    iput-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mContext:Landroid/content/Context;
 
     .line 156
     const v2, 0x7f0b02b8
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/WifiApDialog;->setTitle(I)V
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->setTitle(I)V
 
     .line 157
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     const v3, 0x7f08021a
 
@@ -1102,7 +1102,7 @@
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 159
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     const v3, 0x7f080232
 
@@ -1112,10 +1112,10 @@
 
     check-cast v2, Landroid/widget/EditText;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iput-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
     .line 160
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     const v3, 0x7f08022e
 
@@ -1125,7 +1125,7 @@
 
     check-cast v2, Landroid/widget/EditText;
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iput-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
     .line 162
     const/4 v2, -0x1
@@ -1136,9 +1136,9 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiApDialog;->mListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v4, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mListener:Landroid/content/DialogInterface$OnClickListener;
 
-    invoke-virtual {p0, v2, v3, v4}, Lcom/android/settings/wifi/WifiApDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {p0, v2, v3, v4}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 163
     const/4 v2, -0x2
@@ -1149,37 +1149,37 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/wifi/WifiApDialog;->mListener:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v4, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mListener:Landroid/content/DialogInterface$OnClickListener;
 
-    invoke-virtual {p0, v2, v3, v4}, Lcom/android/settings/wifi/WifiApDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {p0, v2, v3, v4}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 166
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     if-eqz v2, :cond_1
 
     .line 167
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiApDialog;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     iget-object v3, v3, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 168
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
 
-    iget v3, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     invoke-virtual {v2, v3}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 169
-    iget v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     if-eq v2, v5, :cond_0
 
-    iget v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iget v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     const/4 v3, 0x2
 
@@ -1187,9 +1187,9 @@
 
     .line 171
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiApDialog;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
     iget-object v3, v3, Landroid/net/wifi/WifiConfiguration;->preSharedKey:Ljava/lang/String;
 
@@ -1197,25 +1197,25 @@
 
     .line 178
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiApDialog;->ssidWatcher:Landroid/text/TextWatcher;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->ssidWatcher:Landroid/text/TextWatcher;
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 179
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mPassword:Landroid/widget/EditText;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiApDialog;->passwordWatcher:Landroid/text/TextWatcher;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->passwordWatcher:Landroid/text/TextWatcher;
 
     invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 180
-    new-instance v2, Lcom/android/settings/wifi/WifiApDialog$1;
+    new-instance v2, Lcom/android/OriginalSettings/wifi/WifiApDialog$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/WifiApDialog$1;-><init>(Lcom/android/settings/wifi/WifiApDialog;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog$1;-><init>(Lcom/android/OriginalSettings/wifi/WifiApDialog;)V
 
-    iput-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mDismissListener:Landroid/content/DialogInterface$OnDismissListener;
+    iput-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 
     .line 195
     const-string v2, "IDE"
@@ -1332,7 +1332,7 @@
 
     .line 204
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v2, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1344,7 +1344,7 @@
 
     .line 211
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v2, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1355,7 +1355,7 @@
     invoke-virtual {v2, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 212
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurity:Landroid/widget/Spinner;
 
     invoke-virtual {v2, p0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
@@ -1363,18 +1363,18 @@
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->onCreate(Landroid/os/Bundle;)V
 
     .line 216
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->showSecurityFields()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->showSecurityFields()V
 
     .line 217
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->validate()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->validate()V
 
     .line 219
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->requestFocus()Z
 
     .line 221
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiApDialog;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -1393,11 +1393,11 @@
     if-ne v2, v5, :cond_3
 
     .line 223
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSsid:Landroid/widget/EditText;
 
-    new-instance v3, Lcom/android/settings/wifi/WifiApDialog$2;
+    new-instance v3, Lcom/android/OriginalSettings/wifi/WifiApDialog$2;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/wifi/WifiApDialog$2;-><init>(Lcom/android/settings/wifi/WifiApDialog;)V
+    invoke-direct {v3, p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog$2;-><init>(Lcom/android/OriginalSettings/wifi/WifiApDialog;)V
 
     const-wide/16 v4, 0x64
 
@@ -1410,7 +1410,7 @@
     .line 208
     .end local v0           #cfg:Landroid/content/res/Configuration;
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiApDialog;->mView:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mView:Landroid/view/View;
 
     invoke-virtual {v2, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1418,7 +1418,7 @@
 
     check-cast v2, Landroid/widget/CheckBox;
 
-    iget-boolean v3, p0, Lcom/android/settings/wifi/WifiApDialog;->isShowPassword:Z
+    iget-boolean v3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->isShowPassword:Z
 
     invoke-virtual {v2, v3}, Landroid/widget/CheckBox;->setChecked(Z)V
 
@@ -1444,17 +1444,17 @@
     .prologue
     .line 387
     .local p1, parent:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
-    iput p3, p0, Lcom/android/settings/wifi/WifiApDialog;->mSecurityTypeIndex:I
+    iput p3, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->mSecurityTypeIndex:I
 
     .line 388
     if-nez p3, :cond_0
 
     .line 391
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->showSecurityFields()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->showSecurityFields()V
 
     .line 392
-    invoke-direct {p0}, Lcom/android/settings/wifi/WifiApDialog;->validate()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/WifiApDialog;->validate()V
 
     .line 393
     return-void
@@ -1495,7 +1495,7 @@
 
     .prologue
     .line 434
-    iput-boolean p1, p0, Lcom/android/settings/wifi/WifiApDialog;->isShowPassword:Z
+    iput-boolean p1, p0, Lcom/android/OriginalSettings/wifi/WifiApDialog;->isShowPassword:Z
 
     .line 435
     return-void

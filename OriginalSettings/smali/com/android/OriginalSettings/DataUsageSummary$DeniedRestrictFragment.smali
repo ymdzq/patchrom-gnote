@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;
+.class public Lcom/android/OriginalSettings/DataUsageSummary$DeniedRestrictFragment;
 .super Landroid/app/DialogFragment;
 .source "DataUsageSummary.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/OriginalSettings/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,13 +25,13 @@
     return-void
 .end method
 
-.method public static show(Lcom/android/settings/DataUsageSummary;)V
+.method public static show(Lcom/android/OriginalSettings/DataUsageSummary;)V
     .locals 3
     .parameter "parent"
 
     .prologue
     .line 1982
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DataUsageSummary;->isAdded()Z
 
     move-result v1
 
@@ -43,24 +43,24 @@
 
     .line 1984
     :cond_0
-    new-instance v0, Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;
+    new-instance v0, Lcom/android/OriginalSettings/DataUsageSummary$DeniedRestrictFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/OriginalSettings/DataUsageSummary$DeniedRestrictFragment;-><init>()V
 
     .line 1985
-    .local v0, dialog:Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;
+    .local v0, dialog:Lcom/android/OriginalSettings/DataUsageSummary$DeniedRestrictFragment;
     const/4 v1, 0x0
 
-    invoke-virtual {v0, p0, v1}, Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;->setTargetFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v0, p0, v1}, Lcom/android/OriginalSettings/DataUsageSummary$DeniedRestrictFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
     .line 1986
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
     const-string v2, "deniedRestrict"
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/DataUsageSummary$DeniedRestrictFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -73,7 +73,7 @@
 
     .prologue
     .line 1991
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DataUsageSummary$DeniedRestrictFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

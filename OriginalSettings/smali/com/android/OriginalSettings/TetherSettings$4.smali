@@ -1,4 +1,4 @@
-.class Lcom/android/settings/TetherSettings$4;
+.class Lcom/android/OriginalSettings/TetherSettings$4;
 .super Ljava/lang/Object;
 .source "TetherSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/TetherSettings;->showAttentionDialog()V
+    value = Lcom/android/OriginalSettings/TetherSettings;->showAttentionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/TetherSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/TetherSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TetherSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/TetherSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 958
-    iput-object p1, p0, Lcom/android/settings/TetherSettings$4;->this$0:Lcom/android/settings/TetherSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/TetherSettings$4;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
 
     .prologue
     .line 960
-    iget-object v0, p0, Lcom/android/settings/TetherSettings$4;->this$0:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TetherSettings$4;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
-    #calls: Lcom/android/settings/TetherSettings;->startTethering()V
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->access$1000(Lcom/android/settings/TetherSettings;)V
+    #calls: Lcom/android/OriginalSettings/TetherSettings;->startTethering()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/TetherSettings;->access$1000(Lcom/android/OriginalSettings/TetherSettings;)V
 
     .line 961
     return-void

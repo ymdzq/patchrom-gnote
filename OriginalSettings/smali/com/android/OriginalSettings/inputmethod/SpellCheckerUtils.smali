@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/inputmethod/SpellCheckerUtils;
+.class public Lcom/android/OriginalSettings/inputmethod/SpellCheckerUtils;
 .super Ljava/lang/Object;
 .source "SpellCheckerUtils.java"
 
@@ -13,13 +13,13 @@
 
     .prologue
     .line 24
-    const-class v0, Lcom/android/settings/inputmethod/SpellCheckerUtils;
+    const-class v0, Lcom/android/OriginalSettings/inputmethod/SpellCheckerUtils;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/inputmethod/SpellCheckerUtils;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/OriginalSettings/inputmethod/SpellCheckerUtils;->TAG:Ljava/lang/String;
 
     return-void
 .end method

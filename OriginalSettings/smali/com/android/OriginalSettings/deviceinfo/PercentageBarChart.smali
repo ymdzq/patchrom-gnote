@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/PercentageBarChart;
+.class public Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;
 .super Landroid/view/View;
 .source "PercentageBarChart.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+        Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;
     }
 .end annotation
 
@@ -19,7 +19,7 @@
         value = {
             "Ljava/util/Collection",
             "<",
-            "Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;",
+            "Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;",
             ">;"
         }
     .end annotation
@@ -45,13 +45,13 @@
 
     invoke-direct {v2}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v2, p0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
+    iput-object v2, p0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 
     .line 39
-    iput v3, p0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mMinTickWidth:I
+    iput v3, p0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mMinTickWidth:I
 
     .line 54
-    sget-object v2, Lcom/android/settings/R$styleable;->PercentageBarChart:[I
+    sget-object v2, Lcom/android/OriginalSettings/R$styleable;->PercentageBarChart:[I
 
     invoke-virtual {p1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -63,7 +63,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mMinTickWidth:I
+    iput v2, p0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mMinTickWidth:I
 
     .line 56
     const/4 v2, 0x0
@@ -79,12 +79,12 @@
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 59
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
+    iget-object v2, p0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v2, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 60
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
+    iget-object v2, p0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 
     sget-object v3, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
@@ -94,7 +94,7 @@
     return-void
 .end method
 
-.method public static createEntry(FI)Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+.method public static createEntry(FI)Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;
     .locals 2
     .parameter "percentage"
     .parameter "color"
@@ -115,9 +115,9 @@
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 120
-    new-instance v1, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+    new-instance v1, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;
 
-    invoke-direct {v1, p0, v0}, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;-><init>(FLandroid/graphics/Paint;)V
+    invoke-direct {v1, p0, v0}, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;-><init>(FLandroid/graphics/Paint;)V
 
     return-object v1
 .end method
@@ -133,17 +133,17 @@
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 67
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/PercentageBarChart;->getPaddingLeft()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->getPaddingLeft()I
 
     move-result v15
 
     .line 68
     .local v15, left:I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/PercentageBarChart;->getWidth()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->getWidth()I
 
     move-result v1
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/PercentageBarChart;->getPaddingRight()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->getPaddingRight()I
 
     move-result v3
 
@@ -151,17 +151,17 @@
 
     .line 69
     .local v16, right:I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/PercentageBarChart;->getPaddingTop()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->getPaddingTop()I
 
     move-result v17
 
     .line 70
     .local v17, top:I
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/PercentageBarChart;->getHeight()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->getHeight()I
 
     move-result v1
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/PercentageBarChart;->getPaddingBottom()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->getPaddingBottom()I
 
     move-result v3
 
@@ -179,14 +179,14 @@
     .local v2, lastX:F
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mEntries:Ljava/util/Collection;
+    iget-object v1, v0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mEntries:Ljava/util/Collection;
 
     if-eqz v1, :cond_2
 
     .line 77
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mEntries:Ljava/util/Collection;
+    iget-object v1, v0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mEntries:Ljava/util/Collection;
 
     invoke-interface {v1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -204,11 +204,11 @@
 
     move-result-object v12
 
-    check-cast v12, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+    check-cast v12, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;
 
     .line 79
-    .local v12, e:Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
-    iget v1, v12, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->percentage:F
+    .local v12, e:Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;
+    iget v1, v12, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;->percentage:F
 
     const/4 v3, 0x0
 
@@ -245,7 +245,7 @@
 
     int-to-float v5, v11
 
-    iget-object v6, v12, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->paint:Landroid/graphics/Paint;
+    iget-object v6, v12, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;->paint:Landroid/graphics/Paint;
 
     .end local v4           #nextX:F
     move-object/from16 v1, p1
@@ -253,19 +253,19 @@
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
     .line 97
-    .end local v12           #e:Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+    .end local v12           #e:Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;
     .end local v13           #entryWidth:F
     .end local v14           #i$:Ljava/util/Iterator;
     :goto_2
     return-void
 
     .line 82
-    .restart local v12       #e:Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+    .restart local v12       #e:Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;
     .restart local v14       #i$:Ljava/util/Iterator;
     :cond_0
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mMinTickWidth:I
+    iget v1, v0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mMinTickWidth:I
 
     int-to-float v1, v1
 
@@ -273,7 +273,7 @@
 
     int-to-float v3, v0
 
-    iget v5, v12, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->percentage:F
+    iget v5, v12, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;->percentage:F
 
     mul-float/2addr v3, v5
 
@@ -293,7 +293,7 @@
 
     int-to-float v5, v11
 
-    iget-object v6, v12, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->paint:Landroid/graphics/Paint;
+    iget-object v6, v12, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;->paint:Landroid/graphics/Paint;
 
     move-object/from16 v1, p1
 
@@ -307,7 +307,7 @@
 
     .line 96
     .end local v4           #nextX:F
-    .end local v12           #e:Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+    .end local v12           #e:Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;
     .end local v13           #entryWidth:F
     .end local v14           #i$:Ljava/util/Iterator;
     :cond_2
@@ -323,7 +323,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
+    iget-object v10, v0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 
     move-object/from16 v5, p1
 
@@ -340,7 +340,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -356,15 +356,15 @@
             "(",
             "Ljava/util/Collection",
             "<",
-            "Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;",
+            "Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;",
             ">;)V"
         }
     .end annotation
 
     .prologue
     .line 124
-    .local p1, entries:Ljava/util/Collection;,"Ljava/util/Collection<Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;>;"
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mEntries:Ljava/util/Collection;
+    .local p1, entries:Ljava/util/Collection;,"Ljava/util/Collection<Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart$Entry;>;"
+    iput-object p1, p0, Lcom/android/OriginalSettings/deviceinfo/PercentageBarChart;->mEntries:Ljava/util/Collection;
 
     .line 125
     return-void

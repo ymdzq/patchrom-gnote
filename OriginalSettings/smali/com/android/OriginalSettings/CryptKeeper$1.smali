@@ -1,11 +1,11 @@
-.class Lcom/android/settings/CryptKeeper$1;
+.class Lcom/android/OriginalSettings/CryptKeeper$1;
 .super Landroid/os/Handler;
 .source "CryptKeeper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CryptKeeper;
+    value = Lcom/android/OriginalSettings/CryptKeeper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CryptKeeper;)V
     .locals 0
     .parameter
 
     .prologue
     .line 222
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$1;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CryptKeeper$1;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -50,10 +50,10 @@
 
     .line 227
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$1;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptKeeper$1;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
-    #calls: Lcom/android/settings/CryptKeeper;->updateProgress()V
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->access$800(Lcom/android/settings/CryptKeeper;)V
+    #calls: Lcom/android/OriginalSettings/CryptKeeper;->updateProgress()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/CryptKeeper;->access$800(Lcom/android/OriginalSettings/CryptKeeper;)V
 
     goto :goto_0
 

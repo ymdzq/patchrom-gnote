@@ -1,4 +1,4 @@
-.class Lcom/android/settings/MasterClearConfirm$1;
+.class Lcom/android/OriginalSettings/MasterClearConfirm$1;
 .super Ljava/lang/Object;
 .source "MasterClearConfirm.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/MasterClearConfirm;
+    value = Lcom/android/OriginalSettings/MasterClearConfirm;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/MasterClearConfirm;
+.field final synthetic this$0:Lcom/android/OriginalSettings/MasterClearConfirm;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MasterClearConfirm;)V
+.method constructor <init>(Lcom/android/OriginalSettings/MasterClearConfirm;)V
     .locals 0
     .parameter
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iput-object p1, p0, Lcom/android/OriginalSettings/MasterClearConfirm$1;->this$0:Lcom/android/OriginalSettings/MasterClearConfirm;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,17 +58,17 @@
     if-eqz v0, :cond_1
 
     .line 90
-    invoke-static {}, Lcom/android/settings/MasterClearConfirm;->isSimEnabled()Z
+    invoke-static {}, Lcom/android/OriginalSettings/MasterClearConfirm;->isSimEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MasterClearConfirm$1;->this$0:Lcom/android/OriginalSettings/MasterClearConfirm;
 
-    #calls: Lcom/android/settings/MasterClearConfirm;->DoMasterReset()V
-    invoke-static {v0}, Lcom/android/settings/MasterClearConfirm;->access$000(Lcom/android/settings/MasterClearConfirm;)V
+    #calls: Lcom/android/OriginalSettings/MasterClearConfirm;->DoMasterReset()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/MasterClearConfirm;->access$000(Lcom/android/OriginalSettings/MasterClearConfirm;)V
 
     .line 100
     :goto_0
@@ -76,19 +76,19 @@
 
     .line 93
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MasterClearConfirm$1;->this$0:Lcom/android/OriginalSettings/MasterClearConfirm;
 
-    #calls: Lcom/android/settings/MasterClearConfirm;->StartPassword()V
-    invoke-static {v0}, Lcom/android/settings/MasterClearConfirm;->access$100(Lcom/android/settings/MasterClearConfirm;)V
+    #calls: Lcom/android/OriginalSettings/MasterClearConfirm;->StartPassword()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/MasterClearConfirm;->access$100(Lcom/android/OriginalSettings/MasterClearConfirm;)V
 
     goto :goto_0
 
     .line 97
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MasterClearConfirm$1;->this$0:Lcom/android/settings/MasterClearConfirm;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MasterClearConfirm$1;->this$0:Lcom/android/OriginalSettings/MasterClearConfirm;
 
-    #calls: Lcom/android/settings/MasterClearConfirm;->DoMasterReset()V
-    invoke-static {v0}, Lcom/android/settings/MasterClearConfirm;->access$000(Lcom/android/settings/MasterClearConfirm;)V
+    #calls: Lcom/android/OriginalSettings/MasterClearConfirm;->DoMasterReset()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/MasterClearConfirm;->access$000(Lcom/android/OriginalSettings/MasterClearConfirm;)V
 
     goto :goto_0
 .end method

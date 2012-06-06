@@ -1,12 +1,12 @@
-.class public final Lcom/android/settings/bluetooth/DevicePickerActivity;
-.super Landroid/app/Activity;
+.class public final Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "DevicePickerActivity.java"
 
 
 # instance fields
-.field private mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+.field private mLocalAdapter:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
-.field private mLocalManager:Lcom/android/settings/bluetooth/LocalBluetoothManager;
+.field private mLocalManager:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 33
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     return-void
 .end method
@@ -30,9 +30,9 @@
 
     .prologue
     .line 60
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->mLocalAdapter:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->getBluetoothState()I
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;->getBluetoothState()I
 
     move-result v0
 
@@ -45,7 +45,7 @@
     if-ne v0, v1, :cond_1
 
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->finish()V
 
     .line 68
     :cond_0
@@ -61,11 +61,11 @@
     if-ne v0, v1, :cond_0
 
     .line 66
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->mLocalAdapter:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->startScanning(Z)V
+    invoke-virtual {v1, v2}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;->startScanning(Z)V
 
     goto :goto_0
 .end method
@@ -76,22 +76,22 @@
 
     .prologue
     .line 43
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 44
     const v0, 0x7f040010
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/DevicePickerActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->setContentView(I)V
 
     .line 46
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    invoke-static {p0}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mLocalManager:Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->mLocalManager:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;
 
     .line 47
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mLocalManager:Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->mLocalManager:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;
 
     if-nez v0, :cond_1
 
@@ -109,18 +109,18 @@
 
     .line 51
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mLocalManager:Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->mLocalManager:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getBluetoothAdapter()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;->getBluetoothAdapter()Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iput-object v0, p0, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->mLocalAdapter:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->mLocalAdapter:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/LocalBluetoothAdapter;->getBluetoothState()I
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothAdapter;->getBluetoothState()I
 
     move-result v0
 
@@ -131,14 +131,14 @@
     .line 54
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/bluetooth/BluetoothEnableActivity;
+    const-class v1, Lcom/android/OriginalSettings/bluetooth/BluetoothEnableActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 55
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/bluetooth/DevicePickerActivity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/OriginalSettings/bluetooth/DevicePickerActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 .end method

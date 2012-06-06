@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/motion/ShakeSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/motion/ShakeSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "ShakeSettings.java"
 
 # interfaces
@@ -40,7 +40,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/motion/ShakeSettings;->mAnimationImage:[I
+    sput-object v0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationImage:[I
 
     return-void
 
@@ -61,109 +61,109 @@
     const/4 v1, 0x0
 
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 45
-    iput-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 46
-    iput-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 48
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationIndex:I
 
     .line 49
-    iput-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationView:Landroid/widget/ImageView;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationView:Landroid/widget/ImageView;
 
     .line 55
-    new-instance v0, Lcom/android/settings/motion/ShakeSettings$1;
+    new-instance v0, Lcom/android/OriginalSettings/motion/ShakeSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/motion/ShakeSettings$1;-><init>(Lcom/android/settings/motion/ShakeSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/motion/ShakeSettings$1;-><init>(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/motion/ShakeSettings;)V
+.method static synthetic access$000(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->updateAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->updateAnimation()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/motion/ShakeSettings;)Landroid/content/ContentResolver;
+.method static synthetic access$100(Lcom/android/OriginalSettings/motion/ShakeSettings;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/motion/ShakeSettings;)V
+.method static synthetic access$200(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->startTryActually()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->startTryActually()V
 
     return-void
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/motion/ShakeSettings;)V
+.method static synthetic access$300(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->updateCheckedUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->updateCheckedUI()V
 
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/motion/ShakeSettings;)Landroid/content/ContentResolver;
+.method static synthetic access$400(Lcom/android/OriginalSettings/motion/ShakeSettings;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/motion/ShakeSettings;)V
+.method static synthetic access$500(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->showMotionDialog()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->showMotionDialog()V
 
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/motion/ShakeSettings;)V
+.method static synthetic access$600(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->stopAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->stopAnimation()V
 
     return-void
 .end method
@@ -175,35 +175,35 @@
     const/4 v4, 0x0
 
     .line 146
-    iget-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     if-eqz v1, :cond_0
 
     .line 147
-    iget-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 148
-    iput-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 150
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     if-eqz v1, :cond_1
 
     .line 151
-    iget-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 152
-    iput-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 154
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -217,7 +217,7 @@
     .local v0, message:Ljava/lang/String;
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -241,9 +241,9 @@
 
     const v2, 0x7f0b07f3
 
-    new-instance v3, Lcom/android/settings/motion/ShakeSettings$2;
+    new-instance v3, Lcom/android/OriginalSettings/motion/ShakeSettings$2;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/motion/ShakeSettings$2;-><init>(Lcom/android/settings/motion/ShakeSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/OriginalSettings/motion/ShakeSettings$2;-><init>(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -259,14 +259,14 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 168
-    iget-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
-    new-instance v2, Lcom/android/settings/motion/ShakeSettings$3;
+    new-instance v2, Lcom/android/OriginalSettings/motion/ShakeSettings$3;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/motion/ShakeSettings$3;-><init>(Lcom/android/settings/motion/ShakeSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/motion/ShakeSettings$3;-><init>(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -286,17 +286,17 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 249
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 250
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationIndex:I
 
     .line 251
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->updateAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->updateAnimation()V
 
     .line 253
     :cond_0
@@ -308,20 +308,20 @@
 
     .prologue
     .line 217
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    instance-of v0, v0, Landroid/preference/PreferenceActivity;
+    instance-of v0, v0, Lmiui/preference/BasePreferenceActivity;
 
     if-eqz v0, :cond_0
 
     .line 218
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Landroid/preference/PreferenceActivity;
+    check-cast v0, Lmiui/preference/BasePreferenceActivity;
 
     .line 219
     new-instance v2, Landroid/os/Bundle;
@@ -329,7 +329,7 @@
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
     .line 220
-    const-class v1, Lcom/android/settings/motion/ShakeTutorial;
+    const-class v1, Lcom/android/OriginalSettings/motion/ShakeTutorial;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -343,7 +343,7 @@
 
     move-object v5, p0
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 223
     :cond_0
@@ -362,12 +362,12 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 258
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 259
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
 
     const/16 v1, 0x66
 
@@ -397,7 +397,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationIndex:I
+    iget v2, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationIndex:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -410,51 +410,51 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 228
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationView:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationView:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
     .line 229
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationView:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationView:Landroid/widget/ImageView;
 
-    sget-object v1, Lcom/android/settings/motion/ShakeSettings;->mAnimationImage:[I
+    sget-object v1, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationImage:[I
 
-    iget v2, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationIndex:I
+    iget v2, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationIndex:I
 
     aget v1, v1, v2
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 230
-    iget v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationIndex:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationIndex:I
 
     .line 233
     :cond_0
-    iget v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationIndex:I
 
     rem-int/lit8 v0, v0, 0x3
 
-    iput v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationIndex:I
 
     .line 235
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_1
 
     .line 236
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->stopAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->stopAnimation()V
 
     .line 237
-    iget v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationIndex:I
 
     if-nez v0, :cond_2
 
     .line 238
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
 
     const-wide/16 v1, 0x7d0
 
@@ -467,7 +467,7 @@
 
     .line 240
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationHandler:Landroid/os/Handler;
 
     const-wide/16 v1, 0x1f4
 
@@ -483,9 +483,9 @@
     const/4 v0, 0x0
 
     .line 131
-    iget-object v1, p0, Lcom/android/settings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -520,7 +520,7 @@
     const/4 v5, 0x0
 
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -530,27 +530,27 @@
 
     invoke-direct {v3, v0}, Landroid/widget/Switch;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/android/settings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iput-object v3, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
     .line 80
-    instance-of v3, v0, Landroid/preference/PreferenceActivity;
+    instance-of v3, v0, Lmiui/preference/BasePreferenceActivity;
 
     if-eqz v3, :cond_1
 
     move-object v2, v0
 
     .line 81
-    check-cast v2, Landroid/preference/PreferenceActivity;
+    check-cast v2, Lmiui/preference/BasePreferenceActivity;
 
     .line 82
-    .local v2, preferenceActivity:Landroid/preference/PreferenceActivity;
-    invoke-virtual {v2}, Landroid/preference/PreferenceActivity;->onIsHidingHeaders()Z
+    .local v2, preferenceActivity:Lmiui/preference/BasePreferenceActivity;
+    invoke-virtual {v2}, Lmiui/preference/BasePreferenceActivity;->onIsHidingHeaders()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    invoke-virtual {v2}, Landroid/preference/PreferenceActivity;->onIsMultiPane()Z
+    invoke-virtual {v2}, Lmiui/preference/BasePreferenceActivity;->onIsMultiPane()Z
 
     move-result v3
 
@@ -570,7 +570,7 @@
 
     .line 85
     .local v1, padding:I
-    iget-object v3, p0, Lcom/android/settings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v3, v5, v5, v1, v5}, Landroid/widget/Switch;->setPadding(IIII)V
 
@@ -586,7 +586,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
     new-instance v5, Landroid/app/ActionBar$LayoutParams;
 
@@ -607,14 +607,14 @@
 
     .line 96
     .end local v1           #padding:I
-    .end local v2           #preferenceActivity:Landroid/preference/PreferenceActivity;
+    .end local v2           #preferenceActivity:Lmiui/preference/BasePreferenceActivity;
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v3, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 97
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 98
     return-void
@@ -642,7 +642,7 @@
     if-ne p2, v0, :cond_0
 
     .line 124
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->showGuideDialog()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->showGuideDialog()V
 
     goto :goto_0
 
@@ -667,7 +667,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 103
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -696,28 +696,28 @@
 
     .prologue
     .line 68
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 70
     const v0, 0x7f050020
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/ShakeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->addPreferencesFromResource(I)V
 
     .line 71
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/motion/ShakeSettings;->mActivity:Landroid/app/Activity;
+    sput-object v0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mActivity:Landroid/app/Activity;
 
     .line 72
     const-string v0, "tutorial"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/ShakeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mTutorial:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mTutorial:Landroid/preference/Preference;
 
     .line 73
     return-void
@@ -728,10 +728,10 @@
 
     .prologue
     .line 115
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPause()V
 
     .line 116
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->stopAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->stopAnimation()V
 
     .line 117
     return-void
@@ -744,12 +744,12 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings;->mTutorial:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mTutorial:Landroid/preference/Preference;
 
     if-ne p2, v0, :cond_0
 
     .line 137
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->showGuideDialog()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->showGuideDialog()V
 
     .line 141
     const/4 v0, 0x1
@@ -759,7 +759,7 @@
 
     .line 139
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -771,13 +771,13 @@
 
     .prologue
     .line 108
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 109
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->updateCheckedUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->updateCheckedUI()V
 
     .line 110
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->updateAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->updateAnimation()V
 
     .line 111
     return-void
@@ -792,7 +792,7 @@
     .line 178
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -800,35 +800,35 @@
 
     .line 179
     .local v0, builder:Landroid/app/AlertDialog$Builder;
-    iget-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     if-eqz v4, :cond_0
 
     .line 180
-    iget-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 181
-    iput-object v6, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v6, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 183
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     if-eqz v4, :cond_1
 
     .line 184
-    iget-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 185
-    iput-object v6, p0, Lcom/android/settings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v6, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 188
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -868,7 +868,7 @@
 
     check-cast v4, Landroid/widget/ImageView;
 
-    iput-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mAnimationView:Landroid/widget/ImageView;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mAnimationView:Landroid/widget/ImageView;
 
     .line 193
     const v4, 0x7f0b07e7
@@ -886,9 +886,9 @@
     .line 197
     const v4, 0x7f0b07eb
 
-    new-instance v5, Lcom/android/settings/motion/ShakeSettings$4;
+    new-instance v5, Lcom/android/OriginalSettings/motion/ShakeSettings$4;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/motion/ShakeSettings$4;-><init>(Lcom/android/settings/motion/ShakeSettings;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/motion/ShakeSettings$4;-><init>(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
 
     invoke-virtual {v0, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -903,24 +903,24 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 207
-    iget-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->show()V
 
     .line 208
-    iget-object v4, p0, Lcom/android/settings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/ShakeSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
-    new-instance v5, Lcom/android/settings/motion/ShakeSettings$5;
+    new-instance v5, Lcom/android/OriginalSettings/motion/ShakeSettings$5;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/motion/ShakeSettings$5;-><init>(Lcom/android/settings/motion/ShakeSettings;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/motion/ShakeSettings$5;-><init>(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 213
-    invoke-direct {p0}, Lcom/android/settings/motion/ShakeSettings;->startAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->startAnimation()V
 
     .line 214
     return-void

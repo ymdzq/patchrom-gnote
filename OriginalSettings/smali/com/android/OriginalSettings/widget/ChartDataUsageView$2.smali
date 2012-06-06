@@ -1,14 +1,14 @@
-.class Lcom/android/settings/widget/ChartDataUsageView$2;
+.class Lcom/android/OriginalSettings/widget/ChartDataUsageView$2;
 .super Ljava/lang/Object;
 .source "ChartDataUsageView.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+.implements Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/ChartDataUsageView;
+    value = Lcom/android/OriginalSettings/widget/ChartDataUsageView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/widget/ChartDataUsageView;
+.field final synthetic this$0:Lcom/android/OriginalSettings/widget/ChartDataUsageView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/ChartDataUsageView;)V
+.method constructor <init>(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)V
     .locals 0
     .parameter
 
     .prologue
     .line 296
-    iput-object p1, p0, Lcom/android/settings/widget/ChartDataUsageView$2;->this$0:Lcom/android/settings/widget/ChartDataUsageView;
+    iput-object p1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$2;->this$0:Lcom/android/OriginalSettings/widget/ChartDataUsageView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,46 +37,46 @@
 
 
 # virtual methods
-.method public onSweep(Lcom/android/settings/widget/ChartSweepView;Z)V
+.method public onSweep(Lcom/android/OriginalSettings/widget/ChartSweepView;Z)V
     .locals 1
     .parameter "sweep"
     .parameter "sweepDone"
 
     .prologue
     .line 299
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView$2;->this$0:Lcom/android/settings/widget/ChartDataUsageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$2;->this$0:Lcom/android/OriginalSettings/widget/ChartDataUsageView;
 
-    #calls: Lcom/android/settings/widget/ChartDataUsageView;->updatePrimaryRange()V
-    invoke-static {v0}, Lcom/android/settings/widget/ChartDataUsageView;->access$300(Lcom/android/settings/widget/ChartDataUsageView;)V
+    #calls: Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updatePrimaryRange()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->access$300(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)V
 
     .line 302
     if-eqz p2, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView$2;->this$0:Lcom/android/settings/widget/ChartDataUsageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$2;->this$0:Lcom/android/OriginalSettings/widget/ChartDataUsageView;
 
-    #getter for: Lcom/android/settings/widget/ChartDataUsageView;->mListener:Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
-    invoke-static {v0}, Lcom/android/settings/widget/ChartDataUsageView;->access$400(Lcom/android/settings/widget/ChartDataUsageView;)Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
+    #getter for: Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mListener:Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;
+    invoke-static {v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->access$400(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 303
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView$2;->this$0:Lcom/android/settings/widget/ChartDataUsageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$2;->this$0:Lcom/android/OriginalSettings/widget/ChartDataUsageView;
 
-    #getter for: Lcom/android/settings/widget/ChartDataUsageView;->mListener:Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
-    invoke-static {v0}, Lcom/android/settings/widget/ChartDataUsageView;->access$400(Lcom/android/settings/widget/ChartDataUsageView;)Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
+    #getter for: Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mListener:Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;
+    invoke-static {v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->access$400(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;->onInspectRangeChanged()V
+    invoke-interface {v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;->onInspectRangeChanged()V
 
     .line 305
     :cond_0
     return-void
 .end method
 
-.method public requestEdit(Lcom/android/settings/widget/ChartSweepView;)V
+.method public requestEdit(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
     .locals 0
     .parameter "sweep"
 

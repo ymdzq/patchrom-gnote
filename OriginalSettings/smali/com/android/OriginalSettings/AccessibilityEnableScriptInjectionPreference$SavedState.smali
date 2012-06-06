@@ -1,11 +1,11 @@
-.class Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState;
+.class Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState;
 .super Landroid/preference/Preference$BaseSavedState;
 .source "AccessibilityEnableScriptInjectionPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AccessibilityEnableScriptInjectionPreference;
+    value = Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
         value = {
             "Landroid/os/Parcelable$Creator",
             "<",
-            "Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState;",
+            "Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState;",
             ">;"
         }
     .end annotation
@@ -37,11 +37,11 @@
 
     .prologue
     .line 164
-    new-instance v0, Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState$1;
+    new-instance v0, Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState$1;
 
-    invoke-direct {v0}, Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     if-ne v1, v0, :cond_0
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
 
     .line 151
     return-void
@@ -88,25 +88,25 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState;)Z
+.method static synthetic access$000(Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState;)Z
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 145
-    iget-boolean v0, p0, Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
 
     return v0
 .end method
 
-.method static synthetic access$002(Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState;Z)Z
+.method static synthetic access$002(Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState;Z)Z
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 145
-    iput-boolean p1, p0, Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
+    iput-boolean p1, p0, Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
 
     return p1
 .end method
@@ -123,7 +123,7 @@
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 156
-    iget-boolean v0, p0, Lcom/android/settings/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/AccessibilityEnableScriptInjectionPreference$SavedState;->mInjectionAllowed:Z
 
     if-eqz v0, :cond_0
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/motion/MotionView;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/motion/MotionView;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "MotionView.java"
 
 # interfaces
@@ -35,7 +35,7 @@
 
 .field private mPanToMoveIconAnimationImage:[I
 
-.field private mSensitivity:Lcom/android/settings/motion/SensitivityPreference;
+.field private mSensitivity:Lcom/android/OriginalSettings/motion/SensitivityPreference;
 
 .field private mShakeToUpdateAnimationImage:[I
 
@@ -64,76 +64,76 @@
     const/4 v1, 0x0
 
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 75
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
 
     .line 79
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 80
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 81
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mCameraShortCutDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCameraShortCutDialog:Landroid/app/AlertDialog;
 
     .line 83
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationIndex:I
 
     .line 84
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
 
     .line 87
     new-array v0, v3, [I
 
     fill-array-data v0, :array_0
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mTiltToZoomAnimationImage:[I
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTiltToZoomAnimationImage:[I
 
     .line 88
     new-array v0, v2, [I
 
     fill-array-data v0, :array_1
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mPanToMoveIconAnimationImage:[I
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mPanToMoveIconAnimationImage:[I
 
     .line 89
     new-array v0, v2, [I
 
     fill-array-data v0, :array_2
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mShakeToUpdateAnimationImage:[I
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mShakeToUpdateAnimationImage:[I
 
     .line 90
     new-array v0, v3, [I
 
     fill-array-data v0, :array_3
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mDoubleTapToGoTopAnimationImage:[I
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mDoubleTapToGoTopAnimationImage:[I
 
     .line 91
     new-array v0, v3, [I
 
     fill-array-data v0, :array_4
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mTabletTiltToZoomAnimationImage:[I
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTabletTiltToZoomAnimationImage:[I
 
     .line 92
     new-array v0, v2, [I
 
     fill-array-data v0, :array_5
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mTabletPanToMoveIconAnimationImage:[I
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTabletPanToMoveIconAnimationImage:[I
 
     .line 99
-    new-instance v0, Lcom/android/settings/motion/MotionView$1;
+    new-instance v0, Lcom/android/OriginalSettings/motion/MotionView$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/motion/MotionView$1;-><init>(Lcom/android/settings/motion/MotionView;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/motion/MotionView$1;-><init>(Lcom/android/OriginalSettings/motion/MotionView;)V
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
 
     return-void
 
@@ -191,179 +191,179 @@
     .end array-data
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/motion/MotionView;)V
+.method static synthetic access$000(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->updateAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->updateAnimation()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
+.method static synthetic access$100(Lcom/android/OriginalSettings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$1000(Lcom/android/settings/motion/MotionView;)I
+.method static synthetic access$1000(Lcom/android/OriginalSettings/motion/MotionView;)I
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 34
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     return v0
 .end method
 
-.method static synthetic access$1100(Lcom/android/settings/motion/MotionView;Ljava/lang/String;)Ljava/lang/Object;
+.method static synthetic access$1100(Lcom/android/OriginalSettings/motion/MotionView;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 34
-    invoke-virtual {p0, p1}, Lcom/android/settings/motion/MotionView;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/motion/MotionView;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$1200(Lcom/android/settings/motion/MotionView;)V
+.method static synthetic access$1200(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->showUseRingDialog()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->showUseRingDialog()V
 
     return-void
 .end method
 
-.method static synthetic access$1300(Lcom/android/settings/motion/MotionView;Z)V
+.method static synthetic access$1300(Lcom/android/OriginalSettings/motion/MotionView;Z)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 34
-    invoke-direct {p0, p1}, Lcom/android/settings/motion/MotionView;->startTryActually(Z)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/motion/MotionView;->startTryActually(Z)V
 
     return-void
 .end method
 
-.method static synthetic access$1400(Lcom/android/settings/motion/MotionView;)V
+.method static synthetic access$1400(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->stopAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->stopAnimation()V
 
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/motion/MotionView;)Ljava/lang/String;
+.method static synthetic access$200(Lcom/android/OriginalSettings/motion/MotionView;)Ljava/lang/String;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
+.method static synthetic access$300(Lcom/android/OriginalSettings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
+.method static synthetic access$400(Lcom/android/OriginalSettings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/motion/MotionView;)V
+.method static synthetic access$500(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->startTryActually()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->startTryActually()V
 
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/motion/MotionView;)V
+.method static synthetic access$600(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->updateCheckedUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->updateCheckedUI()V
 
     return-void
 .end method
 
-.method static synthetic access$700(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
+.method static synthetic access$700(Lcom/android/OriginalSettings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$800(Lcom/android/settings/motion/MotionView;)V
+.method static synthetic access$800(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->showMotionDialog()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->showMotionDialog()V
 
     return-void
 .end method
 
-.method static synthetic access$900(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
+.method static synthetic access$900(Lcom/android/OriginalSettings/motion/MotionView;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 34
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -381,7 +381,7 @@
     const/4 v6, 0x0
 
     .line 379
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -393,7 +393,7 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mTitle:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTitle:Ljava/lang/String;
 
     .line 381
     const-string v4, "sensitivity"
@@ -406,33 +406,33 @@
     .local v1, bSensitivity:Z
     new-instance v4, Landroid/widget/Switch;
 
-    iget-object v5, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-direct {v4, v5}, Landroid/widget/Switch;-><init>(Landroid/content/Context;)V
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
 
     .line 384
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
-    instance-of v4, v4, Landroid/preference/PreferenceActivity;
+    instance-of v4, v4, Lmiui/preference/BasePreferenceActivity;
 
     if-eqz v4, :cond_1
 
     .line 386
-    iget-object v3, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v3, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
-    check-cast v3, Landroid/preference/PreferenceActivity;
+    check-cast v3, Lmiui/preference/BasePreferenceActivity;
 
     .line 387
-    .local v3, preferenceActivity:Landroid/preference/PreferenceActivity;
-    invoke-virtual {v3}, Landroid/preference/PreferenceActivity;->onIsHidingHeaders()Z
+    .local v3, preferenceActivity:Lmiui/preference/BasePreferenceActivity;
+    invoke-virtual {v3}, Lmiui/preference/BasePreferenceActivity;->onIsHidingHeaders()Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    invoke-virtual {v3}, Landroid/preference/PreferenceActivity;->onIsMultiPane()Z
+    invoke-virtual {v3}, Lmiui/preference/BasePreferenceActivity;->onIsMultiPane()Z
 
     move-result v4
 
@@ -440,7 +440,7 @@
 
     .line 388
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v4}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -454,12 +454,12 @@
 
     .line 390
     .local v2, padding:I
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v4, v6, v6, v2, v6}, Landroid/widget/Switch;->setPadding(IIII)V
 
     .line 391
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v4}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
@@ -468,13 +468,13 @@
     invoke-virtual {v4, v7, v7}, Landroid/app/ActionBar;->setDisplayOptions(II)V
 
     .line 393
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v4}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
 
     new-instance v6, Landroid/app/ActionBar$LayoutParams;
 
@@ -485,21 +485,21 @@
     invoke-virtual {v4, v5, v6}, Landroid/app/ActionBar;->setCustomView(Landroid/view/View;Landroid/app/ActionBar$LayoutParams;)V
 
     .line 397
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v4}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/motion/MotionView;->mTitle:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTitle:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Landroid/app/ActionBar;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 401
     .end local v2           #padding:I
-    .end local v3           #preferenceActivity:Landroid/preference/PreferenceActivity;
+    .end local v3           #preferenceActivity:Lmiui/preference/BasePreferenceActivity;
     :cond_1
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v4, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -516,7 +516,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/motion/MotionView;->mTitle:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTitle:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -529,14 +529,14 @@
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 403
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTitle:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTitle:Ljava/lang/String;
 
     if-eqz v4, :cond_5
 
     .line 404
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTitle:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTitle:Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v5}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -557,37 +557,37 @@
     .line 405
     const/16 v4, 0x44d
 
-    iput v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iput v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     .line 406
     const-string v4, "motion_zooming"
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
 
     .line 407
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTiltToZoomAnimationImage:[I
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTiltToZoomAnimationImage:[I
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mAnimationImage:[I
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationImage:[I
 
     .line 408
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-static {v4}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v4}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
     .line 409
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTabletTiltToZoomAnimationImage:[I
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTabletTiltToZoomAnimationImage:[I
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mAnimationImage:[I
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationImage:[I
 
     .line 411
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v4}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -599,10 +599,10 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentText:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentText:Ljava/lang/String;
 
     .line 412
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
 
     const v5, 0x7f0b07df
 
@@ -616,20 +616,20 @@
     .line 437
     const-string v4, "sensitivity_category"
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/motion/MotionView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v4}, Lcom/android/OriginalSettings/motion/MotionView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
     if-eqz v4, :cond_4
 
     .line 438
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
     const-string v5, "sensitivity_category"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -637,11 +637,11 @@
 
     .line 442
     :cond_4
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mSensitivity:Lcom/android/settings/motion/SensitivityPreference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mSensitivity:Lcom/android/OriginalSettings/motion/SensitivityPreference;
 
-    iget v5, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v5, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
-    invoke-virtual {v4, v5}, Lcom/android/settings/motion/SensitivityPreference;->setMotion(I)V
+    invoke-virtual {v4, v5}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->setMotion(I)V
 
     .line 445
     :cond_5
@@ -649,9 +649,9 @@
 
     .line 413
     :cond_6
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTitle:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTitle:Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v5}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -672,37 +672,37 @@
     .line 414
     const/16 v4, 0x4b1
 
-    iput v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iput v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     .line 415
     const-string v4, "motion_panning"
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
 
     .line 416
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mPanToMoveIconAnimationImage:[I
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mPanToMoveIconAnimationImage:[I
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mAnimationImage:[I
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationImage:[I
 
     .line 417
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-static {v4}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v4}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v4
 
     if-eqz v4, :cond_7
 
     .line 418
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTabletPanToMoveIconAnimationImage:[I
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTabletPanToMoveIconAnimationImage:[I
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mAnimationImage:[I
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationImage:[I
 
     .line 420
     :cond_7
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v4}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -714,10 +714,10 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentText:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentText:Ljava/lang/String;
 
     .line 421
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
 
     const v5, 0x7f0b07e0
 
@@ -727,9 +727,9 @@
 
     .line 422
     :cond_8
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTitle:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTitle:Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v5}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -750,20 +750,20 @@
     .line 423
     const/16 v4, 0x515
 
-    iput v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iput v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     .line 424
     const-string v4, "motion_shake"
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
 
     .line 425
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mShakeToUpdateAnimationImage:[I
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mShakeToUpdateAnimationImage:[I
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mAnimationImage:[I
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationImage:[I
 
     .line 426
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v4}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -775,10 +775,10 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentText:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentText:Ljava/lang/String;
 
     .line 427
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
 
     const v5, 0x7f0b07e1
 
@@ -788,9 +788,9 @@
 
     .line 428
     :cond_9
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTitle:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTitle:Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v5}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -811,20 +811,20 @@
     .line 429
     const/16 v4, 0x579
 
-    iput v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iput v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     .line 430
     const-string v4, "motion_double_tap"
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
 
     .line 431
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mDoubleTapToGoTopAnimationImage:[I
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mDoubleTapToGoTopAnimationImage:[I
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mAnimationImage:[I
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationImage:[I
 
     .line 432
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v4}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -836,10 +836,10 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentText:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentText:Ljava/lang/String;
 
     .line 433
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
 
     const v5, 0x7f0b07e2
 
@@ -855,10 +855,10 @@
     const v3, 0x7f0b07f3
 
     .line 184
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->allDialogDismiss()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->allDialogDismiss()V
 
     .line 186
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -870,7 +870,7 @@
     .local v0, message:Ljava/lang/String;
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -892,9 +892,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/motion/MotionView$2;
+    new-instance v2, Lcom/android/OriginalSettings/motion/MotionView$2;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/motion/MotionView$2;-><init>(Lcom/android/settings/motion/MotionView;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/motion/MotionView$2;-><init>(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -912,14 +912,14 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 206
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
 
-    new-instance v2, Lcom/android/settings/motion/MotionView$3;
+    new-instance v2, Lcom/android/OriginalSettings/motion/MotionView$3;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/motion/MotionView$3;-><init>(Lcom/android/settings/motion/MotionView;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/motion/MotionView$3;-><init>(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -932,18 +932,18 @@
 
     .prologue
     .line 261
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->allDialogDismiss()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->allDialogDismiss()V
 
     .line 262
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -971,9 +971,9 @@
 
     const v1, 0x7f0b046a
 
-    new-instance v2, Lcom/android/settings/motion/MotionView$7;
+    new-instance v2, Lcom/android/OriginalSettings/motion/MotionView$7;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/motion/MotionView$7;-><init>(Lcom/android/settings/motion/MotionView;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/motion/MotionView$7;-><init>(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -981,9 +981,9 @@
 
     const v1, 0x7f0b07f2
 
-    new-instance v2, Lcom/android/settings/motion/MotionView$6;
+    new-instance v2, Lcom/android/OriginalSettings/motion/MotionView$6;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/motion/MotionView$6;-><init>(Lcom/android/settings/motion/MotionView;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/motion/MotionView$6;-><init>(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -993,14 +993,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
 
     .line 279
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
 
-    new-instance v1, Lcom/android/settings/motion/MotionView$8;
+    new-instance v1, Lcom/android/OriginalSettings/motion/MotionView$8;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/motion/MotionView$8;-><init>(Lcom/android/settings/motion/MotionView;)V
+    invoke-direct {v1, p0}, Lcom/android/OriginalSettings/motion/MotionView$8;-><init>(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -1013,7 +1013,7 @@
 
     .prologue
     .line 361
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
 
     if-nez v0, :cond_1
 
@@ -1031,17 +1031,17 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 363
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 364
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationIndex:I
 
     .line 365
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->updateAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->updateAnimation()V
 
     goto :goto_0
 .end method
@@ -1053,7 +1053,7 @@
     const/16 v6, 0xa
 
     .line 289
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     const/16 v1, 0x44d
 
@@ -1086,7 +1086,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 294
-    invoke-virtual {p0, v0, v6}, Lcom/android/settings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v6}, Lcom/android/OriginalSettings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 326
     :cond_0
@@ -1095,14 +1095,14 @@
 
     .line 295
     :cond_1
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     const/16 v1, 0x44e
 
     if-eq v0, v1, :cond_0
 
     .line 297
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     const/16 v1, 0x4b1
 
@@ -1121,13 +1121,13 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 300
-    invoke-virtual {p0, v0, v6}, Lcom/android/settings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v6}, Lcom/android/OriginalSettings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
     .line 301
     :cond_2
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     const/16 v1, 0x4b2
 
@@ -1160,33 +1160,33 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 306
-    invoke-virtual {p0, v0, v6}, Lcom/android/settings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v6}, Lcom/android/OriginalSettings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
     .line 307
     :cond_3
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     const/16 v1, 0x515
 
     if-ne v0, v1, :cond_4
 
     .line 308
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    instance-of v0, v0, Landroid/preference/PreferenceActivity;
+    instance-of v0, v0, Lmiui/preference/BasePreferenceActivity;
 
     if-eqz v0, :cond_0
 
     .line 309
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Landroid/preference/PreferenceActivity;
+    check-cast v0, Lmiui/preference/BasePreferenceActivity;
 
     .line 310
     new-instance v2, Landroid/os/Bundle;
@@ -1194,7 +1194,7 @@
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
     .line 311
-    const-class v1, Lcom/android/settings/motion/ShakeTutorial;
+    const-class v1, Lcom/android/OriginalSettings/motion/ShakeTutorial;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1206,13 +1206,13 @@
 
     move-object v5, p0
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 
     .line 313
     :cond_4
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     const/16 v1, 0x5dd
 
@@ -1229,13 +1229,13 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 316
-    invoke-virtual {p0, v0, v6}, Lcom/android/settings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v6}, Lcom/android/OriginalSettings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
     .line 317
     :cond_5
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     const/16 v1, 0x5de
 
@@ -1252,7 +1252,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 320
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1262,7 +1262,7 @@
 
     .line 321
     :cond_6
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     const/16 v1, 0x6a5
 
@@ -1279,7 +1279,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 324
-    invoke-virtual {p0, v0, v6}, Lcom/android/settings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v6}, Lcom/android/OriginalSettings/motion/MotionView;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto/16 :goto_0
 .end method
@@ -1290,7 +1290,7 @@
 
     .prologue
     .line 329
-    iget v1, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iget v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     const/16 v2, 0x641
 
@@ -1315,7 +1315,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 333
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/MotionView;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/MotionView;->startActivity(Landroid/content/Intent;)V
 
     .line 335
     .end local v0           #intent:Landroid/content/Intent;
@@ -1328,7 +1328,7 @@
 
     .prologue
     .line 371
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
 
     if-nez v0, :cond_1
 
@@ -1346,12 +1346,12 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 373
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 374
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
 
     const/16 v1, 0x66
 
@@ -1367,7 +1367,7 @@
     const/16 v3, 0x66
 
     .line 339
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
 
     if-nez v0, :cond_1
 
@@ -1390,7 +1390,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/motion/MotionView;->mAnimationIndex:I
+    iget v2, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationIndex:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1403,55 +1403,55 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 341
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_2
 
     .line 342
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView;->mAnimationImage:[I
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationImage:[I
 
-    iget v2, p0, Lcom/android/settings/motion/MotionView;->mAnimationIndex:I
+    iget v2, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationIndex:I
 
     aget v1, v1, v2
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 343
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationIndex:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationIndex:I
 
     .line 346
     :cond_2
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationIndex:I
 
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView;->mAnimationImage:[I
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationImage:[I
 
     array-length v1, v1
 
     rem-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationIndex:I
 
     .line 348
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 349
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->stopAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->stopAnimation()V
 
     .line 350
-    iget v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationIndex:I
 
     if-nez v0, :cond_3
 
     .line 351
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
 
     const-wide/16 v1, 0x7d0
 
@@ -1461,7 +1461,7 @@
 
     .line 353
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationHandler:Landroid/os/Handler;
 
     const-wide/16 v1, 0x1f4
 
@@ -1477,11 +1477,11 @@
     const/4 v0, 0x0
 
     .line 167
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
 
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
@@ -1494,14 +1494,14 @@
     .line 168
     .local v0, saved_value:Z
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v1, v0}, Landroid/widget/Switch;->setChecked(Z)V
 
     .line 169
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView;->mSensitivity:Lcom/android/settings/motion/SensitivityPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mSensitivity:Lcom/android/OriginalSettings/motion/SensitivityPreference;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/motion/SensitivityPreference;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->setEnabled(Z)V
 
     .line 170
     return-void
@@ -1516,59 +1516,59 @@
     const/4 v1, 0x0
 
     .line 448
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 449
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 450
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 452
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_1
 
     .line 453
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 454
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 456
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_2
 
     .line 457
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 458
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mUseRingDialog:Landroid/app/AlertDialog;
 
     .line 460
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mCameraShortCutDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCameraShortCutDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_3
 
     .line 461
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mCameraShortCutDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCameraShortCutDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 462
-    iput-object v1, p0, Lcom/android/settings/motion/MotionView;->mCameraShortCutDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCameraShortCutDialog:Landroid/app/AlertDialog;
 
     .line 465
     :cond_3
@@ -1581,10 +1581,10 @@
 
     .prologue
     .line 124
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 125
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->setArguments()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->setArguments()V
 
     .line 126
     return-void
@@ -1646,9 +1646,9 @@
     if-ne p2, v0, :cond_0
 
     .line 156
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mSensitivity:Lcom/android/settings/motion/SensitivityPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mSensitivity:Lcom/android/OriginalSettings/motion/SensitivityPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/motion/SensitivityPreference;->showTutorialDialog()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->showTutorialDialog()V
 
     goto :goto_0
 
@@ -1659,7 +1659,7 @@
     if-ne p2, v0, :cond_0
 
     .line 161
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->showGuideDialog()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->showGuideDialog()V
 
     goto :goto_0
 
@@ -1686,11 +1686,11 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 131
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -1700,9 +1700,9 @@
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mSensitivity:Lcom/android/settings/motion/SensitivityPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mSensitivity:Lcom/android/OriginalSettings/motion/SensitivityPreference;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/motion/SensitivityPreference;->setEnabled(Z)V
+    invoke-virtual {v0, p2}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->setEnabled(Z)V
 
     .line 134
     return-void
@@ -1720,49 +1720,49 @@
 
     .prologue
     .line 112
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 114
     const v0, 0x7f050023
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/MotionView;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/MotionView;->addPreferencesFromResource(I)V
 
     .line 115
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     .line 116
     const-string v0, "sensitivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/MotionView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/MotionView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/motion/SensitivityPreference;
+    check-cast v0, Lcom/android/OriginalSettings/motion/SensitivityPreference;
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mSensitivity:Lcom/android/settings/motion/SensitivityPreference;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mSensitivity:Lcom/android/OriginalSettings/motion/SensitivityPreference;
 
     .line 117
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mSensitivity:Lcom/android/settings/motion/SensitivityPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mSensitivity:Lcom/android/OriginalSettings/motion/SensitivityPreference;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/motion/SensitivityPreference;->setInformation(Lcom/android/settings/SettingsPreferenceFragment;)V
+    invoke-virtual {v0, p0}, Lcom/android/OriginalSettings/motion/SensitivityPreference;->setInformation(Lcom/android/OriginalSettings/SettingsPreferenceFragment;)V
 
     .line 118
     const-string v0, "tutorial"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/MotionView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/MotionView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
 
     .line 119
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/motion/MotionView;->mCurrentMotion:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentMotion:I
 
     .line 120
     return-void
@@ -1773,10 +1773,10 @@
 
     .prologue
     .line 145
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPause()V
 
     .line 146
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->stopAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->stopAnimation()V
 
     .line 147
     return-void
@@ -1789,12 +1789,12 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTutorial:Landroid/preference/Preference;
 
     if-ne p2, v0, :cond_0
 
     .line 175
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->showGuideDialog()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->showGuideDialog()V
 
     .line 179
     const/4 v0, 0x1
@@ -1804,7 +1804,7 @@
 
     .line 177
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -1816,13 +1816,13 @@
 
     .prologue
     .line 138
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 139
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->updateCheckedUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->updateCheckedUI()V
 
     .line 140
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->updateAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->updateAnimation()V
 
     .line 141
     return-void
@@ -1837,16 +1837,16 @@
     .line 216
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mActivity:Landroid/app/Activity;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mActivity:Landroid/app/Activity;
 
     invoke-direct {v0, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 217
     .local v0, builder:Landroid/app/AlertDialog$Builder;
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->allDialogDismiss()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->allDialogDismiss()V
 
     .line 220
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1886,10 +1886,10 @@
 
     check-cast v4, Landroid/widget/ImageView;
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mAnimationView:Landroid/widget/ImageView;
 
     .line 225
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mCurrentText:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mCurrentText:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -1897,16 +1897,16 @@
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
     .line 227
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mTitle:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mTitle:Ljava/lang/String;
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 229
     const v4, 0x7f0b07eb
 
-    new-instance v5, Lcom/android/settings/motion/MotionView$4;
+    new-instance v5, Lcom/android/OriginalSettings/motion/MotionView$4;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/motion/MotionView$4;-><init>(Lcom/android/settings/motion/MotionView;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/motion/MotionView$4;-><init>(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     invoke-virtual {v0, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1921,24 +1921,24 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 251
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->show()V
 
     .line 252
-    iget-object v4, p0, Lcom/android/settings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/MotionView;->mGuideDialog:Landroid/app/AlertDialog;
 
-    new-instance v5, Lcom/android/settings/motion/MotionView$5;
+    new-instance v5, Lcom/android/OriginalSettings/motion/MotionView$5;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/motion/MotionView$5;-><init>(Lcom/android/settings/motion/MotionView;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/motion/MotionView$5;-><init>(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 257
-    invoke-direct {p0}, Lcom/android/settings/motion/MotionView;->startAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/MotionView;->startAnimation()V
 
     .line 258
     return-void

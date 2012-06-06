@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/ChooseLockGeneric;
-.super Landroid/preference/PreferenceActivity;
+.class public Lcom/android/OriginalSettings/ChooseLockGeneric;
+.super Lmiui/preference/BasePreferenceActivity;
 .source "ChooseLockGeneric.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+        Lcom/android/OriginalSettings/ChooseLockGeneric$ChooseLockGenericFragment;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
 
     .prologue
     .line 44
-    invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
+    invoke-direct {p0}, Lmiui/preference/BasePreferenceActivity;-><init>()V
 
     .line 57
     return-void
@@ -32,7 +32,7 @@
     .line 51
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -42,7 +42,7 @@
     .local v0, modIntent:Landroid/content/Intent;
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+    const-class v2, Lcom/android/OriginalSettings/ChooseLockGeneric$ChooseLockGenericFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

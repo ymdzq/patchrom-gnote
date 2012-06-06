@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningServiceDetails$1;
+.class Lcom/android/OriginalSettings/applications/RunningServiceDetails$1;
 .super Ljava/lang/Object;
 .source "RunningServiceDetails.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/applications/RunningServiceDetails;->finish()V
+    value = Lcom/android/OriginalSettings/applications/RunningServiceDetails;->finish()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/RunningServiceDetails;
+.field final synthetic this$0:Lcom/android/OriginalSettings/applications/RunningServiceDetails;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/RunningServiceDetails;)V
+.method constructor <init>(Lcom/android/OriginalSettings/applications/RunningServiceDetails;)V
     .locals 0
     .parameter
 
     .prologue
     .line 421
-    iput-object p1, p0, Lcom/android/settings/applications/RunningServiceDetails$1;->this$0:Lcom/android/settings/applications/RunningServiceDetails;
+    iput-object p1, p0, Lcom/android/OriginalSettings/applications/RunningServiceDetails$1;->this$0:Lcom/android/OriginalSettings/applications/RunningServiceDetails;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 424
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$1;->this$0:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningServiceDetails$1;->this$0:Lcom/android/OriginalSettings/applications/RunningServiceDetails;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/AccessibilitySettings$2;
+.class Lcom/android/OriginalSettings/AccessibilitySettings$2;
 .super Landroid/database/ContentObserver;
 .source "AccessibilitySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AccessibilitySettings;
+    value = Lcom/android/OriginalSettings/AccessibilitySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/AccessibilitySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessibilitySettings;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/OriginalSettings/AccessibilitySettings;Landroid/os/Handler;)V
     .locals 0
     .parameter
     .parameter "x0"
 
     .prologue
     .line 240
-    iput-object p1, p0, Lcom/android/settings/AccessibilitySettings$2;->this$0:Lcom/android/settings/AccessibilitySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/AccessibilitySettings$2;->this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -41,10 +41,10 @@
 
     .prologue
     .line 243
-    iget-object v0, p0, Lcom/android/settings/AccessibilitySettings$2;->this$0:Lcom/android/settings/AccessibilitySettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AccessibilitySettings$2;->this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
-    #calls: Lcom/android/settings/AccessibilitySettings;->updateAccelerometerRotationCheckbox()V
-    invoke-static {v0}, Lcom/android/settings/AccessibilitySettings;->access$300(Lcom/android/settings/AccessibilitySettings;)V
+    #calls: Lcom/android/OriginalSettings/AccessibilitySettings;->updateAccelerometerRotationCheckbox()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/AccessibilitySettings;->access$300(Lcom/android/OriginalSettings/AccessibilitySettings;)V
 
     .line 244
     return-void

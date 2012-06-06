@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DateTimeSettings$SettingsObserver;
+.class Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "DateTimeSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DateTimeSettings;
+    value = Lcom/android/OriginalSettings/DateTimeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,24 +15,24 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DateTimeSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DateTimeSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/DateTimeSettings;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/android/OriginalSettings/DateTimeSettings;Landroid/os/Handler;)V
     .locals 3
     .parameter
     .parameter "handler"
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/android/settings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/settings/DateTimeSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/OriginalSettings/DateTimeSettings;
 
     .line 110
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     .line 111
-    invoke-virtual {p1}, Lcom/android/settings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p1}, Lcom/android/OriginalSettings/DateTimeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -67,30 +67,30 @@
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
     .line 119
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/settings/DateTimeSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/OriginalSettings/DateTimeSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/DateTimeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/DateTimeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/settings/DateTimeSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/OriginalSettings/DateTimeSettings;
 
-    #getter for: Lcom/android/settings/DateTimeSettings;->isFirstRun:Z
-    invoke-static {v1}, Lcom/android/settings/DateTimeSettings;->access$000(Lcom/android/settings/DateTimeSettings;)Z
+    #getter for: Lcom/android/OriginalSettings/DateTimeSettings;->isFirstRun:Z
+    invoke-static {v1}, Lcom/android/OriginalSettings/DateTimeSettings;->access$000(Lcom/android/OriginalSettings/DateTimeSettings;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 120
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/settings/DateTimeSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/OriginalSettings/DateTimeSettings;
 
     const-string v4, "auto_time"
 
-    #calls: Lcom/android/settings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
-    invoke-static {v1, v4}, Lcom/android/settings/DateTimeSettings;->access$100(Lcom/android/settings/DateTimeSettings;Ljava/lang/String;)Z
+    #calls: Lcom/android/OriginalSettings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
+    invoke-static {v1, v4}, Lcom/android/OriginalSettings/DateTimeSettings;->access$100(Lcom/android/OriginalSettings/DateTimeSettings;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -119,20 +119,20 @@
     invoke-static {v1, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 122
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/settings/DateTimeSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/OriginalSettings/DateTimeSettings;
 
-    #getter for: Lcom/android/settings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
-    invoke-static {v1}, Lcom/android/settings/DateTimeSettings;->access$200(Lcom/android/settings/DateTimeSettings;)Landroid/preference/CheckBoxPreference;
+    #getter for: Lcom/android/OriginalSettings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
+    invoke-static {v1}, Lcom/android/OriginalSettings/DateTimeSettings;->access$200(Lcom/android/OriginalSettings/DateTimeSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 123
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/settings/DateTimeSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/OriginalSettings/DateTimeSettings;
 
-    #getter for: Lcom/android/settings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
-    invoke-static {v1}, Lcom/android/settings/DateTimeSettings;->access$300(Lcom/android/settings/DateTimeSettings;)Landroid/preference/Preference;
+    #getter for: Lcom/android/OriginalSettings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
+    invoke-static {v1}, Lcom/android/OriginalSettings/DateTimeSettings;->access$300(Lcom/android/OriginalSettings/DateTimeSettings;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -144,10 +144,10 @@
     invoke-virtual {v4, v1}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 124
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/settings/DateTimeSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/OriginalSettings/DateTimeSettings;
 
-    #getter for: Lcom/android/settings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
-    invoke-static {v1}, Lcom/android/settings/DateTimeSettings;->access$400(Lcom/android/settings/DateTimeSettings;)Landroid/preference/Preference;
+    #getter for: Lcom/android/OriginalSettings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
+    invoke-static {v1}, Lcom/android/OriginalSettings/DateTimeSettings;->access$400(Lcom/android/OriginalSettings/DateTimeSettings;)Landroid/preference/Preference;
 
     move-result-object v1
 

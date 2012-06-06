@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/SingleSpellCheckerPreference$2;
+.class Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference$2;
 .super Ljava/lang/Object;
 .source "SingleSpellCheckerPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->onBindView(Landroid/view/View;)V
+    value = Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->onBindView(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 93
-    iput-object p1, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference$2;->this$0:Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference$2;->this$0:Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference$2;->this$0:Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference$2;->this$0:Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;
 
-    #calls: Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->onSubtypeButtonClicked(Landroid/view/View;)V
-    invoke-static {v0, p1}, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->access$100(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;Landroid/view/View;)V
+    #calls: Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->onSubtypeButtonClicked(Landroid/view/View;)V
+    invoke-static {v0, p1}, Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;->access$100(Lcom/android/OriginalSettings/inputmethod/SingleSpellCheckerPreference;Landroid/view/View;)V
 
     .line 97
     return-void

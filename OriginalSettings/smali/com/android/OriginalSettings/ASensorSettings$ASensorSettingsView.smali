@@ -1,11 +1,11 @@
-.class Lcom/android/settings/ASensorSettings$ASensorSettingsView;
+.class Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
 .super Landroid/view/View;
 .source "ASensorSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ASensorSettings;
+    value = Lcom/android/OriginalSettings/ASensorSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -23,77 +23,77 @@
 
 .field mState:I
 
-.field final synthetic this$0:Lcom/android/settings/ASensorSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/ASensorSettings;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/OriginalSettings/ASensorSettings;Landroid/content/Context;)V
     .locals 2
     .parameter
     .parameter "context"
 
     .prologue
     .line 281
-    iput-object p1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
     .line 282
     invoke-direct {p0, p2}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
     .line 275
-    iget-object v0, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CENTER_X:I
-    invoke-static {v0}, Lcom/android/settings/ASensorSettings;->access$500(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CENTER_X:I
+    invoke-static {v0}, Lcom/android/OriginalSettings/ASensorSettings;->access$500(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v1}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v1}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSX:I
+    iput v0, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSX:I
 
     .line 276
-    iget-object v0, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CENTER_Y:I
-    invoke-static {v0}, Lcom/android/settings/ASensorSettings;->access$700(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CENTER_Y:I
+    invoke-static {v0}, Lcom/android/OriginalSettings/ASensorSettings;->access$700(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v1}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v1}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSY:I
+    iput v0, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSY:I
 
     .line 277
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mState:I
+    iput v0, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mState:I
 
     .line 283
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/ASensorSettings$ASensorSettingsView;I)V
+.method static synthetic access$200(Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;I)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 274
-    invoke-direct {p0, p1}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->updateState(I)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->updateState(I)V
 
     return-void
 .end method
@@ -104,7 +104,7 @@
 
     .prologue
     .line 286
-    iput p1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mState:I
+    iput p1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mState:I
 
     .line 287
     return-void
@@ -122,12 +122,12 @@
     const/4 v3, 0x0
 
     .line 316
-    iget v0, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSX:I
+    iget v0, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSX:I
 
-    iget-object v1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v1}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v1}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v1
 
@@ -138,12 +138,12 @@
     aput v0, p1, v3
 
     .line 317
-    iget v0, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSY:I
+    iget v0, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSY:I
 
-    iget-object v1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v1}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v1}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v1
 
@@ -206,14 +206,14 @@
 
     .line 323
     .local v0, image:Landroid/graphics/drawable/Drawable;
-    iget v1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mState:I
+    iget v1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mState:I
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_0
 
     .line 324
-    invoke-virtual {p0}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -225,16 +225,16 @@
 
     .line 332
     :goto_0
-    iget v1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSX:I
+    iget v1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSX:I
 
-    iget v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSY:I
+    iget v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSY:I
 
-    iget v3, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSX:I
+    iget v3, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSX:I
 
-    iget-object v4, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v4}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v4}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v4
 
@@ -242,12 +242,12 @@
 
     add-int/2addr v3, v4
 
-    iget v4, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSY:I
+    iget v4, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSY:I
 
-    iget-object v5, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v5}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v5}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v5
 
@@ -273,7 +273,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSX:I
+    iget v3, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSX:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -285,7 +285,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSY:I
+    iget v3, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSY:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -302,7 +302,7 @@
 
     .line 327
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -313,9 +313,9 @@
     move-result-object v0
 
     .line 328
-    sget v1, Lcom/android/settings/ASensorSettings;->mAniGapX:F
+    sget v1, Lcom/android/OriginalSettings/ASensorSettings;->mAniGapX:F
 
-    sget v2, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sget v2, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     int-to-float v2, v2
 
@@ -327,9 +327,9 @@
 
     move-result-wide v1
 
-    sget v3, Lcom/android/settings/ASensorSettings;->mAniGapY:F
+    sget v3, Lcom/android/OriginalSettings/ASensorSettings;->mAniGapY:F
 
-    sget v4, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sget v4, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     int-to-float v4, v4
 
@@ -349,45 +349,45 @@
 
     double-to-int v1, v1
 
-    iput v1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mRadius:I
+    iput v1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mRadius:I
 
     .line 329
-    iget-object v1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CENTER_X:I
-    invoke-static {v1}, Lcom/android/settings/ASensorSettings;->access$500(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CENTER_X:I
+    invoke-static {v1}, Lcom/android/OriginalSettings/ASensorSettings;->access$500(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v1
 
     int-to-float v1, v1
 
-    iget-object v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CENTER_Y:I
-    invoke-static {v2}, Lcom/android/settings/ASensorSettings;->access$700(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CENTER_Y:I
+    invoke-static {v2}, Lcom/android/OriginalSettings/ASensorSettings;->access$700(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v2
 
     int-to-float v2, v2
 
-    iget v3, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mRadius:I
+    iget v3, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mRadius:I
 
-    iget-object v4, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v4}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v4}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v4
 
     add-int/2addr v3, v4
 
-    sget v4, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sget v4, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     add-int/2addr v3, v4
 
     int-to-float v3, v3
 
-    invoke-static {}, Lcom/android/settings/ASensorSettings;->access$900()Landroid/graphics/Paint;
+    invoke-static {}, Lcom/android/OriginalSettings/ASensorSettings;->access$900()Landroid/graphics/Paint;
 
     move-result-object v4
 
@@ -406,7 +406,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mRadius:I
+    iget v3, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mRadius:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -430,11 +430,11 @@
     const-wide/high16 v6, 0x4000
 
     .line 290
-    invoke-virtual {p0}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v2
 
@@ -515,10 +515,10 @@
 
     .line 300
     .local v0, lengthPoint:F
-    iget-object v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CIRCLE_RADIUS:I
-    invoke-static {v2}, Lcom/android/settings/ASensorSettings;->access$800(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CIRCLE_RADIUS:I
+    invoke-static {v2}, Lcom/android/OriginalSettings/ASensorSettings;->access$800(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v2
 
@@ -529,10 +529,10 @@
     if-lez v2, :cond_1
 
     .line 301
-    iget-object v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CIRCLE_RADIUS:I
-    invoke-static {v2}, Lcom/android/settings/ASensorSettings;->access$800(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CIRCLE_RADIUS:I
+    invoke-static {v2}, Lcom/android/OriginalSettings/ASensorSettings;->access$800(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v2
 
@@ -543,10 +543,10 @@
     div-float p1, v2, v0
 
     .line 302
-    iget-object v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CIRCLE_RADIUS:I
-    invoke-static {v2}, Lcom/android/settings/ASensorSettings;->access$800(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CIRCLE_RADIUS:I
+    invoke-static {v2}, Lcom/android/OriginalSettings/ASensorSettings;->access$800(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v2
 
@@ -558,17 +558,17 @@
 
     .line 304
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CENTER_X:I
-    invoke-static {v2}, Lcom/android/settings/ASensorSettings;->access$500(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CENTER_X:I
+    invoke-static {v2}, Lcom/android/OriginalSettings/ASensorSettings;->access$500(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v2
 
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v3
 
@@ -580,31 +580,31 @@
 
     float-to-int v2, v2
 
-    iput v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSX:I
+    iput v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSX:I
 
     .line 305
-    invoke-virtual {p0}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v2}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 306
-    iget-object v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CENTER_Y:I
-    invoke-static {v2}, Lcom/android/settings/ASensorSettings;->access$700(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CENTER_Y:I
+    invoke-static {v2}, Lcom/android/OriginalSettings/ASensorSettings;->access$700(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v2
 
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v3
 
@@ -616,7 +616,7 @@
 
     float-to-int v2, v2
 
-    iput v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSY:I
+    iput v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSY:I
 
     .line 313
     :goto_0
@@ -624,17 +624,17 @@
 
     .line 309
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CENTER_Y:I
-    invoke-static {v2}, Lcom/android/settings/ASensorSettings;->access$700(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CENTER_Y:I
+    invoke-static {v2}, Lcom/android/OriginalSettings/ASensorSettings;->access$700(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v2
 
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$600(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->ICON_RADIUS:I
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$600(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v3
 
@@ -646,7 +646,7 @@
 
     float-to-int v2, v2
 
-    iput v2, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mSY:I
+    iput v2, p0, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->mSY:I
 
     goto :goto_0
 .end method

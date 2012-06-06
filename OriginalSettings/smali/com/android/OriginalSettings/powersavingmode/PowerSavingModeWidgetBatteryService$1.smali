@@ -1,11 +1,11 @@
-.class Lcom/android/settings/powersavingmode/PowerSavingModeWidgetBatteryService$1;
+.class Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetBatteryService$1;
 .super Landroid/content/BroadcastReceiver;
 .source "PowerSavingModeWidgetBatteryService.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/powersavingmode/PowerSavingModeWidgetBatteryService;
+    value = Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetBatteryService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetBatteryService;
+.field final synthetic this$0:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetBatteryService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetBatteryService;)V
+.method constructor <init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetBatteryService;)V
     .locals 0
     .parameter
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetBatteryService$1;->this$0:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetBatteryService;
+    iput-object p1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetBatteryService$1;->this$0:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetBatteryService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -45,12 +45,12 @@
     const/4 v5, 0x0
 
     .line 52
-    new-instance v2, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;
+    new-instance v2, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;
 
-    invoke-direct {v2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;-><init>()V
+    invoke-direct {v2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;-><init>()V
 
     .line 53
-    .local v2, psmprovider:Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;
+    .local v2, psmprovider:Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
@@ -97,7 +97,7 @@
     if-ne v1, v3, :cond_1
 
     .line 59
-    invoke-static {v5}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->setBatteryState(I)V
+    invoke-static {v5}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->setBatteryState(I)V
 
     .line 68
     .end local v1           #battStatus:I
@@ -115,14 +115,14 @@
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 62
-    invoke-static {v6}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->setBatteryState(I)V
+    invoke-static {v6}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->setBatteryState(I)V
 
     goto :goto_0
 
     .line 66
     .end local v1           #battStatus:I
     :cond_2
-    invoke-static {v5}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;->setBatteryState(I)V
+    invoke-static {v5}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;->setBatteryState(I)V
 
     goto :goto_0
 .end method

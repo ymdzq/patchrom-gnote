@@ -1,11 +1,11 @@
-.class Lcom/android/settings/CryptKeeper$ValidationTask;
+.class Lcom/android/OriginalSettings/CryptKeeper$ValidationTask;
 .super Landroid/os/AsyncTask;
 .source "CryptKeeper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CryptKeeper;
+    value = Lcom/android/OriginalSettings/CryptKeeper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -26,31 +26,31 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/CryptKeeper;)V
     .locals 0
     .parameter
 
     .prologue
     .line 187
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CryptKeeper$ValidationTask;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/CryptKeeper;Lcom/android/settings/CryptKeeper$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/CryptKeeper;Lcom/android/OriginalSettings/CryptKeeper$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 187
-    invoke-direct {p0, p1}, Lcom/android/settings/CryptKeeper$ValidationTask;-><init>(Lcom/android/settings/CryptKeeper;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/CryptKeeper$ValidationTask;-><init>(Lcom/android/OriginalSettings/CryptKeeper;)V
 
     return-void
 .end method
@@ -65,10 +65,10 @@
     const/4 v4, 0x1
 
     .line 190
-    iget-object v3, p0, Lcom/android/settings/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v3, p0, Lcom/android/OriginalSettings/CryptKeeper$ValidationTask;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
-    #calls: Lcom/android/settings/CryptKeeper;->getMountService()Landroid/os/storage/IMountService;
-    invoke-static {v3}, Lcom/android/settings/CryptKeeper;->access$000(Lcom/android/settings/CryptKeeper;)Landroid/os/storage/IMountService;
+    #calls: Lcom/android/OriginalSettings/CryptKeeper;->getMountService()Landroid/os/storage/IMountService;
+    invoke-static {v3}, Lcom/android/OriginalSettings/CryptKeeper;->access$000(Lcom/android/OriginalSettings/CryptKeeper;)Landroid/os/storage/IMountService;
 
     move-result-object v1
 
@@ -176,7 +176,7 @@
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/CryptKeeper$ValidationTask;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/CryptKeeper$ValidationTask;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -191,10 +191,10 @@
     const/4 v2, 0x1
 
     .line 211
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptKeeper$ValidationTask;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
-    #setter for: Lcom/android/settings/CryptKeeper;->mValidationComplete:Z
-    invoke-static {v0, v2}, Lcom/android/settings/CryptKeeper;->access$502(Lcom/android/settings/CryptKeeper;Z)Z
+    #setter for: Lcom/android/OriginalSettings/CryptKeeper;->mValidationComplete:Z
+    invoke-static {v0, v2}, Lcom/android/OriginalSettings/CryptKeeper;->access$502(Lcom/android/OriginalSettings/CryptKeeper;Z)Z
 
     .line 212
     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
@@ -213,17 +213,17 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 214
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptKeeper$ValidationTask;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
-    #setter for: Lcom/android/settings/CryptKeeper;->mEncryptionGoneBad:Z
-    invoke-static {v0, v2}, Lcom/android/settings/CryptKeeper;->access$602(Lcom/android/settings/CryptKeeper;Z)Z
+    #setter for: Lcom/android/OriginalSettings/CryptKeeper;->mEncryptionGoneBad:Z
+    invoke-static {v0, v2}, Lcom/android/OriginalSettings/CryptKeeper;->access$602(Lcom/android/OriginalSettings/CryptKeeper;Z)Z
 
     .line 218
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$ValidationTask;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptKeeper$ValidationTask;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
-    #calls: Lcom/android/settings/CryptKeeper;->setupUi()V
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->access$700(Lcom/android/settings/CryptKeeper;)V
+    #calls: Lcom/android/OriginalSettings/CryptKeeper;->setupUi()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/CryptKeeper;->access$700(Lcom/android/OriginalSettings/CryptKeeper;)V
 
     .line 219
     return-void
@@ -248,7 +248,7 @@
     check-cast p1, Ljava/lang/Boolean;
 
     .end local p1
-    invoke-virtual {p0, p1}, Lcom/android/settings/CryptKeeper$ValidationTask;->onPostExecute(Ljava/lang/Boolean;)V
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/CryptKeeper$ValidationTask;->onPostExecute(Ljava/lang/Boolean;)V
 
     return-void
 .end method

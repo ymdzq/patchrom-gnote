@@ -1,11 +1,11 @@
-.class Lcom/android/settings/SettingsLicenseActivity$3;
+.class Lcom/android/OriginalSettings/SettingsLicenseActivity$3;
 .super Landroid/webkit/WebViewClient;
 .source "SettingsLicenseActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/SettingsLicenseActivity;->showPageOfText(Ljava/lang/String;)V
+    value = Lcom/android/OriginalSettings/SettingsLicenseActivity;->showPageOfText(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SettingsLicenseActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsLicenseActivity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/SettingsLicenseActivity;)V
     .locals 0
     .parameter
 
     .prologue
     .line 219
-    iput-object p1, p0, Lcom/android/settings/SettingsLicenseActivity$3;->this$0:Lcom/android/settings/SettingsLicenseActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$3;->this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
     invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V
 
@@ -41,20 +41,20 @@
 
     .prologue
     .line 222
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity$3;->this$0:Lcom/android/settings/SettingsLicenseActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$3;->this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
-    #getter for: Lcom/android/settings/SettingsLicenseActivity;->mSpinnerDlg:Landroid/app/ProgressDialog;
-    invoke-static {v0}, Lcom/android/settings/SettingsLicenseActivity;->access$200(Lcom/android/settings/SettingsLicenseActivity;)Landroid/app/ProgressDialog;
+    #getter for: Lcom/android/OriginalSettings/SettingsLicenseActivity;->mSpinnerDlg:Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/android/OriginalSettings/SettingsLicenseActivity;->access$200(Lcom/android/OriginalSettings/SettingsLicenseActivity;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity$3;->this$0:Lcom/android/settings/SettingsLicenseActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$3;->this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
-    #getter for: Lcom/android/settings/SettingsLicenseActivity;->mTextDlg:Landroid/app/AlertDialog;
-    invoke-static {v0}, Lcom/android/settings/SettingsLicenseActivity;->access$300(Lcom/android/settings/SettingsLicenseActivity;)Landroid/app/AlertDialog;
+    #getter for: Lcom/android/OriginalSettings/SettingsLicenseActivity;->mTextDlg:Landroid/app/AlertDialog;
+    invoke-static {v0}, Lcom/android/OriginalSettings/SettingsLicenseActivity;->access$300(Lcom/android/OriginalSettings/SettingsLicenseActivity;)Landroid/app/AlertDialog;
 
     move-result-object v0
 

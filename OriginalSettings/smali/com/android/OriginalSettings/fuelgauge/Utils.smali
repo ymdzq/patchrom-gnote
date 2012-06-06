@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/Utils;
+.class public Lcom/android/OriginalSettings/fuelgauge/Utils;
 .super Ljava/lang/Object;
 .source "Utils.java"
 

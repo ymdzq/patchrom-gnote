@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ApnPreference;
+.class public Lcom/android/OriginalSettings/ApnPreference;
 .super Landroid/preference/Preference;
 .source "ApnPreference.java"
 
@@ -29,10 +29,10 @@
     const/4 v0, 0x0
 
     .line 74
-    sput-object v0, Lcom/android/settings/ApnPreference;->mSelectedKey:Ljava/lang/String;
+    sput-object v0, Lcom/android/OriginalSettings/ApnPreference;->mSelectedKey:Ljava/lang/String;
 
     .line 75
-    sput-object v0, Lcom/android/settings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
+    sput-object v0, Lcom/android/OriginalSettings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
 
     return-void
 .end method
@@ -48,15 +48,15 @@
     .line 76
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/ApnPreference;->mProtectFromCheckedChange:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/ApnPreference;->mProtectFromCheckedChange:Z
 
     .line 77
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/ApnPreference;->mSelectable:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/ApnPreference;->mSelectable:Z
 
     .line 71
-    invoke-direct {p0}, Lcom/android/settings/ApnPreference;->init()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/ApnPreference;->init()V
 
     .line 72
     return-void
@@ -74,15 +74,15 @@
     .line 76
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/ApnPreference;->mProtectFromCheckedChange:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/ApnPreference;->mProtectFromCheckedChange:Z
 
     .line 77
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/ApnPreference;->mSelectable:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/ApnPreference;->mSelectable:Z
 
     .line 63
-    invoke-direct {p0}, Lcom/android/settings/ApnPreference;->init()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/ApnPreference;->init()V
 
     .line 64
     return-void
@@ -101,15 +101,15 @@
     .line 76
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/ApnPreference;->mProtectFromCheckedChange:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/ApnPreference;->mProtectFromCheckedChange:Z
 
     .line 77
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/ApnPreference;->mSelectable:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/ApnPreference;->mSelectable:Z
 
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/ApnPreference;->init()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/ApnPreference;->init()V
 
     .line 55
     return-void
@@ -122,7 +122,7 @@
     .line 127
     const v0, 0x7f04000a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/ApnPreference;->setLayoutResource(I)V
 
     .line 128
     return-void
@@ -277,7 +277,7 @@
 
     .line 88
     .local v2, rb:Landroid/widget/RadioButton;
-    iget-boolean v7, p0, Lcom/android/settings/ApnPreference;->mSelectable:Z
+    iget-boolean v7, p0, Lcom/android/OriginalSettings/ApnPreference;->mSelectable:Z
 
     if-eqz v7, :cond_4
 
@@ -285,11 +285,11 @@
     invoke-virtual {v2, p0}, Landroid/widget/RadioButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/ApnPreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ApnPreference;->getKey()Ljava/lang/String;
 
     move-result-object v7
 
-    sget-object v8, Lcom/android/settings/ApnPreference;->mSelectedKey:Ljava/lang/String;
+    sget-object v8, Lcom/android/OriginalSettings/ApnPreference;->mSelectedKey:Ljava/lang/String;
 
     invoke-virtual {v7, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -300,26 +300,26 @@
     if-eqz v1, :cond_0
 
     .line 93
-    sput-object v2, Lcom/android/settings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
+    sput-object v2, Lcom/android/OriginalSettings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
 
     .line 94
-    invoke-virtual {p0}, Lcom/android/settings/ApnPreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ApnPreference;->getKey()Ljava/lang/String;
 
     move-result-object v7
 
-    sput-object v7, Lcom/android/settings/ApnPreference;->mSelectedKey:Ljava/lang/String;
+    sput-object v7, Lcom/android/OriginalSettings/ApnPreference;->mSelectedKey:Ljava/lang/String;
 
     .line 97
     :cond_0
     const/4 v7, 0x1
 
-    iput-boolean v7, p0, Lcom/android/settings/ApnPreference;->mProtectFromCheckedChange:Z
+    iput-boolean v7, p0, Lcom/android/OriginalSettings/ApnPreference;->mProtectFromCheckedChange:Z
 
     .line 98
     invoke-virtual {v2, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 99
-    iput-boolean v9, p0, Lcom/android/settings/ApnPreference;->mProtectFromCheckedChange:Z
+    iput-boolean v9, p0, Lcom/android/OriginalSettings/ApnPreference;->mProtectFromCheckedChange:Z
 
     .line 102
     const-string v7, "ro.csc.sales_code"
@@ -339,7 +339,7 @@
     if-eqz v7, :cond_2
 
     .line 104
-    invoke-virtual {p0}, Lcom/android/settings/ApnPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ApnPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -353,10 +353,10 @@
 
     check-cast v7, Landroid/net/wifi/WifiManager;
 
-    iput-object v7, p0, Lcom/android/settings/ApnPreference;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iput-object v7, p0, Lcom/android/OriginalSettings/ApnPreference;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     .line 106
-    iget-object v7, p0, Lcom/android/settings/ApnPreference;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v7, p0, Lcom/android/OriginalSettings/ApnPreference;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v7}, Landroid/net/wifi/WifiManager;->isWifiApEnabled()Z
 
@@ -364,7 +364,7 @@
 
     if-nez v7, :cond_1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/ApnPreference;->isTetheringEnabled(Landroid/content/Context;)Z
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/ApnPreference;->isTetheringEnabled(Landroid/content/Context;)Z
 
     move-result v7
 
@@ -434,7 +434,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/ApnPreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ApnPreference;->getKey()Ljava/lang/String;
 
     move-result-object v2
 
@@ -459,7 +459,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 140
-    iget-boolean v0, p0, Lcom/android/settings/ApnPreference;->mProtectFromCheckedChange:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/ApnPreference;->mProtectFromCheckedChange:Z
 
     if-eqz v0, :cond_0
 
@@ -472,12 +472,12 @@
     if-eqz p2, :cond_2
 
     .line 145
-    sget-object v0, Lcom/android/settings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
+    sget-object v0, Lcom/android/OriginalSettings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
 
     if-eqz v0, :cond_1
 
     .line 146
-    sget-object v0, Lcom/android/settings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
+    sget-object v0, Lcom/android/OriginalSettings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
 
     const/4 v1, 0x0
 
@@ -485,28 +485,28 @@
 
     .line 148
     :cond_1
-    sput-object p1, Lcom/android/settings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
+    sput-object p1, Lcom/android/OriginalSettings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
 
     .line 149
-    invoke-virtual {p0}, Lcom/android/settings/ApnPreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ApnPreference;->getKey()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/ApnPreference;->mSelectedKey:Ljava/lang/String;
+    sput-object v0, Lcom/android/OriginalSettings/ApnPreference;->mSelectedKey:Ljava/lang/String;
 
     .line 150
-    sget-object v0, Lcom/android/settings/ApnPreference;->mSelectedKey:Ljava/lang/String;
+    sget-object v0, Lcom/android/OriginalSettings/ApnPreference;->mSelectedKey:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnPreference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/ApnPreference;->callChangeListener(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     .line 152
     :cond_2
-    sput-object v3, Lcom/android/settings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
+    sput-object v3, Lcom/android/OriginalSettings/ApnPreference;->mCurrentChecked:Landroid/widget/CompoundButton;
 
     .line 153
-    sput-object v3, Lcom/android/settings/ApnPreference;->mSelectedKey:Ljava/lang/String;
+    sput-object v3, Lcom/android/OriginalSettings/ApnPreference;->mSelectedKey:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -528,7 +528,7 @@
     if-ne v4, v5, :cond_0
 
     .line 159
-    invoke-virtual {p0}, Lcom/android/settings/ApnPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ApnPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -545,7 +545,7 @@
 
     .line 163
     .local v2, salesCode:Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/ApnPreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ApnPreference;->getKey()Ljava/lang/String;
 
     move-result-object v4
 
@@ -575,10 +575,10 @@
 
     check-cast v4, Landroid/net/wifi/WifiManager;
 
-    iput-object v4, p0, Lcom/android/settings/ApnPreference;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iput-object v4, p0, Lcom/android/OriginalSettings/ApnPreference;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     .line 170
-    iget-object v4, p0, Lcom/android/settings/ApnPreference;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ApnPreference;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v4}, Landroid/net/wifi/WifiManager;->isWifiApEnabled()Z
 
@@ -600,7 +600,7 @@
     .restart local v1       #pos:I
     .restart local v2       #salesCode:Ljava/lang/String;
     :cond_1
-    invoke-direct {p0, v0}, Lcom/android/settings/ApnPreference;->isTetheringEnabled(Landroid/content/Context;)Z
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/ApnPreference;->isTetheringEnabled(Landroid/content/Context;)Z
 
     move-result v4
 
@@ -640,11 +640,11 @@
 
     .prologue
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/ApnPreference;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/ApnPreference;->getKey()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/ApnPreference;->mSelectedKey:Ljava/lang/String;
+    sput-object v0, Lcom/android/OriginalSettings/ApnPreference;->mSelectedKey:Ljava/lang/String;
 
     .line 136
     return-void
@@ -656,7 +656,7 @@
 
     .prologue
     .line 189
-    iput-boolean p1, p0, Lcom/android/settings/ApnPreference;->mSelectable:Z
+    iput-boolean p1, p0, Lcom/android/OriginalSettings/ApnPreference;->mSelectable:Z
 
     .line 190
     return-void

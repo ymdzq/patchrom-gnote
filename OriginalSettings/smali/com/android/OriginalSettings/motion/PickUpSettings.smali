@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/motion/PickUpSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/motion/PickUpSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "PickUpSettings.java"
 
 # interfaces
@@ -44,7 +44,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/motion/PickUpSettings;->mAnimationImage:[I
+    sput-object v0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationImage:[I
 
     return-void
 .end method
@@ -56,109 +56,109 @@
     const/4 v1, 0x0
 
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 45
-    iput-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 46
-    iput-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 48
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationIndex:I
 
     .line 49
-    iput-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationView:Landroid/widget/ImageView;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationView:Landroid/widget/ImageView;
 
     .line 54
-    new-instance v0, Lcom/android/settings/motion/PickUpSettings$1;
+    new-instance v0, Lcom/android/OriginalSettings/motion/PickUpSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/motion/PickUpSettings$1;-><init>(Lcom/android/settings/motion/PickUpSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/motion/PickUpSettings$1;-><init>(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/motion/PickUpSettings;)V
+.method static synthetic access$000(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->updateAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->updateAnimation()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/motion/PickUpSettings;)Landroid/content/ContentResolver;
+.method static synthetic access$100(Lcom/android/OriginalSettings/motion/PickUpSettings;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/motion/PickUpSettings;)V
+.method static synthetic access$200(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->startTryActually()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->startTryActually()V
 
     return-void
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/motion/PickUpSettings;)V
+.method static synthetic access$300(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->updateCheckedUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->updateCheckedUI()V
 
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/motion/PickUpSettings;)Landroid/content/ContentResolver;
+.method static synthetic access$400(Lcom/android/OriginalSettings/motion/PickUpSettings;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/motion/PickUpSettings;)V
+.method static synthetic access$500(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->showMotionDialog()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->showMotionDialog()V
 
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/motion/PickUpSettings;)V
+.method static synthetic access$600(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->stopAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->stopAnimation()V
 
     return-void
 .end method
@@ -170,35 +170,35 @@
     const/4 v4, 0x0
 
     .line 145
-    iget-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     if-eqz v1, :cond_0
 
     .line 146
-    iget-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 147
-    iput-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 149
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     if-eqz v1, :cond_1
 
     .line 150
-    iget-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 151
-    iput-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 153
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -212,7 +212,7 @@
     .local v0, message:Ljava/lang/String;
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -236,9 +236,9 @@
 
     const v2, 0x7f0b07f3
 
-    new-instance v3, Lcom/android/settings/motion/PickUpSettings$2;
+    new-instance v3, Lcom/android/OriginalSettings/motion/PickUpSettings$2;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/motion/PickUpSettings$2;-><init>(Lcom/android/settings/motion/PickUpSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/OriginalSettings/motion/PickUpSettings$2;-><init>(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -254,14 +254,14 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 167
-    iget-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
-    new-instance v2, Lcom/android/settings/motion/PickUpSettings$3;
+    new-instance v2, Lcom/android/OriginalSettings/motion/PickUpSettings$3;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/motion/PickUpSettings$3;-><init>(Lcom/android/settings/motion/PickUpSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/motion/PickUpSettings$3;-><init>(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -281,17 +281,17 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 243
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 244
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationIndex:I
 
     .line 245
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->updateAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->updateAnimation()V
 
     .line 247
     :cond_0
@@ -318,12 +318,12 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 252
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 253
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
 
     const/16 v1, 0x66
 
@@ -353,7 +353,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationIndex:I
+    iget v2, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationIndex:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -366,51 +366,51 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 222
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationView:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationView:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationView:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationView:Landroid/widget/ImageView;
 
-    sget-object v1, Lcom/android/settings/motion/PickUpSettings;->mAnimationImage:[I
+    sget-object v1, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationImage:[I
 
-    iget v2, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationIndex:I
+    iget v2, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationIndex:I
 
     aget v1, v1, v2
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 224
-    iget v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationIndex:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationIndex:I
 
     .line 227
     :cond_0
-    iget v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationIndex:I
 
     rem-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationIndex:I
+    iput v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationIndex:I
 
     .line 229
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_1
 
     .line 230
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->stopAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->stopAnimation()V
 
     .line 231
-    iget v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationIndex:I
+    iget v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationIndex:I
 
     if-nez v0, :cond_2
 
     .line 232
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
 
     const-wide/16 v1, 0x7d0
 
@@ -423,7 +423,7 @@
 
     .line 234
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationHandler:Landroid/os/Handler;
 
     const-wide/16 v1, 0x1f4
 
@@ -439,9 +439,9 @@
     const/4 v0, 0x0
 
     .line 130
-    iget-object v1, p0, Lcom/android/settings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -476,7 +476,7 @@
     const/4 v5, 0x0
 
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -486,27 +486,27 @@
 
     invoke-direct {v3, v0}, Landroid/widget/Switch;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/android/settings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iput-object v3, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
     .line 79
-    instance-of v3, v0, Landroid/preference/PreferenceActivity;
+    instance-of v3, v0, Lmiui/preference/BasePreferenceActivity;
 
     if-eqz v3, :cond_1
 
     move-object v2, v0
 
     .line 80
-    check-cast v2, Landroid/preference/PreferenceActivity;
+    check-cast v2, Lmiui/preference/BasePreferenceActivity;
 
     .line 81
-    .local v2, preferenceActivity:Landroid/preference/PreferenceActivity;
-    invoke-virtual {v2}, Landroid/preference/PreferenceActivity;->onIsHidingHeaders()Z
+    .local v2, preferenceActivity:Lmiui/preference/BasePreferenceActivity;
+    invoke-virtual {v2}, Lmiui/preference/BasePreferenceActivity;->onIsHidingHeaders()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    invoke-virtual {v2}, Landroid/preference/PreferenceActivity;->onIsMultiPane()Z
+    invoke-virtual {v2}, Lmiui/preference/BasePreferenceActivity;->onIsMultiPane()Z
 
     move-result v3
 
@@ -526,7 +526,7 @@
 
     .line 84
     .local v1, padding:I
-    iget-object v3, p0, Lcom/android/settings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v3, v5, v5, v1, v5}, Landroid/widget/Switch;->setPadding(IIII)V
 
@@ -542,7 +542,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
     new-instance v5, Landroid/app/ActionBar$LayoutParams;
 
@@ -563,14 +563,14 @@
 
     .line 95
     .end local v1           #padding:I
-    .end local v2           #preferenceActivity:Landroid/preference/PreferenceActivity;
+    .end local v2           #preferenceActivity:Lmiui/preference/BasePreferenceActivity;
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v3, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 96
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 97
     return-void
@@ -598,7 +598,7 @@
     if-ne p2, v0, :cond_0
 
     .line 123
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->showGuideDialog()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->showGuideDialog()V
 
     goto :goto_0
 
@@ -623,7 +623,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 102
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -652,28 +652,28 @@
 
     .prologue
     .line 67
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 69
     const v0, 0x7f05001e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/PickUpSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->addPreferencesFromResource(I)V
 
     .line 70
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/motion/PickUpSettings;->mActivity:Landroid/app/Activity;
+    sput-object v0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mActivity:Landroid/app/Activity;
 
     .line 71
     const-string v0, "tutorial"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/motion/PickUpSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mTutorial:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mTutorial:Landroid/preference/Preference;
 
     .line 72
     return-void
@@ -684,10 +684,10 @@
 
     .prologue
     .line 114
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPause()V
 
     .line 115
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->stopAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->stopAnimation()V
 
     .line 116
     return-void
@@ -700,12 +700,12 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings;->mTutorial:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mTutorial:Landroid/preference/Preference;
 
     if-ne p2, v0, :cond_0
 
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->showGuideDialog()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->showGuideDialog()V
 
     .line 140
     const/4 v0, 0x1
@@ -715,7 +715,7 @@
 
     .line 138
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -727,13 +727,13 @@
 
     .prologue
     .line 107
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 108
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->updateCheckedUI()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->updateCheckedUI()V
 
     .line 109
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->updateAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->updateAnimation()V
 
     .line 110
     return-void
@@ -748,7 +748,7 @@
     .line 177
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -756,35 +756,35 @@
 
     .line 178
     .local v0, builder:Landroid/app/AlertDialog$Builder;
-    iget-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     if-eqz v4, :cond_0
 
     .line 179
-    iget-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 180
-    iput-object v6, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v6, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 182
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     if-eqz v4, :cond_1
 
     .line 183
-    iget-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 184
-    iput-object v6, p0, Lcom/android/settings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
+    iput-object v6, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mMotionDialog:Landroid/app/AlertDialog;
 
     .line 187
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -824,7 +824,7 @@
 
     check-cast v4, Landroid/widget/ImageView;
 
-    iput-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mAnimationView:Landroid/widget/ImageView;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mAnimationView:Landroid/widget/ImageView;
 
     .line 192
     const v4, 0x7f0b07e9
@@ -842,9 +842,9 @@
     .line 196
     const v4, 0x7f0b07eb
 
-    new-instance v5, Lcom/android/settings/motion/PickUpSettings$4;
+    new-instance v5, Lcom/android/OriginalSettings/motion/PickUpSettings$4;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/motion/PickUpSettings$4;-><init>(Lcom/android/settings/motion/PickUpSettings;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/motion/PickUpSettings$4;-><init>(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
 
     invoke-virtual {v0, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -859,24 +859,24 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iput-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     .line 206
-    iget-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->show()V
 
     .line 207
-    iget-object v4, p0, Lcom/android/settings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/motion/PickUpSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
-    new-instance v5, Lcom/android/settings/motion/PickUpSettings$5;
+    new-instance v5, Lcom/android/OriginalSettings/motion/PickUpSettings$5;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/motion/PickUpSettings$5;-><init>(Lcom/android/settings/motion/PickUpSettings;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/motion/PickUpSettings$5;-><init>(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 212
-    invoke-direct {p0}, Lcom/android/settings/motion/PickUpSettings;->startAnimation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->startAnimation()V
 
     .line 213
     return-void

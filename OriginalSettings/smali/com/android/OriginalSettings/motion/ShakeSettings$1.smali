@@ -1,11 +1,11 @@
-.class Lcom/android/settings/motion/ShakeSettings$1;
+.class Lcom/android/OriginalSettings/motion/ShakeSettings$1;
 .super Landroid/os/Handler;
 .source "ShakeSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/motion/ShakeSettings;
+    value = Lcom/android/OriginalSettings/motion/ShakeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/ShakeSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/ShakeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/ShakeSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/android/settings/motion/ShakeSettings$1;->this$0:Lcom/android/settings/motion/ShakeSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/ShakeSettings$1;->this$0:Lcom/android/OriginalSettings/motion/ShakeSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -50,10 +50,10 @@
 
     .line 59
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/motion/ShakeSettings$1;->this$0:Lcom/android/settings/motion/ShakeSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/ShakeSettings$1;->this$0:Lcom/android/OriginalSettings/motion/ShakeSettings;
 
-    #calls: Lcom/android/settings/motion/ShakeSettings;->updateAnimation()V
-    invoke-static {v0}, Lcom/android/settings/motion/ShakeSettings;->access$000(Lcom/android/settings/motion/ShakeSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/ShakeSettings;->updateAnimation()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/ShakeSettings;->access$000(Lcom/android/OriginalSettings/motion/ShakeSettings;)V
 
     goto :goto_0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodPreference$6;
+.class Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$6;
 .super Ljava/lang/Object;
 .source "InputMethodPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/InputMethodPreference;->showSecurityWarnDialog(Landroid/view/inputmethod/InputMethodInfo;Landroid/preference/CheckBoxPreference;)V
+    value = Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;->showSecurityWarnDialog(Landroid/view/inputmethod/InputMethodInfo;Landroid/preference/CheckBoxPreference;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/InputMethodPreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;
 
 .field final synthetic val$chkPref:Landroid/preference/CheckBoxPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodPreference;Landroid/preference/CheckBoxPreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;Landroid/preference/CheckBoxPreference;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 241
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodPreference$6;->this$0:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$6;->this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;
 
-    iput-object p2, p0, Lcom/android/settings/inputmethod/InputMethodPreference$6;->val$chkPref:Landroid/preference/CheckBoxPreference;
+    iput-object p2, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$6;->val$chkPref:Landroid/preference/CheckBoxPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
 
     .prologue
     .line 244
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference$6;->val$chkPref:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$6;->val$chkPref:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x1
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fmm/RemoteControls$SamsungAccount$1;
+.class Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount$1;
 .super Ljava/lang/Object;
 .source "RemoteControls.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/fmm/RemoteControls$SamsungAccount;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/fmm/RemoteControls$SamsungAccount;
+.field final synthetic this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fmm/RemoteControls$SamsungAccount;)V
+.method constructor <init>(Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;)V
     .locals 0
     .parameter
 
     .prologue
     .line 195
-    iput-object p1, p0, Lcom/android/settings/fmm/RemoteControls$SamsungAccount$1;->this$0:Lcom/android/settings/fmm/RemoteControls$SamsungAccount;
+    iput-object p1, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount$1;->this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 198
-    iget-object v1, p0, Lcom/android/settings/fmm/RemoteControls$SamsungAccount$1;->this$0:Lcom/android/settings/fmm/RemoteControls$SamsungAccount;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount$1;->this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;
 
-    #getter for: Lcom/android/settings/fmm/RemoteControls$SamsungAccount;->returnvalue_sa:I
-    invoke-static {v1}, Lcom/android/settings/fmm/RemoteControls$SamsungAccount;->access$000(Lcom/android/settings/fmm/RemoteControls$SamsungAccount;)I
+    #getter for: Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;->returnvalue_sa:I
+    invoke-static {v1}, Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;->access$000(Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;)I
 
     move-result v1
 
@@ -73,9 +73,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 202
-    iget-object v1, p0, Lcom/android/settings/fmm/RemoteControls$SamsungAccount$1;->this$0:Lcom/android/settings/fmm/RemoteControls$SamsungAccount;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount$1;->this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/fmm/RemoteControls$SamsungAccount;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;->startActivity(Landroid/content/Intent;)V
 
     .line 204
     .end local v0           #mIntent:Landroid/content/Intent;

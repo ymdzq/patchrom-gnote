@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DevelopmentSettings$2;
+.class Lcom/android/OriginalSettings/DevelopmentSettings$2;
 .super Ljava/lang/Object;
 .source "DevelopmentSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DevelopmentSettings;->ShowErrorPopup()V
+    value = Lcom/android/OriginalSettings/DevelopmentSettings;->ShowErrorPopup()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DevelopmentSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DevelopmentSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DevelopmentSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DevelopmentSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 489
-    iput-object p1, p0, Lcom/android/settings/DevelopmentSettings$2;->this$0:Lcom/android/settings/DevelopmentSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DevelopmentSettings$2;->this$0:Lcom/android/OriginalSettings/DevelopmentSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;
+.class public Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;
 .super Ljava/lang/Object;
 .source "WifiP2pSwitchEnabler.java"
 
@@ -36,22 +36,22 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 54
-    new-instance v0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler$1;
+    new-instance v0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler$1;-><init>(Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler$1;-><init>(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 67
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
 
     .line 68
-    iput-object p2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iput-object p2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
 
     move-result v1
 
@@ -66,19 +66,19 @@
 
     check-cast v0, Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v0, :cond_1
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
@@ -88,10 +88,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     .line 75
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     if-nez v0, :cond_0
 
@@ -103,10 +103,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 77
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iput-object v3, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     const/4 v1, 0x0
 
@@ -121,7 +121,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mIntentFilter:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
     .line 85
     return-void
@@ -149,17 +149,17 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 54
-    new-instance v0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler$1;
+    new-instance v0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler$1;-><init>(Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler$1;-><init>(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 88
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
 
     .line 89
-    iput-object p2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iput-object p2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     .line 91
     const-string v0, "wifip2p"
@@ -170,19 +170,19 @@
 
     check-cast v0, Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-eqz v0, :cond_1
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
@@ -192,10 +192,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     if-nez v0, :cond_0
 
@@ -207,10 +207,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 97
-    iput-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iput-object v3, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -225,7 +225,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mIntentFilter:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
     .line 105
     return-void
@@ -241,14 +241,14 @@
     goto :goto_0
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;I)V
+.method static synthetic access$000(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;I)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 44
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->handleP2pStateChanged(I)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->handleP2pStateChanged(I)V
 
     return-void
 .end method
@@ -263,12 +263,12 @@
     const/4 v1, 0x1
 
     .line 186
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     if-eqz v0, :cond_0
 
     .line 187
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setEnabled(Z)V
 
@@ -306,33 +306,33 @@
 
     .line 194
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     if-eqz v0, :cond_2
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setEnabled(Z)V
 
     .line 196
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setChecked(Z)V
 
     .line 198
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     if-eqz v0, :cond_1
 
     .line 199
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 200
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
@@ -340,33 +340,33 @@
 
     .line 207
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     if-eqz v0, :cond_3
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setEnabled(Z)V
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, v2}, Landroid/widget/Switch;->setChecked(Z)V
 
     .line 211
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     if-eqz v0, :cond_1
 
     .line 212
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 213
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
@@ -388,7 +388,7 @@
     .prologue
     .line 176
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
 
     const-string v4, "connectivity"
 
@@ -447,7 +447,7 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-nez v0, :cond_1
 
@@ -460,7 +460,7 @@
     :cond_1
     if-eqz p2, :cond_2
 
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
 
     move-result v0
 
@@ -469,7 +469,7 @@
     :cond_2
     if-nez p2, :cond_4
 
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
 
     move-result v0
 
@@ -477,7 +477,7 @@
 
     .line 141
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -488,16 +488,16 @@
     if-eqz p2, :cond_5
 
     .line 144
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     invoke-virtual {v0, v1}, Landroid/net/wifi/p2p/WifiP2pManager;->enableP2p(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -505,16 +505,16 @@
 
     .line 147
     :cond_5
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 148
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     invoke-virtual {v0, v1}, Landroid/net/wifi/p2p/WifiP2pManager;->disableP2p(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -530,7 +530,7 @@
     const/4 v1, 0x0
 
     .line 153
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-nez v2, :cond_1
 
@@ -552,7 +552,7 @@
 
     .line 157
     .local v0, enable:Z
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -567,12 +567,12 @@
 
     .line 161
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 162
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v0}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
@@ -580,16 +580,16 @@
     if-eqz v0, :cond_3
 
     .line 165
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
     .line 166
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     invoke-virtual {v2, v3}, Landroid/net/wifi/p2p/WifiP2pManager;->enableP2p(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -597,16 +597,16 @@
 
     .line 168
     :cond_3
-    invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->isP2pEnabled()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 169
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     invoke-virtual {v2, v3}, Landroid/net/wifi/p2p/WifiP2pManager;->disableP2p(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -620,7 +620,7 @@
     const/4 v2, 0x0
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-nez v0, :cond_1
 
@@ -631,30 +631,30 @@
 
     .line 128
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     if-eqz v0, :cond_2
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, v2}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 132
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     if-eqz v0, :cond_0
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -666,7 +666,7 @@
 
     .prologue
     .line 115
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
     if-nez v0, :cond_1
 
@@ -677,32 +677,32 @@
 
     .line 117
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     if-eqz v0, :cond_2
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v0, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 121
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     if-eqz v0, :cond_0
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSwitchEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/PickUpSettings$5;
+.class Lcom/android/OriginalSettings/motion/PickUpSettings$5;
 .super Ljava/lang/Object;
 .source "PickUpSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/PickUpSettings;->showGuideDialog()V
+    value = Lcom/android/OriginalSettings/motion/PickUpSettings;->showGuideDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/PickUpSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/PickUpSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 207
-    iput-object p1, p0, Lcom/android/settings/motion/PickUpSettings$5;->this$0:Lcom/android/settings/motion/PickUpSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings$5;->this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 209
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings$5;->this$0:Lcom/android/settings/motion/PickUpSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings$5;->this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
-    #calls: Lcom/android/settings/motion/PickUpSettings;->stopAnimation()V
-    invoke-static {v0}, Lcom/android/settings/motion/PickUpSettings;->access$600(Lcom/android/settings/motion/PickUpSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/PickUpSettings;->stopAnimation()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->access$600(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
 
     .line 210
     return-void

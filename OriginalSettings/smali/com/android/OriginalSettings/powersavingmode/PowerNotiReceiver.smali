@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/powersavingmode/PowerNotiReceiver;
+.class public Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "PowerNotiReceiver.java"
 
@@ -27,13 +27,13 @@
     const/4 v0, 0x0
 
     .line 75
-    sput-boolean v0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mCharging:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mCharging:Z
 
     .line 76
-    sput-boolean v0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
 
     .line 77
-    sput-boolean v0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     const-wide/high16 v5, 0x4059
 
     .line 335
-    iget-object v2, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "psm_brightness"
 
@@ -72,7 +72,7 @@
     if-ne v2, v3, :cond_0
 
     .line 336
-    iget-object v2, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "psm_brightness_level"
 
@@ -139,7 +139,7 @@
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 345
-    invoke-direct {p0, v9, v1}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->doAdjustBrightness(II)V
+    invoke-direct {p0, v9, v1}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->doAdjustBrightness(II)V
 
     .line 347
     .end local v0           #brightness:I
@@ -171,7 +171,7 @@
 
     .prologue
     .line 370
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "psm_screen_timeout"
 
@@ -183,7 +183,7 @@
 
     .line 371
     .local v0, timeout:I
-    invoke-direct {p0, v0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->doAdjustScreentimeout(I)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->doAdjustScreentimeout(I)V
 
     .line 372
     return-void
@@ -194,7 +194,7 @@
 
     .prologue
     .line 229
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v2, "notification"
 
@@ -219,7 +219,7 @@
 
     .prologue
     .line 180
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v2, "notification"
 
@@ -246,7 +246,7 @@
 
     .prologue
     .line 350
-    iget-object v3, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -280,7 +280,7 @@
     .line 361
     :cond_0
     :goto_0
-    iget-object v3, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -299,7 +299,7 @@
 
     .line 366
     .local v1, intent:Landroid/content/Intent;
-    iget-object v3, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -348,7 +348,7 @@
 
     .prologue
     .line 375
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -367,7 +367,7 @@
 
     .line 380
     .local v0, intent:Landroid/content/Intent;
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
@@ -381,26 +381,26 @@
 
     .prologue
     .line 235
-    invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->stopWifi()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->stopWifi()V
 
     .line 236
-    invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->stopBluetooth()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->stopBluetooth()V
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->stopGps(Landroid/content/Context;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->stopGps(Landroid/content/Context;)V
 
     .line 238
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->stopSync(Landroid/content/Context;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->stopSync(Landroid/content/Context;)V
 
     .line 239
-    invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->adjustBrightness()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->adjustBrightness()V
 
     .line 240
-    invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->adjustScreentimeout()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->adjustScreentimeout()V
 
     .line 241
     return-void
@@ -420,7 +420,7 @@
     const/4 v10, 0x0
 
     .line 187
-    iput p1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mNotificationMode:I
+    iput p1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mNotificationMode:I
 
     .line 188
     const-string v0, "PowerNotiReceiver"
@@ -435,7 +435,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mNotificationMode:I
+    iget v2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mNotificationMode:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -448,7 +448,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 190
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v1, "notification"
 
@@ -468,7 +468,7 @@
     const-string v2, ""
 
     .line 196
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v6, "psm_battery_level"
 
@@ -479,7 +479,7 @@
     move-result v6
 
     .line 197
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v7, "power"
 
@@ -541,7 +541,7 @@
     if-ne p1, v1, :cond_2
 
     .line 204
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -552,7 +552,7 @@
     move-result-object v2
 
     .line 205
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -588,7 +588,7 @@
     iput v2, v3, Landroid/app/Notification;->flags:I
 
     .line 217
-    iget-object v2, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -603,9 +603,9 @@
     .line 219
     new-instance v4, Landroid/content/Intent;
 
-    iget-object v5, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
-    const-class v6, Lcom/android/settings/Settings$MenuPowerSavingModeSettingsActivity;
+    const-class v6, Lcom/android/OriginalSettings/Settings$MenuPowerSavingModeSettingsActivity;
 
     invoke-direct {v4, v5, v6}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -615,14 +615,14 @@
     invoke-virtual {v4, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 221
-    iget-object v5, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-static {v5, v10, v4, v10}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object v4
 
     .line 222
-    iget-object v5, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3, v5, v2, v1, v4}, Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
 
@@ -637,7 +637,7 @@
     if-ne p1, v4, :cond_3
 
     .line 207
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -650,7 +650,7 @@
     move-result-object v2
 
     .line 208
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -671,7 +671,7 @@
     if-ne p1, v1, :cond_4
 
     .line 210
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -682,7 +682,7 @@
     move-result-object v2
 
     .line 211
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -713,7 +713,7 @@
     const/4 v7, 0x0
 
     .line 156
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v1, "notification"
 
@@ -733,7 +733,7 @@
     const-string v2, ""
 
     .line 163
-    iget-object v2, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -744,7 +744,7 @@
     move-result-object v2
 
     .line 164
-    iget-object v3, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -771,7 +771,7 @@
     iput v1, v4, Landroid/app/Notification;->flags:I
 
     .line 168
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -784,9 +784,9 @@
     .line 170
     new-instance v2, Landroid/content/Intent;
 
-    iget-object v5, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
-    const-class v6, Lcom/android/settings/Settings$MenuPowerSavingModeSettingsActivity;
+    const-class v6, Lcom/android/OriginalSettings/Settings$MenuPowerSavingModeSettingsActivity;
 
     invoke-direct {v2, v5, v6}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -796,14 +796,14 @@
     invoke-virtual {v2, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 172
-    iget-object v5, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-static {v5, v7, v2, v7}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
     .line 173
-    iget-object v5, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4, v5, v1, v3, v2}, Landroid/app/Notification;->setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
 
@@ -821,7 +821,7 @@
 
     .prologue
     .line 279
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "psm_bluetooth"
 
@@ -894,7 +894,7 @@
     const/4 v4, 0x0
 
     .line 294
-    iget-object v2, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v2, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v3, "psm_gps"
 
@@ -907,7 +907,7 @@
     if-ne v2, v3, :cond_1
 
     .line 295
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->isGpsRunning()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->isGpsRunning()Z
 
     move-result v2
 
@@ -977,7 +977,7 @@
     const/4 v6, 0x0
 
     .line 311
-    iget-object v4, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v4, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v5, "psm_sync"
 
@@ -1075,7 +1075,7 @@
     const/4 v6, 0x0
 
     .line 244
-    iget-object v4, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v4, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v5, "psm_wifi"
 
@@ -1086,7 +1086,7 @@
     if-ne v4, v7, :cond_1
 
     .line 245
-    iget-object v4, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v5, "wifi"
 
@@ -1098,7 +1098,7 @@
 
     .line 247
     .local v2, wifiManager:Landroid/net/wifi/WifiManager;
-    iget-object v4, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v5, "connectivity"
 
@@ -1186,7 +1186,7 @@
     if-eqz p1, :cond_2
 
     .line 390
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v2, "power"
 
@@ -1198,7 +1198,7 @@
 
     .line 391
     .local v0, mPowerManager:Landroid/os/PowerManager;
-    sget-boolean v1, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
+    sget-boolean v1, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
 
     if-nez v1, :cond_0
 
@@ -1224,7 +1224,7 @@
 
     .line 403
     :cond_0
-    sget-boolean v1, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
+    sget-boolean v1, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
 
     if-nez v1, :cond_1
 
@@ -1242,7 +1242,7 @@
     .line 411
     .end local v0           #mPowerManager:Landroid/os/PowerManager;
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v2, "power"
 
@@ -1254,7 +1254,7 @@
 
     .line 412
     .restart local v0       #mPowerManager:Landroid/os/PowerManager;
-    sget-boolean v1, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
+    sget-boolean v1, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
 
     if-nez v1, :cond_3
 
@@ -1263,7 +1263,7 @@
 
     .line 416
     :cond_3
-    sget-boolean v1, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
+    sget-boolean v1, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
 
     if-nez v1, :cond_4
 
@@ -1284,7 +1284,7 @@
 
     .prologue
     .line 384
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v2, "location"
 
@@ -1324,16 +1324,16 @@
 
     .line 89
     .local v0, action:Ljava/lang/String;
-    iput-object p1, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     .line 90
-    iget-object v7, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
-    iput-object v7, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
+    iput-object v7, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContentResolver:Landroid/content/ContentResolver;
 
     .line 94
     const-string v7, "android.intent.action.BOOT_COMPLETED"
@@ -1407,7 +1407,7 @@
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 100
-    iget-object v7, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
     const-string v8, "power"
 
@@ -1435,19 +1435,19 @@
 
     .line 103
     :cond_1
-    sput-boolean v3, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mCharging:Z
+    sput-boolean v3, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mCharging:Z
 
     .line 104
     :cond_2
     if-eqz v1, :cond_6
 
     .line 105
-    sget-boolean v7, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mCharging:Z
+    sget-boolean v7, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mCharging:Z
 
     if-eqz v7, :cond_5
 
     .line 106
-    invoke-direct {p0, v11}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
+    invoke-direct {p0, v11}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
 
     .line 115
     :goto_0
@@ -1519,7 +1519,7 @@
     if-eqz v3, :cond_7
 
     .line 120
-    invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->showSystemNotification()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->showSystemNotification()V
 
     .line 124
     :goto_1
@@ -1529,7 +1529,7 @@
 
     move-result v7
 
-    sput-boolean v7, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
+    sput-boolean v7, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
 
     .line 125
     const-string v7, "pref_siop_rendering"
@@ -1538,10 +1538,10 @@
 
     move-result v6
 
-    sput-boolean v6, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
+    sput-boolean v6, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
 
     .line 126
-    invoke-direct {p0, v3}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->updatemaximumpowersaving(Z)V
+    invoke-direct {p0, v3}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->updatemaximumpowersaving(Z)V
 
     .line 153
     .end local v1           #enableMode:Z
@@ -1558,7 +1558,7 @@
     .restart local v2       #mPowerManager:Landroid/os/PowerManager;
     .restart local v4       #prefs:Landroid/content/SharedPreferences;
     :cond_5
-    invoke-direct {p0, v10}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
+    invoke-direct {p0, v10}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
 
     goto :goto_0
 
@@ -1571,7 +1571,7 @@
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 111
-    invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->clearNotification()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->clearNotification()V
 
     goto :goto_0
 
@@ -1579,7 +1579,7 @@
     .restart local v3       #maximumpowersavingmode:Z
     .restart local v5       #temp:I
     :cond_7
-    invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->clearSystemNotification()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->clearSystemNotification()V
 
     goto :goto_1
 
@@ -1613,13 +1613,13 @@
 
     .line 131
     .restart local v1       #enableMode:Z
-    sput-boolean v3, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mCharging:Z
+    sput-boolean v3, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mCharging:Z
 
     .line 132
     if-eqz v1, :cond_4
 
     .line 133
-    invoke-direct {p0, v11}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
+    invoke-direct {p0, v11}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
 
     goto :goto_2
 
@@ -1650,13 +1650,13 @@
 
     .line 137
     .restart local v1       #enableMode:Z
-    sput-boolean v6, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mCharging:Z
+    sput-boolean v6, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mCharging:Z
 
     .line 138
     if-eqz v1, :cond_4
 
     .line 139
-    invoke-direct {p0, v10}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
+    invoke-direct {p0, v10}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
 
     goto :goto_2
 
@@ -1673,14 +1673,14 @@
     if-eqz v7, :cond_b
 
     .line 142
-    iget-object v6, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0, v6}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->doPowerSaveAction(Landroid/content/Context;)V
+    invoke-direct {p0, v6}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->doPowerSaveAction(Landroid/content/Context;)V
 
     .line 143
     const/16 v6, 0x98
 
-    invoke-direct {p0, v6}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
+    invoke-direct {p0, v6}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->showNotification(I)V
 
     goto :goto_2
 
@@ -1720,13 +1720,13 @@
     .line 149
     .restart local v1       #enableMode:Z
     :goto_3
-    sput-boolean v6, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
+    sput-boolean v6, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_cpu:Z
 
     .line 150
-    sput-boolean v6, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
+    sput-boolean v6, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->is_siop_uirendering:Z
 
     .line 151
-    invoke-direct {p0, v1}, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->updatemaximumpowersaving(Z)V
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/powersavingmode/PowerNotiReceiver;->updatemaximumpowersaving(Z)V
 
     goto :goto_2
 

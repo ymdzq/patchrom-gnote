@@ -1,14 +1,14 @@
-.class final Lcom/android/settings/applications/ApplicationsState$6;
+.class final Lcom/android/OriginalSettings/applications/ApplicationsState$6;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 
 # interfaces
-.implements Lcom/android/settings/applications/ApplicationsState$AppFilter;
+.implements Lcom/android/OriginalSettings/applications/ApplicationsState$AppFilter;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ApplicationsState;
+    value = Lcom/android/OriginalSettings/applications/ApplicationsState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final mCanBeOnSdCardChecker:Lcom/android/settings/applications/CanBeOnSdCardChecker;
+.field final mCanBeOnSdCardChecker:Lcom/android/OriginalSettings/applications/CanBeOnSdCardChecker;
 
 
 # direct methods
@@ -30,11 +30,11 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 212
-    new-instance v0, Lcom/android/settings/applications/CanBeOnSdCardChecker;
+    new-instance v0, Lcom/android/OriginalSettings/applications/CanBeOnSdCardChecker;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/CanBeOnSdCardChecker;-><init>()V
+    invoke-direct {v0}, Lcom/android/OriginalSettings/applications/CanBeOnSdCardChecker;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$6;->mCanBeOnSdCardChecker:Lcom/android/settings/applications/CanBeOnSdCardChecker;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/ApplicationsState$6;->mCanBeOnSdCardChecker:Lcom/android/OriginalSettings/applications/CanBeOnSdCardChecker;
 
     return-void
 .end method
@@ -47,9 +47,9 @@
 
     .prologue
     .line 221
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$6;->mCanBeOnSdCardChecker:Lcom/android/settings/applications/CanBeOnSdCardChecker;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ApplicationsState$6;->mCanBeOnSdCardChecker:Lcom/android/OriginalSettings/applications/CanBeOnSdCardChecker;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/applications/CanBeOnSdCardChecker;->check(Landroid/content/pm/ApplicationInfo;)Z
+    invoke-virtual {v0, p1}, Lcom/android/OriginalSettings/applications/CanBeOnSdCardChecker;->check(Landroid/content/pm/ApplicationInfo;)Z
 
     move-result v0
 
@@ -61,9 +61,9 @@
 
     .prologue
     .line 216
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$6;->mCanBeOnSdCardChecker:Lcom/android/settings/applications/CanBeOnSdCardChecker;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ApplicationsState$6;->mCanBeOnSdCardChecker:Lcom/android/OriginalSettings/applications/CanBeOnSdCardChecker;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/CanBeOnSdCardChecker;->init()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/applications/CanBeOnSdCardChecker;->init()V
 
     .line 217
     return-void

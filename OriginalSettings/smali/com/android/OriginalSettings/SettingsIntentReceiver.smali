@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SettingsIntentReceiver;
+.class public Lcom/android/OriginalSettings/SettingsIntentReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "SettingsIntentReceiver.java"
 
@@ -20,7 +20,7 @@
     .line 63
     const-string v0, "/sys/class/sec/switch/usb_sel"
 
-    iput-object v0, p0, Lcom/android/settings/SettingsIntentReceiver;->USB_PATH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/SettingsIntentReceiver;->USB_PATH:Ljava/lang/String;
 
     .line 64
     const/4 v0, 0x6
@@ -29,7 +29,7 @@
 
     fill-array-data v0, :array_0
 
-    iput-object v0, p0, Lcom/android/settings/SettingsIntentReceiver;->modem:[B
+    iput-object v0, p0, Lcom/android/OriginalSettings/SettingsIntentReceiver;->modem:[B
 
     return-void
 
@@ -1130,10 +1130,10 @@
 
     move-object/from16 v1, v28
 
-    invoke-direct {v0, v1}, Lcom/android/settings/SettingsIntentReceiver;->writeMTData(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/android/OriginalSettings/SettingsIntentReceiver;->writeMTData(Ljava/lang/String;)V
 
     .line 90
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/SettingsIntentReceiver;->makeDMfile()V
+    invoke-direct/range {p0 .. p0}, Lcom/android/OriginalSettings/SettingsIntentReceiver;->makeDMfile()V
 
     .line 93
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1146,7 +1146,7 @@
 
     move-object/from16 v1, v28
 
-    invoke-direct {v0, v1}, Lcom/android/settings/SettingsIntentReceiver;->GetPhPWD(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {v0, v1}, Lcom/android/OriginalSettings/SettingsIntentReceiver;->GetPhPWD(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v31
 
@@ -1163,7 +1163,7 @@
 
     move-object/from16 v1, v28
 
-    invoke-direct {v0, v1}, Lcom/android/settings/SettingsIntentReceiver;->GetMTStatus(Ljava/lang/String;)Z
+    invoke-direct {v0, v1}, Lcom/android/OriginalSettings/SettingsIntentReceiver;->GetMTStatus(Ljava/lang/String;)Z
 
     move-result v29
 
@@ -1209,7 +1209,7 @@
     invoke-static/range {v29 .. v31}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 360
-    invoke-direct/range {p0 .. p1}, Lcom/android/settings/SettingsIntentReceiver;->enableFMM(Landroid/content/Context;)V
+    invoke-direct/range {p0 .. p1}, Lcom/android/OriginalSettings/SettingsIntentReceiver;->enableFMM(Landroid/content/Context;)V
 
     .line 390
     :cond_1
@@ -3050,7 +3050,7 @@
     invoke-interface {v8}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     .line 340
-    invoke-direct/range {p0 .. p1}, Lcom/android/settings/SettingsIntentReceiver;->enableFMM(Landroid/content/Context;)V
+    invoke-direct/range {p0 .. p1}, Lcom/android/OriginalSettings/SettingsIntentReceiver;->enableFMM(Landroid/content/Context;)V
 
     goto/16 :goto_1
 
@@ -3112,7 +3112,7 @@
     invoke-interface {v8}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     .line 348
-    invoke-direct/range {p0 .. p1}, Lcom/android/settings/SettingsIntentReceiver;->disableFMM(Landroid/content/Context;)V
+    invoke-direct/range {p0 .. p1}, Lcom/android/OriginalSettings/SettingsIntentReceiver;->disableFMM(Landroid/content/Context;)V
 
     goto/16 :goto_1
 
@@ -3164,7 +3164,7 @@
     invoke-static/range {v29 .. v31}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 354
-    invoke-direct/range {p0 .. p1}, Lcom/android/settings/SettingsIntentReceiver;->disableFMM(Landroid/content/Context;)V
+    invoke-direct/range {p0 .. p1}, Lcom/android/OriginalSettings/SettingsIntentReceiver;->disableFMM(Landroid/content/Context;)V
 
     goto/16 :goto_1
 

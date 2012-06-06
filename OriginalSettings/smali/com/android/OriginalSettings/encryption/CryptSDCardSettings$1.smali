@@ -1,11 +1,11 @@
-.class Lcom/android/settings/encryption/CryptSDCardSettings$1;
+.class Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$1;
 .super Landroid/os/Handler;
 .source "CryptSDCardSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/encryption/CryptSDCardSettings;
+    value = Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/encryption/CryptSDCardSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/encryption/CryptSDCardSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 103
-    iput-object p1, p0, Lcom/android/settings/encryption/CryptSDCardSettings$1;->this$0:Lcom/android/settings/encryption/CryptSDCardSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$1;->this$0:Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -40,10 +40,10 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings$1;->this$0:Lcom/android/settings/encryption/CryptSDCardSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$1;->this$0:Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;
 
-    #getter for: Lcom/android/settings/encryption/CryptSDCardSettings;->mSync:Ljava/lang/Object;
-    invoke-static {v0}, Lcom/android/settings/encryption/CryptSDCardSettings;->access$300(Lcom/android/settings/encryption/CryptSDCardSettings;)Ljava/lang/Object;
+    #getter for: Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->mSync:Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->access$300(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -64,10 +64,10 @@
 
     .line 108
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings$1;->this$0:Lcom/android/settings/encryption/CryptSDCardSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$1;->this$0:Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;
 
-    #calls: Lcom/android/settings/encryption/CryptSDCardSettings;->enableAllUI()V
-    invoke-static {v0}, Lcom/android/settings/encryption/CryptSDCardSettings;->access$400(Lcom/android/settings/encryption/CryptSDCardSettings;)V
+    #calls: Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->enableAllUI()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->access$400(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)V
 
     goto :goto_0
 
@@ -84,10 +84,10 @@
     .line 111
     :pswitch_1
     :try_start_1
-    iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings$1;->this$0:Lcom/android/settings/encryption/CryptSDCardSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings$1;->this$0:Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;
 
-    #calls: Lcom/android/settings/encryption/CryptSDCardSettings;->disableAllUI()V
-    invoke-static {v0}, Lcom/android/settings/encryption/CryptSDCardSettings;->access$500(Lcom/android/settings/encryption/CryptSDCardSettings;)V
+    #calls: Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->disableAllUI()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;->access$500(Lcom/android/OriginalSettings/encryption/CryptSDCardSettings;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/RingerVolumePreference$1;
+.class Lcom/android/OriginalSettings/RingerVolumePreference$1;
 .super Landroid/os/Handler;
 .source "RingerVolumePreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RingerVolumePreference;
+    value = Lcom/android/OriginalSettings/RingerVolumePreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RingerVolumePreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/RingerVolumePreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RingerVolumePreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/RingerVolumePreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 119
-    iput-object p1, p0, Lcom/android/settings/RingerVolumePreference$1;->this$0:Lcom/android/settings/RingerVolumePreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/RingerVolumePreference$1;->this$0:Lcom/android/OriginalSettings/RingerVolumePreference;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -40,10 +40,10 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/android/settings/RingerVolumePreference$1;->this$0:Lcom/android/settings/RingerVolumePreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/RingerVolumePreference$1;->this$0:Lcom/android/OriginalSettings/RingerVolumePreference;
 
-    #calls: Lcom/android/settings/RingerVolumePreference;->updateSlidersAndMutedStates()V
-    invoke-static {v0}, Lcom/android/settings/RingerVolumePreference;->access$000(Lcom/android/settings/RingerVolumePreference;)V
+    #calls: Lcom/android/OriginalSettings/RingerVolumePreference;->updateSlidersAndMutedStates()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/RingerVolumePreference;->access$000(Lcom/android/OriginalSettings/RingerVolumePreference;)V
 
     .line 122
     return-void

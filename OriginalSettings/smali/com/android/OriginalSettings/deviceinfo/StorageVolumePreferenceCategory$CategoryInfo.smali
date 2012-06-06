@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$CategoryInfo;
+.class Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory$CategoryInfo;
 .super Ljava/lang/Object;
 .source "StorageVolumePreferenceCategory.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
+    value = Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -31,10 +31,10 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 91
-    iput p1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$CategoryInfo;->mTitle:I
+    iput p1, p0, Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory$CategoryInfo;->mTitle:I
 
     .line 92
-    iput p2, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$CategoryInfo;->mColor:I
+    iput p2, p0, Lcom/android/OriginalSettings/deviceinfo/StorageVolumePreferenceCategory$CategoryInfo;->mColor:I
 
     .line 93
     return-void

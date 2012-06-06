@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "MenuPowerSavingModeSettings.java"
 
 # interfaces
@@ -22,40 +22,40 @@
 
     .prologue
     .line 62
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 83
-    new-instance v0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$1;
+    new-instance v0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$1;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$1;-><init>(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$1;-><init>(Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mSystemPowerObserver:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mSystemPowerObserver:Landroid/database/ContentObserver;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/preference/CheckBoxPreference;
+.method static synthetic access$000(Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/content/ContentResolver;
+.method static synthetic access$100(Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/content/ContentResolver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -72,7 +72,7 @@
     const/4 v8, 0x1
 
     .line 229
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -101,7 +101,7 @@
     if-eqz p1, :cond_2
 
     .line 233
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -112,7 +112,7 @@
     .line 234
     const-string v5, "power"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -156,7 +156,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v7, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v7}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -192,7 +192,7 @@
 
     .line 294
     .local v0, intent:Landroid/content/Intent;
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -205,7 +205,7 @@
     .end local v0           #intent:Landroid/content/Intent;
     .end local v3           #mPowerManager:Landroid/os/PowerManager;
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -216,7 +216,7 @@
     .line 281
     const-string v5, "power"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -243,7 +243,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v7, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v7}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -311,12 +311,12 @@
     if-ne p2, v0, :cond_0
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 128
-    invoke-direct {p0, v3}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->updatemaximumpowersaving(Z)V
+    invoke-direct {p0, v3}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->updatemaximumpowersaving(Z)V
 
     .line 131
     :cond_0
@@ -329,10 +329,10 @@
 
     .prologue
     .line 91
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -344,49 +344,49 @@
     .local v0, mContentResolver:Landroid/content/ContentResolver;
     const v1, 0x7f05001b
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->addPreferencesFromResource(I)V
 
     .line 95
     const-string v1, "maximum_power_saving"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     .line 96
     const-string v1, "use_power_saving_mode"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 99
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
     const-string v1, "maximum_saving_preference_key"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -395,11 +395,11 @@
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -429,7 +429,7 @@
 
     .prologue
     .line 114
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPause()V
 
     .line 115
     const-string v0, "MenuPowerSavingModeSettings"
@@ -439,7 +439,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 116
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -447,7 +447,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mSystemPowerObserver:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mSystemPowerObserver:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
@@ -478,7 +478,7 @@
     const/4 v7, 0x0
 
     .line 139
-    iget-object v9, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p2, v9}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -487,7 +487,7 @@
     if-eqz v9, :cond_2
 
     .line 141
-    iget-object v9, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v9}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -497,7 +497,7 @@
 
     .line 144
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -540,14 +540,14 @@
     if-nez v6, :cond_0
 
     .line 150
-    iget-object v9, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v9, v7}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 152
     const-string v7, "layout_inflater"
 
-    invoke-virtual {p0, v7}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v7}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -587,22 +587,22 @@
 
     .line 161
     .local v4, not_show_again:Landroid/widget/CheckBox;
-    new-instance v7, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$2;
+    new-instance v7, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$2;
 
-    invoke-direct {v7, p0, v4}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$2;-><init>(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;Landroid/widget/CheckBox;)V
+    invoke-direct {v7, p0, v4}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$2;-><init>(Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;Landroid/widget/CheckBox;)V
 
     invoke-virtual {v5, v7}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 169
     new-instance v7, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v9
 
     invoke-direct {v7, v9}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -673,25 +673,25 @@
     .line 180
     .end local v1           #e:Ljava/lang/NullPointerException;
     :cond_0
-    invoke-direct {p0, v8}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->updatemaximumpowersaving(Z)V
+    invoke-direct {p0, v8}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->updatemaximumpowersaving(Z)V
 
     goto :goto_1
 
     .line 184
     .end local v6           #notshowHelp:I
     :cond_1
-    iget-object v9, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v9, v7}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 185
-    invoke-direct {p0, v7}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->updatemaximumpowersaving(Z)V
+    invoke-direct {p0, v7}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->updatemaximumpowersaving(Z)V
 
     goto :goto_1
 
     .line 190
     :cond_2
-    iget-object v9, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p2, v9}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -719,7 +719,7 @@
 
     move-result-object v10
 
-    iget-object v11, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
+    iget-object v11, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v11}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -736,13 +736,13 @@
     invoke-static {v9, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 195
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
     const-string v10, "new_power_saving_mode"
 
-    iget-object v11, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
+    iget-object v11, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v11}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -764,7 +764,7 @@
 
     .line 198
     .local v3, intent:Landroid/content/Intent;
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -775,7 +775,7 @@
     .line 213
     .end local v3           #intent:Landroid/content/Intent;
     :cond_4
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v8
 
@@ -791,12 +791,12 @@
     const/4 v2, 0x0
 
     .line 105
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 106
-    iget-object v3, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -818,9 +818,9 @@
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mEnableMode:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -840,7 +840,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 108
-    invoke-virtual {p0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -854,7 +854,7 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mSystemPowerObserver:Landroid/database/ContentObserver;
+    iget-object v3, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mSystemPowerObserver:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -879,7 +879,7 @@
 
     .prologue
     .line 121
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStop()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onStop()V
 
     .line 122
     const-string v0, "MenuPowerSavingModeSettings"

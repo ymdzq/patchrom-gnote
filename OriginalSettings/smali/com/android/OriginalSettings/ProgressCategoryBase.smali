@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/ProgressCategoryBase;
+.class public abstract Lcom/android/OriginalSettings/ProgressCategoryBase;
 .super Landroid/preference/PreferenceCategory;
 .source "ProgressCategoryBase.java"
 

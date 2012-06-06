@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fips/FipsStatus;
+.class public Lcom/android/OriginalSettings/fips/FipsStatus;
 .super Ljava/lang/Object;
 .source "FipsStatus.java"
 
@@ -43,7 +43,7 @@
     invoke-static {v10, v11}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 36
-    invoke-static {}, Lcom/android/settings/fips/FipsStatus;->nativeCheckKeyManagementModule()V
+    invoke-static {}, Lcom/android/OriginalSettings/fips/FipsStatus;->nativeCheckKeyManagementModule()V
 
     .line 38
     const-string v10, "ro.secusefipsmode"

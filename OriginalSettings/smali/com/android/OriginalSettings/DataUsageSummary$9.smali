@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DataUsageSummary$9;
+.class Lcom/android/OriginalSettings/DataUsageSummary$9;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/OriginalSettings/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DataUsageSummary;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DataUsageSummary;)V
     .locals 0
     .parameter
 
     .prologue
     .line 1103
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$9;->this$0:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DataUsageSummary$9;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,18 +66,18 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary$AppUsageItem;
+    check-cast v0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;
 
     .line 1108
-    .local v0, app:Lcom/android/settings/DataUsageSummary$AppUsageItem;
-    iget-object v3, p0, Lcom/android/settings/DataUsageSummary$9;->this$0:Lcom/android/settings/DataUsageSummary;
+    .local v0, app:Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;
+    iget-object v3, p0, Lcom/android/OriginalSettings/DataUsageSummary$9;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    #getter for: Lcom/android/settings/DataUsageSummary;->mUidDetailProvider:Lcom/android/settings/net/UidDetailProvider;
-    invoke-static {v3}, Lcom/android/settings/DataUsageSummary;->access$2000(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/net/UidDetailProvider;
+    #getter for: Lcom/android/OriginalSettings/DataUsageSummary;->mUidDetailProvider:Lcom/android/OriginalSettings/net/UidDetailProvider;
+    invoke-static {v3}, Lcom/android/OriginalSettings/DataUsageSummary;->access$2000(Lcom/android/OriginalSettings/DataUsageSummary;)Lcom/android/OriginalSettings/net/UidDetailProvider;
 
     move-result-object v3
 
-    iget-object v4, v0, Lcom/android/settings/DataUsageSummary$AppUsageItem;->uids:[I
+    iget-object v4, v0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->uids:[I
 
     const/4 v5, 0x0
 
@@ -85,19 +85,19 @@
 
     const/4 v5, 0x1
 
-    invoke-virtual {v3, v4, v5}, Lcom/android/settings/net/UidDetailProvider;->getUidDetail(IZ)Lcom/android/settings/net/UidDetail;
+    invoke-virtual {v3, v4, v5}, Lcom/android/OriginalSettings/net/UidDetailProvider;->getUidDetail(IZ)Lcom/android/OriginalSettings/net/UidDetail;
 
     move-result-object v2
 
     .line 1109
-    .local v2, detail:Lcom/android/settings/net/UidDetail;
-    iget-object v3, p0, Lcom/android/settings/DataUsageSummary$9;->this$0:Lcom/android/settings/DataUsageSummary;
+    .local v2, detail:Lcom/android/OriginalSettings/net/UidDetail;
+    iget-object v3, p0, Lcom/android/OriginalSettings/DataUsageSummary$9;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    iget-object v4, v0, Lcom/android/settings/DataUsageSummary$AppUsageItem;->uids:[I
+    iget-object v4, v0, Lcom/android/OriginalSettings/DataUsageSummary$AppUsageItem;->uids:[I
 
-    iget-object v5, v2, Lcom/android/settings/net/UidDetail;->label:Ljava/lang/CharSequence;
+    iget-object v5, v2, Lcom/android/OriginalSettings/net/UidDetail;->label:Ljava/lang/CharSequence;
 
-    invoke-static {v3, v4, v5}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;->show(Lcom/android/settings/DataUsageSummary;[ILjava/lang/CharSequence;)V
+    invoke-static {v3, v4, v5}, Lcom/android/OriginalSettings/DataUsageSummary$AppDetailsFragment;->show(Lcom/android/OriginalSettings/DataUsageSummary;[ILjava/lang/CharSequence;)V
 
     .line 1110
     return-void

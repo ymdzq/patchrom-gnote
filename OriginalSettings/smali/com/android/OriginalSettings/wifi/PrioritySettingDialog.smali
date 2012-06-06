@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/PrioritySettingDialog;
+.class public Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;
 .super Landroid/app/AlertDialog;
 .source "PrioritySettingDialog.java"
 
@@ -14,14 +14,14 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/wifi/PrioritySettingDialog$1;,
-        Lcom/android/settings/wifi/PrioritySettingDialog$WifiServiceHandler;
+        Lcom/android/OriginalSettings/wifi/PrioritySettingDialog$1;,
+        Lcom/android/OriginalSettings/wifi/PrioritySettingDialog$WifiServiceHandler;
     }
 .end annotation
 
 
 # instance fields
-.field private final mAccessPoint:Lcom/android/settings/wifi/AccessPoint;
+.field private final mAccessPoint:Lcom/android/OriginalSettings/wifi/AccessPoint;
 
 .field private mContext:Landroid/content/Context;
 
@@ -50,7 +50,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Lcom/android/settings/wifi/AccessPoint;)V
+.method constructor <init>(Landroid/content/Context;Lcom/android/OriginalSettings/wifi/AccessPoint;)V
     .locals 1
     .parameter "context"
     .parameter "accessPoint"
@@ -60,10 +60,10 @@
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
     .line 107
-    iput-object p1, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mContext:Landroid/content/Context;
 
     .line 108
-    iput-object p2, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mAccessPoint:Lcom/android/settings/wifi/AccessPoint;
+    iput-object p2, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mAccessPoint:Lcom/android/OriginalSettings/wifi/AccessPoint;
 
     .line 109
     if-nez p2, :cond_0
@@ -71,14 +71,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput v0, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mSecurity:I
+    iput v0, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mSecurity:I
 
     .line 110
     return-void
 
     .line 109
     :cond_0
-    iget v0, p2, Lcom/android/settings/wifi/AccessPoint;->security:I
+    iget v0, p2, Lcom/android/OriginalSettings/wifi/AccessPoint;->security:I
 
     goto :goto_0
 .end method
@@ -272,7 +272,7 @@
     const/4 v3, -0x1
 
     .line 373
-    iget-object v2, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
 
     invoke-virtual {v2}, Landroid/widget/RadioGroup;->getCheckedRadioButtonId()I
 
@@ -280,7 +280,7 @@
 
     .line 374
     .local v0, id:I
-    iget-object v2, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -288,7 +288,7 @@
 
     .line 376
     .local v1, total_num:I
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
@@ -303,14 +303,14 @@
     if-ne v0, v3, :cond_1
 
     .line 380
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
     invoke-virtual {v2, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 381
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
@@ -323,14 +323,14 @@
     if-ne v1, v6, :cond_2
 
     .line 383
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
     invoke-virtual {v2, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 384
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
@@ -343,14 +343,14 @@
     if-nez v0, :cond_3
 
     .line 386
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
     invoke-virtual {v2, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 387
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
@@ -365,14 +365,14 @@
     if-ne v0, v2, :cond_4
 
     .line 389
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
     invoke-virtual {v2, v6}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 390
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
@@ -382,14 +382,14 @@
 
     .line 393
     :cond_4
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
     invoke-virtual {v2, v6}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 394
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getButton(I)Landroid/widget/Button;
 
     move-result-object v2
 
@@ -435,7 +435,7 @@
     .line 334
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/PrioritySettingDialog;->cancelOrDismiss(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->cancelOrDismiss(Z)V
 
     .line 335
     return-void
@@ -469,7 +469,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityButton:I
+    iget v2, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityButton:I
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -482,13 +482,13 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 348
-    iget v0, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityButton:I
+    iget v0, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityButton:I
 
     const/4 v1, -0x2
 
     if-eq v0, v1, :cond_0
 
-    iget v0, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityButton:I
+    iget v0, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityButton:I
 
     if-nez v0, :cond_1
 
@@ -504,7 +504,7 @@
     :goto_0
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityButton:I
+    iput v0, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityButton:I
 
     .line 355
     return-void
@@ -530,7 +530,7 @@
     .line 340
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/PrioritySettingDialog;->cancelOrDismiss(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->cancelOrDismiss(Z)V
 
     .line 341
     return-void
@@ -566,7 +566,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 364
-    invoke-direct {p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->validatePriorityButtons()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->validatePriorityButtons()V
 
     .line 365
     return-void
@@ -588,10 +588,10 @@
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 246
-    iput p2, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityButton:I
+    iput p2, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityButton:I
 
     .line 249
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
 
     invoke-virtual {v6}, Landroid/widget/RadioGroup;->getCheckedRadioButtonId()I
 
@@ -607,7 +607,7 @@
 
     .line 254
     :cond_1
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     invoke-interface {v6}, Ljava/util/List;->size()I
 
@@ -622,7 +622,7 @@
     if-lt v2, v6, :cond_2
 
     .line 256
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     invoke-interface {v6, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -632,26 +632,26 @@
 
     .line 257
     .local v4, sel_config:Landroid/net/wifi/WifiConfiguration;
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     invoke-interface {v6, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 259
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     add-int/lit8 v7, v2, -0x1
 
     invoke-interface {v6, v7, v4}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 260
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
-    invoke-static {v6}, Lcom/android/settings/wifi/PrioritySettingDialog;->resortOrderedConfigs(Ljava/util/List;)V
+    invoke-static {v6}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->resortOrderedConfigs(Ljava/util/List;)V
 
     .line 261
     add-int/lit8 v6, v2, -0x1
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/wifi/PrioritySettingDialog;->updateRadioGroup(I)V
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->updateRadioGroup(I)V
 
     .line 264
     .end local v4           #sel_config:Landroid/net/wifi/WifiConfiguration;
@@ -665,7 +665,7 @@
     if-gt v2, v6, :cond_3
 
     .line 265
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     invoke-interface {v6, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -675,26 +675,26 @@
 
     .line 266
     .restart local v4       #sel_config:Landroid/net/wifi/WifiConfiguration;
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     invoke-interface {v6, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     .line 268
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     add-int/lit8 v7, v2, 0x1
 
     invoke-interface {v6, v7, v4}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 269
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
-    invoke-static {v6}, Lcom/android/settings/wifi/PrioritySettingDialog;->resortOrderedConfigs(Ljava/util/List;)V
+    invoke-static {v6}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->resortOrderedConfigs(Ljava/util/List;)V
 
     .line 270
     add-int/lit8 v6, v2, 0x1
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/wifi/PrioritySettingDialog;->updateRadioGroup(I)V
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->updateRadioGroup(I)V
 
     .line 272
     .end local v4           #sel_config:Landroid/net/wifi/WifiConfiguration;
@@ -704,7 +704,7 @@
     if-ne p2, v6, :cond_0
 
     .line 275
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     invoke-interface {v6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -747,7 +747,7 @@
     iput v6, v0, Landroid/net/wifi/WifiConfiguration;->priority:I
 
     .line 282
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v6, v0}, Landroid/net/wifi/WifiManager;->saveNetwork(Landroid/net/wifi/WifiConfiguration;)V
 
@@ -773,7 +773,7 @@
     const/4 v6, 0x0
 
     .line 115
-    invoke-virtual {p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v3
 
@@ -783,15 +783,15 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mView:Landroid/view/View;
+    iput-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mView:Landroid/view/View;
 
     .line 116
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mView:Landroid/view/View;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mView:Landroid/view/View;
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/PrioritySettingDialog;->setView(Landroid/view/View;)V
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->setView(Landroid/view/View;)V
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -811,16 +811,16 @@
 
     check-cast v3, Landroid/net/wifi/WifiManager;
 
-    iput-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iput-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
     .line 120
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    iget-object v4, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mContext:Landroid/content/Context;
 
-    new-instance v5, Lcom/android/settings/wifi/PrioritySettingDialog$WifiServiceHandler;
+    new-instance v5, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog$WifiServiceHandler;
 
-    invoke-direct {v5, p0, v7}, Lcom/android/settings/wifi/PrioritySettingDialog$WifiServiceHandler;-><init>(Lcom/android/settings/wifi/PrioritySettingDialog;Lcom/android/settings/wifi/PrioritySettingDialog$1;)V
+    invoke-direct {v5, p0, v7}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog$WifiServiceHandler;-><init>(Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;Lcom/android/OriginalSettings/wifi/PrioritySettingDialog$1;)V
 
     invoke-virtual {v3, v4, v5}, Landroid/net/wifi/WifiManager;->asyncConnect(Landroid/content/Context;Landroid/os/Handler;)V
 
@@ -832,13 +832,13 @@
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 123
-    invoke-virtual {p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v3
 
     const v4, 0x7f0400b1
 
-    iget-object v5, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityView:Landroid/view/ViewGroup;
+    iget-object v5, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityView:Landroid/view/ViewGroup;
 
     invoke-virtual {v3, v4, v5, v6}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -846,7 +846,7 @@
 
     .line 124
     .local v1, priorityView:Landroid/view/View;
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mView:Landroid/view/View;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mView:Landroid/view/View;
 
     const v4, 0x7f08026d
 
@@ -856,20 +856,20 @@
 
     check-cast v3, Landroid/view/ViewGroup;
 
-    iput-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityView:Landroid/view/ViewGroup;
+    iput-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityView:Landroid/view/ViewGroup;
 
     .line 125
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityView:Landroid/view/ViewGroup;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityView:Landroid/view/ViewGroup;
 
     invoke-virtual {v3, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 126
     const v3, 0x7f0b01f6
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/PrioritySettingDialog;->setTitle(I)V
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->setTitle(I)V
 
     .line 128
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mView:Landroid/view/View;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mView:Landroid/view/View;
 
     const v4, 0x7f08026e
 
@@ -879,10 +879,10 @@
 
     check-cast v3, Landroid/widget/RadioGroup;
 
-    iput-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
+    iput-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
 
     .line 129
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
 
     if-nez v3, :cond_0
 
@@ -899,12 +899,12 @@
 
     .line 134
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityView:Landroid/view/ViewGroup;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityView:Landroid/view/ViewGroup;
 
     invoke-virtual {v3, v6}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     .line 135
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
 
     invoke-virtual {v3, v6}, Landroid/widget/RadioGroup;->setVisibility(I)V
 
@@ -917,7 +917,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0, v3, v4, p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {p0, v3, v4, p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 139
     const/4 v3, -0x3
@@ -928,7 +928,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0, v3, v4, p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {p0, v3, v4, p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 141
     const/4 v3, -0x2
@@ -939,33 +939,33 @@
 
     move-result-object v4
 
-    invoke-virtual {p0, v3, v4, p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {p0, v3, v4, p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 145
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
-    invoke-static {v3}, Lcom/android/settings/wifi/PrioritySettingDialog;->getOrderedConfigs(Landroid/net/wifi/WifiManager;)Ljava/util/List;
+    invoke-static {v3}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->getOrderedConfigs(Landroid/net/wifi/WifiManager;)Ljava/util/List;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iput-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     .line 146
-    invoke-virtual {p0, v6}, Lcom/android/settings/wifi/PrioritySettingDialog;->updateRadioGroup(I)V
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->updateRadioGroup(I)V
 
     .line 147
-    iput v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mPriorityButton:I
+    iput v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mPriorityButton:I
 
     .line 148
-    iget-object v3, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
 
     invoke-virtual {v3, p0}, Landroid/widget/RadioGroup;->setOnCheckedChangeListener(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V
 
     .line 149
-    invoke-virtual {p0, p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
+    invoke-virtual {p0, p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     .line 150
-    invoke-direct {p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->validatePriorityButtons()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->validatePriorityButtons()V
 
     .line 151
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->onCreate(Landroid/os/Bundle;)V
@@ -1000,7 +1000,7 @@
 
     .prologue
     .line 402
-    invoke-direct {p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->validatePriorityButtons()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->validatePriorityButtons()V
 
     .line 403
     return-void
@@ -1026,7 +1026,7 @@
     const/4 v9, -0x2
 
     .line 179
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     if-eqz v6, :cond_1
 
@@ -1043,7 +1043,7 @@
 
     move-result-object v7
 
-    iget-object v8, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v8, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     invoke-interface {v8}, Ljava/util/List;->size()I
 
@@ -1060,7 +1060,7 @@
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 181
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
 
     invoke-virtual {v6}, Landroid/widget/RadioGroup;->removeAllViews()V
 
@@ -1069,7 +1069,7 @@
 
     .line 183
     .local v0, i:I
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 
     invoke-interface {v6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1093,7 +1093,7 @@
     .local v4, oconfig:Landroid/net/wifi/WifiConfiguration;
     new-instance v5, Landroid/widget/RadioButton;
 
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mContext:Landroid/content/Context;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mContext:Landroid/content/Context;
 
     invoke-direct {v5, v6}, Landroid/widget/RadioButton;-><init>(Landroid/content/Context;)V
 
@@ -1101,7 +1101,7 @@
     .local v5, rb1:Landroid/widget/RadioButton;
     iget-object v6, v4, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    invoke-static {v6}, Lcom/android/settings/wifi/AccessPoint;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6}, Lcom/android/OriginalSettings/wifi/AccessPoint;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -1127,7 +1127,7 @@
     invoke-virtual {v5, v6}, Landroid/widget/RadioButton;->setVisibility(I)V
 
     .line 193
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
 
     add-int/lit8 v1, v0, 0x1
 
@@ -1154,12 +1154,12 @@
     .end local v4           #oconfig:Landroid/net/wifi/WifiConfiguration;
     .end local v5           #rb1:Landroid/widget/RadioButton;
     :cond_0
-    iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
+    iget-object v6, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->mRadioGroup:Landroid/widget/RadioGroup;
 
     invoke-virtual {v6, p1}, Landroid/widget/RadioGroup;->check(I)V
 
     .line 202
-    invoke-direct {p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->validatePriorityButtons()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;->validatePriorityButtons()V
 
     .line 203
     .end local v0           #i:I

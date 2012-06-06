@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiStatusTest$4;
+.class Lcom/android/OriginalSettings/wifi/WifiStatusTest$4;
 .super Ljava/lang/Object;
 .source "WifiStatusTest.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiStatusTest;->updatePingState()V
+    value = Lcom/android/OriginalSettings/wifi/WifiStatusTest;->updatePingState()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiStatusTest;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiStatusTest;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiStatusTest;)V
+.method constructor <init>(Lcom/android/OriginalSettings/wifi/WifiStatusTest;)V
     .locals 0
     .parameter
 
     .prologue
     .line 314
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings/wifi/WifiStatusTest;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiStatusTest$4;->this$0:Lcom/android/OriginalSettings/wifi/WifiStatusTest;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,51 +42,51 @@
 
     .prologue
     .line 316
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings/wifi/WifiStatusTest;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiStatusTest$4;->this$0:Lcom/android/OriginalSettings/wifi/WifiStatusTest;
 
-    #getter for: Lcom/android/settings/wifi/WifiStatusTest;->mPingIpAddr:Landroid/widget/TextView;
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiStatusTest;->access$1800(Lcom/android/settings/wifi/WifiStatusTest;)Landroid/widget/TextView;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiStatusTest;->mPingIpAddr:Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiStatusTest;->access$1800(Lcom/android/OriginalSettings/wifi/WifiStatusTest;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings/wifi/WifiStatusTest;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiStatusTest$4;->this$0:Lcom/android/OriginalSettings/wifi/WifiStatusTest;
 
-    #getter for: Lcom/android/settings/wifi/WifiStatusTest;->mPingIpAddrResult:Ljava/lang/String;
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiStatusTest;->access$1700(Lcom/android/settings/wifi/WifiStatusTest;)Ljava/lang/String;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiStatusTest;->mPingIpAddrResult:Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/OriginalSettings/wifi/WifiStatusTest;->access$1700(Lcom/android/OriginalSettings/wifi/WifiStatusTest;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 317
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings/wifi/WifiStatusTest;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiStatusTest$4;->this$0:Lcom/android/OriginalSettings/wifi/WifiStatusTest;
 
-    #getter for: Lcom/android/settings/wifi/WifiStatusTest;->mPingHostname:Landroid/widget/TextView;
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiStatusTest;->access$2000(Lcom/android/settings/wifi/WifiStatusTest;)Landroid/widget/TextView;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiStatusTest;->mPingHostname:Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiStatusTest;->access$2000(Lcom/android/OriginalSettings/wifi/WifiStatusTest;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings/wifi/WifiStatusTest;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiStatusTest$4;->this$0:Lcom/android/OriginalSettings/wifi/WifiStatusTest;
 
-    #getter for: Lcom/android/settings/wifi/WifiStatusTest;->mPingHostnameResult:Ljava/lang/String;
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiStatusTest;->access$1900(Lcom/android/settings/wifi/WifiStatusTest;)Ljava/lang/String;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiStatusTest;->mPingHostnameResult:Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/OriginalSettings/wifi/WifiStatusTest;->access$1900(Lcom/android/OriginalSettings/wifi/WifiStatusTest;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 318
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings/wifi/WifiStatusTest;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiStatusTest$4;->this$0:Lcom/android/OriginalSettings/wifi/WifiStatusTest;
 
-    #getter for: Lcom/android/settings/wifi/WifiStatusTest;->mHttpClientTest:Landroid/widget/TextView;
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiStatusTest;->access$2200(Lcom/android/settings/wifi/WifiStatusTest;)Landroid/widget/TextView;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiStatusTest;->mHttpClientTest:Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiStatusTest;->access$2200(Lcom/android/OriginalSettings/wifi/WifiStatusTest;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiStatusTest$4;->this$0:Lcom/android/settings/wifi/WifiStatusTest;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiStatusTest$4;->this$0:Lcom/android/OriginalSettings/wifi/WifiStatusTest;
 
-    #getter for: Lcom/android/settings/wifi/WifiStatusTest;->mHttpClientTestResult:Ljava/lang/String;
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiStatusTest;->access$2100(Lcom/android/settings/wifi/WifiStatusTest;)Ljava/lang/String;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiStatusTest;->mHttpClientTestResult:Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/OriginalSettings/wifi/WifiStatusTest;->access$2100(Lcom/android/OriginalSettings/wifi/WifiStatusTest;)Ljava/lang/String;
 
     move-result-object v1
 

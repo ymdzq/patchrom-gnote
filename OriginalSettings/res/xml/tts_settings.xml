@@ -7,5 +7,5 @@
     </PreferenceCategory>
     <Preference android:persistent="false" android:title="@string/tts_play_example_title" android:key="tts_play_example" android:summary="@string/tts_play_example_summary" />
     <CheckBoxPreference android:persistent="false" android:title="@string/driving_mode_title" android:key="toggle_tts_driving" android:summary="@string/driving_mode_summary" />
-    <PreferenceScreen android:title="@string/driving_mode_settings_title" android:key="driving_mode_settings" android:summary="@string/driving_mode_settings_summary" android:dependency="toggle_tts_driving" android:fragment="com.android.settings.DrivingModeSettings" />
+    <PreferenceScreen android:title="@string/driving_mode_settings_title" android:key="driving_mode_settings" android:summary="@string/driving_mode_settings_summary" android:dependency="toggle_tts_driving" android:fragment="com.android.OriginalSettings.DrivingModeSettings" />
 </PreferenceScreen>

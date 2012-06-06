@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bluetooth/Utils;
+.class final Lcom/android/OriginalSettings/bluetooth/Utils;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -161,19 +161,19 @@
 
     .line 92
     .local v2, message:Ljava/lang/String;
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
+    invoke-static {p0}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;->getInstance(Landroid/content/Context;)Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;
 
     move-result-object v1
 
     .line 93
-    .local v1, manager:Lcom/android/settings/bluetooth/LocalBluetoothManager;
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->getForegroundActivity()Landroid/content/Context;
+    .local v1, manager:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;->getForegroundActivity()Landroid/content/Context;
 
     move-result-object v0
 
     .line 94
     .local v0, activity:Landroid/content/Context;
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/LocalBluetoothManager;->isForegroundActivity()Z
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothManager;->isForegroundActivity()Z
 
     move-result v3
 

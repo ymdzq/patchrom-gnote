@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/bluetooth/BluetoothDeviceFilter$AudioAVFilter;
-.super Lcom/android/settings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;
+.class final Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$AudioAVFilter;
+.super Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;
 .source "BluetoothDeviceFilter.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothDeviceFilter;
+    value = Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,18 +22,18 @@
     .line 192
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;-><init>(Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;-><init>(Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$1;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$1;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 192
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$AudioAVFilter;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/bluetooth/BluetoothDeviceFilter$AudioAVFilter;-><init>()V
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     if-eqz p1, :cond_1
 
     .line 196
-    sget-object v1, Lcom/android/settings/bluetooth/A2dpProfile;->SINK_UUIDS:[Landroid/os/ParcelUuid;
+    sget-object v1, Lcom/android/OriginalSettings/bluetooth/A2dpProfile;->SINK_UUIDS:[Landroid/os/ParcelUuid;
 
     invoke-static {p1, v1}, Landroid/bluetooth/BluetoothUuid;->containsAnyUuid([Landroid/os/ParcelUuid;[Landroid/os/ParcelUuid;)Z
 

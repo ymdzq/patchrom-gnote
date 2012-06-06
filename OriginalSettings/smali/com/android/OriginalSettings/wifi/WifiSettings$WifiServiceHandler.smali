@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/WifiSettings$WifiServiceHandler;
+.class Lcom/android/OriginalSettings/wifi/WifiSettings$WifiServiceHandler;
 .super Landroid/os/Handler;
 .source "WifiSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WifiSettings;
+    value = Lcom/android/OriginalSettings/wifi/WifiSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,31 +15,31 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/wifi/WifiSettings;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 1198
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/wifi/WifiSettings;Lcom/android/settings/wifi/WifiSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/wifi/WifiSettings;Lcom/android/OriginalSettings/wifi/WifiSettings$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 1198
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiSettings$WifiServiceHandler;-><init>(Lcom/android/settings/wifi/WifiSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/wifi/WifiSettings$WifiServiceHandler;-><init>(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
 
     return-void
 .end method
@@ -84,14 +84,14 @@
 
     .line 1214
     .local v1, result:Landroid/net/wifi/WpsResult;
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    #getter for: Lcom/android/settings/wifi/WifiSettings;->mScanner:Lcom/android/settings/wifi/WifiSettings$Scanner;
-    invoke-static {v2}, Lcom/android/settings/wifi/WifiSettings;->access$600(Lcom/android/settings/wifi/WifiSettings;)Lcom/android/settings/wifi/WifiSettings$Scanner;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiSettings;->mScanner:Lcom/android/OriginalSettings/wifi/WifiSettings$Scanner;
+    invoke-static {v2}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$600(Lcom/android/OriginalSettings/wifi/WifiSettings;)Lcom/android/OriginalSettings/wifi/WifiSettings$Scanner;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/android/settings/wifi/WifiSettings$Scanner;->resume()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/wifi/WifiSettings$Scanner;->resume()V
 
     .line 1215
     if-eqz v1, :cond_0
@@ -99,9 +99,9 @@
     .line 1216
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/wifi/WifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/wifi/WifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -123,7 +123,7 @@
 
     .line 1219
     .local v0, dialog:Landroid/app/AlertDialog$Builder;
-    sget-object v2, Lcom/android/settings/wifi/WifiSettings$5;->$SwitchMap$android$net$wifi$WpsResult$Status:[I
+    sget-object v2, Lcom/android/OriginalSettings/wifi/WifiSettings$5;->$SwitchMap$android$net$wifi$WpsResult$Status:[I
 
     iget-object v3, v1, Landroid/net/wifi/WpsResult;->status:Landroid/net/wifi/WpsResult$Status;
 
@@ -141,23 +141,23 @@
     if-eqz v2, :cond_0
 
     .line 1240
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
     iget-object v3, v1, Landroid/net/wifi/WpsResult;->pin:Ljava/lang/String;
 
-    #calls: Lcom/android/settings/wifi/WifiSettings;->showProgressDialog(Ljava/lang/String;)V
-    invoke-static {v2, v3}, Lcom/android/settings/wifi/WifiSettings;->access$1500(Lcom/android/settings/wifi/WifiSettings;Ljava/lang/String;)V
+    #calls: Lcom/android/OriginalSettings/wifi/WifiSettings;->showProgressDialog(Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$1500(Lcom/android/OriginalSettings/wifi/WifiSettings;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 1225
     :pswitch_0
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$WifiServiceHandler;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
     const v3, 0x7f0b01ff
 
-    #calls: Lcom/android/settings/wifi/WifiSettings;->showWpsToast(I)V
-    invoke-static {v2, v3}, Lcom/android/settings/wifi/WifiSettings;->access$1400(Lcom/android/settings/wifi/WifiSettings;I)V
+    #calls: Lcom/android/OriginalSettings/wifi/WifiSettings;->showWpsToast(I)V
+    invoke-static {v2, v3}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$1400(Lcom/android/OriginalSettings/wifi/WifiSettings;I)V
 
     goto :goto_0
 

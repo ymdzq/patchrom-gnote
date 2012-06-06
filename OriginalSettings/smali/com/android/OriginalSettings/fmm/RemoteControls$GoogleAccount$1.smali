@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fmm/RemoteControls$GoogleAccount$1;
+.class Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount$1;
 .super Ljava/lang/Object;
 .source "RemoteControls.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/fmm/RemoteControls$GoogleAccount;
+.field final synthetic this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fmm/RemoteControls$GoogleAccount;)V
+.method constructor <init>(Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;)V
     .locals 0
     .parameter
 
     .prologue
     .line 265
-    iput-object p1, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/settings/fmm/RemoteControls$GoogleAccount;
+    iput-object p1, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,10 +45,10 @@
     const/4 v2, 0x0
 
     .line 268
-    iget-object v0, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/settings/fmm/RemoteControls$GoogleAccount;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;
 
-    #getter for: Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->returnvalue_ga:I
-    invoke-static {v0}, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->access$100(Lcom/android/settings/fmm/RemoteControls$GoogleAccount;)I
+    #getter for: Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->returnvalue_ga:I
+    invoke-static {v0}, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->access$100(Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;)I
 
     move-result v0
 
@@ -61,9 +61,9 @@
 
     .line 270
     .local v8, addAccountOptions:Landroid/os/Bundle;
-    iget-object v0, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/settings/fmm/RemoteControls$GoogleAccount;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;
 
-    invoke-virtual {v0}, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -71,18 +71,18 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/settings/fmm/RemoteControls$GoogleAccount;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;
 
-    #getter for: Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
-    invoke-static {v1}, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->access$200(Lcom/android/settings/fmm/RemoteControls$GoogleAccount;)Landroid/accounts/AuthenticatorDescription;
+    #getter for: Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
+    invoke-static {v1}, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->access$200(Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;)Landroid/accounts/AuthenticatorDescription;
 
     move-result-object v1
 
     iget-object v1, v1, Landroid/accounts/AuthenticatorDescription;->type:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/settings/fmm/RemoteControls$GoogleAccount;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount$1;->this$0:Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;
 
-    invoke-virtual {v3}, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 

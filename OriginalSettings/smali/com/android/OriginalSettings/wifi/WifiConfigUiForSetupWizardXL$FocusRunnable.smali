@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;
+.class Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;
 .super Ljava/lang/Object;
 .source "WifiConfigUiForSetupWizardXL.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    value = Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,23 +20,23 @@
 # instance fields
 .field final mViewToBeFocused:Landroid/view/View;
 
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;Landroid/view/View;)V
+.method public constructor <init>(Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;Landroid/view/View;)V
     .locals 0
     .parameter
     .parameter "viewToBeFocused"
 
     .prologue
     .line 186
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 187
-    iput-object p2, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->mViewToBeFocused:Landroid/view/View;
+    iput-object p2, p0, Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->mViewToBeFocused:Landroid/view/View;
 
     .line 188
     return-void
@@ -49,14 +49,14 @@
 
     .prologue
     .line 193
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;
 
-    #getter for: Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->access$000(Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;)Landroid/view/inputmethod/InputMethodManager;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
+    invoke-static {v1}, Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;->access$000(Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;)Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->mViewToBeFocused:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->mViewToBeFocused:Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -69,16 +69,16 @@
     if-eqz v0, :cond_0
 
     .line 196
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;
 
-    #getter for: Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->mActivity:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
-    invoke-static {v1}, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->access$100(Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;)Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;->mActivity:Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;
+    invoke-static {v1}, Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;->access$100(Lcom/android/OriginalSettings/wifi/WifiConfigUiForSetupWizardXL;)Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;
 
     move-result-object v1
 
     const/16 v2, 0x8
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
+    invoke-virtual {v1, v2}, Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;->setPaddingVisibility(I)V
 
     .line 200
     :goto_0

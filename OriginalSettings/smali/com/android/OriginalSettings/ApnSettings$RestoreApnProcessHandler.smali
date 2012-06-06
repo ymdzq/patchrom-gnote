@@ -1,11 +1,11 @@
-.class Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;
+.class Lcom/android/OriginalSettings/ApnSettings$RestoreApnProcessHandler;
 .super Landroid/os/Handler;
 .source "ApnSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ApnSettings;
+    value = Lcom/android/OriginalSettings/ApnSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,11 +17,11 @@
 # instance fields
 .field private mRestoreApnUiHandler:Landroid/os/Handler;
 
-.field final synthetic this$0:Lcom/android/settings/ApnSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/ApnSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/ApnSettings;Landroid/os/Looper;Landroid/os/Handler;)V
+.method public constructor <init>(Lcom/android/OriginalSettings/ApnSettings;Landroid/os/Looper;Landroid/os/Handler;)V
     .locals 0
     .parameter
     .parameter "looper"
@@ -29,13 +29,13 @@
 
     .prologue
     .line 393
-    iput-object p1, p0, Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;->this$0:Lcom/android/settings/ApnSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ApnSettings$RestoreApnProcessHandler;->this$0:Lcom/android/OriginalSettings/ApnSettings;
 
     .line 394
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     .line 395
-    iput-object p3, p0, Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;->mRestoreApnUiHandler:Landroid/os/Handler;
+    iput-object p3, p0, Lcom/android/OriginalSettings/ApnSettings$RestoreApnProcessHandler;->mRestoreApnUiHandler:Landroid/os/Handler;
 
     .line 396
     return-void
@@ -61,15 +61,15 @@
 
     .line 402
     :pswitch_0
-    iget-object v2, p0, Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ApnSettings$RestoreApnProcessHandler;->this$0:Lcom/android/OriginalSettings/ApnSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/ApnSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/ApnSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     .line 403
     .local v0, resolver:Landroid/content/ContentResolver;
-    invoke-static {}, Lcom/android/settings/ApnSettings;->access$400()Landroid/net/Uri;
+    invoke-static {}, Lcom/android/OriginalSettings/ApnSettings;->access$400()Landroid/net/Uri;
 
     move-result-object v2
 
@@ -84,7 +84,7 @@
 
     .line 406
     .local v1, wbamr_intent:Landroid/content/Intent;
-    iget-object v2, p0, Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ApnSettings$RestoreApnProcessHandler;->this$0:Lcom/android/OriginalSettings/ApnSettings;
 
     const-string v3, "MODE"
 
@@ -94,10 +94,10 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/ApnSettings;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v2, v3}, Lcom/android/OriginalSettings/ApnSettings;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 408
-    iget-object v2, p0, Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;->mRestoreApnUiHandler:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ApnSettings$RestoreApnProcessHandler;->mRestoreApnUiHandler:Landroid/os/Handler;
 
     const/4 v3, 0x2
 

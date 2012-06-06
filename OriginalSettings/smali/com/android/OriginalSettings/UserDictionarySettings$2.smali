@@ -1,4 +1,4 @@
-.class Lcom/android/settings/UserDictionarySettings$2;
+.class Lcom/android/OriginalSettings/UserDictionarySettings$2;
 .super Ljava/lang/Object;
 .source "UserDictionarySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/UserDictionarySettings;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/android/OriginalSettings/UserDictionarySettings;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/UserDictionarySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/UserDictionarySettings;
 
 .field final synthetic val$activity:Landroid/app/Activity;
 
@@ -26,7 +26,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UserDictionarySettings;Landroid/widget/EditText;Landroid/app/Activity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/UserDictionarySettings;Landroid/widget/EditText;Landroid/app/Activity;)V
     .locals 0
     .parameter
     .parameter
@@ -34,11 +34,11 @@
 
     .prologue
     .line 251
-    iput-object p1, p0, Lcom/android/settings/UserDictionarySettings$2;->this$0:Lcom/android/settings/UserDictionarySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/UserDictionarySettings$2;->this$0:Lcom/android/OriginalSettings/UserDictionarySettings;
 
-    iput-object p2, p0, Lcom/android/settings/UserDictionarySettings$2;->val$editText:Landroid/widget/EditText;
+    iput-object p2, p0, Lcom/android/OriginalSettings/UserDictionarySettings$2;->val$editText:Landroid/widget/EditText;
 
-    iput-object p3, p0, Lcom/android/settings/UserDictionarySettings$2;->val$activity:Landroid/app/Activity;
+    iput-object p3, p0, Lcom/android/OriginalSettings/UserDictionarySettings$2;->val$activity:Landroid/app/Activity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,9 +54,9 @@
 
     .prologue
     .line 253
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$2;->this$0:Lcom/android/settings/UserDictionarySettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UserDictionarySettings$2;->this$0:Lcom/android/OriginalSettings/UserDictionarySettings;
 
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings$2;->val$editText:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings$2;->val$editText:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -66,20 +66,20 @@
 
     move-result-object v1
 
-    #calls: Lcom/android/settings/UserDictionarySettings;->onAddOrEditFinished(Ljava/lang/String;)V
-    invoke-static {v0, v1}, Lcom/android/settings/UserDictionarySettings;->access$100(Lcom/android/settings/UserDictionarySettings;Ljava/lang/String;)V
+    #calls: Lcom/android/OriginalSettings/UserDictionarySettings;->onAddOrEditFinished(Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/UserDictionarySettings;->access$100(Lcom/android/OriginalSettings/UserDictionarySettings;Ljava/lang/String;)V
 
     .line 254
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$2;->this$0:Lcom/android/settings/UserDictionarySettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UserDictionarySettings$2;->this$0:Lcom/android/OriginalSettings/UserDictionarySettings;
 
-    #getter for: Lcom/android/settings/UserDictionarySettings;->mAutoReturn:Z
-    invoke-static {v0}, Lcom/android/settings/UserDictionarySettings;->access$000(Lcom/android/settings/UserDictionarySettings;)Z
+    #getter for: Lcom/android/OriginalSettings/UserDictionarySettings;->mAutoReturn:Z
+    invoke-static {v0}, Lcom/android/OriginalSettings/UserDictionarySettings;->access$000(Lcom/android/OriginalSettings/UserDictionarySettings;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$2;->val$activity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UserDictionarySettings$2;->val$activity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/motion/MotionSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/motion/MotionSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "MotionSettings.java"
 
 # interfaces
@@ -34,7 +34,7 @@
 
     .prologue
     .line 23
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 158
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -78,14 +78,14 @@
     const/4 v9, 0x0
 
     .line 46
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
-    invoke-static {v5}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v5}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v5
 
@@ -94,17 +94,17 @@
     .line 49
     const v5, 0x7f050041
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->addPreferencesFromResource(I)V
 
     .line 50
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
 
     .line 51
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -112,43 +112,43 @@
     .local v3, mResolver:Landroid/content/ContentResolver;
     const-string v5, "motion_activation"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/CheckBoxPreference;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
 
     .line 53
     const-string v5, "tilt"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/SwitchPreferenceScreen;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mTiltTablet:Landroid/preference/SwitchPreferenceScreen;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mTiltTablet:Landroid/preference/SwitchPreferenceScreen;
 
     .line 54
     const-string v5, "pan"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/SwitchPreferenceScreen;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mPanTablet:Landroid/preference/SwitchPreferenceScreen;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mPanTablet:Landroid/preference/SwitchPreferenceScreen;
 
     .line 55
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mTiltTablet:Landroid/preference/SwitchPreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mTiltTablet:Landroid/preference/SwitchPreferenceScreen;
 
     invoke-virtual {v5, p0}, Landroid/preference/SwitchPreferenceScreen;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 56
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mPanTablet:Landroid/preference/SwitchPreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mPanTablet:Landroid/preference/SwitchPreferenceScreen;
 
     invoke-virtual {v5, p0}, Landroid/preference/SwitchPreferenceScreen;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -158,7 +158,7 @@
     .line 60
     .local v1, isReadersHubDisabled:Z
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v5
 
@@ -178,7 +178,7 @@
     .line 67
     const-string v5, "tilt"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -213,94 +213,94 @@
     :cond_1
     const v5, 0x7f05001f
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->addPreferencesFromResource(I)V
 
     .line 71
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
 
     .line 72
     const-string v5, "motion_activation"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/CheckBoxPreference;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
 
     .line 73
     const-string v5, "tilt"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/PreferenceScreen;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mTilt:Landroid/preference/PreferenceScreen;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mTilt:Landroid/preference/PreferenceScreen;
 
     .line 74
     const-string v5, "pan"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/PreferenceScreen;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mPan:Landroid/preference/PreferenceScreen;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mPan:Landroid/preference/PreferenceScreen;
 
     .line 75
     const-string v5, "shake"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/PreferenceScreen;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mShake:Landroid/preference/PreferenceScreen;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mShake:Landroid/preference/PreferenceScreen;
 
     .line 76
     const-string v5, "double_tap"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/PreferenceScreen;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mDoubleTap:Landroid/preference/PreferenceScreen;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mDoubleTap:Landroid/preference/PreferenceScreen;
 
     .line 77
     const-string v5, "pick_up"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/PreferenceScreen;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mPickUp:Landroid/preference/PreferenceScreen;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mPickUp:Landroid/preference/PreferenceScreen;
 
     .line 78
     const-string v5, "turn_over"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/OriginalSettings/motion/MotionSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/PreferenceScreen;
 
-    iput-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mTurnOver:Landroid/preference/PreferenceScreen;
+    iput-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mTurnOver:Landroid/preference/PreferenceScreen;
 
     .line 79
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mDoubleTap:Landroid/preference/PreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mDoubleTap:Landroid/preference/PreferenceScreen;
 
     const v6, 0x7f0b07d6
 
@@ -310,26 +310,26 @@
 
     const v8, 0x7f0b07fe
 
-    invoke-virtual {p0, v8}, Lcom/android/settings/motion/MotionSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/OriginalSettings/motion/MotionSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v8
 
     aput-object v8, v7, v9
 
-    invoke-virtual {p0, v6, v7}, Lcom/android/settings/motion/MotionSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v6, v7}, Lcom/android/OriginalSettings/motion/MotionSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v6
 
     invoke-virtual {v5, v6}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
     .line 83
     .local v4, ps:Landroid/preference/PreferenceScreen;
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -346,13 +346,13 @@
     if-nez v5, :cond_2
 
     .line 84
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mTilt:Landroid/preference/PreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mTilt:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 86
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -369,13 +369,13 @@
     if-nez v5, :cond_3
 
     .line 87
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mPan:Landroid/preference/PreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mPan:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 89
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -413,13 +413,13 @@
     if-nez v5, :cond_4
 
     .line 91
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mShake:Landroid/preference/PreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mShake:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 93
     :cond_4
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -457,14 +457,14 @@
 
     .line 94
     :cond_5
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mDoubleTap:Landroid/preference/PreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mDoubleTap:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 114
     :cond_6
     :goto_2
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -481,13 +481,13 @@
     if-nez v5, :cond_7
 
     .line 115
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mPickUp:Landroid/preference/PreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mPickUp:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 117
     :cond_7
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -503,11 +503,11 @@
 
     if-eqz v5, :cond_8
 
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
-    invoke-static {v5}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v5}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v5
 
@@ -515,7 +515,7 @@
 
     .line 118
     :cond_8
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mTurnOver:Landroid/preference/PreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mTurnOver:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -528,7 +528,7 @@
     .line 102
     .local v2, isVlingoInstalled:Z
     :try_start_1
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -550,7 +550,7 @@
     if-nez v2, :cond_6
 
     .line 110
-    iget-object v5, p0, Lcom/android/settings/motion/MotionSettings;->mDoubleTap:Landroid/preference/PreferenceScreen;
+    iget-object v5, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mDoubleTap:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -615,12 +615,12 @@
     .line 147
     .local v0, value:I
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/motion/MotionSettings;->mTiltTablet:Landroid/preference/SwitchPreferenceScreen;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mTiltTablet:Landroid/preference/SwitchPreferenceScreen;
 
     if-ne p1, v2, :cond_2
 
     .line 148
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -643,12 +643,12 @@
     .line 149
     .restart local v0       #value:I
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/motion/MotionSettings;->mPanTablet:Landroid/preference/SwitchPreferenceScreen;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mPanTablet:Landroid/preference/SwitchPreferenceScreen;
 
     if-ne p1, v2, :cond_0
 
     .line 150
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -668,18 +668,18 @@
     const/4 v1, 0x1
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_1
 
     .line 138
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
     const-string v3, "motion_engine"
 
-    iget-object v0, p0, Lcom/android/settings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -693,13 +693,13 @@
     invoke-static {v2, v3, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 139
-    iget-object v0, p0, Lcom/android/settings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/motion/MotionSettings;->broadcastMotionChanged(Z)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/motion/MotionSettings;->broadcastMotionChanged(Z)V
 
     .line 142
     :goto_1
@@ -713,7 +713,7 @@
 
     .line 142
     :cond_1
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v1
 
@@ -729,19 +729,19 @@
     const/4 v2, 0x0
 
     .line 125
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 126
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
 
     .line 128
-    iget-object v3, p0, Lcom/android/settings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mMotions:Landroid/preference/CheckBoxPreference;
 
-    iget-object v0, p0, Lcom/android/settings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
 
     const-string v4, "motion_engine"
 
@@ -757,20 +757,20 @@
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 129
-    invoke-virtual {p0}, Lcom/android/settings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/motion/MotionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 130
-    iget-object v3, p0, Lcom/android/settings/motion/MotionSettings;->mTiltTablet:Landroid/preference/SwitchPreferenceScreen;
+    iget-object v3, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mTiltTablet:Landroid/preference/SwitchPreferenceScreen;
 
-    iget-object v0, p0, Lcom/android/settings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
 
     const-string v4, "motion_zooming"
 
@@ -786,9 +786,9 @@
     invoke-virtual {v3, v0}, Landroid/preference/SwitchPreferenceScreen;->setChecked(Z)V
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/motion/MotionSettings;->mPanTablet:Landroid/preference/SwitchPreferenceScreen;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mPanTablet:Landroid/preference/SwitchPreferenceScreen;
 
-    iget-object v3, p0, Lcom/android/settings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
+    iget-object v3, p0, Lcom/android/OriginalSettings/motion/MotionSettings;->mResolver:Landroid/content/ContentResolver;
 
     const-string v4, "motion_panning"
 

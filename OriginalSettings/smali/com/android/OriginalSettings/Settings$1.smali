@@ -1,4 +1,4 @@
-.class Lcom/android/settings/Settings$1;
+.class Lcom/android/OriginalSettings/Settings$1;
 .super Ljava/lang/Object;
 .source "Settings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/Settings;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/Settings;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/Settings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/Settings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/Settings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/Settings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 122
-    iput-object p1, p0, Lcom/android/settings/Settings$1;->this$0:Lcom/android/settings/Settings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/Settings$1;->this$0:Lcom/android/OriginalSettings/Settings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,19 +43,19 @@
 
     .prologue
     .line 124
-    iget-object v0, p0, Lcom/android/settings/Settings$1;->this$0:Lcom/android/settings/Settings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings$1;->this$0:Lcom/android/OriginalSettings/Settings;
 
-    iget-object v1, p0, Lcom/android/settings/Settings$1;->this$0:Lcom/android/settings/Settings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/Settings$1;->this$0:Lcom/android/OriginalSettings/Settings;
 
-    #getter for: Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
-    invoke-static {v1}, Lcom/android/settings/Settings;->access$000(Lcom/android/settings/Settings;)Landroid/preference/PreferenceActivity$Header;
+    #getter for: Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    invoke-static {v1}, Lcom/android/OriginalSettings/Settings;->access$000(Lcom/android/OriginalSettings/Settings;)Landroid/preference/PreferenceActivity$Header;
 
     move-result-object v1
 
     iget-object v1, v1, Landroid/preference/PreferenceActivity$Header;->fragment:Ljava/lang/String;
 
-    #calls: Lcom/android/settings/Settings;->switchToParent(Ljava/lang/String;)V
-    invoke-static {v0, v1}, Lcom/android/settings/Settings;->access$100(Lcom/android/settings/Settings;Ljava/lang/String;)V
+    #calls: Lcom/android/OriginalSettings/Settings;->switchToParent(Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/Settings;->access$100(Lcom/android/OriginalSettings/Settings;Ljava/lang/String;)V
 
     .line 125
     return-void

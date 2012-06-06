@@ -1,14 +1,14 @@
-.class final Lcom/android/settings/applications/ApplicationsState$5;
+.class final Lcom/android/OriginalSettings/applications/ApplicationsState$5;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 
 # interfaces
-.implements Lcom/android/settings/applications/ApplicationsState$AppFilter;
+.implements Lcom/android/OriginalSettings/applications/ApplicationsState$AppFilter;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ApplicationsState;
+    value = Lcom/android/OriginalSettings/applications/ApplicationsState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

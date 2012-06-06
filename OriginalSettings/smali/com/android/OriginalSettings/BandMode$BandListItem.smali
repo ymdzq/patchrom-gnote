@@ -1,11 +1,11 @@
-.class Lcom/android/settings/BandMode$BandListItem;
+.class Lcom/android/OriginalSettings/BandMode$BandListItem;
 .super Ljava/lang/Object;
 .source "BandMode.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/BandMode;
+    value = Lcom/android/OriginalSettings/BandMode;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,10 +30,10 @@
     .line 101
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/BandMode$BandListItem;->mBandMode:I
+    iput v0, p0, Lcom/android/OriginalSettings/BandMode$BandListItem;->mBandMode:I
 
     .line 104
-    iput p1, p0, Lcom/android/settings/BandMode$BandListItem;->mBandMode:I
+    iput p1, p0, Lcom/android/OriginalSettings/BandMode$BandListItem;->mBandMode:I
 
     .line 105
     return-void
@@ -46,7 +46,7 @@
 
     .prologue
     .line 108
-    iget v0, p0, Lcom/android/settings/BandMode$BandListItem;->mBandMode:I
+    iget v0, p0, Lcom/android/OriginalSettings/BandMode$BandListItem;->mBandMode:I
 
     return v0
 .end method
@@ -56,11 +56,11 @@
 
     .prologue
     .line 112
-    invoke-static {}, Lcom/android/settings/BandMode;->access$300()[Ljava/lang/String;
+    invoke-static {}, Lcom/android/OriginalSettings/BandMode;->access$300()[Ljava/lang/String;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/BandMode$BandListItem;->mBandMode:I
+    iget v1, p0, Lcom/android/OriginalSettings/BandMode$BandListItem;->mBandMode:I
 
     aget-object v0, v0, v1
 

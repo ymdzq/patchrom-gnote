@@ -1,4 +1,4 @@
-.class Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$2;
+.class Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$2;
 .super Ljava/lang/Object;
 .source "MenuPowerSavingModeSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    value = Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
 
 .field final synthetic val$not_show_again:Landroid/widget/CheckBox;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;Landroid/widget/CheckBox;)V
+.method constructor <init>(Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;Landroid/widget/CheckBox;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 161
-    iput-object p1, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$2;->this$0:Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$2;->this$0:Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
 
-    iput-object p2, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$2;->val$not_show_again:Landroid/widget/CheckBox;
+    iput-object p2, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$2;->val$not_show_again:Landroid/widget/CheckBox;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,21 +48,21 @@
 
     .prologue
     .line 163
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$2;->val$not_show_again:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$2;->val$not_show_again:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->toggle()V
 
     .line 164
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$2;->this$0:Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$2;->this$0:Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
 
-    #calls: Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v0}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->access$100(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->access$100(Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/content/ContentResolver;
 
     move-result-object v1
 
     const-string v2, "powersaving_help_not_show_again"
 
-    iget-object v0, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$2;->val$not_show_again:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$2;->val$not_show_again:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -88,7 +88,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$2;->val$not_show_again:Landroid/widget/CheckBox;
+    iget-object v2, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$2;->val$not_show_again:Landroid/widget/CheckBox;
 
     invoke-virtual {v2}, Landroid/widget/CheckBox;->isChecked()Z
 

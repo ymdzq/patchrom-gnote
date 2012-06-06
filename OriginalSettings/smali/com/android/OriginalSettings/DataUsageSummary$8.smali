@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DataUsageSummary$8;
+.class Lcom/android/OriginalSettings/DataUsageSummary$8;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/OriginalSettings/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DataUsageSummary;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DataUsageSummary;)V
     .locals 0
     .parameter
 
     .prologue
     .line 1095
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$8;->this$0:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DataUsageSummary$8;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,16 +43,16 @@
 
     .prologue
     .line 1099
-    iget-object v0, p0, Lcom/android/settings/DataUsageSummary$8;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DataUsageSummary$8;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$8;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$8;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    #getter for: Lcom/android/settings/DataUsageSummary;->mAppSettingsIntent:Landroid/content/Intent;
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->access$1900(Lcom/android/settings/DataUsageSummary;)Landroid/content/Intent;
+    #getter for: Lcom/android/OriginalSettings/DataUsageSummary;->mAppSettingsIntent:Landroid/content/Intent;
+    invoke-static {v1}, Lcom/android/OriginalSettings/DataUsageSummary;->access$1900(Lcom/android/OriginalSettings/DataUsageSummary;)Landroid/content/Intent;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/DataUsageSummary;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/DataUsageSummary;->startActivity(Landroid/content/Intent;)V
 
     .line 1100
     return-void

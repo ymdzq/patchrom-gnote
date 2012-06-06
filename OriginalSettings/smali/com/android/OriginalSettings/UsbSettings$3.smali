@@ -1,4 +1,4 @@
-.class Lcom/android/settings/UsbSettings$3;
+.class Lcom/android/OriginalSettings/UsbSettings$3;
 .super Ljava/lang/Object;
 .source "UsbSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/UsbSettings;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lcom/android/OriginalSettings/UsbSettings;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/UsbSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/UsbSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UsbSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/UsbSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 154
-    iput-object p1, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,9 +47,9 @@
     const/4 v4, 0x2
 
     .line 157
-    iget-object v2, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -70,11 +70,11 @@
     if-ne v2, v4, :cond_0
 
     .line 159
-    iget-object v2, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
     const/4 v3, 0x4
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/UsbSettings;->showDialog(I)V
+    invoke-virtual {v2, v3}, Lcom/android/OriginalSettings/UsbSettings;->showDialog(I)V
 
     .line 174
     :goto_0
@@ -82,9 +82,9 @@
 
     .line 161
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/UsbSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/UsbSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -97,25 +97,25 @@
     if-eqz v2, :cond_1
 
     .line 163
-    iget-object v2, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
     const/4 v3, 0x1
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/UsbSettings;->showDialog(I)V
+    invoke-virtual {v2, v3}, Lcom/android/OriginalSettings/UsbSettings;->showDialog(I)V
 
     goto :goto_0
 
     .line 165
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    invoke-virtual {v2, v4}, Lcom/android/settings/UsbSettings;->showDialog(I)V
+    invoke-virtual {v2, v4}, Lcom/android/OriginalSettings/UsbSettings;->showDialog(I)V
 
     .line 167
-    iget-object v2, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    #getter for: Lcom/android/settings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
-    invoke-static {v2}, Lcom/android/settings/UsbSettings;->access$300(Lcom/android/settings/UsbSettings;)Landroid/hardware/usb/UsbManager;
+    #getter for: Lcom/android/OriginalSettings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
+    invoke-static {v2}, Lcom/android/OriginalSettings/UsbSettings;->access$300(Lcom/android/OriginalSettings/UsbSettings;)Landroid/hardware/usb/UsbManager;
 
     move-result-object v2
 
@@ -124,9 +124,9 @@
     invoke-virtual {v2, v3, v5}, Landroid/hardware/usb/UsbManager;->setCurrentFunction(Ljava/lang/String;Z)V
 
     .line 168
-    iget-object v2, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/UsbSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/UsbSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -146,16 +146,16 @@
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 171
-    iget-object v2, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/UsbSettings$3;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/UsbSettings$3;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    #getter for: Lcom/android/settings/UsbSettings;->mBatteryReceiver:Landroid/content/BroadcastReceiver;
-    invoke-static {v3}, Lcom/android/settings/UsbSettings;->access$100(Lcom/android/settings/UsbSettings;)Landroid/content/BroadcastReceiver;
+    #getter for: Lcom/android/OriginalSettings/UsbSettings;->mBatteryReceiver:Landroid/content/BroadcastReceiver;
+    invoke-static {v3}, Lcom/android/OriginalSettings/UsbSettings;->access$100(Lcom/android/OriginalSettings/UsbSettings;)Landroid/content/BroadcastReceiver;
 
     move-result-object v3
 

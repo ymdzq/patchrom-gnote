@@ -1,11 +1,11 @@
-.class Lcom/android/settings/motion/DoubleTapSettings$1;
+.class Lcom/android/OriginalSettings/motion/DoubleTapSettings$1;
 .super Landroid/os/Handler;
 .source "DoubleTapSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/motion/DoubleTapSettings;
+    value = Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/DoubleTapSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/DoubleTapSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/DoubleTapSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/android/settings/motion/DoubleTapSettings$1;->this$0:Lcom/android/settings/motion/DoubleTapSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/DoubleTapSettings$1;->this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -50,10 +50,10 @@
 
     .line 59
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapSettings$1;->this$0:Lcom/android/settings/motion/DoubleTapSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapSettings$1;->this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
-    #calls: Lcom/android/settings/motion/DoubleTapSettings;->updateAnimation()V
-    invoke-static {v0}, Lcom/android/settings/motion/DoubleTapSettings;->access$000(Lcom/android/settings/motion/DoubleTapSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/DoubleTapSettings;->updateAnimation()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/DoubleTapSettings;->access$000(Lcom/android/OriginalSettings/motion/DoubleTapSettings;)V
 
     goto :goto_0
 

@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/bluetooth/LocalBluetoothProfileManager$ServiceListener;
+.class public interface abstract Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfileManager$ServiceListener;
 .super Ljava/lang/Object;
 .source "LocalBluetoothProfileManager.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
+    value = Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfileManager;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

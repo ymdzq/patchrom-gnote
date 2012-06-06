@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/BatteryHistoryDetail;
+.class public Lcom/android/OriginalSettings/fuelgauge/BatteryHistoryDetail;
 .super Landroid/app/Fragment;
 .source "BatteryHistoryDetail.java"
 
@@ -31,7 +31,7 @@
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 37
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatteryHistoryDetail;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/BatteryHistoryDetail;->getArguments()Landroid/os/Bundle;
 
     move-result-object v2
 
@@ -65,7 +65,7 @@
 
     check-cast v2, Lcom/android/internal/os/BatteryStatsImpl;
 
-    iput-object v2, p0, Lcom/android/settings/fuelgauge/BatteryHistoryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
+    iput-object v2, p0, Lcom/android/OriginalSettings/fuelgauge/BatteryHistoryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
     .line 43
     return-void
@@ -95,13 +95,13 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/fuelgauge/BatteryHistoryChart;
+    check-cast v0, Lcom/android/OriginalSettings/fuelgauge/BatteryHistoryChart;
 
     .line 50
-    .local v0, chart:Lcom/android/settings/fuelgauge/BatteryHistoryChart;
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/BatteryHistoryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
+    .local v0, chart:Lcom/android/OriginalSettings/fuelgauge/BatteryHistoryChart;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fuelgauge/BatteryHistoryDetail;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/fuelgauge/BatteryHistoryChart;->setStats(Landroid/os/BatteryStats;)V
+    invoke-virtual {v0, v2}, Lcom/android/OriginalSettings/fuelgauge/BatteryHistoryChart;->setStats(Landroid/os/BatteryStats;)V
 
     .line 51
     return-object v1

@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/fmm/RemoteControls$FragmentAccount;
+.class public Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentAccount;
 .super Landroid/preference/PreferenceFragment;
 .source "RemoteControls.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fmm/RemoteControls;
+    value = Lcom/android/OriginalSettings/fmm/RemoteControls;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,7 +35,7 @@
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onResume()V
 
     .line 149
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$FragmentAccount;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentAccount;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -50,17 +50,17 @@
     :cond_0
     const v2, 0x7f050014
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/fmm/RemoteControls$FragmentAccount;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentAccount;->addPreferencesFromResource(I)V
 
     .line 154
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$FragmentAccount;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentAccount;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     .line 156
     new-instance v0, Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$FragmentAccount;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentAccount;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 

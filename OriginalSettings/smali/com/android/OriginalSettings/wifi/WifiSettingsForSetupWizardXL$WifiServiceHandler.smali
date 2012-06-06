@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$WifiServiceHandler;
+.class Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL$WifiServiceHandler;
 .super Landroid/os/Handler;
 .source "WifiSettingsForSetupWizardXL.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+    value = Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,31 +15,31 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;)V
     .locals 0
     .parameter
 
     .prologue
     .line 215
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$WifiServiceHandler;->this$0:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL$WifiServiceHandler;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 215
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$WifiServiceHandler;-><init>(Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL$WifiServiceHandler;-><init>(Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;)V
 
     return-void
 .end method

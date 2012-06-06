@@ -1,4 +1,4 @@
-.class Lcom/android/settings/AppWidgetPickActivity$1;
+.class Lcom/android/OriginalSettings/AppWidgetPickActivity$1;
 .super Ljava/lang/Object;
 .source "AppWidgetPickActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/AppWidgetPickActivity;->getItems()Ljava/util/List;
+    value = Lcom/android/OriginalSettings/AppWidgetPickActivity;->getItems()Ljava/util/List;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/ActivityPicker$PickAdapter$Item;",
+        "Lcom/android/OriginalSettings/ActivityPicker$PickAdapter$Item;",
         ">;"
     }
 .end annotation
@@ -30,17 +30,17 @@
 # instance fields
 .field mCollator:Ljava/text/Collator;
 
-.field final synthetic this$0:Lcom/android/settings/AppWidgetPickActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/AppWidgetPickActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AppWidgetPickActivity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/AppWidgetPickActivity;)V
     .locals 1
     .parameter
 
     .prologue
     .line 212
-    iput-object p1, p0, Lcom/android/settings/AppWidgetPickActivity$1;->this$0:Lcom/android/settings/AppWidgetPickActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/AppWidgetPickActivity$1;->this$0:Lcom/android/OriginalSettings/AppWidgetPickActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,25 +49,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/AppWidgetPickActivity$1;->mCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/OriginalSettings/AppWidgetPickActivity$1;->mCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/ActivityPicker$PickAdapter$Item;Lcom/android/settings/ActivityPicker$PickAdapter$Item;)I
+.method public compare(Lcom/android/OriginalSettings/ActivityPicker$PickAdapter$Item;Lcom/android/OriginalSettings/ActivityPicker$PickAdapter$Item;)I
     .locals 3
     .parameter "lhs"
     .parameter "rhs"
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/android/settings/AppWidgetPickActivity$1;->mCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/OriginalSettings/AppWidgetPickActivity$1;->mCollator:Ljava/text/Collator;
 
-    iget-object v1, p1, Lcom/android/settings/ActivityPicker$PickAdapter$Item;->label:Ljava/lang/CharSequence;
+    iget-object v1, p1, Lcom/android/OriginalSettings/ActivityPicker$PickAdapter$Item;->label:Ljava/lang/CharSequence;
 
-    iget-object v2, p2, Lcom/android/settings/ActivityPicker$PickAdapter$Item;->label:Ljava/lang/CharSequence;
+    iget-object v2, p2, Lcom/android/OriginalSettings/ActivityPicker$PickAdapter$Item;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1, v2}, Ljava/text/Collator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
@@ -83,13 +83,13 @@
 
     .prologue
     .line 212
-    check-cast p1, Lcom/android/settings/ActivityPicker$PickAdapter$Item;
+    check-cast p1, Lcom/android/OriginalSettings/ActivityPicker$PickAdapter$Item;
 
     .end local p1
-    check-cast p2, Lcom/android/settings/ActivityPicker$PickAdapter$Item;
+    check-cast p2, Lcom/android/OriginalSettings/ActivityPicker$PickAdapter$Item;
 
     .end local p2
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/AppWidgetPickActivity$1;->compare(Lcom/android/settings/ActivityPicker$PickAdapter$Item;Lcom/android/settings/ActivityPicker$PickAdapter$Item;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/OriginalSettings/AppWidgetPickActivity$1;->compare(Lcom/android/OriginalSettings/ActivityPicker$PickAdapter$Item;Lcom/android/OriginalSettings/ActivityPicker$PickAdapter$Item;)I
 
     move-result v0
 

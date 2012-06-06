@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/net/NetworkPolicyEditor;
+.class public Lcom/android/OriginalSettings/net/NetworkPolicyEditor;
 .super Ljava/lang/Object;
 .source "NetworkPolicyEditor.java"
 
@@ -32,7 +32,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     .line 57
     invoke-static {p1}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -41,7 +41,7 @@
 
     check-cast v0, Landroid/net/INetworkPolicyManager;
 
-    iput-object v0, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicyService:Landroid/net/INetworkPolicyManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicyService:Landroid/net/INetworkPolicyManager;
 
     .line 58
     return-void
@@ -92,7 +92,7 @@
 
     .line 190
     .local v4, subscriberIds:Ljava/util/HashSet;,"Ljava/util/HashSet<Ljava/lang/String;>;"
-    iget-object v5, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -152,7 +152,7 @@
     .local v3, subscriberId:Ljava/lang/String;
     const/4 v5, 0x0
 
-    invoke-direct {p0, v3, v5}, Lcom/android/settings/net/NetworkPolicyEditor;->setMobilePolicySplitInternal(Ljava/lang/String;Z)Z
+    invoke-direct {p0, v3, v5}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->setMobilePolicySplitInternal(Ljava/lang/String;Z)Z
 
     move-result v5
 
@@ -173,7 +173,7 @@
 
     .prologue
     .line 233
-    invoke-virtual/range {p0 .. p1}, Lcom/android/settings/net/NetworkPolicyEditor;->isMobilePolicySplit(Ljava/lang/String;)Z
+    invoke-virtual/range {p0 .. p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->isMobilePolicySplit(Ljava/lang/String;)Z
 
     move-result v15
 
@@ -219,7 +219,7 @@
     .line 245
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {v0, v5}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v16
 
@@ -229,7 +229,7 @@
 
     move-object/from16 v1, v20
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v17
 
@@ -248,7 +248,7 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     move-object/from16 v0, v16
 
@@ -257,7 +257,7 @@
     .line 251
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     move-object/from16 v0, v17
 
@@ -266,7 +266,7 @@
     .line 252
     move-object/from16 v0, p0
 
-    iget-object v11, v0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v11, v0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     new-instance v2, Landroid/net/NetworkPolicy;
 
@@ -313,7 +313,7 @@
     .line 259
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {v0, v3}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v18
 
@@ -321,7 +321,7 @@
     .local v18, policyAll:Landroid/net/NetworkPolicy;
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     move-object/from16 v0, v18
 
@@ -330,7 +330,7 @@
     .line 261
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     new-instance v4, Landroid/net/NetworkPolicy;
 
@@ -355,7 +355,7 @@
     .line 264
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     new-instance v6, Landroid/net/NetworkPolicy;
 
@@ -400,7 +400,7 @@
 
     .prologue
     .line 125
-    invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -409,12 +409,12 @@
     if-nez v0, :cond_0
 
     .line 127
-    invoke-static {p1}, Lcom/android/settings/net/NetworkPolicyEditor;->buildDefaultPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-static {p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->buildDefaultPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
     .line 128
-    iget-object v1, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -429,7 +429,7 @@
 
     .prologue
     .line 134
-    iget-object v2, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -476,7 +476,7 @@
 
     .prologue
     .line 153
-    invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -491,7 +491,7 @@
 
     .prologue
     .line 175
-    invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -506,7 +506,7 @@
 
     .prologue
     .line 164
-    invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -521,7 +521,7 @@
 
     .prologue
     .line 120
-    invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -562,7 +562,7 @@
 
     .line 204
     .local v1, has4g:Z
-    iget-object v5, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v5, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -655,7 +655,7 @@
 
     .line 63
     :try_start_0
-    iget-object v7, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicyService:Landroid/net/INetworkPolicyManager;
+    iget-object v7, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicyService:Landroid/net/INetworkPolicyManager;
 
     invoke-interface {v7}, Landroid/net/INetworkPolicyManager;->getNetworkPolicies()[Landroid/net/NetworkPolicy;
     :try_end_0
@@ -669,7 +669,7 @@
 
     .line 69
     .local v4, modified:Z
-    iget-object v7, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     invoke-virtual {v7}, Ljava/util/ArrayList;->clear()V
 
@@ -766,7 +766,7 @@
     .restart local v5       #policies:[Landroid/net/NetworkPolicy;
     .restart local v6       #policy:Landroid/net/NetworkPolicy;
     :cond_2
-    iget-object v7, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v7, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -775,7 +775,7 @@
     .line 92
     .end local v6           #policy:Landroid/net/NetworkPolicy;
     :cond_3
-    invoke-direct {p0}, Lcom/android/settings/net/NetworkPolicyEditor;->forceMobilePolicyCombined()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->forceMobilePolicyCombined()Z
 
     move-result v7
 
@@ -784,7 +784,7 @@
     .line 96
     if-eqz v4, :cond_4
 
-    invoke-virtual {p0}, Lcom/android/settings/net/NetworkPolicyEditor;->writeAsync()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->writeAsync()V
 
     .line 97
     :cond_4
@@ -798,14 +798,14 @@
 
     .prologue
     .line 221
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/net/NetworkPolicyEditor;->setMobilePolicySplitInternal(Ljava/lang/String;Z)Z
+    invoke-direct {p0, p1, p2}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->setMobilePolicySplitInternal(Ljava/lang/String;Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 222
-    invoke-virtual {p0}, Lcom/android/settings/net/NetworkPolicyEditor;->writeAsync()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->writeAsync()V
 
     .line 224
     :cond_0
@@ -819,7 +819,7 @@
 
     .prologue
     .line 157
-    invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -833,7 +833,7 @@
     iput-wide v1, v0, Landroid/net/NetworkPolicy;->lastSnooze:J
 
     .line 160
-    invoke-virtual {p0}, Lcom/android/settings/net/NetworkPolicyEditor;->writeAsync()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->writeAsync()V
 
     .line 161
     return-void
@@ -846,7 +846,7 @@
 
     .prologue
     .line 179
-    invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -860,7 +860,7 @@
     iput-wide v1, v0, Landroid/net/NetworkPolicy;->lastSnooze:J
 
     .line 182
-    invoke-virtual {p0}, Lcom/android/settings/net/NetworkPolicyEditor;->writeAsync()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->writeAsync()V
 
     .line 183
     return-void
@@ -873,7 +873,7 @@
 
     .prologue
     .line 168
-    invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -887,7 +887,7 @@
     iput-wide v1, v0, Landroid/net/NetworkPolicy;->lastSnooze:J
 
     .line 171
-    invoke-virtual {p0}, Lcom/android/settings/net/NetworkPolicyEditor;->writeAsync()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->writeAsync()V
 
     .line 172
     return-void
@@ -900,7 +900,7 @@
     .prologue
     .line 113
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicyService:Landroid/net/INetworkPolicyManager;
+    iget-object v1, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicyService:Landroid/net/INetworkPolicyManager;
 
     invoke-interface {v1, p1}, Landroid/net/INetworkPolicyManager;->setNetworkPolicies([Landroid/net/NetworkPolicy;)V
     :try_end_0
@@ -929,9 +929,9 @@
 
     .prologue
     .line 101
-    iget-object v1, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
-    iget-object v2, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/OriginalSettings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -947,15 +947,15 @@
 
     .line 102
     .local v0, policies:[Landroid/net/NetworkPolicy;
-    new-instance v1, Lcom/android/settings/net/NetworkPolicyEditor$1;
+    new-instance v1, Lcom/android/OriginalSettings/net/NetworkPolicyEditor$1;
 
-    invoke-direct {v1, p0, v0}, Lcom/android/settings/net/NetworkPolicyEditor$1;-><init>(Lcom/android/settings/net/NetworkPolicyEditor;[Landroid/net/NetworkPolicy;)V
+    invoke-direct {v1, p0, v0}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor$1;-><init>(Lcom/android/OriginalSettings/net/NetworkPolicyEditor;[Landroid/net/NetworkPolicy;)V
 
     const/4 v2, 0x0
 
     new-array v2, v2, [Ljava/lang/Void;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/net/NetworkPolicyEditor$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v2}, Lcom/android/OriginalSettings/net/NetworkPolicyEditor$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 109
     return-void

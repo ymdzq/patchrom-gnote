@@ -1,11 +1,11 @@
-.class Lcom/android/settings/bluetooth/BluetoothEnablingActivity$2;
+.class Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity$2;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothEnablingActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothEnablingActivity;
+    value = Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/BluetoothEnablingActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothEnablingActivity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;)V
     .locals 0
     .parameter
 
     .prologue
     .line 121
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothEnablingActivity$2;->this$0:Lcom/android/settings/bluetooth/BluetoothEnablingActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity$2;->this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -96,10 +96,10 @@
 
     .line 129
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothEnablingActivity$2;->this$0:Lcom/android/settings/bluetooth/BluetoothEnablingActivity;
+    iget-object v1, p0, Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity$2;->this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;
 
-    #getter for: Lcom/android/settings/bluetooth/BluetoothEnablingActivity;->mTimeoutHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/android/settings/bluetooth/BluetoothEnablingActivity;->access$000(Lcom/android/settings/bluetooth/BluetoothEnablingActivity;)Landroid/os/Handler;
+    #getter for: Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;->mTimeoutHandler:Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;->access$000(Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -108,9 +108,9 @@
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 130
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothEnablingActivity$2;->this$0:Lcom/android/settings/bluetooth/BluetoothEnablingActivity;
+    iget-object v1, p0, Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity$2;->this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;
 
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/BluetoothEnablingActivity;->finish()V
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;->finish()V
 
     goto :goto_0
 

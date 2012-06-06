@@ -1,11 +1,11 @@
-.class interface abstract Lcom/android/settings/EditPinPreference$OnPinEnteredListener;
+.class interface abstract Lcom/android/OriginalSettings/EditPinPreference$OnPinEnteredListener;
 .super Ljava/lang/Object;
 .source "EditPinPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/EditPinPreference;
+    value = Lcom/android/OriginalSettings/EditPinPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract onPinEntered(Lcom/android/settings/EditPinPreference;Z)V
+.method public abstract onPinEntered(Lcom/android/OriginalSettings/EditPinPreference;Z)V
 .end method

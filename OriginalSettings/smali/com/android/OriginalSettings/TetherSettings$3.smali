@@ -1,4 +1,4 @@
-.class Lcom/android/settings/TetherSettings$3;
+.class Lcom/android/OriginalSettings/TetherSettings$3;
 .super Ljava/lang/Object;
 .source "TetherSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/TetherSettings;->showAttentionDialog()V
+    value = Lcom/android/OriginalSettings/TetherSettings;->showAttentionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/TetherSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/TetherSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TetherSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/TetherSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 963
-    iput-object p1, p0, Lcom/android/settings/TetherSettings$3;->this$0:Lcom/android/settings/TetherSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/TetherSettings$3;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,10 +46,10 @@
     const/4 v1, 0x0
 
     .line 967
-    iget-object v0, p0, Lcom/android/settings/TetherSettings$3;->this$0:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TetherSettings$3;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
-    #getter for: Lcom/android/settings/TetherSettings;->mTetherChoice:I
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->access$700(Lcom/android/settings/TetherSettings;)I
+    #getter for: Lcom/android/OriginalSettings/TetherSettings;->mTetherChoice:I
+    invoke-static {v0}, Lcom/android/OriginalSettings/TetherSettings;->access$700(Lcom/android/OriginalSettings/TetherSettings;)I
 
     move-result v0
 
@@ -57,22 +57,22 @@
 
     .line 975
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/TetherSettings$3;->this$0:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TetherSettings$3;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
     const/4 v1, -0x1
 
-    #setter for: Lcom/android/settings/TetherSettings;->mTetherChoice:I
-    invoke-static {v0, v1}, Lcom/android/settings/TetherSettings;->access$702(Lcom/android/settings/TetherSettings;I)I
+    #setter for: Lcom/android/OriginalSettings/TetherSettings;->mTetherChoice:I
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/TetherSettings;->access$702(Lcom/android/OriginalSettings/TetherSettings;I)I
 
     .line 976
     return-void
 
     .line 969
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/TetherSettings$3;->this$0:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TetherSettings$3;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
-    #getter for: Lcom/android/settings/TetherSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->access$800(Lcom/android/settings/TetherSettings;)Landroid/preference/CheckBoxPreference;
+    #getter for: Lcom/android/OriginalSettings/TetherSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
+    invoke-static {v0}, Lcom/android/OriginalSettings/TetherSettings;->access$800(Lcom/android/OriginalSettings/TetherSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v0
 
@@ -82,10 +82,10 @@
 
     .line 972
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/TetherSettings$3;->this$0:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TetherSettings$3;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
-    #getter for: Lcom/android/settings/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->access$900(Lcom/android/settings/TetherSettings;)Landroid/preference/CheckBoxPreference;
+    #getter for: Lcom/android/OriginalSettings/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
+    invoke-static {v0}, Lcom/android/OriginalSettings/TetherSettings;->access$900(Lcom/android/OriginalSettings/TetherSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v0
 

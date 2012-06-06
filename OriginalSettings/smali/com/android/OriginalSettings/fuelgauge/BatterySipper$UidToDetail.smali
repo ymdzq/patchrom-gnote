@@ -1,11 +1,11 @@
-.class Lcom/android/settings/fuelgauge/BatterySipper$UidToDetail;
+.class Lcom/android/OriginalSettings/fuelgauge/BatterySipper$UidToDetail;
 .super Ljava/lang/Object;
 .source "BatterySipper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fuelgauge/BatterySipper;
+    value = Lcom/android/OriginalSettings/fuelgauge/BatterySipper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

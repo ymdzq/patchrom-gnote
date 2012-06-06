@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DisplaySettings$1;
+.class Lcom/android/OriginalSettings/DisplaySettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "DisplaySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DisplaySettings;
+    value = Lcom/android/OriginalSettings/DisplaySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DisplaySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DisplaySettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DisplaySettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 131
-    iput-object p1, p0, Lcom/android/settings/DisplaySettings$1;->this$0:Lcom/android/settings/DisplaySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DisplaySettings$1;->this$0:Lcom/android/OriginalSettings/DisplaySettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -117,14 +117,14 @@
     if-ne v1, v2, :cond_1
 
     .line 140
-    iget-object v2, p0, Lcom/android/settings/DisplaySettings$1;->this$0:Lcom/android/settings/DisplaySettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DisplaySettings$1;->this$0:Lcom/android/OriginalSettings/DisplaySettings;
 
-    #getter for: Lcom/android/settings/DisplaySettings;->mBrightnessPreference:Lcom/android/settings/BrightnessPreference;
-    invoke-static {v2}, Lcom/android/settings/DisplaySettings;->access$000(Lcom/android/settings/DisplaySettings;)Lcom/android/settings/BrightnessPreference;
+    #getter for: Lcom/android/OriginalSettings/DisplaySettings;->mBrightnessPreference:Lcom/android/OriginalSettings/BrightnessPreference;
+    invoke-static {v2}, Lcom/android/OriginalSettings/DisplaySettings;->access$000(Lcom/android/OriginalSettings/DisplaySettings;)Lcom/android/OriginalSettings/BrightnessPreference;
 
     move-result-object v2
 
-    invoke-virtual {v2, v5}, Lcom/android/settings/BrightnessPreference;->setEnabled(Z)V
+    invoke-virtual {v2, v5}, Lcom/android/OriginalSettings/BrightnessPreference;->setEnabled(Z)V
 
     .line 147
     .end local v1           #battStatus:I
@@ -135,28 +135,28 @@
     .line 142
     .restart local v1       #battStatus:I
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/DisplaySettings$1;->this$0:Lcom/android/settings/DisplaySettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DisplaySettings$1;->this$0:Lcom/android/OriginalSettings/DisplaySettings;
 
-    #getter for: Lcom/android/settings/DisplaySettings;->mBrightnessPreference:Lcom/android/settings/BrightnessPreference;
-    invoke-static {v2}, Lcom/android/settings/DisplaySettings;->access$000(Lcom/android/settings/DisplaySettings;)Lcom/android/settings/BrightnessPreference;
+    #getter for: Lcom/android/OriginalSettings/DisplaySettings;->mBrightnessPreference:Lcom/android/OriginalSettings/BrightnessPreference;
+    invoke-static {v2}, Lcom/android/OriginalSettings/DisplaySettings;->access$000(Lcom/android/OriginalSettings/DisplaySettings;)Lcom/android/OriginalSettings/BrightnessPreference;
 
     move-result-object v2
 
-    invoke-virtual {v2, v6}, Lcom/android/settings/BrightnessPreference;->setEnabled(Z)V
+    invoke-virtual {v2, v6}, Lcom/android/OriginalSettings/BrightnessPreference;->setEnabled(Z)V
 
     goto :goto_0
 
     .line 145
     .end local v1           #battStatus:I
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/DisplaySettings$1;->this$0:Lcom/android/settings/DisplaySettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DisplaySettings$1;->this$0:Lcom/android/OriginalSettings/DisplaySettings;
 
-    #getter for: Lcom/android/settings/DisplaySettings;->mBrightnessPreference:Lcom/android/settings/BrightnessPreference;
-    invoke-static {v2}, Lcom/android/settings/DisplaySettings;->access$000(Lcom/android/settings/DisplaySettings;)Lcom/android/settings/BrightnessPreference;
+    #getter for: Lcom/android/OriginalSettings/DisplaySettings;->mBrightnessPreference:Lcom/android/OriginalSettings/BrightnessPreference;
+    invoke-static {v2}, Lcom/android/OriginalSettings/DisplaySettings;->access$000(Lcom/android/OriginalSettings/DisplaySettings;)Lcom/android/OriginalSettings/BrightnessPreference;
 
     move-result-object v2
 
-    invoke-virtual {v2, v5}, Lcom/android/settings/BrightnessPreference;->setEnabled(Z)V
+    invoke-virtual {v2, v5}, Lcom/android/OriginalSettings/BrightnessPreference;->setEnabled(Z)V
 
     goto :goto_0
 .end method

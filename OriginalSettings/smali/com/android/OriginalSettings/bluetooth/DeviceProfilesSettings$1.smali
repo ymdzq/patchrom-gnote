@@ -1,11 +1,11 @@
-.class Lcom/android/settings/bluetooth/DeviceProfilesSettings$1;
+.class Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "DeviceProfilesSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    value = Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$1;->this$0:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$1;->this$0:Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -71,9 +71,9 @@
     if-ne v1, v2, :cond_0
 
     .line 92
-    iget-object v2, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$1;->this$0:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$1;->this$0:Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/bluetooth/DeviceProfilesSettings;->finish()V
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;->finish()V
 
     .line 95
     .end local v1           #state:I

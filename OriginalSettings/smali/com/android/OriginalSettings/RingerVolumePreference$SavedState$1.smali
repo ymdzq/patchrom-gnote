@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/RingerVolumePreference$SavedState$1;
+.class final Lcom/android/OriginalSettings/RingerVolumePreference$SavedState$1;
 .super Ljava/lang/Object;
 .source "RingerVolumePreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RingerVolumePreference$SavedState;
+    value = Lcom/android/OriginalSettings/RingerVolumePreference$SavedState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator",
         "<",
-        "Lcom/android/settings/RingerVolumePreference$SavedState;",
+        "Lcom/android/OriginalSettings/RingerVolumePreference$SavedState;",
         ">;"
     }
 .end annotation
@@ -40,15 +40,15 @@
 
 
 # virtual methods
-.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/RingerVolumePreference$SavedState;
+.method public createFromParcel(Landroid/os/Parcel;)Lcom/android/OriginalSettings/RingerVolumePreference$SavedState;
     .locals 1
     .parameter "in"
 
     .prologue
     .line 443
-    new-instance v0, Lcom/android/settings/RingerVolumePreference$SavedState;
+    new-instance v0, Lcom/android/OriginalSettings/RingerVolumePreference$SavedState;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/RingerVolumePreference$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/OriginalSettings/RingerVolumePreference$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -59,20 +59,20 @@
 
     .prologue
     .line 441
-    invoke-virtual {p0, p1}, Lcom/android/settings/RingerVolumePreference$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/settings/RingerVolumePreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/RingerVolumePreference$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/OriginalSettings/RingerVolumePreference$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public newArray(I)[Lcom/android/settings/RingerVolumePreference$SavedState;
+.method public newArray(I)[Lcom/android/OriginalSettings/RingerVolumePreference$SavedState;
     .locals 1
     .parameter "size"
 
     .prologue
     .line 447
-    new-array v0, p1, [Lcom/android/settings/RingerVolumePreference$SavedState;
+    new-array v0, p1, [Lcom/android/OriginalSettings/RingerVolumePreference$SavedState;
 
     return-object v0
 .end method
@@ -83,7 +83,7 @@
 
     .prologue
     .line 441
-    invoke-virtual {p0, p1}, Lcom/android/settings/RingerVolumePreference$SavedState$1;->newArray(I)[Lcom/android/settings/RingerVolumePreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/RingerVolumePreference$SavedState$1;->newArray(I)[Lcom/android/OriginalSettings/RingerVolumePreference$SavedState;
 
     move-result-object v0
 

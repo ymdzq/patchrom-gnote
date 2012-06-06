@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/TurnOverSettings$2;
+.class Lcom/android/OriginalSettings/motion/TurnOverSettings$2;
 .super Ljava/lang/Object;
 .source "TurnOverSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/TurnOverSettings;->showMotionDialog()V
+    value = Lcom/android/OriginalSettings/motion/TurnOverSettings;->showMotionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/TurnOverSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/TurnOverSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/TurnOverSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 163
-    iput-object p1, p0, Lcom/android/settings/motion/TurnOverSettings$2;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$2;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,10 +51,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 166
-    iget-object v0, p0, Lcom/android/settings/motion/TurnOverSettings$2;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$2;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
-    #calls: Lcom/android/settings/motion/TurnOverSettings;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v0}, Lcom/android/settings/motion/TurnOverSettings;->access$100(Lcom/android/settings/motion/TurnOverSettings;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/motion/TurnOverSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/TurnOverSettings;->access$100(Lcom/android/OriginalSettings/motion/TurnOverSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -65,10 +65,10 @@
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 167
-    iget-object v0, p0, Lcom/android/settings/motion/TurnOverSettings$2;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$2;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
-    #calls: Lcom/android/settings/motion/TurnOverSettings;->showUseRingDialog()V
-    invoke-static {v0}, Lcom/android/settings/motion/TurnOverSettings;->access$200(Lcom/android/settings/motion/TurnOverSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/TurnOverSettings;->showUseRingDialog()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/TurnOverSettings;->access$200(Lcom/android/OriginalSettings/motion/TurnOverSettings;)V
 
     .line 168
     return-void

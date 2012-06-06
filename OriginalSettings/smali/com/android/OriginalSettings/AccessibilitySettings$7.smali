@@ -1,4 +1,4 @@
-.class Lcom/android/settings/AccessibilitySettings$7;
+.class Lcom/android/OriginalSettings/AccessibilitySettings$7;
 .super Ljava/lang/Object;
 .source "AccessibilitySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/AccessibilitySettings;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/android/OriginalSettings/AccessibilitySettings;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/AccessibilitySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessibilitySettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/AccessibilitySettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 952
-    iput-object p1, p0, Lcom/android/settings/AccessibilitySettings$7;->this$0:Lcom/android/settings/AccessibilitySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/AccessibilitySettings$7;->this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,11 +44,11 @@
 
     .prologue
     .line 957
-    iget-object v3, p0, Lcom/android/settings/AccessibilitySettings$7;->this$0:Lcom/android/settings/AccessibilitySettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/AccessibilitySettings$7;->this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
     const/4 v4, 0x1
 
-    invoke-virtual {v3, v4}, Lcom/android/settings/AccessibilitySettings;->removeDialog(I)V
+    invoke-virtual {v3, v4}, Lcom/android/OriginalSettings/AccessibilitySettings;->removeDialog(I)V
 
     .line 958
     const-string v3, "ro.screenreader.market"
@@ -75,9 +75,9 @@
 
     .line 963
     .local v0, marketIntent:Landroid/content/Intent;
-    iget-object v3, p0, Lcom/android/settings/AccessibilitySettings$7;->this$0:Lcom/android/settings/AccessibilitySettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/AccessibilitySettings$7;->this$0:Lcom/android/OriginalSettings/AccessibilitySettings;
 
-    invoke-virtual {v3, v0}, Lcom/android/settings/AccessibilitySettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v3, v0}, Lcom/android/OriginalSettings/AccessibilitySettings;->startActivity(Landroid/content/Intent;)V
 
     .line 964
     return-void

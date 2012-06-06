@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeFragment;
+.class public Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeFragment;
 .super Landroid/app/DialogFragment;
 .source "DateTimeSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DateTimeSettings;
+    value = Lcom/android/OriginalSettings/DateTimeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -33,7 +33,7 @@
 
     .prologue
     .line 608
-    invoke-virtual {p0}, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -64,9 +64,9 @@
     .line 615
     const v2, 0x104000a
 
-    new-instance v3, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeFragment$1;
+    new-instance v3, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeFragment$1;
 
-    invoke-direct {v3, p0, v1}, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeFragment$1;-><init>(Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeFragment;Landroid/content/Context;)V
+    invoke-direct {v3, p0, v1}, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeFragment$1;-><init>(Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeFragment;Landroid/content/Context;)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

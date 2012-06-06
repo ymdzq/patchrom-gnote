@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/p2p/WifiP2pSettings$14;
+.class Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$14;
 .super Ljava/lang/Object;
 .source "WifiP2pSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/p2p/WifiP2pSettings;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
 .field final synthetic val$mOkButton:Landroid/widget/Button;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;Landroid/widget/Button;)V
+.method constructor <init>(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;Landroid/widget/Button;)V
     .locals 0
     .parameter
     .parameter
 
     .prologue
     .line 791
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$14;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$14;->this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
-    iput-object p2, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$14;->val$mOkButton:Landroid/widget/Button;
+    iput-object p2, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$14;->val$mOkButton:Landroid/widget/Button;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,15 +93,15 @@
     if-lez v1, :cond_0
 
     .line 799
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$14;->val$mOkButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$14;->val$mOkButton:Landroid/widget/Button;
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 800
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$14;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$14;->this$0:Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;
 
-    #setter for: Lcom/android/settings/wifi/p2p/WifiP2pSettings;->checkButton:Z
-    invoke-static {v1, v2}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->access$2702(Lcom/android/settings/wifi/p2p/WifiP2pSettings;Z)Z
+    #setter for: Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->checkButton:Z
+    invoke-static {v1, v2}, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;->access$2702(Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings;Z)Z
 
     .line 805
     :goto_0
@@ -109,7 +109,7 @@
 
     .line 803
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$14;->val$mOkButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/wifi/p2p/WifiP2pSettings$14;->val$mOkButton:Landroid/widget/Button;
 
     const/4 v2, 0x0
 

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/deviceinfo/UsbSettings$1;
+.class Lcom/android/OriginalSettings/deviceinfo/UsbSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "UsbSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/UsbSettings;
+    value = Lcom/android/OriginalSettings/deviceinfo/UsbSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/deviceinfo/UsbSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/UsbSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/deviceinfo/UsbSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 53
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/OriginalSettings/deviceinfo/UsbSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,12 +41,12 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/OriginalSettings/deviceinfo/UsbSettings;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/settings/deviceinfo/UsbSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/deviceinfo/UsbSettings$1;->this$0:Lcom/android/OriginalSettings/deviceinfo/UsbSettings;
 
-    #getter for: Lcom/android/settings/deviceinfo/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
-    invoke-static {v1}, Lcom/android/settings/deviceinfo/UsbSettings;->access$000(Lcom/android/settings/deviceinfo/UsbSettings;)Landroid/hardware/usb/UsbManager;
+    #getter for: Lcom/android/OriginalSettings/deviceinfo/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
+    invoke-static {v1}, Lcom/android/OriginalSettings/deviceinfo/UsbSettings;->access$000(Lcom/android/OriginalSettings/deviceinfo/UsbSettings;)Landroid/hardware/usb/UsbManager;
 
     move-result-object v1
 
@@ -54,8 +54,8 @@
 
     move-result-object v1
 
-    #calls: Lcom/android/settings/deviceinfo/UsbSettings;->updateToggles(Ljava/lang/String;)V
-    invoke-static {v0, v1}, Lcom/android/settings/deviceinfo/UsbSettings;->access$100(Lcom/android/settings/deviceinfo/UsbSettings;Ljava/lang/String;)V
+    #calls: Lcom/android/OriginalSettings/deviceinfo/UsbSettings;->updateToggles(Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/deviceinfo/UsbSettings;->access$100(Lcom/android/OriginalSettings/deviceinfo/UsbSettings;Ljava/lang/String;)V
 
     .line 56
     return-void

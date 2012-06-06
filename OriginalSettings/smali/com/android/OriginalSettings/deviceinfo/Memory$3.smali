@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/Memory$3;
+.class Lcom/android/OriginalSettings/deviceinfo/Memory$3;
 .super Ljava/lang/Object;
 .source "Memory.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/deviceinfo/Memory;->onCreateDialog(I)Landroid/app/Dialog;
+    value = Lcom/android/OriginalSettings/deviceinfo/Memory;->onCreateDialog(I)Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/deviceinfo/Memory;
+.field final synthetic this$0:Lcom/android/OriginalSettings/deviceinfo/Memory;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Memory;)V
+.method constructor <init>(Lcom/android/OriginalSettings/deviceinfo/Memory;)V
     .locals 0
     .parameter
 
     .prologue
     .line 279
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Memory$3;->this$0:Lcom/android/settings/deviceinfo/Memory;
+    iput-object p1, p0, Lcom/android/OriginalSettings/deviceinfo/Memory$3;->this$0:Lcom/android/OriginalSettings/deviceinfo/Memory;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
 
     .prologue
     .line 281
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Memory$3;->this$0:Lcom/android/settings/deviceinfo/Memory;
+    iget-object v0, p0, Lcom/android/OriginalSettings/deviceinfo/Memory$3;->this$0:Lcom/android/OriginalSettings/deviceinfo/Memory;
 
-    #calls: Lcom/android/settings/deviceinfo/Memory;->doUnmount()V
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Memory;->access$200(Lcom/android/settings/deviceinfo/Memory;)V
+    #calls: Lcom/android/OriginalSettings/deviceinfo/Memory;->doUnmount()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/deviceinfo/Memory;->access$200(Lcom/android/OriginalSettings/deviceinfo/Memory;)V
 
     .line 282
     return-void

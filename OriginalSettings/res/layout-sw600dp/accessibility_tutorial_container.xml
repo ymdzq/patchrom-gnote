@@ -6,7 +6,7 @@
     <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <View style="@style/AccessibilityTutorialDivider" />
-        <view android:textAppearance="?android:textAppearanceMedium" android:id="@id/instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/description_margin_sides" android:layout_marginTop="@dimen/description_margin_top" android:layout_marginRight="@dimen/description_margin_sides" android:layout_marginBottom="16.0dip" android:lineSpacingExtra="5.0sp" class="com.android.settings.AccessibilityTutorialActivity$TutorialTextView" />
+        <view android:textAppearance="?android:textAppearanceMedium" android:id="@id/instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/description_margin_sides" android:layout_marginTop="@dimen/description_margin_top" android:layout_marginRight="@dimen/description_margin_sides" android:layout_marginBottom="16.0dip" android:lineSpacingExtra="5.0sp" class="com.android.OriginalSettings.AccessibilityTutorialActivity$TutorialTextView" />
     </LinearLayout>
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
         <View android:layout_marginBottom="16.0dip" style="@style/AccessibilityTutorialDivider" />

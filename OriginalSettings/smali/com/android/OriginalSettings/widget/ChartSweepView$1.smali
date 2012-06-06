@@ -1,4 +1,4 @@
-.class Lcom/android/settings/widget/ChartSweepView$1;
+.class Lcom/android/OriginalSettings/widget/ChartSweepView$1;
 .super Ljava/lang/Object;
 .source "ChartSweepView.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/ChartSweepView;
+    value = Lcom/android/OriginalSettings/widget/ChartSweepView;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/widget/ChartSweepView;
+.field final synthetic this$0:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/ChartSweepView;)V
+.method constructor <init>(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
     .locals 0
     .parameter
 
     .prologue
     .line 149
-    iput-object p1, p0, Lcom/android/settings/widget/ChartSweepView$1;->this$0:Lcom/android/settings/widget/ChartSweepView;
+    iput-object p1, p0, Lcom/android/OriginalSettings/widget/ChartSweepView$1;->this$0:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 151
-    iget-object v0, p0, Lcom/android/settings/widget/ChartSweepView$1;->this$0:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartSweepView$1;->this$0:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    #calls: Lcom/android/settings/widget/ChartSweepView;->dispatchRequestEdit()V
-    invoke-static {v0}, Lcom/android/settings/widget/ChartSweepView;->access$000(Lcom/android/settings/widget/ChartSweepView;)V
+    #calls: Lcom/android/OriginalSettings/widget/ChartSweepView;->dispatchRequestEdit()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/widget/ChartSweepView;->access$000(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 152
     return-void

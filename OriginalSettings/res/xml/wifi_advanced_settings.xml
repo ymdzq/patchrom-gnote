@@ -8,7 +8,7 @@
     <CheckBoxPreference android:persistent="false" android:title="@string/wifi_enable_manual_connect_title" android:key="wifi_cmcc_manual" />
     <ListPreference android:persistent="false" android:entries="@array/wifi_frequency_band_entries" android:title="@string/wifi_setting_frequency_band_title" android:key="frequency_band" android:summary="@string/wifi_setting_frequency_band_summary" android:entryValues="@array/wifi_frequency_band_values" />
     <PreferenceScreen android:title="@string/wifi_menu_priority" android:key="wifi_cmcc_priority">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.wifi.PrioritySettingDialog" />
+        <intent android:targetPackage="com.android.OriginalSettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.OriginalSettings.wifi.PrioritySettingDialog" />
     </PreferenceScreen>
     <Preference android:title="@string/wifi_advanced_mac_address_title" android:key="mac_address" style="?android:attr/preferenceInformationStyle" />
     <Preference android:title="@string/wifi_advanced_ip_address_title" android:key="current_ip_address" style="?android:attr/preferenceInformationStyle" />

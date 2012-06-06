@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodPreference$5;
+.class Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$5;
 .super Ljava/lang/Object;
 .source "InputMethodPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/InputMethodPreference;->showSecurityWarnDialog(Landroid/view/inputmethod/InputMethodInfo;Landroid/preference/CheckBoxPreference;)V
+    value = Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;->showSecurityWarnDialog(Landroid/view/inputmethod/InputMethodInfo;Landroid/preference/CheckBoxPreference;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/InputMethodPreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodPreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 248
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodPreference$5;->this$0:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$5;->this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 

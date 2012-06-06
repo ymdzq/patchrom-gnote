@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/PenHelpActivity;
-.super Landroid/app/Activity;
+.class public Lcom/android/OriginalSettings/PenHelpActivity;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "PenHelpActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 24
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     return-void
 .end method
@@ -24,17 +24,17 @@
     const/16 v1, 0x8
 
     .line 28
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 29
     const v0, 0x7f040061
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/PenHelpActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/PenHelpActivity;->setContentView(I)V
 
     .line 32
     const v0, 0x7f080121
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/PenHelpActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/PenHelpActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -43,7 +43,7 @@
     .line 33
     const v0, 0x7f080124
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/PenHelpActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/PenHelpActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 

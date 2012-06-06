@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiAPITest$4;
+.class Lcom/android/OriginalSettings/wifi/WifiAPITest$4;
 .super Ljava/lang/Object;
 .source "WifiAPITest.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiAPITest;->onPreferenceClick(Landroid/preference/Preference;)Z
+    value = Lcom/android/OriginalSettings/wifi/WifiAPITest;->onPreferenceClick(Landroid/preference/Preference;)Z
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiAPITest;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiAPITest;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiAPITest;)V
+.method constructor <init>(Lcom/android/OriginalSettings/wifi/WifiAPITest;)V
     .locals 0
     .parameter
 
     .prologue
     .line 146
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiAPITest$4;->this$0:Lcom/android/settings/wifi/WifiAPITest;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiAPITest$4;->this$0:Lcom/android/OriginalSettings/wifi/WifiAPITest;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 

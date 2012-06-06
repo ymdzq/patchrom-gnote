@@ -1,4 +1,4 @@
-.class Lcom/android/settings/SoundSettings$4;
+.class Lcom/android/OriginalSettings/SoundSettings$4;
 .super Ljava/lang/Object;
 .source "SoundSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/SoundSettings;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/SoundSettings;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SoundSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SoundSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SoundSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/SoundSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 289
-    iput-object p1, p0, Lcom/android/settings/SoundSettings$4;->this$0:Lcom/android/settings/SoundSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SoundSettings$4;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,10 +42,10 @@
 
     .prologue
     .line 291
-    iget-object v0, p0, Lcom/android/settings/SoundSettings$4;->this$0:Lcom/android/settings/SoundSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SoundSettings$4;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
-    #getter for: Lcom/android/settings/SoundSettings;->mEnableLog:Z
-    invoke-static {v0}, Lcom/android/settings/SoundSettings;->access$600(Lcom/android/settings/SoundSettings;)Z
+    #getter for: Lcom/android/OriginalSettings/SoundSettings;->mEnableLog:Z
+    invoke-static {v0}, Lcom/android/OriginalSettings/SoundSettings;->access$600(Lcom/android/OriginalSettings/SoundSettings;)Z
 
     move-result v0
 
@@ -59,10 +59,10 @@
 
     .line 292
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/SoundSettings$4;->this$0:Lcom/android/settings/SoundSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SoundSettings$4;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
-    #getter for: Lcom/android/settings/SoundSettings;->mAudioManager:Landroid/media/AudioManager;
-    invoke-static {v0}, Lcom/android/settings/SoundSettings;->access$700(Lcom/android/settings/SoundSettings;)Landroid/media/AudioManager;
+    #getter for: Lcom/android/OriginalSettings/SoundSettings;->mAudioManager:Landroid/media/AudioManager;
+    invoke-static {v0}, Lcom/android/OriginalSettings/SoundSettings;->access$700(Lcom/android/OriginalSettings/SoundSettings;)Landroid/media/AudioManager;
 
     move-result-object v0
 

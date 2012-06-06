@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference$2;
+.class Lcom/android/OriginalSettings/inputmethod/CheckBoxAndSettingsPreference$2;
 .super Ljava/lang/Object;
 .source "CheckBoxAndSettingsPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference;->onBindView(Landroid/view/View;)V
+    value = Lcom/android/OriginalSettings/inputmethod/CheckBoxAndSettingsPreference;->onBindView(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/inputmethod/CheckBoxAndSettingsPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/inputmethod/CheckBoxAndSettingsPreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference$2;->this$0:Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/inputmethod/CheckBoxAndSettingsPreference$2;->this$0:Lcom/android/OriginalSettings/inputmethod/CheckBoxAndSettingsPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference$2;->this$0:Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/inputmethod/CheckBoxAndSettingsPreference$2;->this$0:Lcom/android/OriginalSettings/inputmethod/CheckBoxAndSettingsPreference;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/inputmethod/CheckBoxAndSettingsPreference;->onSettingsButtonClicked(Landroid/view/View;)V
+    invoke-virtual {v0, p1}, Lcom/android/OriginalSettings/inputmethod/CheckBoxAndSettingsPreference;->onSettingsButtonClicked(Landroid/view/View;)V
 
     .line 66
     return-void

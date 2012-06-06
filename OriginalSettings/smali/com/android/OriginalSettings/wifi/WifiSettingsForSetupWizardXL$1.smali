@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;
+.class synthetic Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL$1;
 .super Ljava/lang/Object;
 .source "WifiSettingsForSetupWizardXL.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
+    value = Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,10 +32,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;->$SwitchMap$android$net$NetworkInfo$DetailedState:[I
+    sput-object v0, Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL$1;->$SwitchMap$android$net$NetworkInfo$DetailedState:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;->$SwitchMap$android$net$NetworkInfo$DetailedState:[I
+    sget-object v0, Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL$1;->$SwitchMap$android$net$NetworkInfo$DetailedState:[I
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->SCANNING:Landroid/net/NetworkInfo$DetailedState;
 
@@ -51,7 +51,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;->$SwitchMap$android$net$NetworkInfo$DetailedState:[I
+    sget-object v0, Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL$1;->$SwitchMap$android$net$NetworkInfo$DetailedState:[I
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->CONNECTING:Landroid/net/NetworkInfo$DetailedState;
 
@@ -67,7 +67,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL$1;->$SwitchMap$android$net$NetworkInfo$DetailedState:[I
+    sget-object v0, Lcom/android/OriginalSettings/wifi/WifiSettingsForSetupWizardXL$1;->$SwitchMap$android$net$NetworkInfo$DetailedState:[I
 
     sget-object v1, Landroid/net/NetworkInfo$DetailedState;->CONNECTED:Landroid/net/NetworkInfo$DetailedState;
 

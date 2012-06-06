@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MasterClear;
+.class public Lcom/android/OriginalSettings/MasterClear;
 .super Landroid/app/Fragment;
 .source "MasterClear.java"
 
@@ -24,47 +24,47 @@
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     .line 123
-    new-instance v0, Lcom/android/settings/MasterClear$1;
+    new-instance v0, Lcom/android/OriginalSettings/MasterClear$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/MasterClear$1;-><init>(Lcom/android/settings/MasterClear;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/MasterClear$1;-><init>(Lcom/android/OriginalSettings/MasterClear;)V
 
-    iput-object v0, p0, Lcom/android/settings/MasterClear;->mInitiateListener:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MasterClear;->mInitiateListener:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/MasterClear;I)Z
+.method static synthetic access$000(Lcom/android/OriginalSettings/MasterClear;I)Z
     .locals 1
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 67
-    invoke-direct {p0, p1}, Lcom/android/settings/MasterClear;->runKeyguardConfirmation(I)Z
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/MasterClear;->runKeyguardConfirmation(I)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/MasterClear;)V
+.method static synthetic access$100(Lcom/android/OriginalSettings/MasterClear;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 67
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->showFinalConfirmation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MasterClear;->showFinalConfirmation()V
 
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/MasterClear;)Landroid/widget/CheckBox;
+.method static synthetic access$200(Lcom/android/OriginalSettings/MasterClear;)Landroid/widget/CheckBox;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
 
     return-object v0
 .end method
@@ -78,7 +78,7 @@
     const/4 v5, 0x0
 
     .line 157
-    iget-object v4, p0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f080118
 
@@ -88,17 +88,17 @@
 
     check-cast v4, Landroid/widget/Button;
 
-    iput-object v4, p0, Lcom/android/settings/MasterClear;->mInitiateButton:Landroid/widget/Button;
+    iput-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mInitiateButton:Landroid/widget/Button;
 
     .line 158
-    iget-object v4, p0, Lcom/android/settings/MasterClear;->mInitiateButton:Landroid/widget/Button;
+    iget-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mInitiateButton:Landroid/widget/Button;
 
-    iget-object v6, p0, Lcom/android/settings/MasterClear;->mInitiateListener:Landroid/view/View$OnClickListener;
+    iget-object v6, p0, Lcom/android/OriginalSettings/MasterClear;->mInitiateListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v4, v6}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 159
-    iget-object v4, p0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f080116
 
@@ -106,10 +106,10 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/MasterClear;->mExternalStorageContainer:Landroid/view/View;
+    iput-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mExternalStorageContainer:Landroid/view/View;
 
     .line 160
-    iget-object v4, p0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f080117
 
@@ -119,7 +119,7 @@
 
     check-cast v4, Landroid/widget/CheckBox;
 
-    iput-object v4, p0, Lcom/android/settings/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
+    iput-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
 
     .line 169
     invoke-static {}, Landroid/os/Environment;->isExternalStorageEmulated()Z
@@ -136,7 +136,7 @@
 
     if-nez v4, :cond_3
 
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->isExtStorageEncrypted()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MasterClear;->isExtStorageEncrypted()Z
 
     move-result v4
 
@@ -144,12 +144,12 @@
 
     .line 172
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/MasterClear;->mExternalStorageContainer:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mExternalStorageContainer:Landroid/view/View;
 
     invoke-virtual {v4, v7}, Landroid/view/View;->setVisibility(I)V
 
     .line 174
-    iget-object v4, p0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f080115
 
@@ -162,7 +162,7 @@
     invoke-virtual {v2, v7}, Landroid/view/View;->setVisibility(I)V
 
     .line 177
-    iget-object v4, p0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f080111
 
@@ -192,7 +192,7 @@
     if-eqz v4, :cond_1
 
     .line 182
-    iget-object v4, p0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     const v6, 0x7f080112
 
@@ -207,7 +207,7 @@
     .line 189
     .end local v1           #externalAlsoErasedSdCardKey:Landroid/view/View;
     :cond_1
-    iget-object v6, p0, Lcom/android/settings/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
+    iget-object v6, p0, Lcom/android/OriginalSettings/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
 
     if-nez v3, :cond_2
 
@@ -220,7 +220,7 @@
     .end local v0           #externalAlsoErased:Landroid/view/View;
     .end local v2           #externalOption:Landroid/view/View;
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->loadAccountList()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MasterClear;->loadAccountList()V
 
     .line 201
     return-void
@@ -237,11 +237,11 @@
     .end local v0           #externalAlsoErased:Landroid/view/View;
     .end local v2           #externalOption:Landroid/view/View;
     :cond_3
-    iget-object v4, p0, Lcom/android/settings/MasterClear;->mExternalStorageContainer:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/OriginalSettings/MasterClear;->mExternalStorageContainer:Landroid/view/View;
 
-    new-instance v5, Lcom/android/settings/MasterClear$2;
+    new-instance v5, Lcom/android/OriginalSettings/MasterClear$2;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/MasterClear$2;-><init>(Lcom/android/settings/MasterClear;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/MasterClear$2;-><init>(Lcom/android/OriginalSettings/MasterClear;)V
 
     invoke-virtual {v4, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -287,7 +287,7 @@
     .line 209
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iget-object v0, v0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     move-object/from16 v21, v0
 
@@ -301,7 +301,7 @@
     .local v8, accountsLabel:Landroid/view/View;
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iget-object v0, v0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     move-object/from16 v21, v0
 
@@ -318,7 +318,7 @@
     invoke-virtual {v11}, Landroid/widget/LinearLayout;->removeAllViews()V
 
     .line 213
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v12
 
@@ -656,7 +656,7 @@
 
     .prologue
     .line 86
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -666,13 +666,13 @@
 
     .line 87
     .local v0, res:Landroid/content/res/Resources;
-    new-instance v1, Lcom/android/settings/ChooseLockSettingsHelper;
+    new-instance v1, Lcom/android/OriginalSettings/ChooseLockSettingsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v1, v2, p0}, Lcom/android/settings/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v1, v2, p0}, Lcom/android/OriginalSettings/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     const v2, 0x7f0b03b6
 
@@ -686,7 +686,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1, p1, v2, v3}, Lcom/android/settings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {v1, p1, v2, v3}, Lcom/android/OriginalSettings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v1
 
@@ -700,14 +700,14 @@
     .line 111
     new-instance v1, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-direct {v1, v0}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 112
-    const-class v0, Lcom/android/settings/MasterClearConfirm;
+    const-class v0, Lcom/android/OriginalSettings/MasterClearConfirm;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -727,7 +727,7 @@
 
     const-string v2, "erase_sd"
 
-    iget-object v3, p0, Lcom/android/settings/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
+    iget-object v3, p0, Lcom/android/OriginalSettings/MasterClear;->mExternalStorage:Landroid/widget/CheckBox;
 
     invoke-virtual {v3}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -736,15 +736,15 @@
     invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 115
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Landroid/preference/PreferenceActivity;
+    check-cast v0, Lmiui/preference/BasePreferenceActivity;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2, v1}, Landroid/preference/PreferenceActivity;->onPreferenceStartFragment(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z
+    invoke-virtual {v0, v2, v1}, Lmiui/preference/BasePreferenceActivity;->onPreferenceStartFragment(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z
 
     .line 116
     return-void
@@ -778,13 +778,13 @@
     if-ne p2, v0, :cond_1
 
     .line 104
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->showFinalConfirmation()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MasterClear;->showFinalConfirmation()V
 
     goto :goto_0
 
     .line 106
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->establishInitialState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MasterClear;->establishInitialState()V
 
     goto :goto_0
 .end method
@@ -805,13 +805,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     .line 283
-    invoke-direct {p0}, Lcom/android/settings/MasterClear;->establishInitialState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MasterClear;->establishInitialState()V
 
     .line 284
-    iget-object v0, p0, Lcom/android/settings/MasterClear;->mContentView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MasterClear;->mContentView:Landroid/view/View;
 
     return-object v0
 .end method
@@ -824,7 +824,7 @@
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 271
-    invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/MasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -838,12 +838,12 @@
 
     .line 272
     .local v0, edm:Landroid/app/enterprise/EnterpriseDeviceManager;
-    iget-object v1, p0, Lcom/android/settings/MasterClear;->mInitiateButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/MasterClear;->mInitiateButton:Landroid/widget/Button;
 
     if-eqz v1, :cond_0
 
     .line 273
-    iget-object v1, p0, Lcom/android/settings/MasterClear;->mInitiateButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/MasterClear;->mInitiateButton:Landroid/widget/Button;
 
     invoke-virtual {v0}, Landroid/app/enterprise/EnterpriseDeviceManager;->getRestrictionPolicy()Landroid/app/enterprise/RestrictionPolicy;
 

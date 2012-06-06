@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/widget/SettingsAppWidgetProvider$GpsStateTracker;
-.super Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;
+.class final Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$GpsStateTracker;
+.super Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$StateTracker;
 .source "SettingsAppWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/widget/SettingsAppWidgetProvider;
+    value = Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,18 +22,18 @@
     .line 507
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;-><init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$StateTracker;-><init>(Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$1;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$1;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 507
-    invoke-direct {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$GpsStateTracker;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$GpsStateTracker;-><init>()V
 
     return-void
 .end method
@@ -119,11 +119,11 @@
 
     .prologue
     .line 527
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$GpsStateTracker;->getActualState(Landroid/content/Context;)I
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$GpsStateTracker;->getActualState(Landroid/content/Context;)I
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$GpsStateTracker;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$GpsStateTracker;->setCurrentState(Landroid/content/Context;I)V
 
     .line 528
     return-void
@@ -142,15 +142,15 @@
 
     .line 533
     .local v0, resolver:Landroid/content/ContentResolver;
-    new-instance v1, Lcom/android/settings/widget/SettingsAppWidgetProvider$GpsStateTracker$1;
+    new-instance v1, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$GpsStateTracker$1;
 
-    invoke-direct {v1, p0, v0, p2, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$GpsStateTracker$1;-><init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$GpsStateTracker;Landroid/content/ContentResolver;ZLandroid/content/Context;)V
+    invoke-direct {v1, p0, v0, p2, p1}, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$GpsStateTracker$1;-><init>(Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$GpsStateTracker;Landroid/content/ContentResolver;ZLandroid/content/Context;)V
 
     const/4 v2, 0x0
 
     new-array v2, v2, [Ljava/lang/Void;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider$GpsStateTracker$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v2}, Lcom/android/OriginalSettings/widget/SettingsAppWidgetProvider$GpsStateTracker$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 551
     return-void

@@ -1,11 +1,11 @@
-.class Lcom/android/settings/BrightnessPreference$1;
+.class Lcom/android/OriginalSettings/BrightnessPreference$1;
 .super Landroid/database/ContentObserver;
 .source "BrightnessPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/BrightnessPreference;
+    value = Lcom/android/OriginalSettings/BrightnessPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/BrightnessPreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/BrightnessPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/BrightnessPreference;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/OriginalSettings/BrightnessPreference;Landroid/os/Handler;)V
     .locals 0
     .parameter
     .parameter "x0"
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/android/settings/BrightnessPreference$1;->this$0:Lcom/android/settings/BrightnessPreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/BrightnessPreference$1;->this$0:Lcom/android/OriginalSettings/BrightnessPreference;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -41,10 +41,10 @@
 
     .prologue
     .line 89
-    iget-object v0, p0, Lcom/android/settings/BrightnessPreference$1;->this$0:Lcom/android/settings/BrightnessPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/BrightnessPreference$1;->this$0:Lcom/android/OriginalSettings/BrightnessPreference;
 
-    #calls: Lcom/android/settings/BrightnessPreference;->onBrightnessChanged()V
-    invoke-static {v0}, Lcom/android/settings/BrightnessPreference;->access$000(Lcom/android/settings/BrightnessPreference;)V
+    #calls: Lcom/android/OriginalSettings/BrightnessPreference;->onBrightnessChanged()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/BrightnessPreference;->access$000(Lcom/android/OriginalSettings/BrightnessPreference;)V
 
     .line 90
     return-void

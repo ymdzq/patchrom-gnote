@@ -1,15 +1,15 @@
-.class public Lcom/android/settings/UserDictionarySettings;
+.class public Lcom/android/OriginalSettings/UserDictionarySettings;
 .super Landroid/app/ListFragment;
 .source "UserDictionarySettings.java"
 
 # interfaces
-.implements Lcom/android/settings/DialogCreatable;
+.implements Lcom/android/OriginalSettings/DialogCreatable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/UserDictionarySettings$MyAdapter;
+        Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter;
     }
 .end annotation
 
@@ -27,7 +27,7 @@
 
 .field private mDialogEditingWord:Ljava/lang/String;
 
-.field private mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+.field private mDialogFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment$SettingsDialogFragment;
 
 .field protected mLocale:Ljava/lang/String;
 
@@ -54,7 +54,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/UserDictionarySettings;->QUERY_PROJECTION:[Ljava/lang/String;
+    sput-object v0, Lcom/android/OriginalSettings/UserDictionarySettings;->QUERY_PROJECTION:[Ljava/lang/String;
 
     return-void
 .end method
@@ -70,37 +70,37 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/UserDictionarySettings;)Z
+.method static synthetic access$000(Lcom/android/OriginalSettings/UserDictionarySettings;)Z
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 51
-    iget-boolean v0, p0, Lcom/android/settings/UserDictionarySettings;->mAutoReturn:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mAutoReturn:Z
 
     return v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/UserDictionarySettings;Ljava/lang/String;)V
+.method static synthetic access$100(Lcom/android/OriginalSettings/UserDictionarySettings;Ljava/lang/String;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 51
-    invoke-direct {p0, p1}, Lcom/android/settings/UserDictionarySettings;->onAddOrEditFinished(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/UserDictionarySettings;->onAddOrEditFinished(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/UserDictionarySettings;Ljava/lang/String;)V
+.method static synthetic access$200(Lcom/android/OriginalSettings/UserDictionarySettings;Ljava/lang/String;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 51
-    invoke-direct {p0, p1}, Lcom/android/settings/UserDictionarySettings;->deleteWord(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/UserDictionarySettings;->deleteWord(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -112,15 +112,15 @@
     const/4 v7, 0x2
 
     .line 190
-    new-instance v0, Lcom/android/settings/UserDictionarySettings$MyAdapter;
+    new-instance v0, Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter;
 
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     const v2, 0x7f0400a6
 
-    iget-object v3, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     new-array v4, v7, [Ljava/lang/String;
 
@@ -142,7 +142,7 @@
 
     move-object v6, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/UserDictionarySettings$MyAdapter;-><init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[ILcom/android/settings/UserDictionarySettings;)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/OriginalSettings/UserDictionarySettings$MyAdapter;-><init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[ILcom/android/OriginalSettings/UserDictionarySettings;)V
 
     return-object v0
 
@@ -168,13 +168,13 @@
     if-eqz v0, :cond_0
 
     .line 178
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     sget-object v1, Landroid/provider/UserDictionary$Words;->CONTENT_URI:Landroid/net/Uri;
 
-    sget-object v2, Lcom/android/settings/UserDictionarySettings;->QUERY_PROJECTION:[Ljava/lang/String;
+    sget-object v2, Lcom/android/OriginalSettings/UserDictionarySettings;->QUERY_PROJECTION:[Ljava/lang/String;
 
     const-string v3, "locale is null"
 
@@ -199,13 +199,13 @@
     .line 183
     .local v6, queryLocale:Ljava/lang/String;
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     sget-object v1, Landroid/provider/UserDictionary$Words;->CONTENT_URI:Landroid/net/Uri;
 
-    sget-object v2, Lcom/android/settings/UserDictionarySettings;->QUERY_PROJECTION:[Ljava/lang/String;
+    sget-object v2, Lcom/android/OriginalSettings/UserDictionarySettings;->QUERY_PROJECTION:[Ljava/lang/String;
 
     const-string v3, "locale=?"
 
@@ -245,7 +245,7 @@
 
     .prologue
     .line 308
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -279,7 +279,7 @@
     const/4 v0, 0x0
 
     .line 225
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     if-nez v1, :cond_1
 
@@ -290,12 +290,12 @@
 
     .line 226
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
     .line 228
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1}, Landroid/database/Cursor;->isAfterLast()Z
 
@@ -304,9 +304,9 @@
     if-nez v1, :cond_0
 
     .line 230
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     const-string v2, "word"
 
@@ -331,26 +331,26 @@
     const/4 v4, 0x1
 
     .line 275
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
     .line 277
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
 
-    invoke-direct {p0, v1}, Lcom/android/settings/UserDictionarySettings;->deleteWord(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/UserDictionarySettings;->deleteWord(Ljava/lang/String;)V
 
     .line 281
     :cond_0
-    invoke-direct {p0, p1}, Lcom/android/settings/UserDictionarySettings;->deleteWord(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/UserDictionarySettings;->deleteWord(Ljava/lang/String;)V
 
     .line 284
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mLocale:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mLocale:Ljava/lang/String;
 
     if-nez v1, :cond_1
 
     .line 286
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -362,11 +362,11 @@
 
     .line 301
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     if-eqz v1, :cond_3
 
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1}, Landroid/database/Cursor;->requery()Z
 
@@ -387,7 +387,7 @@
     :cond_1
     const-string v1, ""
 
-    iget-object v2, p0, Lcom/android/settings/UserDictionarySettings;->mLocale:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mLocale:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -396,7 +396,7 @@
     if-eqz v1, :cond_2
 
     .line 290
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -418,16 +418,16 @@
 
     .line 296
     .local v0, prevLocale:Ljava/util/Locale;
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mLocale:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mLocale:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/android/settings/Utils;->createLocaleFromString(Ljava/lang/String;)Ljava/util/Locale;
+    invoke-static {v1}, Lcom/android/OriginalSettings/Utils;->createLocaleFromString(Ljava/lang/String;)Ljava/util/Locale;
 
     move-result-object v1
 
     invoke-static {v1}, Ljava/util/Locale;->setDefault(Ljava/util/Locale;)V
 
     .line 297
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -445,7 +445,7 @@
     .line 304
     .end local v0           #prevLocale:Ljava/util/Locale;
     :cond_3
-    iput-boolean v4, p0, Lcom/android/settings/UserDictionarySettings;->mAddedWordAlready:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mAddedWordAlready:Z
 
     .line 305
     return-void
@@ -457,12 +457,12 @@
 
     .prologue
     .line 220
-    iput-object p1, p0, Lcom/android/settings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
 
     .line 221
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/UserDictionarySettings;->showDialog(I)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/UserDictionarySettings;->showDialog(I)V
 
     .line 222
     return-void
@@ -474,7 +474,7 @@
 
     .prologue
     .line 267
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment$SettingsDialogFragment;
 
     if-eqz v0, :cond_0
 
@@ -487,16 +487,16 @@
 
     .line 270
     :cond_0
-    new-instance v0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    new-instance v0, Lcom/android/OriginalSettings/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;-><init>(Lcom/android/settings/DialogCreatable;I)V
+    invoke-direct {v0, p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment$SettingsDialogFragment;-><init>(Lcom/android/OriginalSettings/DialogCreatable;I)V
 
-    iput-object v0, p0, Lcom/android/settings/UserDictionarySettings;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment$SettingsDialogFragment;
 
     .line 271
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -508,7 +508,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment$SettingsDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 272
     return-void
@@ -529,7 +529,7 @@
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 109
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
 
@@ -546,7 +546,7 @@
     .line 113
     .local v6, localeFromIntent:Ljava/lang/String;
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -567,17 +567,17 @@
     .line 126
     .local v4, locale:Ljava/lang/String;
     :goto_2
-    iput-object v4, p0, Lcom/android/settings/UserDictionarySettings;->mLocale:Ljava/lang/String;
+    iput-object v4, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mLocale:Ljava/lang/String;
 
     .line 127
-    invoke-direct {p0, v4}, Lcom/android/settings/UserDictionarySettings;->createCursor(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-direct {p0, v4}, Lcom/android/OriginalSettings/UserDictionarySettings;->createCursor(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v7
 
-    iput-object v7, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iput-object v7, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     .line 128
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getView()Landroid/view/View;
 
     move-result-object v7
 
@@ -596,13 +596,13 @@
     invoke-virtual {v1, v7}, Landroid/widget/TextView;->setText(I)V
 
     .line 131
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v3
 
     .line 132
     .local v3, listView:Landroid/widget/ListView;
-    invoke-direct {p0}, Lcom/android/settings/UserDictionarySettings;->createAdapter()Landroid/widget/ListAdapter;
+    invoke-direct {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->createAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v7
 
@@ -615,7 +615,7 @@
     invoke-virtual {v3, v1}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
     .line 136
-    invoke-virtual {p0, v9}, Lcom/android/settings/UserDictionarySettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v9}, Lcom/android/OriginalSettings/UserDictionarySettings;->setHasOptionsMenu(Z)V
 
     .line 138
     if-eqz p1, :cond_0
@@ -627,7 +627,7 @@
 
     move-result-object v7
 
-    iput-object v7, p0, Lcom/android/settings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
+    iput-object v7, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
 
     .line 140
     const-string v7, "DIALOG_ADDED_WORD"
@@ -638,7 +638,7 @@
 
     move-result v7
 
-    iput-boolean v7, p0, Lcom/android/settings/UserDictionarySettings;->mAddedWordAlready:Z
+    iput-boolean v7, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mAddedWordAlready:Z
 
     .line 142
     :cond_0
@@ -710,7 +710,7 @@
 
     .prologue
     .line 236
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -752,7 +752,7 @@
 
     .line 241
     .local v4, editText:Landroid/widget/EditText;
-    iget-object v6, p0, Lcom/android/settings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
 
     invoke-virtual {v4, v6}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
@@ -762,7 +762,7 @@
     invoke-virtual {v4, v6}, Landroid/widget/EditText;->setInputType(I)V
 
     .line 246
-    iget-object v6, p0, Lcom/android/settings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
 
     if-eqz v6, :cond_0
 
@@ -779,9 +779,9 @@
 
     const v7, 0x104000a
 
-    new-instance v8, Lcom/android/settings/UserDictionarySettings$2;
+    new-instance v8, Lcom/android/OriginalSettings/UserDictionarySettings$2;
 
-    invoke-direct {v8, p0, v4, v0}, Lcom/android/settings/UserDictionarySettings$2;-><init>(Lcom/android/settings/UserDictionarySettings;Landroid/widget/EditText;Landroid/app/Activity;)V
+    invoke-direct {v8, p0, v4, v0}, Lcom/android/OriginalSettings/UserDictionarySettings$2;-><init>(Lcom/android/OriginalSettings/UserDictionarySettings;Landroid/widget/EditText;Landroid/app/Activity;)V
 
     invoke-virtual {v6, v7, v8}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -789,9 +789,9 @@
 
     const/high16 v7, 0x104
 
-    new-instance v8, Lcom/android/settings/UserDictionarySettings$1;
+    new-instance v8, Lcom/android/OriginalSettings/UserDictionarySettings$1;
 
-    invoke-direct {v8, p0, v0}, Lcom/android/settings/UserDictionarySettings$1;-><init>(Lcom/android/settings/UserDictionarySettings;Landroid/app/Activity;)V
+    invoke-direct {v8, p0, v0}, Lcom/android/OriginalSettings/UserDictionarySettings$1;-><init>(Lcom/android/OriginalSettings/UserDictionarySettings;Landroid/app/Activity;)V
 
     invoke-virtual {v6, v7, v8}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -883,7 +883,7 @@
 
     .prologue
     .line 198
-    invoke-direct {p0, p3}, Lcom/android/settings/UserDictionarySettings;->getWord(I)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/android/OriginalSettings/UserDictionarySettings;->getWord(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -892,7 +892,7 @@
     if-eqz v0, :cond_0
 
     .line 200
-    invoke-direct {p0, v0}, Lcom/android/settings/UserDictionarySettings;->showAddOrEditDialog(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/UserDictionarySettings;->showAddOrEditDialog(Ljava/lang/String;)V
 
     .line 202
     :cond_0
@@ -907,7 +907,7 @@
     .line 215
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/UserDictionarySettings;->showAddOrEditDialog(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/UserDictionarySettings;->showAddOrEditDialog(Ljava/lang/String;)V
 
     .line 216
     const/4 v0, 0x1
@@ -923,7 +923,7 @@
     invoke-super {p0}, Landroid/app/ListFragment;->onResume()V
 
     .line 147
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -933,7 +933,7 @@
 
     .line 148
     .local v0, intent:Landroid/content/Intent;
-    iget-boolean v2, p0, Lcom/android/settings/UserDictionarySettings;->mAddedWordAlready:Z
+    iget-boolean v2, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mAddedWordAlready:Z
 
     if-nez v2, :cond_0
 
@@ -960,13 +960,13 @@
     .local v1, word:Ljava/lang/String;
     const/4 v2, 0x1
 
-    iput-boolean v2, p0, Lcom/android/settings/UserDictionarySettings;->mAutoReturn:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mAutoReturn:Z
 
     .line 152
     if-eqz v1, :cond_0
 
     .line 153
-    invoke-direct {p0, v1}, Lcom/android/settings/UserDictionarySettings;->showAddOrEditDialog(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/UserDictionarySettings;->showAddOrEditDialog(Ljava/lang/String;)V
 
     .line 156
     .end local v1           #word:Ljava/lang/String;
@@ -985,14 +985,14 @@
     .line 161
     const-string v0, "DIALOG_EDITING_WORD"
 
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mDialogEditingWord:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 162
     const-string v0, "DIALOG_ADDED_WORD"
 
-    iget-boolean v1, p0, Lcom/android/settings/UserDictionarySettings;->mAddedWordAlready:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/UserDictionarySettings;->mAddedWordAlready:Z
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 

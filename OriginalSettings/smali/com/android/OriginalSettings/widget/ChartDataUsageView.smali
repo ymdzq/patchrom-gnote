@@ -1,42 +1,42 @@
-.class public Lcom/android/settings/widget/ChartDataUsageView;
-.super Lcom/android/settings/widget/ChartView;
+.class public Lcom/android/OriginalSettings/widget/ChartDataUsageView;
+.super Lcom/android/OriginalSettings/widget/ChartView;
 .source "ChartDataUsageView.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/widget/ChartDataUsageView$DataAxis;,
-        Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;,
-        Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
+        Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataAxis;,
+        Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;,
+        Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;
     }
 .end annotation
 
 
 # instance fields
-.field private mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+.field private mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-.field private mGrid:Lcom/android/settings/widget/ChartGridView;
+.field private mGrid:Lcom/android/OriginalSettings/widget/ChartGridView;
 
 .field private mHandler:Landroid/os/Handler;
 
 .field private mHistory:Landroid/net/NetworkStatsHistory;
 
-.field private mHorizListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+.field private mHorizListener:Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;
 
-.field private mListener:Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
+.field private mListener:Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;
 
-.field private mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+.field private mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-.field private mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+.field private mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-.field private mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+.field private mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-.field private mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+.field private mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-.field private mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+.field private mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-.field private mVertListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+.field private mVertListener:Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;
 
 .field private mVertMax:J
 
@@ -52,7 +52,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/widget/ChartDataUsageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 81
     return-void
@@ -67,7 +67,7 @@
     .line 84
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/widget/ChartDataUsageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 85
     return-void
@@ -81,72 +81,72 @@
 
     .prologue
     .line 88
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/widget/ChartView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/OriginalSettings/widget/ChartView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 296
-    new-instance v0, Lcom/android/settings/widget/ChartDataUsageView$2;
+    new-instance v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/widget/ChartDataUsageView$2;-><init>(Lcom/android/settings/widget/ChartDataUsageView;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView$2;-><init>(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHorizListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHorizListener:Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;
 
     .line 324
-    new-instance v0, Lcom/android/settings/widget/ChartDataUsageView$3;
+    new-instance v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/widget/ChartDataUsageView$3;-><init>(Lcom/android/settings/widget/ChartDataUsageView;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView$3;-><init>(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mVertListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mVertListener:Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;
 
     .line 89
-    new-instance v0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;
+    new-instance v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;
 
-    invoke-direct {v0}, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;-><init>()V
+    invoke-direct {v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView$TimeAxis;-><init>()V
 
-    new-instance v1, Lcom/android/settings/widget/InvertedChartAxis;
+    new-instance v1, Lcom/android/OriginalSettings/widget/InvertedChartAxis;
 
-    new-instance v2, Lcom/android/settings/widget/ChartDataUsageView$DataAxis;
+    new-instance v2, Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataAxis;
 
-    invoke-direct {v2}, Lcom/android/settings/widget/ChartDataUsageView$DataAxis;-><init>()V
+    invoke-direct {v2}, Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataAxis;-><init>()V
 
-    invoke-direct {v1, v2}, Lcom/android/settings/widget/InvertedChartAxis;-><init>(Lcom/android/settings/widget/ChartAxis;)V
+    invoke-direct {v1, v2}, Lcom/android/OriginalSettings/widget/InvertedChartAxis;-><init>(Lcom/android/OriginalSettings/widget/ChartAxis;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/ChartDataUsageView;->init(Lcom/android/settings/widget/ChartAxis;Lcom/android/settings/widget/ChartAxis;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->init(Lcom/android/OriginalSettings/widget/ChartAxis;Lcom/android/OriginalSettings/widget/ChartAxis;)V
 
     .line 91
-    new-instance v0, Lcom/android/settings/widget/ChartDataUsageView$1;
+    new-instance v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/widget/ChartDataUsageView$1;-><init>(Lcom/android/settings/widget/ChartDataUsageView;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView$1;-><init>(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
 
     .line 102
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/widget/ChartDataUsageView;Lcom/android/settings/widget/ChartSweepView;)V
+.method static synthetic access$000(Lcom/android/OriginalSettings/widget/ChartDataUsageView;Lcom/android/OriginalSettings/widget/ChartSweepView;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 42
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/widget/ChartDataUsageView;)V
+.method static synthetic access$100(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/android/settings/widget/ChartDataUsageView;->updateEstimateVisible()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updateEstimateVisible()V
 
     return-void
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/widget/ChartDataUsageView;Lcom/android/settings/widget/ChartSweepView;Z)V
+.method static synthetic access$200(Lcom/android/OriginalSettings/widget/ChartDataUsageView;Lcom/android/OriginalSettings/widget/ChartSweepView;Z)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -154,63 +154,63 @@
 
     .prologue
     .line 42
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/widget/ChartDataUsageView;->sendUpdateAxisDelayed(Lcom/android/settings/widget/ChartSweepView;Z)V
+    invoke-direct {p0, p1, p2}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->sendUpdateAxisDelayed(Lcom/android/OriginalSettings/widget/ChartSweepView;Z)V
 
     return-void
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/widget/ChartDataUsageView;)V
+.method static synthetic access$300(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/android/settings/widget/ChartDataUsageView;->updatePrimaryRange()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updatePrimaryRange()V
 
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/widget/ChartDataUsageView;)Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
+.method static synthetic access$400(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mListener:Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mListener:Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;
 
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/widget/ChartDataUsageView;Lcom/android/settings/widget/ChartSweepView;)V
+.method static synthetic access$500(Lcom/android/OriginalSettings/widget/ChartDataUsageView;Lcom/android/OriginalSettings/widget/ChartSweepView;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 42
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/ChartDataUsageView;->clearUpdateAxisDelayed(Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->clearUpdateAxisDelayed(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/android/settings/widget/ChartDataUsageView;)Lcom/android/settings/widget/ChartSweepView;
+.method static synthetic access$600(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)Lcom/android/OriginalSettings/widget/ChartSweepView;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     return-object v0
 .end method
 
-.method static synthetic access$700(Lcom/android/settings/widget/ChartDataUsageView;)Lcom/android/settings/widget/ChartSweepView;
+.method static synthetic access$700(Lcom/android/OriginalSettings/widget/ChartDataUsageView;)Lcom/android/OriginalSettings/widget/ChartSweepView;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     return-object v0
 .end method
@@ -223,20 +223,20 @@
 
     .prologue
     .line 42
-    invoke-static {p0, p1, p2}, Lcom/android/settings/widget/ChartDataUsageView;->findOrCreateSpan(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;Ljava/lang/CharSequence;)[I
+    invoke-static {p0, p1, p2}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->findOrCreateSpan(Landroid/text/SpannableStringBuilder;Ljava/lang/Object;Ljava/lang/CharSequence;)[I
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private clearUpdateAxisDelayed(Lcom/android/settings/widget/ChartSweepView;)V
+.method private clearUpdateAxisDelayed(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
     .locals 2
     .parameter "sweep"
 
     .prologue
     .line 321
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x64
 
@@ -309,11 +309,11 @@
 
     .prologue
     .line 390
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v0}, Landroid/net/NetworkStatsHistory;->getEnd()J
 
@@ -333,11 +333,11 @@
 
     .prologue
     .line 386
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v0}, Landroid/net/NetworkStatsHistory;->getStart()J
 
@@ -352,7 +352,7 @@
     goto :goto_0
 .end method
 
-.method private sendUpdateAxisDelayed(Lcom/android/settings/widget/ChartSweepView;Z)V
+.method private sendUpdateAxisDelayed(Lcom/android/OriginalSettings/widget/ChartSweepView;Z)V
     .locals 4
     .parameter "sweep"
     .parameter "force"
@@ -363,7 +363,7 @@
     .line 314
     if-nez p2, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v2, p1}, Landroid/os/Handler;->hasMessages(ILjava/lang/Object;)Z
 
@@ -373,9 +373,9 @@
 
     .line 315
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v2, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
@@ -395,9 +395,9 @@
 
     .prologue
     .line 278
-    iget-object v5, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    invoke-virtual {v5}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getMaxEstimate()J
+    invoke-virtual {v5}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->getMaxEstimate()J
 
     move-result-wide v3
 
@@ -407,18 +407,18 @@
 
     .line 282
     .local v1, interestLine:J
-    iget-object v5, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v5}, Lcom/android/settings/widget/ChartSweepView;->isEnabled()Z
+    invoke-virtual {v5}, Lcom/android/OriginalSettings/widget/ChartSweepView;->isEnabled()Z
 
     move-result v5
 
     if-eqz v5, :cond_2
 
     .line 283
-    iget-object v5, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v5}, Lcom/android/settings/widget/ChartSweepView;->getValue()J
+    invoke-virtual {v5}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getValue()J
 
     move-result-wide v1
 
@@ -453,9 +453,9 @@
     .line 293
     .local v0, estimateVisible:Z
     :goto_1
-    iget-object v5, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    invoke-virtual {v5, v0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setEstimateVisible(Z)V
+    invoke-virtual {v5, v0}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->setEstimateVisible(Z)V
 
     .line 294
     return-void
@@ -463,18 +463,18 @@
     .line 284
     .end local v0           #estimateVisible:Z
     :cond_2
-    iget-object v5, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v5}, Lcom/android/settings/widget/ChartSweepView;->isEnabled()Z
+    invoke-virtual {v5}, Lcom/android/OriginalSettings/widget/ChartSweepView;->isEnabled()Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
     .line 285
-    iget-object v5, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v5}, Lcom/android/settings/widget/ChartSweepView;->getValue()J
+    invoke-virtual {v5}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getValue()J
 
     move-result-wide v1
 
@@ -494,39 +494,39 @@
     const-wide/16 v5, 0x0
 
     .line 441
-    iget-object v4, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v4}, Lcom/android/settings/widget/ChartSweepView;->getValue()J
+    invoke-virtual {v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getValue()J
 
     move-result-wide v0
 
     .line 442
     .local v0, left:J
-    iget-object v4, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v4}, Lcom/android/settings/widget/ChartSweepView;->getValue()J
+    invoke-virtual {v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getValue()J
 
     move-result-wide v2
 
     .line 445
     .local v2, right:J
-    iget-object v4, p0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    invoke-virtual {v4}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getVisibility()I
+    invoke-virtual {v4}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->getVisibility()I
 
     move-result v4
 
     if-nez v4, :cond_0
 
     .line 446
-    iget-object v4, p0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    invoke-virtual {v4, v0, v1, v2, v3}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setPrimaryRange(JJ)V
+    invoke-virtual {v4, v0, v1, v2, v3}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->setPrimaryRange(JJ)V
 
     .line 447
-    iget-object v4, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    invoke-virtual {v4, v5, v6, v5, v6}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setPrimaryRange(JJ)V
+    invoke-virtual {v4, v5, v6, v5, v6}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->setPrimaryRange(JJ)V
 
     .line 451
     :goto_0
@@ -534,14 +534,14 @@
 
     .line 449
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v4, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    invoke-virtual {v4, v0, v1, v2, v3}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setPrimaryRange(JJ)V
+    invoke-virtual {v4, v0, v1, v2, v3}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->setPrimaryRange(JJ)V
 
     goto :goto_0
 .end method
 
-.method private updateVertAxisBounds(Lcom/android/settings/widget/ChartSweepView;)V
+.method private updateVertAxisBounds(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
     .locals 23
     .parameter "activeSweep"
 
@@ -549,7 +549,7 @@
     .line 218
     move-object/from16 v0, p0
 
-    iget-wide v7, v0, Lcom/android/settings/widget/ChartDataUsageView;->mVertMax:J
+    iget-wide v7, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mVertMax:J
 
     .line 220
     .local v7, max:J
@@ -560,7 +560,7 @@
     if-eqz p1, :cond_0
 
     .line 222
-    invoke-virtual/range {p1 .. p1}, Lcom/android/settings/widget/ChartSweepView;->shouldAdjustAxis()I
+    invoke-virtual/range {p1 .. p1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->shouldAdjustAxis()I
 
     move-result v5
 
@@ -583,21 +583,21 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v19, v0
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/settings/widget/ChartSweepView;->getValue()J
+    invoke-virtual/range {v19 .. v19}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getValue()J
 
     move-result-wide v19
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v21, v0
 
-    invoke-virtual/range {v21 .. v21}, Lcom/android/settings/widget/ChartSweepView;->getValue()J
+    invoke-virtual/range {v21 .. v21}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getValue()J
 
     move-result-wide v21
 
@@ -609,21 +609,21 @@
     .local v13, maxSweep:J
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     move-object/from16 v19, v0
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getMaxVisible()J
+    invoke-virtual/range {v19 .. v19}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->getMaxVisible()J
 
     move-result-wide v19
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     move-object/from16 v21, v0
 
-    invoke-virtual/range {v21 .. v21}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getMaxVisible()J
+    invoke-virtual/range {v21 .. v21}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->getMaxVisible()J
 
     move-result-wide v21
 
@@ -668,7 +668,7 @@
     .line 242
     move-object/from16 v0, p0
 
-    iget-wide v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mVertMax:J
+    iget-wide v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mVertMax:J
 
     move-wide/from16 v19, v0
 
@@ -681,12 +681,12 @@
 
     move-object/from16 v2, p0
 
-    iput-wide v0, v2, Lcom/android/settings/widget/ChartDataUsageView;->mVertMax:J
+    iput-wide v0, v2, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mVertMax:J
 
     .line 245
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartView;->mVert:Lcom/android/OriginalSettings/widget/ChartAxis;
 
     move-object/from16 v19, v0
 
@@ -698,7 +698,7 @@
 
     move-wide/from16 v3, v17
 
-    invoke-interface {v0, v1, v2, v3, v4}, Lcom/android/settings/widget/ChartAxis;->setBounds(JJ)Z
+    invoke-interface {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/widget/ChartAxis;->setBounds(JJ)Z
 
     move-result v6
 
@@ -706,7 +706,7 @@
     .local v6, changed:Z
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v19, v0
 
@@ -718,12 +718,12 @@
 
     move-wide/from16 v3, v17
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/widget/ChartSweepView;->setValidRange(JJ)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValidRange(JJ)V
 
     .line 247
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v19, v0
 
@@ -735,7 +735,7 @@
 
     move-wide/from16 v3, v17
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/widget/ChartSweepView;->setValidRange(JJ)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValidRange(JJ)V
 
     .line 249
     if-eqz v6, :cond_1
@@ -743,42 +743,42 @@
     .line 250
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     move-object/from16 v19, v0
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/settings/widget/ChartNetworkSeriesView;->invalidatePath()V
+    invoke-virtual/range {v19 .. v19}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->invalidatePath()V
 
     .line 251
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     move-object/from16 v19, v0
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/settings/widget/ChartNetworkSeriesView;->invalidatePath()V
+    invoke-virtual/range {v19 .. v19}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->invalidatePath()V
 
     .line 254
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mGrid:Lcom/android/settings/widget/ChartGridView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mGrid:Lcom/android/OriginalSettings/widget/ChartGridView;
 
     move-object/from16 v19, v0
 
-    invoke-virtual/range {v19 .. v19}, Lcom/android/settings/widget/ChartGridView;->invalidate()V
+    invoke-virtual/range {v19 .. v19}, Lcom/android/OriginalSettings/widget/ChartGridView;->invalidate()V
 
     .line 257
     if-eqz p1, :cond_2
 
     .line 258
-    invoke-virtual/range {p1 .. p1}, Lcom/android/settings/widget/ChartSweepView;->updateValueFromPosition()V
+    invoke-virtual/range {p1 .. p1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->updateValueFromPosition()V
 
     .line 264
     :cond_2
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v19, v0
 
@@ -791,7 +791,7 @@
     .line 265
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v19, v0
 
@@ -799,13 +799,13 @@
 
     move-object/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartDataUsageView;->layoutSweep(Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->layoutSweep(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 267
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v19, v0
 
@@ -818,7 +818,7 @@
     .line 268
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v19, v0
 
@@ -826,7 +826,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartDataUsageView;->layoutSweep(Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->layoutSweep(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 271
     .end local v6           #changed:Z
@@ -868,50 +868,50 @@
 
     .prologue
     .line 170
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/ChartNetworkSeriesView;->bindNetworkStats(Landroid/net/NetworkStatsHistory;)V
+    invoke-virtual {v0, p1}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->bindNetworkStats(Landroid/net/NetworkStatsHistory;)V
 
     .line 171
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     if-eqz p1, :cond_1
 
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setVisibility(I)V
+    invoke-virtual {v1, v0}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->setVisibility(I)V
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
 
     if-eqz v0, :cond_0
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v1}, Landroid/net/NetworkStatsHistory;->getEnd()J
 
     move-result-wide v1
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setEndTime(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->setEndTime(J)V
 
     .line 175
     :cond_0
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 176
-    invoke-direct {p0}, Lcom/android/settings/widget/ChartDataUsageView;->updateEstimateVisible()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updateEstimateVisible()V
 
     .line 177
-    invoke-direct {p0}, Lcom/android/settings/widget/ChartDataUsageView;->updatePrimaryRange()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updatePrimaryRange()V
 
     .line 178
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartDataUsageView;->requestLayout()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->requestLayout()V
 
     .line 179
     return-void
@@ -938,24 +938,24 @@
     if-nez p1, :cond_0
 
     .line 183
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v6}, Lcom/android/settings/widget/ChartSweepView;->setVisibility(I)V
+    invoke-virtual {v0, v6}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setVisibility(I)V
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v3, v4}, Lcom/android/settings/widget/ChartSweepView;->setValue(J)V
+    invoke-virtual {v0, v3, v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValue(J)V
 
     .line 185
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v6}, Lcom/android/settings/widget/ChartSweepView;->setVisibility(I)V
+    invoke-virtual {v0, v6}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setVisibility(I)V
 
     .line 186
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v3, v4}, Lcom/android/settings/widget/ChartSweepView;->setValue(J)V
+    invoke-virtual {v0, v3, v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValue(J)V
 
     .line 211
     :goto_0
@@ -970,23 +970,23 @@
     if-eqz v0, :cond_1
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/widget/ChartSweepView;->setVisibility(I)V
+    invoke-virtual {v0, v5}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setVisibility(I)V
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setEnabled(Z)V
 
     .line 193
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     iget-wide v1, p1, Landroid/net/NetworkPolicy;->limitBytes:J
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartSweepView;->setValue(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValue(J)V
 
     .line 200
     :goto_1
@@ -997,59 +997,59 @@
     if-eqz v0, :cond_2
 
     .line 201
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/widget/ChartSweepView;->setVisibility(I)V
+    invoke-virtual {v0, v5}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setVisibility(I)V
 
     .line 202
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     iget-wide v1, p1, Landroid/net/NetworkPolicy;->warningBytes:J
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartSweepView;->setValue(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValue(J)V
 
     .line 208
     :goto_2
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 209
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartDataUsageView;->requestLayout()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->requestLayout()V
 
     .line 210
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartDataUsageView;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->invalidate()V
 
     goto :goto_0
 
     .line 195
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/widget/ChartSweepView;->setVisibility(I)V
+    invoke-virtual {v0, v5}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setVisibility(I)V
 
     .line 196
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/widget/ChartSweepView;->setEnabled(Z)V
+    invoke-virtual {v0, v5}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setEnabled(Z)V
 
     .line 197
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v3, v4}, Lcom/android/settings/widget/ChartSweepView;->setValue(J)V
+    invoke-virtual {v0, v3, v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValue(J)V
 
     goto :goto_1
 
     .line 204
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v6}, Lcom/android/settings/widget/ChartSweepView;->setVisibility(I)V
+    invoke-virtual {v0, v6}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setVisibility(I)V
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v3, v4}, Lcom/android/settings/widget/ChartSweepView;->setValue(J)V
+    invoke-virtual {v0, v3, v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValue(J)V
 
     goto :goto_2
 .end method
@@ -1060,26 +1060,26 @@
 
     .prologue
     .line 161
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/ChartNetworkSeriesView;->bindNetworkStats(Landroid/net/NetworkStatsHistory;)V
+    invoke-virtual {v0, p1}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->bindNetworkStats(Landroid/net/NetworkStatsHistory;)V
 
     .line 162
-    iput-object p1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
+    iput-object p1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHistory:Landroid/net/NetworkStatsHistory;
 
     .line 163
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 164
-    invoke-direct {p0}, Lcom/android/settings/widget/ChartDataUsageView;->updateEstimateVisible()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updateEstimateVisible()V
 
     .line 165
-    invoke-direct {p0}, Lcom/android/settings/widget/ChartDataUsageView;->updatePrimaryRange()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updatePrimaryRange()V
 
     .line 166
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartDataUsageView;->requestLayout()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->requestLayout()V
 
     .line 167
     return-void
@@ -1090,9 +1090,9 @@
 
     .prologue
     .line 374
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/ChartSweepView;->getValue()J
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getValue()J
 
     move-result-wide v0
 
@@ -1104,9 +1104,9 @@
 
     .prologue
     .line 370
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/ChartSweepView;->getValue()J
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getValue()J
 
     move-result-wide v0
 
@@ -1118,9 +1118,9 @@
 
     .prologue
     .line 382
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/ChartSweepView;->getLabelValue()J
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getLabelValue()J
 
     move-result-wide v0
 
@@ -1132,9 +1132,9 @@
 
     .prologue
     .line 378
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/ChartSweepView;->getLabelValue()J
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/widget/ChartSweepView;->getLabelValue()J
 
     move-result-wide v0
 
@@ -1156,299 +1156,299 @@
     const/4 v3, 0x0
 
     .line 106
-    invoke-super {p0}, Lcom/android/settings/widget/ChartView;->onFinishInflate()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/widget/ChartView;->onFinishInflate()V
 
     .line 108
     const v0, 0x7f080066
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartGridView;
+    check-cast v0, Lcom/android/OriginalSettings/widget/ChartGridView;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mGrid:Lcom/android/settings/widget/ChartGridView;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mGrid:Lcom/android/OriginalSettings/widget/ChartGridView;
 
     .line 109
     const v0, 0x7f080067
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartNetworkSeriesView;
+    check-cast v0, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     .line 110
     const v0, 0x7f080068
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartNetworkSeriesView;
+    check-cast v0, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->setVisibility(I)V
 
     .line 113
     const v0, 0x7f080069
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartSweepView;
+    check-cast v0, Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     .line 114
     const v0, 0x7f08006a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartSweepView;
+    check-cast v0, Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     .line 115
     const v0, 0x7f08006c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartSweepView;
+    check-cast v0, Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     .line 116
     const v0, 0x7f08006b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ChartSweepView;
+    check-cast v0, Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iput-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v2, v1}, Lcom/android/settings/widget/ChartSweepView;->setValidRangeDynamic(Lcom/android/settings/widget/ChartSweepView;Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v2, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValidRangeDynamic(Lcom/android/OriginalSettings/widget/ChartSweepView;Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartSweepView;->setValidRangeDynamic(Lcom/android/settings/widget/ChartSweepView;Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValidRangeDynamic(Lcom/android/OriginalSettings/widget/ChartSweepView;Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v2, v1}, Lcom/android/settings/widget/ChartSweepView;->setValidRangeDynamic(Lcom/android/settings/widget/ChartSweepView;Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v2, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValidRangeDynamic(Lcom/android/OriginalSettings/widget/ChartSweepView;Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartSweepView;->setValidRangeDynamic(Lcom/android/settings/widget/ChartSweepView;Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValidRangeDynamic(Lcom/android/OriginalSettings/widget/ChartSweepView;Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    new-array v1, v4, [Lcom/android/settings/widget/ChartSweepView;
+    new-array v1, v4, [Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     aput-object v2, v1, v3
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->setNeighbors([Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setNeighbors([Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 126
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    new-array v1, v4, [Lcom/android/settings/widget/ChartSweepView;
+    new-array v1, v4, [Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     aput-object v2, v1, v3
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->setNeighbors([Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setNeighbors([Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    new-array v1, v6, [Lcom/android/settings/widget/ChartSweepView;
+    new-array v1, v6, [Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     aput-object v2, v1, v3
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     aput-object v2, v1, v4
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     aput-object v2, v1, v5
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->setNeighbors([Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setNeighbors([Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    new-array v1, v6, [Lcom/android/settings/widget/ChartSweepView;
+    new-array v1, v6, [Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     aput-object v2, v1, v3
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     aput-object v2, v1, v4
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     aput-object v2, v1, v5
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->setNeighbors([Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setNeighbors([Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHorizListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHorizListener:Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->addOnSweepListener(Lcom/android/settings/widget/ChartSweepView$OnSweepListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->addOnSweepListener(Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;)V
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mHorizListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mHorizListener:Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->addOnSweepListener(Lcom/android/settings/widget/ChartSweepView$OnSweepListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->addOnSweepListener(Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;)V
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mVertListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mVertListener:Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->addOnSweepListener(Lcom/android/settings/widget/ChartSweepView$OnSweepListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->addOnSweepListener(Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;)V
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mVertListener:Lcom/android/settings/widget/ChartSweepView$OnSweepListener;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mVertListener:Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->addOnSweepListener(Lcom/android/settings/widget/ChartSweepView$OnSweepListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->addOnSweepListener(Lcom/android/OriginalSettings/widget/ChartSweepView$OnSweepListener;)V
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     const-wide/32 v1, 0x500000
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartSweepView;->setDragInterval(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setDragInterval(J)V
 
     .line 136
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     const-wide/32 v1, 0x500000
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartSweepView;->setDragInterval(J)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setDragInterval(J)V
 
     .line 139
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/widget/ChartSweepView;->setClickable(Z)V
+    invoke-virtual {v0, v3}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setClickable(Z)V
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/widget/ChartSweepView;->setFocusable(Z)V
+    invoke-virtual {v0, v3}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setFocusable(Z)V
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/widget/ChartSweepView;->setClickable(Z)V
+    invoke-virtual {v0, v3}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setClickable(Z)V
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/widget/ChartSweepView;->setFocusable(Z)V
+    invoke-virtual {v0, v3}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setFocusable(Z)V
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mGrid:Lcom/android/settings/widget/ChartGridView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mGrid:Lcom/android/OriginalSettings/widget/ChartGridView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartView;->mHoriz:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartView;->mVert:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartGridView;->init(Lcom/android/settings/widget/ChartAxis;Lcom/android/settings/widget/ChartAxis;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartGridView;->init(Lcom/android/OriginalSettings/widget/ChartAxis;Lcom/android/OriginalSettings/widget/ChartAxis;)V
 
     .line 146
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartView;->mHoriz:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartView;->mVert:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartNetworkSeriesView;->init(Lcom/android/settings/widget/ChartAxis;Lcom/android/settings/widget/ChartAxis;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->init(Lcom/android/OriginalSettings/widget/ChartAxis;Lcom/android/OriginalSettings/widget/ChartAxis;)V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartView;->mHoriz:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iget-object v2, p0, Lcom/android/OriginalSettings/widget/ChartView;->mVert:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/widget/ChartNetworkSeriesView;->init(Lcom/android/settings/widget/ChartAxis;Lcom/android/settings/widget/ChartAxis;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->init(Lcom/android/OriginalSettings/widget/ChartAxis;Lcom/android/OriginalSettings/widget/ChartAxis;)V
 
     .line 148
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartView;->mHoriz:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->init(Lcom/android/settings/widget/ChartAxis;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->init(Lcom/android/OriginalSettings/widget/ChartAxis;)V
 
     .line 149
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartView;->mHoriz:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->init(Lcom/android/settings/widget/ChartAxis;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->init(Lcom/android/OriginalSettings/widget/ChartAxis;)V
 
     .line 150
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepWarning:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartView;->mVert:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->init(Lcom/android/settings/widget/ChartAxis;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->init(Lcom/android/OriginalSettings/widget/ChartAxis;)V
 
     .line 151
-    iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLimit:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/ChartView;->mVert:Lcom/android/settings/widget/ChartAxis;
+    iget-object v1, p0, Lcom/android/OriginalSettings/widget/ChartView;->mVert:Lcom/android/OriginalSettings/widget/ChartAxis;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ChartSweepView;->init(Lcom/android/settings/widget/ChartAxis;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/widget/ChartSweepView;->init(Lcom/android/OriginalSettings/widget/ChartAxis;)V
 
     .line 153
-    invoke-virtual {p0, v3}, Lcom/android/settings/widget/ChartDataUsageView;->setActivated(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->setActivated(Z)V
 
     .line 154
     return-void
@@ -1464,7 +1464,7 @@
     const/4 v1, 0x1
 
     .line 354
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartDataUsageView;->isActivated()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->isActivated()Z
 
     move-result v2
 
@@ -1492,7 +1492,7 @@
 
     .line 360
     :pswitch_1
-    invoke-virtual {p0, v1}, Lcom/android/settings/widget/ChartDataUsageView;->setActivated(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->setActivated(Z)V
 
     move v0, v1
 
@@ -1507,13 +1507,13 @@
     .end packed-switch
 .end method
 
-.method public setListener(Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;)V
+.method public setListener(Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;)V
     .locals 0
     .parameter "listener"
 
     .prologue
     .line 157
-    iput-object p1, p0, Lcom/android/settings/widget/ChartDataUsageView;->mListener:Lcom/android/settings/widget/ChartDataUsageView$DataUsageChartListener;
+    iput-object p1, p0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mListener:Lcom/android/OriginalSettings/widget/ChartDataUsageView$DataUsageChartListener;
 
     .line 158
     return-void
@@ -1528,7 +1528,7 @@
     .line 399
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartView;->mHoriz:Lcom/android/settings/widget/ChartAxis;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartView;->mHoriz:Lcom/android/OriginalSettings/widget/ChartAxis;
 
     move-object/from16 v20, v0
 
@@ -1538,7 +1538,7 @@
 
     move-wide/from16 v3, p3
 
-    invoke-interface {v0, v1, v2, v3, v4}, Lcom/android/settings/widget/ChartAxis;->setBounds(JJ)Z
+    invoke-interface {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/widget/ChartAxis;->setBounds(JJ)Z
 
     move-result v5
 
@@ -1546,7 +1546,7 @@
     .local v5, changed:Z
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mGrid:Lcom/android/settings/widget/ChartGridView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mGrid:Lcom/android/OriginalSettings/widget/ChartGridView;
 
     move-object/from16 v20, v0
 
@@ -1556,12 +1556,12 @@
 
     move-wide/from16 v3, p3
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/widget/ChartGridView;->setBounds(JJ)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/widget/ChartGridView;->setBounds(JJ)V
 
     .line 401
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     move-object/from16 v20, v0
 
@@ -1571,12 +1571,12 @@
 
     move-wide/from16 v3, p3
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setBounds(JJ)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->setBounds(JJ)V
 
     .line 402
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     move-object/from16 v20, v0
 
@@ -1586,16 +1586,16 @@
 
     move-wide/from16 v3, p3
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setBounds(JJ)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->setBounds(JJ)V
 
     .line 404
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/widget/ChartDataUsageView;->getHistoryStart()J
+    invoke-direct/range {p0 .. p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->getHistoryStart()J
 
     move-result-wide v10
 
     .line 405
     .local v10, historyStart:J
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/widget/ChartDataUsageView;->getHistoryEnd()J
+    invoke-direct/range {p0 .. p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->getHistoryEnd()J
 
     move-result-wide v8
 
@@ -1625,7 +1625,7 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v20, v0
 
@@ -1635,12 +1635,12 @@
 
     move-wide/from16 v3, p3
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/widget/ChartSweepView;->setValidRange(JJ)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValidRange(JJ)V
 
     .line 418
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v20, v0
 
@@ -1650,7 +1650,7 @@
 
     move-wide/from16 v3, p3
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/widget/ChartSweepView;->setValidRange(JJ)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValidRange(JJ)V
 
     .line 422
     add-long v20, p3, p1
@@ -1681,27 +1681,27 @@
     .local v14, sweepMin:J
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepLeft:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v20, v0
 
     move-object/from16 v0, v20
 
-    invoke-virtual {v0, v14, v15}, Lcom/android/settings/widget/ChartSweepView;->setValue(J)V
+    invoke-virtual {v0, v14, v15}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValue(J)V
 
     .line 427
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/settings/widget/ChartSweepView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSweepRight:Lcom/android/OriginalSettings/widget/ChartSweepView;
 
     move-object/from16 v20, v0
 
     move-object/from16 v0, v20
 
-    invoke-virtual {v0, v12, v13}, Lcom/android/settings/widget/ChartSweepView;->setValue(J)V
+    invoke-virtual {v0, v12, v13}, Lcom/android/OriginalSettings/widget/ChartSweepView;->setValue(J)V
 
     .line 429
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/widget/ChartDataUsageView;->requestLayout()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->requestLayout()V
 
     .line 430
     if-eqz v5, :cond_0
@@ -1709,20 +1709,20 @@
     .line 431
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Lcom/android/settings/widget/ChartNetworkSeriesView;->invalidatePath()V
+    invoke-virtual/range {v20 .. v20}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->invalidatePath()V
 
     .line 432
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/settings/widget/ChartNetworkSeriesView;
+    iget-object v0, v0, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->mDetailSeries:Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Lcom/android/settings/widget/ChartNetworkSeriesView;->invalidatePath()V
+    invoke-virtual/range {v20 .. v20}, Lcom/android/OriginalSettings/widget/ChartNetworkSeriesView;->invalidatePath()V
 
     .line 435
     :cond_0
@@ -1732,13 +1732,13 @@
 
     move-object/from16 v1, v20
 
-    invoke-direct {v0, v1}, Lcom/android/settings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/settings/widget/ChartSweepView;)V
+    invoke-direct {v0, v1}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updateVertAxisBounds(Lcom/android/OriginalSettings/widget/ChartSweepView;)V
 
     .line 436
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/widget/ChartDataUsageView;->updateEstimateVisible()V
+    invoke-direct/range {p0 .. p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updateEstimateVisible()V
 
     .line 437
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/widget/ChartDataUsageView;->updatePrimaryRange()V
+    invoke-direct/range {p0 .. p0}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->updatePrimaryRange()V
 
     .line 438
     return-void

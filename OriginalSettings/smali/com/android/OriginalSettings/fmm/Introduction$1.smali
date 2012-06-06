@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fmm/Introduction$1;
+.class Lcom/android/OriginalSettings/fmm/Introduction$1;
 .super Ljava/lang/Object;
 .source "Introduction.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/fmm/Introduction;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lcom/android/OriginalSettings/fmm/Introduction;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/fmm/Introduction;
+.field final synthetic this$0:Lcom/android/OriginalSettings/fmm/Introduction;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fmm/Introduction;)V
+.method constructor <init>(Lcom/android/OriginalSettings/fmm/Introduction;)V
     .locals 0
     .parameter
 
     .prologue
     .line 56
-    iput-object p1, p0, Lcom/android/settings/fmm/Introduction$1;->this$0:Lcom/android/settings/fmm/Introduction;
+    iput-object p1, p0, Lcom/android/OriginalSettings/fmm/Introduction$1;->this$0:Lcom/android/OriginalSettings/fmm/Introduction;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,10 +47,10 @@
     const/4 v1, 0x1
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/fmm/Introduction$1;->this$0:Lcom/android/settings/fmm/Introduction;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/Introduction$1;->this$0:Lcom/android/OriginalSettings/fmm/Introduction;
 
-    #getter for: Lcom/android/settings/fmm/Introduction;->mDoNotShow:Landroid/widget/CheckBox;
-    invoke-static {v0}, Lcom/android/settings/fmm/Introduction;->access$000(Lcom/android/settings/fmm/Introduction;)Landroid/widget/CheckBox;
+    #getter for: Lcom/android/OriginalSettings/fmm/Introduction;->mDoNotShow:Landroid/widget/CheckBox;
+    invoke-static {v0}, Lcom/android/OriginalSettings/fmm/Introduction;->access$000(Lcom/android/OriginalSettings/fmm/Introduction;)Landroid/widget/CheckBox;
 
     move-result-object v0
 
@@ -85,9 +85,9 @@
     add-int/lit8 v0, v0, 0x5a
 
     .line 65
-    iget-object v1, p0, Lcom/android/settings/fmm/Introduction$1;->this$0:Lcom/android/settings/fmm/Introduction;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/Introduction$1;->this$0:Lcom/android/OriginalSettings/fmm/Introduction;
 
-    invoke-virtual {v1}, Lcom/android/settings/fmm/Introduction;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/fmm/Introduction;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -110,16 +110,16 @@
 
     .line 71
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fmm/Introduction$1;->this$0:Lcom/android/settings/fmm/Introduction;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/Introduction$1;->this$0:Lcom/android/OriginalSettings/fmm/Introduction;
 
-    invoke-virtual {v0}, Lcom/android/settings/fmm/Introduction;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/fmm/Introduction;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Landroid/preference/PreferenceActivity;
+    check-cast v0, Lmiui/preference/BasePreferenceActivity;
 
     .line 72
-    const-class v1, Lcom/android/settings/fmm/RemoteControls;
+    const-class v1, Lcom/android/OriginalSettings/fmm/RemoteControls;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -135,12 +135,12 @@
 
     move-object v5, v4
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 75
-    iget-object v0, p0, Lcom/android/settings/fmm/Introduction$1;->this$0:Lcom/android/settings/fmm/Introduction;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/Introduction$1;->this$0:Lcom/android/OriginalSettings/fmm/Introduction;
 
-    invoke-virtual {v0}, Lcom/android/settings/fmm/Introduction;->finish()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/fmm/Introduction;->finish()V
 
     .line 76
     return-void

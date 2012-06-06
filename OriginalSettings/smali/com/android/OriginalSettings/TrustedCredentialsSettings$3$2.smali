@@ -1,4 +1,4 @@
-.class Lcom/android/settings/TrustedCredentialsSettings$3$2;
+.class Lcom/android/OriginalSettings/TrustedCredentialsSettings$3$2;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/TrustedCredentialsSettings$3;->onClick(Landroid/view/View;)V
+    value = Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;->onClick(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/TrustedCredentialsSettings$3;
+.field final synthetic this$1:Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TrustedCredentialsSettings$3;)V
+.method constructor <init>(Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;)V
     .locals 0
     .parameter
 
     .prologue
     .line 373
-    iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$3$2;->this$1:Lcom/android/settings/TrustedCredentialsSettings$3;
+    iput-object p1, p0, Lcom/android/OriginalSettings/TrustedCredentialsSettings$3$2;->this$1:Lcom/android/OriginalSettings/TrustedCredentialsSettings$3;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 

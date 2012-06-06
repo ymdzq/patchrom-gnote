@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/bluetooth/BluetoothPairingRequest;
+.class public final Lcom/android/OriginalSettings/bluetooth/BluetoothPairingRequest;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothPairingRequest.java"
 
@@ -108,7 +108,7 @@
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
     .line 52
-    const-class v3, Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    const-class v3, Lcom/android/OriginalSettings/bluetooth/BluetoothPairingDialog;
 
     invoke-virtual {v2, p1, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -178,7 +178,7 @@
     invoke-virtual {p1, v2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     .line 71
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/BluetoothPairingRequest;->playPopupAlert(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/bluetooth/BluetoothPairingRequest;->playPopupAlert(Landroid/content/Context;)V
 
     .line 114
     :cond_3

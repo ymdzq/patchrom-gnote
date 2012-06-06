@@ -1,11 +1,11 @@
-.class Lcom/android/settings/ASensorSettings$SettingsHandler;
+.class Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;
 .super Landroid/os/Handler;
 .source "ASensorSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ASensorSettings;
+    value = Lcom/android/OriginalSettings/ASensorSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,31 +15,31 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ASensorSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/ASensorSettings;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/ASensorSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 340
-    iput-object p1, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/ASensorSettings;Lcom/android/settings/ASensorSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/ASensorSettings;Lcom/android/OriginalSettings/ASensorSettings$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 340
-    invoke-direct {p0, p1}, Lcom/android/settings/ASensorSettings$SettingsHandler;-><init>(Lcom/android/settings/ASensorSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;-><init>(Lcom/android/OriginalSettings/ASensorSettings;)V
 
     return-void
 .end method
@@ -82,10 +82,10 @@
 
     .line 347
     :pswitch_0
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mText:Landroid/widget/TextView;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$1000(Lcom/android/settings/ASensorSettings;)Landroid/widget/TextView;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mText:Landroid/widget/TextView;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$1000(Lcom/android/OriginalSettings/ASensorSettings;)Landroid/widget/TextView;
 
     move-result-object v3
 
@@ -94,33 +94,33 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
     .line 348
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mDrawView:Lcom/android/settings/ASensorSettings$ASensorSettingsView;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$400(Lcom/android/settings/ASensorSettings;)Lcom/android/settings/ASensorSettings$ASensorSettingsView;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mDrawView:Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$400(Lcom/android/OriginalSettings/ASensorSettings;)Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
 
     move-result-object v3
 
-    invoke-virtual {v3, v2}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->getPoint([F)[F
+    invoke-virtual {v3, v2}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->getPoint([F)[F
 
     .line 349
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mDrawView:Lcom/android/settings/ASensorSettings$ASensorSettingsView;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$400(Lcom/android/settings/ASensorSettings;)Lcom/android/settings/ASensorSettings$ASensorSettingsView;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mDrawView:Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$400(Lcom/android/OriginalSettings/ASensorSettings;)Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
 
     move-result-object v3
 
-    #calls: Lcom/android/settings/ASensorSettings$ASensorSettingsView;->updateState(I)V
-    invoke-static {v3, v7}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->access$200(Lcom/android/settings/ASensorSettings$ASensorSettingsView;I)V
+    #calls: Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->updateState(I)V
+    invoke-static {v3, v7}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->access$200(Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;I)V
 
     .line 350
     aget v3, v2, v8
 
-    iget-object v4, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CENTER_X:I
-    invoke-static {v4}, Lcom/android/settings/ASensorSettings;->access$500(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CENTER_X:I
+    invoke-static {v4}, Lcom/android/OriginalSettings/ASensorSettings;->access$500(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v4
 
@@ -130,15 +130,15 @@
 
     div-float/2addr v3, v5
 
-    sput v3, Lcom/android/settings/ASensorSettings;->mAniGapX:F
+    sput v3, Lcom/android/OriginalSettings/ASensorSettings;->mAniGapX:F
 
     .line 351
     aget v3, v2, v6
 
-    iget-object v4, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->CENTER_Y:I
-    invoke-static {v4}, Lcom/android/settings/ASensorSettings;->access$700(Lcom/android/settings/ASensorSettings;)I
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->CENTER_Y:I
+    invoke-static {v4}, Lcom/android/OriginalSettings/ASensorSettings;->access$700(Lcom/android/OriginalSettings/ASensorSettings;)I
 
     move-result v4
 
@@ -148,31 +148,31 @@
 
     div-float/2addr v3, v5
 
-    sput v3, Lcom/android/settings/ASensorSettings;->mAniGapY:F
+    sput v3, Lcom/android/OriginalSettings/ASensorSettings;->mAniGapY:F
 
     .line 352
     const/16 v3, 0x28
 
-    sput v3, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sput v3, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     .line 354
     iput v7, v1, Landroid/os/Message;->what:I
 
     .line 355
-    invoke-virtual {p0, v1, v9, v10}, Lcom/android/settings/ASensorSettings$SettingsHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {p0, v1, v9, v10}, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 356
-    invoke-virtual {p0, v6}, Lcom/android/settings/ASensorSettings$SettingsHandler;->removeMessages(I)V
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->removeMessages(I)V
 
     goto :goto_0
 
     .line 360
     :pswitch_1
-    sget v3, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sget v3, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     add-int/lit8 v3, v3, -0x1
 
-    sput v3, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sput v3, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     if-ltz v3, :cond_1
 
@@ -196,88 +196,88 @@
     if-eqz v3, :cond_0
 
     .line 363
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mDrawView:Lcom/android/settings/ASensorSettings$ASensorSettingsView;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$400(Lcom/android/settings/ASensorSettings;)Lcom/android/settings/ASensorSettings$ASensorSettingsView;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mDrawView:Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$400(Lcom/android/OriginalSettings/ASensorSettings;)Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
 
     move-result-object v3
 
-    sget v4, Lcom/android/settings/ASensorSettings;->mAniGapY:F
+    sget v4, Lcom/android/OriginalSettings/ASensorSettings;->mAniGapY:F
 
-    sget v5, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sget v5, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     int-to-float v5, v5
 
     mul-float/2addr v4, v5
 
-    sget v5, Lcom/android/settings/ASensorSettings;->mAniGapX:F
+    sget v5, Lcom/android/OriginalSettings/ASensorSettings;->mAniGapX:F
 
-    sget v6, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sget v6, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     int-to-float v6, v6
 
     mul-float/2addr v5, v6
 
-    invoke-virtual {v3, v4, v5}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->setPoint(FF)V
+    invoke-virtual {v3, v4, v5}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->setPoint(FF)V
 
     .line 368
     :goto_1
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mDrawView:Lcom/android/settings/ASensorSettings$ASensorSettingsView;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$400(Lcom/android/settings/ASensorSettings;)Lcom/android/settings/ASensorSettings$ASensorSettingsView;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mDrawView:Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$400(Lcom/android/OriginalSettings/ASensorSettings;)Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->invalidate()V
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->invalidate()V
 
     .line 369
-    invoke-virtual {p0, v7}, Lcom/android/settings/ASensorSettings$SettingsHandler;->removeMessages(I)V
+    invoke-virtual {p0, v7}, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->removeMessages(I)V
 
     .line 370
     iput v7, v1, Landroid/os/Message;->what:I
 
     .line 371
-    invoke-virtual {p0, v1, v9, v10}, Lcom/android/settings/ASensorSettings$SettingsHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {p0, v1, v9, v10}, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto/16 :goto_0
 
     .line 365
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mDrawView:Lcom/android/settings/ASensorSettings$ASensorSettingsView;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$400(Lcom/android/settings/ASensorSettings;)Lcom/android/settings/ASensorSettings$ASensorSettingsView;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mDrawView:Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$400(Lcom/android/OriginalSettings/ASensorSettings;)Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
 
     move-result-object v3
 
-    sget v4, Lcom/android/settings/ASensorSettings;->mAniGapX:F
+    sget v4, Lcom/android/OriginalSettings/ASensorSettings;->mAniGapX:F
 
-    sget v5, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sget v5, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     int-to-float v5, v5
 
     mul-float/2addr v4, v5
 
-    sget v5, Lcom/android/settings/ASensorSettings;->mAniGapY:F
+    sget v5, Lcom/android/OriginalSettings/ASensorSettings;->mAniGapY:F
 
     neg-float v5, v5
 
-    sget v6, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sget v6, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     int-to-float v6, v6
 
     mul-float/2addr v5, v6
 
-    invoke-virtual {v3, v4, v5}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->setPoint(FF)V
+    invoke-virtual {v3, v4, v5}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->setPoint(FF)V
 
     goto :goto_1
 
     .line 374
     .end local v0           #deviceType:Ljava/lang/String;
     :cond_1
-    invoke-virtual {p0, v7}, Lcom/android/settings/ASensorSettings$SettingsHandler;->removeMessages(I)V
+    invoke-virtual {p0, v7}, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->removeMessages(I)V
 
     .line 375
     const/4 v3, 0x3
@@ -285,12 +285,12 @@
     iput v3, v1, Landroid/os/Message;->what:I
 
     .line 376
-    invoke-virtual {p0, v1, v9, v10}, Lcom/android/settings/ASensorSettings$SettingsHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {p0, v1, v9, v10}, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 377
     const/16 v3, 0x28
 
-    sput v3, Lcom/android/settings/ASensorSettings;->mAniCount:I
+    sput v3, Lcom/android/OriginalSettings/ASensorSettings;->mAniCount:I
 
     goto/16 :goto_0
 
@@ -298,58 +298,58 @@
     :pswitch_2
     const/4 v3, 0x3
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/ASensorSettings$SettingsHandler;->removeMessages(I)V
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->removeMessages(I)V
 
     .line 383
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mSensorManager:Landroid/hardware/SensorManager;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$1100(Lcom/android/settings/ASensorSettings;)Landroid/hardware/SensorManager;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mSensorManager:Landroid/hardware/SensorManager;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$1100(Lcom/android/OriginalSettings/ASensorSettings;)Landroid/hardware/SensorManager;
 
     move-result-object v3
 
     invoke-virtual {v3, v6}, Landroid/hardware/SensorManager;->runAccCalibration(I)I
 
     .line 384
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mSensorManager:Landroid/hardware/SensorManager;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$1100(Lcom/android/settings/ASensorSettings;)Landroid/hardware/SensorManager;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mSensorManager:Landroid/hardware/SensorManager;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$1100(Lcom/android/OriginalSettings/ASensorSettings;)Landroid/hardware/SensorManager;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v4, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    iget-object v4, v4, Lcom/android/settings/ASensorSettings;->mSensorListner:Lcom/android/settings/ASensorSettings$SensorHandler;
+    iget-object v4, v4, Lcom/android/OriginalSettings/ASensorSettings;->mSensorListner:Lcom/android/OriginalSettings/ASensorSettings$SensorHandler;
 
-    iget-object v5, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v5, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mAccelerometerSensor:Landroid/hardware/Sensor;
-    invoke-static {v5}, Lcom/android/settings/ASensorSettings;->access$1200(Lcom/android/settings/ASensorSettings;)Landroid/hardware/Sensor;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mAccelerometerSensor:Landroid/hardware/Sensor;
+    invoke-static {v5}, Lcom/android/OriginalSettings/ASensorSettings;->access$1200(Lcom/android/OriginalSettings/ASensorSettings;)Landroid/hardware/Sensor;
 
     move-result-object v5
 
     invoke-virtual {v3, v4, v5, v8}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
 
     .line 387
-    invoke-static {v8}, Lcom/android/settings/ASensorSettings;->access$302(I)I
+    invoke-static {v8}, Lcom/android/OriginalSettings/ASensorSettings;->access$302(I)I
 
     .line 388
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mDrawView:Lcom/android/settings/ASensorSettings$ASensorSettingsView;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$400(Lcom/android/settings/ASensorSettings;)Lcom/android/settings/ASensorSettings$ASensorSettingsView;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mDrawView:Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$400(Lcom/android/OriginalSettings/ASensorSettings;)Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;
 
     move-result-object v3
 
-    #calls: Lcom/android/settings/ASensorSettings$ASensorSettingsView;->updateState(I)V
-    invoke-static {v3, v6}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->access$200(Lcom/android/settings/ASensorSettings$ASensorSettingsView;I)V
+    #calls: Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->updateState(I)V
+    invoke-static {v3, v6}, Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;->access$200(Lcom/android/OriginalSettings/ASensorSettings$ASensorSettingsView;I)V
 
     .line 389
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #getter for: Lcom/android/settings/ASensorSettings;->mText:Landroid/widget/TextView;
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$1000(Lcom/android/settings/ASensorSettings;)Landroid/widget/TextView;
+    #getter for: Lcom/android/OriginalSettings/ASensorSettings;->mText:Landroid/widget/TextView;
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$1000(Lcom/android/OriginalSettings/ASensorSettings;)Landroid/widget/TextView;
 
     move-result-object v3
 
@@ -358,10 +358,10 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
     .line 390
-    iget-object v3, p0, Lcom/android/settings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/settings/ASensorSettings;
+    iget-object v3, p0, Lcom/android/OriginalSettings/ASensorSettings$SettingsHandler;->this$0:Lcom/android/OriginalSettings/ASensorSettings;
 
-    #calls: Lcom/android/settings/ASensorSettings;->diplayCompleted()V
-    invoke-static {v3}, Lcom/android/settings/ASensorSettings;->access$1300(Lcom/android/settings/ASensorSettings;)V
+    #calls: Lcom/android/OriginalSettings/ASensorSettings;->diplayCompleted()V
+    invoke-static {v3}, Lcom/android/OriginalSettings/ASensorSettings;->access$1300(Lcom/android/OriginalSettings/ASensorSettings;)V
 
     goto/16 :goto_0
 

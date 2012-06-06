@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DevelopmentSettings$1;
+.class Lcom/android/OriginalSettings/DevelopmentSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "DevelopmentSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DevelopmentSettings;
+    value = Lcom/android/OriginalSettings/DevelopmentSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DevelopmentSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DevelopmentSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DevelopmentSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DevelopmentSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 123
-    iput-object p1, p0, Lcom/android/settings/DevelopmentSettings$1;->this$0:Lcom/android/settings/DevelopmentSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DevelopmentSettings$1;->this$0:Lcom/android/OriginalSettings/DevelopmentSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -111,10 +111,10 @@
     if-eqz v2, :cond_0
 
     .line 135
-    iget-object v2, p0, Lcom/android/settings/DevelopmentSettings$1;->this$0:Lcom/android/settings/DevelopmentSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/DevelopmentSettings$1;->this$0:Lcom/android/OriginalSettings/DevelopmentSettings;
 
-    #setter for: Lcom/android/settings/DevelopmentSettings;->mPluggedType:I
-    invoke-static {v2, v1}, Lcom/android/settings/DevelopmentSettings;->access$002(Lcom/android/settings/DevelopmentSettings;I)I
+    #setter for: Lcom/android/OriginalSettings/DevelopmentSettings;->mPluggedType:I
+    invoke-static {v2, v1}, Lcom/android/OriginalSettings/DevelopmentSettings;->access$002(Lcom/android/OriginalSettings/DevelopmentSettings;I)I
 
     .line 137
     :cond_0

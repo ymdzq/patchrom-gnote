@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/encryption/EncryptionPreferenceManager;
+.class public Lcom/android/OriginalSettings/encryption/EncryptionPreferenceManager;
 .super Ljava/lang/Object;
 .source "EncryptionPreferenceManager.java"
 
@@ -31,7 +31,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/settings/encryption/EncryptionPreferenceManager;->DIR_ENCRYPTION:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/encryption/EncryptionPreferenceManager;->DIR_ENCRYPTION:Z
 
     return-void
 .end method
@@ -47,10 +47,10 @@
     .line 20
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/encryption/EncryptionPreferenceManager;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/OriginalSettings/encryption/EncryptionPreferenceManager;->mContext:Landroid/content/Context;
 
     .line 23
-    iput-object p1, p0, Lcom/android/settings/encryption/EncryptionPreferenceManager;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/encryption/EncryptionPreferenceManager;->mContext:Landroid/content/Context;
 
     .line 24
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 36
-    iget-object v5, p0, Lcom/android/settings/encryption/EncryptionPreferenceManager;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/encryption/EncryptionPreferenceManager;->mContext:Landroid/content/Context;
 
     const-string v6, "storage"
 
@@ -147,11 +147,11 @@
 
     .prologue
     .line 28
-    sget-boolean v0, Lcom/android/settings/encryption/EncryptionPreferenceManager;->DIR_ENCRYPTION:Z
+    sget-boolean v0, Lcom/android/OriginalSettings/encryption/EncryptionPreferenceManager;->DIR_ENCRYPTION:Z
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/settings/encryption/EncryptionPreferenceManager;->isExternalSDRemovable()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/encryption/EncryptionPreferenceManager;->isExternalSDRemovable()Z
 
     move-result v0
 

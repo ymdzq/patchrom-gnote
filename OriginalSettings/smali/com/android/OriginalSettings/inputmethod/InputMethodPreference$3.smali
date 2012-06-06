@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodPreference$3;
+.class Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$3;
 .super Ljava/lang/Object;
 .source "InputMethodPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/inputmethod/InputMethodPreference;->onBindView(Landroid/view/View;)V
+    value = Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;->onBindView(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/inputmethod/InputMethodPreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodPreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 122
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodPreference$3;->this$0:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$3;->this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,21 +44,21 @@
     .prologue
     .line 126
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/inputmethod/InputMethodPreference$3;->this$0:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$3;->this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;
 
-    #getter for: Lcom/android/settings/inputmethod/InputMethodPreference;->mFragment:Lcom/android/settings/SettingsPreferenceFragment;
-    invoke-static {v1}, Lcom/android/settings/inputmethod/InputMethodPreference;->access$300(Lcom/android/settings/inputmethod/InputMethodPreference;)Lcom/android/settings/SettingsPreferenceFragment;
+    #getter for: Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;->mFragment:Lcom/android/OriginalSettings/SettingsPreferenceFragment;
+    invoke-static {v1}, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;->access$300(Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;)Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/inputmethod/InputMethodPreference$3;->this$0:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference$3;->this$0:Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;
 
-    #getter for: Lcom/android/settings/inputmethod/InputMethodPreference;->mSettingsIntent:Landroid/content/Intent;
-    invoke-static {v2}, Lcom/android/settings/inputmethod/InputMethodPreference;->access$400(Lcom/android/settings/inputmethod/InputMethodPreference;)Landroid/content/Intent;
+    #getter for: Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;->mSettingsIntent:Landroid/content/Intent;
+    invoke-static {v2}, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;->access$400(Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;)Landroid/content/Intent;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/SettingsPreferenceFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -72,7 +72,7 @@
 
     .line 128
     .local v0, e:Landroid/content/ActivityNotFoundException;
-    invoke-static {}, Lcom/android/settings/inputmethod/InputMethodPreference;->access$500()Ljava/lang/String;
+    invoke-static {}, Lcom/android/OriginalSettings/inputmethod/InputMethodPreference;->access$500()Ljava/lang/String;
 
     move-result-object v1
 

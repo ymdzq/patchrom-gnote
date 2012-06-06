@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/InstalledAppDetailsTop;
-.super Landroid/preference/PreferenceActivity;
+.class public Lcom/android/OriginalSettings/applications/InstalledAppDetailsTop;
+.super Lmiui/preference/BasePreferenceActivity;
 .source "InstalledAppDetailsTop.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 6
-    invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
+    invoke-direct {p0}, Lmiui/preference/BasePreferenceActivity;-><init>()V
 
     return-void
 .end method
@@ -23,7 +23,7 @@
     .line 9
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -32,7 +32,7 @@
     .line 10
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/applications/InstalledAppDetails;
+    const-class v2, Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

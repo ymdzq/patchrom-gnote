@@ -1,11 +1,11 @@
-.class Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$1;
+.class Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$1;
 .super Landroid/database/ContentObserver;
 .source "MenuPowerSavingModeSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
+    value = Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;Landroid/os/Handler;)V
     .locals 0
     .parameter
     .parameter "x0"
 
     .prologue
     .line 83
-    iput-object p1, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$1;->this$0:Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$1;->this$0:Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -43,16 +43,16 @@
     const/4 v0, 0x0
 
     .line 86
-    iget-object v1, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$1;->this$0:Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$1;->this$0:Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
 
-    #getter for: Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
-    invoke-static {v1}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->access$000(Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/preference/CheckBoxPreference;
+    #getter for: Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->mMaximumPowerSavingMode:Landroid/preference/CheckBoxPreference;
+    invoke-static {v1}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->access$000(Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings$1;->this$0:Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings$1;->this$0:Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/powersavingmode/MenuPowerSavingModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 

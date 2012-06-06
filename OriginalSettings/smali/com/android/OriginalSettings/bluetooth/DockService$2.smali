@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/DockService$2;
+.class Lcom/android/OriginalSettings/bluetooth/DockService$2;
 .super Ljava/lang/Object;
 .source "DockService.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/DockService;
+    value = Lcom/android/OriginalSettings/bluetooth/DockService;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/DockService;
+.field final synthetic this$0:Lcom/android/OriginalSettings/bluetooth/DockService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/DockService;)V
+.method constructor <init>(Lcom/android/OriginalSettings/bluetooth/DockService;)V
     .locals 0
     .parameter
 
     .prologue
     .line 519
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DockService$2;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iput-object p1, p0, Lcom/android/OriginalSettings/bluetooth/DockService$2;->this$0:Lcom/android/OriginalSettings/bluetooth/DockService;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,10 +45,10 @@
 
     .prologue
     .line 524
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DockService$2;->this$0:Lcom/android/settings/bluetooth/DockService;
+    iget-object v0, p0, Lcom/android/OriginalSettings/bluetooth/DockService$2;->this$0:Lcom/android/OriginalSettings/bluetooth/DockService;
 
-    #getter for: Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
-    invoke-static {v0}, Lcom/android/settings/bluetooth/DockService;->access$300(Lcom/android/settings/bluetooth/DockService;)[Z
+    #getter for: Lcom/android/OriginalSettings/bluetooth/DockService;->mCheckedItems:[Z
+    invoke-static {v0}, Lcom/android/OriginalSettings/bluetooth/DockService;->access$300(Lcom/android/OriginalSettings/bluetooth/DockService;)[Z
 
     move-result-object v0
 

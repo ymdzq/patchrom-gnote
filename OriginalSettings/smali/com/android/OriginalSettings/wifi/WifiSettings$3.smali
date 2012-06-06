@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/WifiSettings$3;
+.class Lcom/android/OriginalSettings/wifi/WifiSettings$3;
 .super Ljava/lang/Object;
 .source "WifiSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/wifi/WifiSettings;->showProgressDialog(Ljava/lang/String;)V
+    value = Lcom/android/OriginalSettings/wifi/WifiSettings;->showProgressDialog(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/WifiSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 743
-    iput-object p1, p0, Lcom/android/settings/wifi/WifiSettings$3;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$3;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,26 +43,26 @@
 
     .prologue
     .line 745
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$3;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$3;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    #getter for: Lcom/android/settings/wifi/WifiSettings;->mWpsInProgress:Z
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiSettings;->access$700(Lcom/android/settings/wifi/WifiSettings;)Z
+    #getter for: Lcom/android/OriginalSettings/wifi/WifiSettings;->mWpsInProgress:Z
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$700(Lcom/android/OriginalSettings/wifi/WifiSettings;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 746
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$3;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$3;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    #calls: Lcom/android/settings/wifi/WifiSettings;->dismissProgressDialog()V
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiSettings;->access$400(Lcom/android/settings/wifi/WifiSettings;)V
+    #calls: Lcom/android/OriginalSettings/wifi/WifiSettings;->dismissProgressDialog()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$400(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
 
     .line 747
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiSettings$3;->this$0:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/WifiSettings$3;->this$0:Lcom/android/OriginalSettings/wifi/WifiSettings;
 
-    #calls: Lcom/android/settings/wifi/WifiSettings;->wpsCommandCancel()V
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiSettings;->access$300(Lcom/android/settings/wifi/WifiSettings;)V
+    #calls: Lcom/android/OriginalSettings/wifi/WifiSettings;->wpsCommandCancel()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/wifi/WifiSettings;->access$300(Lcom/android/OriginalSettings/wifi/WifiSettings;)V
 
     .line 749
     :cond_0

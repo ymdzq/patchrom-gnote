@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/OwnerInfoSettings;
+.class public Lcom/android/OriginalSettings/OwnerInfoSettings;
 .super Landroid/app/Fragment;
 .source "OwnerInfoSettings.java"
 
@@ -22,13 +22,13 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/OwnerInfoSettings;)Landroid/widget/EditText;
+.method static synthetic access$000(Lcom/android/OriginalSettings/OwnerInfoSettings;)Landroid/widget/EditText;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -43,7 +43,7 @@
     const/4 v4, 0x1
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -69,7 +69,7 @@
 
     .line 52
     .local v0, enabled:I
-    iget-object v3, p0, Lcom/android/settings/OwnerInfoSettings;->mView:Landroid/view/View;
+    iget-object v3, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mView:Landroid/view/View;
 
     const v6, 0x7f080122
 
@@ -79,10 +79,10 @@
 
     check-cast v3, Landroid/widget/CheckBox;
 
-    iput-object v3, p0, Lcom/android/settings/OwnerInfoSettings;->mCheckbox:Landroid/widget/CheckBox;
+    iput-object v3, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mCheckbox:Landroid/widget/CheckBox;
 
     .line 53
-    iget-object v3, p0, Lcom/android/settings/OwnerInfoSettings;->mView:Landroid/view/View;
+    iget-object v3, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mView:Landroid/view/View;
 
     const v6, 0x7f080123
 
@@ -92,15 +92,15 @@
 
     check-cast v3, Landroid/widget/EditText;
 
-    iput-object v3, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iput-object v3, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     .line 54
-    iget-object v3, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     invoke-virtual {v3, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 55
-    iget-object v6, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iget-object v6, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     if-eqz v0, :cond_0
 
@@ -110,7 +110,7 @@
     invoke-virtual {v6, v3}, Landroid/widget/EditText;->setFocusableInTouchMode(Z)V
 
     .line 56
-    iget-object v6, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iget-object v6, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     if-eqz v0, :cond_1
 
@@ -120,9 +120,9 @@
     invoke-virtual {v6, v3}, Landroid/widget/EditText;->setEnabled(Z)V
 
     .line 57
-    iget-object v3, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iget-object v3, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
-    iget-object v6, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iget-object v6, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     invoke-virtual {v6}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -135,7 +135,7 @@
     invoke-virtual {v3, v6}, Landroid/widget/EditText;->setSelection(I)V
 
     .line 58
-    iget-object v3, p0, Lcom/android/settings/OwnerInfoSettings;->mCheckbox:Landroid/widget/CheckBox;
+    iget-object v3, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mCheckbox:Landroid/widget/CheckBox;
 
     if-eqz v0, :cond_2
 
@@ -143,11 +143,11 @@
     invoke-virtual {v3, v4}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 59
-    iget-object v3, p0, Lcom/android/settings/OwnerInfoSettings;->mCheckbox:Landroid/widget/CheckBox;
+    iget-object v3, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mCheckbox:Landroid/widget/CheckBox;
 
-    new-instance v4, Lcom/android/settings/OwnerInfoSettings$1;
+    new-instance v4, Lcom/android/OriginalSettings/OwnerInfoSettings$1;
 
-    invoke-direct {v4, p0, v2}, Lcom/android/settings/OwnerInfoSettings$1;-><init>(Lcom/android/settings/OwnerInfoSettings;Landroid/content/ContentResolver;)V
+    invoke-direct {v4, p0, v2}, Lcom/android/OriginalSettings/OwnerInfoSettings$1;-><init>(Lcom/android/OriginalSettings/OwnerInfoSettings;Landroid/content/ContentResolver;)V
 
     invoke-virtual {v3, v4}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -191,15 +191,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/OwnerInfoSettings;->mView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mView:Landroid/view/View;
 
     .line 43
-    iget-object v0, p0, Lcom/android/settings/OwnerInfoSettings;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mView:Landroid/view/View;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/OwnerInfoSettings;->initView(Landroid/view/View;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/OwnerInfoSettings;->initView(Landroid/view/View;)V
 
     .line 44
-    iget-object v0, p0, Lcom/android/settings/OwnerInfoSettings;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mView:Landroid/view/View;
 
     return-object v0
 .end method
@@ -216,12 +216,12 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 79
-    iget-object v1, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->clearFocus()V
 
     .line 80
-    invoke-virtual {p0}, Lcom/android/settings/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -235,7 +235,7 @@
 
     .line 81
     .local v0, imm:Landroid/view/inputmethod/InputMethodManager;
-    iget-object v1, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
@@ -260,7 +260,7 @@
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
     .line 72
-    invoke-virtual {p0}, Lcom/android/settings/OwnerInfoSettings;->saveToDb()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/OwnerInfoSettings;->saveToDb()V
 
     .line 73
     return-void
@@ -273,7 +273,7 @@
     const/16 v3, 0x64
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/OwnerInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -283,7 +283,7 @@
 
     .line 88
     .local v1, res:Landroid/content/ContentResolver;
-    iget-object v2, p0, Lcom/android/settings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
+    iget-object v2, p0, Lcom/android/OriginalSettings/OwnerInfoSettings;->mEditText:Landroid/widget/EditText;
 
     invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 

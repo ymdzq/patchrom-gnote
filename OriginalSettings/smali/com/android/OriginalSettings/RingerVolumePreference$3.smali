@@ -1,11 +1,11 @@
-.class Lcom/android/settings/RingerVolumePreference$3;
+.class Lcom/android/OriginalSettings/RingerVolumePreference$3;
 .super Landroid/content/BroadcastReceiver;
 .source "RingerVolumePreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RingerVolumePreference;
+    value = Lcom/android/OriginalSettings/RingerVolumePreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RingerVolumePreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/RingerVolumePreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RingerVolumePreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/RingerVolumePreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 382
-    iput-object p1, p0, Lcom/android/settings/RingerVolumePreference$3;->this$0:Lcom/android/settings/RingerVolumePreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/RingerVolumePreference$3;->this$0:Lcom/android/OriginalSettings/RingerVolumePreference;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -60,7 +60,7 @@
 
     .local v0, i:I
     :goto_1
-    invoke-static {}, Lcom/android/settings/RingerVolumePreference;->access$200()[I
+    invoke-static {}, Lcom/android/OriginalSettings/RingerVolumePreference;->access$200()[I
 
     move-result-object v2
 
@@ -69,7 +69,7 @@
     if-ge v0, v2, :cond_2
 
     .line 389
-    invoke-static {}, Lcom/android/settings/RingerVolumePreference;->access$300()[I
+    invoke-static {}, Lcom/android/OriginalSettings/RingerVolumePreference;->access$300()[I
 
     move-result-object v2
 
@@ -82,10 +82,10 @@
 
     .line 395
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference$3;->this$0:Lcom/android/settings/RingerVolumePreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/RingerVolumePreference$3;->this$0:Lcom/android/OriginalSettings/RingerVolumePreference;
 
-    #getter for: Lcom/android/settings/RingerVolumePreference;->mSeekBarVolumizer:[Landroid/preference/VolumePreference$SeekBarVolumizer;
-    invoke-static {v2}, Lcom/android/settings/RingerVolumePreference;->access$400(Lcom/android/settings/RingerVolumePreference;)[Landroid/preference/VolumePreference$SeekBarVolumizer;
+    #getter for: Lcom/android/OriginalSettings/RingerVolumePreference;->mSeekBarVolumizer:[Landroid/preference/VolumePreference$SeekBarVolumizer;
+    invoke-static {v2}, Lcom/android/OriginalSettings/RingerVolumePreference;->access$400(Lcom/android/OriginalSettings/RingerVolumePreference;)[Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     move-result-object v2
 
@@ -99,10 +99,10 @@
     invoke-static {v2, v3}, Landroid/os/SystemClock;->sleep(J)V
 
     .line 397
-    iget-object v2, p0, Lcom/android/settings/RingerVolumePreference$3;->this$0:Lcom/android/settings/RingerVolumePreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/RingerVolumePreference$3;->this$0:Lcom/android/OriginalSettings/RingerVolumePreference;
 
-    #getter for: Lcom/android/settings/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
-    invoke-static {v2}, Lcom/android/settings/RingerVolumePreference;->access$500(Lcom/android/settings/RingerVolumePreference;)Landroid/media/AudioManager;
+    #getter for: Lcom/android/OriginalSettings/RingerVolumePreference;->mAudioManager:Landroid/media/AudioManager;
+    invoke-static {v2}, Lcom/android/OriginalSettings/RingerVolumePreference;->access$500(Lcom/android/OriginalSettings/RingerVolumePreference;)Landroid/media/AudioManager;
 
     move-result-object v2
 

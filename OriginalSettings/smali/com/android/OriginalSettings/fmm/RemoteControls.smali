@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/fmm/RemoteControls;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/fmm/RemoteControls;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "RemoteControls.java"
 
 # interfaces
@@ -9,10 +9,10 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/fmm/RemoteControls$FragmentLocation;,
-        Lcom/android/settings/fmm/RemoteControls$GoogleAccount;,
-        Lcom/android/settings/fmm/RemoteControls$SamsungAccount;,
-        Lcom/android/settings/fmm/RemoteControls$FragmentAccount;
+        Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;,
+        Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;,
+        Lcom/android/OriginalSettings/fmm/RemoteControls$SamsungAccount;,
+        Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentAccount;
     }
 .end annotation
 
@@ -27,7 +27,7 @@
 
     .prologue
     .line 56
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 298
     return-void
@@ -45,7 +45,7 @@
     if-eqz p2, :cond_0
 
     .line 138
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
 
     .line 140
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -86,10 +86,10 @@
     const/4 v5, 0x0
 
     .line 67
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 69
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -99,27 +99,27 @@
 
     invoke-direct {v3, v0}, Landroid/widget/Switch;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, p0, Lcom/android/settings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
+    iput-object v3, p0, Lcom/android/OriginalSettings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
 
     .line 73
-    instance-of v3, v0, Landroid/preference/PreferenceActivity;
+    instance-of v3, v0, Lmiui/preference/BasePreferenceActivity;
 
     if-eqz v3, :cond_1
 
     move-object v2, v0
 
     .line 74
-    check-cast v2, Landroid/preference/PreferenceActivity;
+    check-cast v2, Lmiui/preference/BasePreferenceActivity;
 
     .line 75
-    .local v2, preferenceActivity:Landroid/preference/PreferenceActivity;
-    invoke-virtual {v2}, Landroid/preference/PreferenceActivity;->onIsHidingHeaders()Z
+    .local v2, preferenceActivity:Lmiui/preference/BasePreferenceActivity;
+    invoke-virtual {v2}, Lmiui/preference/BasePreferenceActivity;->onIsHidingHeaders()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    invoke-virtual {v2}, Landroid/preference/PreferenceActivity;->onIsMultiPane()Z
+    invoke-virtual {v2}, Lmiui/preference/BasePreferenceActivity;->onIsMultiPane()Z
 
     move-result v3
 
@@ -139,7 +139,7 @@
 
     .line 78
     .local v1, padding:I
-    iget-object v3, p0, Lcom/android/settings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v3, v5, v5, v1, v5}, Landroid/widget/Switch;->setPadding(IIII)V
 
@@ -155,7 +155,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
 
     new-instance v5, Landroid/app/ActionBar$LayoutParams;
 
@@ -167,9 +167,9 @@
 
     .line 89
     .end local v1           #padding:I
-    .end local v2           #preferenceActivity:Landroid/preference/PreferenceActivity;
+    .end local v2           #preferenceActivity:Lmiui/preference/BasePreferenceActivity;
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v3, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -222,7 +222,7 @@
     if-eqz v3, :cond_0
 
     .line 119
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v3
 
@@ -232,7 +232,7 @@
 
     .line 120
     .local v2, transaction:Landroid/app/FragmentTransaction;
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v3
 
@@ -245,7 +245,7 @@
     invoke-virtual {v2, v3}, Landroid/app/FragmentTransaction;->remove(Landroid/app/Fragment;)Landroid/app/FragmentTransaction;
 
     .line 121
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v3
 
@@ -258,7 +258,7 @@
     invoke-virtual {v2, v3}, Landroid/app/FragmentTransaction;->remove(Landroid/app/Fragment;)Landroid/app/FragmentTransaction;
 
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v3
 
@@ -271,7 +271,7 @@
     invoke-virtual {v2, v3}, Landroid/app/FragmentTransaction;->remove(Landroid/app/Fragment;)Landroid/app/FragmentTransaction;
 
     .line 123
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v3
 
@@ -293,7 +293,7 @@
     .end local v2           #transaction:Landroid/app/FragmentTransaction;
     :cond_0
     :goto_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onDestroyView()V
 
     .line 134
     return-void
@@ -323,10 +323,10 @@
     const/4 v2, 0x0
 
     .line 94
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 99
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -347,15 +347,15 @@
     if-eqz v3, :cond_0
 
     .line 101
-    iget-object v3, p0, Lcom/android/settings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v3, v1}, Landroid/widget/Switch;->setEnabled(Z)V
 
     .line 105
     :goto_0
-    iget-object v3, p0, Lcom/android/settings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -379,7 +379,7 @@
 
     .line 103
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fmm/RemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
 
     invoke-virtual {v3, v2}, Landroid/widget/Switch;->setEnabled(Z)V
 

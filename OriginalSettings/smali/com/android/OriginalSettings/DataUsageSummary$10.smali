@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DataUsageSummary$10;
+.class Lcom/android/OriginalSettings/DataUsageSummary$10;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DataUsageSummary;
+    value = Lcom/android/OriginalSettings/DataUsageSummary;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DataUsageSummary;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DataUsageSummary;)V
     .locals 0
     .parameter
 
     .prologue
     .line 1113
-    iput-object p1, p0, Lcom/android/settings/DataUsageSummary$10;->this$0:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DataUsageSummary$10;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,24 +60,24 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary$CycleItem;
+    check-cast v0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;
 
     .line 1117
-    .local v0, cycle:Lcom/android/settings/DataUsageSummary$CycleItem;
-    instance-of v1, v0, Lcom/android/settings/DataUsageSummary$CycleChangeItem;
+    .local v0, cycle:Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;
+    instance-of v1, v0, Lcom/android/OriginalSettings/DataUsageSummary$CycleChangeItem;
 
     if-eqz v1, :cond_0
 
     .line 1120
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$10;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$10;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;->show(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v1}, Lcom/android/OriginalSettings/DataUsageSummary$CycleEditorFragment;->show(Lcom/android/OriginalSettings/DataUsageSummary;)V
 
     .line 1123
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$10;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$10;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    #getter for: Lcom/android/settings/DataUsageSummary;->mCycleSpinner:Landroid/widget/Spinner;
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->access$2100(Lcom/android/settings/DataUsageSummary;)Landroid/widget/Spinner;
+    #getter for: Lcom/android/OriginalSettings/DataUsageSummary;->mCycleSpinner:Landroid/widget/Spinner;
+    invoke-static {v1}, Lcom/android/OriginalSettings/DataUsageSummary;->access$2100(Lcom/android/OriginalSettings/DataUsageSummary;)Landroid/widget/Spinner;
 
     move-result-object v1
 
@@ -113,7 +113,7 @@
 
     move-result-object v2
 
-    iget-wide v3, v0, Lcom/android/settings/DataUsageSummary$CycleItem;->start:J
+    iget-wide v3, v0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->start:J
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -125,7 +125,7 @@
 
     move-result-object v2
 
-    iget-wide v3, v0, Lcom/android/settings/DataUsageSummary$CycleItem;->end:J
+    iget-wide v3, v0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->end:J
 
     invoke-virtual {v2, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -144,24 +144,24 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 1133
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$10;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$10;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    #getter for: Lcom/android/settings/DataUsageSummary;->mChart:Lcom/android/settings/widget/ChartDataUsageView;
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->access$800(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/widget/ChartDataUsageView;
+    #getter for: Lcom/android/OriginalSettings/DataUsageSummary;->mChart:Lcom/android/OriginalSettings/widget/ChartDataUsageView;
+    invoke-static {v1}, Lcom/android/OriginalSettings/DataUsageSummary;->access$800(Lcom/android/OriginalSettings/DataUsageSummary;)Lcom/android/OriginalSettings/widget/ChartDataUsageView;
 
     move-result-object v1
 
-    iget-wide v2, v0, Lcom/android/settings/DataUsageSummary$CycleItem;->start:J
+    iget-wide v2, v0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->start:J
 
-    iget-wide v4, v0, Lcom/android/settings/DataUsageSummary$CycleItem;->end:J
+    iget-wide v4, v0, Lcom/android/OriginalSettings/DataUsageSummary$CycleItem;->end:J
 
-    invoke-virtual {v1, v2, v3, v4, v5}, Lcom/android/settings/widget/ChartDataUsageView;->setVisibleRange(JJ)V
+    invoke-virtual {v1, v2, v3, v4, v5}, Lcom/android/OriginalSettings/widget/ChartDataUsageView;->setVisibleRange(JJ)V
 
     .line 1135
-    iget-object v1, p0, Lcom/android/settings/DataUsageSummary$10;->this$0:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DataUsageSummary$10;->this$0:Lcom/android/OriginalSettings/DataUsageSummary;
 
-    #calls: Lcom/android/settings/DataUsageSummary;->updateDetailData()V
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->access$2200(Lcom/android/settings/DataUsageSummary;)V
+    #calls: Lcom/android/OriginalSettings/DataUsageSummary;->updateDetailData()V
+    invoke-static {v1}, Lcom/android/OriginalSettings/DataUsageSummary;->access$2200(Lcom/android/OriginalSettings/DataUsageSummary;)V
 
     goto :goto_0
 .end method

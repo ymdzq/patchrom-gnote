@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/DeviceProfilesSettings$2;
+.class Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$2;
 .super Ljava/lang/Object;
 .source "DeviceProfilesSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/bluetooth/DeviceProfilesSettings;->askDisconnect(Landroid/content/Context;Lcom/android/settings/bluetooth/LocalBluetoothProfile;)V
+    value = Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;->askDisconnect(Landroid/content/Context;Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfile;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,15 +18,15 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 
-.field final synthetic val$device:Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+.field final synthetic val$device:Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;
 
-.field final synthetic val$profile:Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+.field final synthetic val$profile:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfile;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;Lcom/android/settings/bluetooth/CachedBluetoothDevice;Lcom/android/settings/bluetooth/LocalBluetoothProfile;)V
+.method constructor <init>(Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfile;)V
     .locals 0
     .parameter
     .parameter
@@ -34,11 +34,11 @@
 
     .prologue
     .line 369
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$2;->this$0:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$2;->this$0:Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings;
 
-    iput-object p2, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$2;->val$device:Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    iput-object p2, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$2;->val$device:Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;
 
-    iput-object p3, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$2;->val$profile:Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iput-object p3, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$2;->val$profile:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfile;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,24 +54,24 @@
 
     .prologue
     .line 371
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$2;->val$device:Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    iget-object v0, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$2;->val$device:Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$2;->val$profile:Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v1, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$2;->val$profile:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfile;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->disconnect(Lcom/android/settings/bluetooth/LocalBluetoothProfile;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;->disconnect(Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfile;)V
 
     .line 372
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$2;->val$profile:Lcom/android/settings/bluetooth/LocalBluetoothProfile;
+    iget-object v0, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$2;->val$profile:Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfile;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$2;->val$device:Lcom/android/settings/bluetooth/CachedBluetoothDevice;
+    iget-object v1, p0, Lcom/android/OriginalSettings/bluetooth/DeviceProfilesSettings$2;->val$device:Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;
 
-    invoke-virtual {v1}, Lcom/android/settings/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-interface {v0, v1, v2}, Lcom/android/settings/bluetooth/LocalBluetoothProfile;->setPreferred(Landroid/bluetooth/BluetoothDevice;Z)V
+    invoke-interface {v0, v1, v2}, Lcom/android/OriginalSettings/bluetooth/LocalBluetoothProfile;->setPreferred(Landroid/bluetooth/BluetoothDevice;Z)V
 
     .line 373
     return-void

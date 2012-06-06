@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/PenSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/PenSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "PenSettings.java"
 
 # interfaces
@@ -18,7 +18,7 @@
 
     .prologue
     .line 35
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -63,9 +63,9 @@
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -91,14 +91,14 @@
     const/4 v4, 0x0
 
     .line 46
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v5
 
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -110,49 +110,49 @@
     .local v2, root:Landroid/preference/PreferenceScreen;
     new-instance v5, Landroid/preference/ListPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
     invoke-direct {v5, v6}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
 
-    iput-object v5, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iput-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     .line 53
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     const v6, 0x7f07004b
 
     invoke-virtual {v5, v6}, Landroid/preference/ListPreference;->setEntries(I)V
 
     .line 54
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     const v6, 0x7f07004c
 
     invoke-virtual {v5, v6}, Landroid/preference/ListPreference;->setEntryValues(I)V
 
     .line 55
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     const-string v6, "pen_hand_side"
 
     invoke-virtual {v5, v6}, Landroid/preference/ListPreference;->setKey(Ljava/lang/String;)V
 
     .line 56
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     invoke-virtual {v5, v7}, Landroid/preference/ListPreference;->setTitle(I)V
 
     .line 57
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     invoke-virtual {v5, v7}, Landroid/preference/ListPreference;->setDialogTitle(I)V
 
     .line 58
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -169,56 +169,56 @@
     invoke-virtual {v5, v6}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 60
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     invoke-virtual {v5, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 61
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     invoke-virtual {v2, v5}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 64
     new-instance v5, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
     invoke-direct {v5, v6}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;)V
 
-    iput-object v5, p0, Lcom/android/settings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
+    iput-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
 
     .line 65
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
 
     const-string v6, "pen_hovering"
 
     invoke-virtual {v5, v6}, Landroid/preference/CheckBoxPreference;->setKey(Ljava/lang/String;)V
 
     .line 66
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
 
     const v6, 0x7f0b094c
 
     invoke-virtual {v5, v6}, Landroid/preference/CheckBoxPreference;->setTitle(I)V
 
     .line 67
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
 
     const v6, 0x7f0b094d
 
     invoke-virtual {v5, v6}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
     .line 68
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v5, v4}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 69
-    iget-object v5, p0, Lcom/android/settings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
+    iget-object v5, p0, Lcom/android/OriginalSettings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -234,16 +234,16 @@
     invoke-virtual {v5, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 71
-    iget-object v3, p0, Lcom/android/settings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/OriginalSettings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 74
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -279,7 +279,7 @@
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 81
-    invoke-virtual {p0, v2}, Lcom/android/settings/PenSettings;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/PenSettings;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
 
     .line 82
     return-void
@@ -348,7 +348,7 @@
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 102
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -357,7 +357,7 @@
     invoke-static {v3, v4, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 104
-    iget-object v3, p0, Lcom/android/settings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/OriginalSettings/PenSettings;->mPenPreferredHand:Landroid/preference/ListPreference;
 
     invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -366,10 +366,10 @@
     invoke-virtual {v3, v4}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 105
-    invoke-direct {p0, v2}, Lcom/android/settings/PenSettings;->setPreferredHandSide(I)V
+    invoke-direct {p0, v2}, Lcom/android/OriginalSettings/PenSettings;->setPreferredHandSide(I)V
 
     .line 106
-    invoke-direct {p0}, Lcom/android/settings/PenSettings;->updateState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/PenSettings;->updateState()V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -406,7 +406,7 @@
     const/4 v2, 0x0
 
     .line 117
-    iget-object v1, p0, Lcom/android/settings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -415,7 +415,7 @@
     if-eqz v1, :cond_0
 
     .line 118
-    iget-object v1, p0, Lcom/android/settings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/PenSettings;->mPenHovering:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -423,7 +423,7 @@
 
     .line 119
     .local v0, value:Z
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -449,7 +449,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/PenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -472,7 +472,7 @@
     .line 123
     .end local v0           #value:Z
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v1
 
@@ -491,10 +491,10 @@
 
     .prologue
     .line 86
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 88
-    invoke-direct {p0}, Lcom/android/settings/PenSettings;->updateState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/PenSettings;->updateState()V
 
     .line 89
     return-void

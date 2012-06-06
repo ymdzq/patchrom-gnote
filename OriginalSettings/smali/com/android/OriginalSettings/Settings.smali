@@ -1,52 +1,52 @@
-.class public Lcom/android/settings/Settings;
-.super Landroid/preference/PreferenceActivity;
+.class public Lcom/android/OriginalSettings/Settings;
+.super Lmiui/preference/BasePreferenceActivity;
 .source "Settings.java"
 
 # interfaces
-.implements Lcom/android/settings/ButtonBarHandler;
+.implements Lcom/android/OriginalSettings/ButtonBarHandler;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/Settings$MenuPowerSavingModeSettingsActivity;,
-        Lcom/android/settings/Settings$SoftwareUpdateSettingsActivity;,
-        Lcom/android/settings/Settings$MotionSettingsActivity;,
-        Lcom/android/settings/Settings$AndroidBeamSettingsActivity;,
-        Lcom/android/settings/Settings$TextToSpeechSettingsActivity;,
-        Lcom/android/settings/Settings$AdvancedWifiSettingsActivity;,
-        Lcom/android/settings/Settings$DataUsageSummaryActivity;,
-        Lcom/android/settings/Settings$DeviceAdminSettingsActivity;,
-        Lcom/android/settings/Settings$CryptSDCardSettingsActivity;,
-        Lcom/android/settings/Settings$CryptKeeperSettingsActivity;,
-        Lcom/android/settings/Settings$AccountSyncSettingsActivity;,
-        Lcom/android/settings/Settings$PowerUsageSummaryActivity;,
-        Lcom/android/settings/Settings$ManageAccountsSettingsActivity;,
-        Lcom/android/settings/Settings$RunningServicesActivity;,
-        Lcom/android/settings/Settings$DockSettingsActivity;,
-        Lcom/android/settings/Settings$PrivacySettingsActivity;,
-        Lcom/android/settings/Settings$LocationSettingsActivity;,
-        Lcom/android/settings/Settings$SecuritySettingsActivity;,
-        Lcom/android/settings/Settings$AccessibilitySettingsActivity;,
-        Lcom/android/settings/Settings$DevelopmentSettingsActivity;,
-        Lcom/android/settings/Settings$StorageUseActivity;,
-        Lcom/android/settings/Settings$ManageApplicationsActivity;,
-        Lcom/android/settings/Settings$DeviceInfoSettingsActivity;,
-        Lcom/android/settings/Settings$DisplaySettingsActivity;,
-        Lcom/android/settings/Settings$SoundSettingsActivity;,
-        Lcom/android/settings/Settings$UserDictionarySettingsActivity;,
-        Lcom/android/settings/Settings$LocalePickerActivity;,
-        Lcom/android/settings/Settings$SpellCheckersSettingsActivity;,
-        Lcom/android/settings/Settings$InputMethodAndLanguageSettingsActivity;,
-        Lcom/android/settings/Settings$WifiP2pSettingsActivity;,
-        Lcom/android/settings/Settings$WifiSettingsActivity;,
-        Lcom/android/settings/Settings$StorageSettingsActivity;,
-        Lcom/android/settings/Settings$DateTimeSettingsActivity;,
-        Lcom/android/settings/Settings$VpnSettingsActivity;,
-        Lcom/android/settings/Settings$TetherSettingsActivity;,
-        Lcom/android/settings/Settings$WirelessSettingsActivity;,
-        Lcom/android/settings/Settings$BluetoothSettingsActivity;,
-        Lcom/android/settings/Settings$HeaderAdapter;
+        Lcom/android/OriginalSettings/Settings$MenuPowerSavingModeSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$SoftwareUpdateSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$MotionSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$AndroidBeamSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$TextToSpeechSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$AdvancedWifiSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$DataUsageSummaryActivity;,
+        Lcom/android/OriginalSettings/Settings$DeviceAdminSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$CryptSDCardSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$CryptKeeperSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$AccountSyncSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$PowerUsageSummaryActivity;,
+        Lcom/android/OriginalSettings/Settings$ManageAccountsSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$RunningServicesActivity;,
+        Lcom/android/OriginalSettings/Settings$DockSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$PrivacySettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$LocationSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$SecuritySettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$AccessibilitySettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$DevelopmentSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$StorageUseActivity;,
+        Lcom/android/OriginalSettings/Settings$ManageApplicationsActivity;,
+        Lcom/android/OriginalSettings/Settings$DeviceInfoSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$DisplaySettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$SoundSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$UserDictionarySettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$LocalePickerActivity;,
+        Lcom/android/OriginalSettings/Settings$SpellCheckersSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$InputMethodAndLanguageSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$WifiP2pSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$WifiSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$StorageSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$DateTimeSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$VpnSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$TetherSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$WirelessSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$BluetoothSettingsActivity;,
+        Lcom/android/OriginalSettings/Settings$HeaderAdapter;
     }
 .end annotation
 
@@ -96,43 +96,43 @@
 
     .prologue
     .line 56
-    invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
+    invoke-direct {p0}, Lmiui/preference/BasePreferenceActivity;-><init>()V
 
     .line 80
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/Settings;->mEnableLog:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/Settings;->mEnableLog:Z
 
     .line 84
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/Settings;->mHeaderIndexMap:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/OriginalSettings/Settings;->mHeaderIndexMap:Ljava/util/HashMap;
 
     .line 725
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/Settings;)Landroid/preference/PreferenceActivity$Header;
+.method static synthetic access$000(Lcom/android/OriginalSettings/Settings;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/Settings;Ljava/lang/String;)V
+.method static synthetic access$100(Lcom/android/OriginalSettings/Settings;Ljava/lang/String;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 56
-    invoke-direct {p0, p1}, Lcom/android/settings/Settings;->switchToParent(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/Settings;->switchToParent(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -143,11 +143,11 @@
     .prologue
     .line 416
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getComponentName()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v4
 
@@ -182,7 +182,7 @@
 
     move-result v3
 
-    iput v3, p0, Lcom/android/settings/Settings;->mTopLevelHeaderId:I
+    iput v3, p0, Lcom/android/OriginalSettings/Settings;->mTopLevelHeaderId:I
 
     .line 420
     iget-object v3, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
@@ -193,7 +193,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/Settings;->mFragmentClass:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/OriginalSettings/Settings;->mFragmentClass:Ljava/lang/String;
 
     .line 423
     iget-object v3, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
@@ -223,10 +223,10 @@
 
     invoke-direct {v3}, Landroid/preference/PreferenceActivity$Header;-><init>()V
 
-    iput-object v3, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iput-object v3, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     .line 427
-    iget-object v3, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v3, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     iput-object v1, v3, Landroid/preference/PreferenceActivity$Header;->fragment:Ljava/lang/String;
 
@@ -234,9 +234,9 @@
     if-eqz v2, :cond_0
 
     .line 429
-    iget-object v3, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v3, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -265,14 +265,14 @@
 
     .prologue
     .line 260
-    iget v1, p0, Lcom/android/settings/Settings;->mTopLevelHeaderId:I
+    iget v1, p0, Lcom/android/OriginalSettings/Settings;->mTopLevelHeaderId:I
 
     if-eqz v1, :cond_0
 
     .line 261
-    iget-object v1, p0, Lcom/android/settings/Settings;->mHeaderIndexMap:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/OriginalSettings/Settings;->mHeaderIndexMap:Ljava/util/HashMap;
 
-    iget v2, p0, Lcom/android/settings/Settings;->mTopLevelHeaderId:I
+    iget v2, p0, Lcom/android/OriginalSettings/Settings;->mTopLevelHeaderId:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -289,7 +289,7 @@
     if-eqz v0, :cond_0
 
     .line 263
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
@@ -302,7 +302,7 @@
     invoke-virtual {v1, v2, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     .line 264
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
@@ -323,7 +323,7 @@
 
     .prologue
     .line 411
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -344,15 +344,15 @@
     .line 175
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/Settings;->mInLocalHeaderSwitch:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/Settings;->mInLocalHeaderSwitch:Z
 
     .line 176
-    invoke-virtual {p0, p1}, Lcom/android/settings/Settings;->switchToHeader(Landroid/preference/PreferenceActivity$Header;)V
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/Settings;->switchToHeader(Landroid/preference/PreferenceActivity$Header;)V
 
     .line 177
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/Settings;->mInLocalHeaderSwitch:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/Settings;->mInLocalHeaderSwitch:Z
 
     .line 178
     return-void
@@ -371,7 +371,7 @@
     .line 224
     .local v0, cn:Landroid/content/ComponentName;
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v6
 
@@ -420,23 +420,23 @@
     iput-object v2, v4, Landroid/preference/PreferenceActivity$Header;->title:Ljava/lang/CharSequence;
 
     .line 233
-    iput-object v4, p0, Lcom/android/settings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
+    iput-object v4, p0, Lcom/android/OriginalSettings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
 
     .line 235
-    invoke-direct {p0, v4}, Lcom/android/settings/Settings;->switchToHeaderLocal(Landroid/preference/PreferenceActivity$Header;)V
+    invoke-direct {p0, v4}, Lcom/android/OriginalSettings/Settings;->switchToHeaderLocal(Landroid/preference/PreferenceActivity$Header;)V
 
     .line 236
-    invoke-direct {p0}, Lcom/android/settings/Settings;->highlightHeader()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/Settings;->highlightHeader()V
 
     .line 238
     new-instance v7, Landroid/preference/PreferenceActivity$Header;
 
     invoke-direct {v7}, Landroid/preference/PreferenceActivity$Header;-><init>()V
 
-    iput-object v7, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iput-object v7, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     .line 239
-    iget-object v7, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v7, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     iget-object v8, v5, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
@@ -449,7 +449,7 @@
     iput-object v8, v7, Landroid/preference/PreferenceActivity$Header;->fragment:Ljava/lang/String;
 
     .line 241
-    iget-object v7, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v7, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     iget-object v8, v5, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
@@ -552,7 +552,7 @@
     if-ne v2, v3, :cond_3
 
     .line 368
-    invoke-direct {p0}, Lcom/android/settings/Settings;->needsDockSettings()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/Settings;->needsDockSettings()Z
 
     move-result v3
 
@@ -571,22 +571,22 @@
     if-ne v3, v0, :cond_0
 
     .line 400
-    iget-object v3, p0, Lcom/android/settings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v3, p0, Lcom/android/OriginalSettings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
 
     if-nez v3, :cond_2
 
-    invoke-static {v0}, Lcom/android/settings/Settings$HeaderAdapter;->getHeaderType(Landroid/preference/PreferenceActivity$Header;)I
+    invoke-static {v0}, Lcom/android/OriginalSettings/Settings$HeaderAdapter;->getHeaderType(Landroid/preference/PreferenceActivity$Header;)I
 
     move-result v3
 
     if-eqz v3, :cond_2
 
     .line 402
-    iput-object v0, p0, Lcom/android/settings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
+    iput-object v0, p0, Lcom/android/OriginalSettings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
 
     .line 404
     :cond_2
-    iget-object v3, p0, Lcom/android/settings/Settings;->mHeaderIndexMap:Ljava/util/HashMap;
+    iget-object v3, p0, Lcom/android/OriginalSettings/Settings;->mHeaderIndexMap:Ljava/util/HashMap;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -615,7 +615,7 @@
 
     .line 371
     :cond_4
-    invoke-static {p0, p1, v0}, Lcom/android/settings/Utils;->updateHeaderToSpecificActivityFromMetaDataOrRemove(Landroid/content/Context;Ljava/util/List;Landroid/preference/PreferenceActivity$Header;)Z
+    invoke-static {p0, p1, v0}, Lcom/android/OriginalSettings/Utils;->updateHeaderToSpecificActivityFromMetaDataOrRemove(Landroid/content/Context;Ljava/util/List;Landroid/preference/PreferenceActivity$Header;)Z
 
     goto :goto_1
 
@@ -626,7 +626,7 @@
     if-ne v2, v3, :cond_6
 
     .line 374
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -650,7 +650,7 @@
     if-ne v2, v3, :cond_7
 
     .line 389
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -674,13 +674,13 @@
     if-ne v2, v3, :cond_1
 
     .line 393
-    invoke-static {p0}, Lcom/android/settings/Utils;->isVoiceCapable(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/OriginalSettings/Utils;->isVoiceCapable(Landroid/content/Context;)Z
 
     move-result v3
 
     if-eqz v3, :cond_8
 
-    invoke-static {p0}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v3
 
@@ -706,13 +706,13 @@
 
     .prologue
     .line 271
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v4
 
     .line 272
     .local v4, superIntent:Landroid/content/Intent;
-    invoke-virtual {p0, v4}, Lcom/android/settings/Settings;->getStartingFragmentClass(Landroid/content/Intent;)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/OriginalSettings/Settings;->getStartingFragmentClass(Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -720,7 +720,7 @@
     .local v3, startingFragment:Ljava/lang/String;
     if-eqz v3, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->onIsMultiPane()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->onIsMultiPane()Z
 
     move-result v5
 
@@ -804,7 +804,7 @@
 
     .prologue
     .line 444
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getNextButton()Landroid/widget/Button;
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->getNextButton()Landroid/widget/Button;
 
     move-result-object v0
 
@@ -817,11 +817,11 @@
 
     .prologue
     .line 296
-    iget-object v0, p0, Lcom/android/settings/Settings;->mFragmentClass:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mFragmentClass:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/Settings;->mFragmentClass:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mFragmentClass:Ljava/lang/String;
 
     .line 308
     :cond_0
@@ -885,7 +885,7 @@
 
     .line 305
     :cond_3
-    const-class v0, Lcom/android/settings/applications/ManageApplications;
+    const-class v0, Lcom/android/OriginalSettings/applications/ManageApplications;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -899,7 +899,7 @@
 
     .prologue
     .line 439
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->hasNextButton()Z
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->hasNextButton()Z
 
     move-result v0
 
@@ -924,13 +924,13 @@
     .local p1, headers:Ljava/util/List;,"Ljava/util/List<Landroid/preference/PreferenceActivity$Header;>;"
     const v0, 0x7f05003a
 
-    invoke-virtual {p0, v0, p1}, Lcom/android/settings/Settings;->loadHeadersFromResource(ILjava/util/List;)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/OriginalSettings/Settings;->loadHeadersFromResource(ILjava/util/List;)V
 
     .line 356
-    invoke-direct {p0, p1}, Lcom/android/settings/Settings;->updateHeaderList(Ljava/util/List;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/Settings;->updateHeaderList(Ljava/util/List;)V
 
     .line 358
-    iput-object p1, p0, Lcom/android/settings/Settings;->mHeaders:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/OriginalSettings/Settings;->mHeaders:Ljava/util/List;
 
     .line 359
     return-void
@@ -945,12 +945,12 @@
 
     .prologue
     .line 333
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/preference/PreferenceActivity;->onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
+    invoke-super {p0, p1, p2, p3, p4}, Lmiui/preference/BasePreferenceActivity;->onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 337
-    const-class v1, Lcom/android/settings/DataUsageSummary;
+    const-class v1, Lcom/android/OriginalSettings/DataUsageSummary;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -962,7 +962,7 @@
 
     if-nez v1, :cond_0
 
-    const-class v1, Lcom/android/settings/fuelgauge/PowerUsageSummary;
+    const-class v1, Lcom/android/OriginalSettings/fuelgauge/PowerUsageSummary;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -974,7 +974,7 @@
 
     if-nez v1, :cond_0
 
-    const-class v1, Lcom/android/settings/UserDictionarySettings;
+    const-class v1, Lcom/android/OriginalSettings/UserDictionarySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -996,7 +996,7 @@
 
     .line 345
     :cond_1
-    const-class v1, Lcom/android/settings/SubSettings;
+    const-class v1, Lcom/android/OriginalSettings/SubSettings;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -1014,7 +1014,7 @@
     const/4 v2, 0x0
 
     .line 89
-    iget-boolean v0, p0, Lcom/android/settings/Settings;->mEnableLog:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/Settings;->mEnableLog:Z
 
     if-eqz v0, :cond_0
 
@@ -1027,7 +1027,7 @@
 
     .line 92
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -1040,7 +1040,7 @@
     if-eqz v0, :cond_1
 
     .line 93
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -1048,42 +1048,42 @@
 
     .line 96
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/Settings;->getMetaData()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/Settings;->getMetaData()V
 
     .line 97
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/Settings;->mInLocalHeaderSwitch:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/Settings;->mInLocalHeaderSwitch:Z
 
     .line 98
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 99
-    iput-boolean v2, p0, Lcom/android/settings/Settings;->mInLocalHeaderSwitch:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/Settings;->mInLocalHeaderSwitch:Z
 
     .line 101
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->onIsHidingHeaders()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->onIsHidingHeaders()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->onIsMultiPane()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->onIsMultiPane()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 102
-    invoke-direct {p0}, Lcom/android/settings/Settings;->highlightHeader()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/Settings;->highlightHeader()V
 
     .line 103
-    invoke-virtual {p0, v3}, Lcom/android/settings/Settings;->setSelectedMenuHeader(Landroid/preference/PreferenceActivity$Header;)V
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/Settings;->setSelectedMenuHeader(Landroid/preference/PreferenceActivity$Header;)V
 
     .line 106
     const v0, 0x7f0b0104
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/Settings;->setTitle(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/Settings;->setTitle(I)V
 
     .line 110
     :cond_2
@@ -1098,7 +1098,7 @@
 
     check-cast v0, Landroid/preference/PreferenceActivity$Header;
 
-    iput-object v0, p0, Lcom/android/settings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
+    iput-object v0, p0, Lcom/android/OriginalSettings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
 
     .line 112
     const-string v0, "com.android.settings.PARENT_HEADER"
@@ -1109,43 +1109,43 @@
 
     check-cast v0, Landroid/preference/PreferenceActivity$Header;
 
-    iput-object v0, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iput-object v0, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     .line 116
     :cond_3
     if-eqz p1, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
 
     if-eqz v0, :cond_4
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
 
     iget-object v0, v0, Landroid/preference/PreferenceActivity$Header;->title:Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/Settings;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0, v3}, Lcom/android/OriginalSettings/Settings;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     .line 121
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     if-eqz v0, :cond_5
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     iget-object v0, v0, Landroid/preference/PreferenceActivity$Header;->title:Ljava/lang/CharSequence;
 
-    new-instance v1, Lcom/android/settings/Settings$1;
+    new-instance v1, Lcom/android/OriginalSettings/Settings$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/Settings$1;-><init>(Lcom/android/settings/Settings;)V
+    invoke-direct {v1, p0}, Lcom/android/OriginalSettings/Settings$1;-><init>(Lcom/android/OriginalSettings/Settings;)V
 
-    invoke-virtual {p0, v0, v3, v1}, Lcom/android/settings/Settings;->setParentTitle(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, v0, v3, v1}, Lcom/android/OriginalSettings/Settings;->setParentTitle(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)V
 
     .line 132
     :cond_5
-    iget-boolean v0, p0, Lcom/android/settings/Settings;->mEnableLog:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/Settings;->mEnableLog:Z
 
     if-eqz v0, :cond_6
 
@@ -1165,11 +1165,11 @@
 
     .prologue
     .line 317
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/Settings;->getStartingFragmentClass(Landroid/content/Intent;)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/Settings;->getStartingFragmentClass(Landroid/content/Intent;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1187,14 +1187,14 @@
     iput-object v0, v1, Landroid/preference/PreferenceActivity$Header;->fragment:Ljava/lang/String;
 
     .line 321
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v2
 
     iput-object v2, v1, Landroid/preference/PreferenceActivity$Header;->title:Ljava/lang/CharSequence;
 
     .line 322
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -1205,7 +1205,7 @@
     iput-object v2, v1, Landroid/preference/PreferenceActivity$Header;->fragmentArguments:Landroid/os/Bundle;
 
     .line 323
-    iput-object v1, p0, Lcom/android/settings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
+    iput-object v1, p0, Lcom/android/OriginalSettings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
 
     .line 327
     .end local v1           #header:Landroid/preference/PreferenceActivity$Header;
@@ -1213,7 +1213,7 @@
     return-object v1
 
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v1, p0, Lcom/android/OriginalSettings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
 
     goto :goto_0
 .end method
@@ -1224,7 +1224,7 @@
 
     .prologue
     .line 250
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onNewIntent(Landroid/content/Intent;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onNewIntent(Landroid/content/Intent;)V
 
     .line 253
     invoke-virtual {p1}, Landroid/content/Intent;->getFlags()I
@@ -1237,26 +1237,26 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->onIsHidingHeaders()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->onIsHidingHeaders()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->onIsMultiPane()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->onIsMultiPane()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 255
-    iget-object v0, p0, Lcom/android/settings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/Settings;->switchToHeaderLocal(Landroid/preference/PreferenceActivity$Header;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/Settings;->switchToHeaderLocal(Landroid/preference/PreferenceActivity$Header;)V
 
     .line 257
     :cond_0
@@ -1268,7 +1268,7 @@
 
     .prologue
     .line 162
-    iget-boolean v1, p0, Lcom/android/settings/Settings;->mEnableLog:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/Settings;->mEnableLog:Z
 
     if-eqz v1, :cond_0
 
@@ -1281,24 +1281,24 @@
 
     .line 166
     :cond_0
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->onPause()V
 
     .line 168
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
     .line 169
     .local v0, listAdapter:Landroid/widget/ListAdapter;
-    instance-of v1, v0, Lcom/android/settings/Settings$HeaderAdapter;
+    instance-of v1, v0, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
     if-eqz v1, :cond_1
 
     .line 170
-    check-cast v0, Lcom/android/settings/Settings$HeaderAdapter;
+    check-cast v0, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
     .end local v0           #listAdapter:Landroid/widget/ListAdapter;
-    invoke-virtual {v0}, Lcom/android/settings/Settings$HeaderAdapter;->pause()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/Settings$HeaderAdapter;->pause()V
 
     .line 172
     :cond_1
@@ -1323,7 +1323,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/WallpaperTypeSettings;
+    const-class v1, Lcom/android/OriginalSettings/WallpaperTypeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1354,7 +1354,7 @@
 
     move-object v5, v4
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/Settings;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/OriginalSettings/Settings;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 663
     const/4 v0, 0x1
@@ -1367,7 +1367,7 @@
 
     .prologue
     .line 150
-    iget-boolean v1, p0, Lcom/android/settings/Settings;->mEnableLog:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/Settings;->mEnableLog:Z
 
     if-eqz v1, :cond_0
 
@@ -1379,28 +1379,28 @@
 
     .line 151
     :cond_0
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->onResume()V
 
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
     .line 154
     .local v0, listAdapter:Landroid/widget/ListAdapter;
-    instance-of v1, v0, Lcom/android/settings/Settings$HeaderAdapter;
+    instance-of v1, v0, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
     if-eqz v1, :cond_1
 
     .line 155
-    check-cast v0, Lcom/android/settings/Settings$HeaderAdapter;
+    check-cast v0, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
     .end local v0           #listAdapter:Landroid/widget/ListAdapter;
-    invoke-virtual {v0}, Lcom/android/settings/Settings$HeaderAdapter;->resume()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/Settings$HeaderAdapter;->resume()V
 
     .line 157
     :cond_1
-    iget-boolean v1, p0, Lcom/android/settings/Settings;->mEnableLog:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/Settings;->mEnableLog:Z
 
     if-eqz v1, :cond_2
 
@@ -1421,30 +1421,30 @@
 
     .prologue
     .line 137
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
 
     if-eqz v0, :cond_0
 
     .line 141
     const-string v0, "com.android.settings.CURRENT_HEADER"
 
-    iget-object v1, p0, Lcom/android/settings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v1, p0, Lcom/android/OriginalSettings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 143
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v0, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     if-eqz v0, :cond_1
 
     .line 144
     const-string v0, "com.android.settings.PARENT_HEADER"
 
-    iget-object v1, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iget-object v1, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
@@ -1459,7 +1459,7 @@
 
     .prologue
     .line 668
-    iget-object v1, p0, Lcom/android/settings/Settings;->mHeaders:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/OriginalSettings/Settings;->mHeaders:Ljava/util/List;
 
     if-nez v1, :cond_0
 
@@ -1468,7 +1468,7 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lcom/android/settings/Settings;->mHeaders:Ljava/util/List;
+    iput-object v1, p0, Lcom/android/OriginalSettings/Settings;->mHeaders:Ljava/util/List;
 
     .line 672
     const/4 v0, 0x0
@@ -1482,7 +1482,7 @@
     if-ge v0, v1, :cond_0
 
     .line 673
-    iget-object v2, p0, Lcom/android/settings/Settings;->mHeaders:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mHeaders:Ljava/util/List;
 
     invoke-interface {p1, v0}, Landroid/widget/ListAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -1500,13 +1500,13 @@
     .line 678
     .end local v0           #i:I
     :cond_0
-    new-instance v1, Lcom/android/settings/Settings$HeaderAdapter;
+    new-instance v1, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
-    iget-object v2, p0, Lcom/android/settings/Settings;->mHeaders:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mHeaders:Ljava/util/List;
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/Settings$HeaderAdapter;-><init>(Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/OriginalSettings/Settings$HeaderAdapter;-><init>(Landroid/content/Context;Ljava/util/List;)V
 
-    invoke-super {p0, v1}, Landroid/preference/PreferenceActivity;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-super {p0, v1}, Lmiui/preference/BasePreferenceActivity;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 679
     return-void
@@ -1520,7 +1520,7 @@
     const/4 v5, 0x1
 
     .line 194
-    iget-object v2, p0, Lcom/android/settings/Settings;->mHeaders:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mHeaders:Ljava/util/List;
 
     invoke-interface {v2, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
@@ -1554,21 +1554,21 @@
     if-ltz v0, :cond_1
 
     .line 198
-    iget-object v2, p0, Lcom/android/settings/Settings;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mAdapter:Landroid/widget/ListAdapter;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/Settings;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mAdapter:Landroid/widget/ListAdapter;
 
-    instance-of v2, v2, Lcom/android/settings/Settings$HeaderAdapter;
+    instance-of v2, v2, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/Settings;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mAdapter:Landroid/widget/ListAdapter;
 
-    check-cast v2, Lcom/android/settings/Settings$HeaderAdapter;
+    check-cast v2, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/Settings$HeaderAdapter;->setSelectedId(I)V
+    invoke-virtual {v2, v0}, Lcom/android/OriginalSettings/Settings$HeaderAdapter;->setSelectedId(I)V
 
     .line 215
     :cond_0
@@ -1577,14 +1577,14 @@
 
     .line 199
     :cond_1
-    iget v2, p0, Lcom/android/settings/Settings;->mTopLevelHeaderId:I
+    iget v2, p0, Lcom/android/OriginalSettings/Settings;->mTopLevelHeaderId:I
 
     if-eqz v2, :cond_2
 
     .line 200
-    iget-object v2, p0, Lcom/android/settings/Settings;->mHeaderIndexMap:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mHeaderIndexMap:Ljava/util/HashMap;
 
-    iget v3, p0, Lcom/android/settings/Settings;->mTopLevelHeaderId:I
+    iget v3, p0, Lcom/android/OriginalSettings/Settings;->mTopLevelHeaderId:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1608,54 +1608,54 @@
     if-ltz v2, :cond_0
 
     .line 204
-    iget-object v2, p0, Lcom/android/settings/Settings;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mAdapter:Landroid/widget/ListAdapter;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/Settings;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mAdapter:Landroid/widget/ListAdapter;
 
-    instance-of v2, v2, Lcom/android/settings/Settings$HeaderAdapter;
+    instance-of v2, v2, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/Settings;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mAdapter:Landroid/widget/ListAdapter;
 
-    check-cast v2, Lcom/android/settings/Settings$HeaderAdapter;
+    check-cast v2, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
     move-result v3
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/Settings$HeaderAdapter;->setSelectedId(I)V
+    invoke-virtual {v2, v3}, Lcom/android/OriginalSettings/Settings$HeaderAdapter;->setSelectedId(I)V
 
     goto :goto_0
 
     .line 209
     .end local v1           #index2:Ljava/lang/Integer;
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/Settings;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mAdapter:Landroid/widget/ListAdapter;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/Settings;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mAdapter:Landroid/widget/ListAdapter;
 
-    instance-of v2, v2, Lcom/android/settings/Settings$HeaderAdapter;
+    instance-of v2, v2, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
     if-eqz v2, :cond_0
 
     .line 210
-    invoke-virtual {p0}, Lcom/android/settings/Settings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/Settings;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
 
     invoke-virtual {v2, v5}, Landroid/widget/ListView;->setSelection(I)V
 
     .line 211
-    iget-object v2, p0, Lcom/android/settings/Settings;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v2, p0, Lcom/android/OriginalSettings/Settings;->mAdapter:Landroid/widget/ListAdapter;
 
-    check-cast v2, Lcom/android/settings/Settings$HeaderAdapter;
+    check-cast v2, Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 
-    invoke-virtual {v2, v5}, Lcom/android/settings/Settings$HeaderAdapter;->setSelectedId(I)V
+    invoke-virtual {v2, v5}, Lcom/android/OriginalSettings/Settings$HeaderAdapter;->setSelectedId(I)V
 
     goto :goto_0
 .end method
@@ -1668,30 +1668,30 @@
     const/4 v1, 0x0
 
     .line 182
-    iget-boolean v0, p0, Lcom/android/settings/Settings;->mInLocalHeaderSwitch:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/Settings;->mInLocalHeaderSwitch:Z
 
     if-nez v0, :cond_0
 
     .line 183
-    iput-object v1, p0, Lcom/android/settings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
+    iput-object v1, p0, Lcom/android/OriginalSettings/Settings;->mCurrentHeader:Landroid/preference/PreferenceActivity$Header;
 
     .line 184
-    iput-object v1, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
+    iput-object v1, p0, Lcom/android/OriginalSettings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
     .line 187
     :cond_0
-    invoke-static {p0}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 188
-    invoke-virtual {p0, p1}, Lcom/android/settings/Settings;->setSelectedMenuHeader(Landroid/preference/PreferenceActivity$Header;)V
+    invoke-virtual {p0, p1}, Lcom/android/OriginalSettings/Settings;->setSelectedMenuHeader(Landroid/preference/PreferenceActivity$Header;)V
 
     .line 190
     :cond_1
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->switchToHeader(Landroid/preference/PreferenceActivity$Header;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->switchToHeader(Landroid/preference/PreferenceActivity$Header;)V
 
     .line 191
     return-void

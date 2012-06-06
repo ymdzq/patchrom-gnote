@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/InstalledAppDetails$ClearUserDataObserver;
+.class Lcom/android/OriginalSettings/applications/InstalledAppDetails$ClearUserDataObserver;
 .super Landroid/content/pm/IPackageDataObserver$Stub;
 .source "InstalledAppDetails.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/InstalledAppDetails;
+    value = Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/applications/InstalledAppDetails;
+.field final synthetic this$0:Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+.method constructor <init>(Lcom/android/OriginalSettings/applications/InstalledAppDetails;)V
     .locals 0
     .parameter
 
     .prologue
     .line 189
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetails$ClearUserDataObserver;->this$0:Lcom/android/settings/applications/InstalledAppDetails;
+    iput-object p1, p0, Lcom/android/OriginalSettings/applications/InstalledAppDetails$ClearUserDataObserver;->this$0:Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageDataObserver$Stub;-><init>()V
 
@@ -43,10 +43,10 @@
     const/4 v1, 0x1
 
     .line 191
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails$ClearUserDataObserver;->this$0:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v2, p0, Lcom/android/OriginalSettings/applications/InstalledAppDetails$ClearUserDataObserver;->this$0:Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
-    #getter for: Lcom/android/settings/applications/InstalledAppDetails;->mHandler:Landroid/os/Handler;
-    invoke-static {v2}, Lcom/android/settings/applications/InstalledAppDetails;->access$400(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/os/Handler;
+    #getter for: Lcom/android/OriginalSettings/applications/InstalledAppDetails;->mHandler:Landroid/os/Handler;
+    invoke-static {v2}, Lcom/android/OriginalSettings/applications/InstalledAppDetails;->access$400(Lcom/android/OriginalSettings/applications/InstalledAppDetails;)Landroid/os/Handler;
 
     move-result-object v2
 
@@ -62,10 +62,10 @@
     iput v1, v0, Landroid/os/Message;->arg1:I
 
     .line 193
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails$ClearUserDataObserver;->this$0:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/InstalledAppDetails$ClearUserDataObserver;->this$0:Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
-    #getter for: Lcom/android/settings/applications/InstalledAppDetails;->mHandler:Landroid/os/Handler;
-    invoke-static {v1}, Lcom/android/settings/applications/InstalledAppDetails;->access$400(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/os/Handler;
+    #getter for: Lcom/android/OriginalSettings/applications/InstalledAppDetails;->mHandler:Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/OriginalSettings/applications/InstalledAppDetails;->access$400(Lcom/android/OriginalSettings/applications/InstalledAppDetails;)Landroid/os/Handler;
 
     move-result-object v1
 

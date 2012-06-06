@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiStatusReceiver;
+.class public Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "WifiStatusReceiver.java"
 
@@ -25,16 +25,16 @@
     const/4 v0, 0x0
 
     .line 54
-    sput-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->mDialogFlag:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mDialogFlag:Z
 
     .line 55
-    sput-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
 
     .line 56
-    sput-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->mIsForegroundWifiSettings:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mIsForegroundWifiSettings:Z
 
     .line 57
-    sput-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->mIsForegroundWifiSubSettings:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mIsForegroundWifiSubSettings:Z
 
     return-void
 .end method
@@ -56,7 +56,7 @@
 
     .prologue
     .line 172
-    sget-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->mEnableShowApEventFlag:Z
+    sget-boolean v0, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mEnableShowApEventFlag:Z
 
     if-ne v0, p2, :cond_0
 
@@ -66,7 +66,7 @@
 
     .line 175
     :cond_0
-    sput-boolean p2, Lcom/android/settings/wifi/WifiStatusReceiver;->mEnableShowApEventFlag:Z
+    sput-boolean p2, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mEnableShowApEventFlag:Z
 
     .line 177
     invoke-virtual {p1, p2}, Landroid/net/wifi/WifiManager;->setEnableNoApConnectionEvent(Z)V
@@ -80,7 +80,7 @@
 
     .prologue
     .line 162
-    sget-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->mIsForegroundWifiSettings:Z
+    sget-boolean v0, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mIsForegroundWifiSettings:Z
 
     if-eqz v0, :cond_0
 
@@ -93,7 +93,7 @@
 
     .line 164
     :cond_0
-    sget-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->mIsForegroundWifiSubSettings:Z
+    sget-boolean v0, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mIsForegroundWifiSubSettings:Z
 
     if-eqz v0, :cond_1
 
@@ -159,23 +159,23 @@
     if-ne v1, v2, :cond_2
 
     .line 89
-    sget-boolean v1, Lcom/android/settings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
+    sget-boolean v1, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
 
     if-eqz v1, :cond_1
 
     .line 90
-    sput-boolean v5, Lcom/android/settings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
+    sput-boolean v5, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
 
     .line 91
-    sget-boolean v1, Lcom/android/settings/wifi/WifiStatusReceiver;->mIsForegroundWifiSettings:Z
+    sget-boolean v1, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mIsForegroundWifiSettings:Z
 
     if-nez v1, :cond_0
 
     .line 92
-    sput-boolean v6, Lcom/android/settings/wifi/WifiStatusReceiver;->mDialogFlag:Z
+    sput-boolean v6, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mDialogFlag:Z
 
     .line 93
-    invoke-direct {p0, v0, v6}, Lcom/android/settings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
+    invoke-direct {p0, v0, v6}, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
 
     .line 157
     :cond_0
@@ -184,10 +184,10 @@
 
     .line 96
     :cond_1
-    sput-boolean v5, Lcom/android/settings/wifi/WifiStatusReceiver;->mDialogFlag:Z
+    sput-boolean v5, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mDialogFlag:Z
 
     .line 97
-    invoke-direct {p0, v0, v5}, Lcom/android/settings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
+    invoke-direct {p0, v0, v5}, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
 
     goto :goto_0
 
@@ -196,13 +196,13 @@
     if-ne v1, v6, :cond_0
 
     .line 104
-    sput-boolean v5, Lcom/android/settings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
+    sput-boolean v5, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
 
     .line 105
-    sput-boolean v5, Lcom/android/settings/wifi/WifiStatusReceiver;->mDialogFlag:Z
+    sput-boolean v5, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mDialogFlag:Z
 
     .line 106
-    invoke-direct {p0, v0, v5}, Lcom/android/settings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
+    invoke-direct {p0, v0, v5}, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
 
     goto :goto_0
 
@@ -233,24 +233,24 @@
     move-result v0
 
     .line 112
-    sput-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
+    sput-boolean v0, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mShowOnceFlag:Z
 
     .line 113
     if-nez v0, :cond_0
 
     .line 114
-    sput-boolean v5, Lcom/android/settings/wifi/WifiStatusReceiver;->mDialogFlag:Z
+    sput-boolean v5, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mDialogFlag:Z
 
     goto :goto_0
 
     .line 117
     :cond_4
-    sget-boolean v1, Lcom/android/settings/wifi/WifiStatusReceiver;->mDialogFlag:Z
+    sget-boolean v1, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mDialogFlag:Z
 
     if-eqz v1, :cond_0
 
     .line 118
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiStatusReceiver;->isWifiSettingScreen(Landroid/content/Context;)I
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->isWifiSettingScreen(Landroid/content/Context;)I
 
     move-result v1
 
@@ -268,7 +268,7 @@
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
     .line 121
-    const-class v2, Lcom/android/settings/wifi/WifiPickerDialog;
+    const-class v2, Lcom/android/OriginalSettings/wifi/WifiPickerDialog;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -286,10 +286,10 @@
 
     .line 125
     :cond_5
-    sput-boolean v5, Lcom/android/settings/wifi/WifiStatusReceiver;->mDialogFlag:Z
+    sput-boolean v5, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mDialogFlag:Z
 
     .line 126
-    invoke-direct {p0, v0, v5}, Lcom/android/settings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
+    invoke-direct {p0, v0, v5}, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
 
     goto :goto_0
 
@@ -312,14 +312,14 @@
 
     check-cast v1, Landroid/net/NetworkInfo;
 
-    sput-object v1, Lcom/android/settings/wifi/WifiStatusReceiver;->mLastInfo:Landroid/net/NetworkInfo;
+    sput-object v1, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mLastInfo:Landroid/net/NetworkInfo;
 
     .line 132
-    sget-object v1, Lcom/android/settings/wifi/WifiStatusReceiver;->mLastInfo:Landroid/net/NetworkInfo;
+    sget-object v1, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mLastInfo:Landroid/net/NetworkInfo;
 
     if-eqz v1, :cond_0
 
-    sget-object v1, Lcom/android/settings/wifi/WifiStatusReceiver;->mLastInfo:Landroid/net/NetworkInfo;
+    sget-object v1, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->mLastInfo:Landroid/net/NetworkInfo;
 
     invoke-virtual {v1}, Landroid/net/NetworkInfo;->isConnected()Z
 
@@ -399,7 +399,7 @@
     invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
     .line 139
-    invoke-direct {p0, v0, v5}, Lcom/android/settings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
+    invoke-direct {p0, v0, v5}, Lcom/android/OriginalSettings/wifi/WifiStatusReceiver;->enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
 
     goto/16 :goto_0
 

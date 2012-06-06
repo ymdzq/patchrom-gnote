@@ -1,11 +1,11 @@
-.class Lcom/android/settings/AccessibilityTutorialActivity$TouchTutorialModule2$1;
-.super Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;
+.class Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TouchTutorialModule2$1;
+.super Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;
 .source "AccessibilityTutorialActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/AccessibilityTutorialActivity$TouchTutorialModule2;-><init>(Landroid/content/Context;Lcom/android/settings/AccessibilityTutorialActivity;)V
+    value = Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TouchTutorialModule2;-><init>(Landroid/content/Context;Lcom/android/OriginalSettings/AccessibilityTutorialActivity;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/AccessibilityTutorialActivity$TouchTutorialModule2;
+.field final synthetic this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TouchTutorialModule2;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessibilityTutorialActivity$TouchTutorialModule2;Landroid/content/Context;II)V
+.method constructor <init>(Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TouchTutorialModule2;Landroid/content/Context;II)V
     .locals 0
     .parameter
     .parameter "x0"
@@ -28,9 +28,9 @@
 
     .prologue
     .line 428
-    iput-object p1, p0, Lcom/android/settings/AccessibilityTutorialActivity$TouchTutorialModule2$1;->this$0:Lcom/android/settings/AccessibilityTutorialActivity$TouchTutorialModule2;
+    iput-object p1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TouchTutorialModule2$1;->this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TouchTutorialModule2;
 
-    invoke-direct {p0, p2, p3, p4}, Lcom/android/settings/AccessibilityTutorialActivity$AppsAdapter;-><init>(Landroid/content/Context;II)V
+    invoke-direct {p0, p2, p3, p4}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$AppsAdapter;-><init>(Landroid/content/Context;II)V
 
     return-void
 .end method

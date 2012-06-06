@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/MotionView$3;
+.class Lcom/android/OriginalSettings/motion/MotionView$3;
 .super Ljava/lang/Object;
 .source "MotionView.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/MotionView;->showMotionDialog()V
+    value = Lcom/android/OriginalSettings/motion/MotionView;->showMotionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/MotionView;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/MotionView;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter
 
     .prologue
     .line 206
-    iput-object p1, p0, Lcom/android/settings/motion/MotionView$3;->this$0:Lcom/android/settings/motion/MotionView;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/MotionView$3;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,10 +50,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/motion/MotionView$3;->this$0:Lcom/android/settings/motion/MotionView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/MotionView$3;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
-    #calls: Lcom/android/settings/motion/MotionView;->updateCheckedUI()V
-    invoke-static {v0}, Lcom/android/settings/motion/MotionView;->access$600(Lcom/android/settings/motion/MotionView;)V
+    #calls: Lcom/android/OriginalSettings/motion/MotionView;->updateCheckedUI()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/MotionView;->access$600(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     .line 210
     return-void

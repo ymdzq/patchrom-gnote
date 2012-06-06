@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/ChooseLockPatternTutorial;
-.super Landroid/preference/PreferenceActivity;
+.class public Lcom/android/OriginalSettings/ChooseLockPatternTutorial;
+.super Lmiui/preference/BasePreferenceActivity;
 .source "ChooseLockPatternTutorial.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;
+        Lcom/android/OriginalSettings/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;
     }
 .end annotation
 
@@ -17,7 +17,7 @@
 
     .prologue
     .line 35
-    invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
+    invoke-direct {p0}, Lmiui/preference/BasePreferenceActivity;-><init>()V
 
     .line 37
     return-void
@@ -32,7 +32,7 @@
     .line 41
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -41,7 +41,7 @@
     .line 42
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;
+    const-class v2, Lcom/android/OriginalSettings/ChooseLockPatternTutorial$ChooseLockPatternTutorialFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -66,18 +66,18 @@
 
     .prologue
     .line 49
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 50
     const v1, 0x7f0b0407
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ChooseLockPatternTutorial;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/ChooseLockPatternTutorial;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 51
     .local v0, msg:Ljava/lang/CharSequence;
-    invoke-virtual {p0, v0, v0}, Lcom/android/settings/ChooseLockPatternTutorial;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0, v0}, Lcom/android/OriginalSettings/ChooseLockPatternTutorial;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     .line 52
     return-void

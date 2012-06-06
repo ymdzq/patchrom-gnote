@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/TurnOverSettings$7;
+.class Lcom/android/OriginalSettings/motion/TurnOverSettings$7;
 .super Ljava/lang/Object;
 .source "TurnOverSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/TurnOverSettings;->showUseRingDialog()V
+    value = Lcom/android/OriginalSettings/motion/TurnOverSettings;->showUseRingDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/TurnOverSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/TurnOverSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/TurnOverSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 247
-    iput-object p1, p0, Lcom/android/settings/motion/TurnOverSettings$7;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$7;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,12 +44,12 @@
 
     .prologue
     .line 249
-    iget-object v0, p0, Lcom/android/settings/motion/TurnOverSettings$7;->this$0:Lcom/android/settings/motion/TurnOverSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TurnOverSettings$7;->this$0:Lcom/android/OriginalSettings/motion/TurnOverSettings;
 
     const/4 v1, 0x1
 
-    #calls: Lcom/android/settings/motion/TurnOverSettings;->startTryActually(Z)V
-    invoke-static {v0, v1}, Lcom/android/settings/motion/TurnOverSettings;->access$600(Lcom/android/settings/motion/TurnOverSettings;Z)V
+    #calls: Lcom/android/OriginalSettings/motion/TurnOverSettings;->startTryActually(Z)V
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/motion/TurnOverSettings;->access$600(Lcom/android/OriginalSettings/motion/TurnOverSettings;Z)V
 
     .line 250
     return-void

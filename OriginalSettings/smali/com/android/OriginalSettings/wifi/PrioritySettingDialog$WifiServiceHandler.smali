@@ -1,11 +1,11 @@
-.class Lcom/android/settings/wifi/PrioritySettingDialog$WifiServiceHandler;
+.class Lcom/android/OriginalSettings/wifi/PrioritySettingDialog$WifiServiceHandler;
 .super Landroid/os/Handler;
 .source "PrioritySettingDialog.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/PrioritySettingDialog;
+    value = Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,31 +15,31 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/wifi/PrioritySettingDialog;
+.field final synthetic this$0:Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/wifi/PrioritySettingDialog;)V
+.method private constructor <init>(Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;)V
     .locals 0
     .parameter
 
     .prologue
     .line 154
-    iput-object p1, p0, Lcom/android/settings/wifi/PrioritySettingDialog$WifiServiceHandler;->this$0:Lcom/android/settings/wifi/PrioritySettingDialog;
+    iput-object p1, p0, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog$WifiServiceHandler;->this$0:Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/wifi/PrioritySettingDialog;Lcom/android/settings/wifi/PrioritySettingDialog$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;Lcom/android/OriginalSettings/wifi/PrioritySettingDialog$1;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 154
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/PrioritySettingDialog$WifiServiceHandler;-><init>(Lcom/android/settings/wifi/PrioritySettingDialog;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/wifi/PrioritySettingDialog$WifiServiceHandler;-><init>(Lcom/android/OriginalSettings/wifi/PrioritySettingDialog;)V
 
     return-void
 .end method

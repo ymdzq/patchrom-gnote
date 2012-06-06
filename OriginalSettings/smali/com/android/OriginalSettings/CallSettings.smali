@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/CallSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/CallSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "CallSettings.java"
 
 # interfaces
@@ -42,58 +42,58 @@
 
     .prologue
     .line 23
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 46
     const-string v0, "wifiOnly"
 
-    iput-object v0, p0, Lcom/android/settings/CallSettings;->mSelected_SIP_Option:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/CallSettings;->mSelected_SIP_Option:Ljava/lang/String;
 
     .line 47
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/CallSettings;->mVoipSupported:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/CallSettings;->mVoipSupported:Z
 
     .line 92
-    new-instance v0, Lcom/android/settings/CallSettings$1;
+    new-instance v0, Lcom/android/OriginalSettings/CallSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/CallSettings$1;-><init>(Lcom/android/settings/CallSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/CallSettings$1;-><init>(Lcom/android/OriginalSettings/CallSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/CallSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/CallSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/CallSettings;)Z
+.method static synthetic access$000(Lcom/android/OriginalSettings/CallSettings;)Z
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 23
-    iget-boolean v0, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     return v0
 .end method
 
-.method static synthetic access$002(Lcom/android/settings/CallSettings;Z)Z
+.method static synthetic access$002(Lcom/android/OriginalSettings/CallSettings;Z)Z
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 23
-    iput-boolean p1, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iput-boolean p1, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     return p1
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/CallSettings;)Landroid/preference/CheckBoxPreference;
+.method static synthetic access$100(Lcom/android/OriginalSettings/CallSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 23
-    iget-object v0, p0, Lcom/android/settings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
@@ -110,7 +110,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 461
-    invoke-direct {p0}, Lcom/android/settings/CallSettings;->isVoipSupported()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/CallSettings;->isVoipSupported()Z
 
     move-result v0
 
@@ -119,26 +119,26 @@
     .line 462
     const v0, 0x7f05003c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/CallSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/CallSettings;->addPreferencesFromResource(I)V
 
     .line 463
-    invoke-direct {p0}, Lcom/android/settings/CallSettings;->getSipCallOptionPreference()Landroid/preference/ListPreference;
+    invoke-direct {p0}, Lcom/android/OriginalSettings/CallSettings;->getSipCallOptionPreference()Landroid/preference/ListPreference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
     .line 464
-    iget-object v0, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 465
-    iget-object v0, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/CallSettings;->getSipCallOption()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/OriginalSettings/CallSettings;->getSipCallOption()Ljava/lang/String;
 
     move-result-object v2
 
@@ -149,9 +149,9 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 467
-    iget-object v0, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -176,7 +176,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 446
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -191,7 +191,7 @@
 
     .line 449
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -214,29 +214,29 @@
     .line 452
     const v1, 0x7f050049
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->addPreferencesFromResource(I)V
 
     .line 453
     const-string v1, "showme_preference"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/CallSettings;->mShowMeForVideoCall:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/CallSettings;->mShowMeForVideoCall:Landroid/preference/CheckBoxPreference;
 
     .line 454
     const-string v1, "failoption_preference"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/CallSettings;->mCallFailOption:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/CallSettings;->mCallFailOption:Landroid/preference/CheckBoxPreference;
 
     .line 456
     :cond_1
@@ -248,7 +248,7 @@
 
     .prologue
     .line 496
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -293,7 +293,7 @@
     :cond_0
     const v1, 0x7f0b0925
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -307,7 +307,7 @@
     .line 472
     const-string v3, "sip_call_options_key"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -317,7 +317,7 @@
     .local v1, wifiAnd3G:Landroid/preference/ListPreference;
     const-string v3, "sip_call_options_wifi_only_key"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -327,7 +327,7 @@
     .local v2, wifiOnly:Landroid/preference/ListPreference;
     const-string v3, "sip_settings_category_key"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -335,7 +335,7 @@
 
     .line 479
     .local v0, sipSettings:Landroid/preference/PreferenceGroup;
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -351,7 +351,7 @@
     .line 481
     const-string v3, "wifiOnly"
 
-    iput-object v3, p0, Lcom/android/settings/CallSettings;->mSelected_SIP_Option:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/OriginalSettings/CallSettings;->mSelected_SIP_Option:Ljava/lang/String;
 
     .line 486
     .end local v2           #wifiOnly:Landroid/preference/ListPreference;
@@ -366,7 +366,7 @@
     .line 485
     const-string v3, "wifiAnd3G"
 
-    iput-object v3, p0, Lcom/android/settings/CallSettings;->mSelected_SIP_Option:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/OriginalSettings/CallSettings;->mSelected_SIP_Option:Ljava/lang/String;
 
     move-object v2, v1
 
@@ -379,7 +379,7 @@
 
     .prologue
     .line 516
-    iget-boolean v0, p0, Lcom/android/settings/CallSettings;->mVoipSupported:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/CallSettings;->mVoipSupported:Z
 
     return v0
 .end method
@@ -390,7 +390,7 @@
 
     .prologue
     .line 491
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -414,7 +414,7 @@
     const/4 v4, 0x0
 
     .line 209
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 210
     const-string v2, "CallSettings"
@@ -424,10 +424,10 @@
     invoke-static {v2, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 213
-    iput-boolean v4, p0, Lcom/android/settings/CallSettings;->mVoipSupported:Z
+    iput-boolean v4, p0, Lcom/android/OriginalSettings/CallSettings;->mVoipSupported:Z
 
     .line 214
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -437,7 +437,7 @@
 
     if-eqz v2, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -453,7 +453,7 @@
 
     if-eqz v2, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -472,7 +472,7 @@
     move v2, v3
 
     :goto_0
-    iput-boolean v2, p0, Lcom/android/settings/CallSettings;->mVoipSupported:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/CallSettings;->mVoipSupported:Z
 
     .line 217
     const-string v2, "CallSettings"
@@ -487,7 +487,7 @@
 
     move-result-object v5
 
-    iget-boolean v6, p0, Lcom/android/settings/CallSettings;->mVoipSupported:Z
+    iget-boolean v6, p0, Lcom/android/OriginalSettings/CallSettings;->mVoipSupported:Z
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -502,74 +502,74 @@
     .line 220
     const v2, 0x7f05000a
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/CallSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/CallSettings;->addPreferencesFromResource(I)V
 
     .line 223
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     .line 225
     .local v1, prefSet:Landroid/preference/PreferenceScreen;
-    invoke-direct {p0}, Lcom/android/settings/CallSettings;->createVideoCallSettings()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/CallSettings;->createVideoCallSettings()V
 
     .line 226
-    invoke-direct {p0}, Lcom/android/settings/CallSettings;->createSipCallSettings()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/CallSettings;->createSipCallSettings()V
 
     .line 228
     const-string v2, "fixed_dialing"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/PreferenceScreen;
 
-    iput-object v2, p0, Lcom/android/settings/CallSettings;->mFixedDialing:Landroid/preference/PreferenceScreen;
+    iput-object v2, p0, Lcom/android/OriginalSettings/CallSettings;->mFixedDialing:Landroid/preference/PreferenceScreen;
 
     .line 229
     const-string v2, "voicemail"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/PreferenceScreen;
 
-    iput-object v2, p0, Lcom/android/settings/CallSettings;->mVoicemail:Landroid/preference/PreferenceScreen;
+    iput-object v2, p0, Lcom/android/OriginalSettings/CallSettings;->mVoicemail:Landroid/preference/PreferenceScreen;
 
     .line 230
     const-string v2, "call_forwarding"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/PreferenceScreen;
 
-    iput-object v2, p0, Lcom/android/settings/CallSettings;->mCallForwarding:Landroid/preference/PreferenceScreen;
+    iput-object v2, p0, Lcom/android/OriginalSettings/CallSettings;->mCallForwarding:Landroid/preference/PreferenceScreen;
 
     .line 231
     const-string v2, "additional_settings"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/PreferenceScreen;
 
-    iput-object v2, p0, Lcom/android/settings/CallSettings;->mAdditionalSettings:Landroid/preference/PreferenceScreen;
+    iput-object v2, p0, Lcom/android/OriginalSettings/CallSettings;->mAdditionalSettings:Landroid/preference/PreferenceScreen;
 
     .line 232
     const-string v2, "proximity_sensor_preference"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/CheckBoxPreference;
 
-    iput-object v2, p0, Lcom/android/settings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
+    iput-object v2, p0, Lcom/android/OriginalSettings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
 
     .line 236
     const-string v2, "GT-P7570"
@@ -622,13 +622,13 @@
     :cond_1
     const-string v2, "nwservice_pref"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/PreferenceGroup;
 
-    iput-object v2, p0, Lcom/android/settings/CallSettings;->mNwservicePref:Landroid/preference/PreferenceGroup;
+    iput-object v2, p0, Lcom/android/OriginalSettings/CallSettings;->mNwservicePref:Landroid/preference/PreferenceGroup;
 
     .line 246
     return-void
@@ -654,14 +654,14 @@
 
     .prologue
     .line 121
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPause()V
 
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/CallSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CallSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -676,7 +676,7 @@
 
     .prologue
     .line 504
-    iget-object v1, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
     if-ne p1, v1, :cond_0
 
@@ -710,12 +710,12 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 507
-    invoke-direct {p0, v0}, Lcom/android/settings/CallSettings;->setSipCallOption(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/CallSettings;->setSipCallOption(Ljava/lang/String;)V
 
     .line 508
-    iget-object v1, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
-    iget-object v2, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
     invoke-virtual {v2, v0}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
@@ -724,9 +724,9 @@
     invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 509
-    iget-object v1, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
-    iget-object v2, p0, Lcom/android/settings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/CallSettings;->mButtonSipCallOptions:Landroid/preference/ListPreference;
 
     invoke-virtual {v2}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -804,12 +804,12 @@
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 258
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 439
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v3
 
@@ -839,7 +839,7 @@
     invoke-virtual {v1, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 263
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -861,7 +861,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 267
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -883,7 +883,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 271
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -905,7 +905,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 275
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -927,7 +927,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 279
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -949,7 +949,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 283
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -971,7 +971,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 287
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -993,7 +993,7 @@
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 291
-    invoke-virtual {p0, v1}, Lcom/android/settings/CallSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/CallSettings;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -1008,7 +1008,7 @@
     if-eqz v4, :cond_c
 
     .line 294
-    iget-object v4, p0, Lcom/android/settings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1017,7 +1017,7 @@
     if-nez v4, :cond_b
 
     .line 304
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1034,30 +1034,30 @@
     if-ne v0, v4, :cond_a
 
     .line 311
-    iput-boolean v3, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iput-boolean v3, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     .line 312
-    iget-object v4, p0, Lcom/android/settings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
 
-    iget-boolean v5, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iget-boolean v5, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     invoke-virtual {v4, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 315
     new-instance v4, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
     invoke-direct {v4, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    iput-object v4, p0, Lcom/android/settings/CallSettings;->mAlertDialog:Landroid/app/AlertDialog$Builder;
+    iput-object v4, p0, Lcom/android/OriginalSettings/CallSettings;->mAlertDialog:Landroid/app/AlertDialog$Builder;
 
     .line 316
-    iget-object v4, p0, Lcom/android/settings/CallSettings;->mAlertDialog:Landroid/app/AlertDialog$Builder;
+    iget-object v4, p0, Lcom/android/OriginalSettings/CallSettings;->mAlertDialog:Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1089,9 +1089,9 @@
 
     const v5, 0x7f0b0943
 
-    new-instance v6, Lcom/android/settings/CallSettings$4;
+    new-instance v6, Lcom/android/OriginalSettings/CallSettings$4;
 
-    invoke-direct {v6, p0}, Lcom/android/settings/CallSettings$4;-><init>(Lcom/android/settings/CallSettings;)V
+    invoke-direct {v6, p0}, Lcom/android/OriginalSettings/CallSettings$4;-><init>(Lcom/android/OriginalSettings/CallSettings;)V
 
     invoke-virtual {v4, v5, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1099,9 +1099,9 @@
 
     const v5, 0x7f0b0944
 
-    new-instance v6, Lcom/android/settings/CallSettings$3;
+    new-instance v6, Lcom/android/OriginalSettings/CallSettings$3;
 
-    invoke-direct {v6, p0}, Lcom/android/settings/CallSettings$3;-><init>(Lcom/android/settings/CallSettings;)V
+    invoke-direct {v6, p0}, Lcom/android/OriginalSettings/CallSettings$3;-><init>(Lcom/android/OriginalSettings/CallSettings;)V
 
     invoke-virtual {v4, v5, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1111,9 +1111,9 @@
 
     move-result-object v4
 
-    new-instance v5, Lcom/android/settings/CallSettings$2;
+    new-instance v5, Lcom/android/OriginalSettings/CallSettings$2;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/CallSettings$2;-><init>(Lcom/android/settings/CallSettings;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/CallSettings$2;-><init>(Lcom/android/OriginalSettings/CallSettings;)V
 
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -1121,7 +1121,7 @@
 
     .line 350
     :cond_a
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1130,12 +1130,12 @@
     invoke-static {v4, v5, v7}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 352
-    iput-boolean v7, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iput-boolean v7, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     .line 353
-    iget-object v4, p0, Lcom/android/settings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
 
-    iget-boolean v5, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iget-boolean v5, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     invoke-virtual {v4, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -1144,7 +1144,7 @@
     .line 356
     .end local v0           #currntPowerButtonStatus:I
     :cond_b
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1153,12 +1153,12 @@
     invoke-static {v4, v5, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 358
-    iput-boolean v3, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iput-boolean v3, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     .line 359
-    iget-object v4, p0, Lcom/android/settings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
 
-    iget-boolean v5, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iget-boolean v5, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     invoke-virtual {v4, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -1175,7 +1175,7 @@
     if-eqz v4, :cond_e
 
     .line 422
-    iget-object v4, p0, Lcom/android/settings/CallSettings;->mCallFailOption:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/CallSettings;->mCallFailOption:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1184,7 +1184,7 @@
     if-eqz v4, :cond_d
 
     .line 423
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1196,7 +1196,7 @@
 
     .line 426
     :cond_d
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1217,7 +1217,7 @@
     if-eqz v4, :cond_0
 
     .line 431
-    iget-object v4, p0, Lcom/android/settings/CallSettings;->mShowMeForVideoCall:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/OriginalSettings/CallSettings;->mShowMeForVideoCall:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1226,7 +1226,7 @@
     if-eqz v4, :cond_f
 
     .line 432
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1238,7 +1238,7 @@
 
     .line 435
     :cond_f
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1260,7 +1260,7 @@
     const/4 v9, 0x1
 
     .line 128
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 130
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
@@ -1273,11 +1273,11 @@
 
     .line 131
     .local v0, SimState:I
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v11
 
-    invoke-static {v11}, Lcom/android/settings/AirplaneModeEnabler;->isAirplaneModeOn(Landroid/content/Context;)Z
+    invoke-static {v11}, Lcom/android/OriginalSettings/AirplaneModeEnabler;->isAirplaneModeOn(Landroid/content/Context;)Z
 
     move-result v4
 
@@ -1325,16 +1325,16 @@
     invoke-static {v11, v12}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 137
-    iget-object v11, p0, Lcom/android/settings/CallSettings;->mFixedDialing:Landroid/preference/PreferenceScreen;
+    iget-object v11, p0, Lcom/android/OriginalSettings/CallSettings;->mFixedDialing:Landroid/preference/PreferenceScreen;
 
     if-eqz v11, :cond_1
 
     .line 138
-    iget-object v12, p0, Lcom/android/settings/CallSettings;->mFixedDialing:Landroid/preference/PreferenceScreen;
+    iget-object v12, p0, Lcom/android/OriginalSettings/CallSettings;->mFixedDialing:Landroid/preference/PreferenceScreen;
 
     if-eqz v4, :cond_0
 
-    invoke-direct {p0}, Lcom/android/settings/CallSettings;->isVoipSupported()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/CallSettings;->isVoipSupported()Z
 
     move-result v11
 
@@ -1350,16 +1350,16 @@
 
     .line 140
     :cond_1
-    iget-object v11, p0, Lcom/android/settings/CallSettings;->mVoicemail:Landroid/preference/PreferenceScreen;
+    iget-object v11, p0, Lcom/android/OriginalSettings/CallSettings;->mVoicemail:Landroid/preference/PreferenceScreen;
 
     if-eqz v11, :cond_3
 
     .line 141
-    iget-object v12, p0, Lcom/android/settings/CallSettings;->mVoicemail:Landroid/preference/PreferenceScreen;
+    iget-object v12, p0, Lcom/android/OriginalSettings/CallSettings;->mVoicemail:Landroid/preference/PreferenceScreen;
 
     if-eqz v4, :cond_2
 
-    invoke-direct {p0}, Lcom/android/settings/CallSettings;->isVoipSupported()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/CallSettings;->isVoipSupported()Z
 
     move-result v11
 
@@ -1375,16 +1375,16 @@
 
     .line 143
     :cond_3
-    iget-object v11, p0, Lcom/android/settings/CallSettings;->mCallForwarding:Landroid/preference/PreferenceScreen;
+    iget-object v11, p0, Lcom/android/OriginalSettings/CallSettings;->mCallForwarding:Landroid/preference/PreferenceScreen;
 
     if-eqz v11, :cond_5
 
     .line 144
-    iget-object v12, p0, Lcom/android/settings/CallSettings;->mCallForwarding:Landroid/preference/PreferenceScreen;
+    iget-object v12, p0, Lcom/android/OriginalSettings/CallSettings;->mCallForwarding:Landroid/preference/PreferenceScreen;
 
     if-eqz v4, :cond_4
 
-    invoke-direct {p0}, Lcom/android/settings/CallSettings;->isVoipSupported()Z
+    invoke-direct {p0}, Lcom/android/OriginalSettings/CallSettings;->isVoipSupported()Z
 
     move-result v11
 
@@ -1400,12 +1400,12 @@
 
     .line 147
     :cond_5
-    iget-object v11, p0, Lcom/android/settings/CallSettings;->mNwservicePref:Landroid/preference/PreferenceGroup;
+    iget-object v11, p0, Lcom/android/OriginalSettings/CallSettings;->mNwservicePref:Landroid/preference/PreferenceGroup;
 
     if-eqz v11, :cond_6
 
     .line 148
-    iget-object v11, p0, Lcom/android/settings/CallSettings;->mNwservicePref:Landroid/preference/PreferenceGroup;
+    iget-object v11, p0, Lcom/android/OriginalSettings/CallSettings;->mNwservicePref:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v11, v5}, Landroid/preference/PreferenceGroup;->setEnabled(Z)V
 
@@ -1422,11 +1422,11 @@
     invoke-virtual {v2, v11}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v11
 
-    iget-object v12, p0, Lcom/android/settings/CallSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v12, p0, Lcom/android/OriginalSettings/CallSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v11, v12, v2, v14, v14}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
@@ -1436,13 +1436,13 @@
     .line 157
     const-string v9, "sip_settings_category_key"
 
-    invoke-virtual {p0, v9}, Lcom/android/settings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v9}, Lcom/android/OriginalSettings/CallSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v8
 
     .line 158
     .local v8, sipSettings:Landroid/preference/Preference;
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v7
 
@@ -1513,14 +1513,14 @@
     .line 169
     .restart local v2       #filter:Landroid/content/IntentFilter;
     :cond_c
-    iget-object v11, p0, Lcom/android/settings/CallSettings;->mShowMeForVideoCall:Landroid/preference/CheckBoxPreference;
+    iget-object v11, p0, Lcom/android/OriginalSettings/CallSettings;->mShowMeForVideoCall:Landroid/preference/CheckBoxPreference;
 
     if-eqz v11, :cond_d
 
     .line 170
-    iget-object v12, p0, Lcom/android/settings/CallSettings;->mShowMeForVideoCall:Landroid/preference/CheckBoxPreference;
+    iget-object v12, p0, Lcom/android/OriginalSettings/CallSettings;->mShowMeForVideoCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v11
 
@@ -1539,14 +1539,14 @@
 
     .line 175
     :cond_d
-    iget-object v11, p0, Lcom/android/settings/CallSettings;->mCallFailOption:Landroid/preference/CheckBoxPreference;
+    iget-object v11, p0, Lcom/android/OriginalSettings/CallSettings;->mCallFailOption:Landroid/preference/CheckBoxPreference;
 
     if-eqz v11, :cond_e
 
     .line 176
-    iget-object v12, p0, Lcom/android/settings/CallSettings;->mCallFailOption:Landroid/preference/CheckBoxPreference;
+    iget-object v12, p0, Lcom/android/OriginalSettings/CallSettings;->mCallFailOption:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v11
 
@@ -1565,12 +1565,12 @@
 
     .line 181
     :cond_e
-    iget-object v11, p0, Lcom/android/settings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
+    iget-object v11, p0, Lcom/android/OriginalSettings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
 
     if-eqz v11, :cond_f
 
     .line 182
-    invoke-virtual {p0}, Lcom/android/settings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/CallSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v11
 
@@ -1583,13 +1583,13 @@
     if-ne v11, v9, :cond_12
 
     .line 184
-    iput-boolean v9, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iput-boolean v9, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     .line 188
     :goto_7
-    iget-object v9, p0, Lcom/android/settings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
+    iget-object v9, p0, Lcom/android/OriginalSettings/CallSettings;->mProximitySensor:Landroid/preference/CheckBoxPreference;
 
-    iget-boolean v10, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iget-boolean v10, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     invoke-virtual {v9, v10}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -1611,7 +1611,7 @@
 
     .line 186
     :cond_12
-    iput-boolean v10, p0, Lcom/android/settings/CallSettings;->proximityChecked:Z
+    iput-boolean v10, p0, Lcom/android/OriginalSettings/CallSettings;->proximityChecked:Z
 
     goto :goto_7
 .end method

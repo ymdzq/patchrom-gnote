@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/AccessibilityTutorialActivity$TutorialTextView;
+.class public Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialTextView;
 .super Landroid/widget/TextView;
 .source "AccessibilityTutorialActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AccessibilityTutorialActivity;
+    value = Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

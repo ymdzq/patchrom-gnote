@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/quicklaunch/QuickLaunchSettings;
-.super Landroid/preference/PreferenceActivity;
+.class public Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;
+.super Lmiui/preference/BasePreferenceActivity;
 .source "QuickLaunchSettings.java"
 
 # interfaces
@@ -10,7 +10,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
+        Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
     }
 .end annotation
 
@@ -24,7 +24,7 @@
 
 .field private mBookmarksCursor:Landroid/database/Cursor;
 
-.field private mBookmarksObserver:Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
+.field private mBookmarksObserver:Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
 
 .field private mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
 
@@ -37,7 +37,7 @@
         value = {
             "Landroid/util/SparseArray",
             "<",
-            "Lcom/android/settings/quicklaunch/ShortcutPreference;",
+            "Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;",
             ">;"
         }
     .end annotation
@@ -74,7 +74,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->sProjection:[Ljava/lang/String;
+    sput-object v0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->sProjection:[Ljava/lang/String;
 
     return-void
 .end method
@@ -84,26 +84,26 @@
 
     .prologue
     .line 52
-    invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
+    invoke-direct {p0}, Lmiui/preference/BasePreferenceActivity;-><init>()V
 
     .line 71
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mUiHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mUiHandler:Landroid/os/Handler;
 
     .line 357
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/quicklaunch/QuickLaunchSettings;)V
+.method static synthetic access$000(Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->refreshShortcuts()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->refreshShortcuts()V
 
     return-void
 .end method
@@ -114,7 +114,7 @@
 
     .prologue
     .line 190
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -140,24 +140,24 @@
     return-void
 .end method
 
-.method private createPreference(C)Lcom/android/settings/quicklaunch/ShortcutPreference;
+.method private createPreference(C)Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     .locals 2
     .parameter "shortcut"
 
     .prologue
     .line 256
-    new-instance v0, Lcom/android/settings/quicklaunch/ShortcutPreference;
+    new-instance v0, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/quicklaunch/ShortcutPreference;-><init>(Landroid/content/Context;C)V
+    invoke-direct {v0, p0, p1}, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;-><init>(Landroid/content/Context;C)V
 
     .line 257
-    .local v0, pref:Lcom/android/settings/quicklaunch/ShortcutPreference;
-    iget-object v1, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mShortcutGroup:Landroid/preference/PreferenceGroup;
+    .local v0, pref:Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mShortcutGroup:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
     .line 258
-    iget-object v1, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mShortcutToPreference:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mShortcutToPreference:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -165,31 +165,31 @@
     return-object v0
 .end method
 
-.method private getOrCreatePreference(C)Lcom/android/settings/quicklaunch/ShortcutPreference;
+.method private getOrCreatePreference(C)Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     .locals 4
     .parameter "shortcut"
 
     .prologue
     .line 246
-    iget-object v1, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mShortcutToPreference:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mShortcutToPreference:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/quicklaunch/ShortcutPreference;
+    check-cast v0, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
     .line 247
-    .local v0, pref:Lcom/android/settings/quicklaunch/ShortcutPreference;
+    .local v0, pref:Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     if-eqz v0, :cond_0
 
     .line 251
-    .end local v0           #pref:Lcom/android/settings/quicklaunch/ShortcutPreference;
+    .end local v0           #pref:Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     :goto_0
     return-object v0
 
     .line 250
-    .restart local v0       #pref:Lcom/android/settings/quicklaunch/ShortcutPreference;
+    .restart local v0       #pref:Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     :cond_0
     const-string v1, "QuickLaunchSettings"
 
@@ -220,7 +220,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 251
-    invoke-direct {p0, p1}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->createPreference(C)Lcom/android/settings/quicklaunch/ShortcutPreference;
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->createPreference(C)Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
     move-result-object v0
 
@@ -298,7 +298,7 @@
     invoke-virtual {v3, v2, v4}, Landroid/util/SparseBooleanArray;->put(IZ)V
 
     .line 278
-    invoke-direct {p0, v2}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->createPreference(C)Lcom/android/settings/quicklaunch/ShortcutPreference;
+    invoke-direct {p0, v2}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->createPreference(C)Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
     goto :goto_1
 
@@ -318,7 +318,7 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mBookmarksCursor:Landroid/database/Cursor;
+    iget-object v1, v0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mBookmarksCursor:Landroid/database/Cursor;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -367,7 +367,7 @@
     :try_start_2
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mBookmarkedShortcuts:Landroid/util/SparseBooleanArray;
+    iget-object v8, v0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mBookmarkedShortcuts:Landroid/util/SparseBooleanArray;
 
     .line 300
     .local v8, noLongerBookmarkedShortcuts:Landroid/util/SparseBooleanArray;
@@ -405,12 +405,12 @@
     .line 305
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v11}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getOrCreatePreference(C)Lcom/android/settings/quicklaunch/ShortcutPreference;
+    invoke-direct {v0, v11}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getOrCreatePreference(C)Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
     move-result-object v10
 
     .line 306
-    .local v10, pref:Lcom/android/settings/quicklaunch/ShortcutPreference;
+    .local v10, pref:Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     move-object/from16 v0, p0
 
     invoke-static {v0, v1}, Landroid/provider/Settings$Bookmarks;->getTitle(Landroid/content/Context;Landroid/database/Cursor;)Ljava/lang/CharSequence;
@@ -433,7 +433,7 @@
 
     .line 315
     .local v6, intentUri:Ljava/lang/String;
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getPackageManager()Landroid/content/pm/PackageManager;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -474,7 +474,7 @@
     :cond_3
     :goto_2
     :try_start_4
-    invoke-virtual {v10, v12}, Lcom/android/settings/quicklaunch/ShortcutPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v10, v12}, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 327
     const v13, 0x7f0b04ce
@@ -493,16 +493,16 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v13, v14}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, v13, v14}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v13
 
-    invoke-virtual {v10, v13}, Lcom/android/settings/quicklaunch/ShortcutPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v10, v13}, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 329
     const/4 v13, 0x1
 
-    invoke-virtual {v10, v13}, Lcom/android/settings/quicklaunch/ShortcutPreference;->setHasBookmark(Z)V
+    invoke-virtual {v10, v13}, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;->setHasBookmark(Z)V
 
     .line 331
     const/4 v13, 0x1
@@ -523,7 +523,7 @@
     .end local v5           #intentColumn:I
     .end local v6           #intentUri:Ljava/lang/String;
     .end local v9           #packageManager:Landroid/content/pm/PackageManager;
-    .end local v10           #pref:Lcom/android/settings/quicklaunch/ShortcutPreference;
+    .end local v10           #pref:Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     .end local v11           #shortcut:C
     .end local v12           #title:Ljava/lang/CharSequence;
     :cond_4
@@ -558,25 +558,25 @@
     .restart local v11       #shortcut:C
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mShortcutToPreference:Landroid/util/SparseArray;
+    iget-object v13, v0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mShortcutToPreference:Landroid/util/SparseArray;
 
     invoke-virtual {v13, v11}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v10
 
-    check-cast v10, Lcom/android/settings/quicklaunch/ShortcutPreference;
+    check-cast v10, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
     .line 345
-    .restart local v10       #pref:Lcom/android/settings/quicklaunch/ShortcutPreference;
+    .restart local v10       #pref:Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     if-eqz v10, :cond_5
 
     .line 346
     const/4 v13, 0x0
 
-    invoke-virtual {v10, v13}, Lcom/android/settings/quicklaunch/ShortcutPreference;->setHasBookmark(Z)V
+    invoke-virtual {v10, v13}, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;->setHasBookmark(Z)V
 
     .line 340
-    .end local v10           #pref:Lcom/android/settings/quicklaunch/ShortcutPreference;
+    .end local v10           #pref:Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     .end local v11           #shortcut:C
     :cond_5
     add-int/lit8 v2, v2, -0x1
@@ -588,7 +588,7 @@
     :cond_6
     move-object/from16 v0, p0
 
-    iput-object v7, v0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mBookmarkedShortcuts:Landroid/util/SparseBooleanArray;
+    iput-object v7, v0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mBookmarkedShortcuts:Landroid/util/SparseBooleanArray;
 
     .line 354
     invoke-interface {v1}, Landroid/database/Cursor;->deactivate()V
@@ -601,7 +601,7 @@
     .restart local v5       #intentColumn:I
     .restart local v6       #intentUri:Ljava/lang/String;
     .restart local v9       #packageManager:Landroid/content/pm/PackageManager;
-    .restart local v10       #pref:Lcom/android/settings/quicklaunch/ShortcutPreference;
+    .restart local v10       #pref:Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
     .restart local v11       #shortcut:C
     .restart local v12       #title:Ljava/lang/CharSequence;
     :catch_0
@@ -610,13 +610,13 @@
     goto :goto_2
 .end method
 
-.method private showClearDialog(Lcom/android/settings/quicklaunch/ShortcutPreference;)V
+.method private showClearDialog(Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;)V
     .locals 1
     .parameter "pref"
 
     .prologue
     .line 173
-    invoke-virtual {p1}, Lcom/android/settings/quicklaunch/ShortcutPreference;->hasBookmark()Z
+    invoke-virtual {p1}, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;->hasBookmark()Z
 
     move-result v0
 
@@ -628,23 +628,23 @@
 
     .line 175
     :cond_0
-    invoke-virtual {p1}, Lcom/android/settings/quicklaunch/ShortcutPreference;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {p1}, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
 
     .line 176
-    invoke-virtual {p1}, Lcom/android/settings/quicklaunch/ShortcutPreference;->getShortcut()C
+    invoke-virtual {p1}, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;->getShortcut()C
 
     move-result v0
 
-    iput-char v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
+    iput-char v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
 
     .line 177
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->showDialog(I)V
 
     goto :goto_0
 .end method
@@ -656,7 +656,7 @@
 
     .prologue
     .line 242
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -724,14 +724,14 @@
 
     .line 231
     .local v0, shortcut:C
-    invoke-direct {p0, v0, p3}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->updateShortcut(CLandroid/content/Intent;)V
+    invoke-direct {p0, v0, p3}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->updateShortcut(CLandroid/content/Intent;)V
 
     goto :goto_0
 
     .line 234
     .end local v0           #shortcut:C
     :cond_2
-    invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceActivity;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lmiui/preference/BasePreferenceActivity;->onActivityResult(IILandroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -743,7 +743,7 @@
 
     .prologue
     .line 181
-    iget-char v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
+    iget-char v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
 
     if-lez v0, :cond_0
 
@@ -752,20 +752,20 @@
     if-ne p2, v0, :cond_0
 
     .line 183
-    iget-char v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
+    iget-char v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
 
-    invoke-direct {p0, v0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->clearShortcut(C)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->clearShortcut(C)V
 
     .line 185
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
 
     .line 186
     const/4 v0, 0x0
 
-    iput-char v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
+    iput-char v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
 
     .line 187
     return-void
@@ -779,56 +779,56 @@
     const/4 v2, 0x0
 
     .line 95
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 97
     const v0, 0x7f05002a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->addPreferencesFromResource(I)V
 
     .line 99
     const-string v0, "shortcut_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceGroup;
 
-    iput-object v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mShortcutGroup:Landroid/preference/PreferenceGroup;
+    iput-object v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mShortcutGroup:Landroid/preference/PreferenceGroup;
 
     .line 100
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mShortcutToPreference:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mShortcutToPreference:Landroid/util/SparseArray;
 
     .line 101
-    new-instance v0, Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
+    new-instance v0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
 
-    iget-object v1, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mUiHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mUiHandler:Landroid/os/Handler;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;-><init>(Lcom/android/settings/quicklaunch/QuickLaunchSettings;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;-><init>(Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mBookmarksObserver:Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mBookmarksObserver:Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
 
     .line 102
-    invoke-direct {p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->initShortcutPreferences()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->initShortcutPreferences()V
 
     .line 103
     sget-object v0, Landroid/provider/Settings$Bookmarks;->CONTENT_URI:Landroid/net/Uri;
 
-    sget-object v1, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->sProjection:[Ljava/lang/String;
+    sget-object v1, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->sProjection:[Ljava/lang/String;
 
-    invoke-virtual {p0, v0, v1, v2, v2}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->managedQuery(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual {p0, v0, v1, v2, v2}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->managedQuery(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mBookmarksCursor:Landroid/database/Cursor;
+    iput-object v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mBookmarksCursor:Landroid/database/Cursor;
 
     .line 104
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -847,7 +847,7 @@
     packed-switch p1, :pswitch_data_0
 
     .line 156
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -862,7 +862,7 @@
 
     const v1, 0x7f0b04cf
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -884,7 +884,7 @@
 
     const/4 v3, 0x0
 
-    iget-char v4, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
+    iget-char v4, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
 
     invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
@@ -894,11 +894,11 @@
 
     const/4 v3, 0x1
 
-    iget-object v4, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
+    iget-object v4, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
 
     aput-object v4, v2, v3
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -950,7 +950,7 @@
     .prologue
     .line 210
     .local p1, parent:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -966,7 +966,7 @@
 
     .line 211
     .local v0, pref:Landroid/preference/Preference;
-    instance-of v1, v0, Lcom/android/settings/quicklaunch/ShortcutPreference;
+    instance-of v1, v0, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
     if-nez v1, :cond_0
 
@@ -980,10 +980,10 @@
     .line 212
     .restart local v0       #pref:Landroid/preference/Preference;
     :cond_0
-    check-cast v0, Lcom/android/settings/quicklaunch/ShortcutPreference;
+    check-cast v0, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
     .end local v0           #pref:Landroid/preference/Preference;
-    invoke-direct {p0, v0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->showClearDialog(Lcom/android/settings/quicklaunch/ShortcutPreference;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->showClearDialog(Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;)V
 
     .line 213
     const/4 v1, 0x1
@@ -996,14 +996,14 @@
 
     .prologue
     .line 117
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->onPause()V
 
     .line 118
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mBookmarksObserver:Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
+    iget-object v1, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mBookmarksObserver:Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
@@ -1020,7 +1020,7 @@
     const/4 v0, 0x1
 
     .line 196
-    instance-of v1, p2, Lcom/android/settings/quicklaunch/ShortcutPreference;
+    instance-of v1, p2, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
     if-nez v1, :cond_0
 
@@ -1032,26 +1032,26 @@
 
     .line 199
     :cond_0
-    check-cast p2, Lcom/android/settings/quicklaunch/ShortcutPreference;
+    check-cast p2, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;
 
     .line 200
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/quicklaunch/BookmarkPicker;
+    const-class v2, Lcom/android/OriginalSettings/quicklaunch/BookmarkPicker;
 
     invoke-direct {v1, p0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 201
     const-string v2, "com.android.settings.quicklaunch.SHORTCUT"
 
-    invoke-virtual {p2}, Lcom/android/settings/quicklaunch/ShortcutPreference;->getShortcut()C
+    invoke-virtual {p2}, Lcom/android/OriginalSettings/quicklaunch/ShortcutPreference;->getShortcut()C
 
     move-result v3
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;C)Landroid/content/Intent;
 
     .line 202
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 .end method
@@ -1085,7 +1085,7 @@
 
     const/4 v3, 0x0
 
-    iget-char v4, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
+    iget-char v4, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
 
     invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
@@ -1095,11 +1095,11 @@
 
     const/4 v3, 0x1
 
-    iget-object v4, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
+    iget-object v4, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
 
     aput-object v4, v2, v3
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1122,7 +1122,7 @@
 
     .prologue
     .line 123
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
     .line 126
     const-string v0, "CLEAR_DIALOG_BOOKMARK_TITLE"
@@ -1131,7 +1131,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
 
     .line 127
     const-string v0, "CLEAR_DIALOG_SHORTCUT"
@@ -1144,7 +1144,7 @@
 
     int-to-char v0, v0
 
-    iput-char v0, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
+    iput-char v0, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
 
     .line 128
     return-void
@@ -1155,10 +1155,10 @@
 
     .prologue
     .line 109
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->onResume()V
 
     .line 110
-    invoke-virtual {p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1166,12 +1166,12 @@
 
     const/4 v2, 0x1
 
-    iget-object v3, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mBookmarksObserver:Lcom/android/settings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
+    iget-object v3, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mBookmarksObserver:Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings$BookmarksObserver;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 112
-    invoke-direct {p0}, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->refreshShortcuts()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->refreshShortcuts()V
 
     .line 113
     return-void
@@ -1183,19 +1183,19 @@
 
     .prologue
     .line 132
-    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lmiui/preference/BasePreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 135
     const-string v0, "CLEAR_DIALOG_BOOKMARK_TITLE"
 
-    iget-object v1, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogBookmarkTitle:Ljava/lang/CharSequence;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
 
     .line 136
     const-string v0, "CLEAR_DIALOG_SHORTCUT"
 
-    iget-char v1, p0, Lcom/android/settings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
+    iget-char v1, p0, Lcom/android/OriginalSettings/quicklaunch/QuickLaunchSettings;->mClearDialogShortcut:C
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 

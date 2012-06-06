@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CryptKeeper$3;
+.class Lcom/android/OriginalSettings/CryptKeeper$3;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/CryptKeeper;->showFactoryReset()V
+    value = Lcom/android/OriginalSettings/CryptKeeper;->showFactoryReset()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CryptKeeper;)V
     .locals 0
     .parameter
 
     .prologue
     .line 397
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$3;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CryptKeeper$3;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +43,7 @@
 
     .prologue
     .line 400
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$3;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptKeeper$3;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -51,7 +51,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/CryptKeeper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/CryptKeeper;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 401
     return-void

@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/AccessibilitySettings$ToggleTouchExplorationFragment;
-.super Lcom/android/settings/AccessibilitySettings$TogglePreferenceFragment;
+.class public Lcom/android/OriginalSettings/AccessibilitySettings$ToggleTouchExplorationFragment;
+.super Lcom/android/OriginalSettings/AccessibilitySettings$TogglePreferenceFragment;
 .source "AccessibilitySettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AccessibilitySettings;
+    value = Lcom/android/OriginalSettings/AccessibilitySettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,7 +22,7 @@
     .line 1132
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/AccessibilitySettings$TogglePreferenceFragment;-><init>(Lcom/android/settings/AccessibilitySettings$1;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/AccessibilitySettings$TogglePreferenceFragment;-><init>(Lcom/android/OriginalSettings/AccessibilitySettings$1;)V
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 
     .prologue
     .line 1132
-    invoke-super {p0, p1, p2}, Lcom/android/settings/AccessibilitySettings$TogglePreferenceFragment;->onClick(Landroid/content/DialogInterface;I)V
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/AccessibilitySettings$TogglePreferenceFragment;->onClick(Landroid/content/DialogInterface;I)V
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 
     .prologue
     .line 1132
-    invoke-super {p0, p1}, Lcom/android/settings/AccessibilitySettings$TogglePreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/AccessibilitySettings$TogglePreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 1132
-    invoke-super {p0, p1}, Lcom/android/settings/AccessibilitySettings$TogglePreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/AccessibilitySettings$TogglePreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -72,7 +72,7 @@
 
     .prologue
     .line 1132
-    invoke-super {p0, p1, p2}, Lcom/android/settings/AccessibilitySettings$TogglePreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/AccessibilitySettings$TogglePreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 
     .prologue
     .line 1132
-    invoke-super {p0}, Lcom/android/settings/AccessibilitySettings$TogglePreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/AccessibilitySettings$TogglePreferenceFragment;->onDestroyView()V
 
     return-void
 .end method
@@ -98,7 +98,7 @@
     const/4 v5, 0x0
 
     .line 1135
-    invoke-virtual {p0}, Lcom/android/settings/AccessibilitySettings$ToggleTouchExplorationFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/AccessibilitySettings$ToggleTouchExplorationFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -115,7 +115,7 @@
     if-eqz p2, :cond_0
 
     .line 1138
-    invoke-virtual {p0}, Lcom/android/settings/AccessibilitySettings$ToggleTouchExplorationFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/AccessibilitySettings$ToggleTouchExplorationFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -162,7 +162,7 @@
 
     .line 1145
     .local v0, intent:Landroid/content/Intent;
-    invoke-virtual {p0}, Lcom/android/settings/AccessibilitySettings$ToggleTouchExplorationFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/AccessibilitySettings$ToggleTouchExplorationFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -196,7 +196,7 @@
 
     .prologue
     .line 1132
-    invoke-super {p0, p1, p2}, Lcom/android/settings/AccessibilitySettings$TogglePreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/OriginalSettings/AccessibilitySettings$TogglePreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     return-void
 .end method

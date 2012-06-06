@@ -1,11 +1,11 @@
-.class Lcom/android/settings/ApnSettings$1;
+.class Lcom/android/OriginalSettings/ApnSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "ApnSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ApnSettings;
+    value = Lcom/android/OriginalSettings/ApnSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ApnSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/ApnSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ApnSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/ApnSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/android/settings/ApnSettings$1;->this$0:Lcom/android/settings/ApnSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ApnSettings$1;->this$0:Lcom/android/OriginalSettings/ApnSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -56,14 +56,14 @@
     if-eqz v1, :cond_2
 
     .line 104
-    #calls: Lcom/android/settings/ApnSettings;->getMobileDataState(Landroid/content/Intent;)Lcom/android/internal/telephony/Phone$DataState;
-    invoke-static {p2}, Lcom/android/settings/ApnSettings;->access$000(Landroid/content/Intent;)Lcom/android/internal/telephony/Phone$DataState;
+    #calls: Lcom/android/OriginalSettings/ApnSettings;->getMobileDataState(Landroid/content/Intent;)Lcom/android/internal/telephony/Phone$DataState;
+    invoke-static {p2}, Lcom/android/OriginalSettings/ApnSettings;->access$000(Landroid/content/Intent;)Lcom/android/internal/telephony/Phone$DataState;
 
     move-result-object v0
 
     .line 105
     .local v0, state:Lcom/android/internal/telephony/Phone$DataState;
-    sget-object v1, Lcom/android/settings/ApnSettings$2;->$SwitchMap$com$android$internal$telephony$Phone$DataState:[I
+    sget-object v1, Lcom/android/OriginalSettings/ApnSettings$2;->$SwitchMap$com$android$internal$telephony$Phone$DataState:[I
 
     invoke-virtual {v0}, Lcom/android/internal/telephony/Phone$DataState;->ordinal()I
 
@@ -82,25 +82,25 @@
     .line 107
     .restart local v0       #state:Lcom/android/internal/telephony/Phone$DataState;
     :pswitch_0
-    invoke-static {}, Lcom/android/settings/ApnSettings;->access$100()Z
+    invoke-static {}, Lcom/android/OriginalSettings/ApnSettings;->access$100()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
     .line 108
-    iget-object v1, p0, Lcom/android/settings/ApnSettings$1;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ApnSettings$1;->this$0:Lcom/android/OriginalSettings/ApnSettings;
 
-    #calls: Lcom/android/settings/ApnSettings;->fillList()V
-    invoke-static {v1}, Lcom/android/settings/ApnSettings;->access$200(Lcom/android/settings/ApnSettings;)V
+    #calls: Lcom/android/OriginalSettings/ApnSettings;->fillList()V
+    invoke-static {v1}, Lcom/android/OriginalSettings/ApnSettings;->access$200(Lcom/android/OriginalSettings/ApnSettings;)V
 
     goto :goto_0
 
     .line 110
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/ApnSettings$1;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ApnSettings$1;->this$0:Lcom/android/OriginalSettings/ApnSettings;
 
-    invoke-virtual {v1, v3}, Lcom/android/settings/ApnSettings;->showDialog(I)V
+    invoke-virtual {v1, v3}, Lcom/android/OriginalSettings/ApnSettings;->showDialog(I)V
 
     goto :goto_0
 
@@ -120,25 +120,25 @@
     if-eqz v1, :cond_0
 
     .line 118
-    invoke-static {}, Lcom/android/settings/ApnSettings;->access$100()Z
+    invoke-static {}, Lcom/android/OriginalSettings/ApnSettings;->access$100()Z
 
     move-result v1
 
     if-nez v1, :cond_3
 
     .line 119
-    iget-object v1, p0, Lcom/android/settings/ApnSettings$1;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ApnSettings$1;->this$0:Lcom/android/OriginalSettings/ApnSettings;
 
-    #calls: Lcom/android/settings/ApnSettings;->fillList()V
-    invoke-static {v1}, Lcom/android/settings/ApnSettings;->access$200(Lcom/android/settings/ApnSettings;)V
+    #calls: Lcom/android/OriginalSettings/ApnSettings;->fillList()V
+    invoke-static {v1}, Lcom/android/OriginalSettings/ApnSettings;->access$200(Lcom/android/OriginalSettings/ApnSettings;)V
 
     goto :goto_0
 
     .line 121
     :cond_3
-    iget-object v1, p0, Lcom/android/settings/ApnSettings$1;->this$0:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/ApnSettings$1;->this$0:Lcom/android/OriginalSettings/ApnSettings;
 
-    invoke-virtual {v1, v3}, Lcom/android/settings/ApnSettings;->showDialog(I)V
+    invoke-virtual {v1, v3}, Lcom/android/OriginalSettings/ApnSettings;->showDialog(I)V
 
     goto :goto_0
 

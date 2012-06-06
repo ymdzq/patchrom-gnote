@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ProxySelector$4;
+.class Lcom/android/OriginalSettings/ProxySelector$4;
 .super Ljava/lang/Object;
 .source "ProxySelector.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/ProxySelector;
+    value = Lcom/android/OriginalSettings/ProxySelector;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ProxySelector;
+.field final synthetic this$0:Lcom/android/OriginalSettings/ProxySelector;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ProxySelector;)V
+.method constructor <init>(Lcom/android/OriginalSettings/ProxySelector;)V
     .locals 0
     .parameter
 
     .prologue
     .line 294
-    iput-object p1, p0, Lcom/android/settings/ProxySelector$4;->this$0:Lcom/android/settings/ProxySelector;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ProxySelector$4;->this$0:Lcom/android/OriginalSettings/ProxySelector;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 

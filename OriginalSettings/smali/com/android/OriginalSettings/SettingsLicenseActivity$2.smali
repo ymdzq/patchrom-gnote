@@ -1,4 +1,4 @@
-.class Lcom/android/settings/SettingsLicenseActivity$2;
+.class Lcom/android/OriginalSettings/SettingsLicenseActivity$2;
 .super Ljava/lang/Object;
 .source "SettingsLicenseActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/SettingsLicenseActivity;->showPageOfText(Ljava/lang/String;)V
+    value = Lcom/android/OriginalSettings/SettingsLicenseActivity;->showPageOfText(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SettingsLicenseActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsLicenseActivity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/SettingsLicenseActivity;)V
     .locals 0
     .parameter
 
     .prologue
     .line 210
-    iput-object p1, p0, Lcom/android/settings/SettingsLicenseActivity$2;->this$0:Lcom/android/settings/SettingsLicenseActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$2;->this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
 
     .prologue
     .line 213
-    iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity$2;->this$0:Lcom/android/settings/SettingsLicenseActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsLicenseActivity$2;->this$0:Lcom/android/OriginalSettings/SettingsLicenseActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsLicenseActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/SettingsLicenseActivity;->finish()V
 
     .line 214
     return-void

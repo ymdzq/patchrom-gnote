@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/flipfont/FontListPreference;
+.class public Lcom/android/OriginalSettings/flipfont/FontListPreference;
 .super Landroid/preference/ListPreference;
 .source "FontListPreference.java"
 
@@ -24,7 +24,7 @@
 
 .field private mFileCopying:Z
 
-.field private mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+.field private mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
 .field private mPreviousFont:I
 
@@ -44,7 +44,7 @@
     .line 125
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/flipfont/FontListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 126
     return-void
@@ -70,116 +70,116 @@
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 57
-    iput-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iput-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     .line 65
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mDefaultUseHelvetica:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mDefaultUseHelvetica:Z
 
     .line 68
-    iput-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iput-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     .line 72
-    iput v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iput v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     .line 75
-    iput v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iput v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     .line 78
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mBuyButtonClicked:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mBuyButtonClicked:Z
 
     .line 81
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mFileCopying:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFileCopying:Z
 
     .line 84
-    iput v2, p0, Lcom/android/settings/flipfont/FontListPreference;->mQuestionDialogFontSize:I
+    iput v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mQuestionDialogFontSize:I
 
     .line 87
-    iput v2, p0, Lcom/android/settings/flipfont/FontListPreference;->mDialogLeftPadding:I
+    iput v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mDialogLeftPadding:I
 
     .line 89
-    iput v3, p0, Lcom/android/settings/flipfont/FontListPreference;->mDialogTopPadding:I
+    iput v3, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mDialogTopPadding:I
 
     .line 91
-    iput v2, p0, Lcom/android/settings/flipfont/FontListPreference;->mDialogRightPadding:I
+    iput v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mDialogRightPadding:I
 
     .line 93
-    iput v3, p0, Lcom/android/settings/flipfont/FontListPreference;->mDialogBottomPadding:I
+    iput v3, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mDialogBottomPadding:I
 
     .line 98
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
 
     .line 100
-    iput v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
+    iput v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSavedClickedItem:I
 
     .line 111
-    iput-object p1, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     .line 112
     const-string v0, "MONOTYPE"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->setKey(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->setKey(Ljava/lang/String;)V
 
     .line 113
     const v0, 0x7f0b06a1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->setTitle(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->setTitle(I)V
 
     .line 114
     const v0, 0x7f0b06a2
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->setSummary(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->setSummary(I)V
 
     .line 115
     const v0, 0x7f0b06a3
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->setDialogTitle(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->setDialogTitle(I)V
 
     .line 116
     const/high16 v0, 0x104
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->setNegativeButtonText(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->setNegativeButtonText(I)V
 
     .line 117
     const v0, 0x7f02003b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->setDialogIcon(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->setDialogIcon(I)V
 
     .line 119
     return-void
 .end method
 
-.method static synthetic access$002(Lcom/android/settings/flipfont/FontListPreference;Lcom/android/settings/flipfont/FontListAdapter;)Lcom/android/settings/flipfont/FontListAdapter;
+.method static synthetic access$002(Lcom/android/OriginalSettings/flipfont/FontListPreference;Lcom/android/OriginalSettings/flipfont/FontListAdapter;)Lcom/android/OriginalSettings/flipfont/FontListAdapter;
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iput-object p1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     return-object p1
 .end method
 
-.method static synthetic access$102(Lcom/android/settings/flipfont/FontListPreference;Z)Z
+.method static synthetic access$102(Lcom/android/OriginalSettings/flipfont/FontListPreference;Z)Z
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 55
-    iput-boolean p1, p0, Lcom/android/settings/flipfont/FontListPreference;->mBuyButtonClicked:Z
+    iput-boolean p1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mBuyButtonClicked:Z
 
     return p1
 .end method
 
-.method static synthetic access$202(Lcom/android/settings/flipfont/FontListPreference;Z)Z
+.method static synthetic access$202(Lcom/android/OriginalSettings/flipfont/FontListPreference;Z)Z
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 55
-    iput-boolean p1, p0, Lcom/android/settings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
+    iput-boolean p1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
 
     return p1
 .end method
@@ -197,7 +197,7 @@
 
     .line 497
     .local v0, mode:I
-    iget-object v2, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     const-string v3, "prefs"
 
@@ -213,7 +213,7 @@
 
     move-result v2
 
-    iput-boolean v2, p0, Lcom/android/settings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
 
     .line 501
     const-string v2, "SavedClickedItem"
@@ -222,7 +222,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
+    iput v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSavedClickedItem:I
 
     .line 502
     return-void
@@ -233,7 +233,7 @@
 
     .prologue
     .line 330
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -253,7 +253,7 @@
     if-eqz v1, :cond_0
 
     .line 334
-    iget v2, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iget v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     const/4 v3, 0x1
 
@@ -279,7 +279,7 @@
     invoke-super {p0, p1, p2}, Landroid/preference/ListPreference;->onClick(Landroid/content/DialogInterface;I)V
 
     .line 349
-    iget v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iget v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     if-ne p2, v4, :cond_1
 
@@ -295,12 +295,12 @@
     if-ne p2, v4, :cond_3
 
     .line 354
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
 
     if-eqz v4, :cond_2
 
     .line 355
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -309,20 +309,20 @@
     if-eqz v4, :cond_2
 
     .line 356
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->cancel()V
 
     .line 357
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v4
 
     if-eqz v4, :cond_0
 
     .line 358
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v4
 
@@ -340,13 +340,13 @@
 
     .line 364
     .local v1, fontName:Ljava/lang/String;
-    iput p2, p0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iput p2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     .line 365
     if-ge p2, v7, :cond_4
 
     .line 366
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -368,7 +368,7 @@
     :goto_1
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     invoke-direct {v0, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
@@ -376,9 +376,9 @@
     .local v0, builder:Landroid/app/AlertDialog$Builder;
     const v4, 0x7f0b001b
 
-    new-instance v5, Lcom/android/settings/flipfont/FontListPreference$3;
+    new-instance v5, Lcom/android/OriginalSettings/flipfont/FontListPreference$3;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/flipfont/FontListPreference$3;-><init>(Lcom/android/settings/flipfont/FontListPreference;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference$3;-><init>(Lcom/android/OriginalSettings/flipfont/FontListPreference;)V
 
     invoke-virtual {v0, v4, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -386,16 +386,16 @@
 
     const v5, 0x7f0b001c
 
-    new-instance v6, Lcom/android/settings/flipfont/FontListPreference$2;
+    new-instance v6, Lcom/android/OriginalSettings/flipfont/FontListPreference$2;
 
-    invoke-direct {v6, p0}, Lcom/android/settings/flipfont/FontListPreference$2;-><init>(Lcom/android/settings/flipfont/FontListPreference;)V
+    invoke-direct {v6, p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference$2;-><init>(Lcom/android/OriginalSettings/flipfont/FontListPreference;)V
 
     invoke-virtual {v4, v5, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 393
-    new-instance v4, Lcom/android/settings/flipfont/FontListPreference$4;
+    new-instance v4, Lcom/android/OriginalSettings/flipfont/FontListPreference$4;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/flipfont/FontListPreference$4;-><init>(Lcom/android/settings/flipfont/FontListPreference;)V
+    invoke-direct {v4, p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference$4;-><init>(Lcom/android/OriginalSettings/flipfont/FontListPreference;)V
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
@@ -410,23 +410,23 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
+    iput-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
 
     .line 403
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->SetFontToAlert:Landroid/app/AlertDialog;
 
     invoke-virtual {v4}, Landroid/app/AlertDialog;->show()V
 
     .line 404
-    iget v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
-    iput v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
+    iput v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSavedClickedItem:I
 
     .line 405
-    iput-boolean v7, p0, Lcom/android/settings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
+    iput-boolean v7, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
 
     .line 406
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->savePreferences()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->savePreferences()V
 
     goto :goto_0
 
@@ -434,7 +434,7 @@
     .end local v0           #builder:Landroid/app/AlertDialog$Builder;
     .end local v3           #s:Ljava/lang/String;
     :cond_4
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -450,31 +450,31 @@
 
     .line 372
     .restart local v3       #s:Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     if-nez v4, :cond_5
 
     .line 373
-    new-instance v4, Lcom/android/settings/flipfont/FontListAdapter;
+    new-instance v4, Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget-object v5, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
-    invoke-direct {v4, v5}, Lcom/android/settings/flipfont/FontListAdapter;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, v5}, Lcom/android/OriginalSettings/flipfont/FontListAdapter;-><init>(Landroid/content/Context;)V
 
-    iput-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iput-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     .line 374
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    invoke-virtual {v4}, Lcom/android/settings/flipfont/FontListAdapter;->loadTypefaces()V
+    invoke-virtual {v4}, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->loadTypefaces()V
 
     .line 376
     :cond_5
-    iget-object v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget v5, p0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
-    invoke-virtual {v4, v5}, Lcom/android/settings/flipfont/FontListAdapter;->getFontName(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->getFontName(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -499,12 +499,12 @@
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onDialogClosed(Z)V
 
     .line 462
-    iget-boolean v2, p0, Lcom/android/settings/flipfont/FontListPreference;->mBuyButtonClicked:Z
+    iget-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mBuyButtonClicked:Z
 
     if-eqz v2, :cond_0
 
     .line 463
-    iget-object v2, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -539,14 +539,14 @@
     invoke-virtual {v2, v3}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     .line 467
-    iget-object v2, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     .line 468
     const/4 v2, 0x0
 
-    iput-boolean v2, p0, Lcom/android/settings/flipfont/FontListPreference;->mBuyButtonClicked:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mBuyButtonClicked:Z
 
     .line 470
     .end local v0           #intent:Landroid/content/Intent;
@@ -574,7 +574,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     move/from16 v28, v0
 
@@ -591,7 +591,7 @@
     .line 223
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     move/from16 v26, v0
 
@@ -606,7 +606,7 @@
     .line 224
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
+    iget v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSavedClickedItem:I
 
     move/from16 v26, v0
 
@@ -614,7 +614,7 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iput v0, v1, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     .line 228
     :goto_0
@@ -632,7 +632,7 @@
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
+    iget v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSavedClickedItem:I
 
     move/from16 v28, v0
 
@@ -647,60 +647,60 @@
     invoke-static/range {v26 .. v27}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 229
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/flipfont/FontListPreference;->savePreferences()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->savePreferences()V
 
     .line 231
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     move-object/from16 v26, v0
 
     if-nez v26, :cond_0
 
     .line 232
-    new-instance v26, Lcom/android/settings/flipfont/FontListAdapter;
+    new-instance v26, Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     move-object/from16 v27, v0
 
-    invoke-direct/range {v26 .. v27}, Lcom/android/settings/flipfont/FontListAdapter;-><init>(Landroid/content/Context;)V
+    invoke-direct/range {v26 .. v27}, Lcom/android/OriginalSettings/flipfont/FontListAdapter;-><init>(Landroid/content/Context;)V
 
     move-object/from16 v0, v26
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iput-object v0, v1, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     .line 233
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     move-object/from16 v26, v0
 
-    invoke-virtual/range {v26 .. v26}, Lcom/android/settings/flipfont/FontListAdapter;->loadTypefaces()V
+    invoke-virtual/range {v26 .. v26}, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->loadTypefaces()V
 
     .line 236
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     move-object/from16 v26, v0
 
     move-object/from16 v0, v26
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
 
     move-object/from16 v26, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     move/from16 v27, v0
 
@@ -716,12 +716,12 @@
 
     move-object/from16 v1, v24
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/flipfont/FontListPreference;->persistString(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->persistString(Ljava/lang/String;)Z
 
     .line 239
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     move/from16 v26, v0
 
@@ -729,15 +729,15 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iput v0, v1, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     .line 241
-    new-instance v13, Lcom/android/settings/flipfont/FontWriter;
+    new-instance v13, Lcom/android/OriginalSettings/flipfont/FontWriter;
 
-    invoke-direct {v13}, Lcom/android/settings/flipfont/FontWriter;-><init>()V
+    invoke-direct {v13}, Lcom/android/OriginalSettings/flipfont/FontWriter;-><init>()V
 
     .line 242
-    .local v13, fontWriter:Lcom/android/settings/flipfont/FontWriter;
+    .local v13, fontWriter:Lcom/android/OriginalSettings/flipfont/FontWriter;
     if-eqz v24, :cond_1
 
     const-string v26, "default"
@@ -756,7 +756,7 @@
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     move-object/from16 v26, v0
 
@@ -770,7 +770,7 @@
 
     move-object/from16 v2, v28
 
-    invoke-virtual {v13, v0, v1, v2}, Lcom/android/settings/flipfont/FontWriter;->writeLoc(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v13, v0, v1, v2}, Lcom/android/OriginalSettings/flipfont/FontWriter;->writeLoc(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 246
     if-nez v24, :cond_3
@@ -787,12 +787,12 @@
     return-void
 
     .line 226
-    .end local v13           #fontWriter:Lcom/android/settings/flipfont/FontWriter;
+    .end local v13           #fontWriter:Lcom/android/OriginalSettings/flipfont/FontWriter;
     .end local v24           #selectedFont:Ljava/lang/String;
     :cond_2
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     move/from16 v26, v0
 
@@ -800,23 +800,23 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
+    iput v0, v1, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSavedClickedItem:I
 
     goto/16 :goto_0
 
     .line 252
-    .restart local v13       #fontWriter:Lcom/android/settings/flipfont/FontWriter;
+    .restart local v13       #fontWriter:Lcom/android/OriginalSettings/flipfont/FontWriter;
     .restart local v24       #selectedFont:Ljava/lang/String;
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     move-object/from16 v26, v0
 
     move-object/from16 v0, v26
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListAdapter;->mTypefaceFinder:Lcom/android/settings/flipfont/TypefaceFinder;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mTypefaceFinder:Lcom/android/OriginalSettings/flipfont/TypefaceFinder;
 
     move-object/from16 v26, v0
 
@@ -824,12 +824,12 @@
 
     move-object/from16 v1, v24
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/flipfont/TypefaceFinder;->findMatchingTypeface(Ljava/lang/String;)Lcom/android/settings/flipfont/Typeface;
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/flipfont/TypefaceFinder;->findMatchingTypeface(Ljava/lang/String;)Lcom/android/OriginalSettings/flipfont/Typeface;
 
     move-result-object v23
 
     .line 254
-    .local v23, sansTypeface:Lcom/android/settings/flipfont/Typeface;
+    .local v23, sansTypeface:Lcom/android/OriginalSettings/flipfont/Typeface;
     const-string v26, ".xml"
 
     const-string v27, ""
@@ -861,13 +861,13 @@
     .line 256
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     move-object/from16 v26, v0
 
     move-object/from16 v0, v26
 
-    invoke-virtual {v13, v0, v14}, Lcom/android/settings/flipfont/FontWriter;->createFontDirectory(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+    invoke-virtual {v13, v0, v14}, Lcom/android/OriginalSettings/flipfont/FontWriter;->createFontDirectory(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v12
 
@@ -876,7 +876,7 @@
     const/16 v25, 0x0
 
     .line 259
-    .local v25, tpf:Lcom/android/settings/flipfont/TypefaceFile;
+    .local v25, tpf:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
     if-eqz v23, :cond_4
 
     .line 260
@@ -886,7 +886,7 @@
     :goto_2
     move-object/from16 v0, v23
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/Typeface;->mSansFonts:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/Typeface;->mSansFonts:Ljava/util/List;
 
     move-object/from16 v26, v0
 
@@ -901,7 +901,7 @@
     .line 261
     move-object/from16 v0, v23
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/Typeface;->mSansFonts:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/Typeface;->mSansFonts:Ljava/util/List;
 
     move-object/from16 v26, v0
 
@@ -911,27 +911,27 @@
 
     move-result-object v25
 
-    .end local v25           #tpf:Lcom/android/settings/flipfont/TypefaceFile;
-    check-cast v25, Lcom/android/settings/flipfont/TypefaceFile;
+    .end local v25           #tpf:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
+    check-cast v25, Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
     .line 264
-    .restart local v25       #tpf:Lcom/android/settings/flipfont/TypefaceFile;
+    .restart local v25       #tpf:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     move-object/from16 v26, v0
 
     move-object/from16 v0, v26
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListAdapter;->mFontPackageNames:Ljava/util/Vector;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mFontPackageNames:Ljava/util/Vector;
 
     move-object/from16 v26, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     move/from16 v27, v0
 
@@ -972,13 +972,13 @@
     .line 267
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     move-object/from16 v26, v0
 
     move-object/from16 v0, v26
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListAdapter;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mPackageManager:Landroid/content/pm/PackageManager;
 
     move-object/from16 v26, v0
 
@@ -1006,7 +1006,7 @@
 
     move-result-object v26
 
-    invoke-virtual/range {v25 .. v25}, Lcom/android/settings/flipfont/TypefaceFile;->getFileName()Ljava/lang/String;
+    invoke-virtual/range {v25 .. v25}, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->getFileName()Ljava/lang/String;
 
     move-result-object v27
 
@@ -1026,7 +1026,7 @@
 
     .line 273
     .local v17, in:Ljava/io/InputStream;
-    invoke-virtual/range {v25 .. v25}, Lcom/android/settings/flipfont/TypefaceFile;->getDroidName()Ljava/lang/String;
+    invoke-virtual/range {v25 .. v25}, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->getDroidName()Ljava/lang/String;
 
     move-result-object v26
 
@@ -1034,7 +1034,7 @@
 
     move-object/from16 v1, v26
 
-    invoke-virtual {v13, v12, v0, v1}, Lcom/android/settings/flipfont/FontWriter;->copyFontFile(Ljava/io/File;Ljava/io/InputStream;Ljava/lang/String;)V
+    invoke-virtual {v13, v12, v0, v1}, Lcom/android/OriginalSettings/flipfont/FontWriter;->copyFontFile(Ljava/io/File;Ljava/io/InputStream;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1086,7 +1086,7 @@
     :cond_4
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     move-object/from16 v26, v0
 
@@ -1102,7 +1102,7 @@
 
     move-object/from16 v2, v28
 
-    invoke-virtual {v13, v0, v1, v2}, Lcom/android/settings/flipfont/FontWriter;->writeLoc(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v13, v0, v1, v2}, Lcom/android/OriginalSettings/flipfont/FontWriter;->writeLoc(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 283
     :try_start_1
@@ -1170,13 +1170,13 @@
     :goto_4
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     move-object/from16 v26, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     move-object/from16 v27, v0
 
@@ -1333,11 +1333,11 @@
     .line 318
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     move-object/from16 v26, v0
 
-    invoke-static/range {v26 .. v26}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static/range {v26 .. v26}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v26
 
@@ -1346,7 +1346,7 @@
     .line 319
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     move-object/from16 v26, v0
 
@@ -1356,7 +1356,7 @@
 
     .line 323
     :goto_6
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/flipfont/FontListPreference;->restartLater()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->restartLater()V
 
     goto/16 :goto_1
 
@@ -1380,7 +1380,7 @@
     .line 136
     const-string v1, "MONOTYPE"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/flipfont/FontListPreference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1432,7 +1432,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 144
-    iget-boolean v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mDefaultUseHelvetica:Z
+    iget-boolean v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mDefaultUseHelvetica:Z
 
     if-eqz v1, :cond_1
 
@@ -1440,15 +1440,15 @@
     const-string v0, "HelveticaNeueRegular.xml"
 
     .line 147
-    iget-object v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget-object v1, v1, Lcom/android/settings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
+    iget-object v1, v1, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
 
     invoke-virtual {v1, v0}, Ljava/util/Vector;->indexOf(Ljava/lang/Object;)I
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iput v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     .line 148
     const-string v1, "FontListPreference"
@@ -1486,7 +1486,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iget v3, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1500,29 +1500,29 @@
 
     .line 166
     :goto_0
-    iget v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iget v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     if-gez v1, :cond_0
 
     .line 168
     const/4 v1, -0x1
 
-    iput v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iput v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     .line 170
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget v2, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iget v2, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     invoke-virtual {p1, v1, v2, p0}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems(Landroid/widget/ListAdapter;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 171
     const v1, 0x7f0b06a4
 
-    new-instance v2, Lcom/android/settings/flipfont/FontListPreference$1;
+    new-instance v2, Lcom/android/OriginalSettings/flipfont/FontListPreference$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/flipfont/FontListPreference$1;-><init>(Lcom/android/settings/flipfont/FontListPreference;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference$1;-><init>(Lcom/android/OriginalSettings/flipfont/FontListPreference;)V
 
     invoke-virtual {p1, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1534,15 +1534,15 @@
     const-string v0, "default"
 
     .line 154
-    iget-object v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget-object v1, v1, Lcom/android/settings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
+    iget-object v1, v1, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
 
     invoke-virtual {v1, v0}, Ljava/util/Vector;->indexOf(Ljava/lang/Object;)I
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iput v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     .line 155
     const-string v1, "FontListPreference"
@@ -1580,7 +1580,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iget v3, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1603,15 +1603,15 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 162
-    iget-object v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget-object v1, v1, Lcom/android/settings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
+    iget-object v1, v1, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
 
     invoke-virtual {v1, v0}, Ljava/util/Vector;->indexOf(Ljava/lang/Object;)I
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iput v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     .line 163
     const-string v1, "FontListPreference"
@@ -1649,7 +1649,7 @@
 
     move-result-object v2
 
-    iget v3, p0, Lcom/android/settings/flipfont/FontListPreference;->mPreviousFont:I
+    iget v3, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mPreviousFont:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -1669,14 +1669,14 @@
 
     .prologue
     .line 211
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 212
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -1696,7 +1696,7 @@
 
     .line 483
     .local v1, mode:I
-    iget-object v3, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     const-string v4, "prefs"
 
@@ -1714,14 +1714,14 @@
     .local v0, editor:Landroid/content/SharedPreferences$Editor;
     const-string v3, "SelectDialogIsActive"
 
-    iget-boolean v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
+    iget-boolean v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
 
     invoke-interface {v0, v3, v4}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
     .line 489
     const-string v3, "SavedClickedItem"
 
-    iget v4, p0, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
+    iget v4, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSavedClickedItem:I
 
     invoke-interface {v0, v3, v4}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
@@ -1749,20 +1749,20 @@
 
     .line 412
     .local v2, fontName:Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->loadPreferences()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->loadPreferences()V
 
     .line 413
-    iget v5, p0, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
+    iget v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSavedClickedItem:I
 
-    iput v5, p0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iput v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     .line 414
-    iget v5, p0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
     if-ge v5, v8, :cond_0
 
     .line 415
-    iget-object v5, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1784,7 +1784,7 @@
     :goto_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    iget-object v5, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     invoke-direct {v1, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
@@ -1792,9 +1792,9 @@
     .local v1, builder:Landroid/app/AlertDialog$Builder;
     const v5, 0x7f0b001b
 
-    new-instance v6, Lcom/android/settings/flipfont/FontListPreference$6;
+    new-instance v6, Lcom/android/OriginalSettings/flipfont/FontListPreference$6;
 
-    invoke-direct {v6, p0}, Lcom/android/settings/flipfont/FontListPreference$6;-><init>(Lcom/android/settings/flipfont/FontListPreference;)V
+    invoke-direct {v6, p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference$6;-><init>(Lcom/android/OriginalSettings/flipfont/FontListPreference;)V
 
     invoke-virtual {v1, v5, v6}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1802,16 +1802,16 @@
 
     const v6, 0x7f0b001c
 
-    new-instance v7, Lcom/android/settings/flipfont/FontListPreference$5;
+    new-instance v7, Lcom/android/OriginalSettings/flipfont/FontListPreference$5;
 
-    invoke-direct {v7, p0}, Lcom/android/settings/flipfont/FontListPreference$5;-><init>(Lcom/android/settings/flipfont/FontListPreference;)V
+    invoke-direct {v7, p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference$5;-><init>(Lcom/android/OriginalSettings/flipfont/FontListPreference;)V
 
     invoke-virtual {v5, v6, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 439
-    new-instance v5, Lcom/android/settings/flipfont/FontListPreference$7;
+    new-instance v5, Lcom/android/OriginalSettings/flipfont/FontListPreference$7;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/flipfont/FontListPreference$7;-><init>(Lcom/android/settings/flipfont/FontListPreference;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference$7;-><init>(Lcom/android/OriginalSettings/flipfont/FontListPreference;)V
 
     invoke-virtual {v1, v5}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1831,15 +1831,15 @@
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     .line 450
-    iget v5, p0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
-    iput v5, p0, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
+    iput v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSavedClickedItem:I
 
     .line 451
-    iput-boolean v8, p0, Lcom/android/settings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
+    iput-boolean v8, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
 
     .line 452
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->savePreferences()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->savePreferences()V
 
     .line 453
     return-void
@@ -1849,7 +1849,7 @@
     .end local v1           #builder:Landroid/app/AlertDialog$Builder;
     .end local v4           #s:Ljava/lang/String;
     :cond_0
-    iget-object v5, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1865,11 +1865,11 @@
 
     .line 421
     .restart local v4       #s:Ljava/lang/String;
-    iget-object v5, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v5, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget v6, p0, Lcom/android/settings/flipfont/FontListPreference;->mClickedItem:I
+    iget v6, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mClickedItem:I
 
-    invoke-virtual {v5, v6}, Lcom/android/settings/flipfont/FontListAdapter;->getFontName(I)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->getFontName(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1891,33 +1891,33 @@
 
     .prologue
     .line 186
-    iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     if-nez v0, :cond_0
 
     .line 187
-    new-instance v0, Lcom/android/settings/flipfont/FontListAdapter;
+    new-instance v0, Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget-object v1, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
-    invoke-direct {v0, v1}, Lcom/android/settings/flipfont/FontListAdapter;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/OriginalSettings/flipfont/FontListAdapter;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iput-object v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
     .line 188
-    iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    invoke-virtual {v0}, Lcom/android/settings/flipfont/FontListAdapter;->loadTypefaces()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->loadTypefaces()V
 
     .line 190
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListAdapter;->mFontNames:Ljava/util/Vector;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mFontNames:Ljava/util/Vector;
 
-    iget-object v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget-object v1, v1, Lcom/android/settings/flipfont/FontListAdapter;->mFontNames:Ljava/util/Vector;
+    iget-object v1, v1, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mFontNames:Ljava/util/Vector;
 
     invoke-virtual {v1}, Ljava/util/Vector;->size()I
 
@@ -1933,16 +1933,16 @@
 
     check-cast v0, [Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->setEntries([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
 
-    iget-object v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    iget-object v1, v1, Lcom/android/settings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
+    iget-object v1, v1, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
 
     invoke-virtual {v1}, Ljava/util/Vector;->size()I
 
@@ -1958,12 +1958,12 @@
 
     check-cast v0, [Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/OriginalSettings/flipfont/FontListAdapter;
 
-    invoke-virtual {v0}, Lcom/android/settings/flipfont/FontListAdapter;->getCount()I
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/flipfont/FontListAdapter;->getCount()I
 
     move-result v0
 
@@ -1974,17 +1974,17 @@
     .line 196
     const v0, 0x7f0b06a8
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->setDialogTitle(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->setDialogTitle(I)V
 
     .line 198
     :cond_1
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->showDialog(Landroid/os/Bundle;)V
 
     .line 199
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->loadPreferences()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->loadPreferences()V
 
     .line 200
-    iget-boolean v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
 
     if-eqz v0, :cond_2
 
@@ -1993,13 +1993,13 @@
     .line 201
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
 
     .line 202
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->savePreferences()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->savePreferences()V
 
     .line 203
-    invoke-virtual {p0}, Lcom/android/settings/flipfont/FontListPreference;->selectDialog()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/flipfont/FontListPreference;->selectDialog()V
 
     .line 205
     :cond_2

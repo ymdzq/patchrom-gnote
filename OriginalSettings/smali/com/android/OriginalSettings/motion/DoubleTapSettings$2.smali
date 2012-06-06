@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/DoubleTapSettings$2;
+.class Lcom/android/OriginalSettings/motion/DoubleTapSettings$2;
 .super Ljava/lang/Object;
 .source "DoubleTapSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/DoubleTapSettings;->showMotionDialog()V
+    value = Lcom/android/OriginalSettings/motion/DoubleTapSettings;->showMotionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/DoubleTapSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/DoubleTapSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/DoubleTapSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 158
-    iput-object p1, p0, Lcom/android/settings/motion/DoubleTapSettings$2;->this$0:Lcom/android/settings/motion/DoubleTapSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/DoubleTapSettings$2;->this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,10 +51,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapSettings$2;->this$0:Lcom/android/settings/motion/DoubleTapSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapSettings$2;->this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
-    #calls: Lcom/android/settings/motion/DoubleTapSettings;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v0}, Lcom/android/settings/motion/DoubleTapSettings;->access$100(Lcom/android/settings/motion/DoubleTapSettings;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/motion/DoubleTapSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/DoubleTapSettings;->access$100(Lcom/android/OriginalSettings/motion/DoubleTapSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -65,10 +65,10 @@
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/motion/DoubleTapSettings$2;->this$0:Lcom/android/settings/motion/DoubleTapSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/DoubleTapSettings$2;->this$0:Lcom/android/OriginalSettings/motion/DoubleTapSettings;
 
-    #calls: Lcom/android/settings/motion/DoubleTapSettings;->startTryActually()V
-    invoke-static {v0}, Lcom/android/settings/motion/DoubleTapSettings;->access$200(Lcom/android/settings/motion/DoubleTapSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/DoubleTapSettings;->startTryActually()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/DoubleTapSettings;->access$200(Lcom/android/OriginalSettings/motion/DoubleTapSettings;)V
 
     .line 163
     return-void

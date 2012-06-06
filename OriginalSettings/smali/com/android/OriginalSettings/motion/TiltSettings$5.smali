@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/TiltSettings$5;
+.class Lcom/android/OriginalSettings/motion/TiltSettings$5;
 .super Ljava/lang/Object;
 .source "TiltSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/TiltSettings;->showGuideDialog()V
+    value = Lcom/android/OriginalSettings/motion/TiltSettings;->showGuideDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/TiltSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/TiltSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/TiltSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/TiltSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 224
-    iput-object p1, p0, Lcom/android/settings/motion/TiltSettings$5;->this$0:Lcom/android/settings/motion/TiltSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/TiltSettings$5;->this$0:Lcom/android/OriginalSettings/motion/TiltSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 226
-    iget-object v0, p0, Lcom/android/settings/motion/TiltSettings$5;->this$0:Lcom/android/settings/motion/TiltSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TiltSettings$5;->this$0:Lcom/android/OriginalSettings/motion/TiltSettings;
 
-    #calls: Lcom/android/settings/motion/TiltSettings;->stopAnimation()V
-    invoke-static {v0}, Lcom/android/settings/motion/TiltSettings;->access$600(Lcom/android/settings/motion/TiltSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/TiltSettings;->stopAnimation()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/TiltSettings;->access$600(Lcom/android/OriginalSettings/motion/TiltSettings;)V
 
     .line 227
     return-void

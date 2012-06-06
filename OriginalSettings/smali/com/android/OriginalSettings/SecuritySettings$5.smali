@@ -1,4 +1,4 @@
-.class Lcom/android/settings/SecuritySettings$5;
+.class Lcom/android/OriginalSettings/SecuritySettings$5;
 .super Ljava/lang/Object;
 .source "SecuritySettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/SecuritySettings;->updateSIMLockEnable(Z)V
+    value = Lcom/android/OriginalSettings/SecuritySettings;->updateSIMLockEnable(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SecuritySettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SecuritySettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/SecuritySettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 838
-    iput-object p1, p0, Lcom/android/settings/SecuritySettings$5;->this$0:Lcom/android/settings/SecuritySettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SecuritySettings$5;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,10 +53,10 @@
     packed-switch v0, :pswitch_data_0
 
     .line 847
-    iget-object v0, p0, Lcom/android/settings/SecuritySettings$5;->this$0:Lcom/android/settings/SecuritySettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SecuritySettings$5;->this$0:Lcom/android/OriginalSettings/SecuritySettings;
 
-    #getter for: Lcom/android/settings/SecuritySettings;->mSimLockPreferences:Landroid/preference/PreferenceCategory;
-    invoke-static {v0}, Lcom/android/settings/SecuritySettings;->access$200(Lcom/android/settings/SecuritySettings;)Landroid/preference/PreferenceCategory;
+    #getter for: Lcom/android/OriginalSettings/SecuritySettings;->mSimLockPreferences:Landroid/preference/PreferenceCategory;
+    invoke-static {v0}, Lcom/android/OriginalSettings/SecuritySettings;->access$200(Lcom/android/OriginalSettings/SecuritySettings;)Landroid/preference/PreferenceCategory;
 
     move-result-object v0
 

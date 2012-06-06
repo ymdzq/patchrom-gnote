@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SubSettings;
-.super Lcom/android/settings/Settings;
+.class public Lcom/android/OriginalSettings/SubSettings;
+.super Lcom/android/OriginalSettings/Settings;
 .source "SubSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 23
-    invoke-direct {p0}, Lcom/android/settings/Settings;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/Settings;-><init>()V
 
     return-void
 .end method

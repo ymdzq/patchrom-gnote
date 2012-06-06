@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SettingsSwitchPreference;
+.class public Lcom/android/OriginalSettings/SettingsSwitchPreference;
 .super Landroid/preference/SwitchPreference;
 .source "SettingsSwitchPreference.java"
 

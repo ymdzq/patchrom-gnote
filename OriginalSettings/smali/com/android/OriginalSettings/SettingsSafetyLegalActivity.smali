@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SettingsSafetyLegalActivity;
+.class public Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;
 .super Lcom/android/internal/app/AlertActivity;
 .source "SettingsSafetyLegalActivity.java"
 
@@ -24,30 +24,30 @@
     .line 43
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/SettingsSafetyLegalActivity;)Lcom/android/internal/app/AlertController;
+.method static synthetic access$000(Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;)Lcom/android/internal/app/AlertController;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mAlert:Lcom/android/internal/app/AlertController;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mAlert:Lcom/android/internal/app/AlertController;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/SettingsSafetyLegalActivity;Ljava/lang/String;)V
+.method static synthetic access$100(Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;Ljava/lang/String;)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 37
-    invoke-direct {p0, p1}, Lcom/android/settings/SettingsSafetyLegalActivity;->showErrorAndFinish(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->showErrorAndFinish(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     const/4 v3, 0x1
 
     .line 90
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_1
 
@@ -93,14 +93,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     .line 102
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {p0}, Lcom/android/settings/SettingsSafetyLegalActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -119,7 +119,7 @@
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setMessage(Ljava/lang/CharSequence;)V
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -128,7 +128,7 @@
 
     .line 98
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -137,7 +137,7 @@
     if-eqz v0, :cond_0
 
     .line 99
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
@@ -167,7 +167,7 @@
     if-nez v0, :cond_0
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->canGoBack()Z
 
@@ -176,7 +176,7 @@
     if-eqz v0, :cond_0
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->goBack()V
 
@@ -201,7 +201,7 @@
 
     .prologue
     .line 134
-    invoke-virtual {p0}, Lcom/android/settings/SettingsSafetyLegalActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->finish()V
 
     .line 135
     return-void
@@ -214,7 +214,7 @@
 
     .prologue
     .line 130
-    invoke-virtual {p0}, Lcom/android/settings/SettingsSafetyLegalActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->finish()V
 
     .line 131
     return-void
@@ -243,7 +243,7 @@
 
     .line 51
     .local v5, userSafetylegalUrl:Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/settings/SettingsSafetyLegalActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -300,10 +300,10 @@
 
     invoke-direct {v6, p0}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V
 
-    iput-object v6, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
+    iput-object v6, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     .line 62
-    iget-object v6, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
+    iget-object v6, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v6}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
@@ -315,35 +315,35 @@
     if-nez p1, :cond_0
 
     .line 64
-    iget-object v6, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
+    iget-object v6, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v6, v5}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
     .line 68
     :goto_0
-    iget-object v6, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
+    iget-object v6, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
-    new-instance v7, Lcom/android/settings/SettingsSafetyLegalActivity$1;
+    new-instance v7, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity$1;
 
-    invoke-direct {v7, p0}, Lcom/android/settings/SettingsSafetyLegalActivity$1;-><init>(Lcom/android/settings/SettingsSafetyLegalActivity;)V
+    invoke-direct {v7, p0}, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity$1;-><init>(Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;)V
 
     invoke-virtual {v6, v7}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
     .line 82
-    iget-object v4, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
+    iget-object v4, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
     .line 83
     .local v4, p:Lcom/android/internal/app/AlertController$AlertParams;
     const v6, 0x7f0b0405
 
-    invoke-virtual {p0, v6}, Lcom/android/settings/SettingsSafetyLegalActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
     iput-object v6, v4, Lcom/android/internal/app/AlertController$AlertParams;->mTitle:Ljava/lang/CharSequence;
 
     .line 84
-    iget-object v6, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
+    iget-object v6, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     iput-object v6, v4, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
@@ -351,7 +351,7 @@
     iput-boolean v8, v4, Lcom/android/internal/app/AlertController$AlertParams;->mForceInverseBackground:Z
 
     .line 86
-    invoke-virtual {p0}, Lcom/android/settings/SettingsSafetyLegalActivity;->setupAlert()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->setupAlert()V
 
     .line 87
     return-void
@@ -359,7 +359,7 @@
     .line 66
     .end local v4           #p:Lcom/android/internal/app/AlertController$AlertParams;
     :cond_0
-    iget-object v6, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
+    iget-object v6, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v6, p1}, Landroid/webkit/WebView;->restoreState(Landroid/os/Bundle;)Landroid/webkit/WebBackForwardList;
 
@@ -374,19 +374,19 @@
     invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onDestroy()V
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 112
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 113
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mErrorDialog:Landroid/app/AlertDialog;
 
     .line 115
     :cond_0
@@ -399,7 +399,7 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/android/settings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SettingsSafetyLegalActivity;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0, p1}, Landroid/webkit/WebView;->saveState(Landroid/os/Bundle;)Landroid/webkit/WebBackForwardList;
 

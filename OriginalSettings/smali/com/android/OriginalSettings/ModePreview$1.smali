@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ModePreview$1;
+.class Lcom/android/OriginalSettings/ModePreview$1;
 .super Ljava/lang/Object;
 .source "ModePreview.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/ModePreview;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/ModePreview;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/ModePreview;
+.field final synthetic this$0:Lcom/android/OriginalSettings/ModePreview;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ModePreview;)V
+.method constructor <init>(Lcom/android/OriginalSettings/ModePreview;)V
     .locals 0
     .parameter
 
     .prologue
     .line 61
-    iput-object p1, p0, Lcom/android/settings/ModePreview$1;->this$0:Lcom/android/settings/ModePreview;
+    iput-object p1, p0, Lcom/android/OriginalSettings/ModePreview$1;->this$0:Lcom/android/OriginalSettings/ModePreview;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,18 +43,18 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/android/settings/ModePreview$1;->this$0:Lcom/android/settings/ModePreview;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ModePreview$1;->this$0:Lcom/android/OriginalSettings/ModePreview;
 
-    invoke-virtual {v0}, Lcom/android/settings/ModePreview;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/ModePreview;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v1, "screen_mode_setting"
 
-    iget-object v2, p0, Lcom/android/settings/ModePreview$1;->this$0:Lcom/android/settings/ModePreview;
+    iget-object v2, p0, Lcom/android/OriginalSettings/ModePreview$1;->this$0:Lcom/android/OriginalSettings/ModePreview;
 
-    #getter for: Lcom/android/settings/ModePreview;->mListView:Landroid/widget/ListView;
-    invoke-static {v2}, Lcom/android/settings/ModePreview;->access$000(Lcom/android/settings/ModePreview;)Landroid/widget/ListView;
+    #getter for: Lcom/android/OriginalSettings/ModePreview;->mListView:Landroid/widget/ListView;
+    invoke-static {v2}, Lcom/android/OriginalSettings/ModePreview;->access$000(Lcom/android/OriginalSettings/ModePreview;)Landroid/widget/ListView;
 
     move-result-object v2
 
@@ -65,9 +65,9 @@
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/ModePreview$1;->this$0:Lcom/android/settings/ModePreview;
+    iget-object v0, p0, Lcom/android/OriginalSettings/ModePreview$1;->this$0:Lcom/android/OriginalSettings/ModePreview;
 
-    invoke-virtual {v0}, Lcom/android/settings/ModePreview;->finish()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/ModePreview;->finish()V
 
     .line 65
     return-void

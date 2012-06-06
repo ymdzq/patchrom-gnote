@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DockSettings$1;
+.class Lcom/android/OriginalSettings/DockSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "DockSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DockSettings;
+    value = Lcom/android/OriginalSettings/DockSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DockSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DockSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DockSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DockSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 48
-    iput-object p1, p0, Lcom/android/settings/DockSettings$1;->this$0:Lcom/android/settings/DockSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DockSettings$1;->this$0:Lcom/android/OriginalSettings/DockSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -54,10 +54,10 @@
     if-eqz v0, :cond_0
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/DockSettings$1;->this$0:Lcom/android/settings/DockSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DockSettings$1;->this$0:Lcom/android/OriginalSettings/DockSettings;
 
-    #calls: Lcom/android/settings/DockSettings;->handleDockChange(Landroid/content/Intent;)V
-    invoke-static {v0, p2}, Lcom/android/settings/DockSettings;->access$000(Lcom/android/settings/DockSettings;Landroid/content/Intent;)V
+    #calls: Lcom/android/OriginalSettings/DockSettings;->handleDockChange(Landroid/content/Intent;)V
+    invoke-static {v0, p2}, Lcom/android/OriginalSettings/DockSettings;->access$000(Lcom/android/OriginalSettings/DockSettings;Landroid/content/Intent;)V
 
     .line 54
     :cond_0

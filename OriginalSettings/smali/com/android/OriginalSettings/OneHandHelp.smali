@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/OneHandHelp;
-.super Landroid/app/Activity;
+.class public Lcom/android/OriginalSettings/OneHandHelp;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "OneHandHelp.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 26
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     return-void
 .end method
@@ -22,7 +22,7 @@
 
     .prologue
     .line 29
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 31
     const-string v0, "OneHandHelp"
@@ -34,7 +34,7 @@
     .line 33
     const v0, 0x7f04005f
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/OneHandHelp;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/OneHandHelp;->setContentView(I)V
 
     .line 34
     return-void

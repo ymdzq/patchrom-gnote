@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ApplicationsState$2;
+.class final Lcom/android/OriginalSettings/applications/ApplicationsState$2;
 .super Ljava/lang/Object;
 .source "ApplicationsState.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/ApplicationsState;
+    value = Lcom/android/OriginalSettings/applications/ApplicationsState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/settings/applications/ApplicationsState$AppEntry;",
+        "Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;",
         ">;"
     }
 .end annotation
@@ -44,23 +44,23 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ApplicationsState$2;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/ApplicationsState$2;->sCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public compare(Lcom/android/settings/applications/ApplicationsState$AppEntry;Lcom/android/settings/applications/ApplicationsState$AppEntry;)I
+.method public compare(Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;)I
     .locals 4
     .parameter "object1"
     .parameter "object2"
 
     .prologue
     .line 168
-    iget-wide v0, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->size:J
+    iget-wide v0, p1, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->size:J
 
-    iget-wide v2, p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->size:J
+    iget-wide v2, p2, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->size:J
 
     cmp-long v0, v0, v2
 
@@ -74,9 +74,9 @@
 
     .line 169
     :cond_0
-    iget-wide v0, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->size:J
+    iget-wide v0, p1, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->size:J
 
-    iget-wide v2, p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->size:J
+    iget-wide v2, p2, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->size:J
 
     cmp-long v0, v0, v2
 
@@ -88,11 +88,11 @@
 
     .line 170
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsState$2;->sCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/ApplicationsState$2;->sCollator:Ljava/text/Collator;
 
-    iget-object v1, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
-    iget-object v2, p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
+    iget-object v2, p2, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Ljava/text/Collator;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -108,13 +108,13 @@
 
     .prologue
     .line 164
-    check-cast p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast p1, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;
 
     .end local p1
-    check-cast p2, Lcom/android/settings/applications/ApplicationsState$AppEntry;
+    check-cast p2, Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;
 
     .end local p2
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/ApplicationsState$2;->compare(Lcom/android/settings/applications/ApplicationsState$AppEntry;Lcom/android/settings/applications/ApplicationsState$AppEntry;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/OriginalSettings/applications/ApplicationsState$2;->compare(Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;Lcom/android/OriginalSettings/applications/ApplicationsState$AppEntry;)I
 
     move-result v0
 

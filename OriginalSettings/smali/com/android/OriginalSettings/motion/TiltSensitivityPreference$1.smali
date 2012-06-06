@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/TiltSensitivityPreference$1;
+.class Lcom/android/OriginalSettings/motion/TiltSensitivityPreference$1;
 .super Ljava/lang/Object;
 .source "TiltSensitivityPreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/TiltSensitivityPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
+    value = Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/TiltSensitivityPreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/TiltSensitivityPreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/android/settings/motion/TiltSensitivityPreference$1;->this$0:Lcom/android/settings/motion/TiltSensitivityPreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference$1;->this$0:Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,22 +44,22 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/android/settings/motion/TiltSensitivityPreference$1;->this$0:Lcom/android/settings/motion/TiltSensitivityPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference$1;->this$0:Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;
 
     const/4 v1, -0x3
 
-    #setter for: Lcom/android/settings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
-    invoke-static {v0, v1}, Lcom/android/settings/motion/TiltSensitivityPreference;->access$002(Lcom/android/settings/motion/TiltSensitivityPreference;I)I
+    #setter for: Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mWhichButtonClicked:I
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->access$002(Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;I)I
 
     .line 50
-    invoke-static {}, Lcom/android/settings/motion/TiltSettings;->getReference()Lcom/android/settings/motion/TiltSettings;
+    invoke-static {}, Lcom/android/OriginalSettings/motion/TiltSettings;->getReference()Lcom/android/OriginalSettings/motion/TiltSettings;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/motion/TiltSensitivityPreference$1;->this$0:Lcom/android/settings/motion/TiltSensitivityPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference$1;->this$0:Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;
 
-    #getter for: Lcom/android/settings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
-    invoke-static {v1}, Lcom/android/settings/motion/TiltSensitivityPreference;->access$100(Lcom/android/settings/motion/TiltSensitivityPreference;)Landroid/widget/SeekBar;
+    #getter for: Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
+    invoke-static {v1}, Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;->access$100(Lcom/android/OriginalSettings/motion/TiltSensitivityPreference;)Landroid/widget/SeekBar;
 
     move-result-object v1
 
@@ -67,7 +67,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/motion/TiltSettings;->startSensitivityTest(I)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/motion/TiltSettings;->startSensitivityTest(I)V
 
     .line 52
     return-void

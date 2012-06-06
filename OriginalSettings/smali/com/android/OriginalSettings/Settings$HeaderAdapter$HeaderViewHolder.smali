@@ -1,11 +1,11 @@
-.class Lcom/android/settings/Settings$HeaderAdapter$HeaderViewHolder;
+.class Lcom/android/OriginalSettings/Settings$HeaderAdapter$HeaderViewHolder;
 .super Ljava/lang/Object;
 .source "Settings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/Settings$HeaderAdapter;
+    value = Lcom/android/OriginalSettings/Settings$HeaderAdapter;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,13 +35,13 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/Settings$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/Settings$1;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 460
-    invoke-direct {p0}, Lcom/android/settings/Settings$HeaderAdapter$HeaderViewHolder;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/Settings$HeaderAdapter$HeaderViewHolder;-><init>()V
 
     return-void
 .end method

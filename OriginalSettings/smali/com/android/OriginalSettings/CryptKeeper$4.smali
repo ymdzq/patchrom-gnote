@@ -1,4 +1,4 @@
-.class Lcom/android/settings/CryptKeeper$4;
+.class Lcom/android/OriginalSettings/CryptKeeper$4;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/CryptKeeper;->passwordEntryInit()V
+    value = Lcom/android/OriginalSettings/CryptKeeper;->passwordEntryInit()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptKeeper;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CryptKeeper;)V
     .locals 0
     .parameter
 
     .prologue
     .line 462
-    iput-object p1, p0, Lcom/android/settings/CryptKeeper$4;->this$0:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CryptKeeper$4;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 470
-    iget-object v0, p0, Lcom/android/settings/CryptKeeper$4;->this$0:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptKeeper$4;->this$0:Lcom/android/OriginalSettings/CryptKeeper;
 
-    #getter for: Lcom/android/settings/CryptKeeper;->mPasswordEntry:Landroid/widget/EditText;
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->access$400(Lcom/android/settings/CryptKeeper;)Landroid/widget/EditText;
+    #getter for: Lcom/android/OriginalSettings/CryptKeeper;->mPasswordEntry:Landroid/widget/EditText;
+    invoke-static {v0}, Lcom/android/OriginalSettings/CryptKeeper;->access$400(Lcom/android/OriginalSettings/CryptKeeper;)Landroid/widget/EditText;
 
     move-result-object v0
 
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->access$1102(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/OriginalSettings/CryptKeeper;->access$1102(Ljava/lang/String;)Ljava/lang/String;
 
     .line 471
     return-void

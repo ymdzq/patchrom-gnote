@@ -1,11 +1,11 @@
-.class Lcom/android/settings/CryptDecryptSettings$1;
+.class Lcom/android/OriginalSettings/CryptDecryptSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "CryptDecryptSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/CryptDecryptSettings;
+    value = Lcom/android/OriginalSettings/CryptDecryptSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/CryptDecryptSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/CryptDecryptSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptDecryptSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/CryptDecryptSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/android/settings/CryptDecryptSettings$1;->this$0:Lcom/android/settings/CryptDecryptSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/CryptDecryptSettings$1;->this$0:Lcom/android/OriginalSettings/CryptDecryptSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -109,10 +109,10 @@
     .line 89
     .local v5, pluggedOk:Z
     :goto_1
-    iget-object v9, p0, Lcom/android/settings/CryptDecryptSettings$1;->this$0:Lcom/android/settings/CryptDecryptSettings;
+    iget-object v9, p0, Lcom/android/OriginalSettings/CryptDecryptSettings$1;->this$0:Lcom/android/OriginalSettings/CryptDecryptSettings;
 
-    #getter for: Lcom/android/settings/CryptDecryptSettings;->mInitiateButton:Landroid/widget/Button;
-    invoke-static {v9}, Lcom/android/settings/CryptDecryptSettings;->access$000(Lcom/android/settings/CryptDecryptSettings;)Landroid/widget/Button;
+    #getter for: Lcom/android/OriginalSettings/CryptDecryptSettings;->mInitiateButton:Landroid/widget/Button;
+    invoke-static {v9}, Lcom/android/OriginalSettings/CryptDecryptSettings;->access$000(Lcom/android/OriginalSettings/CryptDecryptSettings;)Landroid/widget/Button;
 
     move-result-object v9
 
@@ -124,10 +124,10 @@
     invoke-virtual {v9, v7}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 90
-    iget-object v7, p0, Lcom/android/settings/CryptDecryptSettings$1;->this$0:Lcom/android/settings/CryptDecryptSettings;
+    iget-object v7, p0, Lcom/android/OriginalSettings/CryptDecryptSettings$1;->this$0:Lcom/android/OriginalSettings/CryptDecryptSettings;
 
-    #getter for: Lcom/android/settings/CryptDecryptSettings;->mPowerWarning:Landroid/view/View;
-    invoke-static {v7}, Lcom/android/settings/CryptDecryptSettings;->access$100(Lcom/android/settings/CryptDecryptSettings;)Landroid/view/View;
+    #getter for: Lcom/android/OriginalSettings/CryptDecryptSettings;->mPowerWarning:Landroid/view/View;
+    invoke-static {v7}, Lcom/android/OriginalSettings/CryptDecryptSettings;->access$100(Lcom/android/OriginalSettings/CryptDecryptSettings;)Landroid/view/View;
 
     move-result-object v9
 
@@ -139,10 +139,10 @@
     invoke-virtual {v9, v7}, Landroid/view/View;->setVisibility(I)V
 
     .line 91
-    iget-object v7, p0, Lcom/android/settings/CryptDecryptSettings$1;->this$0:Lcom/android/settings/CryptDecryptSettings;
+    iget-object v7, p0, Lcom/android/OriginalSettings/CryptDecryptSettings$1;->this$0:Lcom/android/OriginalSettings/CryptDecryptSettings;
 
-    #getter for: Lcom/android/settings/CryptDecryptSettings;->mBatteryWarning:Landroid/view/View;
-    invoke-static {v7}, Lcom/android/settings/CryptDecryptSettings;->access$200(Lcom/android/settings/CryptDecryptSettings;)Landroid/view/View;
+    #getter for: Lcom/android/OriginalSettings/CryptDecryptSettings;->mBatteryWarning:Landroid/view/View;
+    invoke-static {v7}, Lcom/android/OriginalSettings/CryptDecryptSettings;->access$200(Lcom/android/OriginalSettings/CryptDecryptSettings;)Landroid/view/View;
 
     move-result-object v7
 

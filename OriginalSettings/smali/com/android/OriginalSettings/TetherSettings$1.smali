@@ -1,4 +1,4 @@
-.class Lcom/android/settings/TetherSettings$1;
+.class Lcom/android/OriginalSettings/TetherSettings$1;
 .super Ljava/lang/Object;
 .source "TetherSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/TetherSettings;
+    value = Lcom/android/OriginalSettings/TetherSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/TetherSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/TetherSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TetherSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/TetherSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 243
-    iput-object p1, p0, Lcom/android/settings/TetherSettings$1;->this$0:Lcom/android/settings/TetherSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/TetherSettings$1;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,13 +44,13 @@
 
     .prologue
     .line 245
-    iget-object v0, p0, Lcom/android/settings/TetherSettings$1;->this$0:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TetherSettings$1;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
     check-cast p2, Landroid/bluetooth/BluetoothPan;
 
     .end local p2
-    #setter for: Lcom/android/settings/TetherSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
-    invoke-static {v0, p2}, Lcom/android/settings/TetherSettings;->access$002(Lcom/android/settings/TetherSettings;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
+    #setter for: Lcom/android/OriginalSettings/TetherSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
+    invoke-static {v0, p2}, Lcom/android/OriginalSettings/TetherSettings;->access$002(Lcom/android/OriginalSettings/TetherSettings;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
 
     .line 246
     return-void
@@ -62,12 +62,12 @@
 
     .prologue
     .line 248
-    iget-object v0, p0, Lcom/android/settings/TetherSettings$1;->this$0:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/TetherSettings$1;->this$0:Lcom/android/OriginalSettings/TetherSettings;
 
     const/4 v1, 0x0
 
-    #setter for: Lcom/android/settings/TetherSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
-    invoke-static {v0, v1}, Lcom/android/settings/TetherSettings;->access$002(Lcom/android/settings/TetherSettings;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
+    #setter for: Lcom/android/OriginalSettings/TetherSettings;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/TetherSettings;->access$002(Lcom/android/OriginalSettings/TetherSettings;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
 
     .line 249
     return-void

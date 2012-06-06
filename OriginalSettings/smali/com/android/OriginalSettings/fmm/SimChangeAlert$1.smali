@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fmm/SimChangeAlert$1;
+.class Lcom/android/OriginalSettings/fmm/SimChangeAlert$1;
 .super Ljava/lang/Object;
 .source "SimChangeAlert.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/fmm/SimChangeAlert;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    value = Lcom/android/OriginalSettings/fmm/SimChangeAlert;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/fmm/SimChangeAlert;
+.field final synthetic this$0:Lcom/android/OriginalSettings/fmm/SimChangeAlert;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fmm/SimChangeAlert;)V
+.method constructor <init>(Lcom/android/OriginalSettings/fmm/SimChangeAlert;)V
     .locals 0
     .parameter
 
     .prologue
     .line 129
-    iput-object p1, p0, Lcom/android/settings/fmm/SimChangeAlert$1;->this$0:Lcom/android/settings/fmm/SimChangeAlert;
+    iput-object p1, p0, Lcom/android/OriginalSettings/fmm/SimChangeAlert$1;->this$0:Lcom/android/OriginalSettings/fmm/SimChangeAlert;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,11 +45,11 @@
     const/4 v3, 0x0
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/fmm/SimChangeAlert$1;->this$0:Lcom/android/settings/fmm/SimChangeAlert;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/SimChangeAlert$1;->this$0:Lcom/android/OriginalSettings/fmm/SimChangeAlert;
 
-    iget-object v1, p0, Lcom/android/settings/fmm/SimChangeAlert$1;->this$0:Lcom/android/settings/fmm/SimChangeAlert;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/SimChangeAlert$1;->this$0:Lcom/android/OriginalSettings/fmm/SimChangeAlert;
 
-    invoke-virtual {v1}, Lcom/android/settings/fmm/SimChangeAlert;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -63,16 +63,16 @@
 
     move-result-object v1
 
-    #setter for: Lcom/android/settings/fmm/SimChangeAlert;->mDialogLayout:Landroid/view/View;
-    invoke-static {v0, v1}, Lcom/android/settings/fmm/SimChangeAlert;->access$002(Lcom/android/settings/fmm/SimChangeAlert;Landroid/view/View;)Landroid/view/View;
+    #setter for: Lcom/android/OriginalSettings/fmm/SimChangeAlert;->mDialogLayout:Landroid/view/View;
+    invoke-static {v0, v1}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->access$002(Lcom/android/OriginalSettings/fmm/SimChangeAlert;Landroid/view/View;)Landroid/view/View;
 
     .line 133
-    iget-object v1, p0, Lcom/android/settings/fmm/SimChangeAlert$1;->this$0:Lcom/android/settings/fmm/SimChangeAlert;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/SimChangeAlert$1;->this$0:Lcom/android/OriginalSettings/fmm/SimChangeAlert;
 
-    iget-object v0, p0, Lcom/android/settings/fmm/SimChangeAlert$1;->this$0:Lcom/android/settings/fmm/SimChangeAlert;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/SimChangeAlert$1;->this$0:Lcom/android/OriginalSettings/fmm/SimChangeAlert;
 
-    #getter for: Lcom/android/settings/fmm/SimChangeAlert;->mDialogLayout:Landroid/view/View;
-    invoke-static {v0}, Lcom/android/settings/fmm/SimChangeAlert;->access$000(Lcom/android/settings/fmm/SimChangeAlert;)Landroid/view/View;
+    #getter for: Lcom/android/OriginalSettings/fmm/SimChangeAlert;->mDialogLayout:Landroid/view/View;
+    invoke-static {v0}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->access$000(Lcom/android/OriginalSettings/fmm/SimChangeAlert;)Landroid/view/View;
 
     move-result-object v0
 
@@ -84,15 +84,15 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    #setter for: Lcom/android/settings/fmm/SimChangeAlert;->mText:Landroid/widget/EditText;
-    invoke-static {v1, v0}, Lcom/android/settings/fmm/SimChangeAlert;->access$102(Lcom/android/settings/fmm/SimChangeAlert;Landroid/widget/EditText;)Landroid/widget/EditText;
+    #setter for: Lcom/android/OriginalSettings/fmm/SimChangeAlert;->mText:Landroid/widget/EditText;
+    invoke-static {v1, v0}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->access$102(Lcom/android/OriginalSettings/fmm/SimChangeAlert;Landroid/widget/EditText;)Landroid/widget/EditText;
 
     .line 134
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/fmm/SimChangeAlert$1;->this$0:Lcom/android/settings/fmm/SimChangeAlert;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/SimChangeAlert$1;->this$0:Lcom/android/OriginalSettings/fmm/SimChangeAlert;
 
-    invoke-virtual {v1}, Lcom/android/settings/fmm/SimChangeAlert;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -104,10 +104,10 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fmm/SimChangeAlert$1;->this$0:Lcom/android/settings/fmm/SimChangeAlert;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/SimChangeAlert$1;->this$0:Lcom/android/OriginalSettings/fmm/SimChangeAlert;
 
-    #getter for: Lcom/android/settings/fmm/SimChangeAlert;->mDialogLayout:Landroid/view/View;
-    invoke-static {v1}, Lcom/android/settings/fmm/SimChangeAlert;->access$000(Lcom/android/settings/fmm/SimChangeAlert;)Landroid/view/View;
+    #getter for: Lcom/android/OriginalSettings/fmm/SimChangeAlert;->mDialogLayout:Landroid/view/View;
+    invoke-static {v1}, Lcom/android/OriginalSettings/fmm/SimChangeAlert;->access$000(Lcom/android/OriginalSettings/fmm/SimChangeAlert;)Landroid/view/View;
 
     move-result-object v1
 
@@ -117,9 +117,9 @@
 
     const v1, 0x104000a
 
-    new-instance v2, Lcom/android/settings/fmm/SimChangeAlert$1$1;
+    new-instance v2, Lcom/android/OriginalSettings/fmm/SimChangeAlert$1$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/fmm/SimChangeAlert$1$1;-><init>(Lcom/android/settings/fmm/SimChangeAlert$1;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/fmm/SimChangeAlert$1$1;-><init>(Lcom/android/OriginalSettings/fmm/SimChangeAlert$1;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/fmm/Introduction;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/fmm/Introduction;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "Introduction.java"
 
 
@@ -17,18 +17,18 @@
 
     .prologue
     .line 38
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/fmm/Introduction;)Landroid/widget/CheckBox;
+.method static synthetic access$000(Lcom/android/OriginalSettings/fmm/Introduction;)Landroid/widget/CheckBox;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/fmm/Introduction;->mDoNotShow:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/Introduction;->mDoNotShow:Landroid/widget/CheckBox;
 
     return-object v0
 .end method
@@ -61,7 +61,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, p0, Lcom/android/settings/fmm/Introduction;->mLinkMessage:Landroid/widget/TextView;
+    iput-object v1, p0, Lcom/android/OriginalSettings/fmm/Introduction;->mLinkMessage:Landroid/widget/TextView;
 
     .line 49
     const v1, 0x7f0800dc
@@ -72,7 +72,7 @@
 
     check-cast v1, Landroid/widget/CheckBox;
 
-    iput-object v1, p0, Lcom/android/settings/fmm/Introduction;->mDoNotShow:Landroid/widget/CheckBox;
+    iput-object v1, p0, Lcom/android/OriginalSettings/fmm/Introduction;->mDoNotShow:Landroid/widget/CheckBox;
 
     .line 50
     const v1, 0x7f0800dd
@@ -83,16 +83,16 @@
 
     check-cast v1, Landroid/widget/Button;
 
-    iput-object v1, p0, Lcom/android/settings/fmm/Introduction;->mButton:Landroid/widget/Button;
+    iput-object v1, p0, Lcom/android/OriginalSettings/fmm/Introduction;->mButton:Landroid/widget/Button;
 
     .line 52
-    iget-object v1, p0, Lcom/android/settings/fmm/Introduction;->mLinkMessage:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/Introduction;->mLinkMessage:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lcom/android/settings/fmm/Introduction;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/Introduction;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -123,7 +123,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 54
-    iget-object v1, p0, Lcom/android/settings/fmm/Introduction;->mLinkMessage:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/Introduction;->mLinkMessage:Landroid/widget/TextView;
 
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
@@ -132,11 +132,11 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     .line 56
-    iget-object v1, p0, Lcom/android/settings/fmm/Introduction;->mButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/Introduction;->mButton:Landroid/widget/Button;
 
-    new-instance v2, Lcom/android/settings/fmm/Introduction$1;
+    new-instance v2, Lcom/android/OriginalSettings/fmm/Introduction$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/fmm/Introduction$1;-><init>(Lcom/android/settings/fmm/Introduction;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/fmm/Introduction$1;-><init>(Lcom/android/OriginalSettings/fmm/Introduction;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/tts/TtsEnginePreference$1;
+.class Lcom/android/OriginalSettings/tts/TtsEnginePreference$1;
 .super Ljava/lang/Object;
 .source "TtsEnginePreference.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/tts/TtsEnginePreference;
+    value = Lcom/android/OriginalSettings/tts/TtsEnginePreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/tts/TtsEnginePreference;
+.field final synthetic this$0:Lcom/android/OriginalSettings/tts/TtsEnginePreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/TtsEnginePreference;)V
+.method constructor <init>(Lcom/android/OriginalSettings/tts/TtsEnginePreference;)V
     .locals 0
     .parameter
 
     .prologue
     .line 83
-    iput-object p1, p0, Lcom/android/settings/tts/TtsEnginePreference$1;->this$0:Lcom/android/settings/tts/TtsEnginePreference;
+    iput-object p1, p0, Lcom/android/OriginalSettings/tts/TtsEnginePreference$1;->this$0:Lcom/android/OriginalSettings/tts/TtsEnginePreference;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,10 +44,10 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/android/settings/tts/TtsEnginePreference$1;->this$0:Lcom/android/settings/tts/TtsEnginePreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/tts/TtsEnginePreference$1;->this$0:Lcom/android/OriginalSettings/tts/TtsEnginePreference;
 
-    #calls: Lcom/android/settings/tts/TtsEnginePreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
-    invoke-static {v0, p1, p2}, Lcom/android/settings/tts/TtsEnginePreference;->access$000(Lcom/android/settings/tts/TtsEnginePreference;Landroid/widget/CompoundButton;Z)V
+    #calls: Lcom/android/OriginalSettings/tts/TtsEnginePreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
+    invoke-static {v0, p1, p2}, Lcom/android/OriginalSettings/tts/TtsEnginePreference;->access$000(Lcom/android/OriginalSettings/tts/TtsEnginePreference;Landroid/widget/CompoundButton;Z)V
 
     .line 87
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/LockScreenWallpaper;
+.class public Lcom/android/OriginalSettings/LockScreenWallpaper;
 .super Lcom/android/internal/app/AlertActivity;
 .source "LockScreenWallpaper.java"
 
@@ -9,9 +9,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/LockScreenWallpaper$AlphaComparator;,
-        Lcom/android/settings/LockScreenWallpaper$ViewHolder;,
-        Lcom/android/settings/LockScreenWallpaper$WallpaperAdapter;
+        Lcom/android/OriginalSettings/LockScreenWallpaper$AlphaComparator;,
+        Lcom/android/OriginalSettings/LockScreenWallpaper$ViewHolder;,
+        Lcom/android/OriginalSettings/LockScreenWallpaper$WallpaperAdapter;
     }
 .end annotation
 
@@ -48,52 +48,52 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
 
     .line 217
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/LockScreenWallpaper;)Landroid/view/LayoutInflater;
+.method static synthetic access$000(Lcom/android/OriginalSettings/LockScreenWallpaper;)Landroid/view/LayoutInflater;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->mInflater:Landroid/view/LayoutInflater;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/LockScreenWallpaper;)Ljava/util/List;
+.method static synthetic access$100(Lcom/android/OriginalSettings/LockScreenWallpaper;)Ljava/util/List;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->rList:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->rList:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/LockScreenWallpaper;)Landroid/content/pm/PackageManager;
+.method static synthetic access$200(Lcom/android/OriginalSettings/LockScreenWallpaper;)Landroid/content/pm/PackageManager;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->mPm:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->mPm:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/LockScreenWallpaper;)[Ljava/lang/String;
+.method static synthetic access$300(Lcom/android/OriginalSettings/LockScreenWallpaper;)[Ljava/lang/String;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
 
     return-object v0
 .end method
@@ -109,11 +109,11 @@
     const/4 v5, 0x1
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/LockScreenWallpaper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockScreenWallpaper;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/android/OriginalSettings/Utils;->isTablet(Landroid/content/Context;)Z
 
     move-result v3
 
@@ -122,7 +122,7 @@
     .line 83
     const-string v3, "com.android.sec.gallery3d"
 
-    iget-object v4, p0, Lcom/android/settings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
 
     aget-object v4, v4, p2
 
@@ -146,7 +146,7 @@
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 86
-    invoke-virtual {p0, v0}, Lcom/android/settings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
 
     .line 115
     .end local v0           #intent:Landroid/content/Intent;
@@ -177,7 +177,7 @@
     invoke-virtual {v1, v3}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 92
-    invoke-virtual {p0, v1}, Lcom/android/settings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -186,7 +186,7 @@
     :cond_1
     const-string v3, "com.cooliris.media"
 
-    iget-object v4, p0, Lcom/android/settings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
 
     aget-object v4, v4, p2
 
@@ -210,7 +210,7 @@
     invoke-virtual {v0, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 100
-    invoke-virtual {p0, v0}, Lcom/android/settings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -219,7 +219,7 @@
     :cond_2
     const-string v3, "com.android.wallpaper.livepicker"
 
-    iget-object v4, p0, Lcom/android/settings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
 
     aget-object v4, v4, p2
 
@@ -252,7 +252,7 @@
     invoke-virtual {v2, v3}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 106
-    invoke-virtual {p0, v2}, Lcom/android/settings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -281,7 +281,7 @@
     invoke-virtual {v1, v3}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 112
-    invoke-virtual {p0, v1}, Lcom/android/settings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/LockScreenWallpaper;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -297,20 +297,20 @@
     .line 59
     const-string v3, "layout_inflater"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/LockScreenWallpaper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/LockScreenWallpaper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Landroid/view/LayoutInflater;
 
-    iput-object v3, p0, Lcom/android/settings/LockScreenWallpaper;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v3, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->mInflater:Landroid/view/LayoutInflater;
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/LockScreenWallpaper;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockScreenWallpaper;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/LockScreenWallpaper;->mPm:Landroid/content/pm/PackageManager;
+    iput-object v3, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->mPm:Landroid/content/pm/PackageManager;
 
     .line 63
     new-instance v2, Landroid/content/Intent;
@@ -321,7 +321,7 @@
 
     .line 64
     .local v2, pickWallpaper:Landroid/content/Intent;
-    iget-object v3, p0, Lcom/android/settings/LockScreenWallpaper;->mPm:Landroid/content/pm/PackageManager;
+    iget-object v3, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->mPm:Landroid/content/pm/PackageManager;
 
     const/high16 v4, 0x1
 
@@ -329,25 +329,25 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/LockScreenWallpaper;->rList:Ljava/util/List;
+    iput-object v3, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->rList:Ljava/util/List;
 
     .line 67
-    new-instance v1, Lcom/android/settings/LockScreenWallpaper$AlphaComparator;
+    new-instance v1, Lcom/android/OriginalSettings/LockScreenWallpaper$AlphaComparator;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/LockScreenWallpaper$AlphaComparator;-><init>(Lcom/android/settings/LockScreenWallpaper;)V
+    invoke-direct {v1, p0}, Lcom/android/OriginalSettings/LockScreenWallpaper$AlphaComparator;-><init>(Lcom/android/OriginalSettings/LockScreenWallpaper;)V
 
     .line 68
-    .local v1, mAlphaComparator:Lcom/android/settings/LockScreenWallpaper$AlphaComparator;
-    iget-object v3, p0, Lcom/android/settings/LockScreenWallpaper;->rList:Ljava/util/List;
+    .local v1, mAlphaComparator:Lcom/android/OriginalSettings/LockScreenWallpaper$AlphaComparator;
+    iget-object v3, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->rList:Ljava/util/List;
 
     invoke-static {v3, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LockScreenWallpaper;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
     .line 72
     .local v0, ap:Lcom/android/internal/app/AlertController$AlertParams;
-    invoke-virtual {p0}, Lcom/android/settings/LockScreenWallpaper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockScreenWallpaper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -363,14 +363,14 @@
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mOnClickListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 74
-    new-instance v3, Lcom/android/settings/LockScreenWallpaper$WallpaperAdapter;
+    new-instance v3, Lcom/android/OriginalSettings/LockScreenWallpaper$WallpaperAdapter;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/LockScreenWallpaper$WallpaperAdapter;-><init>(Lcom/android/settings/LockScreenWallpaper;)V
+    invoke-direct {v3, p0}, Lcom/android/OriginalSettings/LockScreenWallpaper$WallpaperAdapter;-><init>(Lcom/android/OriginalSettings/LockScreenWallpaper;)V
 
     iput-object v3, v0, Lcom/android/internal/app/AlertController$AlertParams;->mAdapter:Landroid/widget/ListAdapter;
 
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/LockScreenWallpaper;->setupAlert()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LockScreenWallpaper;->setupAlert()V
 
     .line 77
     return-void

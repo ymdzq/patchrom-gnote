@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/LocalePicker;
+.class public Lcom/android/OriginalSettings/LocalePicker;
 .super Lcom/android/internal/app/LocalePicker;
 .source "LocalePicker.java"
 
@@ -15,7 +15,7 @@
     invoke-direct {p0}, Lcom/android/internal/app/LocalePicker;-><init>()V
 
     .line 34
-    invoke-virtual {p0, p0}, Lcom/android/settings/LocalePicker;->setLocaleSelectionListener(Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;)V
+    invoke-virtual {p0, p0}, Lcom/android/OriginalSettings/LocalePicker;->setLocaleSelectionListener(Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;)V
 
     .line 35
     return-void
@@ -28,7 +28,7 @@
 
     .prologue
     .line 52
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LocalePicker;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
@@ -592,7 +592,7 @@
 
     .line 235
     .local v1, arrayAdapter:Landroid/widget/ArrayAdapter;,"Landroid/widget/ArrayAdapter<Lcom/android/internal/app/LocalePicker$LocaleInfo;>;"
-    invoke-virtual {p0, v1}, Lcom/android/settings/LocalePicker;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/LocalePicker;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     goto/16 :goto_0
 .end method
@@ -603,14 +603,14 @@
 
     .prologue
     .line 47
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
 
     .line 48
-    invoke-static {p1}, Lcom/android/settings/LocalePicker;->updateLocale(Ljava/util/Locale;)V
+    invoke-static {p1}, Lcom/android/OriginalSettings/LocalePicker;->updateLocale(Ljava/util/Locale;)V
 
     .line 49
     return-void
@@ -624,7 +624,7 @@
     invoke-super {p0}, Lcom/android/internal/app/LocalePicker;->onResume()V
 
     .line 41
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker;->exchangeLocaleOrder()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/LocalePicker;->exchangeLocaleOrder()V
 
     .line 43
     return-void

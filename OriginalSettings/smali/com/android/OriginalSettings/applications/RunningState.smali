@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/RunningState;
+.class public Lcom/android/OriginalSettings/applications/RunningState;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 
@@ -6,14 +6,14 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/applications/RunningState$ServiceProcessComparator;,
-        Lcom/android/settings/applications/RunningState$MergedItem;,
-        Lcom/android/settings/applications/RunningState$ProcessItem;,
-        Lcom/android/settings/applications/RunningState$ServiceItem;,
-        Lcom/android/settings/applications/RunningState$BaseItem;,
-        Lcom/android/settings/applications/RunningState$OnRefreshUiListener;,
-        Lcom/android/settings/applications/RunningState$BackgroundHandler;,
-        Lcom/android/settings/applications/RunningState$AppProcessInfo;
+        Lcom/android/OriginalSettings/applications/RunningState$ServiceProcessComparator;,
+        Lcom/android/OriginalSettings/applications/RunningState$MergedItem;,
+        Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;,
+        Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;,
+        Lcom/android/OriginalSettings/applications/RunningState$BaseItem;,
+        Lcom/android/OriginalSettings/applications/RunningState$OnRefreshUiListener;,
+        Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;,
+        Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
     }
 .end annotation
 
@@ -21,7 +21,7 @@
 # static fields
 .field static sGlobalLock:Ljava/lang/Object;
 
-.field static sInstance:Lcom/android/settings/applications/RunningState;
+.field static sInstance:Lcom/android/OriginalSettings/applications/RunningState;
 
 
 # instance fields
@@ -30,7 +30,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/RunningState$ProcessItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;",
             ">;"
         }
     .end annotation
@@ -40,14 +40,14 @@
 
 .field final mApplicationContext:Landroid/content/Context;
 
-.field final mBackgroundHandler:Lcom/android/settings/applications/RunningState$BackgroundHandler;
+.field final mBackgroundHandler:Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
 .field mBackgroundItems:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/RunningState$MergedItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$MergedItem;",
             ">;"
         }
     .end annotation
@@ -63,14 +63,14 @@
 
 .field mHaveData:Z
 
-.field final mInterestingConfigChanges:Lcom/android/settings/applications/InterestingConfigChanges;
+.field final mInterestingConfigChanges:Lcom/android/OriginalSettings/applications/InterestingConfigChanges;
 
 .field final mInterestingProcesses:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/RunningState$ProcessItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;",
             ">;"
         }
     .end annotation
@@ -81,7 +81,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/RunningState$BaseItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$BaseItem;",
             ">;"
         }
     .end annotation
@@ -94,7 +94,7 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/RunningState$MergedItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$MergedItem;",
             ">;"
         }
     .end annotation
@@ -113,13 +113,13 @@
         value = {
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/RunningState$ProcessItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;",
             ">;"
         }
     .end annotation
 .end field
 
-.field mRefreshUiListener:Lcom/android/settings/applications/RunningState$OnRefreshUiListener;
+.field mRefreshUiListener:Lcom/android/OriginalSettings/applications/RunningState$OnRefreshUiListener;
 
 .field mResumed:Z
 
@@ -128,7 +128,7 @@
         value = {
             "Landroid/util/SparseArray",
             "<",
-            "Lcom/android/settings/applications/RunningState$ProcessItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;",
             ">;"
         }
     .end annotation
@@ -136,7 +136,7 @@
 
 .field mSequence:I
 
-.field final mServiceProcessComparator:Lcom/android/settings/applications/RunningState$ServiceProcessComparator;
+.field final mServiceProcessComparator:Lcom/android/OriginalSettings/applications/RunningState$ServiceProcessComparator;
 
 .field mServiceProcessMemory:J
 
@@ -148,7 +148,7 @@
             "Ljava/util/HashMap",
             "<",
             "Ljava/lang/String;",
-            "Lcom/android/settings/applications/RunningState$ProcessItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;",
             ">;>;"
         }
     .end annotation
@@ -159,7 +159,7 @@
         value = {
             "Landroid/util/SparseArray",
             "<",
-            "Lcom/android/settings/applications/RunningState$ProcessItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;",
             ">;"
         }
     .end annotation
@@ -170,7 +170,7 @@
         value = {
             "Landroid/util/SparseArray",
             "<",
-            "Lcom/android/settings/applications/RunningState$AppProcessInfo;",
+            "Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;",
             ">;"
         }
     .end annotation
@@ -189,7 +189,7 @@
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/RunningState;->sGlobalLock:Ljava/lang/Object;
+    sput-object v0, Lcom/android/OriginalSettings/applications/RunningState;->sGlobalLock:Ljava/lang/Object;
 
     return-void
 .end method
@@ -205,115 +205,115 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 71
-    new-instance v0, Lcom/android/settings/applications/InterestingConfigChanges;
+    new-instance v0, Lcom/android/OriginalSettings/applications/InterestingConfigChanges;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/InterestingConfigChanges;-><init>()V
+    invoke-direct {v0}, Lcom/android/OriginalSettings/applications/InterestingConfigChanges;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mInterestingConfigChanges:Lcom/android/settings/applications/InterestingConfigChanges;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingConfigChanges:Lcom/android/OriginalSettings/applications/InterestingConfigChanges;
 
     .line 77
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     .line 82
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
 
     .line 86
-    new-instance v0, Lcom/android/settings/applications/RunningState$ServiceProcessComparator;
+    new-instance v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceProcessComparator;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/RunningState$ServiceProcessComparator;-><init>()V
+    invoke-direct {v0}, Lcom/android/OriginalSettings/applications/RunningState$ServiceProcessComparator;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mServiceProcessComparator:Lcom/android/settings/applications/RunningState$ServiceProcessComparator;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessComparator:Lcom/android/OriginalSettings/applications/RunningState$ServiceProcessComparator;
 
     .line 91
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
 
     .line 94
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     .line 98
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     .line 101
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
 
     .line 114
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
 
     .line 116
-    iput v2, p0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iput v2, p0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     .line 122
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct/range {v0 .. v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     .line 128
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mItems:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mItems:Ljava/util/ArrayList;
 
     .line 129
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
 
     .line 130
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
 
     .line 172
-    new-instance v0, Lcom/android/settings/applications/RunningState$1;
+    new-instance v0, Lcom/android/OriginalSettings/applications/RunningState$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/RunningState$1;-><init>(Lcom/android/settings/applications/RunningState;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/applications/RunningState$1;-><init>(Lcom/android/OriginalSettings/applications/RunningState;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mHandler:Landroid/os/Handler;
 
     .line 570
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mApplicationContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mApplicationContext:Landroid/content/Context;
 
     .line 571
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mApplicationContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mApplicationContext:Landroid/content/Context;
 
     const-string v1, "activity"
 
@@ -323,19 +323,19 @@
 
     check-cast v0, Landroid/app/ActivityManager;
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mAm:Landroid/app/ActivityManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mAm:Landroid/app/ActivityManager;
 
     .line 572
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mApplicationContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mApplicationContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mPm:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mPm:Landroid/content/pm/PackageManager;
 
     .line 573
-    iput-boolean v2, p0, Lcom/android/settings/applications/RunningState;->mResumed:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/applications/RunningState;->mResumed:Z
 
     .line 574
     new-instance v0, Landroid/os/HandlerThread;
@@ -344,42 +344,42 @@
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundThread:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundThread:Landroid/os/HandlerThread;
 
     .line 575
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundThread:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     .line 576
-    new-instance v0, Lcom/android/settings/applications/RunningState$BackgroundHandler;
+    new-instance v0, Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mBackgroundThread:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/applications/RunningState$BackgroundHandler;-><init>(Lcom/android/settings/applications/RunningState;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;-><init>(Lcom/android/OriginalSettings/applications/RunningState;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundHandler:Lcom/android/settings/applications/RunningState$BackgroundHandler;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundHandler:Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
     .line 577
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/applications/RunningState;)V
+.method static synthetic access$000(Lcom/android/OriginalSettings/applications/RunningState;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 51
-    invoke-direct {p0}, Lcom/android/settings/applications/RunningState;->reset()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/applications/RunningState;->reset()V
 
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/applications/RunningState;Landroid/content/Context;Landroid/app/ActivityManager;)Z
+.method static synthetic access$100(Lcom/android/OriginalSettings/applications/RunningState;Landroid/content/Context;Landroid/app/ActivityManager;)Z
     .locals 1
     .parameter "x0"
     .parameter "x1"
@@ -387,39 +387,39 @@
 
     .prologue
     .line 51
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/applications/RunningState;->update(Landroid/content/Context;Landroid/app/ActivityManager;)Z
+    invoke-direct {p0, p1, p2}, Lcom/android/OriginalSettings/applications/RunningState;->update(Landroid/content/Context;Landroid/app/ActivityManager;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static getInstance(Landroid/content/Context;)Lcom/android/settings/applications/RunningState;
+.method static getInstance(Landroid/content/Context;)Lcom/android/OriginalSettings/applications/RunningState;
     .locals 2
     .parameter "context"
 
     .prologue
     .line 561
-    sget-object v1, Lcom/android/settings/applications/RunningState;->sGlobalLock:Ljava/lang/Object;
+    sget-object v1, Lcom/android/OriginalSettings/applications/RunningState;->sGlobalLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 562
     :try_start_0
-    sget-object v0, Lcom/android/settings/applications/RunningState;->sInstance:Lcom/android/settings/applications/RunningState;
+    sget-object v0, Lcom/android/OriginalSettings/applications/RunningState;->sInstance:Lcom/android/OriginalSettings/applications/RunningState;
 
     if-nez v0, :cond_0
 
     .line 563
-    new-instance v0, Lcom/android/settings/applications/RunningState;
+    new-instance v0, Lcom/android/OriginalSettings/applications/RunningState;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/RunningState;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/applications/RunningState;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/applications/RunningState;->sInstance:Lcom/android/settings/applications/RunningState;
+    sput-object v0, Lcom/android/OriginalSettings/applications/RunningState;->sInstance:Lcom/android/OriginalSettings/applications/RunningState;
 
     .line 565
     :cond_0
-    sget-object v0, Lcom/android/settings/applications/RunningState;->sInstance:Lcom/android/settings/applications/RunningState;
+    sget-object v0, Lcom/android/OriginalSettings/applications/RunningState;->sInstance:Lcom/android/OriginalSettings/applications/RunningState;
 
     monitor-exit v1
 
@@ -555,32 +555,32 @@
 
     .prologue
     .line 643
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 644
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 645
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     .line 646
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
     .line 647
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
     .line 648
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -603,7 +603,7 @@
     .local v40, pm:Landroid/content/pm/PackageManager;
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v54, v0
 
@@ -613,7 +613,7 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iput v0, v1, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     .line 656
     const/4 v15, 0x0
@@ -758,7 +758,7 @@
     :goto_3
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -787,7 +787,7 @@
     .local v36, pi:Landroid/app/ActivityManager$RunningAppProcessInfo;
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -797,13 +797,13 @@
 
     move/from16 v55, v0
 
-    new-instance v56, Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    new-instance v56, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
 
     move-object/from16 v0, v56
 
     move-object/from16 v1, v36
 
-    invoke-direct {v0, v1}, Lcom/android/settings/applications/RunningState$AppProcessInfo;-><init>(Landroid/app/ActivityManager$RunningAppProcessInfo;)V
+    invoke-direct {v0, v1}, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;-><init>(Landroid/app/ActivityManager$RunningAppProcessInfo;)V
 
     invoke-virtual/range {v54 .. v56}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -866,7 +866,7 @@
     .line 701
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -880,10 +880,10 @@
 
     move-result-object v10
 
-    check-cast v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    check-cast v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
 
     .line 702
-    .local v10, ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .local v10, ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
     if-eqz v10, :cond_6
 
     .line 703
@@ -891,7 +891,7 @@
 
     move/from16 v0, v54
 
-    iput-boolean v0, v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;->hasServices:Z
+    iput-boolean v0, v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;->hasServices:Z
 
     .line 704
     move-object/from16 v0, v48
@@ -907,10 +907,10 @@
 
     move/from16 v0, v54
 
-    iput-boolean v0, v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;->hasForegroundServices:Z
+    iput-boolean v0, v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;->hasForegroundServices:Z
 
     .line 698
-    .end local v10           #ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .end local v10           #ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
     :cond_6
     add-int/lit8 v22, v22, 0x1
 
@@ -962,7 +962,7 @@
     .line 721
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -976,20 +976,20 @@
 
     move-result-object v10
 
-    check-cast v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    check-cast v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
 
     .line 722
-    .restart local v10       #ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .restart local v10       #ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
     if-eqz v10, :cond_b
 
-    iget-boolean v0, v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;->hasForegroundServices:Z
+    iget-boolean v0, v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;->hasForegroundServices:Z
 
     move/from16 v54, v0
 
     if-nez v54, :cond_b
 
     .line 728
-    iget-object v0, v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     move-object/from16 v54, v0
 
@@ -1014,11 +1014,11 @@
     .local v50, skip:Z
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
-    iget-object v0, v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     move-object/from16 v55, v0
 
@@ -1032,22 +1032,22 @@
 
     move-result-object v10
 
-    .end local v10           #ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
-    check-cast v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .end local v10           #ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
+    check-cast v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
 
     .line 734
-    .restart local v10       #ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .restart local v10       #ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
     :goto_7
     if-eqz v10, :cond_9
 
     .line 735
-    iget-boolean v0, v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;->hasServices:Z
+    iget-boolean v0, v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;->hasServices:Z
 
     move/from16 v54, v0
 
     if-nez v54, :cond_8
 
-    iget-object v0, v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     move-object/from16 v54, v0
 
@@ -1055,7 +1055,7 @@
 
     move-object/from16 v1, v54
 
-    invoke-direct {v0, v1}, Lcom/android/settings/applications/RunningState;->isInterestingProcess(Landroid/app/ActivityManager$RunningAppProcessInfo;)Z
+    invoke-direct {v0, v1}, Lcom/android/OriginalSettings/applications/RunningState;->isInterestingProcess(Landroid/app/ActivityManager$RunningAppProcessInfo;)Z
 
     move-result v54
 
@@ -1070,7 +1070,7 @@
     if-eqz v50, :cond_b
 
     .line 712
-    .end local v10           #ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .end local v10           #ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
     .end local v50           #skip:Z
     :goto_8
     add-int/lit8 v22, v22, 0x1
@@ -1078,16 +1078,16 @@
     goto/16 :goto_6
 
     .line 739
-    .restart local v10       #ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .restart local v10       #ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
     .restart local v50       #skip:Z
     :cond_a
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mTmpAppProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
-    iget-object v0, v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     move-object/from16 v55, v0
 
@@ -1101,19 +1101,19 @@
 
     move-result-object v10
 
-    .end local v10           #ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
-    check-cast v10, Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .end local v10           #ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
+    check-cast v10, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
 
-    .restart local v10       #ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .restart local v10       #ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
     goto :goto_7
 
     .line 748
-    .end local v10           #ainfo:Lcom/android/settings/applications/RunningState$AppProcessInfo;
+    .end local v10           #ainfo:Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
     .end local v50           #skip:Z
     :cond_b
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1130,20 +1130,20 @@
     check-cast v43, Ljava/util/HashMap;
 
     .line 749
-    .local v43, procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .local v43, procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     if-nez v43, :cond_c
 
     .line 750
     new-instance v43, Ljava/util/HashMap;
 
-    .end local v43           #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .end local v43           #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     invoke-direct/range {v43 .. v43}, Ljava/util/HashMap;-><init>()V
 
     .line 751
-    .restart local v43       #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .restart local v43       #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1177,19 +1177,19 @@
 
     move-result-object v41
 
-    check-cast v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 754
-    .local v41, proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .local v41, proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     if-nez v41, :cond_d
 
     .line 755
     const/4 v15, 0x1
 
     .line 756
-    new-instance v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    new-instance v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v48
 
     iget v0, v0, Landroid/app/ActivityManager$RunningServiceInfo;->uid:I
@@ -1210,10 +1210,10 @@
 
     move-object/from16 v3, v55
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/android/settings/applications/RunningState$ProcessItem;-><init>(Landroid/content/Context;ILjava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;-><init>(Landroid/content/Context;ILjava/lang/String;)V
 
     .line 757
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v48
 
     iget-object v0, v0, Landroid/app/ActivityManager$RunningServiceInfo;->process:Ljava/lang/String;
@@ -1232,13 +1232,13 @@
     :cond_d
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->mCurSeq:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mCurSeq:I
 
     move/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v55, v0
 
@@ -1272,7 +1272,7 @@
     :goto_9
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v54, v0
 
@@ -1288,7 +1288,7 @@
     .line 764
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v54, v0
 
@@ -1301,7 +1301,7 @@
     .line 765
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v54, v0
 
@@ -1310,13 +1310,13 @@
     .line 766
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v55, v0
 
@@ -1329,7 +1329,7 @@
     .line 769
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1347,13 +1347,13 @@
 
     move-object/from16 v1, v41
 
-    iput v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iput v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     .line 774
     :cond_10
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mDependentProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mDependentProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1362,7 +1362,7 @@
     .line 775
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v54, v0
 
@@ -1370,7 +1370,7 @@
 
     move-object/from16 v1, v41
 
-    iput v0, v1, Lcom/android/settings/applications/RunningState$BaseItem;->mCurSeq:I
+    iput v0, v1, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mCurSeq:I
 
     .line 777
     .end local v37           #pid:I
@@ -1381,7 +1381,7 @@
 
     move-object/from16 v2, v48
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/applications/RunningState$ProcessItem;->updateService(Landroid/content/Context;Landroid/app/ActivityManager$RunningServiceInfo;)Z
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->updateService(Landroid/content/Context;Landroid/app/ActivityManager$RunningServiceInfo;)Z
 
     move-result v54
 
@@ -1396,8 +1396,8 @@
     goto :goto_9
 
     .line 782
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
-    .end local v43           #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
+    .end local v43           #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     .end local v48           #si:Landroid/app/ActivityManager$RunningServiceInfo;
     :cond_13
     const/16 v22, 0x0
@@ -1422,7 +1422,7 @@
     .restart local v36       #pi:Landroid/app/ActivityManager$RunningAppProcessInfo;
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1436,16 +1436,16 @@
 
     move-result-object v41
 
-    check-cast v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 785
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     if-nez v41, :cond_15
 
     .line 789
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1459,20 +1459,20 @@
 
     move-result-object v41
 
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
-    check-cast v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
+    check-cast v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 790
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     if-nez v41, :cond_14
 
     .line 791
     const/4 v15, 0x1
 
     .line 792
-    new-instance v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    new-instance v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v36
 
     iget v0, v0, Landroid/app/ActivityManager$RunningAppProcessInfo;->uid:I
@@ -1493,10 +1493,10 @@
 
     move-object/from16 v3, v55
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/android/settings/applications/RunningState$ProcessItem;-><init>(Landroid/content/Context;ILjava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3}, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;-><init>(Landroid/content/Context;ILjava/lang/String;)V
 
     .line 793
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v36
 
     iget v0, v0, Landroid/app/ActivityManager$RunningAppProcessInfo;->pid:I
@@ -1507,12 +1507,12 @@
 
     move-object/from16 v1, v41
 
-    iput v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iput v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     .line 794
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1534,7 +1534,7 @@
     :cond_14
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mDependentProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mDependentProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1546,7 +1546,7 @@
 
     move-object/from16 v1, v36
 
-    invoke-direct {v0, v1}, Lcom/android/settings/applications/RunningState;->isInterestingProcess(Landroid/app/ActivityManager$RunningAppProcessInfo;)Z
+    invoke-direct {v0, v1}, Lcom/android/OriginalSettings/applications/RunningState;->isInterestingProcess(Landroid/app/ActivityManager$RunningAppProcessInfo;)Z
 
     move-result v54
 
@@ -1555,7 +1555,7 @@
     .line 800
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -1575,7 +1575,7 @@
     .line 802
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -1589,7 +1589,7 @@
     :cond_16
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v54, v0
 
@@ -1597,7 +1597,7 @@
 
     move-object/from16 v1, v41
 
-    iput v0, v1, Lcom/android/settings/applications/RunningState$BaseItem;->mCurSeq:I
+    iput v0, v1, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mCurSeq:I
 
     .line 805
     const/16 v54, 0x1
@@ -1606,20 +1606,20 @@
 
     move-object/from16 v1, v41
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mInteresting:Z
+    iput-boolean v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mInteresting:Z
 
     .line 806
     move-object/from16 v0, v41
 
     move-object/from16 v1, v40
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningState$ProcessItem;->ensureLabel(Landroid/content/pm/PackageManager;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->ensureLabel(Landroid/content/pm/PackageManager;)V
 
     .line 811
     :goto_b
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v54, v0
 
@@ -1627,14 +1627,14 @@
 
     move-object/from16 v1, v41
 
-    iput v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mRunningSeq:I
+    iput v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mRunningSeq:I
 
     .line 812
     move-object/from16 v0, v36
 
     move-object/from16 v1, v41
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 782
     add-int/lit8 v22, v22, 0x1
@@ -1649,17 +1649,17 @@
 
     move-object/from16 v1, v41
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mInteresting:Z
+    iput-boolean v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mInteresting:Z
 
     goto :goto_b
 
     .line 817
     .end local v36           #pi:Landroid/app/ActivityManager$RunningAppProcessInfo;
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_18
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1679,7 +1679,7 @@
     .line 819
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1691,19 +1691,19 @@
 
     move-result-object v41
 
-    check-cast v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 820
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mRunningSeq:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mRunningSeq:I
 
     move/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v55, v0
 
@@ -1716,7 +1716,7 @@
     .line 821
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     move-object/from16 v54, v0
 
@@ -1733,7 +1733,7 @@
     .line 823
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1745,16 +1745,16 @@
 
     move-result-object v16
 
-    check-cast v16, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v16, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 824
-    .local v16, client:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .local v16, client:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     if-nez v16, :cond_19
 
     .line 825
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1766,24 +1766,24 @@
 
     move-result-object v16
 
-    .end local v16           #client:Lcom/android/settings/applications/RunningState$ProcessItem;
-    check-cast v16, Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v16           #client:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
+    check-cast v16, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 827
-    .restart local v16       #client:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v16       #client:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_19
     if-eqz v16, :cond_1a
 
     .line 828
     move-object/from16 v0, v16
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mDependentProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mDependentProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v55, v0
 
@@ -1796,7 +1796,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 836
-    .end local v16           #client:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v16           #client:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_1a
     :goto_d
     add-int/lit8 v22, v22, 0x1
@@ -1812,7 +1812,7 @@
 
     move-object/from16 v1, v41
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mClient:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mClient:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     goto :goto_d
 
@@ -1824,13 +1824,13 @@
     .line 839
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v55, v0
 
@@ -1850,11 +1850,11 @@
     goto/16 :goto_c
 
     .line 845
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_1d
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -1874,7 +1874,7 @@
     .line 847
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -1886,13 +1886,13 @@
 
     move-result-object v41
 
-    check-cast v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 848
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v41
 
-    iget-boolean v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mInteresting:Z
+    iget-boolean v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mInteresting:Z
 
     move/from16 v54, v0
 
@@ -1900,13 +1900,13 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v55, v0
 
@@ -1923,7 +1923,7 @@
     .line 850
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -1946,11 +1946,11 @@
     goto :goto_e
 
     .line 859
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_20
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1970,7 +1970,7 @@
     .line 861
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -1982,19 +1982,19 @@
 
     move-result-object v41
 
-    check-cast v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 862
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->mCurSeq:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mCurSeq:I
 
     move/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v55, v0
 
@@ -2007,7 +2007,7 @@
     .line 863
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v54, v0
 
@@ -2019,7 +2019,7 @@
 
     move/from16 v3, v54
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings/applications/RunningState$ProcessItem;->buildDependencyChain(Landroid/content/Context;Landroid/content/pm/PackageManager;I)Z
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->buildDependencyChain(Landroid/content/Context;Landroid/content/pm/PackageManager;I)Z
 
     move-result v54
 
@@ -2032,7 +2032,7 @@
     goto :goto_f
 
     .line 868
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_22
     const/16 v53, 0x0
 
@@ -2043,7 +2043,7 @@
     :goto_10
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -2060,7 +2060,7 @@
     .line 870
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -2075,7 +2075,7 @@
     check-cast v43, Ljava/util/HashMap;
 
     .line 871
-    .restart local v43       #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .restart local v43       #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     invoke-virtual/range {v43 .. v43}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
     move-result-object v54
@@ -2085,7 +2085,7 @@
     move-result-object v39
 
     .line 872
-    .local v39, pit:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .local v39, pit:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     :cond_23
     :goto_11
     invoke-interface/range {v39 .. v39}, Ljava/util/Iterator;->hasNext()Z
@@ -2099,19 +2099,19 @@
 
     move-result-object v36
 
-    check-cast v36, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v36, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 874
-    .local v36, pi:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .local v36, pi:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v36
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->mCurSeq:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mCurSeq:I
 
     move/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v55, v0
 
@@ -2126,12 +2126,12 @@
 
     move-object/from16 v1, v40
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningState$ProcessItem;->ensureLabel(Landroid/content/pm/PackageManager;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->ensureLabel(Landroid/content/pm/PackageManager;)V
 
     .line 876
     move-object/from16 v0, v36
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v54, v0
 
@@ -2140,7 +2140,7 @@
     .line 879
     move-object/from16 v0, v36
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mDependentProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mDependentProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -2150,7 +2150,7 @@
     :cond_24
     move-object/from16 v0, v36
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
 
     move-object/from16 v54, v0
 
@@ -2163,7 +2163,7 @@
     move-result-object v49
 
     .line 896
-    .local v49, sit:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/settings/applications/RunningState$ServiceItem;>;"
+    .local v49, sit:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;>;"
     :cond_25
     :goto_12
     invoke-interface/range {v49 .. v49}, Ljava/util/Iterator;->hasNext()Z
@@ -2177,19 +2177,19 @@
 
     move-result-object v48
 
-    check-cast v48, Lcom/android/settings/applications/RunningState$ServiceItem;
+    check-cast v48, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
 
     .line 898
-    .local v48, si:Lcom/android/settings/applications/RunningState$ServiceItem;
+    .local v48, si:Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
     move-object/from16 v0, v48
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->mCurSeq:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mCurSeq:I
 
     move/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v55, v0
 
@@ -2208,8 +2208,8 @@
     goto :goto_12
 
     .line 882
-    .end local v48           #si:Lcom/android/settings/applications/RunningState$ServiceItem;
-    .end local v49           #sit:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/settings/applications/RunningState$ServiceItem;>;"
+    .end local v48           #si:Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
+    .end local v49           #sit:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;>;"
     :cond_26
     const/4 v15, 0x1
 
@@ -2237,7 +2237,7 @@
     :cond_27
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -2259,7 +2259,7 @@
     :cond_28
     move-object/from16 v0, v36
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v54, v0
 
@@ -2268,13 +2268,13 @@
     .line 891
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByPid:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
     move-object/from16 v0, v36
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v55, v0
 
@@ -2283,15 +2283,15 @@
     goto/16 :goto_11
 
     .line 869
-    .end local v36           #pi:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v36           #pi:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_29
     add-int/lit8 v22, v22, 0x1
 
     goto/16 :goto_10
 
     .line 906
-    .end local v39           #pit:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/settings/applications/RunningState$ProcessItem;>;"
-    .end local v43           #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .end local v39           #pit:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
+    .end local v43           #procs:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     :cond_2a
     if-eqz v53, :cond_2b
 
@@ -2328,7 +2328,7 @@
     .local v52, uid:I
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -2354,13 +2354,13 @@
     invoke-direct/range {v51 .. v51}, Ljava/util/ArrayList;-><init>()V
 
     .line 916
-    .local v51, sortedProcesses:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .local v51, sortedProcesses:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     const/16 v22, 0x0
 
     :goto_14
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -2377,7 +2377,7 @@
     .line 917
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessesByName:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -2410,17 +2410,17 @@
 
     move-result-object v36
 
-    check-cast v36, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v36, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 918
-    .restart local v36       #pi:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v36       #pi:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     const/16 v54, 0x0
 
     move/from16 v0, v54
 
     move-object/from16 v1, v36
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mIsSystem:Z
+    iput-boolean v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mIsSystem:Z
 
     .line 919
     const/16 v54, 0x1
@@ -2429,7 +2429,7 @@
 
     move-object/from16 v1, v36
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mIsStarted:Z
+    iput-boolean v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mIsStarted:Z
 
     .line 920
     const-wide v54, 0x7fffffffffffffffL
@@ -2438,12 +2438,12 @@
 
     move-object/from16 v2, v36
 
-    iput-wide v0, v2, Lcom/android/settings/applications/RunningState$ProcessItem;->mActiveSince:J
+    iput-wide v0, v2, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mActiveSince:J
 
     .line 921
     move-object/from16 v0, v36
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
 
     move-object/from16 v54, v0
 
@@ -2468,13 +2468,13 @@
 
     move-result-object v48
 
-    check-cast v48, Lcom/android/settings/applications/RunningState$ServiceItem;
+    check-cast v48, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
 
     .line 922
-    .restart local v48       #si:Lcom/android/settings/applications/RunningState$ServiceItem;
+    .restart local v48       #si:Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
     move-object/from16 v0, v48
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->mServiceInfo:Landroid/content/pm/ServiceInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mServiceInfo:Landroid/content/pm/ServiceInfo;
 
     move-object/from16 v54, v0
 
@@ -2482,7 +2482,7 @@
 
     move-object/from16 v0, v48
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->mServiceInfo:Landroid/content/pm/ServiceInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mServiceInfo:Landroid/content/pm/ServiceInfo;
 
     move-object/from16 v54, v0
 
@@ -2509,13 +2509,13 @@
 
     move-object/from16 v1, v36
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mIsSystem:Z
+    iput-boolean v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mIsSystem:Z
 
     .line 927
     :cond_2d
     move-object/from16 v0, v48
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->mRunningService:Landroid/app/ActivityManager$RunningServiceInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mRunningService:Landroid/app/ActivityManager$RunningServiceInfo;
 
     move-object/from16 v54, v0
 
@@ -2523,7 +2523,7 @@
 
     move-object/from16 v0, v48
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->mRunningService:Landroid/app/ActivityManager$RunningServiceInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mRunningService:Landroid/app/ActivityManager$RunningServiceInfo;
 
     move-object/from16 v54, v0
 
@@ -2542,18 +2542,18 @@
 
     move-object/from16 v1, v36
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mIsStarted:Z
+    iput-boolean v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mIsStarted:Z
 
     .line 930
     move-object/from16 v0, v36
 
-    iget-wide v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mActiveSince:J
+    iget-wide v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mActiveSince:J
 
     move-wide/from16 v54, v0
 
     move-object/from16 v0, v48
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->mRunningService:Landroid/app/ActivityManager$RunningServiceInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mRunningService:Landroid/app/ActivityManager$RunningServiceInfo;
 
     move-object/from16 v56, v0
 
@@ -2570,7 +2570,7 @@
     .line 931
     move-object/from16 v0, v48
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->mRunningService:Landroid/app/ActivityManager$RunningServiceInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mRunningService:Landroid/app/ActivityManager$RunningServiceInfo;
 
     move-object/from16 v54, v0
 
@@ -2584,12 +2584,12 @@
 
     move-object/from16 v2, v36
 
-    iput-wide v0, v2, Lcom/android/settings/applications/RunningState$ProcessItem;->mActiveSince:J
+    iput-wide v0, v2, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mActiveSince:J
 
     goto :goto_16
 
     .line 935
-    .end local v48           #si:Lcom/android/settings/applications/RunningState$ServiceItem;
+    .end local v48           #si:Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
     :cond_2e
     move-object/from16 v0, v51
 
@@ -2601,7 +2601,7 @@
 
     .line 916
     .end local v24           #i$:Ljava/util/Iterator;
-    .end local v36           #pi:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v36           #pi:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_2f
     add-int/lit8 v22, v22, 0x1
 
@@ -2611,7 +2611,7 @@
     :cond_30
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mServiceProcessComparator:Lcom/android/settings/applications/RunningState$ServiceProcessComparator;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessComparator:Lcom/android/OriginalSettings/applications/RunningState$ServiceProcessComparator;
 
     move-object/from16 v54, v0
 
@@ -2627,16 +2627,16 @@
     invoke-direct/range {v30 .. v30}, Ljava/util/ArrayList;-><init>()V
 
     .line 942
-    .local v30, newItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$BaseItem;>;"
+    .local v30, newItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$BaseItem;>;"
     new-instance v31, Ljava/util/ArrayList;
 
     invoke-direct/range {v31 .. v31}, Ljava/util/ArrayList;-><init>()V
 
     .line 943
-    .local v31, newMergedItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .local v31, newMergedItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -2665,22 +2665,22 @@
 
     move-result-object v36
 
-    check-cast v36, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v36, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 946
-    .restart local v36       #pi:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v36       #pi:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     const/16 v54, 0x0
 
     move/from16 v0, v54
 
     move-object/from16 v1, v36
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/RunningState$BaseItem;->mNeedDivider:Z
+    iput-boolean v0, v1, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mNeedDivider:Z
 
     .line 948
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -2692,7 +2692,7 @@
     .local v18, firstProc:I
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -2702,7 +2702,7 @@
 
     move-object/from16 v2, v54
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/applications/RunningState$ProcessItem;->addDependentProcesses(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->addDependentProcesses(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
     .line 952
     move-object/from16 v0, v30
@@ -2714,7 +2714,7 @@
     .line 953
     move-object/from16 v0, v36
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v54, v0
 
@@ -2723,7 +2723,7 @@
     .line 954
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -2738,7 +2738,7 @@
     const/16 v25, 0x0
 
     .line 959
-    .local v25, mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    .local v25, mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
     const/16 v21, 0x0
 
     .line 960
@@ -2749,7 +2749,7 @@
     .local v27, needDivider:Z
     move-object/from16 v0, v36
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
 
     move-object/from16 v54, v0
 
@@ -2773,15 +2773,15 @@
 
     move-result-object v48
 
-    check-cast v48, Lcom/android/settings/applications/RunningState$ServiceItem;
+    check-cast v48, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
 
     .line 962
-    .restart local v48       #si:Lcom/android/settings/applications/RunningState$ServiceItem;
+    .restart local v48       #si:Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
     move/from16 v0, v27
 
     move-object/from16 v1, v48
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/RunningState$BaseItem;->mNeedDivider:Z
+    iput-boolean v0, v1, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mNeedDivider:Z
 
     .line 963
     const/16 v27, 0x1
@@ -2796,7 +2796,7 @@
     .line 965
     move-object/from16 v0, v48
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v54, v0
 
@@ -2807,7 +2807,7 @@
 
     move-object/from16 v0, v48
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v54, v0
 
@@ -2824,7 +2824,7 @@
     :cond_32
     move-object/from16 v0, v48
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v25, v0
 
@@ -2837,7 +2837,7 @@
     goto :goto_18
 
     .line 975
-    .end local v48           #si:Lcom/android/settings/applications/RunningState$ServiceItem;
+    .end local v48           #si:Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
     :cond_34
     if-eqz v21, :cond_35
 
@@ -2845,7 +2845,7 @@
 
     move-object/from16 v0, v25
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$MergedItem;->mServices:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->mServices:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -2855,7 +2855,7 @@
 
     move-object/from16 v0, v36
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
 
     move-object/from16 v55, v0
 
@@ -2871,16 +2871,16 @@
 
     .line 978
     :cond_35
-    new-instance v25, Lcom/android/settings/applications/RunningState$MergedItem;
+    new-instance v25, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
-    .end local v25           #mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
-    invoke-direct/range {v25 .. v25}, Lcom/android/settings/applications/RunningState$MergedItem;-><init>()V
+    .end local v25           #mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
+    invoke-direct/range {v25 .. v25}, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;-><init>()V
 
     .line 979
-    .restart local v25       #mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    .restart local v25       #mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
     move-object/from16 v0, v36
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
 
     move-object/from16 v54, v0
 
@@ -2903,13 +2903,13 @@
 
     move-result-object v48
 
-    check-cast v48, Lcom/android/settings/applications/RunningState$ServiceItem;
+    check-cast v48, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
 
     .line 980
-    .restart local v48       #si:Lcom/android/settings/applications/RunningState$ServiceItem;
+    .restart local v48       #si:Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
     move-object/from16 v0, v25
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$MergedItem;->mServices:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->mServices:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -2924,23 +2924,23 @@
 
     move-object/from16 v1, v48
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$ServiceItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     goto :goto_19
 
     .line 983
-    .end local v48           #si:Lcom/android/settings/applications/RunningState$ServiceItem;
+    .end local v48           #si:Lcom/android/OriginalSettings/applications/RunningState$ServiceItem;
     :cond_36
     move-object/from16 v0, v36
 
     move-object/from16 v1, v25
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$MergedItem;->mProcess:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->mProcess:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 984
     move-object/from16 v0, v25
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$MergedItem;->mOtherProcesses:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->mOtherProcesses:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -2953,7 +2953,7 @@
     :goto_1a
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -2972,13 +2972,13 @@
     .line 986
     move-object/from16 v0, v25
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$MergedItem;->mOtherProcesses:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->mOtherProcesses:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v55, v0
 
@@ -3008,7 +3008,7 @@
 
     move/from16 v2, v54
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/applications/RunningState$MergedItem;->update(Landroid/content/Context;Z)Z
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->update(Landroid/content/Context;Z)Z
 
     .line 991
     move-object/from16 v0, v31
@@ -3026,13 +3026,13 @@
     .end local v18           #firstProc:I
     .end local v21           #haveAllMerged:Z
     .end local v23           #i$:Ljava/util/Iterator;
-    .end local v25           #mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    .end local v25           #mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
     .end local v27           #needDivider:Z
-    .end local v36           #pi:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v36           #pi:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_38
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3051,7 +3051,7 @@
     .line 998
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingProcesses:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3063,13 +3063,13 @@
 
     move-result-object v41
 
-    check-cast v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 999
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mClient:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mClient:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     move-object/from16 v54, v0
 
@@ -3077,7 +3077,7 @@
 
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mServices:Ljava/util/HashMap;
 
     move-object/from16 v54, v0
 
@@ -3090,27 +3090,27 @@
     .line 1000
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v54, v0
 
     if-nez v54, :cond_39
 
     .line 1001
-    new-instance v54, Lcom/android/settings/applications/RunningState$MergedItem;
+    new-instance v54, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
-    invoke-direct/range {v54 .. v54}, Lcom/android/settings/applications/RunningState$MergedItem;-><init>()V
+    invoke-direct/range {v54 .. v54}, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;-><init>()V
 
     move-object/from16 v0, v54
 
     move-object/from16 v1, v41
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     .line 1002
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v54, v0
 
@@ -3118,13 +3118,13 @@
 
     move-object/from16 v1, v54
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$MergedItem;->mProcess:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->mProcess:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 1004
     :cond_39
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v54, v0
 
@@ -3136,14 +3136,14 @@
 
     move/from16 v2, v55
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/applications/RunningState$MergedItem;->update(Landroid/content/Context;Z)Z
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->update(Landroid/content/Context;Z)Z
 
     .line 1005
     const/16 v54, 0x0
 
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v55, v0
 
@@ -3158,7 +3158,7 @@
     .line 1006
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3175,11 +3175,11 @@
     goto :goto_1b
 
     .line 1010
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_3b
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     move-object/from16 v55, v0
 
@@ -3191,14 +3191,14 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState;->mItems:Ljava/util/ArrayList;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState;->mItems:Ljava/util/ArrayList;
 
     .line 1012
     move-object/from16 v0, v31
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
 
     .line 1013
     monitor-exit v55
@@ -3206,13 +3206,13 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 1018
-    .end local v30           #newItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$BaseItem;>;"
-    .end local v31           #newMergedItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .end local v51           #sortedProcesses:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .end local v30           #newItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$BaseItem;>;"
+    .end local v31           #newMergedItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .end local v51           #sortedProcesses:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     :cond_3c
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3221,13 +3221,13 @@
     .line 1019
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v55, v0
 
@@ -3248,7 +3248,7 @@
     .local v35, numServiceProcesses:I
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -3267,7 +3267,7 @@
     .line 1025
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mRunningProcesses:Landroid/util/SparseArray;
 
     move-object/from16 v54, v0
 
@@ -3279,19 +3279,19 @@
 
     move-result-object v41
 
-    check-cast v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 1026
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->mCurSeq:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mCurSeq:I
 
     move/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v55, v0
 
@@ -3304,7 +3304,7 @@
     .line 1029
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     move-object/from16 v54, v0
 
@@ -3328,7 +3328,7 @@
     .line 1032
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3348,10 +3348,10 @@
     .end local v32           #numBackgroundProcesses:I
     .end local v33           #numForegroundProcesses:I
     .end local v35           #numServiceProcesses:I
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
-    .restart local v30       #newItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$BaseItem;>;"
-    .restart local v31       #newMergedItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v51       #sortedProcesses:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
+    .restart local v30       #newItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$BaseItem;>;"
+    .restart local v31       #newMergedItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v51       #sortedProcesses:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     :catchall_0
     move-exception v54
 
@@ -3363,17 +3363,17 @@
     throw v54
 
     .line 1033
-    .end local v30           #newItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$BaseItem;>;"
-    .end local v31           #newMergedItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .end local v51           #sortedProcesses:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$ProcessItem;>;"
+    .end local v30           #newItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$BaseItem;>;"
+    .end local v31           #newMergedItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .end local v51           #sortedProcesses:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;>;"
     .restart local v32       #numBackgroundProcesses:I
     .restart local v33       #numForegroundProcesses:I
     .restart local v35       #numServiceProcesses:I
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_3d
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     move-object/from16 v54, v0
 
@@ -3397,7 +3397,7 @@
     .line 1036
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3425,7 +3425,7 @@
 
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mProcessName:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mProcessName:Ljava/lang/String;
 
     move-object/from16 v56, v0
 
@@ -3441,7 +3441,7 @@
 
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v56, v0
 
@@ -3464,7 +3464,7 @@
     goto :goto_1d
 
     .line 1046
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_40
     const-wide/16 v11, 0x0
 
@@ -3481,11 +3481,11 @@
     const/16 v28, 0x0
 
     .line 1051
-    .local v28, newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .local v28, newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     :try_start_2
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3515,7 +3515,7 @@
     .line 1054
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3527,11 +3527,11 @@
 
     move-result-object v54
 
-    check-cast v54, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v54, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     move-object/from16 v0, v54
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mPid:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mPid:I
 
     move/from16 v54, v0
 
@@ -3568,8 +3568,8 @@
 
     move-object/from16 v29, v28
 
-    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .local v29, newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .local v29, newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     :goto_1f
     :try_start_3
     move-object/from16 v0, v38
@@ -3587,7 +3587,7 @@
     .line 1060
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mAllProcessItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3599,15 +3599,15 @@
 
     move-result-object v41
 
-    check-cast v41, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast v41, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 1061
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     aget-wide v54, v44, v22
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v56, v0
 
@@ -3619,7 +3619,7 @@
 
     move/from16 v4, v56
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/settings/applications/RunningState$ProcessItem;->updateSize(Landroid/content/Context;JI)Z
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->updateSize(Landroid/content/Context;JI)Z
 
     move-result v54
 
@@ -3628,13 +3628,13 @@
     .line 1062
     move-object/from16 v0, v41
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->mCurSeq:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mCurSeq:I
 
     move/from16 v54, v0
 
     move-object/from16 v0, p0
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->mSequence:I
+    iget v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mSequence:I
 
     move/from16 v55, v0
 
@@ -3647,7 +3647,7 @@
     .line 1063
     move-object/from16 v0, v41
 
-    iget-wide v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->mSize:J
+    iget-wide v0, v0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mSize:J
 
     move-wide/from16 v54, v0
 
@@ -3656,22 +3656,22 @@
     move-object/from16 v28, v29
 
     .line 1059
-    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     :goto_20
     add-int/lit8 v22, v22, 0x1
 
     move-object/from16 v29, v28
 
-    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     goto :goto_1f
 
     .line 1064
     :cond_42
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     move-object/from16 v54, v0
 
@@ -3692,7 +3692,7 @@
     .line 1066
     move-object/from16 v0, v41
 
-    iget-wide v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->mSize:J
+    iget-wide v0, v0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mSize:J
 
     move-wide/from16 v54, v0
 
@@ -3702,21 +3702,21 @@
     if-eqz v29, :cond_43
 
     .line 1069
-    new-instance v25, Lcom/android/settings/applications/RunningState$MergedItem;
+    new-instance v25, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
-    invoke-direct/range {v25 .. v25}, Lcom/android/settings/applications/RunningState$MergedItem;-><init>()V
+    invoke-direct/range {v25 .. v25}, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;-><init>()V
 
     move-object/from16 v0, v25
 
     move-object/from16 v1, v41
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     .line 1070
-    .restart local v25       #mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    .restart local v25       #mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v54, v0
 
@@ -3724,7 +3724,7 @@
 
     move-object/from16 v1, v54
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$MergedItem;->mProcess:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->mProcess:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 1071
     move-object/from16 v0, v29
@@ -3738,8 +3738,8 @@
     move-object/from16 v28, v29
 
     .line 1086
-    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     :goto_21
     const/16 v54, 0x1
 
@@ -3750,14 +3750,14 @@
 
     move/from16 v2, v54
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/applications/RunningState$MergedItem;->update(Landroid/content/Context;Z)Z
+    invoke-virtual {v0, v1, v2}, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->update(Landroid/content/Context;Z)Z
 
     .line 1087
     move-object/from16 v0, v25
 
     move-object/from16 v1, p1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningState$MergedItem;->updateSize(Landroid/content/Context;)Z
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->updateSize(Landroid/content/Context;)Z
     :try_end_4
     .catch Landroid/os/RemoteException; {:try_start_4 .. :try_end_4} :catch_0
 
@@ -3768,14 +3768,14 @@
     goto :goto_20
 
     .line 1073
-    .end local v25           #mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
-    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v25           #mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
+    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     :cond_43
     :try_start_5
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3789,7 +3789,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3799,11 +3799,11 @@
 
     move-result-object v54
 
-    check-cast v54, Lcom/android/settings/applications/RunningState$MergedItem;
+    check-cast v54, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v0, v54
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$MergedItem;->mProcess:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->mProcess:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     move-object/from16 v54, v0
 
@@ -3826,8 +3826,8 @@
     .catch Landroid/os/RemoteException; {:try_start_5 .. :try_end_5} :catch_1
 
     .line 1076
-    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     const/4 v14, 0x0
 
     .local v14, bgi:I
@@ -3838,7 +3838,7 @@
     :try_start_6
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3861,21 +3861,21 @@
 
     .line 1079
     :cond_45
-    new-instance v25, Lcom/android/settings/applications/RunningState$MergedItem;
+    new-instance v25, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
-    invoke-direct/range {v25 .. v25}, Lcom/android/settings/applications/RunningState$MergedItem;-><init>()V
+    invoke-direct/range {v25 .. v25}, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;-><init>()V
 
     move-object/from16 v0, v25
 
     move-object/from16 v1, v41
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     .line 1080
-    .restart local v25       #mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    .restart local v25       #mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mMergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v54, v0
 
@@ -3883,7 +3883,7 @@
 
     move-object/from16 v1, v54
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState$MergedItem;->mProcess:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->mProcess:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
 
     .line 1081
     move-object/from16 v0, v28
@@ -3899,10 +3899,10 @@
     .line 1094
     .end local v13           #bgIndex:I
     .end local v14           #bgi:I
-    .end local v25           #mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    .end local v25           #mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
     .end local v34           #numProc:I
     .end local v38           #pids:[I
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     .end local v44           #pss:[J
     :catch_0
     move-exception v54
@@ -3914,7 +3914,7 @@
     .line 1099
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3931,7 +3931,7 @@
     .line 1100
     new-instance v28, Ljava/util/ArrayList;
 
-    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     move-object/from16 v0, v28
 
     move/from16 v1, v32
@@ -3939,7 +3939,7 @@
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 1101
-    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     const/4 v14, 0x0
 
     .restart local v14       #bgi:I
@@ -3951,7 +3951,7 @@
     .line 1102
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3974,18 +3974,18 @@
 
     .line 1083
     .end local v14           #bgi:I
-    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     .restart local v13       #bgIndex:I
-    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     .restart local v34       #numProc:I
     .restart local v38       #pids:[I
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     .restart local v44       #pss:[J
     :cond_46
     :try_start_7
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -3995,23 +3995,23 @@
 
     move-result-object v25
 
-    check-cast v25, Lcom/android/settings/applications/RunningState$MergedItem;
+    check-cast v25, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
-    .restart local v25       #mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
+    .restart local v25       #mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
     move-object/from16 v28, v29
 
-    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     goto/16 :goto_21
 
     .line 1089
-    .end local v25           #mergedItem:Lcom/android/settings/applications/RunningState$MergedItem;
-    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v25           #mergedItem:Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
+    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     :cond_47
     move-object/from16 v0, v41
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;->mRunningProcessInfo:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     move-object/from16 v54, v0
 
@@ -4032,7 +4032,7 @@
     .line 1091
     move-object/from16 v0, v41
 
-    iget-wide v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->mSize:J
+    iget-wide v0, v0, Lcom/android/OriginalSettings/applications/RunningState$BaseItem;->mSize:J
 
     move-wide/from16 v54, v0
     :try_end_7
@@ -4042,19 +4042,19 @@
 
     move-object/from16 v28, v29
 
-    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     goto/16 :goto_20
 
-    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .end local v41           #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
-    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .end local v41           #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
+    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     :cond_48
     move-object/from16 v28, v29
 
     .line 1095
-    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     goto :goto_23
 
     .line 1107
@@ -4068,7 +4068,7 @@
     :goto_25
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -4085,7 +4085,7 @@
     .line 1108
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
 
     move-object/from16 v54, v0
 
@@ -4097,13 +4097,13 @@
 
     move-result-object v54
 
-    check-cast v54, Lcom/android/settings/applications/RunningState$MergedItem;
+    check-cast v54, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;
 
     move-object/from16 v0, v54
 
     move-object/from16 v1, p1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningState$MergedItem;->updateSize(Landroid/content/Context;)Z
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/applications/RunningState$MergedItem;->updateSize(Landroid/content/Context;)Z
 
     .line 1107
     add-int/lit8 v22, v22, 0x1
@@ -4114,7 +4114,7 @@
     :cond_4a
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     move-object/from16 v55, v0
 
@@ -4126,40 +4126,40 @@
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lcom/android/settings/applications/RunningState;->mNumBackgroundProcesses:I
+    iput v0, v1, Lcom/android/OriginalSettings/applications/RunningState;->mNumBackgroundProcesses:I
 
     .line 1113
     move/from16 v0, v33
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lcom/android/settings/applications/RunningState;->mNumForegroundProcesses:I
+    iput v0, v1, Lcom/android/OriginalSettings/applications/RunningState;->mNumForegroundProcesses:I
 
     .line 1114
     move/from16 v0, v35
 
     move-object/from16 v1, p0
 
-    iput v0, v1, Lcom/android/settings/applications/RunningState;->mNumServiceProcesses:I
+    iput v0, v1, Lcom/android/OriginalSettings/applications/RunningState;->mNumServiceProcesses:I
 
     .line 1115
     move-object/from16 v0, p0
 
-    iput-wide v11, v0, Lcom/android/settings/applications/RunningState;->mBackgroundProcessMemory:J
+    iput-wide v11, v0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundProcessMemory:J
 
     .line 1116
     move-wide/from16 v0, v19
 
     move-object/from16 v2, p0
 
-    iput-wide v0, v2, Lcom/android/settings/applications/RunningState;->mForegroundProcessMemory:J
+    iput-wide v0, v2, Lcom/android/OriginalSettings/applications/RunningState;->mForegroundProcessMemory:J
 
     .line 1117
     move-wide/from16 v0, v45
 
     move-object/from16 v2, p0
 
-    iput-wide v0, v2, Lcom/android/settings/applications/RunningState;->mServiceProcessMemory:J
+    iput-wide v0, v2, Lcom/android/OriginalSettings/applications/RunningState;->mServiceProcessMemory:J
 
     .line 1118
     if-eqz v28, :cond_4b
@@ -4169,12 +4169,12 @@
 
     move-object/from16 v1, p0
 
-    iput-object v0, v1, Lcom/android/settings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
+    iput-object v0, v1, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
 
     .line 1120
     move-object/from16 v0, p0
 
-    iget-boolean v0, v0, Lcom/android/settings/applications/RunningState;->mWatchingBackgroundItems:Z
+    iget-boolean v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mWatchingBackgroundItems:Z
 
     move/from16 v54, v0
 
@@ -4187,7 +4187,7 @@
     :cond_4b
     move-object/from16 v0, p0
 
-    iget-boolean v0, v0, Lcom/android/settings/applications/RunningState;->mHaveData:Z
+    iget-boolean v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mHaveData:Z
 
     move/from16 v54, v0
 
@@ -4200,12 +4200,12 @@
 
     move-object/from16 v1, p0
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/RunningState;->mHaveData:Z
+    iput-boolean v0, v1, Lcom/android/OriginalSettings/applications/RunningState;->mHaveData:Z
 
     .line 1126
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     move-object/from16 v54, v0
 
@@ -4229,9 +4229,9 @@
     throw v54
 
     .line 1094
-    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     .restart local v13       #bgIndex:I
-    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     .restart local v34       #numProc:I
     .restart local v38       #pids:[I
     .restart local v44       #pss:[J
@@ -4240,18 +4240,18 @@
 
     move-object/from16 v28, v29
 
-    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     goto/16 :goto_23
 
-    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v41       #proc:Lcom/android/settings/applications/RunningState$ProcessItem;
+    .end local v28           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v29       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v41       #proc:Lcom/android/OriginalSettings/applications/RunningState$ProcessItem;
     :cond_4d
     move-object/from16 v28, v29
 
-    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
-    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/settings/applications/RunningState$MergedItem;>;"
+    .end local v29           #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
+    .restart local v28       #newBackgroundItems:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/OriginalSettings/applications/RunningState$MergedItem;>;"
     goto/16 :goto_20
 .end method
 
@@ -4264,20 +4264,20 @@
             "()",
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/RunningState$MergedItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$MergedItem;",
             ">;"
         }
     .end annotation
 
     .prologue
     .line 1152
-    iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 1153
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundItems:Ljava/util/ArrayList;
 
     monitor-exit v1
 
@@ -4301,20 +4301,20 @@
             "()",
             "Ljava/util/ArrayList",
             "<",
-            "Lcom/android/settings/applications/RunningState$MergedItem;",
+            "Lcom/android/OriginalSettings/applications/RunningState$MergedItem;",
             ">;"
         }
     .end annotation
 
     .prologue
     .line 1146
-    iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 1147
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mMergedItems:Ljava/util/ArrayList;
 
     monitor-exit v1
 
@@ -4336,13 +4336,13 @@
 
     .prologue
     .line 604
-    iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 605
     :try_start_0
-    iget-boolean v0, p0, Lcom/android/settings/applications/RunningState;->mHaveData:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mHaveData:Z
 
     monitor-exit v1
 
@@ -4364,7 +4364,7 @@
 
     .prologue
     .line 621
-    iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -4372,15 +4372,15 @@
     const/4 v0, 0x0
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/android/settings/applications/RunningState;->mResumed:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mResumed:Z
 
     .line 623
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningState;->mRefreshUiListener:Lcom/android/settings/applications/RunningState$OnRefreshUiListener;
+    iput-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mRefreshUiListener:Lcom/android/OriginalSettings/applications/RunningState$OnRefreshUiListener;
 
     .line 624
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mHandler:Landroid/os/Handler;
 
     const/4 v2, 0x4
 
@@ -4403,13 +4403,13 @@
     throw v0
 .end method
 
-.method resume(Lcom/android/settings/applications/RunningState$OnRefreshUiListener;)V
+.method resume(Lcom/android/OriginalSettings/applications/RunningState$OnRefreshUiListener;)V
     .locals 3
     .parameter "listener"
 
     .prologue
     .line 580
-    iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -4417,21 +4417,21 @@
     const/4 v0, 0x1
 
     :try_start_0
-    iput-boolean v0, p0, Lcom/android/settings/applications/RunningState;->mResumed:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mResumed:Z
 
     .line 582
-    iput-object p1, p0, Lcom/android/settings/applications/RunningState;->mRefreshUiListener:Lcom/android/settings/applications/RunningState$OnRefreshUiListener;
+    iput-object p1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mRefreshUiListener:Lcom/android/OriginalSettings/applications/RunningState$OnRefreshUiListener;
 
     .line 583
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mInterestingConfigChanges:Lcom/android/settings/applications/InterestingConfigChanges;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mInterestingConfigChanges:Lcom/android/OriginalSettings/applications/InterestingConfigChanges;
 
-    iget-object v2, p0, Lcom/android/settings/applications/RunningState;->mApplicationContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/OriginalSettings/applications/RunningState;->mApplicationContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/InterestingConfigChanges;->applyNewConfig(Landroid/content/res/Resources;)Z
+    invoke-virtual {v0, v2}, Lcom/android/OriginalSettings/applications/InterestingConfigChanges;->applyNewConfig(Landroid/content/res/Resources;)Z
 
     move-result v0
 
@@ -4440,51 +4440,51 @@
     .line 584
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/applications/RunningState;->mHaveData:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mHaveData:Z
 
     .line 585
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundHandler:Lcom/android/settings/applications/RunningState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundHandler:Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/RunningState$BackgroundHandler;->removeMessages(I)V
+    invoke-virtual {v0, v2}, Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;->removeMessages(I)V
 
     .line 586
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundHandler:Lcom/android/settings/applications/RunningState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundHandler:Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/RunningState$BackgroundHandler;->removeMessages(I)V
+    invoke-virtual {v0, v2}, Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;->removeMessages(I)V
 
     .line 587
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundHandler:Lcom/android/settings/applications/RunningState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundHandler:Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/RunningState$BackgroundHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v2}, Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;->sendEmptyMessage(I)Z
 
     .line 589
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundHandler:Lcom/android/settings/applications/RunningState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundHandler:Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/RunningState$BackgroundHandler;->hasMessages(I)Z
+    invoke-virtual {v0, v2}, Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;->hasMessages(I)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 590
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundHandler:Lcom/android/settings/applications/RunningState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundHandler:Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/RunningState$BackgroundHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v2}, Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;->sendEmptyMessage(I)Z
 
     .line 592
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mHandler:Landroid/os/Handler;
 
     const/4 v2, 0x4
 
@@ -4513,13 +4513,13 @@
 
     .prologue
     .line 1140
-    iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 1141
     :try_start_0
-    iput-boolean p1, p0, Lcom/android/settings/applications/RunningState;->mWatchingBackgroundItems:Z
+    iput-boolean p1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mWatchingBackgroundItems:Z
 
     .line 1142
     monitor-exit v1
@@ -4543,24 +4543,24 @@
 
     .prologue
     .line 597
-    iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 598
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundHandler:Lcom/android/settings/applications/RunningState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundHandler:Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/RunningState$BackgroundHandler;->removeMessages(I)V
+    invoke-virtual {v0, v2}, Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;->removeMessages(I)V
 
     .line 599
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mBackgroundHandler:Lcom/android/settings/applications/RunningState$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mBackgroundHandler:Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;
 
     const/4 v2, 0x2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/RunningState$BackgroundHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v2}, Lcom/android/OriginalSettings/applications/RunningState$BackgroundHandler;->sendEmptyMessage(I)Z
 
     .line 600
     monitor-exit v1
@@ -4584,14 +4584,14 @@
 
     .prologue
     .line 610
-    iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 611
     :goto_0
     :try_start_0
-    iget-boolean v0, p0, Lcom/android/settings/applications/RunningState;->mHaveData:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mHaveData:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -4599,7 +4599,7 @@
 
     .line 613
     :try_start_1
-    iget-object v0, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/android/OriginalSettings/applications/RunningState;->mLock:Ljava/lang/Object;
 
     const-wide/16 v2, 0x0
 

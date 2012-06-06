@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/PowerUsageDetail;
+.class public Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;
 .super Landroid/app/Fragment;
 .source "PowerUsageDetail.java"
 
@@ -9,8 +9,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/fuelgauge/PowerUsageDetail$2;,
-        Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;
+        Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$2;,
+        Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$DrainType;
     }
 .end annotation
 
@@ -32,7 +32,7 @@
 
 .field private mDpm:Landroid/app/admin/DevicePolicyManager;
 
-.field private mDrainType:Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;
+.field private mDrainType:Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$DrainType;
 
 .field private mForceStopButton:Landroid/widget/Button;
 
@@ -79,7 +79,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->sDrainTypeDesciptions:[I
+    sput-object v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->sDrainTypeDesciptions:[I
 
     return-void
 
@@ -105,22 +105,22 @@
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     .line 424
-    new-instance v0, Lcom/android/settings/fuelgauge/PowerUsageDetail$1;
+    new-instance v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail$1;-><init>(Lcom/android/settings/fuelgauge/PowerUsageDetail;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$1;-><init>(Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;)V
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mCheckKillProcessesReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mCheckKillProcessesReceiver:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/fuelgauge/PowerUsageDetail;)Landroid/widget/Button;
+.method static synthetic access$000(Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;)Landroid/widget/Button;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
     return-object v0
 .end method
@@ -133,13 +133,13 @@
 
     .prologue
     .line 392
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
     .line 393
     .local v3, res:Landroid/content/res/Resources;
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -161,7 +161,7 @@
 
     .line 395
     .local v2, item:Landroid/view/ViewGroup;
-    iget-object v5, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mControlsParent:Landroid/view/ViewGroup;
+    iget-object v5, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mControlsParent:Landroid/view/ViewGroup;
 
     invoke-virtual {v5, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
@@ -222,11 +222,11 @@
     const/4 v5, 0x0
 
     .line 432
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mUid:I
+    iget v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mUid:I
 
     const/16 v3, 0x2710
 
@@ -234,7 +234,7 @@
 
     .line 433
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -248,16 +248,16 @@
 
     .local v8, i:I
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     array-length v0, v0
 
     if-ge v8, v0, :cond_3
 
     .line 437
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mDpm:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mDpm:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     aget-object v3, v3, v8
 
@@ -268,7 +268,7 @@
     if-eqz v0, :cond_2
 
     .line 438
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -285,7 +285,7 @@
     const/4 v8, 0x0
 
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     array-length v0, v0
 
@@ -293,9 +293,9 @@
 
     .line 444
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPm:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPm:Landroid/content/pm/PackageManager;
 
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     aget-object v3, v3, v8
 
@@ -316,7 +316,7 @@
     if-nez v0, :cond_5
 
     .line 446
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
     const/4 v3, 0x1
 
@@ -333,7 +333,7 @@
 
     const-string v3, "package"
 
-    iget-object v4, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     aget-object v4, v4, v5
 
@@ -347,23 +347,23 @@
     .local v1, intent:Landroid/content/Intent;
     const-string v0, "android.intent.extra.PACKAGES"
 
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     invoke-virtual {v1, v0, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;
 
     .line 455
     const-string v0, "android.intent.extra.UID"
 
-    iget v3, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mUid:I
+    iget v3, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mUid:I
 
     invoke-virtual {v1, v0, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 456
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mCheckKillProcessesReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mCheckKillProcessesReceiver:Landroid/content/BroadcastReceiver;
 
     move-object v4, v2
 
@@ -392,7 +392,7 @@
 
     .prologue
     .line 160
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getArguments()Landroid/os/Bundle;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getArguments()Landroid/os/Bundle;
 
     move-result-object v2
 
@@ -406,7 +406,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTitle:Ljava/lang/String;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTitle:Ljava/lang/String;
 
     .line 162
     const-string v13, "percent"
@@ -439,7 +439,7 @@
 
     move-object/from16 v0, p0
 
-    iput v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mUsageSince:I
+    iput v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mUsageSince:I
 
     .line 165
     const-string v13, "uid"
@@ -452,7 +452,7 @@
 
     move-object/from16 v0, p0
 
-    iput v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mUid:I
+    iput v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mUid:I
 
     .line 166
     const-string v13, "drainType"
@@ -461,11 +461,11 @@
 
     move-result-object v13
 
-    check-cast v13, Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;
+    check-cast v13, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$DrainType;
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mDrainType:Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mDrainType:Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$DrainType;
 
     .line 167
     const-string v13, "noCoverage"
@@ -478,7 +478,7 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mNoCoverage:D
+    iput-wide v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mNoCoverage:D
 
     .line 168
     const-string v13, "iconPackage"
@@ -507,7 +507,7 @@
 
     .line 172
     :try_start_0
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v13
 
@@ -536,7 +536,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
 
@@ -547,12 +547,12 @@
     :goto_0
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
 
     if-nez v13, :cond_1
 
     .line 184
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v13
 
@@ -566,13 +566,13 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
 
     .line 188
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x1020010
 
@@ -584,7 +584,7 @@
 
     .line 189
     .local v11, summary:Landroid/widget/TextView;
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getDescriptionForDrainType()Ljava/lang/String;
+    invoke-direct/range {p0 .. p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getDescriptionForDrainType()Ljava/lang/String;
 
     move-result-object v13
 
@@ -604,7 +604,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTypes:[I
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTypes:[I
 
     .line 193
     const-string v13, "values"
@@ -615,12 +615,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mValues:[D
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mValues:[D
 
     .line 195
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x1020016
 
@@ -632,23 +632,23 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTitleView:Landroid/widget/TextView;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTitleView:Landroid/widget/TextView;
 
     .line 196
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTitleView:Landroid/widget/TextView;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTitleView:Landroid/widget/TextView;
 
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTitle:Ljava/lang/String;
+    iget-object v14, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTitle:Ljava/lang/String;
 
     invoke-virtual {v13, v14}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 198
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x1020014
 
@@ -676,7 +676,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v13, v14}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, v13, v14}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v13
 
@@ -685,7 +685,7 @@
     .line 201
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x7f080132
 
@@ -697,12 +697,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTwoButtonsPanel:Landroid/view/ViewGroup;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTwoButtonsPanel:Landroid/view/ViewGroup;
 
     .line 202
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x7f08020b
 
@@ -714,12 +714,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
     .line 203
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x7f08020c
 
@@ -731,12 +731,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
 
     .line 204
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
     const/4 v14, 0x0
 
@@ -745,7 +745,7 @@
     .line 206
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x102000d
 
@@ -762,7 +762,7 @@
     .line 209
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x1020006
 
@@ -776,14 +776,14 @@
     .local v5, icon:Landroid/widget/ImageView;
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v5, v13}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 212
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x7f080133
 
@@ -795,12 +795,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mDetailsParent:Landroid/view/ViewGroup;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mDetailsParent:Landroid/view/ViewGroup;
 
     .line 213
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v14, 0x7f080134
 
@@ -812,33 +812,33 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mControlsParent:Landroid/view/ViewGroup;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mControlsParent:Landroid/view/ViewGroup;
 
     .line 215
-    invoke-direct/range {p0 .. p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->fillDetailsSection()V
+    invoke-direct/range {p0 .. p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->fillDetailsSection()V
 
     .line 216
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mUid:I
+    iget v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mUid:I
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v13}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->fillPackagesSection(I)V
+    invoke-direct {v0, v13}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->fillPackagesSection(I)V
 
     .line 217
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mUid:I
+    iget v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mUid:I
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v13}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->fillControlsSection(I)V
+    invoke-direct {v0, v13}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->fillControlsSection(I)V
 
     .line 219
     move-object/from16 v0, p0
 
-    iget v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mUid:I
+    iget v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mUid:I
 
     const/16 v14, 0x2710
 
@@ -847,7 +847,7 @@
     .line 220
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
     const v14, 0x7f0b0445
 
@@ -856,7 +856,7 @@
     .line 221
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
     const/4 v14, 0x7
 
@@ -869,7 +869,7 @@
     .line 222
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
     move-object/from16 v0, p0
 
@@ -878,7 +878,7 @@
     .line 223
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
 
     const v14, 0x1040467
 
@@ -887,7 +887,7 @@
     .line 224
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
 
     const/16 v14, 0x8
 
@@ -900,14 +900,14 @@
     .line 225
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
 
     move-object/from16 v0, p0
 
     invoke-virtual {v13, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 228
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v13
 
@@ -930,13 +930,13 @@
     .line 231
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     if-eqz v13, :cond_2
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     array-length v13, v13
 
@@ -944,7 +944,7 @@
 
     .line 233
     :try_start_1
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v13
 
@@ -954,7 +954,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v14, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     const/4 v15, 0x0
 
@@ -968,16 +968,16 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mApp:Landroid/content/pm/ApplicationInfo;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mApp:Landroid/content/pm/ApplicationInfo;
 
     .line 235
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v13
 
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v14, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     const/4 v15, 0x0
 
@@ -985,7 +985,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v15, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mApp:Landroid/content/pm/ApplicationInfo;
+    iget-object v15, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mApp:Landroid/content/pm/ApplicationInfo;
 
     iget v15, v15, Landroid/content/pm/ApplicationInfo;->flags:I
 
@@ -995,7 +995,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mInstaller:Landroid/content/ComponentName;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mInstaller:Landroid/content/ComponentName;
     :try_end_1
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -1004,11 +1004,11 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v14, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
+    iget-object v14, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mReportButton:Landroid/widget/Button;
 
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mInstaller:Landroid/content/ComponentName;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mInstaller:Landroid/content/ComponentName;
 
     if-eqz v13, :cond_4
 
@@ -1031,7 +1031,7 @@
     if-eqz v6, :cond_0
 
     .line 181
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v13
 
@@ -1045,7 +1045,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
+    iput-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mAppIcon:Landroid/graphics/drawable/Drawable;
 
     goto/16 :goto_0
 
@@ -1064,7 +1064,7 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTwoButtonsPanel:Landroid/view/ViewGroup;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTwoButtonsPanel:Landroid/view/ViewGroup;
 
     const/16 v14, 0x8
 
@@ -1077,7 +1077,7 @@
     :cond_6
     move-object/from16 v0, p0
 
-    iget-object v13, v0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTwoButtonsPanel:Landroid/view/ViewGroup;
+    iget-object v13, v0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTwoButtonsPanel:Landroid/view/ViewGroup;
 
     const/16 v14, 0x8
 
@@ -1114,11 +1114,11 @@
     const/4 v2, 0x0
 
     .line 265
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Landroid/preference/PreferenceActivity;
+    check-cast v0, Lmiui/preference/BasePreferenceActivity;
 
     .line 266
     packed-switch p1, :pswitch_data_0
@@ -1129,7 +1129,7 @@
 
     .line 268
     :pswitch_0
-    const-class v1, Lcom/android/settings/DisplaySettings;
+    const-class v1, Lcom/android/OriginalSettings/DisplaySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1141,13 +1141,13 @@
 
     move-object v5, v2
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 
     .line 272
     :pswitch_1
-    const-class v1, Lcom/android/settings/wifi/WifiSettings;
+    const-class v1, Lcom/android/OriginalSettings/wifi/WifiSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1159,13 +1159,13 @@
 
     move-object v5, v2
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 
     .line 276
     :pswitch_2
-    const-class v1, Lcom/android/settings/bluetooth/BluetoothSettings;
+    const-class v1, Lcom/android/OriginalSettings/bluetooth/BluetoothSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1177,13 +1177,13 @@
 
     move-object v5, v2
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 
     .line 280
     :pswitch_3
-    const-class v1, Lcom/android/settings/WirelessSettings;
+    const-class v1, Lcom/android/OriginalSettings/WirelessSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1195,19 +1195,19 @@
 
     move-object v5, v2
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 
     .line 284
     :pswitch_4
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->startApplicationDetailsActivity()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->startApplicationDetailsActivity()V
 
     goto :goto_0
 
     .line 287
     :pswitch_5
-    const-class v1, Lcom/android/settings/LocationSettings;
+    const-class v1, Lcom/android/OriginalSettings/LocationSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1219,19 +1219,19 @@
 
     move-object v5, v2
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 
     .line 291
     :pswitch_6
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->killProcesses()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->killProcesses()V
 
     goto :goto_0
 
     .line 294
     :pswitch_7
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->reportBatteryUse()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->reportBatteryUse()V
 
     goto :goto_0
 
@@ -1263,7 +1263,7 @@
     const/4 v1, 0x0
 
     .line 333
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
 
@@ -1324,11 +1324,11 @@
 
     .line 343
     .local v5, removeHeader:Z
-    sget-object v6, Lcom/android/settings/fuelgauge/PowerUsageDetail$2;->$SwitchMap$com$android$settings$fuelgauge$PowerUsageDetail$DrainType:[I
+    sget-object v6, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$2;->$SwitchMap$com$android$settings$fuelgauge$PowerUsageDetail$DrainType:[I
 
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mDrainType:Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mDrainType:Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$DrainType;
 
-    invoke-virtual {v8}, Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;->ordinal()I
+    invoke-virtual {v8}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$DrainType;->ordinal()I
 
     move-result v8
 
@@ -1342,7 +1342,7 @@
     if-eqz v5, :cond_2
 
     .line 387
-    iget-object v6, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mControlsParent:Landroid/view/ViewGroup;
+    iget-object v6, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mControlsParent:Landroid/view/ViewGroup;
 
     const/16 v7, 0x8
 
@@ -1383,14 +1383,14 @@
 
     const/4 v8, 0x5
 
-    invoke-direct {p0, v6, v7, v8}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->addControl(III)V
+    invoke-direct {p0, v6, v7, v8}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->addControl(III)V
 
     .line 349
     const/4 v5, 0x0
 
     .line 353
     :cond_5
-    iget-boolean v6, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mUsesGps:Z
+    iget-boolean v6, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mUsesGps:Z
 
     if-eqz v6, :cond_1
 
@@ -1401,7 +1401,7 @@
 
     const/4 v8, 0x6
 
-    invoke-direct {p0, v6, v7, v8}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->addControl(III)V
+    invoke-direct {p0, v6, v7, v8}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->addControl(III)V
 
     .line 356
     const/4 v5, 0x0
@@ -1414,7 +1414,7 @@
 
     const v8, 0x7f0b0552
 
-    invoke-direct {p0, v6, v8, v7}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->addControl(III)V
+    invoke-direct {p0, v6, v8, v7}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->addControl(III)V
 
     .line 363
     const/4 v5, 0x0
@@ -1430,7 +1430,7 @@
 
     const/4 v8, 0x2
 
-    invoke-direct {p0, v6, v7, v8}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->addControl(III)V
+    invoke-direct {p0, v6, v7, v8}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->addControl(III)V
 
     .line 369
     const/4 v5, 0x0
@@ -1446,7 +1446,7 @@
 
     const/4 v8, 0x3
 
-    invoke-direct {p0, v6, v7, v8}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->addControl(III)V
+    invoke-direct {p0, v6, v7, v8}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->addControl(III)V
 
     .line 375
     const/4 v5, 0x0
@@ -1456,7 +1456,7 @@
 
     .line 378
     :pswitch_4
-    iget-wide v6, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mNoCoverage:D
+    iget-wide v6, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mNoCoverage:D
 
     const-wide/high16 v8, 0x4024
 
@@ -1471,7 +1471,7 @@
 
     const/4 v8, 0x4
 
-    invoke-direct {p0, v6, v7, v8}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->addControl(III)V
+    invoke-direct {p0, v6, v7, v8}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->addControl(III)V
 
     .line 382
     const/4 v5, 0x0
@@ -1507,7 +1507,7 @@
     const/4 v12, 0x1
 
     .line 300
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -1517,11 +1517,11 @@
 
     .line 301
     .local v1, inflater:Landroid/view/LayoutInflater;
-    iget-object v7, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTypes:[I
+    iget-object v7, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTypes:[I
 
     if-eqz v7, :cond_1
 
-    iget-object v7, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mValues:[D
+    iget-object v7, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mValues:[D
 
     if-eqz v7, :cond_1
 
@@ -1530,14 +1530,14 @@
 
     .local v0, i:I
     :goto_0
-    iget-object v7, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTypes:[I
+    iget-object v7, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTypes:[I
 
     array-length v7, v7
 
     if-ge v0, v7, :cond_1
 
     .line 304
-    iget-object v7, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mValues:[D
+    iget-object v7, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mValues:[D
 
     aget-wide v7, v7, v0
 
@@ -1555,11 +1555,11 @@
 
     .line 305
     :cond_0
-    iget-object v7, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTypes:[I
+    iget-object v7, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTypes:[I
 
     aget v7, v7, v0
 
-    invoke-virtual {p0, v7}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v7}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1569,7 +1569,7 @@
 
     .line 307
     .local v5, value:Ljava/lang/String;
-    iget-object v7, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mTypes:[I
+    iget-object v7, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mTypes:[I
 
     aget v7, v7, v0
 
@@ -1578,15 +1578,15 @@
     .line 319
     :goto_2
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mValues:[D
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mValues:[D
 
     aget-wide v8, v8, v0
 
-    invoke-static {v7, v8, v9}, Lcom/android/settings/fuelgauge/Utils;->formatElapsedTime(Landroid/content/Context;D)Ljava/lang/String;
+    invoke-static {v7, v8, v9}, Lcom/android/OriginalSettings/fuelgauge/Utils;->formatElapsedTime(Landroid/content/Context;D)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1604,7 +1604,7 @@
 
     .line 323
     .local v2, item:Landroid/view/ViewGroup;
-    iget-object v7, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mDetailsParent:Landroid/view/ViewGroup;
+    iget-object v7, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mDetailsParent:Landroid/view/ViewGroup;
 
     invoke-virtual {v7, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
@@ -1641,15 +1641,15 @@
     .end local v4           #labelView:Landroid/widget/TextView;
     .end local v6           #valueView:Landroid/widget/TextView;
     :pswitch_1
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mValues:[D
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mValues:[D
 
     aget-wide v8, v8, v0
 
-    invoke-static {v7, v8, v9}, Lcom/android/settings/fuelgauge/Utils;->formatBytes(Landroid/content/Context;D)Ljava/lang/String;
+    invoke-static {v7, v8, v9}, Lcom/android/OriginalSettings/fuelgauge/Utils;->formatBytes(Landroid/content/Context;D)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1664,7 +1664,7 @@
 
     const/4 v9, 0x0
 
-    iget-object v10, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mValues:[D
+    iget-object v10, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mValues:[D
 
     aget-wide v10, v10, v0
 
@@ -1689,7 +1689,7 @@
 
     .line 316
     :pswitch_3
-    iput-boolean v12, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mUsesGps:Z
+    iput-boolean v12, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mUsesGps:Z
 
     goto :goto_2
 
@@ -1726,7 +1726,7 @@
     if-ge p1, v8, :cond_1
 
     .line 488
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->removePackagesSection()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->removePackagesSection()V
 
     .line 523
     :cond_0
@@ -1735,7 +1735,7 @@
 
     .line 491
     :cond_1
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v9, 0x7f080137
 
@@ -1750,7 +1750,7 @@
     if-eqz v6, :cond_0
 
     .line 493
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
 
@@ -1760,7 +1760,7 @@
 
     .line 495
     .local v2, inflater:Landroid/view/LayoutInflater;
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v8
 
@@ -1774,14 +1774,14 @@
 
     move-result-object v8
 
-    iput-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iput-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     .line 498
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     if-eqz v8, :cond_2
 
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     array-length v8, v8
 
@@ -1791,7 +1791,7 @@
 
     .line 499
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->removePackagesSection()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->removePackagesSection()V
 
     goto :goto_0
 
@@ -1801,7 +1801,7 @@
 
     .local v1, i:I
     :goto_1
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     array-length v8, v8
 
@@ -1809,7 +1809,7 @@
 
     .line 506
     :try_start_0
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     aget-object v8, v8, v1
 
@@ -1830,7 +1830,7 @@
     if-eqz v4, :cond_4
 
     .line 510
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     invoke-virtual {v4}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -1865,7 +1865,7 @@
 
     .line 519
     .local v5, labelView:Landroid/widget/TextView;
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     aget-object v8, v8, v1
 
@@ -1895,15 +1895,15 @@
 
     .prologue
     .line 526
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/fuelgauge/PowerUsageDetail;->sDrainTypeDesciptions:[I
+    sget-object v1, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->sDrainTypeDesciptions:[I
 
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mDrainType:Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mDrainType:Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$DrainType;
 
-    invoke-virtual {v2}, Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;->ordinal()I
+    invoke-virtual {v2}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail$DrainType;->ordinal()I
 
     move-result v2
 
@@ -1921,7 +1921,7 @@
 
     .prologue
     .line 415
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     if-nez v2, :cond_0
 
@@ -1931,7 +1931,7 @@
 
     .line 416
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1949,14 +1949,14 @@
 
     .local v1, i:I
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     array-length v2, v2
 
     if-ge v1, v2, :cond_1
 
     .line 419
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     aget-object v2, v2, v1
 
@@ -1969,7 +1969,7 @@
 
     .line 421
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->checkForceStop()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->checkForceStop()V
 
     goto :goto_0
 .end method
@@ -1981,7 +1981,7 @@
     const/16 v3, 0x8
 
     .line 406
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v2, 0x7f080136
 
@@ -1997,7 +1997,7 @@
 
     .line 409
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     const v2, 0x7f080137
 
@@ -2024,7 +2024,7 @@
     const/4 v4, 0x0
 
     .line 461
-    iget-object v6, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     if-nez v6, :cond_0
 
@@ -2045,14 +2045,14 @@
     iput v6, v2, Landroid/app/ApplicationErrorReport;->type:I
 
     .line 465
-    iget-object v6, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     aget-object v6, v6, v4
 
     iput-object v6, v2, Landroid/app/ApplicationErrorReport;->packageName:Ljava/lang/String;
 
     .line 466
-    iget-object v6, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mInstaller:Landroid/content/ComponentName;
+    iget-object v6, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mInstaller:Landroid/content/ComponentName;
 
     invoke-virtual {v6}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -2061,7 +2061,7 @@
     iput-object v6, v2, Landroid/app/ApplicationErrorReport;->installerPackageName:Ljava/lang/String;
 
     .line 467
-    iget-object v6, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     aget-object v6, v6, v4
 
@@ -2075,7 +2075,7 @@
     iput-wide v6, v2, Landroid/app/ApplicationErrorReport;->time:J
 
     .line 469
-    iget-object v6, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mApp:Landroid/content/pm/ApplicationInfo;
+    iget-object v6, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mApp:Landroid/content/pm/ApplicationInfo;
 
     iget v6, v6, Landroid/content/pm/ApplicationInfo;->flags:I
 
@@ -2089,7 +2089,7 @@
     iput-boolean v4, v2, Landroid/app/ApplicationErrorReport;->systemApp:Z
 
     .line 471
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -2150,7 +2150,7 @@
 
     .line 480
     .local v3, result:Landroid/content/Intent;
-    iget-object v4, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mInstaller:Landroid/content/ComponentName;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mInstaller:Landroid/content/ComponentName;
 
     invoke-virtual {v3, v4}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
@@ -2165,7 +2165,7 @@
     invoke-virtual {v3, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 483
-    invoke-virtual {p0, v3}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v3}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -2186,21 +2186,21 @@
     .line 257
     const-string v0, "package"
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPackages:[Ljava/lang/String;
 
     aget-object v1, v1, v6
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 259
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Landroid/preference/PreferenceActivity;
+    check-cast v0, Lmiui/preference/BasePreferenceActivity;
 
     .line 260
-    const-class v1, Lcom/android/settings/applications/InstalledAppDetails;
+    const-class v1, Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -2210,7 +2210,7 @@
 
     move-object v5, v4
 
-    invoke-virtual/range {v0 .. v6}, Landroid/preference/PreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lmiui/preference/BasePreferenceActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 262
     return-void
@@ -2234,7 +2234,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->doAction(I)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->doAction(I)V
 
     .line 251
     return-void
@@ -2249,7 +2249,7 @@
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2257,10 +2257,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mPm:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mPm:Landroid/content/pm/PackageManager;
 
     .line 137
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2272,7 +2272,7 @@
 
     check-cast v0, Landroid/app/admin/DevicePolicyManager;
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mDpm:Landroid/app/admin/DevicePolicyManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mDpm:Landroid/app/admin/DevicePolicyManager;
 
     .line 138
     return-void
@@ -2294,11 +2294,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mRootView:Landroid/view/View;
 
     .line 143
     .local v0, view:Landroid/view/View;
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->createDetails()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->createDetails()V
 
     .line 144
     return-object v0
@@ -2327,10 +2327,10 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mStartTime:J
+    iput-wide v0, p0, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->mStartTime:J
 
     .line 151
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->checkForceStop()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/fuelgauge/PowerUsageDetail;->checkForceStop()V
 
     .line 152
     return-void

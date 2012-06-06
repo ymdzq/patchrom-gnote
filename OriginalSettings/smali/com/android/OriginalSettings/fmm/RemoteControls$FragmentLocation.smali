@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/fmm/RemoteControls$FragmentLocation;
+.class public Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;
 .super Landroid/preference/PreferenceFragment;
 .source "RemoteControls.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fmm/RemoteControls;
+    value = Lcom/android/OriginalSettings/fmm/RemoteControls;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -38,12 +38,12 @@
 
     .prologue
     .line 330
-    iget-object v0, p0, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_0
 
     .line 331
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -53,7 +53,7 @@
 
     const-string v1, "network"
 
-    iget-object v2, p0, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -78,7 +78,7 @@
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onResume()V
 
     .line 308
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -93,10 +93,10 @@
     :cond_0
     const v1, 0x7f050018
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->addPreferencesFromResource(I)V
 
     .line 313
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -109,21 +109,21 @@
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
 
     .line 318
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/Utils;->isWifiOnly(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/OriginalSettings/Utils;->isWifiOnly(Landroid/content/Context;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 319
-    iget-object v1, p0, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
 
     const v2, 0x7f0b03e2
 
@@ -131,9 +131,9 @@
 
     .line 322
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->mNetwork:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$FragmentLocation;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$FragmentLocation;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 

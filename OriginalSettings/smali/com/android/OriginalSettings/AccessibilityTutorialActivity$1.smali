@@ -1,4 +1,4 @@
-.class Lcom/android/settings/AccessibilityTutorialActivity$1;
+.class Lcom/android/OriginalSettings/AccessibilityTutorialActivity$1;
 .super Ljava/lang/Object;
 .source "AccessibilityTutorialActivity.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AccessibilityTutorialActivity;
+    value = Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/AccessibilityTutorialActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessibilityTutorialActivity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/AccessibilityTutorialActivity;)V
     .locals 0
     .parameter
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/android/settings/AccessibilityTutorialActivity$1;->this$0:Lcom/android/settings/AccessibilityTutorialActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$1;->this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,10 +43,10 @@
 
     .prologue
     .line 81
-    iget-object v2, p0, Lcom/android/settings/AccessibilityTutorialActivity$1;->this$0:Lcom/android/settings/AccessibilityTutorialActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$1;->this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
-    #getter for: Lcom/android/settings/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
-    invoke-static {v2}, Lcom/android/settings/AccessibilityTutorialActivity;->access$000(Lcom/android/settings/AccessibilityTutorialActivity;)Landroid/widget/ViewAnimator;
+    #getter for: Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
+    invoke-static {v2}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->access$000(Lcom/android/OriginalSettings/AccessibilityTutorialActivity;)Landroid/widget/ViewAnimator;
 
     move-result-object v2
 
@@ -56,10 +56,10 @@
 
     .line 82
     .local v0, index:I
-    iget-object v2, p0, Lcom/android/settings/AccessibilityTutorialActivity$1;->this$0:Lcom/android/settings/AccessibilityTutorialActivity;
+    iget-object v2, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$1;->this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
-    #getter for: Lcom/android/settings/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
-    invoke-static {v2}, Lcom/android/settings/AccessibilityTutorialActivity;->access$000(Lcom/android/settings/AccessibilityTutorialActivity;)Landroid/widget/ViewAnimator;
+    #getter for: Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->mViewAnimator:Landroid/widget/ViewAnimator;
+    invoke-static {v2}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->access$000(Lcom/android/OriginalSettings/AccessibilityTutorialActivity;)Landroid/widget/ViewAnimator;
 
     move-result-object v2
 
@@ -67,14 +67,14 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;
+    check-cast v1, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;
 
     .line 84
-    .local v1, module:Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;
-    iget-object v2, p0, Lcom/android/settings/AccessibilityTutorialActivity$1;->this$0:Lcom/android/settings/AccessibilityTutorialActivity;
+    .local v1, module:Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;
+    iget-object v2, p0, Lcom/android/OriginalSettings/AccessibilityTutorialActivity$1;->this$0:Lcom/android/OriginalSettings/AccessibilityTutorialActivity;
 
-    #calls: Lcom/android/settings/AccessibilityTutorialActivity;->activateModule(Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;)V
-    invoke-static {v2, v1}, Lcom/android/settings/AccessibilityTutorialActivity;->access$100(Lcom/android/settings/AccessibilityTutorialActivity;Lcom/android/settings/AccessibilityTutorialActivity$TutorialModule;)V
+    #calls: Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->activateModule(Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;)V
+    invoke-static {v2, v1}, Lcom/android/OriginalSettings/AccessibilityTutorialActivity;->access$100(Lcom/android/OriginalSettings/AccessibilityTutorialActivity;Lcom/android/OriginalSettings/AccessibilityTutorialActivity$TutorialModule;)V
 
     .line 85
     return-void

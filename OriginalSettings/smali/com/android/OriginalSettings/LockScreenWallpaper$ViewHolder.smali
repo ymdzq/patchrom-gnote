@@ -1,11 +1,11 @@
-.class Lcom/android/settings/LockScreenWallpaper$ViewHolder;
+.class Lcom/android/OriginalSettings/LockScreenWallpaper$ViewHolder;
 .super Ljava/lang/Object;
 .source "LockScreenWallpaper.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/LockScreenWallpaper;
+    value = Lcom/android/OriginalSettings/LockScreenWallpaper;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

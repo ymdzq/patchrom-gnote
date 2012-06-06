@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/flipfont/TypefaceParser;
+.class public Lcom/android/OriginalSettings/flipfont/TypefaceParser;
 .super Lorg/xml/sax/helpers/DefaultHandler;
 .source "TypefaceParser.java"
 
@@ -18,9 +18,9 @@
 
 .field private in_serif:Z
 
-.field private mFont:Lcom/android/settings/flipfont/Typeface;
+.field private mFont:Lcom/android/OriginalSettings/flipfont/Typeface;
 
-.field private mFontFile:Lcom/android/settings/flipfont/TypefaceFile;
+.field private mFontFile:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
 
 # direct methods
@@ -36,31 +36,31 @@
     invoke-direct {p0}, Lorg/xml/sax/helpers/DefaultHandler;-><init>()V
 
     .line 46
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_font:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_font:Z
 
     .line 48
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_sans:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_sans:Z
 
     .line 50
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_serif:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_serif:Z
 
     .line 52
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_monospace:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_monospace:Z
 
     .line 54
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_file:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_file:Z
 
     .line 56
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_filename:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_filename:Z
 
     .line 58
-    iput-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_droidname:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_droidname:Z
 
     .line 61
-    iput-object v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFont:Lcom/android/settings/flipfont/Typeface;
+    iput-object v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFont:Lcom/android/OriginalSettings/flipfont/Typeface;
 
     .line 63
-    iput-object v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFontFile:Lcom/android/settings/flipfont/TypefaceFile;
+    iput-object v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFontFile:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
     return-void
 .end method
@@ -75,18 +75,18 @@
 
     .prologue
     .line 149
-    iget-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_filename:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_filename:Z
 
     if-eqz v0, :cond_1
 
     .line 150
-    iget-object v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFontFile:Lcom/android/settings/flipfont/TypefaceFile;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFontFile:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
     new-instance v1, Ljava/lang/String;
 
     invoke-direct {v1, p1, p2, p3}, Ljava/lang/String;-><init>([CII)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/flipfont/TypefaceFile;->setFileName(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->setFileName(Ljava/lang/String;)V
 
     .line 154
     :cond_0
@@ -95,18 +95,18 @@
 
     .line 151
     :cond_1
-    iget-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_droidname:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_droidname:Z
 
     if-eqz v0, :cond_0
 
     .line 152
-    iget-object v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFontFile:Lcom/android/settings/flipfont/TypefaceFile;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFontFile:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
     new-instance v1, Ljava/lang/String;
 
     invoke-direct {v1, p1, p2, p3}, Ljava/lang/String;-><init>([CII)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/flipfont/TypefaceFile;->setDroidName(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/flipfont/TypefaceFile;->setDroidName(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -148,7 +148,7 @@
     if-eqz v0, :cond_1
 
     .line 118
-    iput-boolean v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_font:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_font:Z
 
     .line 141
     :cond_0
@@ -166,7 +166,7 @@
     if-eqz v0, :cond_2
 
     .line 120
-    iput-boolean v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_sans:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_sans:Z
 
     goto :goto_0
 
@@ -181,7 +181,7 @@
     if-eqz v0, :cond_3
 
     .line 122
-    iput-boolean v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_serif:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_serif:Z
 
     goto :goto_0
 
@@ -196,7 +196,7 @@
     if-eqz v0, :cond_4
 
     .line 124
-    iput-boolean v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_monospace:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_monospace:Z
 
     goto :goto_0
 
@@ -211,24 +211,24 @@
     if-eqz v0, :cond_7
 
     .line 126
-    iput-boolean v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_file:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_file:Z
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFontFile:Lcom/android/settings/flipfont/TypefaceFile;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFontFile:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
     if-eqz v0, :cond_0
 
     .line 128
-    iget-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_sans:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_sans:Z
 
     if-eqz v0, :cond_5
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFont:Lcom/android/settings/flipfont/Typeface;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFont:Lcom/android/OriginalSettings/flipfont/Typeface;
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/Typeface;->mSansFonts:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/Typeface;->mSansFonts:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFontFile:Lcom/android/settings/flipfont/TypefaceFile;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFontFile:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -236,16 +236,16 @@
 
     .line 130
     :cond_5
-    iget-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_serif:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_serif:Z
 
     if-eqz v0, :cond_6
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFont:Lcom/android/settings/flipfont/Typeface;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFont:Lcom/android/OriginalSettings/flipfont/Typeface;
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/Typeface;->mSerifFonts:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/Typeface;->mSerifFonts:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFontFile:Lcom/android/settings/flipfont/TypefaceFile;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFontFile:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -253,16 +253,16 @@
 
     .line 132
     :cond_6
-    iget-boolean v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_monospace:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_monospace:Z
 
     if-eqz v0, :cond_0
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFont:Lcom/android/settings/flipfont/Typeface;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFont:Lcom/android/OriginalSettings/flipfont/Typeface;
 
-    iget-object v0, v0, Lcom/android/settings/flipfont/Typeface;->mMonospaceFonts:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/OriginalSettings/flipfont/Typeface;->mMonospaceFonts:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFontFile:Lcom/android/settings/flipfont/TypefaceFile;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFontFile:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -279,7 +279,7 @@
     if-eqz v0, :cond_8
 
     .line 137
-    iput-boolean v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_filename:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_filename:Z
 
     goto :goto_0
 
@@ -294,17 +294,17 @@
     if-eqz v0, :cond_0
 
     .line 139
-    iput-boolean v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_droidname:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_droidname:Z
 
     goto :goto_0
 .end method
 
-.method public getParsedData()Lcom/android/settings/flipfont/Typeface;
+.method public getParsedData()Lcom/android/OriginalSettings/flipfont/Typeface;
     .locals 1
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFont:Lcom/android/settings/flipfont/Typeface;
+    iget-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFont:Lcom/android/OriginalSettings/flipfont/Typeface;
 
     return-object v0
 .end method
@@ -319,11 +319,11 @@
 
     .prologue
     .line 75
-    new-instance v0, Lcom/android/settings/flipfont/Typeface;
+    new-instance v0, Lcom/android/OriginalSettings/flipfont/Typeface;
 
-    invoke-direct {v0}, Lcom/android/settings/flipfont/Typeface;-><init>()V
+    invoke-direct {v0}, Lcom/android/OriginalSettings/flipfont/Typeface;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFont:Lcom/android/settings/flipfont/Typeface;
+    iput-object v0, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFont:Lcom/android/OriginalSettings/flipfont/Typeface;
 
     .line 76
     return-void
@@ -354,7 +354,7 @@
     if-eqz v1, :cond_1
 
     .line 91
-    iput-boolean v2, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_font:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_font:Z
 
     .line 92
     const-string v1, "displayname"
@@ -365,9 +365,9 @@
 
     .line 93
     .local v0, attrValue:Ljava/lang/String;
-    iget-object v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFont:Lcom/android/settings/flipfont/Typeface;
+    iget-object v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFont:Lcom/android/OriginalSettings/flipfont/Typeface;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/flipfont/Typeface;->setName(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/android/OriginalSettings/flipfont/Typeface;->setName(Ljava/lang/String;)V
 
     .line 108
     .end local v0           #attrValue:Ljava/lang/String;
@@ -386,7 +386,7 @@
     if-eqz v1, :cond_2
 
     .line 95
-    iput-boolean v2, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_sans:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_sans:Z
 
     goto :goto_0
 
@@ -401,7 +401,7 @@
     if-eqz v1, :cond_3
 
     .line 97
-    iput-boolean v2, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_serif:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_serif:Z
 
     goto :goto_0
 
@@ -416,7 +416,7 @@
     if-eqz v1, :cond_4
 
     .line 99
-    iput-boolean v2, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_monospace:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_monospace:Z
 
     goto :goto_0
 
@@ -431,14 +431,14 @@
     if-eqz v1, :cond_5
 
     .line 101
-    iput-boolean v2, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_file:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_file:Z
 
     .line 102
-    new-instance v1, Lcom/android/settings/flipfont/TypefaceFile;
+    new-instance v1, Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
-    invoke-direct {v1}, Lcom/android/settings/flipfont/TypefaceFile;-><init>()V
+    invoke-direct {v1}, Lcom/android/OriginalSettings/flipfont/TypefaceFile;-><init>()V
 
-    iput-object v1, p0, Lcom/android/settings/flipfont/TypefaceParser;->mFontFile:Lcom/android/settings/flipfont/TypefaceFile;
+    iput-object v1, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->mFontFile:Lcom/android/OriginalSettings/flipfont/TypefaceFile;
 
     goto :goto_0
 
@@ -453,7 +453,7 @@
     if-eqz v1, :cond_6
 
     .line 104
-    iput-boolean v2, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_filename:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_filename:Z
 
     goto :goto_0
 
@@ -468,7 +468,7 @@
     if-eqz v1, :cond_0
 
     .line 106
-    iput-boolean v2, p0, Lcom/android/settings/flipfont/TypefaceParser;->in_droidname:Z
+    iput-boolean v2, p0, Lcom/android/OriginalSettings/flipfont/TypefaceParser;->in_droidname:Z
 
     goto :goto_0
 .end method

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/LockPreview$2;
+.class Lcom/android/OriginalSettings/LockPreview$2;
 .super Ljava/lang/Object;
 .source "LockPreview.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/LockPreview;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/LockPreview;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/LockPreview;
+.field final synthetic this$0:Lcom/android/OriginalSettings/LockPreview;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/LockPreview;)V
+.method constructor <init>(Lcom/android/OriginalSettings/LockPreview;)V
     .locals 0
     .parameter
 
     .prologue
     .line 126
-    iput-object p1, p0, Lcom/android/settings/LockPreview$2;->this$0:Lcom/android/settings/LockPreview;
+    iput-object p1, p0, Lcom/android/OriginalSettings/LockPreview$2;->this$0:Lcom/android/OriginalSettings/LockPreview;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,27 +43,27 @@
 
     .prologue
     .line 128
-    iget-object v0, p0, Lcom/android/settings/LockPreview$2;->this$0:Lcom/android/settings/LockPreview;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LockPreview$2;->this$0:Lcom/android/OriginalSettings/LockPreview;
 
-    invoke-virtual {v0}, Lcom/android/settings/LockPreview;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/LockPreview;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v1, "clock_position"
 
-    iget-object v2, p0, Lcom/android/settings/LockPreview$2;->this$0:Lcom/android/settings/LockPreview;
+    iget-object v2, p0, Lcom/android/OriginalSettings/LockPreview$2;->this$0:Lcom/android/OriginalSettings/LockPreview;
 
-    #getter for: Lcom/android/settings/LockPreview;->position:I
-    invoke-static {v2}, Lcom/android/settings/LockPreview;->access$200(Lcom/android/settings/LockPreview;)I
+    #getter for: Lcom/android/OriginalSettings/LockPreview;->position:I
+    invoke-static {v2}, Lcom/android/OriginalSettings/LockPreview;->access$200(Lcom/android/OriginalSettings/LockPreview;)I
 
     move-result v2
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/LockPreview$2;->this$0:Lcom/android/settings/LockPreview;
+    iget-object v0, p0, Lcom/android/OriginalSettings/LockPreview$2;->this$0:Lcom/android/OriginalSettings/LockPreview;
 
-    invoke-virtual {v0}, Lcom/android/settings/LockPreview;->finish()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/LockPreview;->finish()V
 
     .line 130
     return-void

@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/wifi/WifiPickerActivity;
-.super Landroid/preference/PreferenceActivity;
+.class public Lcom/android/OriginalSettings/wifi/WifiPickerActivity;
+.super Lmiui/preference/BasePreferenceActivity;
 .source "WifiPickerActivity.java"
 
 # interfaces
-.implements Lcom/android/settings/ButtonBarHandler;
+.implements Lcom/android/OriginalSettings/ButtonBarHandler;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     .prologue
     .line 26
-    invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
+    invoke-direct {p0}, Lmiui/preference/BasePreferenceActivity;-><init>()V
 
     return-void
 .end method
@@ -26,7 +26,7 @@
     .line 35
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -44,7 +44,7 @@
     .line 37
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/wifi/WifiSettings;
+    const-class v2, Lcom/android/OriginalSettings/wifi/WifiSettings;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -69,7 +69,7 @@
 
     .prologue
     .line 87
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getNextButton()Landroid/widget/Button;
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->getNextButton()Landroid/widget/Button;
 
     move-result-object v0
 
@@ -81,7 +81,7 @@
 
     .prologue
     .line 81
-    invoke-super {p0}, Landroid/preference/PreferenceActivity;->hasNextButton()Z
+    invoke-super {p0}, Lmiui/preference/BasePreferenceActivity;->hasNextButton()Z
 
     move-result v0
 
@@ -129,7 +129,7 @@
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiPickerActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/WifiPickerActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -203,7 +203,7 @@
     if-nez p3, :cond_3
 
     .line 72
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiPickerActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/WifiPickerActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 76
     :goto_0

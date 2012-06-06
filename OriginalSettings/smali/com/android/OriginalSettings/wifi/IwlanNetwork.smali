@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/IwlanNetwork;
+.class public Lcom/android/OriginalSettings/wifi/IwlanNetwork;
 .super Landroid/preference/Preference;
 .source "IwlanNetwork.java"
 
@@ -19,7 +19,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/android/settings/wifi/IwlanNetwork;->defaultPdgDomainName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->defaultPdgDomainName:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -29,7 +29,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/IwlanNetwork;->pdgDomainName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->pdgDomainName:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -39,7 +39,7 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/android/settings/wifi/IwlanNetwork;->pdgAddress:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->pdgAddress:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -49,7 +49,7 @@
 
     .prologue
     .line 61
-    iget-boolean v0, p0, Lcom/android/settings/wifi/IwlanNetwork;->isConnected:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->isConnected:Z
 
     return v0
 .end method
@@ -60,11 +60,11 @@
 
     .prologue
     .line 41
-    invoke-virtual {p0}, Lcom/android/settings/wifi/IwlanNetwork;->getPdgDomainName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->getPdgDomainName()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/IwlanNetwork;->getDefaultPdgDomainName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->getDefaultPdgDomainName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -75,7 +75,7 @@
     if-eqz v0, :cond_0
 
     .line 42
-    invoke-virtual {p0}, Lcom/android/settings/wifi/IwlanNetwork;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -85,10 +85,10 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/IwlanNetwork;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/wifi/IwlanNetwork;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -98,7 +98,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/IwlanNetwork;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 49
     :goto_0
@@ -109,16 +109,16 @@
 
     .line 45
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/IwlanNetwork;->getPdgDomainName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->getPdgDomainName()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/IwlanNetwork;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 46
-    iget-object v0, p0, Lcom/android/settings/wifi/IwlanNetwork;->pdgAddress:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->pdgAddress:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/IwlanNetwork;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/wifi/IwlanNetwork;->setSummary(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method

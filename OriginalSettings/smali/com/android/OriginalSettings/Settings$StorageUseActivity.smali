@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/Settings$StorageUseActivity;
-.super Lcom/android/settings/Settings;
+.class public Lcom/android/OriginalSettings/Settings$StorageUseActivity;
+.super Lcom/android/OriginalSettings/Settings;
 .source "Settings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/Settings;
+    value = Lcom/android/OriginalSettings/Settings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
 
     .prologue
     .line 702
-    invoke-direct {p0}, Lcom/android/settings/Settings;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/Settings;-><init>()V
 
     return-void
 .end method

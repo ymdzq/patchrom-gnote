@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/MotionView$2;
+.class Lcom/android/OriginalSettings/motion/MotionView$2;
 .super Ljava/lang/Object;
 .source "MotionView.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/MotionView;->showMotionDialog()V
+    value = Lcom/android/OriginalSettings/motion/MotionView;->showMotionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/MotionView;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/MotionView;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/MotionView;)V
     .locals 0
     .parameter
 
     .prologue
     .line 190
-    iput-object p1, p0, Lcom/android/settings/motion/MotionView$2;->this$0:Lcom/android/settings/motion/MotionView;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/MotionView$2;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,27 +53,27 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 193
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView$2;->this$0:Lcom/android/settings/motion/MotionView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView$2;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
-    #calls: Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v1}, Lcom/android/settings/motion/MotionView;->access$100(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v1}, Lcom/android/OriginalSettings/motion/MotionView;->access$100(Lcom/android/OriginalSettings/motion/MotionView;)Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/motion/MotionView$2;->this$0:Lcom/android/settings/motion/MotionView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/motion/MotionView$2;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
-    #getter for: Lcom/android/settings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
-    invoke-static {v2}, Lcom/android/settings/motion/MotionView;->access$200(Lcom/android/settings/motion/MotionView;)Ljava/lang/String;
+    #getter for: Lcom/android/OriginalSettings/motion/MotionView;->mCurrentDB:Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/OriginalSettings/motion/MotionView;->access$200(Lcom/android/OriginalSettings/motion/MotionView;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-static {v1, v2, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 194
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView$2;->this$0:Lcom/android/settings/motion/MotionView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView$2;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
-    #calls: Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v1}, Lcom/android/settings/motion/MotionView;->access$300(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v1}, Lcom/android/OriginalSettings/motion/MotionView;->access$300(Lcom/android/OriginalSettings/motion/MotionView;)Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -88,10 +88,10 @@
     if-nez v1, :cond_0
 
     .line 195
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView$2;->this$0:Lcom/android/settings/motion/MotionView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView$2;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
-    #calls: Lcom/android/settings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v1}, Lcom/android/settings/motion/MotionView;->access$400(Lcom/android/settings/motion/MotionView;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/motion/MotionView;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v1}, Lcom/android/OriginalSettings/motion/MotionView;->access$400(Lcom/android/OriginalSettings/motion/MotionView;)Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -113,9 +113,9 @@
     invoke-virtual {v0, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 198
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView$2;->this$0:Lcom/android/settings/motion/MotionView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView$2;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
-    invoke-virtual {v1}, Lcom/android/settings/motion/MotionView;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/motion/MotionView;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -124,10 +124,10 @@
     .line 200
     .end local v0           #motion_changed:Landroid/content/Intent;
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/motion/MotionView$2;->this$0:Lcom/android/settings/motion/MotionView;
+    iget-object v1, p0, Lcom/android/OriginalSettings/motion/MotionView$2;->this$0:Lcom/android/OriginalSettings/motion/MotionView;
 
-    #calls: Lcom/android/settings/motion/MotionView;->startTryActually()V
-    invoke-static {v1}, Lcom/android/settings/motion/MotionView;->access$500(Lcom/android/settings/motion/MotionView;)V
+    #calls: Lcom/android/OriginalSettings/motion/MotionView;->startTryActually()V
+    invoke-static {v1}, Lcom/android/OriginalSettings/motion/MotionView;->access$500(Lcom/android/OriginalSettings/motion/MotionView;)V
 
     .line 201
     return-void

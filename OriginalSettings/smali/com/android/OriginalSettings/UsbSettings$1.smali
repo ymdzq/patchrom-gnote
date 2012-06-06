@@ -1,11 +1,11 @@
-.class Lcom/android/settings/UsbSettings$1;
+.class Lcom/android/OriginalSettings/UsbSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "UsbSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/UsbSettings;
+    value = Lcom/android/OriginalSettings/UsbSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/UsbSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/UsbSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UsbSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/UsbSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/android/settings/UsbSettings$1;->this$0:Lcom/android/settings/UsbSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/UsbSettings$1;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -59,31 +59,31 @@
 
     if-ne v1, v2, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/UsbSettings$1;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings$1;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    #getter for: Lcom/android/settings/UsbSettings;->mDisplayState:Z
-    invoke-static {v1}, Lcom/android/settings/UsbSettings;->access$000(Lcom/android/settings/UsbSettings;)Z
+    #getter for: Lcom/android/OriginalSettings/UsbSettings;->mDisplayState:Z
+    invoke-static {v1}, Lcom/android/OriginalSettings/UsbSettings;->access$000(Lcom/android/OriginalSettings/UsbSettings;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 92
-    iget-object v1, p0, Lcom/android/settings/UsbSettings$1;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings$1;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/UsbSettings;->removeDialog(I)V
+    invoke-virtual {v1, v2}, Lcom/android/OriginalSettings/UsbSettings;->removeDialog(I)V
 
     .line 93
-    iget-object v1, p0, Lcom/android/settings/UsbSettings$1;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings$1;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/UsbSettings$1;->this$0:Lcom/android/settings/UsbSettings;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings$1;->this$0:Lcom/android/OriginalSettings/UsbSettings;
 
-    #getter for: Lcom/android/settings/UsbSettings;->mBatteryReceiver:Landroid/content/BroadcastReceiver;
-    invoke-static {v2}, Lcom/android/settings/UsbSettings;->access$100(Lcom/android/settings/UsbSettings;)Landroid/content/BroadcastReceiver;
+    #getter for: Lcom/android/OriginalSettings/UsbSettings;->mBatteryReceiver:Landroid/content/BroadcastReceiver;
+    invoke-static {v2}, Lcom/android/OriginalSettings/UsbSettings;->access$100(Lcom/android/OriginalSettings/UsbSettings;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2
 

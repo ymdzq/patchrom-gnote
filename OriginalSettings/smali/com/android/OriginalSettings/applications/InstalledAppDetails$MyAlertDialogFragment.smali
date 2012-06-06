@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;
+.class public Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;
 .super Landroid/app/DialogFragment;
 .source "InstalledAppDetails.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/InstalledAppDetails;
+    value = Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -25,19 +25,19 @@
     return-void
 .end method
 
-.method public static newInstance(II)Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;
+.method public static newInstance(II)Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;
     .locals 3
     .parameter "id"
     .parameter "moveErrorCode"
 
     .prologue
     .line 738
-    new-instance v1, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;
+    new-instance v1, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;
 
-    invoke-direct {v1}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;-><init>()V
+    invoke-direct {v1}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;-><init>()V
 
     .line 739
-    .local v1, frag:Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;
+    .local v1, frag:Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
@@ -54,7 +54,7 @@
     invoke-virtual {v0, v2, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 742
-    invoke-virtual {v1, v0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v1, v0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 743
     return-object v1
@@ -62,16 +62,16 @@
 
 
 # virtual methods
-.method getOwner()Lcom/android/settings/applications/InstalledAppDetails;
+.method getOwner()Lcom/android/OriginalSettings/applications/InstalledAppDetails;
     .locals 1
 
     .prologue
     .line 747
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/InstalledAppDetails;
+    check-cast v0, Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
     return-object v0
 .end method
@@ -92,7 +92,7 @@
     const v8, 0x1080027
 
     .line 752
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v3
 
@@ -104,7 +104,7 @@
 
     .line 753
     .local v0, id:I
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v3
 
@@ -147,13 +147,13 @@
     :pswitch_0
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -171,7 +171,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -185,9 +185,9 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$1;
+    new-instance v4, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$1;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$1;-><init>(Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
+    invoke-direct {v4, p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$1;-><init>(Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
 
     invoke-virtual {v3, v9, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -209,13 +209,13 @@
     :pswitch_1
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -233,7 +233,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -247,9 +247,9 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$2;
+    new-instance v4, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$2;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$2;-><init>(Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
+    invoke-direct {v4, p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$2;-><init>(Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
 
     invoke-virtual {v3, v9, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -269,13 +269,13 @@
     :pswitch_2
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -291,7 +291,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -303,7 +303,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -311,9 +311,9 @@
 
     move-result-object v4
 
-    new-instance v5, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$3;
+    new-instance v5, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$3;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$3;-><init>(Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$3;-><init>(Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
 
     invoke-virtual {v3, v4, v5}, Landroid/app/AlertDialog$Builder;->setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -329,13 +329,13 @@
     :pswitch_3
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -353,7 +353,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -367,9 +367,9 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$4;
+    new-instance v4, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$4;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$4;-><init>(Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
+    invoke-direct {v4, p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$4;-><init>(Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
 
     invoke-virtual {v3, v9, v4}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -385,13 +385,13 @@
     :pswitch_4
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -409,7 +409,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -423,9 +423,9 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$5;
+    new-instance v4, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$5;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$5;-><init>(Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
+    invoke-direct {v4, p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$5;-><init>(Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
 
     invoke-virtual {v3, v9, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -443,7 +443,7 @@
 
     .line 825
     :pswitch_5
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -455,12 +455,12 @@
 
     const/4 v6, 0x0
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getOwner()Lcom/android/settings/applications/InstalledAppDetails;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getOwner()Lcom/android/OriginalSettings/applications/InstalledAppDetails;
 
     move-result-object v7
 
-    #calls: Lcom/android/settings/applications/InstalledAppDetails;->getMoveErrMsg(I)Ljava/lang/CharSequence;
-    invoke-static {v7, v1}, Lcom/android/settings/applications/InstalledAppDetails;->access$1000(Lcom/android/settings/applications/InstalledAppDetails;I)Ljava/lang/CharSequence;
+    #calls: Lcom/android/OriginalSettings/applications/InstalledAppDetails;->getMoveErrMsg(I)Ljava/lang/CharSequence;
+    invoke-static {v7, v1}, Lcom/android/OriginalSettings/applications/InstalledAppDetails;->access$1000(Lcom/android/OriginalSettings/applications/InstalledAppDetails;I)Ljava/lang/CharSequence;
 
     move-result-object v7
 
@@ -474,13 +474,13 @@
     .local v2, msg:Ljava/lang/CharSequence;
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -517,13 +517,13 @@
     :pswitch_6
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -541,7 +541,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -555,9 +555,9 @@
 
     move-result-object v3
 
-    new-instance v4, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$6;
+    new-instance v4, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$6;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment$6;-><init>(Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
+    invoke-direct {v4, p0}, Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment$6;-><init>(Lcom/android/OriginalSettings/applications/InstalledAppDetails$MyAlertDialogFragment;)V
 
     invoke-virtual {v3, v9, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

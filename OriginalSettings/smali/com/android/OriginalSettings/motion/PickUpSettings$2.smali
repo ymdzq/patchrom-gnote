@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/PickUpSettings$2;
+.class Lcom/android/OriginalSettings/motion/PickUpSettings$2;
 .super Ljava/lang/Object;
 .source "PickUpSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/PickUpSettings;->showMotionDialog()V
+    value = Lcom/android/OriginalSettings/motion/PickUpSettings;->showMotionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/PickUpSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/PickUpSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 157
-    iput-object p1, p0, Lcom/android/settings/motion/PickUpSettings$2;->this$0:Lcom/android/settings/motion/PickUpSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/PickUpSettings$2;->this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,10 +51,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings$2;->this$0:Lcom/android/settings/motion/PickUpSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings$2;->this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
-    #calls: Lcom/android/settings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v0}, Lcom/android/settings/motion/PickUpSettings;->access$100(Lcom/android/settings/motion/PickUpSettings;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/motion/PickUpSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->access$100(Lcom/android/OriginalSettings/motion/PickUpSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -65,10 +65,10 @@
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/motion/PickUpSettings$2;->this$0:Lcom/android/settings/motion/PickUpSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PickUpSettings$2;->this$0:Lcom/android/OriginalSettings/motion/PickUpSettings;
 
-    #calls: Lcom/android/settings/motion/PickUpSettings;->startTryActually()V
-    invoke-static {v0}, Lcom/android/settings/motion/PickUpSettings;->access$200(Lcom/android/settings/motion/PickUpSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/PickUpSettings;->startTryActually()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/PickUpSettings;->access$200(Lcom/android/OriginalSettings/motion/PickUpSettings;)V
 
     .line 162
     return-void

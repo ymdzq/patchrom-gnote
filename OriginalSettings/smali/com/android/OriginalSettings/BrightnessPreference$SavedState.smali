@@ -1,11 +1,11 @@
-.class Lcom/android/settings/BrightnessPreference$SavedState;
+.class Lcom/android/OriginalSettings/BrightnessPreference$SavedState;
 .super Landroid/preference/Preference$BaseSavedState;
 .source "BrightnessPreference.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/BrightnessPreference;
+    value = Lcom/android/OriginalSettings/BrightnessPreference;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,7 +20,7 @@
         value = {
             "Landroid/os/Parcelable$Creator",
             "<",
-            "Lcom/android/settings/BrightnessPreference$SavedState;",
+            "Lcom/android/OriginalSettings/BrightnessPreference$SavedState;",
             ">;"
         }
     .end annotation
@@ -43,11 +43,11 @@
 
     .prologue
     .line 409
-    new-instance v0, Lcom/android/settings/BrightnessPreference$SavedState$1;
+    new-instance v0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState$1;
 
-    invoke-direct {v0}, Lcom/android/settings/BrightnessPreference$SavedState$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/OriginalSettings/BrightnessPreference$SavedState$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/BrightnessPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -74,14 +74,14 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/BrightnessPreference$SavedState;->automatic:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState;->automatic:Z
 
     .line 391
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/BrightnessPreference$SavedState;->progress:I
+    iput v0, p0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState;->progress:I
 
     .line 392
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -91,14 +91,14 @@
     if-ne v0, v1, :cond_1
 
     :goto_1
-    iput-boolean v1, p0, Lcom/android/settings/BrightnessPreference$SavedState;->oldAutomatic:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState;->oldAutomatic:Z
 
     .line 393
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/BrightnessPreference$SavedState;->oldProgress:I
+    iput v0, p0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState;->oldProgress:I
 
     .line 394
     return-void
@@ -144,7 +144,7 @@
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 399
-    iget-boolean v0, p0, Lcom/android/settings/BrightnessPreference$SavedState;->automatic:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState;->automatic:Z
 
     if-eqz v0, :cond_0
 
@@ -154,12 +154,12 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 400
-    iget v0, p0, Lcom/android/settings/BrightnessPreference$SavedState;->progress:I
+    iget v0, p0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState;->progress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 401
-    iget-boolean v0, p0, Lcom/android/settings/BrightnessPreference$SavedState;->oldAutomatic:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState;->oldAutomatic:Z
 
     if-eqz v0, :cond_1
 
@@ -167,7 +167,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 402
-    iget v0, p0, Lcom/android/settings/BrightnessPreference$SavedState;->oldProgress:I
+    iget v0, p0, Lcom/android/OriginalSettings/BrightnessPreference$SavedState;->oldProgress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

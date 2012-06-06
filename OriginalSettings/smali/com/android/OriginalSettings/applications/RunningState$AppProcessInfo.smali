@@ -1,11 +1,11 @@
-.class Lcom/android/settings/applications/RunningState$AppProcessInfo;
+.class Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/applications/RunningState;
+    value = Lcom/android/OriginalSettings/applications/RunningState;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,7 +32,7 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 109
-    iput-object p1, p0, Lcom/android/settings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iput-object p1, p0, Lcom/android/OriginalSettings/applications/RunningState$AppProcessInfo;->info:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 110
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/motion/PanSettings$2;
+.class Lcom/android/OriginalSettings/motion/PanSettings$2;
 .super Ljava/lang/Object;
 .source "PanSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/motion/PanSettings;->showMotionDialog()V
+    value = Lcom/android/OriginalSettings/motion/PanSettings;->showMotionDialog()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/motion/PanSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/motion/PanSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/motion/PanSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/motion/PanSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 175
-    iput-object p1, p0, Lcom/android/settings/motion/PanSettings$2;->this$0:Lcom/android/settings/motion/PanSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/motion/PanSettings$2;->this$0:Lcom/android/OriginalSettings/motion/PanSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,10 +51,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 178
-    iget-object v0, p0, Lcom/android/settings/motion/PanSettings$2;->this$0:Lcom/android/settings/motion/PanSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PanSettings$2;->this$0:Lcom/android/OriginalSettings/motion/PanSettings;
 
-    #calls: Lcom/android/settings/motion/PanSettings;->getContentResolver()Landroid/content/ContentResolver;
-    invoke-static {v0}, Lcom/android/settings/motion/PanSettings;->access$100(Lcom/android/settings/motion/PanSettings;)Landroid/content/ContentResolver;
+    #calls: Lcom/android/OriginalSettings/motion/PanSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/PanSettings;->access$100(Lcom/android/OriginalSettings/motion/PanSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -65,10 +65,10 @@
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/motion/PanSettings$2;->this$0:Lcom/android/settings/motion/PanSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/motion/PanSettings$2;->this$0:Lcom/android/OriginalSettings/motion/PanSettings;
 
-    #calls: Lcom/android/settings/motion/PanSettings;->startTryActually()V
-    invoke-static {v0}, Lcom/android/settings/motion/PanSettings;->access$200(Lcom/android/settings/motion/PanSettings;)V
+    #calls: Lcom/android/OriginalSettings/motion/PanSettings;->startTryActually()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/motion/PanSettings;->access$200(Lcom/android/OriginalSettings/motion/PanSettings;)V
 
     .line 180
     return-void

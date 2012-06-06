@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/CryptDecryptConfirm;
+.class public Lcom/android/OriginalSettings/CryptDecryptConfirm;
 .super Landroid/app/Fragment;
 .source "CryptDecryptConfirm.java"
 
@@ -6,7 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/CryptDecryptConfirm$Blank;
+        Lcom/android/OriginalSettings/CryptDecryptConfirm$Blank;
     }
 .end annotation
 
@@ -28,11 +28,11 @@
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     .line 82
-    new-instance v0, Lcom/android/settings/CryptDecryptConfirm$1;
+    new-instance v0, Lcom/android/OriginalSettings/CryptDecryptConfirm$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/CryptDecryptConfirm$1;-><init>(Lcom/android/settings/CryptDecryptConfirm;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/CryptDecryptConfirm$1;-><init>(Lcom/android/OriginalSettings/CryptDecryptConfirm;)V
 
-    iput-object v0, p0, Lcom/android/settings/CryptDecryptConfirm;->mFinalClickListener:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/OriginalSettings/CryptDecryptConfirm;->mFinalClickListener:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/android/settings/CryptDecryptConfirm;->mContentView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptDecryptConfirm;->mContentView:Landroid/view/View;
 
     const v1, 0x7f080044
 
@@ -52,12 +52,12 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/CryptDecryptConfirm;->mFinalButton:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/OriginalSettings/CryptDecryptConfirm;->mFinalButton:Landroid/widget/Button;
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/CryptDecryptConfirm;->mFinalButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptDecryptConfirm;->mFinalButton:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/CryptDecryptConfirm;->mFinalClickListener:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/OriginalSettings/CryptDecryptConfirm;->mFinalClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -83,13 +83,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/CryptDecryptConfirm;->mContentView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/OriginalSettings/CryptDecryptConfirm;->mContentView:Landroid/view/View;
 
     .line 105
-    invoke-direct {p0}, Lcom/android/settings/CryptDecryptConfirm;->establishFinalConfirmationState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/CryptDecryptConfirm;->establishFinalConfirmationState()V
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/CryptDecryptConfirm;->mContentView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/CryptDecryptConfirm;->mContentView:Landroid/view/View;
 
     return-object v0
 .end method

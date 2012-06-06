@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementReceiver;
+.class public interface abstract Lcom/android/OriginalSettings/deviceinfo/StorageMeasurement$MeasurementReceiver;
 .super Ljava/lang/Object;
 .source "StorageMeasurement.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/deviceinfo/StorageMeasurement;
+    value = Lcom/android/OriginalSettings/deviceinfo/StorageMeasurement;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

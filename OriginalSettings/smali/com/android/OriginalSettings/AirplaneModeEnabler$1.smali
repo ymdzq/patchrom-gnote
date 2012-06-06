@@ -1,11 +1,11 @@
-.class Lcom/android/settings/AirplaneModeEnabler$1;
+.class Lcom/android/OriginalSettings/AirplaneModeEnabler$1;
 .super Landroid/os/Handler;
 .source "AirplaneModeEnabler.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/AirplaneModeEnabler;
+    value = Lcom/android/OriginalSettings/AirplaneModeEnabler;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/AirplaneModeEnabler;
+.field final synthetic this$0:Lcom/android/OriginalSettings/AirplaneModeEnabler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AirplaneModeEnabler;)V
+.method constructor <init>(Lcom/android/OriginalSettings/AirplaneModeEnabler;)V
     .locals 0
     .parameter
 
     .prologue
     .line 51
-    iput-object p1, p0, Lcom/android/settings/AirplaneModeEnabler$1;->this$0:Lcom/android/settings/AirplaneModeEnabler;
+    iput-object p1, p0, Lcom/android/OriginalSettings/AirplaneModeEnabler$1;->this$0:Lcom/android/OriginalSettings/AirplaneModeEnabler;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -50,10 +50,10 @@
 
     .line 56
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/AirplaneModeEnabler$1;->this$0:Lcom/android/settings/AirplaneModeEnabler;
+    iget-object v1, p0, Lcom/android/OriginalSettings/AirplaneModeEnabler$1;->this$0:Lcom/android/OriginalSettings/AirplaneModeEnabler;
 
-    #calls: Lcom/android/settings/AirplaneModeEnabler;->onAirplaneModeChanged()V
-    invoke-static {v1}, Lcom/android/settings/AirplaneModeEnabler;->access$000(Lcom/android/settings/AirplaneModeEnabler;)V
+    #calls: Lcom/android/OriginalSettings/AirplaneModeEnabler;->onAirplaneModeChanged()V
+    invoke-static {v1}, Lcom/android/OriginalSettings/AirplaneModeEnabler;->access$000(Lcom/android/OriginalSettings/AirplaneModeEnabler;)V
 
     goto :goto_0
 
@@ -74,10 +74,10 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 61
-    iget-object v1, p0, Lcom/android/settings/AirplaneModeEnabler$1;->this$0:Lcom/android/settings/AirplaneModeEnabler;
+    iget-object v1, p0, Lcom/android/OriginalSettings/AirplaneModeEnabler$1;->this$0:Lcom/android/OriginalSettings/AirplaneModeEnabler;
 
-    #getter for: Lcom/android/settings/AirplaneModeEnabler;->mContext:Landroid/content/Context;
-    invoke-static {v1}, Lcom/android/settings/AirplaneModeEnabler;->access$100(Lcom/android/settings/AirplaneModeEnabler;)Landroid/content/Context;
+    #getter for: Lcom/android/OriginalSettings/AirplaneModeEnabler;->mContext:Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/OriginalSettings/AirplaneModeEnabler;->access$100(Lcom/android/OriginalSettings/AirplaneModeEnabler;)Landroid/content/Context;
 
     move-result-object v1
 

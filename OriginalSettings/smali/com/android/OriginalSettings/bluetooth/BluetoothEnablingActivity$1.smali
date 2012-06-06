@@ -1,11 +1,11 @@
-.class Lcom/android/settings/bluetooth/BluetoothEnablingActivity$1;
+.class Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity$1;
 .super Landroid/os/Handler;
 .source "BluetoothEnablingActivity.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/bluetooth/BluetoothEnablingActivity;
+    value = Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/bluetooth/BluetoothEnablingActivity;
+.field final synthetic this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothEnablingActivity;)V
+.method constructor <init>(Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;)V
     .locals 0
     .parameter
 
     .prologue
     .line 107
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothEnablingActivity$1;->this$0:Lcom/android/settings/bluetooth/BluetoothEnablingActivity;
+    iput-object p1, p0, Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity$1;->this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -57,9 +57,9 @@
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothEnablingActivity$1;->this$0:Lcom/android/settings/bluetooth/BluetoothEnablingActivity;
+    iget-object v0, p0, Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity$1;->this$0:Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/BluetoothEnablingActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/OriginalSettings/bluetooth/BluetoothEnablingActivity;->finish()V
 
     goto :goto_0
 

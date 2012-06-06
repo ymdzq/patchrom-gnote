@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/UsageStats;
-.super Landroid/app/Activity;
+.class public Lcom/android/OriginalSettings/UsageStats;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "UsageStats.java"
 
 # interfaces
@@ -9,17 +9,17 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/android/settings/UsageStats$UsageStatsAdapter;,
-        Lcom/android/settings/UsageStats$AppViewHolder;,
-        Lcom/android/settings/UsageStats$UsageTimeComparator;,
-        Lcom/android/settings/UsageStats$LaunchCountComparator;,
-        Lcom/android/settings/UsageStats$AppNameComparator;
+        Lcom/android/OriginalSettings/UsageStats$UsageStatsAdapter;,
+        Lcom/android/OriginalSettings/UsageStats$AppViewHolder;,
+        Lcom/android/OriginalSettings/UsageStats$UsageTimeComparator;,
+        Lcom/android/OriginalSettings/UsageStats$LaunchCountComparator;,
+        Lcom/android/OriginalSettings/UsageStats$AppNameComparator;
     }
 .end annotation
 
 
 # instance fields
-.field private mAdapter:Lcom/android/settings/UsageStats$UsageStatsAdapter;
+.field private mAdapter:Lcom/android/OriginalSettings/UsageStats$UsageStatsAdapter;
 
 .field private mInflater:Landroid/view/LayoutInflater;
 
@@ -38,41 +38,41 @@
 
     .prologue
     .line 53
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     .line 102
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/UsageStats;)Lcom/android/internal/app/IUsageStats;
+.method static synthetic access$000(Lcom/android/OriginalSettings/UsageStats;)Lcom/android/internal/app/IUsageStats;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/UsageStats;->mUsageStatsService:Lcom/android/internal/app/IUsageStats;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mUsageStatsService:Lcom/android/internal/app/IUsageStats;
 
     return-object v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/UsageStats;)Landroid/content/pm/PackageManager;
+.method static synthetic access$100(Lcom/android/OriginalSettings/UsageStats;)Landroid/content/pm/PackageManager;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/UsageStats;->mPm:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mPm:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/UsageStats;)Landroid/view/LayoutInflater;
+.method static synthetic access$200(Lcom/android/OriginalSettings/UsageStats;)Landroid/view/LayoutInflater;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/UsageStats;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mInflater:Landroid/view/LayoutInflater;
 
     return-object v0
 .end method
@@ -85,7 +85,7 @@
 
     .prologue
     .line 220
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 221
     const-string v0, "usagestats"
@@ -98,10 +98,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/UsageStats;->mUsageStatsService:Lcom/android/internal/app/IUsageStats;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mUsageStatsService:Lcom/android/internal/app/IUsageStats;
 
     .line 222
-    iget-object v0, p0, Lcom/android/settings/UsageStats;->mUsageStatsService:Lcom/android/internal/app/IUsageStats;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mUsageStatsService:Lcom/android/internal/app/IUsageStats;
 
     if-nez v0, :cond_0
 
@@ -120,64 +120,64 @@
     :cond_0
     const-string v0, "layout_inflater"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageStats;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/UsageStats;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/UsageStats;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mInflater:Landroid/view/LayoutInflater;
 
     .line 227
-    invoke-virtual {p0}, Lcom/android/settings/UsageStats;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UsageStats;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/UsageStats;->mPm:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mPm:Landroid/content/pm/PackageManager;
 
     .line 229
     const v0, 0x7f0400a3
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageStats;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/UsageStats;->setContentView(I)V
 
     .line 230
     const v0, 0x7f08020d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageStats;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/UsageStats;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Spinner;
 
-    iput-object v0, p0, Lcom/android/settings/UsageStats;->mTypeSpinner:Landroid/widget/Spinner;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mTypeSpinner:Landroid/widget/Spinner;
 
     .line 231
-    iget-object v0, p0, Lcom/android/settings/UsageStats;->mTypeSpinner:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mTypeSpinner:Landroid/widget/Spinner;
 
     invoke-virtual {v0, p0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 233
     const v0, 0x7f08020e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/UsageStats;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/UsageStats;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/android/settings/UsageStats;->mListView:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mListView:Landroid/widget/ListView;
 
     .line 236
-    new-instance v0, Lcom/android/settings/UsageStats$UsageStatsAdapter;
+    new-instance v0, Lcom/android/OriginalSettings/UsageStats$UsageStatsAdapter;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/UsageStats$UsageStatsAdapter;-><init>(Lcom/android/settings/UsageStats;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/UsageStats$UsageStatsAdapter;-><init>(Lcom/android/OriginalSettings/UsageStats;)V
 
-    iput-object v0, p0, Lcom/android/settings/UsageStats;->mAdapter:Lcom/android/settings/UsageStats$UsageStatsAdapter;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mAdapter:Lcom/android/OriginalSettings/UsageStats$UsageStatsAdapter;
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/UsageStats;->mListView:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mListView:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/UsageStats;->mAdapter:Lcom/android/settings/UsageStats$UsageStatsAdapter;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsageStats;->mAdapter:Lcom/android/OriginalSettings/UsageStats$UsageStatsAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -203,9 +203,9 @@
     .prologue
     .line 242
     .local p1, parent:Landroid/widget/AdapterView;,"Landroid/widget/AdapterView<*>;"
-    iget-object v0, p0, Lcom/android/settings/UsageStats;->mAdapter:Lcom/android/settings/UsageStats$UsageStatsAdapter;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsageStats;->mAdapter:Lcom/android/OriginalSettings/UsageStats$UsageStatsAdapter;
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/UsageStats$UsageStatsAdapter;->sortList(I)V
+    invoke-virtual {v0, p3}, Lcom/android/OriginalSettings/UsageStats$UsageStatsAdapter;->sortList(I)V
 
     .line 243
     return-void

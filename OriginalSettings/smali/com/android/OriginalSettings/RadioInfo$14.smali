@@ -1,4 +1,4 @@
-.class Lcom/android/settings/RadioInfo$14;
+.class Lcom/android/OriginalSettings/RadioInfo$14;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/RadioInfo;
+    value = Lcom/android/OriginalSettings/RadioInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/RadioInfo;
+.field final synthetic this$0:Lcom/android/OriginalSettings/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/OriginalSettings/RadioInfo;)V
     .locals 0
     .parameter
 
     .prologue
     .line 894
-    iput-object p1, p0, Lcom/android/settings/RadioInfo$14;->this$0:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/OriginalSettings/RadioInfo$14;->this$0:Lcom/android/OriginalSettings/RadioInfo;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,10 +59,10 @@
 
     aput-object v1, v5, v2
 
-    iget-object v1, p0, Lcom/android/settings/RadioInfo$14;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v1, p0, Lcom/android/OriginalSettings/RadioInfo$14;->this$0:Lcom/android/OriginalSettings/RadioInfo;
 
-    #calls: Lcom/android/settings/RadioInfo;->isImsRegRequired()Z
-    invoke-static {v1}, Lcom/android/settings/RadioInfo;->access$3100(Lcom/android/settings/RadioInfo;)Z
+    #calls: Lcom/android/OriginalSettings/RadioInfo;->isImsRegRequired()Z
+    invoke-static {v1}, Lcom/android/OriginalSettings/RadioInfo;->access$3100(Lcom/android/OriginalSettings/RadioInfo;)Z
 
     move-result v1
 
@@ -80,10 +80,10 @@
     invoke-static {v3, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 899
-    iget-object v1, p0, Lcom/android/settings/RadioInfo$14;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v1, p0, Lcom/android/OriginalSettings/RadioInfo$14;->this$0:Lcom/android/OriginalSettings/RadioInfo;
 
-    #calls: Lcom/android/settings/RadioInfo;->isImsRegRequired()Z
-    invoke-static {v1}, Lcom/android/settings/RadioInfo;->access$3100(Lcom/android/settings/RadioInfo;)Z
+    #calls: Lcom/android/OriginalSettings/RadioInfo;->isImsRegRequired()Z
+    invoke-static {v1}, Lcom/android/OriginalSettings/RadioInfo;->access$3100(Lcom/android/OriginalSettings/RadioInfo;)Z
 
     move-result v1
 
@@ -102,10 +102,10 @@
     invoke-static {v2, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 902
-    iget-object v1, p0, Lcom/android/settings/RadioInfo$14;->this$0:Lcom/android/settings/RadioInfo;
+    iget-object v1, p0, Lcom/android/OriginalSettings/RadioInfo$14;->this$0:Lcom/android/OriginalSettings/RadioInfo;
 
-    #calls: Lcom/android/settings/RadioInfo;->updateImsRegRequiredState()V
-    invoke-static {v1}, Lcom/android/settings/RadioInfo;->access$3200(Lcom/android/settings/RadioInfo;)V
+    #calls: Lcom/android/OriginalSettings/RadioInfo;->updateImsRegRequiredState()V
+    invoke-static {v1}, Lcom/android/OriginalSettings/RadioInfo;->access$3200(Lcom/android/OriginalSettings/RadioInfo;)V
 
     .line 903
     return-void

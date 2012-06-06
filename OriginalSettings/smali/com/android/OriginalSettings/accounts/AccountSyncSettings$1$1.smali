@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AccountSyncSettings$1$1;
+.class Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1$1;
 .super Ljava/lang/Object;
 .source "AccountSyncSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/accounts/AccountSyncSettings$1;->onClick(Landroid/content/DialogInterface;I)V
+    value = Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;->onClick(Landroid/content/DialogInterface;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -28,17 +28,17 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+.field final synthetic this$1:Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/AccountSyncSettings$1;)V
+.method constructor <init>(Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;)V
     .locals 0
     .parameter
 
     .prologue
     .line 112
-    iput-object p1, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iput-object p1, p0, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,11 +69,11 @@
 
     .line 115
     .local v1, failed:Z
-    iget-object v3, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;
 
-    iget-object v3, v3, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v3, v3, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/OriginalSettings/accounts/AccountSyncSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/accounts/AccountSyncSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/accounts/AccountSyncSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -118,12 +118,12 @@
     if-eqz v1, :cond_4
 
     .line 129
-    iget-object v3, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;
 
-    iget-object v3, v3, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v3, v3, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/OriginalSettings/accounts/AccountSyncSettings;
 
-    #getter for: Lcom/android/settings/accounts/AccountSyncSettings;->mAccount:Landroid/accounts/Account;
-    invoke-static {v3}, Lcom/android/settings/accounts/AccountSyncSettings;->access$000(Lcom/android/settings/accounts/AccountSyncSettings;)Landroid/accounts/Account;
+    #getter for: Lcom/android/OriginalSettings/accounts/AccountSyncSettings;->mAccount:Landroid/accounts/Account;
+    invoke-static {v3}, Lcom/android/OriginalSettings/accounts/AccountSyncSettings;->access$000(Lcom/android/OriginalSettings/accounts/AccountSyncSettings;)Landroid/accounts/Account;
 
     move-result-object v3
 
@@ -131,12 +131,12 @@
 
     const-string v3, "com.osp.app.signin"
 
-    iget-object v4, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v4, p0, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;
 
-    iget-object v4, v4, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v4, v4, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/OriginalSettings/accounts/AccountSyncSettings;
 
-    #getter for: Lcom/android/settings/accounts/AccountSyncSettings;->mAccount:Landroid/accounts/Account;
-    invoke-static {v4}, Lcom/android/settings/accounts/AccountSyncSettings;->access$000(Lcom/android/settings/accounts/AccountSyncSettings;)Landroid/accounts/Account;
+    #getter for: Lcom/android/OriginalSettings/accounts/AccountSyncSettings;->mAccount:Landroid/accounts/Account;
+    invoke-static {v4}, Lcom/android/OriginalSettings/accounts/AccountSyncSettings;->access$000(Lcom/android/OriginalSettings/accounts/AccountSyncSettings;)Landroid/accounts/Account;
 
     move-result-object v4
 
@@ -158,11 +158,11 @@
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 131
-    iget-object v3, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;
 
-    iget-object v3, v3, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v3, v3, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/OriginalSettings/accounts/AccountSyncSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/accounts/AccountSyncSettings;->finish()V
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/accounts/AccountSyncSettings;->finish()V
 
     .line 140
     :cond_1
@@ -179,14 +179,14 @@
     .line 133
     .restart local v2       #isActivityFinishable:Z
     :cond_3
-    iget-object v3, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;
 
-    iget-object v3, v3, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v3, v3, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/OriginalSettings/accounts/AccountSyncSettings;
 
     const/16 v4, 0x65
 
-    #calls: Lcom/android/settings/accounts/AccountSyncSettings;->showDialog(I)V
-    invoke-static {v3, v4}, Lcom/android/settings/accounts/AccountSyncSettings;->access$100(Lcom/android/settings/accounts/AccountSyncSettings;I)V
+    #calls: Lcom/android/OriginalSettings/accounts/AccountSyncSettings;->showDialog(I)V
+    invoke-static {v3, v4}, Lcom/android/OriginalSettings/accounts/AccountSyncSettings;->access$100(Lcom/android/OriginalSettings/accounts/AccountSyncSettings;I)V
 
     goto :goto_2
 
@@ -195,11 +195,11 @@
     if-eqz v2, :cond_1
 
     .line 137
-    iget-object v3, p0, Lcom/android/settings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$1;
+    iget-object v3, p0, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1$1;->this$1:Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;
 
-    iget-object v3, v3, Lcom/android/settings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/settings/accounts/AccountSyncSettings;
+    iget-object v3, v3, Lcom/android/OriginalSettings/accounts/AccountSyncSettings$1;->this$0:Lcom/android/OriginalSettings/accounts/AccountSyncSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/accounts/AccountSyncSettings;->finish()V
+    invoke-virtual {v3}, Lcom/android/OriginalSettings/accounts/AccountSyncSettings;->finish()V
 
     goto :goto_2
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MediaFormatSd;
-.super Landroid/app/Activity;
+.class public Lcom/android/OriginalSettings/MediaFormatSd;
+.super Lcom/android/OriginalSettings/BaseActivity;
 .source "MediaFormatSd.java"
 
 
@@ -25,46 +25,46 @@
 
     .prologue
     .line 37
-    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/BaseActivity;-><init>()V
 
     .line 53
-    new-instance v0, Lcom/android/settings/MediaFormatSd$1;
+    new-instance v0, Lcom/android/OriginalSettings/MediaFormatSd$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/MediaFormatSd$1;-><init>(Lcom/android/settings/MediaFormatSd;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/MediaFormatSd$1;-><init>(Lcom/android/OriginalSettings/MediaFormatSd;)V
 
-    iput-object v0, p0, Lcom/android/settings/MediaFormatSd;->mFinalClickListener:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mFinalClickListener:Landroid/view/View$OnClickListener;
 
     .line 105
-    new-instance v0, Lcom/android/settings/MediaFormatSd$2;
+    new-instance v0, Lcom/android/OriginalSettings/MediaFormatSd$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/MediaFormatSd$2;-><init>(Lcom/android/settings/MediaFormatSd;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/MediaFormatSd$2;-><init>(Lcom/android/OriginalSettings/MediaFormatSd;)V
 
-    iput-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInitiateListener:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInitiateListener:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/MediaFormatSd;I)Z
+.method static synthetic access$000(Lcom/android/OriginalSettings/MediaFormatSd;I)Z
     .locals 1
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 37
-    invoke-direct {p0, p1}, Lcom/android/settings/MediaFormatSd;->runKeyguardConfirmation(I)Z
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/MediaFormatSd;->runKeyguardConfirmation(I)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/MediaFormatSd;)V
+.method static synthetic access$100(Lcom/android/OriginalSettings/MediaFormatSd;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 37
-    invoke-direct {p0}, Lcom/android/settings/MediaFormatSd;->establishFinalConfirmationState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MediaFormatSd;->establishFinalConfirmationState()V
 
     return-void
 .end method
@@ -74,12 +74,12 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mFinalView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mFinalView:Landroid/view/View;
 
     if-nez v0, :cond_0
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f04005b
 
@@ -89,10 +89,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MediaFormatSd;->mFinalView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mFinalView:Landroid/view/View;
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mFinalView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mFinalView:Landroid/view/View;
 
     const v1, 0x7f08011b
 
@@ -102,20 +102,20 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/MediaFormatSd;->mFinalButton:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mFinalButton:Landroid/widget/Button;
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mFinalButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mFinalButton:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/MediaFormatSd;->mFinalClickListener:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mFinalClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 124
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mFinalView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mFinalView:Landroid/view/View;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MediaFormatSd;->setContentView(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/MediaFormatSd;->setContentView(Landroid/view/View;)V
 
     .line 125
     return-void
@@ -126,12 +126,12 @@
 
     .prologue
     .line 140
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInitialView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInitialView:Landroid/view/View;
 
     if-nez v0, :cond_0
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f04005d
 
@@ -141,10 +141,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInitialView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInitialView:Landroid/view/View;
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInitialView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInitialView:Landroid/view/View;
 
     const v1, 0x7f08011d
 
@@ -154,20 +154,20 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInitiateButton:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInitiateButton:Landroid/widget/Button;
 
     .line 144
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInitiateButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInitiateButton:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/MediaFormatSd;->mInitiateListener:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInitiateListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 147
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInitialView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInitialView:Landroid/view/View;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MediaFormatSd;->setContentView(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/OriginalSettings/MediaFormatSd;->setContentView(Landroid/view/View;)V
 
     .line 148
     return-void
@@ -179,23 +179,23 @@
 
     .prologue
     .line 75
-    new-instance v0, Lcom/android/settings/ChooseLockSettingsHelper;
+    new-instance v0, Lcom/android/OriginalSettings/ChooseLockSettingsHelper;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/ChooseLockSettingsHelper;-><init>(Lcom/android/OriginalSettings/BaseActivity;)V
 
     const v1, 0x7f0b03c4
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MediaFormatSd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/MediaFormatSd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
     const v2, 0x7f0b03c6
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/MediaFormatSd;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v2}, Lcom/android/OriginalSettings/MediaFormatSd;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    invoke-virtual {v0, p1, v1, v2}, Lcom/android/settings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-virtual {v0, p1, v1, v2}, Lcom/android/OriginalSettings/ChooseLockSettingsHelper;->launchConfirmationActivity(ILjava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -212,7 +212,7 @@
 
     .prologue
     .line 83
-    invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/OriginalSettings/BaseActivity;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 85
     const/16 v0, 0x37
@@ -230,7 +230,7 @@
     if-ne p2, v0, :cond_1
 
     .line 92
-    invoke-direct {p0}, Lcom/android/settings/MediaFormatSd;->establishFinalConfirmationState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MediaFormatSd;->establishFinalConfirmationState()V
 
     goto :goto_0
 
@@ -239,13 +239,13 @@
     if-nez p2, :cond_2
 
     .line 94
-    invoke-virtual {p0}, Lcom/android/settings/MediaFormatSd;->finish()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/MediaFormatSd;->finish()V
 
     goto :goto_0
 
     .line 96
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/MediaFormatSd;->establishInitialState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MediaFormatSd;->establishInitialState()V
 
     goto :goto_0
 .end method
@@ -258,23 +258,23 @@
     const/4 v0, 0x0
 
     .line 152
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 154
-    iput-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInitialView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInitialView:Landroid/view/View;
 
     .line 155
-    iput-object v0, p0, Lcom/android/settings/MediaFormatSd;->mFinalView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mFinalView:Landroid/view/View;
 
     .line 156
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MediaFormatSd;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/OriginalSettings/MediaFormatSd;->mInflater:Landroid/view/LayoutInflater;
 
     .line 158
-    invoke-direct {p0}, Lcom/android/settings/MediaFormatSd;->establishInitialState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MediaFormatSd;->establishInitialState()V
 
     .line 159
     return-void
@@ -285,17 +285,17 @@
 
     .prologue
     .line 167
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/BaseActivity;->onPause()V
 
     .line 169
-    invoke-virtual {p0}, Lcom/android/settings/MediaFormatSd;->isFinishing()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/MediaFormatSd;->isFinishing()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 170
-    invoke-direct {p0}, Lcom/android/settings/MediaFormatSd;->establishInitialState()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/MediaFormatSd;->establishInitialState()V
 
     .line 172
     :cond_0

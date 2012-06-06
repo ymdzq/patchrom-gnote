@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/UsbSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/OriginalSettings/UsbSettings;
+.super Lcom/android/OriginalSettings/SettingsPreferenceFragment;
 .source "UsbSettings.java"
 
 
@@ -27,93 +27,93 @@
 
     .prologue
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;-><init>()V
 
     .line 63
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
     .line 85
-    new-instance v0, Lcom/android/settings/UsbSettings$1;
+    new-instance v0, Lcom/android/OriginalSettings/UsbSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/UsbSettings$1;-><init>(Lcom/android/settings/UsbSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/UsbSettings$1;-><init>(Lcom/android/OriginalSettings/UsbSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/UsbSettings;->mBatteryReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mBatteryReceiver:Landroid/content/BroadcastReceiver;
 
     .line 98
-    new-instance v0, Lcom/android/settings/UsbSettings$2;
+    new-instance v0, Lcom/android/OriginalSettings/UsbSettings$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/UsbSettings$2;-><init>(Lcom/android/settings/UsbSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/OriginalSettings/UsbSettings$2;-><init>(Lcom/android/OriginalSettings/UsbSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
+    iput-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/android/settings/UsbSettings;)Z
+.method static synthetic access$000(Lcom/android/OriginalSettings/UsbSettings;)Z
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 52
-    iget-boolean v0, p0, Lcom/android/settings/UsbSettings;->mDisplayState:Z
+    iget-boolean v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mDisplayState:Z
 
     return v0
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/UsbSettings;)Landroid/content/BroadcastReceiver;
+.method static synthetic access$100(Lcom/android/OriginalSettings/UsbSettings;)Landroid/content/BroadcastReceiver;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mBatteryReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mBatteryReceiver:Landroid/content/BroadcastReceiver;
 
     return-object v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/UsbSettings;Z)V
+.method static synthetic access$200(Lcom/android/OriginalSettings/UsbSettings;Z)V
     .locals 0
     .parameter "x0"
     .parameter "x1"
 
     .prologue
     .line 52
-    invoke-direct {p0, p1}, Lcom/android/settings/UsbSettings;->switchDisplay(Z)V
+    invoke-direct {p0, p1}, Lcom/android/OriginalSettings/UsbSettings;->switchDisplay(Z)V
 
     return-void
 .end method
 
-.method static synthetic access$300(Lcom/android/settings/UsbSettings;)Landroid/hardware/usb/UsbManager;
+.method static synthetic access$300(Lcom/android/OriginalSettings/UsbSettings;)Landroid/hardware/usb/UsbManager;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$400(Lcom/android/settings/UsbSettings;)Landroid/os/storage/StorageManager;
+.method static synthetic access$400(Lcom/android/OriginalSettings/UsbSettings;)Landroid/os/storage/StorageManager;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$500(Lcom/android/settings/UsbSettings;)V
+.method static synthetic access$500(Lcom/android/OriginalSettings/UsbSettings;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/UsbSettings;->setDefaultMode()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/UsbSettings;->setDefaultMode()V
 
     return-void
 .end method
@@ -127,7 +127,7 @@
     .line 331
     const-string v0, "ptp"
 
-    iget-object v1, p0, Lcom/android/settings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     invoke-virtual {v1}, Landroid/hardware/usb/UsbManager;->getDefaultFunction()Ljava/lang/String;
 
@@ -140,7 +140,7 @@
     if-eqz v0, :cond_0
 
     .line 332
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     const-string v1, "ptp"
 
@@ -152,7 +152,7 @@
 
     .line 334
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     const-string v1, "mtp"
 
@@ -174,17 +174,17 @@
     if-eqz p1, :cond_0
 
     .line 189
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 190
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mUnmountButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mUnmountButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mMountButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mMountButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
@@ -194,17 +194,17 @@
 
     .line 193
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mUnmountButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mUnmountButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mMountButton:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mMountButton:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
@@ -219,10 +219,10 @@
 
     .prologue
     .line 134
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -239,21 +239,21 @@
     .line 139
     const-string v1, "usb"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/UsbSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/OriginalSettings/UsbSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/hardware/usb/UsbManager;
 
-    iput-object v1, p0, Lcom/android/settings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
+    iput-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
     .line 141
-    iget-object v1, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
     if-nez v1, :cond_0
 
     .line 142
-    invoke-virtual {p0}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -265,10 +265,10 @@
 
     check-cast v1, Landroid/os/storage/StorageManager;
 
-    iput-object v1, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
+    iput-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
     .line 143
-    iget-object v1, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
     if-nez v1, :cond_0
 
@@ -311,7 +311,7 @@
     :pswitch_1
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -327,9 +327,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/UsbSettings$5;
+    new-instance v2, Lcom/android/OriginalSettings/UsbSettings$5;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/UsbSettings$5;-><init>(Lcom/android/settings/UsbSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/UsbSettings$5;-><init>(Lcom/android/OriginalSettings/UsbSettings;)V
 
     invoke-virtual {v1, v5, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -353,7 +353,7 @@
     :pswitch_2
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -371,9 +371,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/UsbSettings$6;
+    new-instance v1, Lcom/android/OriginalSettings/UsbSettings$6;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/UsbSettings$6;-><init>(Lcom/android/settings/UsbSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/OriginalSettings/UsbSettings$6;-><init>(Lcom/android/OriginalSettings/UsbSettings;)V
 
     invoke-virtual {v0, v4, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -389,7 +389,7 @@
     :pswitch_3
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -427,7 +427,7 @@
     :pswitch_4
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/UsbSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/UsbSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -443,9 +443,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/UsbSettings$7;
+    new-instance v2, Lcom/android/OriginalSettings/UsbSettings$7;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/UsbSettings$7;-><init>(Lcom/android/settings/UsbSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/UsbSettings$7;-><init>(Lcom/android/OriginalSettings/UsbSettings;)V
 
     invoke-virtual {v1, v5, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -504,14 +504,14 @@
 
     check-cast v1, Landroid/widget/Button;
 
-    iput-object v1, p0, Lcom/android/settings/UsbSettings;->mMountButton:Landroid/widget/Button;
+    iput-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mMountButton:Landroid/widget/Button;
 
     .line 154
-    iget-object v1, p0, Lcom/android/settings/UsbSettings;->mMountButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mMountButton:Landroid/widget/Button;
 
-    new-instance v2, Lcom/android/settings/UsbSettings$3;
+    new-instance v2, Lcom/android/OriginalSettings/UsbSettings$3;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/UsbSettings$3;-><init>(Lcom/android/settings/UsbSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/UsbSettings$3;-><init>(Lcom/android/OriginalSettings/UsbSettings;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -524,14 +524,14 @@
 
     check-cast v1, Landroid/widget/Button;
 
-    iput-object v1, p0, Lcom/android/settings/UsbSettings;->mUnmountButton:Landroid/widget/Button;
+    iput-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mUnmountButton:Landroid/widget/Button;
 
     .line 177
-    iget-object v1, p0, Lcom/android/settings/UsbSettings;->mUnmountButton:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mUnmountButton:Landroid/widget/Button;
 
-    new-instance v2, Lcom/android/settings/UsbSettings$4;
+    new-instance v2, Lcom/android/OriginalSettings/UsbSettings$4;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/UsbSettings$4;-><init>(Lcom/android/settings/UsbSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/OriginalSettings/UsbSettings$4;-><init>(Lcom/android/OriginalSettings/UsbSettings;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -544,7 +544,7 @@
 
     check-cast v1, Landroid/widget/ProgressBar;
 
-    iput-object v1, p0, Lcom/android/settings/UsbSettings;->mProgressBar:Landroid/widget/ProgressBar;
+    iput-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mProgressBar:Landroid/widget/ProgressBar;
 
     .line 184
     return-object v0
@@ -555,21 +555,21 @@
 
     .prologue
     .line 216
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onPause()V
 
     .line 218
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     if-eqz v0, :cond_0
 
     .line 219
-    iget-object v0, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
-    iget-object v1, p0, Lcom/android/settings/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v0, v1}, Landroid/os/storage/StorageManager;->unregisterListener(Landroid/os/storage/StorageEventListener;)V
 
@@ -577,7 +577,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/UsbSettings;->mDisplayState:Z
+    iput-boolean v0, p0, Lcom/android/OriginalSettings/UsbSettings;->mDisplayState:Z
 
     .line 223
     return-void
@@ -588,24 +588,24 @@
 
     .prologue
     .line 201
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/OriginalSettings/SettingsPreferenceFragment;->onResume()V
 
     .line 203
-    iget-object v1, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
-    iget-object v2, p0, Lcom/android/settings/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
+    iget-object v2, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v1, v2}, Landroid/os/storage/StorageManager;->registerListener(Landroid/os/storage/StorageEventListener;)V
 
     .line 206
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
+    iget-object v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
     invoke-virtual {v1}, Landroid/os/storage/StorageManager;->isUsbMassStorageEnabled()Z
 
     move-result v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/UsbSettings;->switchDisplay(Z)V
+    invoke-direct {p0, v1}, Lcom/android/OriginalSettings/UsbSettings;->switchDisplay(Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -613,7 +613,7 @@
     :goto_0
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/settings/UsbSettings;->mDisplayState:Z
+    iput-boolean v1, p0, Lcom/android/OriginalSettings/UsbSettings;->mDisplayState:Z
 
     .line 212
     return-void

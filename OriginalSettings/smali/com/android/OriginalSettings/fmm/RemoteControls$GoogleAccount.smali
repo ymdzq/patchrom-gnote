@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/fmm/RemoteControls$GoogleAccount;
+.class public Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;
 .super Landroid/preference/PreferenceFragment;
 .source "RemoteControls.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/fmm/RemoteControls;
+    value = Lcom/android/OriginalSettings/fmm/RemoteControls;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -39,24 +39,24 @@
     return-void
 .end method
 
-.method static synthetic access$100(Lcom/android/settings/fmm/RemoteControls$GoogleAccount;)I
+.method static synthetic access$100(Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;)I
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 229
-    iget v0, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->returnvalue_ga:I
+    iget v0, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->returnvalue_ga:I
 
     return v0
 .end method
 
-.method static synthetic access$200(Lcom/android/settings/fmm/RemoteControls$GoogleAccount;)Landroid/accounts/AuthenticatorDescription;
+.method static synthetic access$200(Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;)Landroid/accounts/AuthenticatorDescription;
     .locals 1
     .parameter "x0"
 
     .prologue
     .line 229
-    iget-object v0, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
+    iget-object v0, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
 
     return-object v0
 .end method
@@ -73,7 +73,7 @@
     const/4 v8, 0x0
 
     .line 244
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -111,16 +111,16 @@
     .line 247
     aget-object v5, v0, v2
 
-    iput-object v5, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
+    iput-object v5, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
 
     .line 253
     :cond_0
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
+    iget-object v6, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
 
     iget-object v6, v6, Landroid/accounts/AuthenticatorDescription;->packageName:Ljava/lang/String;
 
@@ -130,7 +130,7 @@
 
     move-result-object v5
 
-    iput-object v5, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->authContext:Landroid/content/Context;
+    iput-object v5, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->authContext:Landroid/content/Context;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -154,13 +154,13 @@
 
     .line 260
     .local v3, mGoogleIcon:Landroid/widget/ImageView;
-    iget-object v5, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->authContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->authContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
+    iget-object v6, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
 
     iget v6, v6, Landroid/accounts/AuthenticatorDescription;->iconId:I
 
@@ -179,7 +179,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    iput-object v5, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleTitle:Landroid/widget/TextView;
+    iput-object v5, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleTitle:Landroid/widget/TextView;
 
     .line 262
     const v5, 0x7f080015
@@ -190,7 +190,7 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    iput-object v5, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleSummary:Landroid/widget/TextView;
+    iput-object v5, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleSummary:Landroid/widget/TextView;
 
     .line 263
     const v5, 0x7f080016
@@ -201,19 +201,19 @@
 
     check-cast v5, Landroid/widget/ImageView;
 
-    iput-object v5, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleAdd:Landroid/widget/ImageView;
+    iput-object v5, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleAdd:Landroid/widget/ImageView;
 
     .line 264
-    iget-object v5, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleAdd:Landroid/widget/ImageView;
+    iget-object v5, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleAdd:Landroid/widget/ImageView;
 
     const v6, 0x7f0200f9
 
     invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 265
-    new-instance v5, Lcom/android/settings/fmm/RemoteControls$GoogleAccount$1;
+    new-instance v5, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount$1;
 
-    invoke-direct {v5, p0}, Lcom/android/settings/fmm/RemoteControls$GoogleAccount$1;-><init>(Lcom/android/settings/fmm/RemoteControls$GoogleAccount;)V
+    invoke-direct {v5, p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount$1;-><init>(Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;)V
 
     invoke-virtual {v4, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -253,7 +253,7 @@
     invoke-super {p0}, Landroid/preference/PreferenceFragment;->onResume()V
 
     .line 283
-    invoke-virtual {p0}, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -273,15 +273,15 @@
     .local v0, googleAccnts:[Landroid/accounts/Account;
     array-length v2, v0
 
-    iput v2, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->returnvalue_ga:I
+    iput v2, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->returnvalue_ga:I
 
     .line 286
-    iget v2, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->returnvalue_ga:I
+    iget v2, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->returnvalue_ga:I
 
     if-eqz v2, :cond_0
 
     .line 287
-    iget-object v2, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleTitle:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleTitle:Landroid/widget/TextView;
 
     aget-object v3, v0, v4
 
@@ -290,15 +290,15 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 288
-    iget-object v2, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleSummary:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleSummary:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->authContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->authContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
+    iget-object v4, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleDescription:Landroid/accounts/AuthenticatorDescription;
 
     iget v4, v4, Landroid/accounts/AuthenticatorDescription;->labelId:I
 
@@ -309,7 +309,7 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 289
-    iget-object v2, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleAdd:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleAdd:Landroid/widget/ImageView;
 
     const/16 v3, 0x8
 
@@ -321,21 +321,21 @@
 
     .line 291
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleTitle:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleTitle:Landroid/widget/TextView;
 
     const v3, 0x7f0b05ed
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
     .line 292
-    iget-object v2, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleSummary:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleSummary:Landroid/widget/TextView;
 
     const v3, 0x7f0b0713
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
     .line 293
-    iget-object v2, p0, Lcom/android/settings/fmm/RemoteControls$GoogleAccount;->mGoogleAdd:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/OriginalSettings/fmm/RemoteControls$GoogleAccount;->mGoogleAdd:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 

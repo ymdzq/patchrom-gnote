@@ -1,4 +1,4 @@
-.class Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;
+.class Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;
 .super Ljava/lang/Object;
 .source "DateTimeSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->onClick(Landroid/content/DialogInterface;I)V
+    value = Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->onClick(Landroid/content/DialogInterface;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;
+.field final synthetic this$1:Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;)V
     .locals 0
     .parameter
 
     .prologue
     .line 707
-    iput-object p1, p0, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;->this$1:Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;->this$1:Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
 
     .prologue
     .line 709
-    iget-object v1, p0, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;->this$1:Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;
+    iget-object v1, p0, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1$1;->this$1:Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;
 
-    iget-object v1, v1, Lcom/android/settings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->val$context:Landroid/content/Context;
+    iget-object v1, v1, Lcom/android/OriginalSettings/DateTimeSettings$ConfirmAutoTimeZoneFragment$1;->val$context:Landroid/content/Context;
 
     const-string v2, "power"
 

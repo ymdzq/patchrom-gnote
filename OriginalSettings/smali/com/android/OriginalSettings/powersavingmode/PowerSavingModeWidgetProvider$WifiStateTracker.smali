@@ -1,11 +1,11 @@
-.class final Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;
-.super Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
+.class final Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;
+.super Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;
 .source "PowerSavingModeWidgetProvider.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider;
+    value = Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,18 +22,18 @@
     .line 287
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;-><init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
+    invoke-direct {p0, v0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$StateTracker;-><init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
+.method synthetic constructor <init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$1;)V
     .locals 0
     .parameter "x0"
 
     .prologue
     .line 287
-    invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;-><init>()V
+    invoke-direct {p0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;-><init>()V
 
     return-void
 .end method
@@ -113,7 +113,7 @@
 
     move-result v1
 
-    invoke-static {v1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;->wifiStateToFiveState(I)I
+    invoke-static {v1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;->wifiStateToFiveState(I)I
 
     move-result v1
 
@@ -162,11 +162,11 @@
 
     .line 332
     .local v0, wifiState:I
-    invoke-static {v0}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;->wifiStateToFiveState(I)I
+    invoke-static {v0}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;->wifiStateToFiveState(I)I
 
     move-result v1
 
-    invoke-virtual {p0, p1, v1}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {p0, p1, v1}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;->setCurrentState(Landroid/content/Context;I)V
 
     goto :goto_0
 .end method
@@ -203,15 +203,15 @@
 
     .line 309
     :cond_0
-    new-instance v1, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker$1;
+    new-instance v1, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker$1;
 
-    invoke-direct {v1, p0, v0, p2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker$1;-><init>(Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;Landroid/net/wifi/WifiManager;Z)V
+    invoke-direct {v1, p0, v0, p2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker$1;-><init>(Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker;Landroid/net/wifi/WifiManager;Z)V
 
     const/4 v2, 0x0
 
     new-array v2, v2, [Ljava/lang/Void;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v2}, Lcom/android/OriginalSettings/powersavingmode/PowerSavingModeWidgetProvider$WifiStateTracker$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 .end method

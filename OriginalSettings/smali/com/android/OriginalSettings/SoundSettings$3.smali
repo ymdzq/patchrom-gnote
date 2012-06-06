@@ -1,4 +1,4 @@
-.class Lcom/android/settings/SoundSettings$3;
+.class Lcom/android/OriginalSettings/SoundSettings$3;
 .super Ljava/lang/Object;
 .source "SoundSettings.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/SoundSettings;->onCreate(Landroid/os/Bundle;)V
+    value = Lcom/android/OriginalSettings/SoundSettings;->onCreate(Landroid/os/Bundle;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/SoundSettings;
+.field final synthetic this$0:Lcom/android/OriginalSettings/SoundSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SoundSettings;)V
+.method constructor <init>(Lcom/android/OriginalSettings/SoundSettings;)V
     .locals 0
     .parameter
 
     .prologue
     .line 275
-    iput-object p1, p0, Lcom/android/settings/SoundSettings$3;->this$0:Lcom/android/settings/SoundSettings;
+    iput-object p1, p0, Lcom/android/OriginalSettings/SoundSettings$3;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,51 +46,51 @@
     const/4 v2, 0x1
 
     .line 277
-    iget-object v0, p0, Lcom/android/settings/SoundSettings$3;->this$0:Lcom/android/settings/SoundSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SoundSettings$3;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
-    #getter for: Lcom/android/settings/SoundSettings;->mRingtonePreference:Landroid/preference/Preference;
-    invoke-static {v0}, Lcom/android/settings/SoundSettings;->access$100(Lcom/android/settings/SoundSettings;)Landroid/preference/Preference;
+    #getter for: Lcom/android/OriginalSettings/SoundSettings;->mRingtonePreference:Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/OriginalSettings/SoundSettings;->access$100(Lcom/android/OriginalSettings/SoundSettings;)Landroid/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 278
-    iget-object v0, p0, Lcom/android/settings/SoundSettings$3;->this$0:Lcom/android/settings/SoundSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SoundSettings$3;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
-    iget-object v1, p0, Lcom/android/settings/SoundSettings$3;->this$0:Lcom/android/settings/SoundSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/SoundSettings$3;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
-    #getter for: Lcom/android/settings/SoundSettings;->mRingtonePreference:Landroid/preference/Preference;
-    invoke-static {v1}, Lcom/android/settings/SoundSettings;->access$100(Lcom/android/settings/SoundSettings;)Landroid/preference/Preference;
+    #getter for: Lcom/android/OriginalSettings/SoundSettings;->mRingtonePreference:Landroid/preference/Preference;
+    invoke-static {v1}, Lcom/android/OriginalSettings/SoundSettings;->access$100(Lcom/android/OriginalSettings/SoundSettings;)Landroid/preference/Preference;
 
     move-result-object v1
 
-    #calls: Lcom/android/settings/SoundSettings;->updateRingtoneName(ILandroid/preference/Preference;I)V
-    invoke-static {v0, v2, v1, v2}, Lcom/android/settings/SoundSettings;->access$500(Lcom/android/settings/SoundSettings;ILandroid/preference/Preference;I)V
+    #calls: Lcom/android/OriginalSettings/SoundSettings;->updateRingtoneName(ILandroid/preference/Preference;I)V
+    invoke-static {v0, v2, v1, v2}, Lcom/android/OriginalSettings/SoundSettings;->access$500(Lcom/android/OriginalSettings/SoundSettings;ILandroid/preference/Preference;I)V
 
     .line 281
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/SoundSettings$3;->this$0:Lcom/android/settings/SoundSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SoundSettings$3;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
-    #getter for: Lcom/android/settings/SoundSettings;->mNotificationPreference:Landroid/preference/Preference;
-    invoke-static {v0}, Lcom/android/settings/SoundSettings;->access$200(Lcom/android/settings/SoundSettings;)Landroid/preference/Preference;
+    #getter for: Lcom/android/OriginalSettings/SoundSettings;->mNotificationPreference:Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/OriginalSettings/SoundSettings;->access$200(Lcom/android/OriginalSettings/SoundSettings;)Landroid/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 282
-    iget-object v0, p0, Lcom/android/settings/SoundSettings$3;->this$0:Lcom/android/settings/SoundSettings;
+    iget-object v0, p0, Lcom/android/OriginalSettings/SoundSettings$3;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
-    iget-object v1, p0, Lcom/android/settings/SoundSettings$3;->this$0:Lcom/android/settings/SoundSettings;
+    iget-object v1, p0, Lcom/android/OriginalSettings/SoundSettings$3;->this$0:Lcom/android/OriginalSettings/SoundSettings;
 
-    #getter for: Lcom/android/settings/SoundSettings;->mNotificationPreference:Landroid/preference/Preference;
-    invoke-static {v1}, Lcom/android/settings/SoundSettings;->access$200(Lcom/android/settings/SoundSettings;)Landroid/preference/Preference;
+    #getter for: Lcom/android/OriginalSettings/SoundSettings;->mNotificationPreference:Landroid/preference/Preference;
+    invoke-static {v1}, Lcom/android/OriginalSettings/SoundSettings;->access$200(Lcom/android/OriginalSettings/SoundSettings;)Landroid/preference/Preference;
 
     move-result-object v1
 
-    #calls: Lcom/android/settings/SoundSettings;->updateRingtoneName(ILandroid/preference/Preference;I)V
-    invoke-static {v0, v3, v1, v3}, Lcom/android/settings/SoundSettings;->access$500(Lcom/android/settings/SoundSettings;ILandroid/preference/Preference;I)V
+    #calls: Lcom/android/OriginalSettings/SoundSettings;->updateRingtoneName(ILandroid/preference/Preference;I)V
+    invoke-static {v0, v3, v1, v3}, Lcom/android/OriginalSettings/SoundSettings;->access$500(Lcom/android/OriginalSettings/SoundSettings;ILandroid/preference/Preference;I)V
 
     .line 285
     :cond_1

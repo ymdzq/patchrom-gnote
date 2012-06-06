@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/net/ChartDataLoader;
+.class public Lcom/android/OriginalSettings/net/ChartDataLoader;
 .super Landroid/content/AsyncTaskLoader;
 .source "ChartDataLoader.java"
 
@@ -8,7 +8,7 @@
     value = {
         "Landroid/content/AsyncTaskLoader",
         "<",
-        "Lcom/android/settings/net/ChartData;",
+        "Lcom/android/OriginalSettings/net/ChartData;",
         ">;"
     }
 .end annotation
@@ -32,10 +32,10 @@
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
     .line 58
-    iput-object p2, p0, Lcom/android/settings/net/ChartDataLoader;->mStatsService:Landroid/net/INetworkStatsService;
+    iput-object p2, p0, Lcom/android/OriginalSettings/net/ChartDataLoader;->mStatsService:Landroid/net/INetworkStatsService;
 
     .line 59
-    iput-object p3, p0, Lcom/android/settings/net/ChartDataLoader;->mArgs:Landroid/os/Bundle;
+    iput-object p3, p0, Lcom/android/OriginalSettings/net/ChartDataLoader;->mArgs:Landroid/os/Bundle;
 
     .line 60
     return-void
@@ -50,7 +50,7 @@
     .line 45
     const/16 v0, 0xa
 
-    invoke-static {p0, p1, v0}, Lcom/android/settings/net/ChartDataLoader;->buildArgs(Landroid/net/NetworkTemplate;[II)Landroid/os/Bundle;
+    invoke-static {p0, p1, v0}, Lcom/android/OriginalSettings/net/ChartDataLoader;->buildArgs(Landroid/net/NetworkTemplate;[II)Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -103,7 +103,7 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/android/settings/net/ChartDataLoader;->mStatsService:Landroid/net/INetworkStatsService;
+    iget-object v0, p0, Lcom/android/OriginalSettings/net/ChartDataLoader;->mStatsService:Landroid/net/INetworkStatsService;
 
     const/4 v4, 0x0
 
@@ -138,7 +138,7 @@
     goto :goto_0
 .end method
 
-.method private loadInBackground(Landroid/net/NetworkTemplate;[II)Lcom/android/settings/net/ChartData;
+.method private loadInBackground(Landroid/net/NetworkTemplate;[II)Lcom/android/OriginalSettings/net/ChartData;
     .locals 8
     .parameter "template"
     .parameter "uids"
@@ -153,28 +153,28 @@
     const/4 v6, 0x0
 
     .line 85
-    new-instance v1, Lcom/android/settings/net/ChartData;
+    new-instance v1, Lcom/android/OriginalSettings/net/ChartData;
 
-    invoke-direct {v1}, Lcom/android/settings/net/ChartData;-><init>()V
+    invoke-direct {v1}, Lcom/android/OriginalSettings/net/ChartData;-><init>()V
 
     .line 86
-    .local v1, data:Lcom/android/settings/net/ChartData;
-    iget-object v5, p0, Lcom/android/settings/net/ChartDataLoader;->mStatsService:Landroid/net/INetworkStatsService;
+    .local v1, data:Lcom/android/OriginalSettings/net/ChartData;
+    iget-object v5, p0, Lcom/android/OriginalSettings/net/ChartDataLoader;->mStatsService:Landroid/net/INetworkStatsService;
 
     invoke-interface {v5, p1, p3}, Landroid/net/INetworkStatsService;->getHistoryForNetwork(Landroid/net/NetworkTemplate;I)Landroid/net/NetworkStatsHistory;
 
     move-result-object v5
 
-    iput-object v5, v1, Lcom/android/settings/net/ChartData;->network:Landroid/net/NetworkStatsHistory;
+    iput-object v5, v1, Lcom/android/OriginalSettings/net/ChartData;->network:Landroid/net/NetworkStatsHistory;
 
     .line 88
     if-eqz p2, :cond_1
 
     .line 89
-    iput-object v6, v1, Lcom/android/settings/net/ChartData;->detailDefault:Landroid/net/NetworkStatsHistory;
+    iput-object v6, v1, Lcom/android/OriginalSettings/net/ChartData;->detailDefault:Landroid/net/NetworkStatsHistory;
 
     .line 90
-    iput-object v6, v1, Lcom/android/settings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
+    iput-object v6, v1, Lcom/android/OriginalSettings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
 
     .line 93
     move-object v0, p2
@@ -195,24 +195,24 @@
     .local v4, uid:I
     const/4 v5, 0x0
 
-    iget-object v6, v1, Lcom/android/settings/net/ChartData;->detailDefault:Landroid/net/NetworkStatsHistory;
+    iget-object v6, v1, Lcom/android/OriginalSettings/net/ChartData;->detailDefault:Landroid/net/NetworkStatsHistory;
 
-    invoke-direct {p0, p1, v4, v5, v6}, Lcom/android/settings/net/ChartDataLoader;->collectHistoryForUid(Landroid/net/NetworkTemplate;IILandroid/net/NetworkStatsHistory;)Landroid/net/NetworkStatsHistory;
+    invoke-direct {p0, p1, v4, v5, v6}, Lcom/android/OriginalSettings/net/ChartDataLoader;->collectHistoryForUid(Landroid/net/NetworkTemplate;IILandroid/net/NetworkStatsHistory;)Landroid/net/NetworkStatsHistory;
 
     move-result-object v5
 
-    iput-object v5, v1, Lcom/android/settings/net/ChartData;->detailDefault:Landroid/net/NetworkStatsHistory;
+    iput-object v5, v1, Lcom/android/OriginalSettings/net/ChartData;->detailDefault:Landroid/net/NetworkStatsHistory;
 
     .line 96
     const/4 v5, 0x1
 
-    iget-object v6, v1, Lcom/android/settings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
+    iget-object v6, v1, Lcom/android/OriginalSettings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
 
-    invoke-direct {p0, p1, v4, v5, v6}, Lcom/android/settings/net/ChartDataLoader;->collectHistoryForUid(Landroid/net/NetworkTemplate;IILandroid/net/NetworkStatsHistory;)Landroid/net/NetworkStatsHistory;
+    invoke-direct {p0, p1, v4, v5, v6}, Lcom/android/OriginalSettings/net/ChartDataLoader;->collectHistoryForUid(Landroid/net/NetworkTemplate;IILandroid/net/NetworkStatsHistory;)Landroid/net/NetworkStatsHistory;
 
     move-result-object v5
 
-    iput-object v5, v1, Lcom/android/settings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
+    iput-object v5, v1, Lcom/android/OriginalSettings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
 
     .line 93
     add-int/lit8 v2, v2, 0x1
@@ -224,7 +224,7 @@
     :cond_0
     new-instance v5, Landroid/net/NetworkStatsHistory;
 
-    iget-object v6, v1, Lcom/android/settings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
+    iget-object v6, v1, Lcom/android/OriginalSettings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v6}, Landroid/net/NetworkStatsHistory;->getBucketDuration()J
 
@@ -232,19 +232,19 @@
 
     invoke-direct {v5, v6, v7}, Landroid/net/NetworkStatsHistory;-><init>(J)V
 
-    iput-object v5, v1, Lcom/android/settings/net/ChartData;->detail:Landroid/net/NetworkStatsHistory;
+    iput-object v5, v1, Lcom/android/OriginalSettings/net/ChartData;->detail:Landroid/net/NetworkStatsHistory;
 
     .line 101
-    iget-object v5, v1, Lcom/android/settings/net/ChartData;->detail:Landroid/net/NetworkStatsHistory;
+    iget-object v5, v1, Lcom/android/OriginalSettings/net/ChartData;->detail:Landroid/net/NetworkStatsHistory;
 
-    iget-object v6, v1, Lcom/android/settings/net/ChartData;->detailDefault:Landroid/net/NetworkStatsHistory;
+    iget-object v6, v1, Lcom/android/OriginalSettings/net/ChartData;->detailDefault:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v5, v6}, Landroid/net/NetworkStatsHistory;->recordEntireHistory(Landroid/net/NetworkStatsHistory;)V
 
     .line 102
-    iget-object v5, v1, Lcom/android/settings/net/ChartData;->detail:Landroid/net/NetworkStatsHistory;
+    iget-object v5, v1, Lcom/android/OriginalSettings/net/ChartData;->detail:Landroid/net/NetworkStatsHistory;
 
-    iget-object v6, v1, Lcom/android/settings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
+    iget-object v6, v1, Lcom/android/OriginalSettings/net/ChartData;->detailForeground:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v5, v6}, Landroid/net/NetworkStatsHistory;->recordEntireHistory(Landroid/net/NetworkStatsHistory;)V
 
@@ -258,12 +258,12 @@
 
 
 # virtual methods
-.method public loadInBackground()Lcom/android/settings/net/ChartData;
+.method public loadInBackground()Lcom/android/OriginalSettings/net/ChartData;
     .locals 6
 
     .prologue
     .line 70
-    iget-object v4, p0, Lcom/android/settings/net/ChartDataLoader;->mArgs:Landroid/os/Bundle;
+    iget-object v4, p0, Lcom/android/OriginalSettings/net/ChartDataLoader;->mArgs:Landroid/os/Bundle;
 
     const-string v5, "template"
 
@@ -275,7 +275,7 @@
 
     .line 71
     .local v2, template:Landroid/net/NetworkTemplate;
-    iget-object v4, p0, Lcom/android/settings/net/ChartDataLoader;->mArgs:Landroid/os/Bundle;
+    iget-object v4, p0, Lcom/android/OriginalSettings/net/ChartDataLoader;->mArgs:Landroid/os/Bundle;
 
     const-string v5, "uids"
 
@@ -285,7 +285,7 @@
 
     .line 72
     .local v3, uids:[I
-    iget-object v4, p0, Lcom/android/settings/net/ChartDataLoader;->mArgs:Landroid/os/Bundle;
+    iget-object v4, p0, Lcom/android/OriginalSettings/net/ChartDataLoader;->mArgs:Landroid/os/Bundle;
 
     const-string v5, "fields"
 
@@ -296,7 +296,7 @@
     .line 75
     .local v1, fields:I
     :try_start_0
-    invoke-direct {p0, v2, v3, v1}, Lcom/android/settings/net/ChartDataLoader;->loadInBackground(Landroid/net/NetworkTemplate;[II)Lcom/android/settings/net/ChartData;
+    invoke-direct {p0, v2, v3, v1}, Lcom/android/OriginalSettings/net/ChartDataLoader;->loadInBackground(Landroid/net/NetworkTemplate;[II)Lcom/android/OriginalSettings/net/ChartData;
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -324,7 +324,7 @@
 
     .prologue
     .line 36
-    invoke-virtual {p0}, Lcom/android/settings/net/ChartDataLoader;->loadInBackground()Lcom/android/settings/net/ChartData;
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/net/ChartDataLoader;->loadInBackground()Lcom/android/OriginalSettings/net/ChartData;
 
     move-result-object v0
 
@@ -339,7 +339,7 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onReset()V
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/settings/net/ChartDataLoader;->cancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/net/ChartDataLoader;->cancelLoad()Z
 
     .line 118
     return-void
@@ -353,7 +353,7 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onStartLoading()V
 
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/net/ChartDataLoader;->forceLoad()V
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/net/ChartDataLoader;->forceLoad()V
 
     .line 66
     return-void
@@ -367,7 +367,7 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onStopLoading()V
 
     .line 111
-    invoke-virtual {p0}, Lcom/android/settings/net/ChartDataLoader;->cancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/OriginalSettings/net/ChartDataLoader;->cancelLoad()Z
 
     .line 112
     return-void

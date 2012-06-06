@@ -1,11 +1,11 @@
-.class synthetic Lcom/android/settings/wifi/WifiSettings$5;
+.class synthetic Lcom/android/OriginalSettings/wifi/WifiSettings$5;
 .super Ljava/lang/Object;
 .source "WifiSettings.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/wifi/WifiSettings;
+    value = Lcom/android/OriginalSettings/wifi/WifiSettings;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -32,10 +32,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/wifi/WifiSettings$5;->$SwitchMap$android$net$wifi$WpsResult$Status:[I
+    sput-object v0, Lcom/android/OriginalSettings/wifi/WifiSettings$5;->$SwitchMap$android$net$wifi$WpsResult$Status:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/wifi/WifiSettings$5;->$SwitchMap$android$net$wifi$WpsResult$Status:[I
+    sget-object v0, Lcom/android/OriginalSettings/wifi/WifiSettings$5;->$SwitchMap$android$net$wifi$WpsResult$Status:[I
 
     sget-object v1, Landroid/net/wifi/WpsResult$Status;->FAILURE:Landroid/net/wifi/WpsResult$Status;
 
@@ -51,7 +51,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/wifi/WifiSettings$5;->$SwitchMap$android$net$wifi$WpsResult$Status:[I
+    sget-object v0, Lcom/android/OriginalSettings/wifi/WifiSettings$5;->$SwitchMap$android$net$wifi$WpsResult$Status:[I
 
     sget-object v1, Landroid/net/wifi/WpsResult$Status;->IN_PROGRESS:Landroid/net/wifi/WpsResult$Status;
 

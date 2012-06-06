@@ -1,11 +1,11 @@
-.class Lcom/android/settings/DateTimeSettingsSetupWizard$1;
+.class Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard$1;
 .super Landroid/content/BroadcastReceiver;
 .source "DateTimeSettingsSetupWizard.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/settings/DateTimeSettingsSetupWizard;
+    value = Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/DateTimeSettingsSetupWizard;
+.field final synthetic this$0:Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DateTimeSettingsSetupWizard;)V
+.method constructor <init>(Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard;)V
     .locals 0
     .parameter
 
     .prologue
     .line 360
-    iput-object p1, p0, Lcom/android/settings/DateTimeSettingsSetupWizard$1;->this$0:Lcom/android/settings/DateTimeSettingsSetupWizard;
+    iput-object p1, p0, Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard$1;->this$0:Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,10 +41,10 @@
 
     .prologue
     .line 363
-    iget-object v0, p0, Lcom/android/settings/DateTimeSettingsSetupWizard$1;->this$0:Lcom/android/settings/DateTimeSettingsSetupWizard;
+    iget-object v0, p0, Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard$1;->this$0:Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard;
 
-    #calls: Lcom/android/settings/DateTimeSettingsSetupWizard;->updateTimeAndDateDisplay()V
-    invoke-static {v0}, Lcom/android/settings/DateTimeSettingsSetupWizard;->access$000(Lcom/android/settings/DateTimeSettingsSetupWizard;)V
+    #calls: Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard;->updateTimeAndDateDisplay()V
+    invoke-static {v0}, Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard;->access$000(Lcom/android/OriginalSettings/DateTimeSettingsSetupWizard;)V
 
     .line 364
     return-void
