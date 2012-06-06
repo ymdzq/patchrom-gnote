@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/power_saving_mode_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/colorize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/system_power_saving" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/power_saving_mode_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/system_power_saving_mode_information" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/radio_on_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/radio_on_relavive_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/radio_on_imagebutton_layout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="20.0sp" android:gravity="center_vertical" android:id="@id/title_radio_on" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="@string/system_power_saving_mode_on" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/radio_off_imagebutton_layout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="20.0sp" android:gravity="center_vertical" android:id="@id/title_radio_off" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="@string/system_power_saving_mode_off" />
+                </LinearLayout>
+            </LinearLayout>
+            <RadioGroup android:orientation="vertical" android:id="@id/radiogroup_onoff" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/radio_on_relavive_layout" android:layout_alignRight="@id/radio_on_relavive_layout" android:layout_alignBottom="@id/radio_on_relavive_layout">
+                <RadioButton android:gravity="center" android:id="@id/radio_on" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:gravity="center" android:id="@id/radio_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RadioGroup>
+        </RelativeLayout>
+        <View android:id="@id/spacerBottom" android:background="@android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/colorize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/colorize_for_power_saving" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/color_on_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/color_on_relavive_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/colorize_none_list" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="16.0sp" android:id="@id/title_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/power_saving_0" />
+                    <TextView android:textColor="#ff6e9cba" android:id="@id/summary_none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/colorize_default" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/colorize_low_list" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="16.0sp" android:id="@id/title_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/power_saving_1" />
+                    <TextView android:textColor="#ff6e9cba" android:id="@id/summary_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/colorize_low" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/colorize_medium_list" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="16.0sp" android:id="@id/title_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/power_saving_2" />
+                    <TextView android:textColor="#ff6e9cba" android:id="@id/summary_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/colorize_medium" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/colorize_high_list" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="16.0sp" android:id="@id/title_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/power_saving_3" />
+                    <TextView android:textColor="#ff6e9cba" android:id="@id/summary_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/colorize_high" />
+                </LinearLayout>
+            </LinearLayout>
+            <RadioGroup android:orientation="vertical" android:id="@id/PowerSavingGroup" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/color_on_relavive_layout" android:layout_alignRight="@id/color_on_relavive_layout" android:layout_alignBottom="@id/color_on_relavive_layout">
+                <RadioButton android:gravity="center" android:id="@id/tw_colorize_default" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:gravity="center" android:id="@id/colorize0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:gravity="center" android:id="@id/colorize1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RadioButton android:gravity="center" android:id="@id/colorize2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </RadioGroup>
+        </RelativeLayout>
+        <View android:id="@id/spacerBottom" android:background="@android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip" />
+    </LinearLayout>
+</ScrollView>

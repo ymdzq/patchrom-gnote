@@ -9,7 +9,7 @@ local-zip-file     := stockrom.zip
 local-out-zip-file := MIUI_gnote.zip
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := CallSetting SamsungSettings
+local-modified-apps := CallSetting OriginalSettings
 
 local-modified-jars := framework2
 
