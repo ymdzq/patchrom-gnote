@@ -53,7 +53,7 @@
     <uses-permission android:name="android.permission.SET_POINTER_SPEED" />
     <application android:theme="@miui:style/Theme.Light" android:label="@string/settings_label" android:icon="@mipmap/ic_launcher_settings" android:taskAffinity="" android:hardwareAccelerated="false" android:uiOptions="splitActionBarWhenNarrow">
         <uses-library android:name="sechardware" />
-        <activity android:label="@string/settings_label_launcher" android:name="Settings" android:taskAffinity="com.android.settings" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
+        <activity android:label="@string/settings_label_launcher" android:name="Settings" android:taskAffinity="com.android.OriginalSettings" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
@@ -61,8 +61,8 @@
             </intent-filter>
             <!--meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.DeviceSpecial" /-->
         </activity>
-        <activity android:name=".SubSettings" android:taskAffinity="com.android.settings" android:configChanges="keyboardHidden|orientation|screenSize" />
-        <activity android:theme="@style/Theme.CreateShortCut" android:label="@string/settings_shortcut" android:name="CreateShortcut">
+        <activity android:name=".SubSettings" android:taskAffinity="com.android.OriginalSettings" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <!--activity android:theme="@style/Theme.CreateShortCut" android:label="@string/settings_shortcut" android:name="CreateShortcut">
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -373,7 +373,7 @@
                 <action android:name="com.sec.samsung.torchwidget.torch_on_3" />
                 <action android:name="com.sec.samsung.torchwidget.torch_off" />
             </intent-filter>
-        </receiver>
+        </receiver-->
         <activity android:label="@string/dock_settings_title" android:name="Settings$DockSettingsActivity" android:enabled="@bool/has_dock_settings" android:clearTaskOnLaunch="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -388,7 +388,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.DockSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID" android:resource="@id/dock_settings" />
         </activity-alias>
-        <activity android:theme="@android:style/Theme.DeviceDefault.DialogWhenLarge" android:label="@string/device_info_settings" android:name="Settings$DeviceInfoSettingsActivity">
+        <!--activity android:theme="@android:style/Theme.DeviceDefault.DialogWhenLarge" android:label="@string/device_info_settings" android:name="Settings$DeviceInfoSettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.DEVICE_INFO_SETTINGS" />
@@ -776,14 +776,14 @@
                 <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
             </intent-filter>
-        </activity>
+        </activity-->
         <activity android:label="@string/display_label" android:name="Display" android:configChanges="fontScale">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/phone_info_label" android:name="RadioInfo" android:process="com.android.phone">
+        <!--activity android:label="@string/phone_info_label" android:name="RadioInfo" android:process="com.android.phone">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
@@ -921,7 +921,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
-        </activity>
+        </activity-->
         <activity android:label="@string/g_sensor_title" android:name="GSensorSettings" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -985,7 +985,7 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.motion.MotionSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID" android:resource="@id/motion_settings" />
         </activity>
-        <activity android:label="@string/motion_settings_title" android:name="Settings$MotionSettingsActivity" android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize">
+        <!--activity android:label="@string/motion_settings_title" android:name="Settings$MotionSettingsActivity" android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.settings.MOTION_SETTINGS" />
@@ -1078,7 +1078,7 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.SoftwareUpdateSettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID" android:resource="@id/about_settings" />
-        </activity>
+        </activity-->
         <activity android:label="@string/pen_help_title" android:name=".PenHelpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

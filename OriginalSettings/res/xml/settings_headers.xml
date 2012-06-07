@@ -5,5 +5,5 @@
     <header android:icon="@drawable/ic_settings_powersaving" android:id="@id/power_saving_mode" android:title="@string/power_saving_mode_title" android:fragment="com.android.OriginalSettings.powersavingmode.MenuPowerSavingModeSettings" />
     <header android:icon="@drawable/ic_settings_dock" android:id="@id/dock_settings" android:title="@string/dock_settings" android:fragment="com.android.OriginalSettings.DockSettings" />
     <header android:icon="@drawable/ic_settings_pen" android:id="@id/pen_settings" android:title="@string/pen_settings_title" android:fragment="com.android.OriginalSettings.PenSettings" />
-    <header android:icon="@drawable/ic_settings_motion" android:id="@id/motion_settings" android:title="@string/motion_title" android:fragment="com.android.OriginalSettings.motion.MotionSettings" />
+    <!--header android:icon="@drawable/ic_settings_motion" android:id="@id/motion_settings" android:title="@string/motion_title" android:fragment="com.android.OriginalSettings.motion.MotionSettings" /-->
 </preference-headers>
