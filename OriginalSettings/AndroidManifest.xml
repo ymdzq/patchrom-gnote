@@ -349,7 +349,7 @@
         <activity-alias android:label="@string/display_settings" android:name="DisplaySettings" android:exported="true" android:clearTaskOnLaunch="true" android:targetActivity="Settings$DisplaySettingsActivity">
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS" android:value="com.android.settings.DisplaySettings" />
             <meta-data android:name="com.android.settings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
-        </activity-alias>
+        </activity-alias-->
         <receiver android:name="SettingsIntentReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -373,7 +373,7 @@
                 <action android:name="com.sec.samsung.torchwidget.torch_on_3" />
                 <action android:name="com.sec.samsung.torchwidget.torch_off" />
             </intent-filter>
-        </receiver-->
+        </receiver>
         <activity android:label="@string/dock_settings_title" android:name="Settings$DockSettingsActivity" android:enabled="@bool/has_dock_settings" android:clearTaskOnLaunch="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
