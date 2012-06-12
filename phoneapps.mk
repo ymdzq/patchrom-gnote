@@ -7,7 +7,6 @@ local-phone-apps = AxT9IME \
                    BluetoothTest \
                    CSC \
                    Camera \
-                   ChocoEUKor \
                    ClipboardSaveService \
                    DataCreate \
                    DefaultContainerService \
@@ -19,16 +18,13 @@ local-phone-apps = AxT9IME \
                    GoogleFeedback \
                    GoogleTTS \
                    HTMLViewer \
-                   HelvNeueLT \
                    InputEventApp \
                    KeyChain \
                    LiveWallpapers \
                    LiveWallpapersPicker \
                    LogsProvider \
-                   MarketUpdater \
                    MediaProvider \
                    MediaUploader \
-                   MtpApplication \
                    MusicFX \
                    OmaCP \
                    PCWClientS \
@@ -37,7 +33,6 @@ local-phone-apps = AxT9IME \
                    Personalization \
                    PhoneErrService \
                    Phone_Util \
-                   Phonesky \
                    PopupuiReceiver \
                    Preconfig \
                    PreloadInstaller \
@@ -63,4 +58,8 @@ local-phone-apps = AxT9IME \
                    serviceModeApp \
                    shutdown \
                    wssyncmlnps \
-                   ApplicationsProvider
+                   ApplicationsProvider \
+				   ScreenCapture \
+				   SMemo_HKTW \
+				   SMemoLite
+#SecCalendar \ #SecCalendarProvider \ #SPlannerAppWidget \
