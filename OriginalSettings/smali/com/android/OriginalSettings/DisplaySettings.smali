@@ -2466,27 +2466,27 @@
 
     .line 295
     .local v6, e:Ljava/lang/RuntimeException;
-    const-string v20, "font_size"
+    #const-string v20, "font_size"
 
-    move-object/from16 v0, p0
+    #move-object/from16 v0, p0
 
-    move-object/from16 v1, v20
+    #move-object/from16 v1, v20
 
-    invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    #invoke-virtual {v0, v1}, Lcom/android/OriginalSettings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-result-object v20
+    #move-result-object v20
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/DisplaySettings;->getResources()Landroid/content/res/Resources;
+    #invoke-virtual/range {p0 .. p0}, Lcom/android/OriginalSettings/DisplaySettings;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v21
+    #move-result-object v21
 
-    const v22, 0x7f0b07ad
+    #const v22, 0x7f0b07ad
 
-    invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    #invoke-virtual/range {v21 .. v22}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    move-result-object v21
+    #move-result-object v21
 
-    invoke-virtual/range {v20 .. v21}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    #invoke-virtual/range {v20 .. v21}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 296
     const-string v20, "DisplaySettings"
