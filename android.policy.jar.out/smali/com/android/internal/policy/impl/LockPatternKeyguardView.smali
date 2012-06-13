@@ -4162,6 +4162,7 @@
     move-result v6
 
     if-ne v6, v1, :cond_f
+    if-eq v6, v1, :cond_f
 
     .line 1211
     .local v1, isLockScreenWallpaperOn:Z
