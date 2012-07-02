@@ -11537,28 +11537,28 @@
 
     .line 8070
     .local v16, msg:Landroid/os/Message;
-    sget-boolean v3, Lcom/android/server/am/ActivityManagerService;->mCMManagedPermissionError:Z
+    #sget-boolean v3, Lcom/android/server/am/ActivityManagerService;->mCMManagedPermissionError:Z
 
-    if-eqz v3, :cond_f
+    #if-eqz v3, :cond_f
 
     .line 8071
-    const/16 v3, 0x23
+    const/16 v3, 0x01
 
     move-object/from16 v0, v16
 
     iput v3, v0, Landroid/os/Message;->what:I
 
     .line 8072
-    const-string v3, "errorpermission"
+    #const-string v3, "errorpermission"
 
-    sget-object v10, Lcom/android/server/am/ActivityManagerService;->mCMErrorPermissionName:Ljava/lang/String;
+    #sget-object v10, Lcom/android/server/am/ActivityManagerService;->mCMErrorPermissionName:Ljava/lang/String;
 
-    invoke-virtual {v13, v3, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    #invoke-virtual {v13, v3, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8073
-    const/4 v3, 0x0
+    #const/4 v3, 0x0
 
-    sput-boolean v3, Lcom/android/server/am/ActivityManagerService;->mCMManagedPermissionError:Z
+    #sput-boolean v3, Lcom/android/server/am/ActivityManagerService;->mCMManagedPermissionError:Z
 
     .line 8083
     :cond_c
