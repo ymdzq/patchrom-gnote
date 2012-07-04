@@ -1,7 +1,6 @@
 local-phone-apps = AxT9IME \
                    BackupRestoreConfirmation \
                    BadgeProvider \
-                   Bluetooth \
                    BluetoothAvrcp \
                    BluetoothMap \
                    BluetoothTest \
@@ -46,7 +45,6 @@ local-phone-apps = AxT9IME \
                    SerialNumberLabelIndicator \
                    ShareApp \
                    SharedStorageBackup \
-                   Stk \
                    Street \
                    SurfSetProp \
                    UserDictionaryProvider \
