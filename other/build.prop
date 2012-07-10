@@ -63,10 +63,10 @@ ro.lcd_min_brightness=40
 #
 ro.opengles.version=131072
 ro.sf.lcd_density=320
-ro.config.ringtone=S_Over_the_horizon.ogg
-ro.config.notification_sound=S_Whistle.ogg
+ro.config.ringtone=MI.ogg
+ro.config.notification_sound=FadeIn.ogg
 ro.config.alarm_alert=Good_Morning.ogg
-ro.config.media_sound=Media_preview_Touch_the_light.ogg
+ro.config.media_sound=FadeIn.ogg
 hwui.render_dirty_regions=false
 ro.com.google.clientidbase=android-samsung
 ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html
