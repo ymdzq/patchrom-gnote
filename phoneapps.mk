@@ -46,6 +46,7 @@ local-phone-apps = AxT9IME \
                    ShareApp \
                    SharedStorageBackup \
                    Street \
+				   Stk \
                    SurfSetProp \
                    UserDictionaryProvider \
                    VpnDialogs \
