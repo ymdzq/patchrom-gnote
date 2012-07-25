@@ -3162,7 +3162,7 @@
 
     .end local v0           #animationDrawable:Landroid/graphics/drawable/AnimationDrawable;
     :cond_0
-    const v6, 0x104015b
+    const v6, 0x1040163
 
     invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(I)V
 
