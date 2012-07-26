@@ -2185,6 +2185,8 @@
 
     iput-boolean v8, p0, Landroid/webkit/WebTextView;->mGotTouchDown:Z
 
+    invoke-super {p0, p1}, Landroid/widget/AutoCompleteTextView;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
     .line 819
     const/4 v8, 0x0
 
