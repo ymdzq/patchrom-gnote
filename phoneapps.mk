@@ -59,6 +59,5 @@ local-phone-apps = AxT9IME \
                    wssyncmlnps \
                    ApplicationsProvider \
 				   ScreenCapture \
-				   SMemo_HKTW \
 				   SMemoLite
 #SecCalendar \ #SecCalendarProvider \ #SPlannerAppWidget \

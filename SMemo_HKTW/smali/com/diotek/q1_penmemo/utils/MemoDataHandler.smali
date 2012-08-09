@@ -5791,13 +5791,15 @@
 
     .line 1458
     .local v9, dateFormat:Ljava/lang/String;
-    const-string v0, "-"
+    #const-string v0, "-"
 
-    const-string v1, "."
+    #const-string v1, "."
 
-    invoke-virtual {v9, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    #invoke-virtual {v9, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v9
+    #move-result-object v9
+
+    const-string v9, "yyyy.MM.dd"
 
     .line 1460
     const/4 v10, 0x0

@@ -12,7 +12,7 @@ local-previous-target-dir := ~/workspace/ota_base/gnote
 local-out-zip-file := MIUI_gnote.zip
 
 # All apps from original ZIP, but has smali files chanded
-local-modified-apps := CallSetting OriginalSettings
+local-modified-apps := CallSetting OriginalSettings SMemo_HKTW
 
 local-modified-jars := framework2
 
