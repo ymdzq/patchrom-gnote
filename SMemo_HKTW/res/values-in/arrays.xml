@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Gambar</item>
+        <item>Ambil gambar</item>
+        <item>Seni Klip</item>
+        <item>Papan klip</item>
+        <item>Peta</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Gambar</item>
+        <item>Ambil Gambar</item>
+        <item>Seni Klip</item>
+        <item>Peta</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Olah Pesan</item>
+        <item>Picasa</item>
+        <item>Email</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Olah Pesan</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>Email</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>Email</item>
+        <item>Pesan</item>
+        <item>SNS</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Peristiwa baru</item>
+        <item>Tugas baru</item>
+        <item>Tautan</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>Ikon Kontak</item>
+        <item>Wallpaper layar depan</item>
+        <item>Kunci layar wallpaper</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Dari papan klip</item>
+        <item>Dari Peta</item>
+    </string-array>
+</resources>

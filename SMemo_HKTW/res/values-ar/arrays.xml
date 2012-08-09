@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>صورة</item>
+        <item>التقاط صورة</item>
+        <item>مقاطع فنية</item>
+        <item>الحافظة</item>
+        <item>الخريطة</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>صورة</item>
+        <item>التقاط صورة</item>
+        <item>مقاطع فنية</item>
+        <item>الخريطة</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>البلوتوث</item>
+        <item>Gmail</item>
+        <item>المراسلة‬</item>
+        <item>Picasa</item>
+        <item>بريد إلكتروني</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>البلوتوث</item>
+        <item>Gmail</item>
+        <item>المراسلة‬</item>
+        <item>Picasa</item>
+        <item>مخطط S</item>
+        <item>بريد إلكتروني</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>بريد إلكتروني</item>
+        <item>رسالة</item>
+        <item>SNS</item>
+        <item>مخطط S</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>حدث جديد</item>
+        <item>مهمة جديدة</item>
+        <item>ارتباط</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>رمز جهة الاتصال</item>
+        <item>خلفية الشاشة الرئيسية</item>
+        <item>خلفية شاشة القفل</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>من الحافظة</item>
+        <item>من الخرائط</item>
+    </string-array>
+</resources>

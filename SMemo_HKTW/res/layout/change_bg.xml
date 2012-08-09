@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/skinselect_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Gallery android:id="@id/gallery" android:layout_width="fill_parent" android:layout_height="470.0dip" android:spacing="20.0dip" />
+        <TextView android:textSize="21.0dip" android:textColor="#ffffffff" android:id="@id/bgText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/gallery" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/tw_softkeyview_bg" android:layout_width="fill_parent" android:layout_height="109.0px" android:layout_alignParentBottom="true">
+        <Button android:id="@id/okBtn" android:background="@drawable/drawable_winset_btn" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="@string/set_skin" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

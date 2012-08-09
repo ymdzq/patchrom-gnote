@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/totallayout" android:clickable="true" android:layout_width="238.5dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/arrow" android:background="@drawable/drawingpad_bg_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/titlelayout" android:background="@drawable/drawingpad_bg_top" android:focusable="true" android:layout_width="fill_parent" android:layout_height="28.5dip" android:layout_marginTop="8.0dip" android:text="@string/pen_setting" android:contentDescription="@string/access_pensetting" />
+        <ImageButton android:id="@id/btnClosePenSetting" android:background="@drawable/drawable_setting_close_btn" android:focusable="true" android:nextFocusLeft="@id/titlelayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/arrow" android:layout_alignParentRight="true" android:contentDescription="@string/access_close_button" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/parent" android:background="@drawable/drawingpad_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.sec.android.widgetapp.q1_penmemo.ui.widget.PalleteScrollView android:id="@id/scrollview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="474.0px">
+                <RelativeLayout android:id="@id/bg" android:layout_width="fill_parent" android:layout_height="474.0px">
+                    <ImageView android:id="@id/strokepreview" android:background="@drawable/popup_paper_01" android:layout_width="wrap_content" android:layout_height="109.0px" android:layout_marginLeft="14.0px" android:layout_marginTop="5.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/typelayout" android:layout_width="wrap_content" android:layout_height="108.0px" android:layout_marginLeft="14.0px" android:layout_marginTop="5.0dip" android:layout_below="@id/strokepreview">
+                        <ImageButton android:id="@id/pentype_1" android:background="@drawable/drawable_pen_type_1" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageButton android:id="@id/pentype_2" android:background="@drawable/drawable_pen_type_2" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageButton android:id="@id/pentype_3" android:background="@drawable/drawable_pen_type_3" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageButton android:id="@id/pentype_4" android:background="@drawable/drawable_pen_type_4" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/seeklayout" android:layout_width="440.0px" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="9.0px" android:layout_below="@id/typelayout">
+                        <RelativeLayout android:id="@id/sizelayout" android:layout_width="fill_parent" android:layout_height="87.0px">
+                            <SeekBar android:id="@id/pen_size_seekbar" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="165.0dip" android:layout_height="30.0dip" android:layout_marginLeft="11.0px" android:layout_marginTop="11.0dip" android:max="39" android:progressDrawable="@drawable/drawable_seek_bar" android:thumb="@drawable/drawable_slider_handle" />
+                            <ImageView android:id="@id/penSizeCircle" android:background="@drawable/pen_size_bg" android:padding="0.0dip" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/pen_size_seekbar" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/alphalayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="85.0px">
+                            <SeekBar android:id="@id/opa_thickness" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="165.0dip" android:layout_height="30.0dip" android:layout_marginLeft="11.0px" android:layout_marginTop="6.0dip" android:max="69" android:progress="35" android:progressDrawable="@drawable/drawable_seek_bar" android:thumb="@drawable/drawable_slider_opa_handle" />
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="1.5dip" android:layout_toRightOf="@id/opa_thickness">
+                                <ImageView android:id="@id/opa_size" android:background="@drawable/pen_size_bg" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                                <ImageView android:id="@id/opa_bg" android:background="@drawable/pen_opacity_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                                <ImageView android:id="@id/opa" android:background="@drawable/pen_opacity_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                                <ImageView android:id="@id/opa_shadow" android:background="@drawable/pen_opacity_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@id/colorpickerlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0px" android:layout_marginTop="359.0px">
+                        <com.diotek.q1_penmemo.widget.ColorPickerView android:id="@id/colorpicker" android:clickable="true" android:layout_width="431.0px" android:layout_height="111.0px" android:layout_marginLeft="4.0px" />
+                        <com.diotek.q1_penmemo.widget.GrdientColorPicker android:id="@id/gradience" android:visibility="gone" android:clickable="true" android:layout_width="424.0px" android:layout_height="102.0px" android:layout_marginLeft="8.0px" android:layout_marginTop="2.0px" android:layout_below="@id/colorpicker" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </com.sec.android.widgetapp.q1_penmemo.ui.widget.PalleteScrollView>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="right" android:id="@id/scrollThumbLayout" android:background="@drawable/drawingpad_bg_04_3" android:visibility="gone" android:layout_width="72.0px" android:layout_height="fill_parent">
+            <ImageView android:id="@id/scrollthumb" android:background="@drawable/drawable_scroll_handle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.5px" android:layout_marginTop="31.0px" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:id="@id/bottomlayout" android:background="@drawable/drawingpad_bg_2_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/expand" android:background="#00000000" android:paddingLeft="7.5dip" android:paddingTop="2.5px" android:paddingRight="7.5dip" android:paddingBottom="2.5dip" android:focusable="false" android:layout_width="30.0dip" android:layout_height="20.0dip" android:layout_marginLeft="208.0px" android:src="@drawable/expand_icon_01" />
+    </LinearLayout>
+</LinearLayout>

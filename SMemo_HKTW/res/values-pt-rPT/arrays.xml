@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Imagem</item>
+        <item>Tirar fotografia</item>
+        <item>Clip art</item>
+        <item>Área de transferência</item>
+        <item>Mapa</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Imagem</item>
+        <item>Tirar fotografia</item>
+        <item>Clip art</item>
+        <item>Mapa</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Mensagens</item>
+        <item>Picasa</item>
+        <item>E-mail</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Mensagens</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>E-mail</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>E-mail</item>
+        <item>Mensagem</item>
+        <item>SNS</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Novo evento</item>
+        <item>Nova tarefa</item>
+        <item>Ligação</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>Ícone de contacto</item>
+        <item>Fundo do ecrã princ.</item>
+        <item>Bloq. fundo ecrã pri.</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Da área de transf</item>
+        <item>Dos Mapas</item>
+    </string-array>
+</resources>

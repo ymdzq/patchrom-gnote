@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="supportCellSizeArray">
+        <item>1x1</item>
+        <item>1x2</item>
+        <item>1x3</item>
+        <item>1x4</item>
+        <item>1x5</item>
+        <item>2x1</item>
+        <item>2x2</item>
+        <item>2x3</item>
+        <item>2x4</item>
+        <item>2x5</item>
+        <item>3x1</item>
+        <item>3x2</item>
+        <item>3x3</item>
+        <item>3x4</item>
+        <item>3x5</item>
+        <item>4x1</item>
+        <item>4x2</item>
+        <item>4x3</item>
+        <item>4x4</item>
+        <item>4x5</item>
+        <item>5x1</item>
+        <item>5x2</item>
+        <item>5x3</item>
+        <item>5x4</item>
+        <item>5x5</item>
+    </string-array>
+    <string-array name="add_picture_item">
+        <item>Picture</item>
+        <item>Take picture</item>
+        <item>Clip art</item>
+        <item>Clipboard</item>
+        <item>Map</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Picture</item>
+        <item>Take picture</item>
+        <item>Clip art</item>
+        <item>Map</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Messaging</item>
+        <item>Picasa</item>
+        <item>Email</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Messaging</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>Email</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>Email</item>
+        <item>Message</item>
+        <item>SNS</item>
+        <item>S Planner</item>
+        <item>Wi-fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>New event</item>
+        <item>New task</item>
+        <item>Link</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>Contact icon</item>
+        <item>Home screen wallpaper</item>
+        <item>Lock screen wallpaper</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>From clipboard</item>
+        <item>From Maps</item>
+    </string-array>
+    <string-array name="hwr_lanuge_List">
+        <item>\?!.,@</item>
+        <item>123</item>
+        <item>한국어</item>
+        <item>English (US)</item>
+        <item>English (UK)</item>
+        <item>Austria</item>
+        <item>Euskal</item>
+        <item>Català</item>
+        <item>Dansk</item>
+        <item>Nederlands</item>
+        <item>Suomi</item>
+        <item>Flemish</item>
+        <item>Français</item>
+        <item>Galego</item>
+        <item>Gaelic</item>
+        <item>Deutsch</item>
+        <item>Íslenska</item>
+        <item>Gaeilge</item>
+        <item>Italiano</item>
+        <item>Norsk bokmål</item>
+        <item>Português</item>
+        <item>Español</item>
+        <item>Svenska</item>
+        <item>Bahasa Indonesia</item>
+        <item>Melayu</item>
+        <item>Shqiptar</item>
+        <item>Hrvatski</item>
+        <item>Čeština</item>
+        <item>Eesti keel</item>
+        <item>Magyar</item>
+        <item>Latviešu</item>
+        <item>Lietuvių</item>
+        <item>Polski</item>
+        <item>Română</item>
+        <item>Serbocroatian</item>
+        <item>Slovenčina</item>
+        <item>Slovenščina</item>
+        <item>Tatar</item>
+        <item>Türkçe</item>
+        <item>Oromo</item>
+        <item>Sotho</item>
+        <item>Swahili</item>
+        <item>Swazi</item>
+        <item>Xhosa</item>
+        <item>Zulu</item>
+        <item>Fijian</item>
+        <item>Maori</item>
+        <item>Samoan</item>
+        <item>Tahitian</item>
+        <item>Tongan</item>
+        <item>Ελληνικ</item>
+        <item>Беларуская</item>
+        <item>Български</item>
+        <item>Македонски</item>
+        <item>Pусский</item>
+        <item>Српски</item>
+        <item>Serbocroatian</item>
+        <item>Tatar (Cyrillic)</item>
+        <item>Українська</item>
+        <item>Mongolian</item>
+        <item>Қазақша</item>
+        <item>עברית</item>
+        <item>日本語</item>
+        <item>中文 (简体)</item>
+        <item>中文 (中華人民共和國香港特別行政區)</item>
+        <item>中文 (繁體)</item>
+    </string-array>
+</resources>

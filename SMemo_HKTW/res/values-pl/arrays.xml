@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Obraz</item>
+        <item>Zrób zdjęcie</item>
+        <item>Obrazek</item>
+        <item>Schowek</item>
+        <item>Mapa</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Obraz</item>
+        <item>Zrób zdjęcie</item>
+        <item>Obrazek</item>
+        <item>Mapa</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Wiadomości</item>
+        <item>Picasa</item>
+        <item>Email</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Wiadomości</item>
+        <item>Picasa</item>
+        <item>Terminarz S</item>
+        <item>Email</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>Email</item>
+        <item>Wiadomość</item>
+        <item>Usługa SNS</item>
+        <item>Terminarz S</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Nowe wydarzenie</item>
+        <item>Nowe zadanie</item>
+        <item>Łącze</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>Ikona kontaktów</item>
+        <item>Tapeta ekranu start.</item>
+        <item>Tapeta ekranu blokady</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Ze schowka</item>
+        <item>Z map</item>
+    </string-array>
+</resources>

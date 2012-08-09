@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/voice_layout" android:layout_width="292.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/voice_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/arrow_up" android:paddingLeft="229.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ploating_popup_picker_up" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/voice_layout_main" android:background="@drawable/pen_voice_bg_01" android:layout_width="fill_parent" android:layout_height="42.0dip">
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/button_with_sigle_icon_record" android:background="@drawable/voice_record_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:paddingTop="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pen_voice_rec2" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/voice_text_color" android:id="@id/tv_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/record" android:singleLine="true" />
+                </LinearLayout>
+                <ImageButton android:id="@id/button_with_sigle_icon_start" android:background="@drawable/voice_record_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pen_voice_play_n" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/button_with_multi_icon_left" android:background="@drawable/voice_record_multi_buttons_left_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pen_voice_stop_n" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageButton android:id="@id/button_with_multi_icon_right_start" android:background="@drawable/voice_record_multi_buttons_right_background" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pen_voice_pause_n" />
+                        <LinearLayout android:orientation="horizontal" android:id="@id/pause_cancel_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageButton android:id="@id/pause_for_recording" android:background="@drawable/voice_record_multi_buttons_center_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pen_voice_pause_n" />
+                            <ImageButton android:id="@id/button_with_multi_icon_right_cancel" android:background="@drawable/voice_record_multi_buttons_right_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pen_voice_cancel2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/voice_show_playtime" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageButton android:id="@id/voice_image_recoding_dim" android:background="@drawable/pen_voice_rec_dim" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageButton android:id="@id/voice_image_recoding" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <TextView android:textSize="18.5sp" android:textColor="@color/voice_text_tran_color" android:id="@id/recording_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="14.5sp" android:textColor="@color/voice_text_color" android:id="@id/voice_recognized_text" android:paddingLeft="28.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/show_record_porgress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip">
+                    <SeekBar android:id="@id/vr_progress" android:paddingLeft="0.0dip" android:paddingTop="7.5dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:progressDrawable="@drawable/drawable_voice_seekbar" android:thumb="@drawable/trasparents" android:layout_centerVertical="true" />
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/voice_text_color" android:layout_gravity="left" android:id="@id/timeText_playtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        <View android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/voice_text_color" android:layout_gravity="right" android:id="@id/timeText_endtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/voice_layout_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.5sp" android:textColor="@color/voice_text_color" android:gravity="center" android:id="@id/voice_replace" android:background="@drawable/voice_record_playstate_bottom_left_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/replace" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="14.5sp" android:textColor="@color/voice_text_color" android:gravity="center" android:id="@id/voice_delete" android:background="@drawable/voice_record_playstate_bottom_right_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/delete" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

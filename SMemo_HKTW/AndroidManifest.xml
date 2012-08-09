@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="5526" android:versionName="12.05.10.5526" package="com.sec.android.widgetapp.diotek.smemo"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="14" />
+    <application android:theme="@style/MyNoTitleBar" android:label="@string/app_name" android:icon="@drawable/mainmenu_ic_pen_memo" android:name="com.sec.android.widgetapp.q1_penmemo.SMemoApp" android:hardwareAccelerated="false" android:largeHeap="true">
+        <uses-library android:name="touchwiz" />
+        <uses-library android:name="com.google.android.maps" />
+        <uses-library android:name="secmediarecorder" />
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.MemoListActivity" android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.diotek.penmemo_list" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PENMEMO_ATTACH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="intent.smemo.list" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="intent.smemo.pick" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.EditActivity" android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.diotek.penmemo" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.READ" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.diotek.penmemo" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.diotek.penmemo" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="intent.smemo.splanner" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEMO_CREATE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.ChangeBackgroundActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.WidgetImageLauncher" android:configChanges="keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter>
+                <action android:name="intent.smemo.INSERT_IMAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.SplannerLauncher" android:configChanges="keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter>
+                <action android:name="intent.smemo.edit" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DELETE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.diotek.penmemo" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.MemoViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/vnd.diotek.penmemo_view" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.DeviceDefault" android:label="@string/settings" android:name="com.sec.android.widgetapp.q1_penmemo.SettingMenuActivity">
+            <intent-filter />
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.RecognizedActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize" />
+        <activity android:theme="@android:style/Theme.DeviceDefault" android:label="@string/add_tag" android:name="com.sec.android.widgetapp.q1_penmemo.TagEditActivity" android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.PasswordLockUI" android:configChanges="locale|keyboardHidden|uiMode">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@style/MyTranslucentNoTitleBar" android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.PasswordDialog" android:configChanges="locale|keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.smemo.PINLOCK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MyTranslucent" android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.GoogleDocsLogin" android:configChanges="keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@style/MyTranslucent" android:name="com.sec.android.widgetapp.q1_penmemo.NoteSyncActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize" />
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.ClipArtActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.GoogleDocsSync" android:configChanges="keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter />
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.DioMapActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize" />
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.TutorialActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize" />
+        <activity android:theme="@android:style/Theme.DeviceDefault" android:label="@string/hw_update" android:name="com.sec.android.widgetapp.q1_penmemo.LanguageUpdateActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize" />
+        <activity android:theme="@style/MyTranslucent" android:name="com.sec.android.widgetapp.q1_penmemo.VNoteReader" android:configChanges="keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/x-vnote" />
+            </intent-filter>
+        </activity>
+        <provider android:name="com.sec.android.widgetapp.q1_penmemo.PenMemoProvider" android:readPermission="com.sec.android.widgetapp.q1_penmemo.permission.READ" android:writePermission="com.sec.android.widgetapp.q1_penmemo.permission.WRITE" android:authorities="com.sec.android.widgetapp.q1_penmemo" />
+        <provider android:name="com.diotek.q1_penmemo.utils.SettingsProvider" android:readPermission="com.sec.android.widgetapp.q1_penmemo.permission.READ" android:writePermission="com.sec.android.widgetapp.q1_penmemo.permission.WRITE" android:authorities="com.sec.android.widgetapp.diotek.smemo" />
+        <receiver android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.PaperWidget">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider" />
+            <meta-data android:name="com.sec.android.appwidget.widgetinfo" android:resource="@xml/widgetinfo" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="com.sec.android.widgetapp.q1_penmemo.CLICK_NEW_PAPER" />
+                <action android:name="com.sec.android.widgetapp.q1_penmemo.CLICK_PAPER" />
+                <action android:name="com.sec.android.widgetapp.q1_penmemo.delete" />
+                <action android:name="com.sec.android.widgetapp.q1_penmemo.update" />
+                <action android:name="com.sec.android.widgetapp.q1_penmemo.updates" />
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE" />
+                <action android:name="com.sec.android.widgetapp.DUMMY1CREATE" />
+                <action android:name="com.sec.android.widgetapp.DUMMY2CREATE" />
+                <action android:name="com.sec.android.widgetapp.DUMMY3CREATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/widget_direct" android:icon="@drawable/thumb_smemo_shortcut" android:name="com.sec.android.widgetapp.q1_penmemo.ManagerWidget">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_manager" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.smemo.TEXT_CREATE" />
+                <action android:name="android.appwidget.smemo.DRAW_CREATE" />
+                <action android:name="android.appwidget.smemo.IMG_CREATE" />
+                <action android:name="android.appwidget.smemo.VOICE_CREATE" />
+                <action android:name="android.appwidget.smemo.MEMO_SEARCH" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.widgetapp.q1_penmemo.SDCardDetectedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.sec.android.widgetapp.q1_penmemo" />
+                <action android:name="android.intent.action.CLIPBOARD_TO_MEMO_INSERT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sec.android.widgetapp.q1_penmemo.SwicherCreator">
+            <intent-filter>
+                <action android:name="com.sec.android.widgetapp.start_service" />
+                <action android:name="com.sec.android.widgetapp.start_service_for_clipboard" />
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/MyTranslucent" android:name="com.sec.android.smemo.searchable.MemoSearchable" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:windowSoftInputMode="stateAlwaysVisible|adjustPan">
+            <intent-filter>
+                <action android:name="com.sec.android.smemo.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.sec.android.widgetapp.q1_penmemo.WidgetLauncher" android:configChanges="keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.WIDGET_MANAGER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sec.android.widgetapp.q1_penmemo.SearchedResultActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|uiMode|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+            <intent-filter>
+                <action android:name="smemo.intent.action.suggest" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+    <permission android:label="READ_SMEMO" android:name="com.sec.android.widgetapp.q1_penmemo.permission.READ" android:protectionLevel="normal" />
+    <permission android:label="WRITE_SMEMO" android:name="com.sec.android.widgetapp.q1_penmemo.permission.WRITE" android:protectionLevel="normal" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sec.android.widgetapp.q1_penmemo.permission.READ" />
+    <uses-permission android:name="com.sec.android.widgetapp.q1_penmemo.permission.WRITE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-feature android:name="samsung.hardware.input.s-pen" />
+</manifest>

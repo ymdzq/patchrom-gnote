@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>عکس</item>
+        <item>عکس گرفتن</item>
+        <item>تصاوير دستگاه</item>
+        <item>کلیپ بورد</item>
+        <item>نقشه</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>عکس</item>
+        <item>عکس گرفتن</item>
+        <item>تصاوير دستگاه</item>
+        <item>نقشه</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>بلوتوث</item>
+        <item>Gmail</item>
+        <item>پيام رسانی</item>
+        <item>Picasa</item>
+        <item>ایمیل</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>بلوتوث</item>
+        <item>Gmail</item>
+        <item>پيام رسانی</item>
+        <item>Picasa</item>
+        <item>برنامه ریز صوتی</item>
+        <item>ایمیل</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>ایمیل</item>
+        <item>پيام</item>
+        <item>SNS</item>
+        <item>برنامه ریز صوتی</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>رویداد جدید</item>
+        <item>کار جدید</item>
+        <item>پیوند</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>نماد مخاطب</item>
+        <item>تصویر زمینه صفحه اصلی</item>
+        <item>تصویر زمینه صفحه قفل</item>
+        <item>نوار ابزار</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>از کلیپ بورد</item>
+        <item>از نقشه ها</item>
+    </string-array>
+</resources>

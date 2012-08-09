@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>ギャラリー</item>
+        <item>カメラ起動</item>
+        <item>クリップ​アート</item>
+        <item>クリップ​ボード</item>
+        <item>地図</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>ギャラリー</item>
+        <item>カメラ起動</item>
+        <item>クリップ​アート</item>
+        <item>地図</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>SMS</item>
+        <item>Picasa</item>
+        <item>Eメール</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>SMS</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>Eメール</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>Eメール</item>
+        <item>SMS</item>
+        <item>SNS</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>新規イベント</item>
+        <item>新規タスク</item>
+        <item>リンク先</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>連絡先​の画像</item>
+        <item>ホーム​画面​の​壁紙</item>
+        <item>画面ロック時の壁紙</item>
+        <item>ウィジェット</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>クリップボードから</item>
+        <item>マップから</item>
+    </string-array>
+</resources>

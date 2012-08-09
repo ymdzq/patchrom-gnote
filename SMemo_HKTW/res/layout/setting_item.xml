@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/extralayout" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginRight="8.5dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/round_ic" android:background="@drawable/drawable_more_background" android:visibility="gone" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drawable_more_source" android:layout_centerInParent="true" />
+            <CheckBox android:id="@id/checkbox" android:background="@drawable/trasparents" android:focusable="false" android:visibility="gone" android:clickable="false" android:duplicateParentState="true" android:layout_width="40.0dip" android:layout_height="45.0dip" android:button="@drawable/drawable_checkbox_list" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="21.5dip" android:layout_toLeftOf="@id/extralayout" android:layout_alignParentLeft="true">
+            <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0dip" android:textColor="#ff5c8398" android:layout_gravity="center_vertical" android:id="@id/sub_title" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

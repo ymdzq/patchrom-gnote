@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_play_clip_start" android:id="@id/MapModeMenu_Src" android:title="@string/map_src_pos" />
+    <item android:icon="@drawable/ic_menu_map_dst" android:id="@id/MapModeMenu_Dest" android:title="@string/map_dest_pos" />
+    <item android:icon="@drawable/ic_menu_go_to_move_contacts" android:id="@id/MapModeMenu_Route" android:title="@string/map_route" />
+    <item android:icon="@drawable/ic_menu_clearhistory" android:id="@id/MapModeMenu_Clear" android:title="@string/map_clear" />
+</menu>

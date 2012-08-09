@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/rootLayout" android:background="@drawable/penmemo_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/topTitleBarArea" android:background="@drawable/memo_header_bg" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/homeBtn" android:background="@drawable/drawable_home" android:focusable="true" android:clickable="true" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                    <ImageView android:layout_gravity="center_vertical" android:background="#00000000" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/tw_ic_ab_back_holo_dark" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="#00000000" android:paddingRight="8.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/smemo_app_icon" />
+                </LinearLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/homeBtn">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/top_right_button_layer" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/save_layout" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <View android:layout_gravity="center_vertical" android:background="@drawable/smemo_tab_divider" android:layout_width="1.0dip" android:layout_height="21.5dip" />
+                            <ImageView android:id="@id/save_btn" android:background="#00000000" android:duplicateParentState="true" android:layout_width="37.0dip" android:layout_height="fill_parent" android:src="@drawable/drawable_done_btn_actionbar" android:scaleType="center" android:contentDescription="@string/access_create_s_memo" />
+                            <TextView android:textSize="17.0dip" android:textColor="@color/color_actionbar_text" android:gravity="center_vertical" android:id="@id/save_text" android:background="#00000000" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxWidth="60.0dip" android:text="@string/save" android:includeFontPadding="false" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/cancel_layout" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <View android:layout_gravity="center_vertical" android:background="@drawable/smemo_tab_divider" android:layout_width="1.0dip" android:layout_height="21.5dip" />
+                            <ImageView android:id="@id/cancel_btn" android:background="#00000000" android:duplicateParentState="true" android:layout_width="37.0dip" android:layout_height="fill_parent" android:src="@drawable/drawable_cancel_btn_actionbar" android:scaleType="center" />
+                            <TextView android:textSize="17.0dip" android:textColor="@color/color_actionbar_text" android:gravity="center_vertical" android:id="@id/cancel_text" android:background="#00000000" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxWidth="60.0dip" android:text="@string/cancel" android:includeFontPadding="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="17.0dip" android:textColor="@color/color_actionbar_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title_text" android:background="#00000000" android:paddingRight="5.0dip" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/recognized_text" android:singleLine="true" android:capitalize="sentences" android:layout_weight="1.0" android:layout_toLeftOf="@id/top_right_button_layer" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/canvasParent" android:paddingLeft="4.0dip" android:paddingTop="5.0px" android:paddingRight="4.0dip" android:paddingBottom="8.0dip" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ScrollView android:scrollbarStyle="insideOverlay" android:id="@id/scrollview_text" android:scrollbars="vertical" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="180.0dip">
+                    <RelativeLayout android:id="@id/textViewParent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.sec.android.widgetapp.q1_penmemo.ui.widget.DioRecogEditText android:textColorHighlight="#ff33b5e5" android:id="@id/recognizeTextView" android:background="#5500ff00" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="22" />
+                    </RelativeLayout>
+                </ScrollView>
+                <LinearLayout android:id="@id/scrollview_image_layout" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/scrollview_text">
+                    <com.diotek.q1_penmemo.widget.DioScrollView android:scrollbarStyle="insideOverlay" android:id="@id/scrollview_image" android:scrollbars="vertical" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <RelativeLayout android:id="@id/imageViewParent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:orientation="vertical" android:id="@id/popup_selected" android:background="@drawable/ink_line_select" android:padding="0.0px" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <ImageButton android:id="@id/resize_left_top" android:background="@drawable/resize_2" android:layout_width="@dimen/resize_button_width" android:layout_height="@dimen/resize_button_width" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                                    <ImageButton android:id="@id/resize_center_top" android:background="@drawable/resize_4" android:layout_width="@dimen/resize_button_width" android:layout_height="@dimen/resize_button_width" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                                    <ImageButton android:id="@id/resize_right_top" android:background="@drawable/resize_1" android:layout_width="@dimen/resize_button_width" android:layout_height="@dimen/resize_button_width" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                                    <ImageButton android:id="@id/resize_left_center" android:background="@drawable/resize_3" android:layout_width="@dimen/resize_button_width" android:layout_height="@dimen/resize_button_width" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                                    <ImageButton android:id="@id/resize_right_center" android:background="@drawable/resize_3" android:layout_width="@dimen/resize_button_width" android:layout_height="@dimen/resize_button_width" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                    <ImageButton android:id="@id/resize_left_bottom" android:background="@drawable/resize_1" android:layout_width="@dimen/resize_button_width" android:layout_height="@dimen/resize_button_width" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                                    <ImageButton android:id="@id/resize_center_bottom" android:background="@drawable/resize_4" android:layout_width="@dimen/resize_button_width" android:layout_height="@dimen/resize_button_width" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                                    <ImageButton android:id="@id/resize_right_bottom" android:background="@drawable/resize_2" android:layout_width="@dimen/resize_button_width" android:layout_height="@dimen/resize_button_width" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <com.sec.android.widgetapp.q1_penmemo.ui.widget.RecognizeImageView android:id="@id/recognizeImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="matrix" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ploating_popup_recognize" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:id="@id/ploating_popup_recognize_arrow_up" android:background="@drawable/ploating_popup_picker_up" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <Button android:textSize="6.0pt" android:textColor="#ff413f3b" android:id="@id/button_ploating_popup_recognize" android:background="@drawable/drawable_recognize_popup_bg" android:layout_width="276.0px" android:layout_height="68.0px" android:text="@string/recognize_to_text" />
+                                <ImageView android:id="@id/ploating_popup_recognize_arrow_down" android:background="@drawable/ploating_popup_picker_down" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </com.diotek.q1_penmemo.widget.DioScrollView>
+                </LinearLayout>
+                <ImageButton android:id="@id/button_line" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="-15.0dip" android:scaleType="fitCenter" android:layout_below="@id/scrollview_text" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout_word_candidate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginRight="20.0px" android:layout_marginBottom="6.5dip" android:layout_above="@id/button_line">
+                    <ImageButton android:id="@id/button_word_candidate_left" android:background="@drawable/drawable_candidate_button_left" android:layout_width="68.0px" android:layout_height="84.0px" android:src="@drawable/text_arrow_left" />
+                    <ImageButton android:id="@id/button_word_candidate_retry" android:background="@drawable/drawable_text_bg_center" android:layout_width="84.0px" android:layout_height="84.0px" android:src="@drawable/text_retry" />
+                    <ImageView android:id="@id/button_word_candidate_retry_divider" android:background="@drawable/drawable_text_bg_center" android:layout_width="2.0px" android:layout_height="84.0px" android:src="@drawable/text_bg_divider_retry" />
+                    <com.diotek.q1_penmemo.widget.DioCandidateView android:id="@id/word_candidates" android:background="@drawable/drawable_text_bg_center" android:layout_width="wrap_content" android:layout_height="84.0px" android:layout_weight="1.0" />
+                    <ImageButton android:id="@id/button_word_candidate_right" android:background="@drawable/drawable_candidate_button_right" android:layout_width="68.0px" android:layout_height="84.0px" android:src="@drawable/text_arrow_right" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout_candidate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginTop="3.0px" android:layout_marginRight="20.0px" android:layout_below="@id/button_line">
+                    <ImageButton android:id="@id/button_candidate_left" android:background="@drawable/drawable_candidate_button_left" android:layout_width="68.0px" android:layout_height="84.0px" android:src="@drawable/text_arrow_left" />
+                    <com.diotek.q1_penmemo.widget.DioCandidateView android:id="@id/candidates" android:background="@drawable/drawable_text_bg_center" android:layout_width="wrap_content" android:layout_height="84.0px" android:layout_weight="1.0" />
+                    <ImageButton android:id="@id/button_candidate_right" android:background="@drawable/drawable_candidate_button_right" android:layout_width="68.0px" android:layout_height="84.0px" android:src="@drawable/text_arrow_right" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

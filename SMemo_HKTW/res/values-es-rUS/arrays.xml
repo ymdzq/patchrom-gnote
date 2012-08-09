@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Imagen</item>
+        <item>Tomar foto</item>
+        <item>Clipart</item>
+        <item>Portapapeles</item>
+        <item>Mapa</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Imagen</item>
+        <item>Tomar foto</item>
+        <item>Clipart</item>
+        <item>Mapa</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Mensaje</item>
+        <item>Picasa</item>
+        <item>Correo</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Mensaje</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>Correo</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>Correo</item>
+        <item>Mensaje</item>
+        <item>SNS</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Evento nuevo</item>
+        <item>Nueva tarea</item>
+        <item>Vínculo</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>ID del llamante</item>
+        <item>Fondo pantalla inic.</item>
+        <item>Fondo pantalla bloq.</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Del portapapeles</item>
+        <item>Desde Mapas</item>
+    </string-array>
+</resources>

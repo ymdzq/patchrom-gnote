@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/penmemo_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/searched_title_layout" android:background="@drawable/penmemo_title" android:paddingBottom="20.0px" android:layout_width="fill_parent" android:layout_height="67.5dip" android:layout_marginBottom="-3.5dip">
+        <TextView android:textSize="@dimen/font_size_44" android:textColor="@color/color_1" android:ellipsize="end" android:id="@id/searched_memo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/searched_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_view_item_background" android:cacheColorHint="#00000000" android:divider="#ffc7b8a0" android:dividerHeight="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/searched_nomemo_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/penmemo_noitems" />
+                <TextView android:textSize="24.0sp" android:textColor="#ff604830" android:id="@id/searched_nomemo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/nomemo" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

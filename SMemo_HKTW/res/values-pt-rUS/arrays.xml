@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Imagem</item>
+        <item>Tirar fotografia</item>
+        <item>Clip art</item>
+        <item>Área de transferência</item>
+        <item>Mapa</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Imagem</item>
+        <item>Tirar foto</item>
+        <item>Clip art</item>
+        <item>Mapa</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>BT</item>
+        <item>Gmail</item>
+        <item>Mensagens</item>
+        <item>Picasa</item>
+        <item>E-mail</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Novo evento</item>
+        <item>Nova tarefa</item>
+        <item>Link</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>ID de chamada</item>
+        <item>Fundo da tela princ.</item>
+        <item>Bloq. fundo tela pri.</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Da área de transf</item>
+        <item>Dos Mapas</item>
+    </string-array>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Слика</item>
+        <item>Сликај</item>
+        <item>Илустрација</item>
+        <item>Посредна меморија</item>
+        <item>Карта</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Слика</item>
+        <item>Сликај</item>
+        <item>Илустрација</item>
+        <item>Карта</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Размена на пораки</item>
+        <item>Picasa</item>
+        <item>Email</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Размена на пораки</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>Email</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>Email</item>
+        <item>Порака</item>
+        <item>Социјална мрежа</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Нов настан</item>
+        <item>Нова задача</item>
+        <item>Линк</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>Икона за контакт</item>
+        <item>Заднина на осн. екран</item>
+        <item>Закл.задн. на екранот</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Од посредна меморија</item>
+        <item>Од Карти</item>
+    </string-array>
+</resources>

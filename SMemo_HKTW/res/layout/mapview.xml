@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/mapLayout" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/topSearchLayout" android:background="@drawable/search_plate2" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_alignParentTop="true">
+        <EditText android:textColorHighlight="#ff33b5e5" android:layout_gravity="center_vertical" android:id="@id/search_edit" android:background="@drawable/drawable_search_edit_bg" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="7.5dip" android:hint="@string/search_hint" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionSearch|flagNoExtractUi" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnSearch" android:background="@drawable/drawable_search_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="3.75dip" android:src="@drawable/ic_btn_search" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnLocation" android:background="@drawable/drawable_search_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.75dip" android:layout_marginRight="10.0dip" android:src="@drawable/drawable_mylocation_btn" />
+    </LinearLayout>
+    <com.sec.android.widgetapp.q1_penmemo.ui.widget.CustomMapView android:enabled="true" android:id="@id/mapView" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomBtnLayout" android:layout_below="@id/topSearchLayout" android:apiKey="0-Af88L-5-74yOgfVloQ7RD_xd1Fa0JS4FiDFgg" />
+    <ImageView android:background="@drawable/search_plate2_bottom" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_below="@id/topSearchLayout" />
+    <LinearLayout android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomBtnLayout" android:layout_below="@id/topSearchLayout">
+        <ImageView android:background="#7f808080" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="250.0dip">
+            <ImageView android:background="#7f808080" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/ivTarget" android:background="#00000000" android:focusable="false" android:clickable="false" android:layout_width="300.0dip" android:layout_height="fill_parent" />
+            <ImageView android:background="#7f808080" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:background="#7f808080" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="10.0sp" android:textColor="#ff444444" android:id="@id/copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/bottomBtnLayout" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottomBtnLayout" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.5dip" android:layout_width="fill_parent" android:layout_height="54.5dip" android:layout_alignParentBottom="true" style="@android:style/ButtonBar">
+        <Button android:id="@id/capture_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:text="@string/map_capture" android:layout_weight="1.0" />
+        <Button android:id="@id/cancel_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@string/map_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

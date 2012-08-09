@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Картинка</item>
+        <item>Сделать снимок</item>
+        <item>Коллекция картинок</item>
+        <item>Буфер обмена</item>
+        <item>Карта</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Картинка</item>
+        <item>Сделать фото</item>
+        <item>Коллекция картинок</item>
+        <item>Карта</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Сообщения</item>
+        <item>Picasa</item>
+        <item>Электронная почта</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Сообщения</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>Электронная почта</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>Электронная почта</item>
+        <item>Сообщение</item>
+        <item>Социальная сеть</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Новое событие</item>
+        <item>Новая задача</item>
+        <item>Ссылка</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>Значок контакта</item>
+        <item>Обои главного экрана</item>
+        <item>Экран блокировки</item>
+        <item>Виджеты</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Из буфера обмена</item>
+        <item>Из карт</item>
+    </string-array>
+</resources>

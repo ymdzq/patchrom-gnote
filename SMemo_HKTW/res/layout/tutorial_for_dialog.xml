@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:id="@id/tutorial_scroll_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_height="wrap_content" android:text="@string/tutorial_tap_2" style="@style/tutorial_dialog_text" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/motion_tap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@anim/motion_twotap" />
+            <TextView android:id="@id/panning_text" android:layout_height="wrap_content" android:text="@string/tutorial_panning_2" style="@style/tutorial_dialog_text" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/motion_panning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@anim/motion_panning" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <CheckBox android:id="@id/tutorial_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/color_1" android:id="@id/tutorial_checkbox_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/do_not_ask_again" android:soundEffectsEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

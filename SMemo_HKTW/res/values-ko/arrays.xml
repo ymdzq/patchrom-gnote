@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>이미지</item>
+        <item>사진 촬영</item>
+        <item>클립아트</item>
+        <item>클립보드</item>
+        <item>지도</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>이미지</item>
+        <item>사진 촬영</item>
+        <item>클립아트</item>
+        <item>지도</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>블루투스</item>
+        <item>Gmail</item>
+        <item>메시지</item>
+        <item>Picasa</item>
+        <item>이메일</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>블루투스</item>
+        <item>Gmail</item>
+        <item>메시지</item>
+        <item>Picasa</item>
+        <item>S플래너</item>
+        <item>이메일</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>이메일</item>
+        <item>메시지</item>
+        <item>SNS</item>
+        <item>S플래너</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>새 일정</item>
+        <item>새 할 일</item>
+        <item>링크</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>연락처 아이콘</item>
+        <item>홈 화면 배경화면</item>
+        <item>잠금 화면</item>
+        <item>위젯</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>클립보드에서</item>
+        <item>지도에서</item>
+    </string-array>
+</resources>

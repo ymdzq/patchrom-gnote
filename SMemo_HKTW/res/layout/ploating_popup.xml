@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ploating_popup_picker_up" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/buttonlayout" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_below="@id/arrow_up">
+        <RelativeLayout android:id="@id/left_button" android:layout_width="92.0dip" android:layout_height="34.0dip">
+            <Button android:id="@id/object_view" android:background="@drawable/drawable_ploating_big_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageButton android:id="@id/voice_play" android:background="@drawable/drawable_ploating_big_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drawable_ploating_play" />
+        </RelativeLayout>
+        <ImageButton android:id="@id/object_delete" android:background="@drawable/drawable_ploating_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drawable_ploating_delete" android:layout_toRightOf="@id/left_button" />
+        <ImageButton android:id="@id/voice_delete" android:background="@drawable/drawable_ploating_big_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drawable_ploating_delete" android:layout_toRightOf="@id/left_button" />
+        <ImageButton android:id="@id/rotate_left" android:background="@drawable/drawable_ploating_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drawable_ploating_rotate_left" android:layout_toRightOf="@id/object_delete" />
+        <ImageButton android:id="@id/rotate_right" android:background="@drawable/drawable_ploating_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drawable_ploating_rotate_right" android:layout_toRightOf="@id/rotate_left" />
+        <View android:id="@id/devide1" android:background="@drawable/ploating_popup_split" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/left_button" />
+        <View android:id="@id/devide2" android:background="@drawable/ploating_popup_split" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/object_delete" />
+        <View android:id="@id/devide3" android:background="@drawable/ploating_popup_split" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/rotate_left" />
+    </RelativeLayout>
+    <ImageView android:id="@id/arrow_down" android:background="@drawable/ploating_popup_picker_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/buttonlayout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

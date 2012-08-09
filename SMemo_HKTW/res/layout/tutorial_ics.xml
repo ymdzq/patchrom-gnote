@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/penmemo_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/tutorial_title" android:background="@drawable/memo_header_bg" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/homeButton" android:background="@drawable/drawable_home" android:focusable="true" android:clickable="true" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/asUpButton" android:background="#00000000" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/tw_ic_ab_back_holo_dark" />
+            <ImageView android:layout_gravity="center_vertical" android:background="#00000000" android:paddingRight="8.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/smemo_app_icon" />
+        </LinearLayout>
+        <TextView android:textSize="17.0dip" android:textColor="@color/color_actionbar_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title_text" android:background="#00000000" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tutorial" android:singleLine="true" android:layout_weight="1.0" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+    <com.sec.android.widgetapp.q1_penmemo.ui.widget.Tutorial_BG android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="43.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="8.0dip" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/tutorial_title">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8.5dip" android:paddingTop="18.5dip" android:paddingRight="8.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:text="@string/tutorial_tap_1" style="@style/tutorial_text.header" />
+            <TextView android:layout_height="wrap_content" android:text="@string/tutorial_tap_2" style="@style/tutorial_text" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/motion_tap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/motion_two_tap" />
+            <TextView android:layout_marginTop="18.0dip" android:text="@string/tutorial_panning_1" style="@style/tutorial_text.header" />
+            <TextView android:id="@id/tutorial_panning" android:layout_height="wrap_content" android:text="@string/tutorial_panning_2" style="@style/tutorial_text" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/motion_panning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/motion_panning" />
+            <TextView android:layout_marginTop="21.0dip" android:text="@string/tutorial_handwriting" style="@style/tutorial_text.header" />
+            <TextView android:layout_height="wrap_content" android:text="@string/tutorial_text_1" style="@style/tutorial_text" />
+            <TextView android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:text="@string/tutorial_text_2" style="@style/tutorial_text" />
+            <Button android:textSize="@dimen/font_size_36" android:textColor="@color/tutorial_title_color" android:layout_gravity="center_horizontal" android:id="@id/gotosetting" android:background="@drawable/drawable_tutorial_more_icon" android:layout_width="230.0dip" android:layout_height="43.0dip" android:layout_marginBottom="40.0dip" android:text="@string/refer_guide" />
+            <TextView android:text="@string/tutorial_tool_bar" style="@style/tutorial_text.header" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/toutorial_toolbar_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/toolbar" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.5dip">
+                <ImageView android:layout_gravity="top" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:src="@drawable/topicon_vo" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_view_edit_mode" style="@style/tutorial_text.header2" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_view_edit_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:layout_marginTop="2.0dip" android:src="@drawable/topicon_pen_pencil" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_pen_selection_mode" style="@style/tutorial_text.header2" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_tool_pen_btn_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:layout_marginTop="-1.0dip" android:src="@drawable/topicon_text" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_text_selection_mode" style="@style/tutorial_text.header2" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_tool_text_btn_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:src="@drawable/topicon_eraser" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_erase_selection_mode" style="@style/tutorial_text.header2" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_tool_erase_btn_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:src="@drawable/topicon_undo_n" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_undo" style="@style/tutorial_text.header2" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:src="@drawable/topicon_redo_n" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_redo" style="@style/tutorial_text.header2" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:layout_marginTop="1.0dip" android:src="@drawable/topicon_insert" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_insert_selection_mode" style="@style/tutorial_text.header3" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_insert_selection_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:layout_marginTop="2.0dip" android:src="@drawable/topicon_voice" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_tool_record_btn" style="@style/tutorial_text.header3" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_tool_record_btn_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:src="@drawable/topicon_star_on" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_tool_favorite_btn" style="@style/tutorial_text.header2" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_tool_favorite_btn_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:layout_width="32.5dip" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:layout_marginTop="1.0dip" android:src="@drawable/headericon_plus" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_create" style="@style/tutorial_text.header2" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_new_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:visibility="invisible" android:layout_width="28.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:src="@drawable/headericon_save" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/save" style="@style/tutorial_text.header2" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_save_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/view_mode_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:visibility="invisible" android:layout_width="28.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-1.5dip" android:layout_marginTop="2.0dip" android:src="@drawable/headericon_cancel" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="1.0">
+                    <TextView android:text="@string/tutorial_close" style="@style/tutorial_text.header2" />
+                    <TextView android:layout_height="wrap_content" android:text="@string/tutorial_cancel_desc" style="@style/tutorial_content_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

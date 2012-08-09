@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>圖片</item>
+        <item>拍攝圖片</item>
+        <item>美工圖案</item>
+        <item>剪貼簿</item>
+        <item>地圖</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>圖片</item>
+        <item>拍照</item>
+        <item>美工圖案</item>
+        <item>地圖</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>藍牙</item>
+        <item>Gmail</item>
+        <item>正在傳送訊息</item>
+        <item>Picasa</item>
+        <item>電子郵件</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>藍牙</item>
+        <item>Gmail</item>
+        <item>正在傳送訊息</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>電子郵件</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>電子郵件</item>
+        <item>訊息</item>
+        <item>SNS</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>新的活動</item>
+        <item>新工作</item>
+        <item>連結</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>聯絡人圖示</item>
+        <item>螢幕桌布</item>
+        <item>鎖定螢幕桌布</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>從剪貼簿</item>
+        <item>從地圖</item>
+    </string-array>
+</resources>

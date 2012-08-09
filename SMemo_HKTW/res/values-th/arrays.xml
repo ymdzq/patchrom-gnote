@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>รูป​ภาพ</item>
+        <item>ถ่าย​รูป</item>
+        <item>ภาพ​ตัด​ปะ</item>
+        <item>คลิ​ป​บอร์ด</item>
+        <item>แผนที่</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>รูป​ภาพ</item>
+        <item>ใส่​รูป​ภาพ</item>
+        <item>ภาพ​ตัด​ปะ</item>
+        <item>แผนที่</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>BT</item>
+        <item>Gmail</item>
+        <item>การ​ส่ง​ข้อ​ความ</item>
+        <item>Picasa</item>
+        <item>อี​เมล์</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>บลู​ทู​ธ</item>
+        <item>Gmail</item>
+        <item>การ​ส่ง​ข้อ​ความ</item>
+        <item>Picasa</item>
+        <item>S ​Planner</item>
+        <item>อี​เมล์</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>อี​เมล์</item>
+        <item>ข้อ​ความ</item>
+        <item>SNS</item>
+        <item>S ​Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>เหตุการณ์​ใหม่</item>
+        <item>สิ่งที่ต้องทำใหม่</item>
+        <item>ลิงค์</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>สัญลักษณ์​ราย​ชื่อ</item>
+        <item>วอ​ลเปเปอร์​หน้า​จอ​หลัก</item>
+        <item>วอ​ลเปเปอร์​ล็อก​หน้า​จอ</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>จาก​คลิ​ป​บอร์ด</item>
+        <item>จาก​แผนที่</item>
+    </string-array>
+</resources>

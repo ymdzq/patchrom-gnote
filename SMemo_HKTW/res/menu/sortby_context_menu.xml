@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_menu_list_view_sorting" android:id="@id/sortby_date_recent" android:title="@string/date_most_recent" />
+        <item android:icon="@drawable/ic_menu_list_view_sorting" android:id="@id/sortby_date_oldest" android:title="@string/date_oldest" />
+        <item android:icon="@drawable/ic_menu_list_view_sorting" android:id="@id/sortby_type" android:title="@string/sort_type" />
+        <item android:icon="@drawable/ic_menu_sort_alphabetically" android:id="@id/sortby_title" android:title="@string/title" />
+        <item android:icon="@drawable/ic_menu_sort_alphabetically" android:id="@id/sortby_tag" android:title="@string/tag" />
+        <item android:icon="@drawable/ic_menu_list_view_sorting" android:id="@id/sortby_voice" android:title="@string/voice_contained" />
+        <item android:icon="@drawable/ic_menu_list_view_sorting" android:id="@id/sortby_textonly" android:title="@string/text_first" />
+        <item android:icon="@drawable/ic_menu_list_view_sorting" android:id="@id/sortby_favorites" android:title="@string/favourites" />
+    </group>
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/delete_button_layout_popup" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/url_button_layout_popup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/urlBtn_popup" android:background="#00000000" android:paddingBottom="10.0px" android:visibility="visible" android:layout_width="191.0px" android:layout_height="75.0px" android:text="View Url" />
+        <ImageView android:id="@id/btndevice_popup" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ploating_popup_split" />
+    </LinearLayout>
+    <Button android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/deleteBtn_popup" android:background="#00000000" android:paddingBottom="10.0px" android:visibility="visible" android:layout_width="191.0px" android:layout_height="75.0px" android:text="Delete" />
+</LinearLayout>

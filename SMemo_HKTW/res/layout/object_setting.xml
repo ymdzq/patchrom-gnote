@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="179.5dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/object_arrow" android:background="@drawable/drawingpad_bg_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75.0dip" android:layout_alignParentTop="true" />
+    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/object_top_bg" android:background="@drawable/drawingpad_bg_top" android:focusable="true" android:layout_width="fill_parent" android:layout_height="28.5dip" android:layout_marginTop="8.0dip" android:text="@string/select_object" />
+    <ImageButton android:id="@id/btnCloseObjectSetting" android:background="@drawable/drawable_setting_close_btn" android:focusable="true" android:nextFocusLeft="@id/object_top_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="9.0dip" android:layout_below="@id/object_arrow" android:layout_alignParentRight="true" android:contentDescription="@string/access_close_button" />
+    <RelativeLayout android:background="@drawable/drawingpad_bg_06" android:paddingLeft="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/object_top_bg">
+        <RelativeLayout android:id="@id/equationBtn" android:background="@drawable/drawable_popup_list_top_btn" android:clickable="true" android:layout_width="159.5dip" android:layout_height="wrap_content" android:layout_marginTop="6.5dip">
+            <TextView android:textSize="17.0sp" android:textColor="@color/button_text_color_2" android:paddingLeft="7.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equation" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/shapeBtn" android:background="@drawable/drawable_popup_list_middle_btn" android:clickable="true" android:layout_width="159.5dip" android:layout_height="wrap_content" android:layout_below="@id/equationBtn">
+            <TextView android:textSize="17.0sp" android:textColor="@color/button_text_color_2" android:paddingLeft="7.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shape" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/textBtn" android:background="@drawable/drawable_popup_list_bottom_btn" android:clickable="true" android:layout_width="159.5dip" android:layout_height="wrap_content" android:layout_below="@id/shapeBtn">
+            <TextView android:textSize="17.0sp" android:textColor="@color/button_text_color_2" android:paddingLeft="7.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_first" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

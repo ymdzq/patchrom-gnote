@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Billede</item>
+        <item>Tag billede</item>
+        <item>Clipart</item>
+        <item>Udklipsholder</item>
+        <item>Kort</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Billede</item>
+        <item>Tag billede</item>
+        <item>Clipart</item>
+        <item>Kort</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Meddelelser</item>
+        <item>Picasa</item>
+        <item>E-mail</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Meddelelser</item>
+        <item>Picasa</item>
+        <item>S-planlægger</item>
+        <item>E-mail</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>E-mail</item>
+        <item>Meddelelse</item>
+        <item>SNS</item>
+        <item>S-planlægger</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Ny begivenhed</item>
+        <item>Ny opgave</item>
+        <item>Link</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>Kontakt-ikon</item>
+        <item>Baggr. for startskærm</item>
+        <item>Baggrund for skærmlås</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Fra udklipsholder</item>
+        <item>Fra Kort</item>
+    </string-array>
+</resources>

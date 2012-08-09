@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/Widget" android:background="@drawable/w_smemo_bg_01" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="2.0dip">
+        <ImageView android:id="@id/iconView" android:background="#00000000" android:layout_width="71.0dip" android:layout_height="57.5dip" android:layout_marginLeft="2.0dip" android:src="@drawable/w_smemo" android:scaleType="center" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/textButton" android:background="@drawable/drawable_add_widget_bg_left" android:layout_width="63.5dip" android:layout_height="57.5dip" android:src="@drawable/w_smemo_text" android:layout_toRightOf="@id/iconView" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/drawButton" android:background="@drawable/drawable_add_widget_bg_center" android:layout_width="63.5dip" android:layout_height="57.5dip" android:src="@drawable/w_smemo_pen_pencil" android:layout_toRightOf="@id/textButton" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/imgButton" android:background="@drawable/drawable_add_widget_bg_center" android:layout_width="63.5dip" android:layout_height="57.5dip" android:src="@drawable/w_smemo_photo" android:layout_toRightOf="@id/drawButton" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/vocButton" android:background="@drawable/drawable_add_widget_bg_center" android:layout_width="63.5dip" android:layout_height="57.5dip" android:src="@drawable/w_smemo_voice" android:layout_toRightOf="@id/imgButton" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/searchButton" android:background="@drawable/drawable_add_widget_bg_right" android:layout_width="63.5dip" android:layout_height="57.5dip" android:src="@drawable/w_smemo_search" android:layout_toRightOf="@id/vocButton" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

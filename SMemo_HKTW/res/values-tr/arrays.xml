@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Resim</item>
+        <item>Resim çek</item>
+        <item>Küçük resim</item>
+        <item>Pano</item>
+        <item>Harita</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Resim</item>
+        <item>Resim çek</item>
+        <item>Küçük resim</item>
+        <item>Harita</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Mesajlaşma</item>
+        <item>Picasa</item>
+        <item>E-posta</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Mesajlaşma</item>
+        <item>Picasa</item>
+        <item>S Planlayıcı</item>
+        <item>E-posta</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>E-posta</item>
+        <item>Mesaj</item>
+        <item>SNS</item>
+        <item>S Planlayıcı</item>
+        <item>WiFi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Yeni etkinlik</item>
+        <item>Yeni görev</item>
+        <item>Bağlantı</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>Kişi simgesi</item>
+        <item>Ana ekran duvr kağıdı</item>
+        <item>Kltli ekran dvrkağıdı</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Panodan</item>
+        <item>Haritalardan</item>
+    </string-array>
+</resources>

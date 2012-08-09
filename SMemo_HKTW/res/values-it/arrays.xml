@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Immagine</item>
+        <item>Scatta foto</item>
+        <item>ClipArt</item>
+        <item>Appunti</item>
+        <item>Mappa</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Immagine</item>
+        <item>Scatta foto</item>
+        <item>ClipArt</item>
+        <item>Mappa</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>DLNA</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Messaggi</item>
+        <item>Picasa</item>
+        <item>E-mail</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>DLNA</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Messaggi</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>E-mail</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>E-mail</item>
+        <item>Messaggio</item>
+        <item>SNS</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Nuovo evento</item>
+        <item>Nuova attività</item>
+        <item>Collegamento</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>Icona contatto</item>
+        <item>Sfondo schermata Home</item>
+        <item>Blocca sfondo schermo</item>
+        <item>Widget</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Dagli appunti</item>
+        <item>Da Mappe</item>
+    </string-array>
+</resources>

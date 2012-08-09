@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>图像</item>
+        <item>拍照</item>
+        <item>剪贴画</item>
+        <item>剪贴板</item>
+        <item>地图</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>图像</item>
+        <item>拍照</item>
+        <item>剪贴画</item>
+        <item>地图</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>蓝牙</item>
+        <item>Gmail</item>
+        <item>发送信息</item>
+        <item>Picasa</item>
+        <item>电子邮件</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>蓝牙</item>
+        <item>Gmail</item>
+        <item>发送信息</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>电子邮件</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>电子邮件</item>
+        <item>讯息</item>
+        <item>SNS</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>新事件</item>
+        <item>新任务</item>
+        <item>链接</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>联系人图标</item>
+        <item>主屏幕墙纸</item>
+        <item>锁定屏幕墙纸</item>
+        <item>桌面工具</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>从剪贴板</item>
+        <item>从地图</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/drawable_icon_saveas_ic" android:id="@id/menu_saveas" android:title="@string/saveas" />
+    <item android:icon="@drawable/drawable_icon_share_ic" android:id="@id/menu_sharevia" android:title="@string/share_via" />
+    <item android:icon="@drawable/drawable_icon_hwrecog_ic" android:id="@id/menu_recognize" android:title="@string/recognize_to_text" />
+    <item android:icon="@drawable/drawable_icon_addtag_ic" android:id="@id/menu_edit_tag" android:title="@string/add_tag" />
+    <item android:icon="@drawable/drawable_icon_linksplanner_ic" android:id="@id/menu_link_to_splanner" android:title="@string/link_to_splanner" />
+    <item android:icon="@drawable/drawable_icon_export_ic" android:id="@id/export" android:title="@string/export" />
+    <item android:icon="@drawable/drawable_icon_changebg_ic" android:id="@id/change_background" android:title="@string/change_background" />
+    <item android:icon="@drawable/drawable_icon_lock_ic" android:id="@id/menu_lock" android:title="@string/lock" />
+    <item android:icon="@drawable/drawable_icon_print_ic" android:id="@id/menu_print" android:title="@string/print" />
+    <item android:icon="@drawable/drawable_icon_setas_ic" android:id="@id/menu_set_as" android:title="@string/set_as" />
+</menu>

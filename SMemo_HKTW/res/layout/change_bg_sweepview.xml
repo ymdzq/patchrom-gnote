@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.sec.android.widgetapp.q1_penmemo.SweepGallery android:id="@id/imageGallery" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="21.0dip" android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:id="@id/bgText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28.0dip" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:background="@drawable/tw_softkeyview_bg" android:layout_width="fill_parent" android:layout_height="109.0px">
+        <Button android:id="@id/okBtn" android:background="@drawable/drawable_winset_btn" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/set_skin" />
+    </LinearLayout>
+</LinearLayout>

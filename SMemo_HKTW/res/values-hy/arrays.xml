@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_picture_item">
+        <item>Նկար</item>
+        <item>Լուսանկարել</item>
+        <item>Գրաֆիկական տարր</item>
+        <item>Գզրոց</item>
+        <item>Քարտեզ</item>
+    </string-array>
+    <string-array name="add_picture_no_clipboard_item">
+        <item>Նկար</item>
+        <item>Նկարել</item>
+        <item>Գրաֆիկական տարր</item>
+        <item>Քարտեզ</item>
+    </string-array>
+    <string-array name="About_Share_List">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Հաղորդագրում</item>
+        <item>Picasa</item>
+        <item>Էլփոստ</item>
+    </string-array>
+    <string-array name="About_Share">
+        <item>AllShare</item>
+        <item>Bluetooth</item>
+        <item>Gmail</item>
+        <item>Հաղորդագրում</item>
+        <item>Picasa</item>
+        <item>S Planner</item>
+        <item>Էլփոստ</item>
+    </string-array>
+    <string-array name="About_Share_Recognition">
+        <item>Gmail</item>
+        <item>Էլփոստ</item>
+        <item>Հաղորդագրություն</item>
+        <item>SNS</item>
+        <item>S Planner</item>
+        <item>Wi-Fi</item>
+    </string-array>
+    <string-array name="About_SPlanner">
+        <item>Նոր իրադարձություն</item>
+        <item>Նոր առաջադրանք</item>
+        <item>Հղում</item>
+    </string-array>
+    <string-array name="Set_as_items">
+        <item>կոնտակտի նշանը</item>
+        <item>Հիմն. էկրանի պաստառ</item>
+        <item>Կողպված էկրանի պաստառ</item>
+        <item>Վիդջետ</item>
+    </string-array>
+    <string-array name="insert_item">
+        <item>Գզրոցից</item>
+        <item>Քարտեզներից</item>
+    </string-array>
+</resources>

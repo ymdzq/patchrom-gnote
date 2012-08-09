@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/penmemo_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/normal_mode_layout" android:background="@drawable/memo_header_bg" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/homeButton" android:background="@drawable/drawable_home" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/asUpButton" android:background="#00000000" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/tw_ic_ab_back_holo_dark" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/homeImage" android:background="#00000000" android:paddingRight="8.0dip" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/smemo_app_icon" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/homeButton">
+                <RelativeLayout android:id="@id/button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/createBtnLayout" android:layout_width="128.0dip" android:layout_height="wrap_content">
+                        <ImageButton android:id="@id/pen_create" android:background="#00000000" android:layout_width="64.0dip" android:layout_height="40.0dip" android:src="@drawable/drawable_create_pencil_icon_btn_actionbar" android:scaleType="center" android:contentDescription="@string/access_create_drawing_memo" />
+                        <ImageButton android:id="@id/text_create" android:background="#00000000" android:layout_width="64.0dip" android:layout_height="40.0dip" android:src="@drawable/drawable_create_text_icon_btn_actionbar" android:scaleType="center" android:contentDescription="@string/access_create_text_memo" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/select_button_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/alldone_btn" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <View android:layout_gravity="center_vertical" android:background="@drawable/smemo_tab_divider" android:layout_width="1.0dip" android:layout_height="21.5dip" />
+                            <ImageView android:id="@id/all_done_icon" android:background="#00000000" android:duplicateParentState="true" android:layout_width="37.0dip" android:layout_height="fill_parent" android:src="@drawable/drawable_all_sync_btn_actionbar" android:scaleType="center" android:contentDescription="@string/all_sync" />
+                            <TextView android:textSize="17.0dip" android:textColor="@color/color_actionbar_list_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/all_btn" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/sync_all" android:contentDescription="@string/sync_all" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/done_layout" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <View android:layout_gravity="center_vertical" android:background="@drawable/smemo_tab_divider" android:layout_width="1.0dip" android:layout_height="21.5dip" />
+                            <ImageView android:id="@id/done_icon" android:background="#00000000" android:duplicateParentState="true" android:layout_width="37.0dip" android:layout_height="fill_parent" android:src="@drawable/drawable_sync_btn_actionbar" android:scaleType="center" android:contentDescription="@string/done" />
+                            <TextView android:textSize="17.0dip" android:textColor="@color/color_actionbar_list_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/done_btn" android:background="#00000000" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/done" android:contentDescription="@string/done" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/cancel_layout" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <View android:layout_gravity="center_vertical" android:background="@drawable/smemo_tab_divider" android:layout_width="1.0dip" android:layout_height="21.5dip" />
+                            <ImageView android:id="@id/cancel_icon" android:background="#00000000" android:duplicateParentState="true" android:layout_width="37.0dip" android:layout_height="fill_parent" android:src="@drawable/drawable_cancel_btn_actionbar" android:scaleType="center" android:contentDescription="@string/cancel" />
+                            <TextView android:textSize="17.0dip" android:textColor="@color/color_actionbar_list_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cancel_btn" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/cancel" android:contentDescription="@string/cancel" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/button_layout" android:layout_toRightOf="@id/homeButton">
+                    <TextView android:textSize="17.0dip" android:textColor="@color/edit_actionbar_btn_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/memo_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" android:layout_toRightOf="@id/homeButton" />
+                    <TextView android:textSize="@dimen/font_size_32" android:textColor="@color/edit_actionbar_btn_color" android:gravity="center_vertical" android:id="@id/memo_num" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:text="@string/memo_num" android:singleLine="true" android:layout_weight="1.0" android:layout_toRightOf="@id/memo_title" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/select_mode_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="64.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/check_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="8.5dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_size_44" android:textColor="@color/list_select_all" android:gravity="center_vertical" android:id="@id/list_select_all" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/select_all" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/select_all_cb" android:background="@drawable/trasparents" android:layout_width="40.0dip" android:layout_height="45.0dip" android:button="@drawable/drawable_checkbox_list" />
+            </LinearLayout>
+            <View android:background="@color/list_color_devideline" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.diotek.q1_penmemo.widget.DragableGridView android:id="@id/penmemo_grid_list" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="1.5dip" android:listSelector="@drawable/drawable_grid_selector" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:stretchMode="spacingWidth" android:columnWidth="131.5dip" android:numColumns="3" />
+            <com.diotek.q1_penmemo.widget.DragableListView android:id="@id/penmemo_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_view_item_background" android:cacheColorHint="#00000000" android:divider="#ffc7b8a0" android:dividerHeight="0.5dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/nomemo_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/nomemo_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/penmemo_noitems" />
+                    <TextView android:textSize="24.0sp" android:textColor="#ff604830" android:id="@id/list_nomemo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/nomemo" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_soft_layout" android:background="@drawable/tw_softkeyview_bg" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.5dip">
+            <Button android:textSize="16.0dip" android:id="@id/alldone_btn" android:background="@drawable/drawable_winset_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:text="@string/sync_all" android:layout_weight="1.0" />
+            <Button android:textSize="16.0dip" android:id="@id/done_btn" android:background="@drawable/drawable_winset_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="@string/delete" android:layout_weight="1.0" />
+            <Button android:textSize="16.0dip" android:id="@id/cancel_btn" android:background="@drawable/drawable_winset_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/sortby_dummy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <View android:id="@id/syncto_dummy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/nosdcard_layout" android:background="#ff000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/nosdcard" android:layout_width="108.0dip" android:layout_height="134.0dip" android:src="@drawable/sd_card_empty" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffbebebe" android:id="@id/list_nosdcard_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/sdcard_used_storage" android:layout_below="@id/nosdcard" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/drawable_icon_share_ic" android:id="@id/menu_sharevia" android:title="@string/share_via" />
+    <item android:icon="@drawable/drawable_icon_retry_ic" android:id="@id/menu_retry" android:title="@string/retry" />
+</menu>

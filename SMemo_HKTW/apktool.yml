@@ -1,0 +1,6 @@
+version: 1.4.3
+apkFileName: SMemo_HKTW.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

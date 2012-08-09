@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_1">#ffebebeb</color>
+    <color name="color_2">#ff000000</color>
+    <color name="color_3">#ff6e9cba</color>
+    <color name="color_5">#ffbebebe</color>
+    <color name="color_6">#ffa0a0a0</color>
+    <color name="color_25">#ffcccccc</color>
+    <color name="color_28">#ffebebeb</color>
+    <color name="color_29">#ffc8c8c8</color>
+    <color name="color_30">#ff3484c8</color>
+    <color name="color_31">#ff428eba</color>
+    <color name="color_33">#ff00a8ff</color>
+    <color name="color_140">#ff009933</color>
+    <color name="color_141">#ff0099ff</color>
+    <color name="color_151">#ff00aeef</color>
+    <color name="color_249">#ff342517</color>
+    <color name="edit_title_text_color">#ff383838</color>
+    <color name="edit_tag_text_color">#ff828282</color>
+    <color name="vr_time_text_color">#ffeaeaea</color>
+    <color name="tutorial_text_color">@color/color_249</color>
+    <color name="tutorial_btn_color">#ff44423c</color>
+    <color name="transparent">#00000000</color>
+    <color name="voice_text_color">#ff656359</color>
+    <color name="voice_text_tran_color">#77656359</color>
+    <color name="edit_actionbar_btn_color">#ffd3ba88</color>
+    <color name="list_select_all">#ff2c1f19</color>
+    <color name="list_color_devideline">#ff635138</color>
+    <color name="tutorial_title_color">#ff342517</color>
+    <color name="tutorial_content_color">#ff676767</color>
+    <color name="list_actionbar_color_enable">#ffe5ffd2</color>
+    <color name="list_actionbar_color_disable">#66e5ffd2</color>
+</resources>

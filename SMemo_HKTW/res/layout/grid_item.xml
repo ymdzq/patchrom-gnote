@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="131.5dip" android:layout_height="168.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/grid_item_bg_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:paddingRight="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/item_image" android:paddingLeft="8.0dip" android:paddingTop="13.0dip" android:paddingRight="8.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+            <View android:id="@id/grid_item_selector" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/locklayout" android:background="@drawable/penmemo_paper_thumb_01_lock" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="11.5sp" android:textColor="#ff848383" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/item_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="104.0dip" android:singleLine="true" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="107.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip">
+                <TextView android:textSize="15.0dip" android:textColor="#ff382b0b" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/item_folder_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:singleLine="true" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="107.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip">
+                <TextView android:textSize="11.5dip" android:typeface="sans" android:textColor="#7f866b30" android:gravity="center" android:id="@id/item_folder_count" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginTop="55.0dip" android:singleLine="true" android:layout_centerHorizontal="true" />
+            </FrameLayout>
+            <TextView android:textSize="15.0dip" android:typeface="sans" android:textColor="#ff382b0b" android:gravity="center" android:id="@id/item_stack_name" android:background="#4c584437" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:singleLine="true" android:shadowColor="#ffc8c8c8" android:shadowDx="1.0" android:shadowDy="1.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0dip" android:typeface="sans" android:textColor="#ff382b0b" android:gravity="center" android:id="@id/item_stack_page" android:background="@drawable/penmemo_paper_thumb_page_bg" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginLeft="7.5dip" android:layout_marginBottom="9.0dip" android:singleLine="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <View android:id="@id/thumb_stacked_press_view" android:focusable="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/has_voice" android:background="@drawable/penmemo_paper_thumb_01_voice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.5dip" />
+        <ImageView android:id="@id/favorite" android:background="@drawable/penmemo_paper_thumb_01_fav" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_marginBottom="13.5dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/folder_order" android:background="@drawable/penmemo_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="11.5dip" android:textColor="#7f866b30" android:id="@id/folder_order_tv" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <CheckBox android:id="@id/item_check" android:background="@drawable/trasparents" android:focusable="false" android:visibility="invisible" android:clickable="false" android:duplicateParentState="true" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="11.0dip" android:button="@drawable/drawable_checkbox_grid" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <View android:id="@id/item_reorder" android:background="@drawable/btn_reorder" android:visibility="gone" android:layout_width="37.0dip" android:layout_height="47.0dip" android:layout_marginRight="2.5dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>
