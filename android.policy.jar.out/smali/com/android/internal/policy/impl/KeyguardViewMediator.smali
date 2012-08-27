@@ -2985,6 +2985,16 @@
     return-void
 .end method
 
+.method public onScreenTurnedOff(I)V
+    .locals 1
+    .parameter "why"
+
+    .prologue
+    const v0, 0x0
+    invoke-virtual {p0, p1, v0}, Lcom/android/internal/policy/impl/KeyguardViewMediator;->onScreenTurnedOff(IZ)V
+    return-void
+.end method
+
 .method public onScreenTurnedOff(IZ)V
     .locals 29
     .parameter "why"
