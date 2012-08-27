@@ -7,6 +7,7 @@ local-phone-apps = AxT9IME \
                    CSC \
                    Camera \
                    ClipboardSaveService \
+				   CertInstaller \
                    DataCreate \
                    DefaultContainerService \
                    Divx \
