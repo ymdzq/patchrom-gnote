@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="746.0px" android:layout_height="655.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:scrollbarStyle="insideOverlay" android:id="@id/filter_list" android:background="@color/color_white" android:paddingLeft="10.0px" android:paddingTop="12.0px" android:paddingRight="10.0px" android:paddingBottom="20.0px" android:nextFocusUp="@id/select_all_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:horizontalSpacing="9.0px" android:verticalSpacing="9.0px" android:columnWidth="220.0px" android:numColumns="3" android:choiceMode="multipleChoice" />
+</LinearLayout>

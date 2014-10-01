@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlProgress" android:layout_width="314.0dip" android:layout_height="54.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ProgressBar android:id="@id/progressDialog" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="19.0sp" android:textColor="#ffebebeb" android:id="@id/dialogText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="-3.0dip" android:layout_toRightOf="@id/progressDialog" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="310.0dip" android:layout_height="49.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_below="@id/rlProgress">
+        <Button android:textSize="19.0sp" android:textColor="#ff000000" android:id="@id/bt_left" android:background="@drawable/tw_buttonbarbutton_selector" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/string_common_button_cancel" />
+        <Button android:textSize="19.0sp" android:textColor="#ff000000" android:id="@id/bt_right" android:background="@drawable/tw_buttonbarbutton_selector" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/string_common_button_ok" android:layout_toRightOf="@id/bt_left" />
+        <Button android:textSize="19.0sp" android:textColor="#ff000000" android:id="@id/bt_single" android:background="@drawable/tw_buttonbarbutton_selector" android:visibility="gone" android:layout_width="284.0dip" android:layout_height="wrap_content" android:text="@string/string_common_button_ok" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

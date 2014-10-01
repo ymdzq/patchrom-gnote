@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<keyboard
+  primaryId="96"
+  secondaryId="7"
+  keyWidth="9.1%"
+  keyHeight="21.171%"
+  verticalGap="4.054%"
+  horizontalGap="1%"
+  defaultLayoutWidth="720"
+  defaultLayoutHeight="444"
+ >
+  <row>
+    <key keyType="regional" keyLabel="ქ" keyCodes="0x10E5" />
+    <key keyType="regional" keyLabel="წ" keyCodes="0x10EC" keyLabelShifted="ჭ"/>
+    <key keyType="regional" keyLabel="ე" keyCodes="0x10D4" />
+    <key keyType="regional" keyLabel="რ" keyCodes="0x10E0" keyLabelShifted="ღ"/>
+    <key keyType="regional" keyLabel="ტ" keyCodes="0x10E2" keyLabelShifted="თ"/>
+    <key keyType="regional" keyLabel="ყ" keyCodes="0x10E7" />
+    <key keyType="regional" keyLabel="უ" keyCodes="0x10E3" />
+    <key keyType="regional" keyLabel="ი" keyCodes="0x10D8" />
+    <key keyType="regional" keyLabel="ო" keyCodes="0x10DD" />
+    <key keyType="regional" keyLabel="პ" keyCodes="0x10DE" />
+  </row>
+  <row>
+  	<void />
+    <key keyType="regional" keyLabel="ა" keyCodes="0x10D0" />
+    <key keyType="regional" keyLabel="ს" keyCodes="0x10E1" keyLabelShifted="შ"/>
+    <key keyType="regional" keyLabel="დ" keyCodes="0x10D3" />
+    <key keyType="regional" keyLabel="ფ" keyCodes="0x10E4" />
+    <key keyType="regional" keyLabel="ბ" keyCodes="0x10D2" />
+    <key keyType="regional" keyLabel="ჰ" keyCodes="0x10F0" />
+    <key keyType="regional" keyLabel="ჯ" keyCodes="0x10EF" keyLabelShifted="ჟ"/>
+    <key keyType="regional" keyLabel="კ" keyCodes="0x10D9" />
+    <key keyType="regional" keyLabel="ლ" keyCodes="0x10DA" />
+    <void />
+  </row>
+  <row>
+    <key
+      keyType="function"
+      keyLabel="shift"
+      keyName="ET9KEY_SHIFT"
+      keyWidth="12.7%"
+      />
+    <void />
+    <key keyType="regional" keyLabel="ზ" keyCodes="0x10D6" keyLabelShifted="ძ"/>
+    <key keyType="regional" keyLabel="ხ" keyCodes="0x10EE" />
+    <key keyType="regional" keyLabel="ც" keyCodes="0x10EA" keyLabelShifted="ჩ"/>
+    <key keyType="regional" keyLabel="ვ" keyCodes="0x10D5" />
+    <key keyType="regional" keyLabel="გ" keyCodes="0x10D1" />
+    <key keyType="regional" keyLabel="ნ" keyCodes="0x10DC" />
+    <key keyType="regional" keyLabel="მ" keyCodes="0x10DB" />
+    <void />
+    <key
+      keyType="function"
+      keyLabel="del"
+      keyName="ET9KEY_CLEAR"
+      keyWidth="12.7%"
+      />
+  </row>
+</keyboard >

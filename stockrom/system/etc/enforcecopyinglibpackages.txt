@@ -1,0 +1,7 @@
+6
+com.sec.msc.learninghub
+com.acrodea.crayonphysics
+com.zinio.samsung.android
+com.newspaperdirect.pressreader.android.samsung
+com.android.email
+com.dama.paperartist

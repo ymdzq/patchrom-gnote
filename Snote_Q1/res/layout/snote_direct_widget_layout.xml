@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/snote_widget_direct_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip">
+        <FrameLayout android:layout_width="50.0dip" android:layout_height="65.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/snote_thumbnail_bg_01" android:scaleType="fitXY" />
+            <ImageButton android:id="@id/widget_direct_template" android:background="@drawable/snote_widget_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/string_title_template_dialog" />
+        </FrameLayout>
+        <ImageView android:id="@id/widget_direct_arrow" android:layout_width="50.0dip" android:layout_height="6.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/snote_widget_direct_arrow_down" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="61.0dip" android:layout_height="58.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="12.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/snote_widget_direct_icon_pen_pencil" />
+        <ImageButton android:id="@id/widget_direct_drawing" android:background="@drawable/snote_widget_direct_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/string_tutorial_drawingmode" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="61.0dip" android:layout_height="58.0dip" android:layout_marginTop="12.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/snote_widget_direct_icon_text" />
+        <ImageButton android:id="@id/widget_direct_text" android:background="@drawable/snote_widget_direct_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/string_tutorial_textselectionmode" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/widget_direct_icon_photo" android:visibility="visible" android:layout_width="61.0dip" android:layout_height="58.0dip" android:layout_marginTop="12.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/snote_widget_direct_icon_photo" />
+        <ImageButton android:id="@id/widget_direct_insert" android:background="@drawable/snote_widget_direct_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/string_tutorial_insertobject" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/widget_direct_icon_photo_dim" android:visibility="gone" android:layout_width="61.0dip" android:layout_height="58.0dip" android:layout_marginTop="12.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/snote_widget_direct_icon_photo_dim" />
+        <ImageView android:background="@drawable/snote_bt_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/widget_direct_icon_voice" android:visibility="visible" android:layout_width="61.0dip" android:layout_height="58.0dip" android:layout_marginTop="12.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/snote_widget_direct_icon_voice" />
+        <ImageButton android:id="@id/widget_direct_voice" android:background="@drawable/snote_widget_direct_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/string_voice_memo_title" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/widget_direct_icon_voice_dim" android:visibility="gone" android:layout_width="61.0dip" android:layout_height="58.0dip" android:layout_marginTop="12.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/snote_widget_direct_icon_voice_dim" />
+        <ImageView android:background="@drawable/snote_bt_bg_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="61.0dip" android:layout_height="58.0dip" android:layout_marginTop="12.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/snote_widget_direct_icon_search" />
+        <ImageButton android:id="@id/widget_direct_search" android:background="@drawable/snote_widget_direct_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/string_filemanager_search_hint" />
+    </FrameLayout>
+</LinearLayout>

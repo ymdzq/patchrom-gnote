@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<keyboard
+  primaryId="2"
+  secondaryId="7"
+  keyWidth="8.18%"
+  keyHeight="21.171%"
+  verticalGap="4.054%"
+  horizontalGap="1%"
+  defaultLayoutWidth="720"
+  defaultLayoutHeight="444"
+ >
+  <row>
+    <key keyType="regional" keyCodes="0x0443" />
+    <key keyType="regional" keyCodes="0x0435" />
+    <key keyType="regional" keyCodes="0x0438" />
+    <key keyType="regional" keyCodes="0x0448" />
+    <key keyType="regional" keyCodes="0x0449" />
+    <key keyType="regional" keyCodes="0x043A" />
+    <key keyType="regional" keyCodes="0x0441" />
+    <key keyType="regional" keyCodes="0x0434" />
+    <key keyType="regional" keyCodes="0x0437" />
+    <key keyType="regional" keyCodes="0x0446" />
+    <key keyType="regional" keyCodes="0x0431" />
+  </row>
+  <row>
+    <key keyType="regional" keyCodes="0x044C" />
+    <key keyType="regional" keyCodes="0x044F" />
+    <key keyType="regional" keyCodes="0x0430" />
+    <key keyType="regional" keyCodes="0x043E" />
+    <key keyType="regional" keyCodes="0x0436" />
+    <key keyType="regional" keyCodes="0x0433" />
+    <key keyType="regional" keyCodes="0x0442" />
+    <key keyType="regional" keyCodes="0x043D" />
+    <key keyType="regional" keyCodes="0x0432" />
+    <key keyType="regional" keyCodes="0x043C" />
+    <key keyType="regional" keyCodes="0x0447" />
+  </row>
+  <row>
+  	<key
+      keyType="function"
+      keyLabel="shift"
+      keyName="ET9KEY_SHIFT"
+      />
+    <key keyType="regional" keyCodes="0x044E" />
+    <key keyType="regional" keyCodes="0x0439" />
+    <key keyType="regional" keyCodes="0x044A" />
+    <key keyType="regional" keyCodes="0x044D" />
+    <key keyType="regional" keyCodes="0x0444" />
+    <key keyType="regional" keyCodes="0x0445" />
+    <key keyType="regional" keyCodes="0x043F" />
+    <key keyType="regional" keyCodes="0x0440" />
+    <key keyType="regional" keyCodes="0x043B" />
+    <key
+      keyType="function"
+      keyLabel="del"
+      keyName="ET9KEY_CLEAR"
+      />
+  </row>
+</keyboard >

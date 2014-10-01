@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<keyboard
+  primaryId="8"
+  secondaryId="7"
+  keyWidth="9.1%"
+  keyHeight="21.171%"
+  verticalGap="4.054%"
+  horizontalGap="1%"
+  defaultLayoutWidth="720"
+  defaultLayoutHeight="444"
+  >
+
+  <area conditionValue="0">
+    <key keyLabel="ς" keyType="regional" keyLeft="0.277%" keyTop="0.450%" keyCodes="0x03C2"/>
+    <key keyLabel="ε" keyType="regional" keyLeft="10.416%" keyTop="0.450%" keyCodes="0x03B5"/>
+    <key keyLabel="ρ" keyType="regional" keyLeft="20.555%" keyTop="0.450%" keyCodes="0x03C1"/>
+    <key keyLabel="τ" keyType="regional" keyLeft="30.694%" keyTop="0.450%" keyCodes="0x03C4"/>
+    <key keyLabel="υ" keyType="regional" keyLeft="40.694%" keyTop="0.450%" keyCodes="0x03C5"/>
+    <key keyLabel="θ" keyType="regional" keyLeft="50.694%" keyTop="0.450%" keyCodes="0x03B8"/>
+    <key keyLabel="ι" keyType="regional" keyLeft="60.694%" keyTop="0.450%" keyCodes="0x03B9"/>
+    <key keyLabel="ο" keyType="regional" keyLeft="70.694%" keyTop="0.450%" keyCodes="0x03BF"/>
+    <key keyLabel="π" keyType="regional" keyLeft="80.694%" keyTop="0.450%" keyCodes="0x03C0"/>
+
+    <key keyLabel="α" keyType="regional" keyLeft="0.277%" keyTop="26.576%" keyCodes="0x03B1"/>
+    <key keyLabel="σ" keyType="regional" keyLeft="10.416%" keyTop="26.576%" keyCodes="0x03C3"/>
+    <key keyLabel="δ" keyType="regional" keyLeft="20.555%" keyTop="26.576%" keyCodes="0x03B4"/>
+    <key keyLabel="φ" keyType="regional" keyLeft="30.694%" keyTop="26.576%" keyCodes="0x03C6"/>
+    <key keyLabel="γ" keyType="regional" keyLeft="40.694%" keyTop="26.576%" keyCodes="0x03B3"/>
+    <key keyLabel="η" keyType="regional" keyLeft="50.694%" keyTop="26.576%" keyCodes="0x03B7"/>
+    <key keyLabel="ξ" keyType="regional" keyLeft="60.694%" keyTop="25.625%" keyCodes="0x03BE"/>
+    <key keyLabel="κ" keyType="regional" keyLeft="70.694%" keyTop="25.625%" keyCodes="0x03BA"/>
+    <key keyLabel="λ" keyType="regional" keyLeft="80.694%" keyTop="25.625%" keyCodes="0x03BB"/>
+    <key keyType="function" keyLabel="`" keyLeft="90.694%" keyTop="25.625%" keyName="ET9KEY_OEM_01"/>
+    
+    <key keyType="function" keyLabel="shift" keyLeft="0.277%" keyTop="52.702%" keyName="ET9KEY_SHIFT" keyWidth="12.7%"/>
+    <key keyLabel="ζ" keyType="regional" keyLeft="15.416%" keyTop="52.702%" keyCodes="0x03B6"/>
+    <key keyLabel="χ" keyType="regional" keyLeft="25.555%" keyTop="52.702%" keyCodes="0x03C7"/>
+    <key keyLabel="ψ" keyType="regional" keyLeft="35.694%" keyTop="52.702%" keyCodes="0x03C8"/>
+    <key keyLabel="ω" keyType="regional" keyLeft="45.694%" keyTop="52.702%" keyCodes="0x03C9"/>
+    <key keyLabel="β" keyType="regional" keyLeft="55.694%" keyTop="52.702%" keyCodes="0x03B2"/>
+    <key keyLabel="ν" keyType="regional" keyLeft="65.694%" keyTop="52.702%" keyCodes="0x03BD"/>
+    <key keyLabel="μ" keyType="regional" keyLeft="75.694%" keyTop="52.702%" keyCodes="0x03BC"/>
+    <key keyType="function" keyLabel="del" keyLeft="87.083%" keyTop="52.702%" keyName="ET9KEY_CLEAR" keyWidth="12.7%"/>
+  </area>
+
+  <area conditionValue="1">
+    <key keyLabel="ς" keyType="regional" keyLeft="0.277%" keyTop="0.450%" keyCodes="0x03C2"/>
+    <key keyLabel="έ" keyType="regional" keyLeft="10.416%" keyTop="0.450%" keyCodes="0x03AD"/>
+    <key keyLabel="ρ" keyType="regional" keyLeft="20.555%" keyTop="0.450%" keyCodes="0x03C1"/>
+    <key keyLabel="τ" keyType="regional" keyLeft="30.694%" keyTop="0.450%" keyCodes="0x03C4"/>
+    <key keyLabel="ύ" keyType="regional" keyLeft="40.694%" keyTop="0.450%" keyCodes="0x03CD"/>
+    <key keyLabel="θ" keyType="regional" keyLeft="50.694%" keyTop="0.450%" keyCodes="0x03B8"/>
+    <key keyLabel="ί" keyType="regional" keyLeft="60.694%" keyTop="0.450%" keyCodes="0x03AF"/>
+    <key keyLabel="ό" keyType="regional" keyLeft="70.694%" keyTop="0.450%" keyCodes="0x03CC"/>
+    <key keyLabel="π" keyType="regional" keyLeft="80.694%" keyTop="0.450%" keyCodes="0x03C0"/>
+
+    <key keyLabel="ά" keyType="regional" keyLeft="0.277%" keyTop="26.576%" keyCodes="0x03AC"/>
+    <key keyLabel="σ" keyType="regional" keyLeft="10.416%" keyTop="26.576%" keyCodes="0x03C3"/>
+    <key keyLabel="δ" keyType="regional" keyLeft="20.555%" keyTop="26.576%" keyCodes="0x03B4"/>
+    <key keyLabel="φ" keyType="regional" keyLeft="30.694%" keyTop="26.576%" keyCodes="0x03C6"/>
+    <key keyLabel="γ" keyType="regional" keyLeft="40.694%" keyTop="26.576%" keyCodes="0x03B3"/>
+    <key keyLabel="ή" keyType="regional" keyLeft="50.694%" keyTop="26.576%" keyCodes="0x03AE"/>
+    <key keyLabel="ξ" keyType="regional" keyLeft="60.694%" keyTop="25.625%" keyCodes="0x03BE"/>
+    <key keyLabel="κ" keyType="regional" keyLeft="70.694%" keyTop="25.625%" keyCodes="0x03BA"/>
+    <key keyLabel="λ" keyType="regional" keyLeft="80.694%" keyTop="25.625%" keyCodes="0x03BB"/>
+    <key keyType="function" keyLabel="`" keyLeft="90.694%" keyTop="25.625%" keyName="ET9KEY_OEM_01"/>
+    
+    <key keyType="function" keyLabel="shift" keyLeft="0.277%" keyTop="52.702%" keyName="ET9KEY_SHIFT" keyWidth="12.7%"/>
+    <key keyLabel="ζ" keyType="regional" keyLeft="15.416%" keyTop="52.702%" keyCodes="0x03B6"/>
+    <key keyLabel="χ" keyType="regional" keyLeft="25.555%" keyTop="52.702%" keyCodes="0x03C7"/>
+    <key keyLabel="ψ" keyType="regional" keyLeft="35.694%" keyTop="52.702%" keyCodes="0x03C8"/>
+    <key keyLabel="ώ" keyType="regional" keyLeft="45.694%" keyTop="52.702%" keyCodes="0x03CE"/>
+    <key keyLabel="β" keyType="regional" keyLeft="55.694%" keyTop="52.702%" keyCodes="0x03B2"/>
+    <key keyLabel="ν" keyType="regional" keyLeft="65.694%" keyTop="52.702%" keyCodes="0x03BD"/>
+    <key keyLabel="μ" keyType="regional" keyLeft="75.694%" keyTop="52.702%" keyCodes="0x03BC"/>
+    <key keyType="function" keyLabel="del" keyLeft="87.083%" keyTop="52.702%" keyName="ET9KEY_CLEAR" keyWidth="12.7%"/>
+  </area>
+
+</keyboard>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<keyboard
+  primaryId="38"
+  secondaryId="7"
+  keyWidth="9.1%"
+  keyHeight="21.171%"
+  verticalGap="4.054%"
+  horizontalGap="1%"
+  defaultLayoutWidth="720"
+  defaultLayoutHeight="444"
+ >
+  <area conditionValue="0">
+    <key keyLabel="q" keyType="regional" keyLeft="0.277%" keyTop="0.450%" keyCodes="0x71"/>
+    <key keyLabel="w" keyType="regional" keyLeft="10.416%" keyTop="0.450%" keyCodes="0x77"/>
+    <key keyLabel="e" keyType="regional" keyLeft="20.555%" keyTop="0.450%" keyCodes="0x65"/>
+    <key keyLabel="r" keyType="regional" keyLeft="30.694%" keyTop="0.450%" keyCodes="0x72"/>
+    <key keyLabel="t" keyType="regional" keyLeft="40.694%" keyTop="0.450%" keyCodes="0x74"/>
+    <key keyLabel="y" keyType="regional" keyLeft="50.694%" keyTop="0.450%" keyCodes="0x79"/>
+    <key keyLabel="u" keyType="regional" keyLeft="60.694%" keyTop="0.450%" keyCodes="0x75"/>
+    <key keyLabel="i" keyType="regional" keyLeft="70.694%" keyTop="0.450%" keyCodes="0x69"/>
+    <key keyLabel="o" keyType="regional" keyLeft="80.694%" keyTop="0.450%" keyCodes="0x6F"/>
+    <key keyLabel="p" keyType="regional" keyLeft="90.694%" keyTop="0.450%" keyCodes="0x70"/>
+
+    <key keyType="function" keyLabel="Alt" keyLeft="0.277%" keyTop="26.576%" keyName="ET9KEY_OEM_01"/>
+    <key keyLabel="a" keyType="regional" keyLeft="10.416%" keyTop="26.576%" keyCodes="0x61"/>
+    <key keyLabel="s" keyType="regional" keyLeft="20.555%" keyTop="26.576%" keyCodes="0x73"/>
+    <key keyLabel="d" keyType="regional" keyLeft="30.694%" keyTop="26.576%" keyCodes="0x64"/>
+    <key keyLabel="f" keyType="regional" keyLeft="40.694%" keyTop="26.576%" keyCodes="0x66"/>
+    <key keyLabel="g" keyType="regional" keyLeft="50.694%" keyTop="26.576%" keyCodes="0x67"/>
+    <key keyLabel="h" keyType="regional" keyLeft="60.694%" keyTop="25.625%" keyCodes="0x68"/>
+    <key keyLabel="j" keyType="regional" keyLeft="70.694%" keyTop="25.625%" keyCodes="0x6A"/>
+    <key keyLabel="k" keyType="regional" keyLeft="80.694%" keyTop="25.625%" keyCodes="0x6B"/>
+    <key keyLabel="l" keyType="regional" keyLeft="90.694%" keyTop="25.625%" keyCodes="0x6C"/>
+    
+    <key keyType="function" keyLabel="shift" keyLeft="0.277%" keyTop="52.702%" keyName="ET9KEY_SHIFT" keyWidth="12.7%"/>
+    <key keyLabel="z" keyType="regional" keyLeft="15.416%" keyTop="52.702%" keyCodes="0x7A"/>
+    <key keyLabel="x" keyType="regional" keyLeft="25.555%" keyTop="52.702%" keyCodes="0x78"/>
+    <key keyLabel="c" keyType="regional" keyLeft="35.694%" keyTop="52.702%" keyCodes="0x63"/>
+    <key keyLabel="v" keyType="regional" keyLeft="45.694%" keyTop="52.702%" keyCodes="0x76"/>
+    <key keyLabel="b" keyType="regional" keyLeft="55.694%" keyTop="52.702%" keyCodes="0x62"/>
+    <key keyLabel="n" keyType="regional" keyLeft="65.694%" keyTop="52.702%" keyCodes="0x6E"/>
+    <key keyLabel="m" keyType="regional" keyLeft="75.694%" keyTop="52.702%" keyCodes="0x6D"/>
+    <key keyType="function" keyLabel="del" keyLeft="87.083%" keyTop="52.702%" keyName="ET9KEY_CLEAR" keyWidth="12.7%"/>
+  </area>
+  
+  <area conditionValue="1">
+    <key keyLabel="q" keyType="regional" keyLeft="0.277%" keyTop="0.450%" keyCodes="0x71"/>
+    <key keyLabel="w" keyType="regional" keyLeft="10.416%" keyTop="0.450%" keyCodes="0x77"/>
+    <key keyLabel="ē" keyType="regional" keyLeft="20.555%" keyTop="0.450%" keyCodes="0x113"/>
+    <key keyLabel="r" keyType="regional" keyLeft="30.694%" keyTop="0.450%" keyCodes="0x72"/>
+    <key keyLabel="t" keyType="regional" keyLeft="40.694%" keyTop="0.450%" keyCodes="0x74"/>
+    <key keyLabel="y" keyType="regional" keyLeft="50.694%" keyTop="0.450%" keyCodes="0x79"/>
+    <key keyLabel="ū" keyType="regional" keyLeft="60.694%" keyTop="0.450%" keyCodes="0x16B"/>
+    <key keyLabel="ī" keyType="regional" keyLeft="70.694%" keyTop="0.450%" keyCodes="0x12B"/>
+    <key keyLabel="o" keyType="regional" keyLeft="80.694%" keyTop="0.450%" keyCodes="0x6F"/>
+    <key keyLabel="p" keyType="regional" keyLeft="90.694%" keyTop="0.450%" keyCodes="0x70"/>
+
+    <key keyType="function" keyLabel="Alt" keyLeft="0.277%" keyTop="26.576%" keyName="ET9KEY_OEM_01"/>
+    <key keyLabel="ā" keyType="regional" keyLeft="10.416%" keyTop="26.576%" keyCodes="0x101"/>
+    <key keyLabel="š" keyType="regional" keyLeft="20.555%" keyTop="26.576%" keyCodes="0x161"/>
+    <key keyLabel="d" keyType="regional" keyLeft="30.694%" keyTop="26.576%" keyCodes="0x64"/>
+    <key keyLabel="f" keyType="regional" keyLeft="40.694%" keyTop="26.576%" keyCodes="0x66"/>
+    <key keyLabel="ģ" keyType="regional" keyLeft="50.694%" keyTop="26.576%" keyCodes="0x123"/>
+    <key keyLabel="h" keyType="regional" keyLeft="60.694%" keyTop="25.625%" keyCodes="0x68"/>
+    <key keyLabel="j" keyType="regional" keyLeft="70.694%" keyTop="25.625%" keyCodes="0x6A"/>
+    <key keyLabel="ķ" keyType="regional" keyLeft="80.694%" keyTop="25.625%" keyCodes="0x137"/>
+    <key keyLabel="ļ" keyType="regional" keyLeft="90.694%" keyTop="25.625%" keyCodes="0x13C"/>
+    
+    <key keyType="function" keyLabel="shift" keyLeft="0.277%" keyTop="52.702%" keyName="ET9KEY_SHIFT" keyWidth="12.7%"/>
+    <key keyLabel="ž" keyType="regional" keyLeft="15.416%" keyTop="52.702%" keyCodes="0x17E"/>
+    <key keyLabel="x" keyType="regional" keyLeft="25.555%" keyTop="52.702%" keyCodes="0x78"/>
+    <key keyLabel="č" keyType="regional" keyLeft="35.694%" keyTop="52.702%" keyCodes="0x10D"/>
+    <key keyLabel="v" keyType="regional" keyLeft="45.694%" keyTop="52.702%" keyCodes="0x76"/>
+    <key keyLabel="b" keyType="regional" keyLeft="55.694%" keyTop="52.702%" keyCodes="0x62"/>
+    <key keyLabel="ņ" keyType="regional" keyLeft="65.694%" keyTop="52.702%" keyCodes="0x146"/>
+    <key keyLabel="m" keyType="regional" keyLeft="75.694%" keyTop="52.702%" keyCodes="0x6D"/>
+    <key keyType="function" keyLabel="del" keyLeft="87.083%" keyTop="52.702%" keyName="ET9KEY_CLEAR" keyWidth="12.7%"/>
+  </area>
+  
+</keyboard >

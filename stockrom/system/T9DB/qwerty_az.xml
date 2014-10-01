@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<keyboard
+  primaryId="71"
+  secondaryId="7"
+  keyWidth="7.177%"
+  keyHeight="21.171%"
+  verticalGap="4.054%"
+  horizontalGap="1%"
+  defaultLayoutWidth="720"
+  defaultLayoutHeight="444"
+ >
+  <row>
+  	<void />
+    <key keyType="regional" keyCodes="0x71" />
+    <key keyType="regional" keyCodes="0xFC" />
+    <key keyType="regional" keyCodes="0x65" />
+    <key keyType="regional" keyCodes="0x72" />
+    <key keyType="regional" keyCodes="0x74" />
+    <key keyType="regional" keyCodes="0x79" />
+    <key keyType="regional" keyCodes="0x75" />
+    <key keyType="regional" keyCodes="0x69" />
+    <key keyType="regional" keyCodes="0x6F" />
+    <key keyType="regional" keyCodes="0x70" />
+    <key keyType="regional" keyCodes="0xf6" />
+    <key keyType="regional" keyCodes="0x11f"/>
+    <void />
+  </row>
+  <row>
+  	<void />
+    <key keyType="regional" keyCodes="0x61" />
+    <key keyType="regional" keyCodes="0x73" />
+    <key keyType="regional" keyCodes="0x64" />
+    <key keyType="regional" keyCodes="0x66" />
+    <key keyType="regional" keyCodes="0x67" />
+    <key keyType="regional" keyCodes="0x68" />
+    <key keyType="regional" keyCodes="0x6A" />
+    <key keyType="regional" keyCodes="0x6B" />
+    <key keyType="regional" keyCodes="0x6C" />
+    <key keyType="regional" keyCodes="0x131" />
+    <key keyType="regional" keyCodes="0x259" />
+    <void />
+  </row>
+  <row>
+  	<key
+      keyType="function"
+      keyLabel="shift"
+      keyName="ET9KEY_SHIFT"
+      keyWidth="12.7%"
+      />
+    <void />
+    <key keyType="regional" keyCodes="0x7A" />
+    <key keyType="regional" keyCodes="0x78" />
+    <key keyType="regional" keyCodes="0x63" />
+    <key keyType="regional" keyCodes="0x76" />
+    <key keyType="regional" keyCodes="0x62" />
+    <key keyType="regional" keyCodes="0x6E" />
+    <key keyType="regional" keyCodes="0x6D" />
+    <key keyType="regional" keyCodes="0xe7" />
+    <key keyType="regional" keyCodes="0x15f" />
+    <void />
+    <key
+      keyType="function"
+      keyLabel="del"
+      keyName="ET9KEY_CLEAR"
+      keyWidth="12.7%"
+      />
+  </row>
+</keyboard >

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/tag_scrollview" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/tag_list" android:paddingLeft="20.0px" android:paddingTop="10.0px" android:paddingRight="10.0px" android:layout_width="fill_parent" android:layout_height="0.0px">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="99.0px">
+                <AutoCompleteTextView android:id="@id/edit" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginRight="28.0px" android:maxLength="100" android:completionThreshold="2" android:layout_weight="1.0" android:inputType="textCapSentences" android:dropDownAnchor="@id/edit" android:imeOptions="actionDone|flagNoExtractUi" />
+                <ImageButton android:layout_gravity="center" android:id="@id/add" android:background="@*android:color/transparent" android:layout_width="60.0px" android:layout_height="60.0px" android:src="@drawable/addtag_dialog_addbtn_selector" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/button_bar" android:background="@drawable/tw_topmenu_popup_bottom_bg_holo_light" android:layout_width="fill_parent" android:layout_height="109.0px">
+        <Button android:textSize="32.0px" android:textColor="@color/snote_voice_text_color_selector" android:id="@id/ok" android:background="@drawable/tw_buttonbarbutton_selector" android:layout_width="294.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0px" android:layout_marginRight="6.0px" android:layout_marginBottom="10.0px" android:text="@string/string_common_contextmenu_save" android:layout_weight="1.0" />
+        <Button android:textSize="32.0px" android:textColor="@color/snote_voice_text_color_selector" android:id="@id/cancel" android:background="@drawable/tw_buttonbarbutton_selector" android:layout_width="294.0px" android:layout_height="fill_parent" android:layout_marginLeft="6.0px" android:layout_marginTop="10.0px" android:layout_marginBottom="10.0px" android:text="@string/string_common_button_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>
